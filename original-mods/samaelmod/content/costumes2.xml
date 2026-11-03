@@ -1,0 +1,75 @@
+﻿<costumes anm2root="gfx/characters/">
+	<!-- Item Costumes -->
+	<costume id="0" anm2path="397_tractorbeam.anm2" type="passive" />
+	<costume id="14" anm2path="samael_thanatos.anm2" type="passive" />
+	
+	<!-- Character Costumes -->
+	<costume anm2path="samael/samael_costume.anm2" priority="25" type="none" />
+	<costume anm2path="samael_b/samael_b_costume.anm2" priority="25" type="none" />
+	
+	<!-- Alt Hoods -->
+	<costume anm2path="samael_conehead.anm2" priority="26" type="none" />
+	<costume anm2path="samael_habit.anm2" priority="26" type="none" />
+	<costume anm2path="samael_sackhead.anm2" priority="26" type="none" />
+	<costume anm2path="samael_venus.anm2" priority="26" type="none" />
+	<costume anm2path="samael_bhood.anm2" priority="27" type="none" />
+	<costume anm2path="samael_excelsior.anm2" priority="28" type="none" />
+	
+	<!-- Alt Blindfolds -->
+	<costume anm2path="samael_2020.anm2" priority="26" type="none" />
+	<costume anm2path="samael_gimpy.anm2" priority="26" type="none" />
+	<costume anm2path="samael_tech.anm2" priority="27" type="none" />
+	<costume anm2path="samael_tech2.anm2" priority="27" type="none" />
+	<costume anm2path="samael_techx.anm2" priority="27" type="none" />
+	<costume anm2path="samael_moneypower.anm2" priority="26" type="none" />
+	<costume anm2path="samael_infamy.anm2" priority="26" type="none" />
+	<costume anm2path="samael_cool_sunglasses.anm2" priority="28" type="none" />
+	<costume anm2path="samael_devilsabacus.anm2" priority="26" type="none" />
+	<costume anm2path="samael_emoji_glasses.anm2" priority="28" type="none" />
+	
+	<!-- Alt Horns -->
+	<costume anm2path="samael_brimstone.anm2" priority="31" type="none" />
+	<costume anm2path="samael_wiz.anm2" priority="26" type="none" />
+	<costume anm2path="samael_nails.anm2" priority="26" type="none" />
+	<costume anm2path="samael_wob.anm2" priority="30" type="none" />
+	<costume anm2path="samael_bow.anm2" priority="26" type="none" />
+	<costume anm2path="samael_candle.anm2" priority="26" type="none" />
+	<costume anm2path="samael_pageant.anm2" priority="26" type="none" />
+	<costume anm2path="samael_birthday.anm2" priority="27" type="none" />
+	<costume anm2path="samael_nohorns.anm2" priority="28" type="none" />
+	
+	<!-- Alt Heads -->
+	<costume anm2path="samael_angel.anm2" priority="27" type="none" />
+	<costume anm2path="samael_realangel.anm2" priority="29" type="none" />
+	<costume anm2path="samael_improved.anm2" priority="29" type="none" />
+	<costume anm2path="samael_intruder.anm2" priority="28" type="none" />
+	<costume anm2path="samael_venus_head.anm2" priority="26" type="none" />
+	<!--<costume anm2path="samael_megapills.anm2" priority="27" type="none" />-->
+	<costume anm2path="samael_terra.anm2" priority="26" type="none" />
+	<costume anm2path="samael_maxshead.anm2" priority="26" type="none" />
+	<costume anm2path="samael_godsflesh.anm2" priority="26" type="none" />
+	<costume anm2path="samael_sosig.anm2" priority="26" type="none" />
+	<costume anm2path="samael_knockout.anm2" priority="26" type="none" />
+	<costume anm2path="samael_roids.anm2" priority="26" type="none" />
+	<costume anm2path="samael_meat.anm2" priority="26" type="none" />
+	<costume anm2path="samael_chaos.anm2" priority="26" type="none" />
+	<costume anm2path="samael_uranus.anm2" priority="26" type="none" />
+	<costume anm2path="samael_catoninetails.anm2" priority="26" type="none" />
+	<costume anm2path="samael_skull.anm2" priority="27" type="none" />
+	<costume anm2path="samael_acid.anm2" priority="27" type="none" />
+	<costume anm2path="samael_tomato.anm2" priority="27" type="none" />
+	
+	<!-- Alt Cloak -->
+	<costume anm2path="samael_hidecloak.anm2" priority="26" type="none" />
+	
+	<!-- Other -->
+	<costume anm2path="samael_8ball.anm2" priority="0" type="none" />
+	<costume anm2path="samael_cardreading.anm2" priority="0" type="none" />
+	<costume anm2path="samael_spoon_bender.anm2" priority="-1" type="none" />
+	
+	<!-- Important -->
+	<costume anm2path="samael_dance.anm2" isFlying="true" priority="969" type="none"/>
+	<costume anm2path="samael_dance_alt.anm2" isFlying="true" priority="969" type="none"/>
+	
+	<!--<costume anm2path="samael_gnawedleaf.anm2" priority="50" type="none" />-->
+</costumes>

@@ -1,0 +1,306 @@
+<?xml version="1.0" ?>
+<rooms>
+	<room variant="0" name="Connor - The True Shi" type="1" subtype="0" shape="4" width="13" height="14" difficulty="1" weight="1.0" lastTestTime="2022-12-31T20:36+00:00">
+		<door exists="True" x="-1" y="3"/>
+		<door exists="False" x="-1" y="10"/>
+		<door exists="False" x="6" y="-1"/>
+		<door exists="False" x="6" y="14"/>
+		<door exists="True" x="13" y="3"/>
+		<door exists="False" x="13" y="10"/>
+		<spawn x="0" y="0">
+			<entity type="970" variant="0" subtype="0" weight="1.0"/>
+		</spawn>
+		<spawn x="6" y="0">
+			<entity type="950" variant="1" subtype="0" weight="1.0"/>
+		</spawn>
+		<spawn x="6" y="1">
+			<entity type="617" variant="4" subtype="2" weight="1.0"/>
+		</spawn>
+		<spawn x="6" y="4">
+			<entity type="999" variant="74" subtype="2" weight="1.0"/>
+		</spawn>
+		<spawn x="6" y="8">
+			<entity type="960" variant="3" subtype="0" weight="1.0"/>
+		</spawn>
+		<spawn x="6" y="9">
+			<entity type="617" variant="0" subtype="0" weight="1.0"/>
+		</spawn>
+		<spawn x="0" y="13">
+			<entity type="617" variant="1000" subtype="50" weight="1.0"/>
+		</spawn>
+	</room>
+	<room variant="0" name="Connor - Fate" type="1" subtype="0" shape="1" width="13" height="7" difficulty="1" weight="1.0" lastTestTime="2022-12-26T19:11+00:00">
+		<door exists="False" x="-1" y="3"/>
+		<door exists="False" x="6" y="-1"/>
+		<door exists="True" x="6" y="7"/>
+		<door exists="False" x="13" y="3"/>
+		<spawn x="0" y="0">
+			<entity type="617" variant="1000" subtype="22" weight="1.0"/>
+		</spawn>
+		<spawn x="1" y="1">
+			<entity type="5" variant="380" subtype="0" weight="1.0"/>
+		</spawn>
+		<spawn x="6" y="1">
+			<entity type="617" variant="4" subtype="1" weight="1.0"/>
+			<entity type="617" variant="4" subtype="3" weight="1.0"/>
+		</spawn>
+		<spawn x="6" y="3">
+			<entity type="999" variant="74" subtype="0" weight="99.99"/>
+			<entity type="617" variant="1" subtype="0" weight="0.01"/>
+		</spawn>
+		<spawn x="1" y="4">
+			<entity type="5" variant="55" subtype="0" weight="1.0"/>
+		</spawn>
+		<spawn x="7" y="6">
+			<entity type="617" variant="0" subtype="1" weight="1.0"/>
+		</spawn>
+	</room>
+	<room variant="1" name="Connor - monster under the bed" type="1" subtype="0" shape="1" width="13" height="7" difficulty="1" weight="1.0" lastTestTime="2022-12-26T19:23+00:00">
+		<door exists="False" x="-1" y="3"/>
+		<door exists="False" x="6" y="-1"/>
+		<door exists="True" x="6" y="7"/>
+		<door exists="False" x="13" y="3"/>
+		<spawn x="0" y="0">
+			<entity type="617" variant="1000" subtype="22" weight="1.0"/>
+		</spawn>
+		<spawn x="1" y="1">
+			<entity type="5" variant="380" subtype="0" weight="1.0"/>
+		</spawn>
+		<spawn x="2" y="1">
+			<entity type="888" variant="0" subtype="0" weight="1.0"/>
+			<entity type="306" variant="617" subtype="1" weight="1.0"/>
+		</spawn>
+		<spawn x="6" y="3">
+			<entity type="999" variant="74" subtype="0" weight="99.99"/>
+			<entity type="617" variant="1" subtype="0" weight="0.01"/>
+		</spawn>
+		<spawn x="1" y="4">
+			<entity type="5" variant="55" subtype="0" weight="1.0"/>
+		</spawn>
+		<spawn x="7" y="6">
+			<entity type="617" variant="0" subtype="1" weight="1.0"/>
+		</spawn>
+	</room>
+	<room variant="2" name="Connor - his room" type="1" subtype="0" shape="1" width="13" height="7" difficulty="1" weight="1.0" lastTestTime="2022-12-26T19:25+00:00">
+		<door exists="False" x="-1" y="3"/>
+		<door exists="False" x="6" y="-1"/>
+		<door exists="True" x="6" y="7"/>
+		<door exists="False" x="13" y="3"/>
+		<spawn x="1" y="1">
+			<entity type="5" variant="380" subtype="0" weight="99.99"/>
+			<entity type="617" variant="0" subtype="0" weight="0.01"/>
+		</spawn>
+		<spawn x="7" y="1">
+			<entity type="13" variant="0" subtype="0" weight="1.0"/>
+		</spawn>
+		<spawn x="11" y="2">
+			<entity type="41" variant="1" subtype="0" weight="1.0"/>
+		</spawn>
+		<spawn x="6" y="3">
+			<entity type="999" variant="74" subtype="0" weight="99.99"/>
+			<entity type="617" variant="1" subtype="1" weight="0.01"/>
+		</spawn>
+		<spawn x="1" y="4">
+			<entity type="5" variant="60" subtype="0" weight="1.0"/>
+		</spawn>
+		<spawn x="3" y="4">
+			<entity type="13" variant="0" subtype="0" weight="1.0"/>
+		</spawn>
+		<spawn x="10" y="4">
+			<entity type="13" variant="0" subtype="0" weight="1.0"/>
+		</spawn>
+		<spawn x="1" y="5">
+			<entity type="41" variant="1" subtype="0" weight="1.0"/>
+		</spawn>
+		<spawn x="11" y="5">
+			<entity type="41" variant="1" subtype="0" weight="1.0"/>
+		</spawn>
+		<spawn x="0" y="6">
+			<entity type="617" variant="1000" subtype="49" weight="1.0"/>
+		</spawn>
+	</room>
+	<room variant="0" name="Connor - All That Remains" type="1" subtype="0" shape="3" width="13" height="7" difficulty="1" weight="1.0" lastTestTime="2022-12-26T20:16+00:00">
+		<door exists="False" x="6" y="-1"/>
+		<door exists="True" x="6" y="7"/>
+		<spawn x="4" y="0">
+			<entity type="617" variant="1003" subtype="1" weight="1.0"/>
+		</spawn>
+		<spawn x="4" y="1">
+			<entity type="617" variant="1003" subtype="4" weight="1.0"/>
+		</spawn>
+		<spawn x="5" y="1">
+			<entity type="5" variant="380" subtype="0" weight="1.0"/>
+		</spawn>
+		<spawn x="6" y="1">
+			<entity type="617" variant="1001" subtype="0" weight="1.0"/>
+			<entity type="617" variant="1" subtype="0" weight="1.0"/>
+		</spawn>
+		<spawn x="8" y="1">
+			<entity type="306" variant="617" subtype="5" weight="1.0"/>
+			<entity type="227" variant="0" subtype="0" weight="1.0"/>
+			<entity type="297" variant="0" subtype="0" weight="1.0"/>
+			<entity type="299" variant="0" subtype="0" weight="1.0"/>
+		</spawn>
+		<spawn x="4" y="2">
+			<entity type="617" variant="1003" subtype="2" weight="1.0"/>
+		</spawn>
+		<spawn x="4" y="3">
+			<entity type="617" variant="1002" subtype="3" weight="1.0"/>
+		</spawn>
+		<spawn x="8" y="3">
+			<entity type="297" variant="0" subtype="0" weight="1.0"/>
+			<entity type="299" variant="0" subtype="0" weight="1.0"/>
+			<entity type="227" variant="0" subtype="0" weight="1.0"/>
+			<entity type="306" variant="617" subtype="5" weight="1.0"/>
+			<entity type="10" variant="0" subtype="0" weight="1.0"/>
+		</spawn>
+		<spawn x="8" y="5">
+			<entity type="306" variant="617" subtype="5" weight="1.0"/>
+			<entity type="299" variant="0" subtype="0" weight="1.0"/>
+			<entity type="297" variant="0" subtype="0" weight="1.0"/>
+		</spawn>
+		<spawn x="4" y="6">
+			<entity type="617" variant="0" subtype="0" weight="1.0"/>
+		</spawn>
+		<spawn x="5" y="6">
+			<entity type="617" variant="1000" subtype="49" weight="1.0"/>
+		</spawn>
+	</room>
+	<room variant="0" name="Connor - last remnants" type="1" subtype="0" shape="1" width="13" height="7" difficulty="1" weight="1.0">
+		<door exists="False" x="-1" y="3"/>
+		<door exists="False" x="6" y="-1"/>
+		<door exists="True" x="6" y="7"/>
+		<door exists="False" x="13" y="3"/>
+		<spawn x="0" y="0">
+			<entity type="617" variant="1000" subtype="49" weight="1.0"/>
+		</spawn>
+		<spawn x="6" y="0">
+			<entity type="950" variant="1" subtype="0" weight="1.0"/>
+		</spawn>
+		<spawn x="5" y="1">
+			<entity type="227" variant="0" subtype="0" weight="1.0"/>
+		</spawn>
+		<spawn x="7" y="1">
+			<entity type="297" variant="0" subtype="0" weight="1.0"/>
+		</spawn>
+	</room>
+	<room variant="0" name="Connor - homey boney" type="1" subtype="0" shape="4" width="13" height="14" difficulty="1" weight="1.0" lastTestTime="2023-02-26T02:19+00:00">
+		<door exists="False" x="-1" y="3"/>
+		<door exists="False" x="-1" y="10"/>
+		<door exists="True" x="6" y="-1"/>
+		<door exists="True" x="6" y="14"/>
+		<door exists="False" x="13" y="3"/>
+		<door exists="False" x="13" y="10"/>
+		<spawn x="2" y="0">
+			<entity type="960" variant="1" subtype="0" weight="1.0"/>
+		</spawn>
+		<spawn x="10" y="0">
+			<entity type="960" variant="2" subtype="0" weight="1.0"/>
+		</spawn>
+		<spawn x="6" y="2">
+			<entity type="999" variant="74" subtype="0" weight="1.0"/>
+		</spawn>
+		<spawn x="3" y="3">
+			<entity type="1900" variant="0" subtype="0" weight="1.0"/>
+		</spawn>
+		<spawn x="9" y="3">
+			<entity type="1900" variant="0" subtype="0" weight="1.0"/>
+		</spawn>
+		<spawn x="1" y="4">
+			<entity type="227" variant="0" subtype="0" weight="1.0"/>
+		</spawn>
+		<spawn x="3" y="4">
+			<entity type="1900" variant="0" subtype="0" weight="1.0"/>
+		</spawn>
+		<spawn x="9" y="4">
+			<entity type="1900" variant="0" subtype="0" weight="1.0"/>
+		</spawn>
+		<spawn x="11" y="4">
+			<entity type="227" variant="0" subtype="0" weight="1.0"/>
+		</spawn>
+		<spawn x="3" y="5">
+			<entity type="1900" variant="0" subtype="0" weight="1.0"/>
+		</spawn>
+		<spawn x="9" y="5">
+			<entity type="1900" variant="0" subtype="0" weight="1.0"/>
+		</spawn>
+		<spawn x="1" y="6">
+			<entity type="227" variant="0" subtype="0" weight="1.0"/>
+		</spawn>
+		<spawn x="3" y="6">
+			<entity type="1900" variant="0" subtype="0" weight="1.0"/>
+		</spawn>
+		<spawn x="6" y="6">
+			<entity type="617" variant="1001" subtype="0" weight="1.0"/>
+		</spawn>
+		<spawn x="9" y="6">
+			<entity type="1900" variant="0" subtype="0" weight="1.0"/>
+		</spawn>
+		<spawn x="11" y="6">
+			<entity type="227" variant="0" subtype="0" weight="1.0"/>
+		</spawn>
+		<spawn x="1" y="7">
+			<entity type="227" variant="0" subtype="0" weight="1.0"/>
+		</spawn>
+		<spawn x="3" y="7">
+			<entity type="1900" variant="0" subtype="0" weight="1.0"/>
+		</spawn>
+		<spawn x="6" y="7">
+			<entity type="617" variant="0" subtype="1" weight="1.0"/>
+		</spawn>
+		<spawn x="9" y="7">
+			<entity type="1900" variant="0" subtype="0" weight="1.0"/>
+		</spawn>
+		<spawn x="11" y="7">
+			<entity type="227" variant="0" subtype="0" weight="1.0"/>
+		</spawn>
+		<spawn x="3" y="8">
+			<entity type="1900" variant="0" subtype="0" weight="1.0"/>
+		</spawn>
+		<spawn x="9" y="8">
+			<entity type="1900" variant="0" subtype="0" weight="1.0"/>
+		</spawn>
+		<spawn x="1" y="9">
+			<entity type="227" variant="0" subtype="0" weight="1.0"/>
+		</spawn>
+		<spawn x="3" y="9">
+			<entity type="1900" variant="0" subtype="0" weight="1.0"/>
+		</spawn>
+		<spawn x="9" y="9">
+			<entity type="1900" variant="0" subtype="0" weight="1.0"/>
+		</spawn>
+		<spawn x="11" y="9">
+			<entity type="227" variant="0" subtype="0" weight="1.0"/>
+		</spawn>
+		<spawn x="3" y="10">
+			<entity type="1900" variant="0" subtype="0" weight="1.0"/>
+		</spawn>
+		<spawn x="9" y="10">
+			<entity type="1900" variant="0" subtype="0" weight="1.0"/>
+		</spawn>
+		<spawn x="6" y="11">
+			<entity type="999" variant="74" subtype="0" weight="1.0"/>
+		</spawn>
+		<spawn x="11" y="12">
+			<entity type="1000" variant="0" subtype="0" weight="1.0"/>
+		</spawn>
+		<spawn x="12" y="12">
+			<entity type="1000" variant="0" subtype="0" weight="1.0"/>
+		</spawn>
+		<spawn x="2" y="13">
+			<entity type="960" variant="3" subtype="0" weight="1.0"/>
+		</spawn>
+		<spawn x="5" y="13">
+			<entity type="5" variant="50" subtype="0" weight="1.0"/>
+		</spawn>
+		<spawn x="10" y="13">
+			<entity type="1000" variant="0" subtype="0" weight="1.0"/>
+		</spawn>
+		<spawn x="11" y="13">
+			<entity type="1000" variant="0" subtype="0" weight="1.0"/>
+		</spawn>
+		<spawn x="12" y="13">
+			<entity type="1000" variant="0" subtype="0" weight="1.0"/>
+		</spawn>
+	</room>
+</rooms>

@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<metadata>
+    <name>Samael</name>
+    <directory>samael</directory>
+    <id>897795840</id>
+    <description>Play as Samael, the angel of death.
+
+[h1] Samael [/h1]
+[img]https://i.imgur.com/AIhaJTj.png[/img]
+
+The classic melee character from 2017! Attack with your scythe by tapping any direction. Holding a direction charges up a projectile for situations where you need one. Either way, dealing damage charges up Samael's pocket active &quot;Malakh Mot&quot;, which when activated will give you a brief period of invincibility with faster, automatic melee attacks (no need to mash anymore!) so you can get in a flurry of melee attacks against enemies that are difficult to approach.
+
+[h1] Tainted Samael (&quot;The Inevitable&quot;) [/h1]
+[img]https://i.imgur.com/SKgRzNR.png[/img]
+
+Tainted Samael still has his scythe, but lacks Samael's standard charge-up ranged attack. His pocket active, &quot;Memento Mori&quot;, places a sigil on the ground. Up to five sigils can be placed, drawing out a path. Double-tapping the button for &quot;Memento Mori&quot; will trigger an invincible attack where Samael slashes backwards along the path of the sigils, damaging all enemies in his way. Each slash in a sequence is stronger than the last, so try to catch a boss between all 5 sigils for massive damage! You shoot a projectile when the attack finishes, so in a pinch you can fire at enemies from a distance in a &quot;slingshot&quot; fashion.
+
+Tainted Samael is locked by default, obtainable via the standard tainted character method. But if you'd like to unlock him manually, you do so using Samael's in-game options menu (press C or F1 by default) or by using this console command: [code]samael unlocktainted[/code]
+
+[h1] Unlockables [/h1]
+
+This mod now features built-in completion mark tracking and over 20 unlocks!
+
+Samael's completion marks can be viewed on the pause screen, or in Samael's in-game option menu (press C or F1 by default).
+
+If you've already had your fill of non-tainted Samael, you can give yourself all of his completion marks using this console command: [code]samael unlockall[/code]
+
+Note that this command does NOT give you any of Tainted Samael's completion marks or unlocks!
+
+If you want to have ALL of this mod's items unlocked by default, or disable them entirely, you can do so via Samael's in-game options menu (press C or F1 by default).
+
+[h1] Credits [/h1]
+
+Connor: Creator/Programmer
+Tealx: Promotional artwork, item/npc sprites, testing ( https://tealx.carrd.co/ )
+RedRachis: Tainted Samael's sprites, new Scythe sprites
+RenRen: Testing, feedback/suggestions, cleaned up Samael sprites
+Sin: Fragment rooms, testing
+Sunil_B: Fragment rooms
+
+[h1] Download Mirror [/h1]
+
+https://www.dropbox.com/sh/3vftynh97oztn4o/AAB0FrAKsd7UsSwPs53OFQlta?dl=0
+
+[h1] Bug Reporting/Contact [/h1]
+
+If you’ve found some kind of bug or compatibility issue (such as a conflict with another mod), please let me know! I will do my best to fix it as soon as I can, and I am happy to fix any issues with other mods.
+
+Email: ghostbroster@gmail.com
+Discord: Connor#2143
+
+Feel free to also leave a comment here!
+
+Please note that its often incredibly helpful for you to send me your log file if you experience an issue: [code](My Documents)/My Games/Binding of Isaac Repentance/log.txt[/code] (Note that the log file is wiped every time you start the game!)
+</description>
+    <version>3.2.8</version>
+    <visibility>Public</visibility>
+    <tag id="Player Characters"/>
+</metadata>

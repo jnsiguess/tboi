@@ -1,0 +1,3 @@
+<music root="music/samael/">
+	<track name="(Samael) Mass Destruction" path="massdestruction.ogg" intro="massdestruction_intro.ogg" loop="true" />
+</music>

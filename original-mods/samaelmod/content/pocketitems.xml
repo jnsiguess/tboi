@@ -1,0 +1,10 @@
+<pocketitems>
+	<card type="tarot" pickup="6617" name="XIII" hud="XIII" description="Give up a part of yourself" announcer="337" announcerdelay="0" mimiccharge="6" />
+	<card type="tarot_reverse" pickup="6618" name="XIII?" hud="XIII?" description="May your suffering never end" announcer="525" announcerdelay="0" mimiccharge="6" />
+	<card type="rune" pickup="6619" name="Soul of Samael" hud="Soul of Samael" description="Reap their souls" mimiccharge="4" />
+	<card type="object" pickup="6620" name="Denial's D9" hud="Denial's D9" description="Single reroll - This room only" mimiccharge="6" />
+	<card type="object" pickup="6621" name="Bargaining's Chip" hud="Bargaining's Chip" description="Ready to make a deal?" mimiccharge="6" />
+	<card type="object" pickup="6622" name="Ferryman's Obols" hud="Ferryman's Obols" description="Good for a round trip" mimiccharge="12" />
+	
+	<pilleffect name="Thanatosis" class="2" mimiccharge="3" />
+</pocketitems>

@@ -1,0 +1,50 @@
+<items gfxroot="gfx/items/" version="1" deathanm2="gfx/death items.anm2">
+	<active id="1" name="Malakh Mot" description="Become death" gfx="samael/malakh_mot.png" quality="2" devilprice="1" maxcharges="100" initcharge="0" chargetype="special" cooldown="150" cache="speed" tags="nocantrip offensive"/>
+	<active id="2" name="Memento Mori" description="Memories of death" gfx="samael/memento_mori.png" quality="3" maxcharges="0" tags="nocantrip offensive"/>
+	
+	<trinket name="Sigil of Samael" description="Bringer of death" gfx="samael/sigil_of_samael.png" />
+	<trinket name="Sigil of Lilith" description="Giver of life" gfx="samael/sigil_of_lilith.png" />
+	<trinket name="Charon Club Card" description="More ferrymen + discounted tolls" gfx="samael/charon_club_card.png" tags="nogreed"/>
+	<trinket name="Samael's Feather" description="Memento of the Fall" gfx="samael/samaels_feather.png" cache="flying speed" hidden="true" />
+	<trinket name="Wraith Skull" description="Guarded by death" gfx="samael/wraith_skull.png" />
+	
+	<passive id="3" name="Thanatophobia" description="Fear death" gfx="samael/thanatophobia.png" quality="2" tags="summonable offensive"/>
+	<passive id="4" name="Thanatophilia" description="Friends in death" gfx="samael/thanatophilia.png" quality="3" tags="summonable offensive"/>
+	<familiar id="5" name="Reaper Bum" description="Lazy reaper" gfx="samael/reaper_bum.png" quality="3" tags="nocantrip summonable offensive"/>
+	<passive id="6" name="Punishment of the Grave" description="Judgement after death" gfx="samael/punishment_of_the_grave.png" quality="2" tags="lazarusshared nocantrip"/>
+	<passive id="7" name="Remembrance of the Forgotten" description="Don't forget him..." gfx="samael/remembrance_of_the_forgotten.png" quality="3" tags="summonable offensive"/>
+	<passive id="8" name="Remembrance of Death" description="He won't forget you" gfx="samael/remembrance_of_death.png" quality="3" tags="summonable offensive"/>
+	
+	<passive id="9" name="Spirit of Denial" description="Reject fate" gfx="samael/denial.png" cache="luck" quality="4" tags="nocantrip summonable offensive"/>
+	<passive id="10" name="Spirit of Anger" description="Rage against fate" gfx="samael/anger.png" cache="damage" quality="3" tags="nocantrip summonable offensive"/>
+	<passive id="11" name="Spirit of Bargaining" description="Barter with fate" gfx="samael/bargaining.png" quality="3" tags="nocantrip summonable offensive"/>
+	<passive id="12" name="Spirit of Depression" description="Lament fate" gfx="samael/depression.png" cache="firedelay" quality="2" tags="summonable nolostbr"/>
+	<passive id="13" name="Spirit of Acceptance" description="Embrace fate" gfx="samael/acceptance.png" cache="luck" quality="4" tags="summonable nocantrip offensive"/>
+	
+	<passive id="14" name="Mask of Thanatos" description="Protected by death" gfx="samael/thanatos.png" cache="damage range" quality="2" tags="summonable offensive"/>
+	
+	<active id="15" name="Jar of Scythes" description="Death catcher?" gfx="samael/jar_of_scythes.png" quality="3" maxcharges="0" tags="nocantrip offensive"/>
+	<active id="16" name="Trumpet of Woe" description="Sound thrice to call forth the end" gfx="samael/trumpet_of_woe.png" quality="4" maxcharges="6" initcharge="0" tags="nocantrip offensive"/>
+	
+	<trinket name="Effigy of Denial" description="More rerolls" gfx="samael/effigy_of_denial.png" />
+	<trinket name="Anger Fossil" description="Exhausting rage, crush effect" gfx="samael/anger_fossil.png" cache="damage" />
+	<trinket name="Bargaining Fossil" description="Special deals, crush effect" gfx="samael/bargaining_fossil.png" />
+	<trinket name="Depression Fossil" description="Take a moment to cry, crush effect" gfx="samael/depression_fossil.png" cache="firedelay" />
+	<trinket name="Effigy of Acceptance" description="Trust fate" gfx="samael/effigy_of_acceptance.png" />
+	
+	<trinket name="Fragment Fragment" description="Lost souls from beyond" gfx="samael/fragment_fragment.png" />
+	<trinket name="Scythe Fossil" description="More death + crush effect" gfx="samael/scythe_fossil.png" />
+	
+	<!-- VANILLA ACHIEVEMENT CHECKERS -->
+	<trinket name="(Samael Vanilla Unlock Checker) RedKey" achievement="415"/>
+	<trinket name="(Samael Vanilla Unlock Checker) IsaacsTomb" achievement="505"/>
+	<trinket name="(Samael Vanilla Unlock Checker) MegaChest" achievement="601"/>
+	<trinket name="(Samael Vanilla Unlock Checker) CraneGame" achievement="607"/>
+	<trinket name="(Samael Vanilla Unlock Checker) HellGame" achievement="608"/>
+	<trinket name="(Samael Vanilla Unlock Checker) WoodenChest" achievement="609"/>
+	<trinket name="(Samael Vanilla Unlock Checker) RottenBeggar" achievement="614"/>
+	<trinket name="(Samael Vanilla Unlock Checker) Confessional" achievement="616"/>
+	
+	<!-- DUMMY ITEMS -->
+	<passive id="0" name="Tainted Samael Tractor Beam" description="Dummy item to replace Tractor Beam for Tainted Samael." gfx="Collectibles_397_TractorBeam.png" cache="firedelay" hidden="true" />
+</items>

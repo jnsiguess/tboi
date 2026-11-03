@@ -1,0 +1,35 @@
+<players root="gfx/characters/" 
+		 portraitroot="gfx/ui/" 
+		 nameimageroot="gfx/ui/boss/"
+		 bigportraitroot="gfx/ui/">
+	<!--Samael-->
+	<player name="Samael"
+			skin="samael/character_samael.png"
+			hp="2" black="2" armor="2" skinColor="1" canShoot="false"
+			nameimage="PlayerName_Samael.png" 
+			portrait="PlayerPortrait_Samael.png" 
+			bigportrait="PlayerPortraitBig_Samael.png"
+			birthright="Malakh Mashhit"
+			costumeSuffix="samael"/>
+	<!--Tainted Samael-->
+	<player name="Samael"
+			skin="samael_b/character_samael_b.png"
+			black="2" armor="2" skinColor="1" canShoot="false"
+			nameimage="PlayerName_Samael.png" 
+			portrait="samael_null.png" 
+			extraportrait="portrait_samael_b.anm2"
+			bigportrait="PlayerPortraitBig_Samael.png"
+			birthright="Unleash their souls"
+			costumeSuffix="samael_b"
+			bSkinParent="Samael"/>
+	<!--Challenge Samael-->
+	<player name="Samael " hidden="true"
+			skin="samael_b/character_samael_i.png"
+			black="2" armor="2" skinColor="1" canShoot="false"
+			nameimage="PlayerName_Samael.png" 
+			portrait="samael_null.png" 
+			extraportrait="portrait_samael_i.anm2"
+			bigportrait="PlayerPortraitBig_Samael.png"
+			birthright="Improved!"
+			costumeSuffix="samael_b"/>
+</players>

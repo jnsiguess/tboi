@@ -1,0 +1,40 @@
+GLOBAL ROOMS: 65 rooms
+
+CHAPTER 1
+ - Basement: 147 rooms
+ - Cellar: 169 rooms
+ - Burning Basement: 157 rooms
+ - Downpour: 131 rooms
+ - Dross: 124 rooms
+
+CHAPTER 2
+ - Caves: 131 rooms
+ - Catacombs: 132 rooms
+ - Flooded Caves: 126 rooms
+ - Mines: 113 rooms
+ - Ashpit: 128 rooms
+
+CHAPTER 3
+ - Depths: 117 rooms
+ - Necropolis: 130 rooms
+ - Dank Depths: 125 rooms
+ - Mausoleum: 146 rooms
+ - Gehenna: 107 rooms
+
+CHAPTER 4
+ - Womb: 80 rooms
+ - Utero: 80 rooms
+ - Scarred Womb: 80 rooms
+ - Corpse: 82 rooms
+
+CHAPTER 5
+ - Sheol: 75 rooms
+ - Cathedral: 75 rooms
+
+ENDGAME (no natural ferryman spawns)
+ - Dark Room: 73 rooms
+ - Chest: 83 rooms
+ - Blue Womb: 81 rooms
+ - The Void: 75 rooms
+ - Ascent: 73 rooms
+ - Home: 81 rooms

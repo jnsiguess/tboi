@@ -1,0 +1,220 @@
+{
+    "files": [
+        {
+            "outputFile": "00.special rooms.xml",
+            "paths": [ "./normal rooms/00.special rooms.xml" ],
+            "noRecomputeIds": true
+        },
+        {
+            "outputFile": "01.basement.xml",
+            "paths": [ "./fragment rooms/01.basement.xml", "./normal rooms/01.basement.xml" ],
+            "noRecomputeIds": true
+        },
+        {
+            "outputFile": "02.cellar.xml",
+            "paths": [ "./fragment rooms/02.cellar.xml", "./normal rooms/02.cellar.xml" ],
+            "noRecomputeIds": true
+        },
+        {
+            "outputFile": "03.burning basement.xml",
+            "paths": [ "./fragment rooms/03.burning basement.xml", "./normal rooms/03.burning basement.xml" ],
+            "noRecomputeIds": true
+        },
+        {
+            "outputFile": "04.caves.xml",
+            "paths": [ "./fragment rooms/04.caves.xml", "./normal rooms/04.caves.xml" ],
+            "noRecomputeIds": true
+        },
+        {
+            "outputFile": "05.catacombs.xml",
+            "paths": [ "./fragment rooms/05.catacombs.xml", "./normal rooms/05.catacombs.xml" ],
+            "noRecomputeIds": true
+        },
+        {
+            "outputFile": "06.flooded caves.xml",
+            "paths": [ "./fragment rooms/06.flooded caves.xml", "./normal rooms/06.flooded caves.xml" ],
+            "noRecomputeIds": true
+        },
+        {
+            "outputFile": "07.depths.xml",
+            "paths": [ "./fragment rooms/07.depths.xml", "./normal rooms/07.depths.xml" ],
+            "noRecomputeIds": true
+        },
+        {
+            "outputFile": "08.necropolis.xml",
+            "paths": [ "./fragment rooms/08.necropolis.xml", "./normal rooms/08.necropolis.xml" ],
+            "noRecomputeIds": true
+        },
+        {
+            "outputFile": "09.dank depths.xml",
+            "paths": [ "./fragment rooms/09.dank depths.xml", "./normal rooms/09.dank depths.xml" ],
+            "noRecomputeIds": true
+        },
+        {
+            "outputFile": "10.womb.xml",
+            "paths": [ "./fragment rooms/10.womb.xml", "./normal rooms/10.womb.xml" ],
+            "noRecomputeIds": true
+        },
+        {
+            "outputFile": "11.utero.xml",
+            "paths": [ "./fragment rooms/11.utero.xml", "./normal rooms/11.utero.xml" ],
+            "noRecomputeIds": true
+        },
+        {
+            "outputFile": "12.scarred womb.xml",
+            "paths": [ "./fragment rooms/12.scarred womb.xml", "./normal rooms/12.scarred womb.xml" ],
+            "noRecomputeIds": true
+        },
+        {
+            "outputFile": "13.blue womb.xml",
+            "paths": [ "./fragment rooms/13.blue womb.xml", "./normal rooms/13.blue womb.xml" ],
+            "noRecomputeIds": true
+        },
+        {
+            "outputFile": "14.sheol.xml",
+            "paths": [ "./fragment rooms/14.sheol.xml", "./normal rooms/14.sheol.xml" ],
+            "noRecomputeIds": true
+        },
+        {
+            "outputFile": "15.cathedral.xml",
+            "paths": [ "./fragment rooms/15.cathedral.xml", "./normal rooms/15.cathedral.xml" ],
+            "noRecomputeIds": true
+        },
+        {
+            "outputFile": "16.dark room.xml",
+            "paths": [ "./fragment rooms/16.dark room.xml", "./normal rooms/16.dark room.xml" ],
+            "noRecomputeIds": true
+        },
+        {
+            "outputFile": "17.chest.xml",
+            "paths": [ "./fragment rooms/17.chest.xml", "./normal rooms/17.chest.xml" ],
+            "noRecomputeIds": true
+        },
+        {
+            "outputFile": "26.the void.xml",
+            "paths": [ "./fragment rooms/26.the void.xml", "./normal rooms/26.the void.xml" ],
+            "noRecomputeIds": true
+        },
+        {
+            "outputFile": "36.backwards.xml",
+            "paths": [ "./fragment rooms/36.backwards.xml", "./normal rooms/36.backwards.xml" ],
+            "noRecomputeIds": true
+        },
+        {
+            "outputFile": "27.downpour.xml",
+            "paths": [ "./fragment rooms/27.downpour.xml", "./normal rooms/27.downpour.xml" ],
+            "noRecomputeIds": true
+        },
+        {
+            "outputFile": "28.dross.xml",
+            "paths": [ "./fragment rooms/28.dross.xml", "./normal rooms/28.dross.xml" ],
+            "noRecomputeIds": true
+        },
+        {
+            "outputFile": "29.mines.xml",
+            "paths": [ "./fragment rooms/29.mines.xml", "./normal rooms/29.mines.xml" ],
+            "noRecomputeIds": true
+        },
+        {
+            "outputFile": "30.ashpit.xml",
+            "paths": [ "./fragment rooms/30.ashpit.xml", "./normal rooms/30.ashpit.xml" ],
+            "noRecomputeIds": true
+        },
+        {
+            "outputFile": "31.mausoleum.xml",
+            "paths": [ "./fragment rooms/31.mausoleum.xml", "./normal rooms/31.mausoleum.xml" ],
+            "noRecomputeIds": true
+        },
+        {
+            "outputFile": "32.gehenna.xml",
+            "paths": [ "./fragment rooms/32.gehenna.xml", "./normal rooms/32.gehenna.xml" ],
+            "noRecomputeIds": true
+        },
+        {
+            "outputFile": "33.corpse.xml",
+            "paths": [ "./fragment rooms/33.corpse.xml", "./normal rooms/33.corpse.xml" ],
+            "noRecomputeIds": true
+        },
+        {
+            "outputFile": "35.home.xml",
+            "paths": [ "./fragment rooms/35.home.xml", "./normal rooms/35.home.xml" ],
+            "noRecomputeIds": true
+        },
+
+        {
+            "outputFile": "./greed/00.special rooms.xml",
+            "paths": [ "./normal rooms/00.special rooms.xml" ],
+            "noRecomputeIds": true
+        },
+        {
+            "outputFile": "./greed/01.basement.xml",
+            "paths": [ "./fragment rooms/01.basement.xml" ],
+            "noRecomputeIds": true
+        },
+        {
+            "outputFile": "./greed/02.cellar.xml",
+            "paths": [ "./fragment rooms/02.cellar.xml" ],
+            "noRecomputeIds": true
+        },
+        {
+            "outputFile": "./greed/03.burning basement.xml",
+            "paths": [ "./fragment rooms/03.burning basement.xml" ],
+            "noRecomputeIds": true
+        },
+        {
+            "outputFile": "./greed/04.caves.xml",
+            "paths": [ "./fragment rooms/04.caves.xml" ],
+            "noRecomputeIds": true
+        },
+        {
+            "outputFile": "./greed/05.catacombs.xml",
+            "paths": [ "./fragment rooms/05.catacombs.xml" ],
+            "noRecomputeIds": true
+        },
+        {
+            "outputFile": "./greed/06.flooded caves.xml",
+            "paths": [ "./fragment rooms/06.flooded caves.xml" ],
+            "noRecomputeIds": true
+        },
+        {
+            "outputFile": "./greed/07.depths.xml",
+            "paths": [ "./fragment rooms/07.depths.xml" ],
+            "noRecomputeIds": true
+        },
+        {
+            "outputFile": "./greed/08.necropolis.xml",
+            "paths": [ "./fragment rooms/08.necropolis.xml" ],
+            "noRecomputeIds": true
+        },
+        {
+            "outputFile": "./greed/09.dank depths.xml",
+            "paths": [ "./fragment rooms/09.dank depths.xml" ],
+            "noRecomputeIds": true
+        },
+        {
+            "outputFile": "./greed/10.womb.xml",
+            "paths": [ "./fragment rooms/10.womb.xml" ],
+            "noRecomputeIds": true
+        },
+        {
+            "outputFile": "./greed/11.utero.xml",
+            "paths": [ "./fragment rooms/11.utero.xml" ],
+            "noRecomputeIds": true
+        },
+        {
+            "outputFile": "./greed/12.scarred womb.xml",
+            "paths": [ "./fragment rooms/12.scarred womb.xml" ],
+            "noRecomputeIds": true
+        },
+        {
+            "outputFile": "./greed/14.sheol.xml",
+            "paths": [ "./fragment rooms/14.sheol.xml" ],
+            "noRecomputeIds": true
+        },
+        {
+            "outputFile": "./greed/24.the shop.xml",
+            "paths": [ "./fragment rooms/24.the shop.xml" ],
+            "noRecomputeIds": true
+        }
+    ]
+}

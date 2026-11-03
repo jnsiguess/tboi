@@ -1,0 +1,147 @@
+{
+    "outputFile": "roomStatistics.txt",
+    "errorFile": "roomErrors.txt",
+    "statisticsGroups": false,
+    "printGroupEntities": false,
+    "roomThreshold": 99999,
+    "ignoreXML": false,
+    "ignoreSTB": false,
+    "files": [
+        {
+            "groupName": "GLOBAL ROOMS",
+            "paths": [ "./fragment rooms/0 - global/" ]
+        },
+        {
+            "groupName": "\nCHAPTER 1",
+            "paths": [ "./dummy.stb" ]
+        },
+        {
+            "groupName": " - Basement",
+            "paths": [ "./01.basement.stb" ]
+        },
+        {
+            "groupName": " - Cellar",
+            "paths": [ "./02.cellar.stb" ]
+        },
+        {
+            "groupName": " - Burning Basement",
+            "paths": [ "./03.burning basement.stb" ]
+        },
+        {
+            "groupName": " - Downpour",
+            "paths": [ "./27.downpour.stb" ]
+        },
+        {
+            "groupName": " - Dross",
+            "paths": [ "./28.dross.stb" ]
+        },
+        {
+            "groupName": "\nCHAPTER 2",
+            "paths": [ "./dummy.stb" ]
+        },
+        {
+            "groupName": " - Caves",
+            "paths": [ "./04.caves.stb" ]
+        },
+        {
+            "groupName": " - Catacombs",
+            "paths": [ "./05.catacombs.stb" ]
+        },
+        {
+            "groupName": " - Flooded Caves",
+            "paths": [ "./06.flooded caves.stb" ]
+        },
+        {
+            "groupName": " - Mines",
+            "paths": [ "./29.mines.stb" ]
+        },
+        {
+            "groupName": " - Ashpit",
+            "paths": [ "./30.ashpit.stb" ]
+        },
+        {
+            "groupName": "\nCHAPTER 3",
+            "paths": [ "./dummy.stb" ]
+        },
+        {
+            "groupName": " - Depths",
+            "paths": [ "./07.depths.stb"]
+        },
+        {
+            "groupName": " - Necropolis",
+            "paths": [ "./08.necropolis.stb" ]
+        },
+        {
+            "groupName": " - Dank Depths",
+            "paths": [ "./09.dank depths.stb" ]
+        },
+        {
+            "groupName": " - Mausoleum",
+            "paths": [ "./31.mausoleum.stb" ]
+        },
+        {
+            "groupName": " - Gehenna",
+            "paths": [ "./32.gehenna.stb" ]
+        },
+        {
+            "groupName": "\nCHAPTER 4",
+            "paths": [ "./dummy.stb" ]
+        },
+        {
+            "groupName": " - Womb",
+            "paths": [ "./10.womb.stb" ]
+        },
+        {
+            "groupName": " - Utero",
+            "paths": [ "./11.utero.stb" ]
+        },
+        {
+            "groupName": " - Scarred Womb",
+            "paths": [ "./12.scarred womb.stb" ]
+        },
+        {
+            "groupName": " - Corpse",
+            "paths": [ "./33.corpse.stb" ]
+        },
+        {
+            "groupName": "\nCHAPTER 5",
+            "paths": [ "./dummy.stb" ]
+        },
+        {
+            "groupName": " - Sheol",
+            "paths": [ "./14.sheol.stb" ]
+        },
+        {
+            "groupName": " - Cathedral",
+            "paths": [ "./15.cathedral.stb" ]
+        },
+        {
+            "groupName": "\nENDGAME (no natural ferryman spawns)",
+            "paths": [ "./dummy.stb" ]
+        },
+        {
+            "groupName": " - Dark Room",
+            "paths": [ "./16.dark room.stb" ]
+        },
+        {
+            "groupName": " - Chest",
+            "paths": [ "./17.chest.stb" ]
+        },
+        {
+            "groupName": " - Blue Womb",
+            "paths": [ "./13.blue womb.stb" ]
+        },
+        {
+            "groupName": " - The Void",
+            "paths": [ "./26.the void.stb" ]
+        },
+        {
+            "groupName": " - Ascent",
+            "paths": [ "./36.backwards.stb" ]
+        },
+        {
+            "groupName": " - Home",
+            "paths": [ "./35.home.stb" ]
+        }
+    ]
+}
