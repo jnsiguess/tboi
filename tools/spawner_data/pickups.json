@@ -1,0 +1,5052 @@
+{
+ "about": "Spawner PICKUPS/LOOT research, 2026-10-07. Names: the game's words first (stringtable), then the EID mod's PickupNames table (eid-mod/descriptions/ab+/<lang>.lua in the project, NOT packed into assets/eid.bin), Russian has no PickupNames in EID: built from EID ru description vocabulary / game ru strings, the rest marked suggested. Glyphs checked with spawner_common.desc_missing per set.",
+ "language_map": {
+  "en": "en_us",
+  "de": "de",
+  "es": "spa",
+  "jp": "ja_jp",
+  "kr": "ko_kr",
+  "zh": "zh_cn",
+  "ru": "ru"
+ },
+ "entries": [
+  {
+   "key": "5.30.1",
+   "group": "PICKUPS/keys",
+   "type": 5,
+   "variant": 30,
+   "subtype": 1,
+   "spawn_subtype": 1,
+   "entities2_name": "Key",
+   "names": {
+    "en": {
+     "text": "Key",
+     "source": "EID PickupNames[\"5.30.1\"] (en_us)",
+     "suggested": false,
+     "glyphs_missing": []
+    },
+    "ru": {
+     "text": "Ключ",
+     "source": "EID db ru prize words row 12 \"ключ\"",
+     "suggested": false,
+     "glyphs_missing": []
+    },
+    "de": {
+     "text": "Schlüssel",
+     "source": "EID PickupNames[\"5.30.1\"] (de)",
+     "suggested": false,
+     "glyphs_missing": []
+    },
+    "es": {
+     "text": "Llave",
+     "source": "EID PickupNames[\"5.30.1\"] (spa)",
+     "suggested": false,
+     "glyphs_missing": []
+    },
+    "jp": {
+     "text": "鍵",
+     "source": "EID PickupNames[\"5.30.1\"] (ja_jp)",
+     "suggested": false,
+     "glyphs_missing": []
+    },
+    "kr": {
+     "text": "열쇠",
+     "source": "EID PickupNames[\"5.30.1\"] (ko_kr)",
+     "suggested": false,
+     "glyphs_missing": []
+    },
+    "zh": {
+     "text": "钥匙",
+     "source": "EID PickupNames[\"5.30.1\"] (zh_cn)",
+     "suggested": false,
+     "glyphs_missing": []
+    }
+   },
+   "icon": {
+    "file": "icons/5.30.1.png",
+    "anm2": "repentance-resources/data/gfx/005.031_key.anm2",
+    "animation": "Idle",
+    "frame_index": 0,
+    "layers": [
+     {
+      "layer": 0,
+      "sheet": "repentance-resources/data/gfx/items/pick ups/pickup_003_key.png",
+      "crop": [
+       0,
+       0,
+       16,
+       32
+      ],
+      "pivot": [
+       8.0,
+       25.0
+      ],
+      "position": [
+       1.0,
+       2.0
+      ]
+     }
+    ],
+    "layers_left_out": [
+     {
+      "layer": 1,
+      "sheet": "pickup_003_key.png"
+     }
+    ],
+    "size": [
+     14,
+     20
+    ],
+    "origin_in_icon": [
+     6,
+     18
+    ],
+    "drawn_at": "100 % (no scaling); origin_in_icon = where the entity position sits inside the PNG"
+   },
+   "notes": [
+    "Idle L1 (white sparkle, 8x16) left out"
+   ]
+  },
+  {
+   "key": "5.30.2",
+   "group": "PICKUPS/keys",
+   "type": 5,
+   "variant": 30,
+   "subtype": 2,
+   "spawn_subtype": 2,
+   "entities2_name": "Golden Key",
+   "names": {
+    "en": {
+     "text": "Golden Key",
+     "source": "EID PickupNames[\"5.30.2\"] (en_us)",
+     "suggested": false,
+     "glyphs_missing": []
+    },
+    "ru": {
+     "text": "Золотой ключ",
+     "source": "SUGGESTED (game ru GILDED_KEY \"Позолоченный ключ\" is the trinket; uk \"Золотий ключ\")",
+     "suggested": true,
+     "glyphs_missing": []
+    },
+    "de": {
+     "text": "Goldener Schlüssel",
+     "source": "EID PickupNames[\"5.30.2\"] (de)",
+     "suggested": false,
+     "glyphs_missing": []
+    },
+    "es": {
+     "text": "Llave dorada",
+     "source": "EID PickupNames[\"5.30.2\"] (spa)",
+     "suggested": false,
+     "glyphs_missing": []
+    },
+    "jp": {
+     "text": "金の鍵",
+     "source": "EID PickupNames[\"5.30.2\"] (ja_jp)",
+     "suggested": false,
+     "glyphs_missing": []
+    },
+    "kr": {
+     "text": "황금열쇠",
+     "source": "EID PickupNames[\"5.30.2\"] (ko_kr)",
+     "suggested": false,
+     "glyphs_missing": []
+    },
+    "zh": {
+     "text": "金钥匙",
+     "source": "EID PickupNames[\"5.30.2\"] (zh_cn)",
+     "suggested": false,
+     "glyphs_missing": []
+    }
+   },
+   "icon": {
+    "file": "icons/5.30.2.png",
+    "anm2": "repentance-resources/data/gfx/005.032_golden key.anm2",
+    "animation": "Idle",
+    "frame_index": 0,
+    "layers": [
+     {
+      "layer": 0,
+      "sheet": "repentance-resources/data/gfx/items/pick ups/pickup_003_key.png",
+      "crop": [
+       16,
+       0,
+       16,
+       32
+      ],
+      "pivot": [
+       8.0,
+       25.0
+      ],
+      "position": [
+       1.0,
+       2.0
+      ]
+     }
+    ],
+    "layers_left_out": [
+     {
+      "layer": 1,
+      "sheet": "pickup_003_key.png"
+     }
+    ],
+    "size": [
+     14,
+     20
+    ],
+    "origin_in_icon": [
+     6,
+     18
+    ],
+    "drawn_at": "100 % (no scaling); origin_in_icon = where the entity position sits inside the PNG"
+   },
+   "notes": [
+    "Idle L1 (white sparkle, 8x16) left out"
+   ]
+  },
+  {
+   "key": "5.30.3",
+   "group": "PICKUPS/keys",
+   "type": 5,
+   "variant": 30,
+   "subtype": 3,
+   "spawn_subtype": 3,
+   "entities2_name": "Key Ring",
+   "names": {
+    "en": {
+     "text": "Key Ring",
+     "source": "EID PickupNames[\"5.30.3\"] (en_us)",
+     "suggested": false,
+     "glyphs_missing": []
+    },
+    "ru": {
+     "text": "Связка ключей",
+     "source": "SUGGESTED (uk \"Кільце ключів\"; jp/kr/zh say \"key x2\")",
+     "suggested": true,
+     "glyphs_missing": []
+    },
+    "de": {
+     "text": "Schlüsselring",
+     "source": "EID PickupNames[\"5.30.3\"] (de)",
+     "suggested": false,
+     "glyphs_missing": []
+    },
+    "es": {
+     "text": "Llavero",
+     "source": "EID PickupNames[\"5.30.3\"] (spa)",
+     "suggested": false,
+     "glyphs_missing": []
+    },
+    "jp": {
+     "text": "鍵ｘ2",
+     "source": "EID PickupNames[\"5.30.3\"] (ja_jp)",
+     "suggested": false,
+     "glyphs_missing": []
+    },
+    "kr": {
+     "text": "1+1 열쇠",
+     "source": "EID PickupNames[\"5.30.3\"] (ko_kr)",
+     "suggested": false,
+     "glyphs_missing": []
+    },
+    "zh": {
+     "text": "双钥匙",
+     "source": "EID PickupNames[\"5.30.3\"] (zh_cn)",
+     "suggested": false,
+     "glyphs_missing": []
+    }
+   },
+   "icon": {
+    "file": "icons/5.30.3.png",
+    "anm2": "repentance-resources/data/gfx/005.033_keyring.anm2",
+    "animation": "Idle",
+    "frame_index": 0,
+    "layers": [
+     {
+      "layer": 0,
+      "sheet": "repentance-resources/data/gfx/items/pick ups/pickup_003_key.png",
+      "crop": [
+       32,
+       0,
+       32,
+       32
+      ],
+      "pivot": [
+       16.0,
+       25.0
+      ],
+      "position": [
+       1.0,
+       2.0
+      ]
+     }
+    ],
+    "layers_left_out": [
+     {
+      "layer": 1,
+      "sheet": "pickup_003_key.png"
+     }
+    ],
+    "size": [
+     20,
+     28
+    ],
+    "origin_in_icon": [
+     10,
+     21
+    ],
+    "drawn_at": "100 % (no scaling); origin_in_icon = where the entity position sits inside the PNG"
+   },
+   "notes": [
+    "Idle L1 (white sparkle, 8x16) left out"
+   ]
+  },
+  {
+   "key": "5.30.4",
+   "group": "PICKUPS/keys",
+   "type": 5,
+   "variant": 30,
+   "subtype": 4,
+   "spawn_subtype": 4,
+   "entities2_name": "Charged Key",
+   "names": {
+    "en": {
+     "text": "Charged Key",
+     "source": "EID PickupNames[\"5.30.4\"] (en_us)",
+     "suggested": false,
+     "glyphs_missing": []
+    },
+    "ru": {
+     "text": "Заряженный ключ",
+     "source": "SUGGESTED (game ru CHARGED_PENNY \"Заряженный пенни\" pattern)",
+     "suggested": true,
+     "glyphs_missing": []
+    },
+    "de": {
+     "text": "Aufgeladener Schlüssel",
+     "source": "EID PickupNames[\"5.30.4\"] (de)",
+     "suggested": false,
+     "glyphs_missing": []
+    },
+    "es": {
+     "text": "Llave cargada",
+     "source": "EID PickupNames[\"5.30.4\"] (spa)",
+     "suggested": false,
+     "glyphs_missing": []
+    },
+    "jp": {
+     "text": "帯電した鍵",
+     "source": "EID PickupNames[\"5.30.4\"] (ja_jp)",
+     "suggested": false,
+     "glyphs_missing": []
+    },
+    "kr": {
+     "text": "충전된 열쇠",
+     "source": "EID PickupNames[\"5.30.4\"] (ko_kr)",
+     "suggested": false,
+     "glyphs_missing": []
+    },
+    "zh": {
+     "text": "充能钥匙",
+     "source": "EID PickupNames[\"5.30.4\"] (zh_cn)",
+     "suggested": false,
+     "glyphs_missing": []
+    }
+   },
+   "icon": {
+    "file": "icons/5.30.4.png",
+    "anm2": "repentance-resources/data/gfx/005.034_chargedkey.anm2",
+    "animation": "Idle",
+    "frame_index": 2,
+    "layers": [
+     {
+      "layer": 0,
+      "sheet": "repentance-resources/data/gfx/items/pick ups/pickup_003_charged_key.png",
+      "crop": [
+       0,
+       0,
+       16,
+       32
+      ],
+      "pivot": [
+       8.0,
+       25.0
+      ],
+      "position": [
+       1.0,
+       2.0
+      ]
+     },
+     {
+      "layer": 1,
+      "sheet": "repentance-resources/data/gfx/items/pick ups/pickup_003_charged_key.png",
+      "crop": [
+       64,
+       0,
+       32,
+       32
+      ],
+      "pivot": [
+       16.0,
+       16.0
+      ],
+      "position": [
+       0.0,
+       -8.0
+      ]
+     }
+    ],
+    "layers_left_out": [],
+    "size": [
+     14,
+     20
+    ],
+    "origin_in_icon": [
+     6,
+     18
+    ],
+    "drawn_at": "100 % (no scaling); origin_in_icon = where the entity position sits inside the PNG"
+   },
+   "notes": [
+    "the body is a plain key: the yellow spark (L1 \"Effect\", Idle frame 2, crop 64,0) is kept so it reads as charged"
+   ]
+  },
+  {
+   "key": "5.40.1",
+   "group": "PICKUPS/bombs",
+   "type": 5,
+   "variant": 40,
+   "subtype": 1,
+   "spawn_subtype": 1,
+   "entities2_name": "Bomb",
+   "names": {
+    "en": {
+     "text": "Bomb",
+     "source": "EID PickupNames[\"5.40.1\"] (en_us)",
+     "suggested": false,
+     "glyphs_missing": []
+    },
+    "ru": {
+     "text": "Бомба",
+     "source": "game ru INPUT_BOMB \"Бомба:\" / EID prize words \"бомба\"",
+     "suggested": false,
+     "glyphs_missing": []
+    },
+    "de": {
+     "text": "Bombe",
+     "source": "EID PickupNames[\"5.40.1\"] (de)",
+     "suggested": false,
+     "glyphs_missing": []
+    },
+    "es": {
+     "text": "Bomba",
+     "source": "EID PickupNames[\"5.40.1\"] (spa)",
+     "suggested": false,
+     "glyphs_missing": []
+    },
+    "jp": {
+     "text": "爆弾",
+     "source": "EID PickupNames[\"5.40.1\"] (ja_jp)",
+     "suggested": false,
+     "glyphs_missing": []
+    },
+    "kr": {
+     "text": "폭탄",
+     "source": "EID PickupNames[\"5.40.1\"] (ko_kr)",
+     "suggested": false,
+     "glyphs_missing": []
+    },
+    "zh": {
+     "text": "炸弹",
+     "source": "EID PickupNames[\"5.40.1\"] (zh_cn)",
+     "suggested": false,
+     "glyphs_missing": []
+    }
+   },
+   "icon": {
+    "file": "icons/5.40.1.png",
+    "anm2": "repentance-resources/data/gfx/005.041_bomb.anm2",
+    "animation": "Idle",
+    "frame_index": 0,
+    "layers": [
+     {
+      "layer": 0,
+      "sheet": "repentance-resources/data/gfx/items/pick ups/pickup_016_bomb.png",
+      "crop": [
+       0,
+       0,
+       32,
+       32
+      ],
+      "pivot": [
+       16.0,
+       25.0
+      ],
+      "position": [
+       0.0,
+       2.0
+      ]
+     }
+    ],
+    "layers_left_out": [],
+    "size": [
+     20,
+     21
+    ],
+    "origin_in_icon": [
+     11,
+     19
+    ],
+    "drawn_at": "100 % (no scaling); origin_in_icon = where the entity position sits inside the PNG"
+   },
+   "notes": []
+  },
+  {
+   "key": "5.40.2",
+   "group": "PICKUPS/bombs",
+   "type": 5,
+   "variant": 40,
+   "subtype": 2,
+   "spawn_subtype": 2,
+   "entities2_name": "Double Bomb",
+   "names": {
+    "en": {
+     "text": "Double Bomb",
+     "source": "EID PickupNames[\"5.40.2\"] (en_us)",
+     "suggested": false,
+     "glyphs_missing": []
+    },
+    "ru": {
+     "text": "Двойная бомба",
+     "source": "SUGGESTED (uk \"Подвійна бомба\")",
+     "suggested": true,
+     "glyphs_missing": []
+    },
+    "de": {
+     "text": "Doppelbombe",
+     "source": "EID PickupNames[\"5.40.2\"] (de)",
+     "suggested": false,
+     "glyphs_missing": []
+    },
+    "es": {
+     "text": "Bomba doble",
+     "source": "EID PickupNames[\"5.40.2\"] (spa)",
+     "suggested": false,
+     "glyphs_missing": []
+    },
+    "jp": {
+     "text": "爆弾ｘ2",
+     "source": "EID PickupNames[\"5.40.2\"] (ja_jp)",
+     "suggested": false,
+     "glyphs_missing": []
+    },
+    "kr": {
+     "text": "1+1 폭탄",
+     "source": "EID PickupNames[\"5.40.2\"] (ko_kr)",
+     "suggested": false,
+     "glyphs_missing": []
+    },
+    "zh": {
+     "text": "双炸弹",
+     "source": "EID PickupNames[\"5.40.2\"] (zh_cn)",
+     "suggested": false,
+     "glyphs_missing": []
+    }
+   },
+   "icon": {
+    "file": "icons/5.40.2.png",
+    "anm2": "repentance-resources/data/gfx/005.042_double bomb.anm2",
+    "animation": "Idle",
+    "frame_index": 0,
+    "layers": [
+     {
+      "layer": 0,
+      "sheet": "repentance-resources/data/gfx/items/pick ups/pickup_016_bomb.png",
+      "crop": [
+       32,
+       0,
+       32,
+       32
+      ],
+      "pivot": [
+       16.0,
+       25.0
+      ],
+      "position": [
+       0.0,
+       2.0
+      ]
+     }
+    ],
+    "layers_left_out": [],
+    "size": [
+     27,
+     23
+    ],
+    "origin_in_icon": [
+     14,
+     20
+    ],
+    "drawn_at": "100 % (no scaling); origin_in_icon = where the entity position sits inside the PNG"
+   },
+   "notes": []
+  },
+  {
+   "key": "5.40.4",
+   "group": "PICKUPS/bombs",
+   "type": 5,
+   "variant": 40,
+   "subtype": 4,
+   "spawn_subtype": 4,
+   "entities2_name": "Golden Bomb",
+   "names": {
+    "en": {
+     "text": "Golden Bomb",
+     "source": "EID PickupNames[\"5.40.4\"] (en_us)",
+     "suggested": false,
+     "glyphs_missing": []
+    },
+    "ru": {
+     "text": "Золотая бомба",
+     "source": "EID ru descriptions: \"золотые бомбы\"",
+     "suggested": false,
+     "glyphs_missing": []
+    },
+    "de": {
+     "text": "Goldene Bombe",
+     "source": "EID PickupNames[\"5.40.4\"] (de)",
+     "suggested": false,
+     "glyphs_missing": []
+    },
+    "es": {
+     "text": "Bomba dorada",
+     "source": "EID PickupNames[\"5.40.4\"] (spa)",
+     "suggested": false,
+     "glyphs_missing": []
+    },
+    "jp": {
+     "text": "金爆弾",
+     "source": "EID PickupNames[\"5.40.4\"] (ja_jp)",
+     "suggested": false,
+     "glyphs_missing": []
+    },
+    "kr": {
+     "text": "황금폭탄",
+     "source": "EID PickupNames[\"5.40.4\"] (ko_kr)",
+     "suggested": false,
+     "glyphs_missing": []
+    },
+    "zh": {
+     "text": "金炸弹",
+     "source": "EID PickupNames[\"5.40.4\"] (zh_cn)",
+     "suggested": false,
+     "glyphs_missing": []
+    }
+   },
+   "icon": {
+    "file": "icons/5.40.4.png",
+    "anm2": "repentance-resources/data/gfx/005.043_golden bomb.anm2",
+    "animation": "Idle",
+    "frame_index": 0,
+    "layers": [
+     {
+      "layer": 0,
+      "sheet": "repentance-resources/data/gfx/items/pick ups/pickup_016_bomb.png",
+      "crop": [
+       0,
+       192,
+       32,
+       32
+      ],
+      "pivot": [
+       16.0,
+       25.0
+      ],
+      "position": [
+       0.0,
+       2.0
+      ]
+     }
+    ],
+    "layers_left_out": [],
+    "size": [
+     20,
+     21
+    ],
+    "origin_in_icon": [
+     11,
+     19
+    ],
+    "drawn_at": "100 % (no scaling); origin_in_icon = where the entity position sits inside the PNG"
+   },
+   "notes": []
+  },
+  {
+   "key": "5.40.7",
+   "group": "PICKUPS/bombs",
+   "type": 5,
+   "variant": 40,
+   "subtype": 7,
+   "spawn_subtype": 7,
+   "entities2_name": "Giga Bomb",
+   "names": {
+    "en": {
+     "text": "Giga Bomb",
+     "source": "EID PickupNames[\"5.40.7\"] (en_us)",
+     "suggested": false,
+     "glyphs_missing": []
+    },
+    "ru": {
+     "text": "Гига-бомба",
+     "source": "SUGGESTED (uk \"Гіга-бомба\")",
+     "suggested": true,
+     "glyphs_missing": []
+    },
+    "de": {
+     "text": "Gigabombe",
+     "source": "EID PickupNames[\"5.40.7\"] (de)",
+     "suggested": false,
+     "glyphs_missing": []
+    },
+    "es": {
+     "text": "Bomba gigante",
+     "source": "EID PickupNames[\"5.40.7\"] (spa)",
+     "suggested": false,
+     "glyphs_missing": []
+    },
+    "jp": {
+     "text": "巨大爆弾",
+     "source": "EID PickupNames[\"5.40.7\"] (ja_jp)",
+     "suggested": false,
+     "glyphs_missing": []
+    },
+    "kr": {
+     "text": "기가폭탄",
+     "source": "EID PickupNames[\"5.40.7\"] (ko_kr)",
+     "suggested": false,
+     "glyphs_missing": []
+    },
+    "zh": {
+     "text": "巨型炸弹",
+     "source": "EID PickupNames[\"5.40.7\"] (zh_cn)",
+     "suggested": false,
+     "glyphs_missing": []
+    }
+   },
+   "icon": {
+    "file": "icons/5.40.7.png",
+    "anm2": "repentance-resources/data/gfx/005.047_giga bomb.anm2",
+    "animation": "Idle",
+    "frame_index": 0,
+    "layers": [
+     {
+      "layer": 0,
+      "sheet": "repentance-resources/data/gfx/items/pick ups/pickup_016_bomb2.png",
+      "crop": [
+       192,
+       92,
+       64,
+       64
+      ],
+      "pivot": [
+       32.0,
+       56.0
+      ],
+      "position": [
+       0.0,
+       1.0
+      ]
+     }
+    ],
+    "layers_left_out": [],
+    "size": [
+     54,
+     49
+    ],
+    "origin_in_icon": [
+     29,
+     44
+    ],
+    "drawn_at": "100 % (no scaling); origin_in_icon = where the entity position sits inside the PNG"
+   },
+   "notes": []
+  },
+  {
+   "key": "5.20.1",
+   "group": "PICKUPS/coins",
+   "type": 5,
+   "variant": 20,
+   "subtype": 1,
+   "spawn_subtype": 1,
+   "entities2_name": "Penny",
+   "names": {
+    "en": {
+     "text": "Penny",
+     "source": "EID PickupNames[\"5.20.1\"] (en_us)",
+     "suggested": false,
+     "glyphs_missing": []
+    },
+    "ru": {
+     "text": "Пенни",
+     "source": "game ru trinket names use \"пенни\" (Проглоченный пенни, Кровавый пенни...)",
+     "suggested": false,
+     "glyphs_missing": []
+    },
+    "de": {
+     "text": "Münze",
+     "source": "EID PickupNames[\"5.20.1\"] (de)",
+     "suggested": false,
+     "glyphs_missing": []
+    },
+    "es": {
+     "text": "Moneda",
+     "source": "EID PickupNames[\"5.20.1\"] (spa)",
+     "suggested": false,
+     "glyphs_missing": []
+    },
+    "jp": {
+     "text": "ペニー",
+     "source": "EID PickupNames[\"5.20.1\"] (ja_jp)",
+     "suggested": false,
+     "glyphs_missing": []
+    },
+    "kr": {
+     "text": "페니",
+     "source": "EID PickupNames[\"5.20.1\"] (ko_kr)",
+     "suggested": false,
+     "glyphs_missing": []
+    },
+    "zh": {
+     "text": "硬币",
+     "source": "EID PickupNames[\"5.20.1\"] (zh_cn)",
+     "suggested": false,
+     "glyphs_missing": []
+    }
+   },
+   "icon": {
+    "file": "icons/5.20.1.png",
+    "anm2": "repentance-resources/data/gfx/005.021_penny.anm2",
+    "animation": "Idle",
+    "frame_index": 5,
+    "layers": [
+     {
+      "layer": 0,
+      "sheet": "repentance-resources/data/gfx/items/pick ups/pickup_002_coin.png",
+      "crop": [
+       0,
+       0,
+       32,
+       16
+      ],
+      "pivot": [
+       16.0,
+       8.0
+      ],
+      "position": [
+       0.0,
+       -4.0
+      ]
+     }
+    ],
+    "layers_left_out": [],
+    "size": [
+     18,
+     13
+    ],
+    "origin_in_icon": [
+     9,
+     9
+    ],
+    "drawn_at": "100 % (no scaling); origin_in_icon = where the entity position sits inside the PNG"
+   },
+   "notes": [
+    "Idle frame 5 is the coin at rest (Delay 20); frames 0-4 are the shine"
+   ]
+  },
+  {
+   "key": "5.20.2",
+   "group": "PICKUPS/coins",
+   "type": 5,
+   "variant": 20,
+   "subtype": 2,
+   "spawn_subtype": 2,
+   "entities2_name": "Nickel",
+   "names": {
+    "en": {
+     "text": "Nickel",
+     "source": "EID PickupNames[\"5.20.2\"] (en_us)",
+     "suggested": false,
+     "glyphs_missing": []
+    },
+    "ru": {
+     "text": "Пятак",
+     "source": "game ru: WOODEN_NICKEL_NAME \"Деревянный пятак\" (nickel = пятак)",
+     "suggested": false,
+     "glyphs_missing": []
+    },
+    "de": {
+     "text": "Nickel",
+     "source": "EID PickupNames[\"5.20.2\"] (de)",
+     "suggested": false,
+     "glyphs_missing": []
+    },
+    "es": {
+     "text": "Níquel",
+     "source": "EID PickupNames[\"5.20.2\"] (spa)",
+     "suggested": false,
+     "glyphs_missing": []
+    },
+    "jp": {
+     "text": "ニッケル",
+     "source": "EID PickupNames[\"5.20.2\"] (ja_jp)",
+     "suggested": false,
+     "glyphs_missing": []
+    },
+    "kr": {
+     "text": "니켈",
+     "source": "EID PickupNames[\"5.20.2\"] (ko_kr)",
+     "suggested": false,
+     "glyphs_missing": []
+    },
+    "zh": {
+     "text": "镍币",
+     "source": "EID PickupNames[\"5.20.2\"] (zh_cn)",
+     "suggested": false,
+     "glyphs_missing": []
+    }
+   },
+   "icon": {
+    "file": "icons/5.20.2.png",
+    "anm2": "repentance-resources/data/gfx/005.022_nickel.anm2",
+    "animation": "Idle",
+    "frame_index": 5,
+    "layers": [
+     {
+      "layer": 0,
+      "sheet": "repentance-resources/data/gfx/items/pick ups/pickup_002_coinblack.png",
+      "crop": [
+       0,
+       0,
+       32,
+       16
+      ],
+      "pivot": [
+       16.0,
+       8.0
+      ],
+      "position": [
+       0.0,
+       -4.0
+      ]
+     }
+    ],
+    "layers_left_out": [],
+    "size": [
+     18,
+     13
+    ],
+    "origin_in_icon": [
+     9,
+     9
+    ],
+    "drawn_at": "100 % (no scaling); origin_in_icon = where the entity position sits inside the PNG"
+   },
+   "notes": [
+    "Idle frame 5 is the coin at rest (Delay 20); frames 0-4 are the shine"
+   ]
+  },
+  {
+   "key": "5.20.3",
+   "group": "PICKUPS/coins",
+   "type": 5,
+   "variant": 20,
+   "subtype": 3,
+   "spawn_subtype": 3,
+   "entities2_name": "Dime",
+   "names": {
+    "en": {
+     "text": "Dime",
+     "source": "EID PickupNames[\"5.20.3\"] (en_us)",
+     "suggested": false,
+     "glyphs_missing": []
+    },
+    "ru": {
+     "text": "Гривенник",
+     "source": "SUGGESTED (pairs with \"пятак\"; alt \"Десятицентовик\"; uk \"Дайм\")",
+     "suggested": true,
+     "glyphs_missing": []
+    },
+    "de": {
+     "text": "Zehncentstück",
+     "source": "EID PickupNames[\"5.20.3\"] (de)",
+     "suggested": false,
+     "glyphs_missing": []
+    },
+    "es": {
+     "text": "10 centavos",
+     "source": "EID PickupNames[\"5.20.3\"] (spa)",
+     "suggested": false,
+     "glyphs_missing": []
+    },
+    "jp": {
+     "text": "ダイム",
+     "source": "EID PickupNames[\"5.20.3\"] (ja_jp)",
+     "suggested": false,
+     "glyphs_missing": []
+    },
+    "kr": {
+     "text": "다임",
+     "source": "EID PickupNames[\"5.20.3\"] (ko_kr)",
+     "suggested": false,
+     "glyphs_missing": []
+    },
+    "zh": {
+     "text": "铸币",
+     "source": "EID PickupNames[\"5.20.3\"] (zh_cn)",
+     "suggested": false,
+     "glyphs_missing": []
+    }
+   },
+   "icon": {
+    "file": "icons/5.20.3.png",
+    "anm2": "repentance-resources/data/gfx/005.023_dime.anm2",
+    "animation": "Idle",
+    "frame_index": 5,
+    "layers": [
+     {
+      "layer": 0,
+      "sheet": "repentance-resources/data/gfx/items/pick ups/pickup_002_coinsilver.png",
+      "crop": [
+       0,
+       0,
+       32,
+       16
+      ],
+      "pivot": [
+       16.0,
+       8.0
+      ],
+      "position": [
+       0.0,
+       -4.0
+      ]
+     }
+    ],
+    "layers_left_out": [],
+    "size": [
+     18,
+     13
+    ],
+    "origin_in_icon": [
+     9,
+     9
+    ],
+    "drawn_at": "100 % (no scaling); origin_in_icon = where the entity position sits inside the PNG"
+   },
+   "notes": [
+    "Idle frame 5 is the coin at rest (Delay 20); frames 0-4 are the shine"
+   ]
+  },
+  {
+   "key": "5.20.4",
+   "group": "PICKUPS/coins",
+   "type": 5,
+   "variant": 20,
+   "subtype": 4,
+   "spawn_subtype": 4,
+   "entities2_name": "Double Penny",
+   "names": {
+    "en": {
+     "text": "Double Penny",
+     "source": "EID PickupNames[\"5.20.4\"] (en_us)",
+     "suggested": false,
+     "glyphs_missing": []
+    },
+    "ru": {
+     "text": "Двойной пенни",
+     "source": "SUGGESTED (uk \"Подвійний пенні\")",
+     "suggested": true,
+     "glyphs_missing": []
+    },
+    "de": {
+     "text": "Doppelpenny",
+     "source": "EID PickupNames[\"5.20.4\"] (de)",
+     "suggested": false,
+     "glyphs_missing": []
+    },
+    "es": {
+     "text": "Moneda doble",
+     "source": "EID PickupNames[\"5.20.4\"] (spa)",
+     "suggested": false,
+     "glyphs_missing": []
+    },
+    "jp": {
+     "text": "ダブルペニー",
+     "source": "EID PickupNames[\"5.20.4\"] (ja_jp)",
+     "suggested": false,
+     "glyphs_missing": []
+    },
+    "kr": {
+     "text": "1+1 페니",
+     "source": "EID PickupNames[\"5.20.4\"] (ko_kr)",
+     "suggested": false,
+     "glyphs_missing": []
+    },
+    "zh": {
+     "text": "双硬币",
+     "source": "EID PickupNames[\"5.20.4\"] (zh_cn)",
+     "suggested": false,
+     "glyphs_missing": []
+    }
+   },
+   "icon": {
+    "file": "icons/5.20.4.png",
+    "anm2": "repentance-resources/data/gfx/005.024_double penny.anm2",
+    "animation": "Idle",
+    "frame_index": 5,
+    "layers": [
+     {
+      "layer": 0,
+      "sheet": "repentance-resources/data/gfx/items/pick ups/pickup_002_coindouble.png",
+      "crop": [
+       0,
+       0,
+       32,
+       16
+      ],
+      "pivot": [
+       16.0,
+       8.0
+      ],
+      "position": [
+       0.0,
+       -4.0
+      ]
+     }
+    ],
+    "layers_left_out": [],
+    "size": [
+     27,
+     16
+    ],
+    "origin_in_icon": [
+     13,
+     12
+    ],
+    "drawn_at": "100 % (no scaling); origin_in_icon = where the entity position sits inside the PNG"
+   },
+   "notes": [
+    "Idle frame 5 is the coin at rest (Delay 20); frames 0-4 are the shine"
+   ]
+  },
+  {
+   "key": "5.20.5",
+   "group": "PICKUPS/coins",
+   "type": 5,
+   "variant": 20,
+   "subtype": 5,
+   "spawn_subtype": 5,
+   "entities2_name": "Lucky Penny",
+   "names": {
+    "en": {
+     "text": "Lucky Penny",
+     "source": "stringtable LUCKY_PENNY_NAME (Default)",
+     "suggested": false,
+     "glyphs_missing": []
+    },
+    "ru": {
+     "text": "Счастливый Пенни",
+     "source": "stringtable LUCKY_PENNY_NAME (Default)",
+     "suggested": false,
+     "glyphs_missing": []
+    },
+    "de": {
+     "text": "Glückspenny",
+     "source": "stringtable LUCKY_PENNY_NAME (Default)",
+     "suggested": false,
+     "glyphs_missing": []
+    },
+    "es": {
+     "text": "Moneda de la suerte",
+     "source": "stringtable LUCKY_PENNY_NAME (Default)",
+     "suggested": false,
+     "glyphs_missing": []
+    },
+    "jp": {
+     "text": "ラッキー ペニー",
+     "source": "stringtable LUCKY_PENNY_NAME (Default)",
+     "suggested": false,
+     "glyphs_missing": []
+    },
+    "kr": {
+     "text": "행운의 동전",
+     "source": "stringtable LUCKY_PENNY_NAME (Default)",
+     "suggested": false,
+     "glyphs_missing": []
+    },
+    "zh": {
+     "text": "幸运硬币",
+     "source": "stringtable LUCKY_PENNY_NAME (Default)",
+     "suggested": false,
+     "glyphs_missing": []
+    }
+   },
+   "icon": {
+    "file": "icons/5.20.5.png",
+    "anm2": "repentance-resources/data/gfx/005.026_lucky penny.anm2",
+    "animation": "Idle",
+    "frame_index": 5,
+    "layers": [
+     {
+      "layer": 0,
+      "sheet": "repentance-resources/data/gfx/items/pick ups/pickup_002_lucky_penny.png",
+      "crop": [
+       0,
+       0,
+       32,
+       16
+      ],
+      "pivot": [
+       16.0,
+       8.0
+      ],
+      "position": [
+       0.0,
+       -4.0
+      ]
+     }
+    ],
+    "layers_left_out": [],
+    "size": [
+     18,
+     13
+    ],
+    "origin_in_icon": [
+     9,
+     9
+    ],
+    "drawn_at": "100 % (no scaling); origin_in_icon = where the entity position sits inside the PNG"
+   },
+   "notes": [
+    "Idle frame 5 is the coin at rest (Delay 20); frames 0-4 are the shine"
+   ]
+  },
+  {
+   "key": "5.20.6",
+   "group": "PICKUPS/coins",
+   "type": 5,
+   "variant": 20,
+   "subtype": 6,
+   "spawn_subtype": 6,
+   "entities2_name": "Sticky Nickel",
+   "names": {
+    "en": {
+     "text": "Sticky Nickel",
+     "source": "EID PickupNames[\"5.20.6\"] (en_us)",
+     "suggested": false,
+     "glyphs_missing": []
+    },
+    "ru": {
+     "text": "Липкий пятак",
+     "source": "SUGGESTED (game ru \"пятак\" + uk \"Липкий нікель\")",
+     "suggested": true,
+     "glyphs_missing": []
+    },
+    "de": {
+     "text": "Klebriger Nickel",
+     "source": "EID PickupNames[\"5.20.6\"] (de)",
+     "suggested": false,
+     "glyphs_missing": []
+    },
+    "es": {
+     "text": "Níquel pegajoso",
+     "source": "EID PickupNames[\"5.20.6\"] (spa)",
+     "suggested": false,
+     "glyphs_missing": []
+    },
+    "jp": {
+     "text": "粘着ニッケル",
+     "source": "EID PickupNames[\"5.20.6\"] (ja_jp)",
+     "suggested": false,
+     "glyphs_missing": []
+    },
+    "kr": {
+     "text": "끈적이는 니켈",
+     "source": "EID PickupNames[\"5.20.6\"] (ko_kr)",
+     "suggested": false,
+     "glyphs_missing": []
+    },
+    "zh": {
+     "text": "粘性镍币",
+     "source": "EID PickupNames[\"5.20.6\"] (zh_cn)",
+     "suggested": false,
+     "glyphs_missing": []
+    }
+   },
+   "icon": {
+    "file": "icons/5.20.6.png",
+    "anm2": "repentance-resources/data/gfx/005.025_sticky nickel.anm2",
+    "animation": "Idle",
+    "frame_index": 5,
+    "layers": [
+     {
+      "layer": 0,
+      "sheet": "repentance-resources/data/gfx/items/pick ups/pickup_002_coinblack.png",
+      "crop": [
+       0,
+       0,
+       32,
+       16
+      ],
+      "pivot": [
+       16.0,
+       8.0
+      ],
+      "position": [
+       0.0,
+       -4.0
+      ]
+     }
+    ],
+    "layers_left_out": [],
+    "size": [
+     18,
+     13
+    ],
+    "origin_in_icon": [
+     9,
+     9
+    ],
+    "drawn_at": "100 % (no scaling); origin_in_icon = where the entity position sits inside the PNG"
+   },
+   "notes": [
+    "Idle frame 5 is the coin at rest (Delay 20); frames 0-4 are the shine"
+   ]
+  },
+  {
+   "key": "5.20.7",
+   "group": "PICKUPS/coins",
+   "type": 5,
+   "variant": 20,
+   "subtype": 7,
+   "spawn_subtype": 7,
+   "entities2_name": "Golden Penny",
+   "names": {
+    "en": {
+     "text": "Golden Penny",
+     "source": "EID PickupNames[\"5.20.7\"] (en_us)",
+     "suggested": false,
+     "glyphs_missing": []
+    },
+    "ru": {
+     "text": "Золотой пенни",
+     "source": "SUGGESTED (uk \"Золотий пенні\")",
+     "suggested": true,
+     "glyphs_missing": []
+    },
+    "de": {
+     "text": "Gold Penny",
+     "source": "EID PickupNames[\"5.20.7\"] (de)",
+     "suggested": false,
+     "glyphs_missing": []
+    },
+    "es": {
+     "text": "Moneda dorada",
+     "source": "EID PickupNames[\"5.20.7\"] (spa)",
+     "suggested": false,
+     "glyphs_missing": []
+    },
+    "jp": {
+     "text": "ゴールデンペニー",
+     "source": "EID PickupNames[\"5.20.7\"] (ja_jp)",
+     "suggested": false,
+     "glyphs_missing": []
+    },
+    "kr": {
+     "text": "황금페니",
+     "source": "EID PickupNames[\"5.20.7\"] (ko_kr)",
+     "suggested": false,
+     "glyphs_missing": []
+    },
+    "zh": {
+     "text": "金硬币",
+     "source": "EID PickupNames[\"5.20.7\"] (zh_cn)",
+     "suggested": false,
+     "glyphs_missing": []
+    }
+   },
+   "icon": {
+    "file": "icons/5.20.7.png",
+    "anm2": "repentance-resources/data/gfx/005.027_golden penny.anm2",
+    "animation": "Idle",
+    "frame_index": 5,
+    "layers": [
+     {
+      "layer": 0,
+      "sheet": "repentance-resources/data/gfx/items/pick ups/golden_penny.png",
+      "crop": [
+       0,
+       0,
+       32,
+       16
+      ],
+      "pivot": [
+       16.0,
+       8.0
+      ],
+      "position": [
+       0.0,
+       -4.0
+      ]
+     }
+    ],
+    "layers_left_out": [],
+    "size": [
+     18,
+     13
+    ],
+    "origin_in_icon": [
+     9,
+     9
+    ],
+    "drawn_at": "100 % (no scaling); origin_in_icon = where the entity position sits inside the PNG"
+   },
+   "notes": [
+    "Idle frame 5 is the coin at rest (Delay 20); frames 0-4 are the shine"
+   ]
+  },
+  {
+   "key": "5.10.1",
+   "group": "PICKUPS/hearts",
+   "type": 5,
+   "variant": 10,
+   "subtype": 1,
+   "spawn_subtype": 1,
+   "entities2_name": "Heart",
+   "names": {
+    "en": {
+     "text": "Heart",
+     "source": "EID PickupNames[\"5.10.1\"] (en_us)",
+     "suggested": false,
+     "glyphs_missing": []
+    },
+    "ru": {
+     "text": "Красное сердце",
+     "source": "EID ru descriptions: \"красное сердце\" (30x)",
+     "suggested": false,
+     "glyphs_missing": []
+    },
+    "de": {
+     "text": "Herz",
+     "source": "EID PickupNames[\"5.10.1\"] (de)",
+     "suggested": false,
+     "glyphs_missing": []
+    },
+    "es": {
+     "text": "Corazón",
+     "source": "EID PickupNames[\"5.10.1\"] (spa)",
+     "suggested": false,
+     "glyphs_missing": []
+    },
+    "jp": {
+     "text": "ハート",
+     "source": "EID PickupNames[\"5.10.1\"] (ja_jp)",
+     "suggested": false,
+     "glyphs_missing": []
+    },
+    "kr": {
+     "text": "빨간하트",
+     "source": "EID PickupNames[\"5.10.1\"] (ko_kr)",
+     "suggested": false,
+     "glyphs_missing": []
+    },
+    "zh": {
+     "text": "红心",
+     "source": "EID PickupNames[\"5.10.1\"] (zh_cn)",
+     "suggested": false,
+     "glyphs_missing": []
+    }
+   },
+   "icon": {
+    "file": "icons/5.10.1.png",
+    "anm2": "repentance-resources/data/gfx/005.011_heart.anm2",
+    "animation": "Idle",
+    "frame_index": 0,
+    "layers": [
+     {
+      "layer": 0,
+      "sheet": "repentance-resources/data/gfx/items/pick ups/pickup_001_heart.png",
+      "crop": [
+       0,
+       0,
+       32,
+       32
+      ],
+      "pivot": [
+       16.0,
+       20.0
+      ],
+      "position": [
+       0.0,
+       -1.0
+      ]
+     }
+    ],
+    "layers_left_out": [],
+    "size": [
+     16,
+     13
+    ],
+    "origin_in_icon": [
+     9,
+     12
+    ],
+    "drawn_at": "100 % (no scaling); origin_in_icon = where the entity position sits inside the PNG"
+   },
+   "notes": []
+  },
+  {
+   "key": "5.10.2",
+   "group": "PICKUPS/hearts",
+   "type": 5,
+   "variant": 10,
+   "subtype": 2,
+   "spawn_subtype": 2,
+   "entities2_name": "Heart (half)",
+   "names": {
+    "en": {
+     "text": "Half Heart",
+     "source": "EID PickupNames[\"5.10.2\"] (en_us)",
+     "suggested": false,
+     "glyphs_missing": []
+    },
+    "ru": {
+     "text": "Половина сердца",
+     "source": "EID ru descriptions: \"половину сердца\"/\"половину красного сердца\"",
+     "suggested": false,
+     "glyphs_missing": []
+    },
+    "de": {
+     "text": "Halbes Herz",
+     "source": "EID PickupNames[\"5.10.2\"] (de)",
+     "suggested": false,
+     "glyphs_missing": []
+    },
+    "es": {
+     "text": "Medio corazón",
+     "source": "EID PickupNames[\"5.10.2\"] (spa)",
+     "suggested": false,
+     "glyphs_missing": []
+    },
+    "jp": {
+     "text": "半ハート",
+     "source": "EID PickupNames[\"5.10.2\"] (ja_jp)",
+     "suggested": false,
+     "glyphs_missing": []
+    },
+    "kr": {
+     "text": "빨간하트 반칸",
+     "source": "EID PickupNames[\"5.10.2\"] (ko_kr)",
+     "suggested": false,
+     "glyphs_missing": []
+    },
+    "zh": {
+     "text": "半红心",
+     "source": "EID PickupNames[\"5.10.2\"] (zh_cn)",
+     "suggested": false,
+     "glyphs_missing": []
+    }
+   },
+   "icon": {
+    "file": "icons/5.10.2.png",
+    "anm2": "repentance-resources/data/gfx/005.012_heart (half).anm2",
+    "animation": "Idle",
+    "frame_index": 0,
+    "layers": [
+     {
+      "layer": 0,
+      "sheet": "repentance-resources/data/gfx/items/pick ups/pickup_001_heart.png",
+      "crop": [
+       32,
+       0,
+       32,
+       32
+      ],
+      "pivot": [
+       16.0,
+       20.0
+      ],
+      "position": [
+       0.0,
+       -1.0
+      ]
+     }
+    ],
+    "layers_left_out": [],
+    "size": [
+     16,
+     14
+    ],
+    "origin_in_icon": [
+     9,
+     13
+    ],
+    "drawn_at": "100 % (no scaling); origin_in_icon = where the entity position sits inside the PNG"
+   },
+   "notes": []
+  },
+  {
+   "key": "5.10.3",
+   "group": "PICKUPS/hearts",
+   "type": 5,
+   "variant": 10,
+   "subtype": 3,
+   "spawn_subtype": 3,
+   "entities2_name": "Heart (soul)",
+   "names": {
+    "en": {
+     "text": "Soul Heart",
+     "source": "EID PickupNames[\"5.10.3\"] (en_us)",
+     "suggested": false,
+     "glyphs_missing": []
+    },
+    "ru": {
+     "text": "Синее сердце",
+     "source": "EID db (eid.bin ru, prize words row 13 and RED_TO {синее_сердце}); descriptions also say \"сердце души\"",
+     "suggested": false,
+     "glyphs_missing": []
+    },
+    "de": {
+     "text": "Seelenherz",
+     "source": "EID PickupNames[\"5.10.3\"] (de)",
+     "suggested": false,
+     "glyphs_missing": []
+    },
+    "es": {
+     "text": "Corazón de alma",
+     "source": "EID PickupNames[\"5.10.3\"] (spa)",
+     "suggested": false,
+     "glyphs_missing": []
+    },
+    "jp": {
+     "text": "青ハート",
+     "source": "EID PickupNames[\"5.10.3\"] (ja_jp)",
+     "suggested": false,
+     "glyphs_missing": []
+    },
+    "kr": {
+     "text": "소울하트",
+     "source": "EID PickupNames[\"5.10.3\"] (ko_kr)",
+     "suggested": false,
+     "glyphs_missing": []
+    },
+    "zh": {
+     "text": "魂心",
+     "source": "EID PickupNames[\"5.10.3\"] (zh_cn)",
+     "suggested": false,
+     "glyphs_missing": []
+    }
+   },
+   "icon": {
+    "file": "icons/5.10.3.png",
+    "anm2": "repentance-resources/data/gfx/005.013_heart (soul).anm2",
+    "animation": "Idle",
+    "frame_index": 0,
+    "layers": [
+     {
+      "layer": 0,
+      "sheet": "repentance-resources/data/gfx/items/pick ups/pickup_001_heart.png",
+      "crop": [
+       0,
+       32,
+       32,
+       32
+      ],
+      "pivot": [
+       16.0,
+       20.0
+      ],
+      "position": [
+       0.0,
+       -1.0
+      ]
+     }
+    ],
+    "layers_left_out": [],
+    "size": [
+     16,
+     13
+    ],
+    "origin_in_icon": [
+     9,
+     12
+    ],
+    "drawn_at": "100 % (no scaling); origin_in_icon = where the entity position sits inside the PNG"
+   },
+   "notes": []
+  },
+  {
+   "key": "5.10.4",
+   "group": "PICKUPS/hearts",
+   "type": 5,
+   "variant": 10,
+   "subtype": 4,
+   "spawn_subtype": 4,
+   "entities2_name": "Heart (eternal)",
+   "names": {
+    "en": {
+     "text": "Eternal Heart",
+     "source": "EID PickupNames[\"5.10.4\"] (en_us)",
+     "suggested": false,
+     "glyphs_missing": []
+    },
+    "ru": {
+     "text": "Вечное сердце",
+     "source": "EID ru descriptions: \"вечное сердце\"",
+     "suggested": false,
+     "glyphs_missing": []
+    },
+    "de": {
+     "text": "Ewiges Herz",
+     "source": "EID PickupNames[\"5.10.4\"] (de)",
+     "suggested": false,
+     "glyphs_missing": []
+    },
+    "es": {
+     "text": "Corazón eterno",
+     "source": "EID PickupNames[\"5.10.4\"] (spa)",
+     "suggested": false,
+     "glyphs_missing": []
+    },
+    "jp": {
+     "text": "白ハート",
+     "source": "EID PickupNames[\"5.10.4\"] (ja_jp)",
+     "suggested": false,
+     "glyphs_missing": []
+    },
+    "kr": {
+     "text": "이터널하트",
+     "source": "EID PickupNames[\"5.10.4\"] (ko_kr)",
+     "suggested": false,
+     "glyphs_missing": []
+    },
+    "zh": {
+     "text": "永恒之心",
+     "source": "EID PickupNames[\"5.10.4\"] (zh_cn)",
+     "suggested": false,
+     "glyphs_missing": []
+    }
+   },
+   "icon": {
+    "file": "icons/5.10.4.png",
+    "anm2": "repentance-resources/data/gfx/005.014_heart (eternal).anm2",
+    "animation": "Idle",
+    "frame_index": 0,
+    "layers": [
+     {
+      "layer": 0,
+      "sheet": "repentance-resources/data/gfx/items/pick ups/pickup_001_heart.png",
+      "crop": [
+       64,
+       32,
+       32,
+       32
+      ],
+      "pivot": [
+       16.0,
+       20.0
+      ],
+      "position": [
+       0.0,
+       -1.0
+      ]
+     }
+    ],
+    "layers_left_out": [],
+    "size": [
+     16,
+     14
+    ],
+    "origin_in_icon": [
+     9,
+     13
+    ],
+    "drawn_at": "100 % (no scaling); origin_in_icon = where the entity position sits inside the PNG"
+   },
+   "notes": []
+  },
+  {
+   "key": "5.10.5",
+   "group": "PICKUPS/hearts",
+   "type": 5,
+   "variant": 10,
+   "subtype": 5,
+   "spawn_subtype": 5,
+   "entities2_name": "Heart (double)",
+   "names": {
+    "en": {
+     "text": "Double Heart",
+     "source": "EID PickupNames[\"5.10.5\"] (en_us)",
+     "suggested": false,
+     "glyphs_missing": []
+    },
+    "ru": {
+     "text": "Двойное сердце",
+     "source": "SUGGESTED (uk_ua EID: \"Подвійне серце\")",
+     "suggested": true,
+     "glyphs_missing": []
+    },
+    "de": {
+     "text": "Doppeltes Herz",
+     "source": "EID PickupNames[\"5.10.5\"] (de)",
+     "suggested": false,
+     "glyphs_missing": []
+    },
+    "es": {
+     "text": "Corazón doble",
+     "source": "EID PickupNames[\"5.10.5\"] (spa)",
+     "suggested": false,
+     "glyphs_missing": []
+    },
+    "jp": {
+     "text": "ハートｘ2",
+     "source": "EID PickupNames[\"5.10.5\"] (ja_jp)",
+     "suggested": false,
+     "glyphs_missing": []
+    },
+    "kr": {
+     "text": "1+1 빨간하트",
+     "source": "EID PickupNames[\"5.10.5\"] (ko_kr)",
+     "suggested": false,
+     "glyphs_missing": []
+    },
+    "zh": {
+     "text": "双红心",
+     "source": "EID PickupNames[\"5.10.5\"] (zh_cn)",
+     "suggested": false,
+     "glyphs_missing": []
+    }
+   },
+   "icon": {
+    "file": "icons/5.10.5.png",
+    "anm2": "repentance-resources/data/gfx/005.015_double heart.anm2",
+    "animation": "Idle",
+    "frame_index": 0,
+    "layers": [
+     {
+      "layer": 0,
+      "sheet": "repentance-resources/data/gfx/items/pick ups/pickup_001_heart.png",
+      "crop": [
+       64,
+       64,
+       32,
+       32
+      ],
+      "pivot": [
+       16.0,
+       20.0
+      ],
+      "position": [
+       0.0,
+       -1.0
+      ]
+     }
+    ],
+    "layers_left_out": [],
+    "size": [
+     24,
+     14
+    ],
+    "origin_in_icon": [
+     12,
+     13
+    ],
+    "drawn_at": "100 % (no scaling); origin_in_icon = where the entity position sits inside the PNG"
+   },
+   "notes": []
+  },
+  {
+   "key": "5.10.6",
+   "group": "PICKUPS/hearts",
+   "type": 5,
+   "variant": 10,
+   "subtype": 6,
+   "spawn_subtype": 6,
+   "entities2_name": "Black Heart",
+   "names": {
+    "en": {
+     "text": "Black Heart",
+     "source": "EID PickupNames[\"5.10.6\"] (en_us)",
+     "suggested": false,
+     "glyphs_missing": []
+    },
+    "ru": {
+     "text": "Чёрное сердце",
+     "source": "EID db ru phrase 12 \"Чёрное Сердце\"; descriptions \"черное сердце\"",
+     "suggested": false,
+     "glyphs_missing": []
+    },
+    "de": {
+     "text": "Schwarzes Herz",
+     "source": "EID PickupNames[\"5.10.6\"] (de)",
+     "suggested": false,
+     "glyphs_missing": []
+    },
+    "es": {
+     "text": "Corazón negro",
+     "source": "EID PickupNames[\"5.10.6\"] (spa)",
+     "suggested": false,
+     "glyphs_missing": []
+    },
+    "jp": {
+     "text": "黒ハート",
+     "source": "EID PickupNames[\"5.10.6\"] (ja_jp)",
+     "suggested": false,
+     "glyphs_missing": []
+    },
+    "kr": {
+     "text": "블랙하트",
+     "source": "EID PickupNames[\"5.10.6\"] (ko_kr)",
+     "suggested": false,
+     "glyphs_missing": []
+    },
+    "zh": {
+     "text": "黑心",
+     "source": "EID PickupNames[\"5.10.6\"] (zh_cn)",
+     "suggested": false,
+     "glyphs_missing": []
+    }
+   },
+   "icon": {
+    "file": "icons/5.10.6.png",
+    "anm2": "repentance-resources/data/gfx/005.016_black heart.anm2",
+    "animation": "Idle",
+    "frame_index": 0,
+    "layers": [
+     {
+      "layer": 0,
+      "sheet": "repentance-resources/data/gfx/items/pick ups/pickup_001_heart.png",
+      "crop": [
+       0,
+       64,
+       32,
+       32
+      ],
+      "pivot": [
+       16.0,
+       20.0
+      ],
+      "position": [
+       0.0,
+       -1.0
+      ]
+     }
+    ],
+    "layers_left_out": [],
+    "size": [
+     16,
+     13
+    ],
+    "origin_in_icon": [
+     9,
+     12
+    ],
+    "drawn_at": "100 % (no scaling); origin_in_icon = where the entity position sits inside the PNG"
+   },
+   "notes": []
+  },
+  {
+   "key": "5.10.7",
+   "group": "PICKUPS/hearts",
+   "type": 5,
+   "variant": 10,
+   "subtype": 7,
+   "spawn_subtype": 7,
+   "entities2_name": "Gold Heart",
+   "names": {
+    "en": {
+     "text": "Gold Heart",
+     "source": "EID PickupNames[\"5.10.7\"] (en_us)",
+     "suggested": false,
+     "glyphs_missing": []
+    },
+    "ru": {
+     "text": "Золотое сердце",
+     "source": "EID ru descriptions: \"золотое сердце\" (1x)",
+     "suggested": false,
+     "glyphs_missing": []
+    },
+    "de": {
+     "text": "Goldenes Herz",
+     "source": "EID PickupNames[\"5.10.7\"] (de)",
+     "suggested": false,
+     "glyphs_missing": []
+    },
+    "es": {
+     "text": "Corazón de oro",
+     "source": "EID PickupNames[\"5.10.7\"] (spa)",
+     "suggested": false,
+     "glyphs_missing": []
+    },
+    "jp": {
+     "text": "金ハート",
+     "source": "EID PickupNames[\"5.10.7\"] (ja_jp)",
+     "suggested": false,
+     "glyphs_missing": []
+    },
+    "kr": {
+     "text": "황금하트",
+     "source": "EID PickupNames[\"5.10.7\"] (ko_kr)",
+     "suggested": false,
+     "glyphs_missing": []
+    },
+    "zh": {
+     "text": "金心",
+     "source": "EID PickupNames[\"5.10.7\"] (zh_cn)",
+     "suggested": false,
+     "glyphs_missing": []
+    }
+   },
+   "icon": {
+    "file": "icons/5.10.7.png",
+    "anm2": "repentance-resources/data/gfx/005.017_goldheart.anm2",
+    "animation": "Idle",
+    "frame_index": 0,
+    "layers": [
+     {
+      "layer": 0,
+      "sheet": "repentance-resources/data/gfx/items/pick ups/pickup_001_heart.png",
+      "crop": [
+       0,
+       96,
+       32,
+       32
+      ],
+      "pivot": [
+       16.0,
+       20.0
+      ],
+      "position": [
+       0.0,
+       -1.0
+      ]
+     }
+    ],
+    "layers_left_out": [],
+    "size": [
+     16,
+     13
+    ],
+    "origin_in_icon": [
+     9,
+     12
+    ],
+    "drawn_at": "100 % (no scaling); origin_in_icon = where the entity position sits inside the PNG"
+   },
+   "notes": []
+  },
+  {
+   "key": "5.10.8",
+   "group": "PICKUPS/hearts",
+   "type": 5,
+   "variant": 10,
+   "subtype": 8,
+   "spawn_subtype": 8,
+   "entities2_name": "Heart (half soul)",
+   "names": {
+    "en": {
+     "text": "Half Soul Heart",
+     "source": "EID PickupNames[\"5.10.8\"] (en_us)",
+     "suggested": false,
+     "glyphs_missing": []
+    },
+    "ru": {
+     "text": "Половина синего сердца",
+     "source": "EID ru descriptions: \"половину синего сердца\"",
+     "suggested": false,
+     "glyphs_missing": []
+    },
+    "de": {
+     "text": "Halbes Seelenherz",
+     "source": "EID PickupNames[\"5.10.8\"] (de)",
+     "suggested": false,
+     "glyphs_missing": []
+    },
+    "es": {
+     "text": "Medio corazón de alma",
+     "source": "EID PickupNames[\"5.10.8\"] (spa)",
+     "suggested": false,
+     "glyphs_missing": []
+    },
+    "jp": {
+     "text": "半青ハート",
+     "source": "EID PickupNames[\"5.10.8\"] (ja_jp)",
+     "suggested": false,
+     "glyphs_missing": []
+    },
+    "kr": {
+     "text": "소울하트 반칸",
+     "source": "EID PickupNames[\"5.10.8\"] (ko_kr)",
+     "suggested": false,
+     "glyphs_missing": []
+    },
+    "zh": {
+     "text": "半魂心",
+     "source": "EID PickupNames[\"5.10.8\"] (zh_cn)",
+     "suggested": false,
+     "glyphs_missing": []
+    }
+   },
+   "icon": {
+    "file": "icons/5.10.8.png",
+    "anm2": "repentance-resources/data/gfx/005.018_heart (halfsoul).anm2",
+    "animation": "Idle",
+    "frame_index": 0,
+    "layers": [
+     {
+      "layer": 0,
+      "sheet": "repentance-resources/data/gfx/items/pick ups/pickup_001_heart.png",
+      "crop": [
+       32,
+       32,
+       32,
+       32
+      ],
+      "pivot": [
+       16.0,
+       20.0
+      ],
+      "position": [
+       0.0,
+       -1.0
+      ]
+     }
+    ],
+    "layers_left_out": [],
+    "size": [
+     16,
+     14
+    ],
+    "origin_in_icon": [
+     9,
+     13
+    ],
+    "drawn_at": "100 % (no scaling); origin_in_icon = where the entity position sits inside the PNG"
+   },
+   "notes": []
+  },
+  {
+   "key": "5.10.9",
+   "group": "PICKUPS/hearts",
+   "type": 5,
+   "variant": 10,
+   "subtype": 9,
+   "spawn_subtype": 9,
+   "entities2_name": "Scared Heart",
+   "names": {
+    "en": {
+     "text": "Scared Heart",
+     "source": "EID PickupNames[\"5.10.9\"] (en_us)",
+     "suggested": false,
+     "glyphs_missing": []
+    },
+    "ru": {
+     "text": "Пугливое сердце",
+     "source": "SUGGESTED (game ru uses \"пугливые враги\"; uk \"Злякане серце\")",
+     "suggested": true,
+     "glyphs_missing": []
+    },
+    "de": {
+     "text": "Verängstigtes Herz",
+     "source": "EID PickupNames[\"5.10.9\"] (de)",
+     "suggested": false,
+     "glyphs_missing": []
+    },
+    "es": {
+     "text": "Corazón asustado",
+     "source": "EID PickupNames[\"5.10.9\"] (spa)",
+     "suggested": false,
+     "glyphs_missing": []
+    },
+    "jp": {
+     "text": "脅えるハート",
+     "source": "EID PickupNames[\"5.10.9\"] (ja_jp)",
+     "suggested": false,
+     "glyphs_missing": []
+    },
+    "kr": {
+     "text": "도망가는 빨간하트",
+     "source": "EID PickupNames[\"5.10.9\"] (ko_kr)",
+     "suggested": false,
+     "glyphs_missing": []
+    },
+    "zh": {
+     "text": "胆小的红心",
+     "source": "EID PickupNames[\"5.10.9\"] (zh_cn)",
+     "suggested": false,
+     "glyphs_missing": []
+    }
+   },
+   "icon": {
+    "file": "icons/5.10.9.png",
+    "anm2": "repentance-resources/data/gfx/005.020_scared heart.anm2",
+    "animation": "Idle",
+    "frame_index": 0,
+    "layers": [
+     {
+      "layer": 0,
+      "sheet": "repentance-resources/data/gfx/items/pick ups/pickup_001_heart.png",
+      "crop": [
+       0,
+       0,
+       32,
+       32
+      ],
+      "pivot": [
+       16.0,
+       20.0
+      ],
+      "position": [
+       0.0,
+       -1.0
+      ]
+     }
+    ],
+    "layers_left_out": [],
+    "size": [
+     16,
+     13
+    ],
+    "origin_in_icon": [
+     9,
+     12
+    ],
+    "drawn_at": "100 % (no scaling); origin_in_icon = where the entity position sits inside the PNG"
+   },
+   "notes": []
+  },
+  {
+   "key": "5.10.10",
+   "group": "PICKUPS/hearts",
+   "type": 5,
+   "variant": 10,
+   "subtype": 10,
+   "spawn_subtype": 10,
+   "entities2_name": "Blended Heart",
+   "names": {
+    "en": {
+     "text": "Blended Heart",
+     "source": "EID PickupNames[\"5.10.10\"] (en_us)",
+     "suggested": false,
+     "glyphs_missing": []
+    },
+    "ru": {
+     "text": "Смешанное сердце",
+     "source": "SUGGESTED (uk \"Змішане серце\", de \"Gemischtes Herz\")",
+     "suggested": true,
+     "glyphs_missing": []
+    },
+    "de": {
+     "text": "Gemischtes Herz",
+     "source": "EID PickupNames[\"5.10.10\"] (de)",
+     "suggested": false,
+     "glyphs_missing": []
+    },
+    "es": {
+     "text": "Corazón mezclado",
+     "source": "EID PickupNames[\"5.10.10\"] (spa)",
+     "suggested": false,
+     "glyphs_missing": []
+    },
+    "jp": {
+     "text": "混合ハート",
+     "source": "EID PickupNames[\"5.10.10\"] (ja_jp)",
+     "suggested": false,
+     "glyphs_missing": []
+    },
+    "kr": {
+     "text": "블렌드하트",
+     "source": "EID PickupNames[\"5.10.10\"] (ko_kr)",
+     "suggested": false,
+     "glyphs_missing": []
+    },
+    "zh": {
+     "text": "混合心",
+     "source": "EID PickupNames[\"5.10.10\"] (zh_cn)",
+     "suggested": false,
+     "glyphs_missing": []
+    }
+   },
+   "icon": {
+    "file": "icons/5.10.10.png",
+    "anm2": "repentance-resources/data/gfx/005.019_blended heart.anm2",
+    "animation": "Idle",
+    "frame_index": 0,
+    "layers": [
+     {
+      "layer": 0,
+      "sheet": "repentance-resources/data/gfx/items/pick ups/pickup_001_heart.png",
+      "crop": [
+       32,
+       96,
+       32,
+       32
+      ],
+      "pivot": [
+       16.0,
+       20.0
+      ],
+      "position": [
+       0.0,
+       -1.0
+      ]
+     }
+    ],
+    "layers_left_out": [],
+    "size": [
+     16,
+     13
+    ],
+    "origin_in_icon": [
+     9,
+     12
+    ],
+    "drawn_at": "100 % (no scaling); origin_in_icon = where the entity position sits inside the PNG"
+   },
+   "notes": []
+  },
+  {
+   "key": "5.10.11",
+   "group": "PICKUPS/hearts",
+   "type": 5,
+   "variant": 10,
+   "subtype": 11,
+   "spawn_subtype": 11,
+   "entities2_name": "Bone Heart",
+   "names": {
+    "en": {
+     "text": "Bone Heart",
+     "source": "EID PickupNames[\"5.10.11\"] (en_us)",
+     "suggested": false,
+     "glyphs_missing": []
+    },
+    "ru": {
+     "text": "Костяное сердце",
+     "source": "EID ru descriptions + RED_TO {костяное_сердце}",
+     "suggested": false,
+     "glyphs_missing": []
+    },
+    "de": {
+     "text": "Knochenherz",
+     "source": "EID PickupNames[\"5.10.11\"] (de)",
+     "suggested": false,
+     "glyphs_missing": []
+    },
+    "es": {
+     "text": "Corazón de hueso",
+     "source": "EID PickupNames[\"5.10.11\"] (spa)",
+     "suggested": false,
+     "glyphs_missing": []
+    },
+    "jp": {
+     "text": "骨ハート",
+     "source": "EID PickupNames[\"5.10.11\"] (ja_jp)",
+     "suggested": false,
+     "glyphs_missing": []
+    },
+    "kr": {
+     "text": "뼈하트",
+     "source": "EID PickupNames[\"5.10.11\"] (ko_kr)",
+     "suggested": false,
+     "glyphs_missing": []
+    },
+    "zh": {
+     "text": "骨心",
+     "source": "EID PickupNames[\"5.10.11\"] (zh_cn)",
+     "suggested": false,
+     "glyphs_missing": []
+    }
+   },
+   "icon": {
+    "file": "icons/5.10.11.png",
+    "anm2": "repentance-resources/data/gfx/005.01a_bone heart.anm2",
+    "animation": "Idle",
+    "frame_index": 0,
+    "layers": [
+     {
+      "layer": 0,
+      "sheet": "repentance-resources/data/gfx/items/pick ups/pickup_001_heart.png",
+      "crop": [
+       64,
+       96,
+       32,
+       32
+      ],
+      "pivot": [
+       16.0,
+       20.0
+      ],
+      "position": [
+       0.0,
+       -1.0
+      ]
+     }
+    ],
+    "layers_left_out": [],
+    "size": [
+     16,
+     13
+    ],
+    "origin_in_icon": [
+     9,
+     12
+    ],
+    "drawn_at": "100 % (no scaling); origin_in_icon = where the entity position sits inside the PNG"
+   },
+   "notes": []
+  },
+  {
+   "key": "5.10.12",
+   "group": "PICKUPS/hearts",
+   "type": 5,
+   "variant": 10,
+   "subtype": 12,
+   "spawn_subtype": 12,
+   "entities2_name": "Rotten Heart",
+   "names": {
+    "en": {
+     "text": "Rotten Heart",
+     "source": "EID PickupNames[\"5.10.12\"] (en_us)",
+     "suggested": false,
+     "glyphs_missing": []
+    },
+    "ru": {
+     "text": "Гнилое сердце",
+     "source": "EID ru descriptions: \"гнилое сердце\"",
+     "suggested": false,
+     "glyphs_missing": []
+    },
+    "de": {
+     "text": "Faules Herz",
+     "source": "EID PickupNames[\"5.10.12\"] (de)",
+     "suggested": false,
+     "glyphs_missing": []
+    },
+    "es": {
+     "text": "Corazón podrido",
+     "source": "EID PickupNames[\"5.10.12\"] (spa)",
+     "suggested": false,
+     "glyphs_missing": []
+    },
+    "jp": {
+     "text": "腐ったハート",
+     "source": "EID PickupNames[\"5.10.12\"] (ja_jp)",
+     "suggested": false,
+     "glyphs_missing": []
+    },
+    "kr": {
+     "text": "썩은하트",
+     "source": "EID PickupNames[\"5.10.12\"] (ko_kr)",
+     "suggested": false,
+     "glyphs_missing": []
+    },
+    "zh": {
+     "text": "腐心",
+     "source": "EID PickupNames[\"5.10.12\"] (zh_cn)",
+     "suggested": false,
+     "glyphs_missing": []
+    }
+   },
+   "icon": {
+    "file": "icons/5.10.12.png",
+    "anm2": "repentance-resources/data/gfx/005.01b_rotten heart.anm2",
+    "animation": "Idle",
+    "frame_index": 0,
+    "layers": [
+     {
+      "layer": 0,
+      "sheet": "repentance-resources/data/gfx/items/pick ups/pickup_001_heart2.png",
+      "crop": [
+       0,
+       0,
+       32,
+       32
+      ],
+      "pivot": [
+       16.0,
+       20.0
+      ],
+      "position": [
+       0.0,
+       -1.0
+      ]
+     }
+    ],
+    "layers_left_out": [],
+    "size": [
+     16,
+     13
+    ],
+    "origin_in_icon": [
+     9,
+     12
+    ],
+    "drawn_at": "100 % (no scaling); origin_in_icon = where the entity position sits inside the PNG"
+   },
+   "notes": []
+  },
+  {
+   "key": "5.90.1",
+   "group": "PICKUPS/batteries",
+   "type": 5,
+   "variant": 90,
+   "subtype": 1,
+   "spawn_subtype": 1,
+   "entities2_name": "Lil' Battery",
+   "names": {
+    "en": {
+     "text": "Lil' Battery",
+     "source": "EID PickupNames[\"5.90.1\"] (en_us)",
+     "suggested": false,
+     "glyphs_missing": []
+    },
+    "ru": {
+     "text": "Маленькая батарейка",
+     "source": "SUGGESTED (game ru \"Батарейка\"; uk \"Мала батарейка\")",
+     "suggested": true,
+     "glyphs_missing": []
+    },
+    "de": {
+     "text": "Kleine Batterie",
+     "source": "EID PickupNames[\"5.90.1\"] (de)",
+     "suggested": false,
+     "glyphs_missing": []
+    },
+    "es": {
+     "text": "Batería pequeña",
+     "source": "EID PickupNames[\"5.90.1\"] (spa)",
+     "suggested": false,
+     "glyphs_missing": []
+    },
+    "jp": {
+     "text": "電池",
+     "source": "EID PickupNames[\"5.90.1\"] (ja_jp)",
+     "suggested": false,
+     "glyphs_missing": []
+    },
+    "kr": {
+     "text": "리틀 배터리",
+     "source": "EID PickupNames[\"5.90.1\"] (ko_kr)",
+     "suggested": false,
+     "glyphs_missing": []
+    },
+    "zh": {
+     "text": "小电池",
+     "source": "EID PickupNames[\"5.90.1\"] (zh_cn)",
+     "suggested": false,
+     "glyphs_missing": []
+    }
+   },
+   "icon": {
+    "file": "icons/5.90.1.png",
+    "anm2": "repentance-resources/data/gfx/005.090_littlebattery.anm2",
+    "animation": "Idle",
+    "frame_index": 0,
+    "layers": [
+     {
+      "layer": 0,
+      "sheet": "repentance-resources/data/gfx/items/pick ups/pickup_018_littlebattery.png",
+      "crop": [
+       0,
+       0,
+       32,
+       32
+      ],
+      "pivot": [
+       16.0,
+       16.0
+      ],
+      "position": [
+       0.0,
+       -6.0
+      ]
+     }
+    ],
+    "layers_left_out": [],
+    "size": [
+     14,
+     17
+    ],
+    "origin_in_icon": [
+     7,
+     15
+    ],
+    "drawn_at": "100 % (no scaling); origin_in_icon = where the entity position sits inside the PNG"
+   },
+   "notes": []
+  },
+  {
+   "key": "5.90.2",
+   "group": "PICKUPS/batteries",
+   "type": 5,
+   "variant": 90,
+   "subtype": 2,
+   "spawn_subtype": 2,
+   "entities2_name": "Micro Battery",
+   "names": {
+    "en": {
+     "text": "Micro Battery",
+     "source": "EID PickupNames[\"5.90.2\"] (en_us)",
+     "suggested": false,
+     "glyphs_missing": []
+    },
+    "ru": {
+     "text": "Микробатарейка",
+     "source": "EID ru descriptions: \"микро батарейку\"",
+     "suggested": false,
+     "glyphs_missing": []
+    },
+    "de": {
+     "text": "Mikrobatterie",
+     "source": "EID PickupNames[\"5.90.2\"] (de)",
+     "suggested": false,
+     "glyphs_missing": []
+    },
+    "es": {
+     "text": "Mini Batería",
+     "source": "EID PickupNames[\"5.90.2\"] (spa)",
+     "suggested": false,
+     "glyphs_missing": []
+    },
+    "jp": {
+     "text": "ミニ電池",
+     "source": "EID PickupNames[\"5.90.2\"] (ja_jp)",
+     "suggested": false,
+     "glyphs_missing": []
+    },
+    "kr": {
+     "text": "마이크로 배터리",
+     "source": "EID PickupNames[\"5.90.2\"] (ko_kr)",
+     "suggested": false,
+     "glyphs_missing": []
+    },
+    "zh": {
+     "text": "微型电池",
+     "source": "EID PickupNames[\"5.90.2\"] (zh_cn)",
+     "suggested": false,
+     "glyphs_missing": []
+    }
+   },
+   "icon": {
+    "file": "icons/5.90.2.png",
+    "anm2": "repentance-resources/data/gfx/005.090_microbattery.anm2",
+    "animation": "Idle",
+    "frame_index": 0,
+    "layers": [
+     {
+      "layer": 0,
+      "sheet": "repentance-resources/data/gfx/items/pick ups/pickup_018_littlebattery.png",
+      "crop": [
+       32,
+       0,
+       32,
+       32
+      ],
+      "pivot": [
+       16.0,
+       16.0
+      ],
+      "position": [
+       0.0,
+       -6.0
+      ]
+     }
+    ],
+    "layers_left_out": [],
+    "size": [
+     12,
+     14
+    ],
+    "origin_in_icon": [
+     6,
+     13
+    ],
+    "drawn_at": "100 % (no scaling); origin_in_icon = where the entity position sits inside the PNG"
+   },
+   "notes": []
+  },
+  {
+   "key": "5.90.3",
+   "group": "PICKUPS/batteries",
+   "type": 5,
+   "variant": 90,
+   "subtype": 3,
+   "spawn_subtype": 3,
+   "entities2_name": "Mega Battery",
+   "names": {
+    "en": {
+     "text": "Mega Battery",
+     "source": "EID PickupNames[\"5.90.3\"] (en_us)",
+     "suggested": false,
+     "glyphs_missing": []
+    },
+    "ru": {
+     "text": "Мегабатарейка",
+     "source": "SUGGESTED (uk \"Мегабатарейка\")",
+     "suggested": true,
+     "glyphs_missing": []
+    },
+    "de": {
+     "text": "Megabatterie",
+     "source": "EID PickupNames[\"5.90.3\"] (de)",
+     "suggested": false,
+     "glyphs_missing": []
+    },
+    "es": {
+     "text": "Mega batería",
+     "source": "EID PickupNames[\"5.90.3\"] (spa)",
+     "suggested": false,
+     "glyphs_missing": []
+    },
+    "jp": {
+     "text": "メガ電池",
+     "source": "EID PickupNames[\"5.90.3\"] (ja_jp)",
+     "suggested": false,
+     "glyphs_missing": []
+    },
+    "kr": {
+     "text": "메가 배터리",
+     "source": "EID PickupNames[\"5.90.3\"] (ko_kr)",
+     "suggested": false,
+     "glyphs_missing": []
+    },
+    "zh": {
+     "text": "超级电池",
+     "source": "EID PickupNames[\"5.90.3\"] (zh_cn)",
+     "suggested": false,
+     "glyphs_missing": []
+    }
+   },
+   "icon": {
+    "file": "icons/5.90.3.png",
+    "anm2": "repentance-resources/data/gfx/005.090_megabattery.anm2",
+    "animation": "Idle",
+    "frame_index": 0,
+    "layers": [
+     {
+      "layer": 0,
+      "sheet": "repentance-resources/data/gfx/items/pick ups/pickup_018_megabattery.png",
+      "crop": [
+       32,
+       0,
+       32,
+       32
+      ],
+      "pivot": [
+       16.0,
+       16.0
+      ],
+      "position": [
+       0.0,
+       -6.0
+      ]
+     }
+    ],
+    "layers_left_out": [
+     {
+      "layer": 1,
+      "sheet": "pickup_018_megabattery.png"
+     }
+    ],
+    "size": [
+     16,
+     20
+    ],
+    "origin_in_icon": [
+     8,
+     18
+    ],
+    "drawn_at": "100 % (no scaling); origin_in_icon = where the entity position sits inside the PNG"
+   },
+   "notes": []
+  },
+  {
+   "key": "5.90.4",
+   "group": "PICKUPS/batteries",
+   "type": 5,
+   "variant": 90,
+   "subtype": 4,
+   "spawn_subtype": 4,
+   "entities2_name": "Golden Battery",
+   "names": {
+    "en": {
+     "text": "Golden Battery",
+     "source": "EID PickupNames[\"5.90.4\"] (en_us)",
+     "suggested": false,
+     "glyphs_missing": []
+    },
+    "ru": {
+     "text": "Золотая батарейка",
+     "source": "SUGGESTED (uk \"Золота батарейка\")",
+     "suggested": true,
+     "glyphs_missing": []
+    },
+    "de": {
+     "text": "Goldene Batterie",
+     "source": "EID PickupNames[\"5.90.4\"] (de)",
+     "suggested": false,
+     "glyphs_missing": []
+    },
+    "es": {
+     "text": "Batería dorada",
+     "source": "EID PickupNames[\"5.90.4\"] (spa)",
+     "suggested": false,
+     "glyphs_missing": []
+    },
+    "jp": {
+     "text": "金電池",
+     "source": "EID PickupNames[\"5.90.4\"] (ja_jp)",
+     "suggested": false,
+     "glyphs_missing": []
+    },
+    "kr": {
+     "text": "황금 배터리",
+     "source": "EID PickupNames[\"5.90.4\"] (ko_kr)",
+     "suggested": false,
+     "glyphs_missing": []
+    },
+    "zh": {
+     "text": "金电池",
+     "source": "EID PickupNames[\"5.90.4\"] (zh_cn)",
+     "suggested": false,
+     "glyphs_missing": []
+    }
+   },
+   "icon": {
+    "file": "icons/5.90.4.png",
+    "anm2": "repentance-resources/data/gfx/005.090_golden battery.anm2",
+    "animation": "Idle",
+    "frame_index": 0,
+    "layers": [
+     {
+      "layer": 0,
+      "sheet": "repentance-resources/data/gfx/items/pick ups/pickup_goldenbattery.png",
+      "crop": [
+       0,
+       0,
+       32,
+       32
+      ],
+      "pivot": [
+       16.0,
+       16.0
+      ],
+      "position": [
+       0.0,
+       -6.0
+      ]
+     }
+    ],
+    "layers_left_out": [
+     {
+      "layer": 1,
+      "sheet": "pickup_goldenbattery.png"
+     }
+    ],
+    "size": [
+     14,
+     20
+    ],
+    "origin_in_icon": [
+     7,
+     18
+    ],
+    "drawn_at": "100 % (no scaling); origin_in_icon = where the entity position sits inside the PNG"
+   },
+   "notes": []
+  },
+  {
+   "key": "5.69.1",
+   "group": "LOOT/sacks",
+   "type": 5,
+   "variant": 69,
+   "subtype": 1,
+   "spawn_subtype": 1,
+   "entities2_name": "Grab Bag",
+   "names": {
+    "en": {
+     "text": "Grab Bag",
+     "source": "EID PickupNames[\"5.69.1\"] (en_us)",
+     "suggested": false,
+     "glyphs_missing": []
+    },
+    "ru": {
+     "text": "Мешочек",
+     "source": "EID ru descriptions \"мешочек\" (15x); game ru SACK_OF_SACKS \"Даёт мешочки\"",
+     "suggested": false,
+     "glyphs_missing": []
+    },
+    "de": {
+     "text": "Sack",
+     "source": "EID PickupNames[\"5.69.1\"] (de)",
+     "suggested": false,
+     "glyphs_missing": []
+    },
+    "es": {
+     "text": "Saco",
+     "source": "EID PickupNames[\"5.69.1\"] (spa)",
+     "suggested": false,
+     "glyphs_missing": []
+    },
+    "jp": {
+     "text": "サック",
+     "source": "EID PickupNames[\"5.69.1\"] (ja_jp)",
+     "suggested": false,
+     "glyphs_missing": []
+    },
+    "kr": {
+     "text": "자루",
+     "source": "EID PickupNames[\"5.69.1\"] (ko_kr)",
+     "suggested": false,
+     "glyphs_missing": []
+    },
+    "zh": {
+     "text": "福袋",
+     "source": "EID PickupNames[\"5.69.1\"] (zh_cn)",
+     "suggested": false,
+     "glyphs_missing": []
+    }
+   },
+   "icon": {
+    "file": "icons/5.69.1.png",
+    "anm2": "repentance-resources/data/gfx/005.069_grabbag.anm2",
+    "animation": "Idle",
+    "frame_index": 0,
+    "layers": [
+     {
+      "layer": 0,
+      "sheet": "repentance-resources/data/gfx/items/pick ups/grabbag.png",
+      "crop": [
+       0,
+       0,
+       32,
+       32
+      ],
+      "pivot": [
+       16.0,
+       24.0
+      ],
+      "position": [
+       0.0,
+       2.0
+      ]
+     }
+    ],
+    "layers_left_out": [],
+    "size": [
+     20,
+     22
+    ],
+    "origin_in_icon": [
+     10,
+     18
+    ],
+    "drawn_at": "100 % (no scaling); origin_in_icon = where the entity position sits inside the PNG"
+   },
+   "notes": []
+  },
+  {
+   "key": "5.69.2",
+   "group": "LOOT/sacks",
+   "type": 5,
+   "variant": 69,
+   "subtype": 2,
+   "spawn_subtype": 2,
+   "entities2_name": "Black Sack",
+   "names": {
+    "en": {
+     "text": "Black Sack",
+     "source": "EID PickupNames[\"5.69.2\"] (en_us)",
+     "suggested": false,
+     "glyphs_missing": []
+    },
+    "ru": {
+     "text": "Чёрный мешочек",
+     "source": "SUGGESTED (uk \"Чорний мішечок\")",
+     "suggested": true,
+     "glyphs_missing": []
+    },
+    "de": {
+     "text": "Schwarzer Sack",
+     "source": "EID PickupNames[\"5.69.2\"] (de)",
+     "suggested": false,
+     "glyphs_missing": []
+    },
+    "es": {
+     "text": "Saco negro",
+     "source": "EID PickupNames[\"5.69.2\"] (spa)",
+     "suggested": false,
+     "glyphs_missing": []
+    },
+    "jp": {
+     "text": "黒サック",
+     "source": "EID PickupNames[\"5.69.2\"] (ja_jp)",
+     "suggested": false,
+     "glyphs_missing": []
+    },
+    "kr": {
+     "text": "검은자루",
+     "source": "EID PickupNames[\"5.69.2\"] (ko_kr)",
+     "suggested": false,
+     "glyphs_missing": []
+    },
+    "zh": {
+     "text": "黑福袋",
+     "source": "EID PickupNames[\"5.69.2\"] (zh_cn)",
+     "suggested": false,
+     "glyphs_missing": []
+    }
+   },
+   "icon": {
+    "file": "icons/5.69.2.png",
+    "anm2": "repentance-resources/data/gfx/005.069_black sack.anm2",
+    "animation": "Idle",
+    "frame_index": 0,
+    "layers": [
+     {
+      "layer": 0,
+      "sheet": "repentance-resources/data/gfx/items/pick ups/black_sack.png",
+      "crop": [
+       0,
+       0,
+       32,
+       32
+      ],
+      "pivot": [
+       16.0,
+       24.0
+      ],
+      "position": [
+       0.0,
+       2.0
+      ]
+     }
+    ],
+    "layers_left_out": [],
+    "size": [
+     20,
+     22
+    ],
+    "origin_in_icon": [
+     10,
+     18
+    ],
+    "drawn_at": "100 % (no scaling); origin_in_icon = where the entity position sits inside the PNG"
+   },
+   "notes": []
+  },
+  {
+   "key": "5.50",
+   "group": "LOOT/chests",
+   "type": 5,
+   "variant": 50,
+   "subtype": null,
+   "spawn_subtype": 1,
+   "entities2_name": "Chest",
+   "names": {
+    "en": {
+     "text": "Chest",
+     "source": "EID PickupNames[\"5.50\"] (en_us)",
+     "suggested": false,
+     "glyphs_missing": []
+    },
+    "ru": {
+     "text": "Сундук",
+     "source": "game ru stringtable CHEST_NAME \"Сундук\" (the floor; same word)",
+     "suggested": false,
+     "glyphs_missing": []
+    },
+    "de": {
+     "text": "Truhe",
+     "source": "EID PickupNames[\"5.50\"] (de)",
+     "suggested": false,
+     "glyphs_missing": []
+    },
+    "es": {
+     "text": "Cofre",
+     "source": "EID PickupNames[\"5.50\"] (spa)",
+     "suggested": false,
+     "glyphs_missing": []
+    },
+    "jp": {
+     "text": "宝箱",
+     "source": "EID PickupNames[\"5.50\"] (ja_jp)",
+     "suggested": false,
+     "glyphs_missing": []
+    },
+    "kr": {
+     "text": "상자",
+     "source": "EID PickupNames[\"5.50\"] (ko_kr)",
+     "suggested": false,
+     "glyphs_missing": []
+    },
+    "zh": {
+     "text": "箱子",
+     "source": "EID PickupNames[\"5.50\"] (zh_cn)",
+     "suggested": false,
+     "glyphs_missing": []
+    }
+   },
+   "icon": {
+    "file": "icons/5.50.1.png",
+    "anm2": "repentance-resources/data/gfx/005.050_chest.anm2",
+    "animation": "Idle",
+    "frame_index": 0,
+    "layers": [
+     {
+      "layer": 0,
+      "sheet": "repentance-resources/data/gfx/items/pick ups/pickup_005_chests.png",
+      "crop": [
+       0,
+       48,
+       32,
+       32
+      ],
+      "pivot": [
+       16.0,
+       32.0
+      ],
+      "position": [
+       0.0,
+       8.0
+      ]
+     }
+    ],
+    "layers_left_out": [
+     {
+      "layer": 1,
+      "sheet": "shadow.png"
+     }
+    ],
+    "size": [
+     30,
+     23
+    ],
+    "origin_in_icon": [
+     15,
+     19
+    ],
+    "drawn_at": "100 % (no scaling); origin_in_icon = where the entity position sits inside the PNG"
+   },
+   "notes": [
+    "layer 1 (shadow.png at ~30 %) and any glow left out"
+   ]
+  },
+  {
+   "key": "5.51",
+   "group": "LOOT/chests",
+   "type": 5,
+   "variant": 51,
+   "subtype": null,
+   "spawn_subtype": 1,
+   "entities2_name": "Bomb Chest",
+   "names": {
+    "en": {
+     "text": "Bomb Chest",
+     "source": "EID PickupNames[\"5.51\"] (en_us)",
+     "suggested": false,
+     "glyphs_missing": []
+    },
+    "ru": {
+     "text": "Каменный сундук",
+     "source": "SUGGESTED (es/jp/kr/zh EID all say \"stone chest\"; uk \"Кам'яна скриня\")",
+     "suggested": true,
+     "glyphs_missing": []
+    },
+    "de": {
+     "text": "Bombentruhe",
+     "source": "EID PickupNames[\"5.51\"] (de)",
+     "suggested": false,
+     "glyphs_missing": []
+    },
+    "es": {
+     "text": "Cofre de piedra",
+     "source": "EID PickupNames[\"5.51\"] (spa)",
+     "suggested": false,
+     "glyphs_missing": []
+    },
+    "jp": {
+     "text": "石宝箱",
+     "source": "EID PickupNames[\"5.51\"] (ja_jp)",
+     "suggested": false,
+     "glyphs_missing": []
+    },
+    "kr": {
+     "text": "돌상자",
+     "source": "EID PickupNames[\"5.51\"] (ko_kr)",
+     "suggested": false,
+     "glyphs_missing": []
+    },
+    "zh": {
+     "text": "石头箱子",
+     "source": "EID PickupNames[\"5.51\"] (zh_cn)",
+     "suggested": false,
+     "glyphs_missing": []
+    }
+   },
+   "icon": {
+    "file": "icons/5.51.1.png",
+    "anm2": "repentance-resources/data/gfx/005.051_bombchest.anm2",
+    "animation": "Idle",
+    "frame_index": 0,
+    "layers": [
+     {
+      "layer": 0,
+      "sheet": "repentance-resources/data/gfx/items/pick ups/pickup_005_chests.png",
+      "crop": [
+       192,
+       224,
+       32,
+       32
+      ],
+      "pivot": [
+       16.0,
+       32.0
+      ],
+      "position": [
+       0.0,
+       8.0
+      ]
+     }
+    ],
+    "layers_left_out": [
+     {
+      "layer": 1,
+      "sheet": "shadow.png"
+     }
+    ],
+    "size": [
+     30,
+     23
+    ],
+    "origin_in_icon": [
+     15,
+     19
+    ],
+    "drawn_at": "100 % (no scaling); origin_in_icon = where the entity position sits inside the PNG"
+   },
+   "notes": [
+    "layer 1 (shadow.png at ~30 %) and any glow left out"
+   ]
+  },
+  {
+   "key": "5.52",
+   "group": "LOOT/chests",
+   "type": 5,
+   "variant": 52,
+   "subtype": null,
+   "spawn_subtype": 1,
+   "entities2_name": "Spiked Chest",
+   "names": {
+    "en": {
+     "text": "Spiked Chest",
+     "source": "EID PickupNames[\"5.52\"] (en_us)",
+     "suggested": false,
+     "glyphs_missing": []
+    },
+    "ru": {
+     "text": "Шипастый сундук",
+     "source": "EID ru descriptions: \"шипастых сундуков\"",
+     "suggested": false,
+     "glyphs_missing": []
+    },
+    "de": {
+     "text": "Stacheltruhe",
+     "source": "EID PickupNames[\"5.52\"] (de)",
+     "suggested": false,
+     "glyphs_missing": []
+    },
+    "es": {
+     "text": "Cofre con espinas",
+     "source": "EID PickupNames[\"5.52\"] (spa)",
+     "suggested": false,
+     "glyphs_missing": []
+    },
+    "jp": {
+     "text": "トゲ付き宝箱",
+     "source": "EID PickupNames[\"5.52\"] (ja_jp)",
+     "suggested": false,
+     "glyphs_missing": []
+    },
+    "kr": {
+     "text": "가시상자",
+     "source": "EID PickupNames[\"5.52\"] (ko_kr)",
+     "suggested": false,
+     "glyphs_missing": []
+    },
+    "zh": {
+     "text": "刺箱子",
+     "source": "EID PickupNames[\"5.52\"] (zh_cn)",
+     "suggested": false,
+     "glyphs_missing": []
+    }
+   },
+   "icon": {
+    "file": "icons/5.52.1.png",
+    "anm2": "repentance-resources/data/gfx/005.052_spikedchest.anm2",
+    "animation": "Idle",
+    "frame_index": 0,
+    "layers": [
+     {
+      "layer": 0,
+      "sheet": "repentance-resources/data/gfx/items/pick ups/pickup_005_chests.png",
+      "crop": [
+       64,
+       48,
+       34,
+       32
+      ],
+      "pivot": [
+       17.0,
+       32.0
+      ],
+      "position": [
+       0.0,
+       8.0
+      ]
+     }
+    ],
+    "layers_left_out": [
+     {
+      "layer": 1,
+      "sheet": "shadow.png"
+     }
+    ],
+    "size": [
+     34,
+     23
+    ],
+    "origin_in_icon": [
+     17,
+     19
+    ],
+    "drawn_at": "100 % (no scaling); origin_in_icon = where the entity position sits inside the PNG"
+   },
+   "notes": [
+    "layer 1 (shadow.png at ~30 %) and any glow left out"
+   ]
+  },
+  {
+   "key": "5.53",
+   "group": "LOOT/chests",
+   "type": 5,
+   "variant": 53,
+   "subtype": null,
+   "spawn_subtype": 1,
+   "entities2_name": "Eternal Chest",
+   "names": {
+    "en": {
+     "text": "Eternal Chest",
+     "source": "EID PickupNames[\"5.53\"] (en_us)",
+     "suggested": false,
+     "glyphs_missing": []
+    },
+    "ru": {
+     "text": "Вечный сундук",
+     "source": "SUGGESTED (uk \"Вічна скриня\")",
+     "suggested": true,
+     "glyphs_missing": []
+    },
+    "de": {
+     "text": "Ewige Truhe",
+     "source": "EID PickupNames[\"5.53\"] (de)",
+     "suggested": false,
+     "glyphs_missing": []
+    },
+    "es": {
+     "text": "Cofre eterno",
+     "source": "EID PickupNames[\"5.53\"] (spa)",
+     "suggested": false,
+     "glyphs_missing": []
+    },
+    "jp": {
+     "text": "白宝箱",
+     "source": "EID PickupNames[\"5.53\"] (ja_jp)",
+     "suggested": false,
+     "glyphs_missing": []
+    },
+    "kr": {
+     "text": "하얀상자",
+     "source": "EID PickupNames[\"5.53\"] (ko_kr)",
+     "suggested": false,
+     "glyphs_missing": []
+    },
+    "zh": {
+     "text": "永恒箱子",
+     "source": "EID PickupNames[\"5.53\"] (zh_cn)",
+     "suggested": false,
+     "glyphs_missing": []
+    }
+   },
+   "icon": {
+    "file": "icons/5.53.1.png",
+    "anm2": "repentance-resources/data/gfx/005.053_eternalchest.anm2",
+    "animation": "Idle",
+    "frame_index": 0,
+    "layers": [
+     {
+      "layer": 0,
+      "sheet": "repentance-resources/data/gfx/items/pick ups/pickup_005_chests.png",
+      "crop": [
+       64,
+       80,
+       32,
+       32
+      ],
+      "pivot": [
+       16.0,
+       32.0
+      ],
+      "position": [
+       0.0,
+       8.0
+      ]
+     }
+    ],
+    "layers_left_out": [
+     {
+      "layer": 1,
+      "sheet": "shadow.png"
+     },
+     {
+      "layer": 2,
+      "sheet": "glow.png"
+     }
+    ],
+    "size": [
+     30,
+     23
+    ],
+    "origin_in_icon": [
+     15,
+     19
+    ],
+    "drawn_at": "100 % (no scaling); origin_in_icon = where the entity position sits inside the PNG"
+   },
+   "notes": [
+    "layer 1 (shadow.png at ~30 %) and any glow left out"
+   ]
+  },
+  {
+   "key": "5.54",
+   "group": "LOOT/chests",
+   "type": 5,
+   "variant": 54,
+   "subtype": null,
+   "spawn_subtype": 1,
+   "entities2_name": "Mimic Chest",
+   "names": {
+    "en": {
+     "text": "Mimic Chest",
+     "source": "EID PickupNames[\"5.54\"] (en_us)",
+     "suggested": false,
+     "glyphs_missing": []
+    },
+    "ru": {
+     "text": "Сундук-мимик",
+     "source": "SUGGESTED (uk \"Скриня-мімік\")",
+     "suggested": true,
+     "glyphs_missing": []
+    },
+    "de": {
+     "text": "Mimic-Truhe",
+     "source": "EID PickupNames[\"5.54\"] (de)",
+     "suggested": false,
+     "glyphs_missing": []
+    },
+    "es": {
+     "text": "Cofre mímico",
+     "source": "EID PickupNames[\"5.54\"] (spa)",
+     "suggested": false,
+     "glyphs_missing": []
+    },
+    "jp": {
+     "text": "罠宝箱",
+     "source": "EID PickupNames[\"5.54\"] (ja_jp)",
+     "suggested": false,
+     "glyphs_missing": []
+    },
+    "kr": {
+     "text": "함정상자",
+     "source": "EID PickupNames[\"5.54\"] (ko_kr)",
+     "suggested": false,
+     "glyphs_missing": []
+    },
+    "zh": {
+     "text": "拟态箱子",
+     "source": "EID PickupNames[\"5.54\"] (zh_cn)",
+     "suggested": false,
+     "glyphs_missing": []
+    }
+   },
+   "icon": {
+    "file": "icons/5.54.1.png",
+    "anm2": "repentance-resources/data/gfx/005.054_mimic chest.anm2",
+    "animation": "Idle",
+    "frame_index": 0,
+    "layers": [
+     {
+      "layer": 0,
+      "sheet": "repentance-resources/data/gfx/items/pick ups/pickup_005_chests.png",
+      "crop": [
+       128,
+       224,
+       32,
+       32
+      ],
+      "pivot": [
+       16.0,
+       32.0
+      ],
+      "position": [
+       0.0,
+       8.0
+      ]
+     }
+    ],
+    "layers_left_out": [
+     {
+      "layer": 1,
+      "sheet": "shadow.png"
+     }
+    ],
+    "size": [
+     30,
+     23
+    ],
+    "origin_in_icon": [
+     15,
+     19
+    ],
+    "drawn_at": "100 % (no scaling); origin_in_icon = where the entity position sits inside the PNG"
+   },
+   "notes": [
+    "layer 1 (shadow.png at ~30 %) and any glow left out"
+   ]
+  },
+  {
+   "key": "5.55",
+   "group": "LOOT/chests",
+   "type": 5,
+   "variant": 55,
+   "subtype": null,
+   "spawn_subtype": 1,
+   "entities2_name": "Old Chest",
+   "names": {
+    "en": {
+     "text": "Old Chest",
+     "source": "EID PickupNames[\"5.55\"] (en_us)",
+     "suggested": false,
+     "glyphs_missing": []
+    },
+    "ru": {
+     "text": "Старый сундук",
+     "source": "EID ru descriptions: \"старый сундук\"",
+     "suggested": false,
+     "glyphs_missing": []
+    },
+    "de": {
+     "text": "Alte Truhe",
+     "source": "EID PickupNames[\"5.55\"] (de)",
+     "suggested": false,
+     "glyphs_missing": []
+    },
+    "es": {
+     "text": "Cofre viejo",
+     "source": "EID PickupNames[\"5.55\"] (spa)",
+     "suggested": false,
+     "glyphs_missing": []
+    },
+    "jp": {
+     "text": "古びた宝箱",
+     "source": "EID PickupNames[\"5.55\"] (ja_jp)",
+     "suggested": false,
+     "glyphs_missing": []
+    },
+    "kr": {
+     "text": "오래된상자",
+     "source": "EID PickupNames[\"5.55\"] (ko_kr)",
+     "suggested": false,
+     "glyphs_missing": []
+    },
+    "zh": {
+     "text": "旧箱子",
+     "source": "EID PickupNames[\"5.55\"] (zh_cn)",
+     "suggested": false,
+     "glyphs_missing": []
+    }
+   },
+   "icon": {
+    "file": "icons/5.55.1.png",
+    "anm2": "repentance-resources/data/gfx/005.055_old chest.anm2",
+    "animation": "Idle",
+    "frame_index": 0,
+    "layers": [
+     {
+      "layer": 0,
+      "sheet": "repentance-resources/data/gfx/items/pick ups/dirty_chest.png",
+      "crop": [
+       0,
+       0,
+       32,
+       32
+      ],
+      "pivot": [
+       16.0,
+       32.0
+      ],
+      "position": [
+       0.0,
+       8.0
+      ]
+     }
+    ],
+    "layers_left_out": [
+     {
+      "layer": 1,
+      "sheet": "shadow.png"
+     }
+    ],
+    "size": [
+     30,
+     23
+    ],
+    "origin_in_icon": [
+     15,
+     19
+    ],
+    "drawn_at": "100 % (no scaling); origin_in_icon = where the entity position sits inside the PNG"
+   },
+   "notes": [
+    "layer 1 (shadow.png at ~30 %) and any glow left out"
+   ]
+  },
+  {
+   "key": "5.56",
+   "group": "LOOT/chests",
+   "type": 5,
+   "variant": 56,
+   "subtype": null,
+   "spawn_subtype": 1,
+   "entities2_name": "Wooden Chest",
+   "names": {
+    "en": {
+     "text": "Wooden Chest",
+     "source": "EID PickupNames[\"5.56\"] (en_us)",
+     "suggested": false,
+     "glyphs_missing": []
+    },
+    "ru": {
+     "text": "Деревянный сундук",
+     "source": "SUGGESTED (uk \"Дерев'яна скриня\")",
+     "suggested": true,
+     "glyphs_missing": []
+    },
+    "de": {
+     "text": "Holztruhe",
+     "source": "EID PickupNames[\"5.56\"] (de)",
+     "suggested": false,
+     "glyphs_missing": []
+    },
+    "es": {
+     "text": "Cofre de madera",
+     "source": "EID PickupNames[\"5.56\"] (spa)",
+     "suggested": false,
+     "glyphs_missing": []
+    },
+    "jp": {
+     "text": "木の宝箱",
+     "source": "EID PickupNames[\"5.56\"] (ja_jp)",
+     "suggested": false,
+     "glyphs_missing": []
+    },
+    "kr": {
+     "text": "나무상자",
+     "source": "EID PickupNames[\"5.56\"] (ko_kr)",
+     "suggested": false,
+     "glyphs_missing": []
+    },
+    "zh": {
+     "text": "木箱子",
+     "source": "EID PickupNames[\"5.56\"] (zh_cn)",
+     "suggested": false,
+     "glyphs_missing": []
+    }
+   },
+   "icon": {
+    "file": "icons/5.56.1.png",
+    "anm2": "repentance-resources/data/gfx/005.056_wooden chest.anm2",
+    "animation": "Idle",
+    "frame_index": 0,
+    "layers": [
+     {
+      "layer": 0,
+      "sheet": "repentance-resources/data/gfx/items/pick ups/wooden_chest.png",
+      "crop": [
+       0,
+       0,
+       32,
+       32
+      ],
+      "pivot": [
+       16.0,
+       32.0
+      ],
+      "position": [
+       0.0,
+       8.0
+      ]
+     }
+    ],
+    "layers_left_out": [
+     {
+      "layer": 1,
+      "sheet": "shadow.png"
+     }
+    ],
+    "size": [
+     30,
+     23
+    ],
+    "origin_in_icon": [
+     15,
+     19
+    ],
+    "drawn_at": "100 % (no scaling); origin_in_icon = where the entity position sits inside the PNG"
+   },
+   "notes": [
+    "layer 1 (shadow.png at ~30 %) and any glow left out"
+   ]
+  },
+  {
+   "key": "5.57",
+   "group": "LOOT/chests",
+   "type": 5,
+   "variant": 57,
+   "subtype": null,
+   "spawn_subtype": 1,
+   "entities2_name": "Mega Chest",
+   "names": {
+    "en": {
+     "text": "Mega Chest",
+     "source": "EID PickupNames[\"5.57\"] (en_us)",
+     "suggested": false,
+     "glyphs_missing": []
+    },
+    "ru": {
+     "text": "Мега-сундук",
+     "source": "EID ru descriptions: \"Мега-сундуков\" (Gilded Key)",
+     "suggested": false,
+     "glyphs_missing": []
+    },
+    "de": {
+     "text": "Megatruhe",
+     "source": "EID PickupNames[\"5.57\"] (de)",
+     "suggested": false,
+     "glyphs_missing": []
+    },
+    "es": {
+     "text": "Mega cofre",
+     "source": "EID PickupNames[\"5.57\"] (spa)",
+     "suggested": false,
+     "glyphs_missing": []
+    },
+    "jp": {
+     "text": "巨大宝箱",
+     "source": "EID PickupNames[\"5.57\"] (ja_jp)",
+     "suggested": false,
+     "glyphs_missing": []
+    },
+    "kr": {
+     "text": "메가상자",
+     "source": "EID PickupNames[\"5.57\"] (ko_kr)",
+     "suggested": false,
+     "glyphs_missing": []
+    },
+    "zh": {
+     "text": "大箱子",
+     "source": "EID PickupNames[\"5.57\"] (zh_cn)",
+     "suggested": false,
+     "glyphs_missing": []
+    }
+   },
+   "icon": {
+    "file": "icons/5.57.1.png",
+    "anm2": "repentance-resources/data/gfx/005.057_mega chest.anm2",
+    "animation": "Idle",
+    "frame_index": 0,
+    "layers": [
+     {
+      "layer": 0,
+      "sheet": "repentance-resources/data/gfx/items/pick ups/mega_chest.png",
+      "crop": [
+       0,
+       0,
+       48,
+       48
+      ],
+      "pivot": [
+       24.0,
+       48.0
+      ],
+      "position": [
+       0.0,
+       8.0
+      ]
+     }
+    ],
+    "layers_left_out": [
+     {
+      "layer": 1,
+      "sheet": "shadow.png"
+     }
+    ],
+    "size": [
+     40,
+     30
+    ],
+    "origin_in_icon": [
+     20,
+     26
+    ],
+    "drawn_at": "100 % (no scaling); origin_in_icon = where the entity position sits inside the PNG"
+   },
+   "notes": [
+    "layer 1 (shadow.png at ~30 %) and any glow left out"
+   ]
+  },
+  {
+   "key": "5.58",
+   "group": "LOOT/chests",
+   "type": 5,
+   "variant": 58,
+   "subtype": null,
+   "spawn_subtype": 1,
+   "entities2_name": "Haunted Chest",
+   "names": {
+    "en": {
+     "text": "Haunted Chest",
+     "source": "EID PickupNames[\"5.58\"] (en_us)",
+     "suggested": false,
+     "glyphs_missing": []
+    },
+    "ru": {
+     "text": "Призрачный сундук",
+     "source": "SUGGESTED (game ru \"Призрачные бомбы\" for Ghost; jp \"cursed chest\", uk \"Скриня з привидами\")",
+     "suggested": true,
+     "glyphs_missing": []
+    },
+    "de": {
+     "text": "Spuktruhe",
+     "source": "EID PickupNames[\"5.58\"] (de)",
+     "suggested": false,
+     "glyphs_missing": []
+    },
+    "es": {
+     "text": "Cofre embrujado",
+     "source": "EID PickupNames[\"5.58\"] (spa)",
+     "suggested": false,
+     "glyphs_missing": []
+    },
+    "jp": {
+     "text": "呪いの宝箱",
+     "source": "EID PickupNames[\"5.58\"] (ja_jp)",
+     "suggested": false,
+     "glyphs_missing": []
+    },
+    "kr": {
+     "text": "유령상자",
+     "source": "EID PickupNames[\"5.58\"] (ko_kr)",
+     "suggested": false,
+     "glyphs_missing": []
+    },
+    "zh": {
+     "text": "闹鬼箱子",
+     "source": "EID PickupNames[\"5.58\"] (zh_cn)",
+     "suggested": false,
+     "glyphs_missing": []
+    }
+   },
+   "icon": {
+    "file": "icons/5.58.1.png",
+    "anm2": "repentance-resources/data/gfx/005.058_haunted chest.anm2",
+    "animation": "Idle",
+    "frame_index": 0,
+    "layers": [
+     {
+      "layer": 0,
+      "sheet": "repentance-resources/data/gfx/items/pick ups/haunted_chest.png",
+      "crop": [
+       0,
+       0,
+       32,
+       32
+      ],
+      "pivot": [
+       16.0,
+       32.0
+      ],
+      "position": [
+       0.0,
+       8.0
+      ]
+     }
+    ],
+    "layers_left_out": [
+     {
+      "layer": 1,
+      "sheet": "shadow.png"
+     }
+    ],
+    "size": [
+     30,
+     23
+    ],
+    "origin_in_icon": [
+     15,
+     19
+    ],
+    "drawn_at": "100 % (no scaling); origin_in_icon = where the entity position sits inside the PNG"
+   },
+   "notes": [
+    "layer 1 (shadow.png at ~30 %) and any glow left out"
+   ]
+  },
+  {
+   "key": "5.60",
+   "group": "LOOT/chests",
+   "type": 5,
+   "variant": 60,
+   "subtype": null,
+   "spawn_subtype": 1,
+   "entities2_name": "Locked Chest",
+   "names": {
+    "en": {
+     "text": "Golden Chest",
+     "source": "EID PickupNames[\"5.60\"] (en_us)",
+     "suggested": false,
+     "glyphs_missing": []
+    },
+    "ru": {
+     "text": "Золотой сундук",
+     "source": "EID ru descriptions: \"золотые сундуки\" (7x)",
+     "suggested": false,
+     "glyphs_missing": []
+    },
+    "de": {
+     "text": "Goldene Truhe",
+     "source": "EID PickupNames[\"5.60\"] (de)",
+     "suggested": false,
+     "glyphs_missing": []
+    },
+    "es": {
+     "text": "Cofre dorado",
+     "source": "EID PickupNames[\"5.60\"] (spa)",
+     "suggested": false,
+     "glyphs_missing": []
+    },
+    "jp": {
+     "text": "金宝箱",
+     "source": "EID PickupNames[\"5.60\"] (ja_jp)",
+     "suggested": false,
+     "glyphs_missing": []
+    },
+    "kr": {
+     "text": "황금상자",
+     "source": "EID PickupNames[\"5.60\"] (ko_kr)",
+     "suggested": false,
+     "glyphs_missing": []
+    },
+    "zh": {
+     "text": "金箱子",
+     "source": "EID PickupNames[\"5.60\"] (zh_cn)",
+     "suggested": false,
+     "glyphs_missing": []
+    }
+   },
+   "icon": {
+    "file": "icons/5.60.1.png",
+    "anm2": "repentance-resources/data/gfx/005.060_locked chest.anm2",
+    "animation": "Idle",
+    "frame_index": 0,
+    "layers": [
+     {
+      "layer": 0,
+      "sheet": "repentance-resources/data/gfx/items/pick ups/pickup_005_chests.png",
+      "crop": [
+       0,
+       80,
+       32,
+       32
+      ],
+      "pivot": [
+       16.0,
+       32.0
+      ],
+      "position": [
+       0.0,
+       8.0
+      ]
+     }
+    ],
+    "layers_left_out": [
+     {
+      "layer": 1,
+      "sheet": "shadow.png"
+     }
+    ],
+    "size": [
+     30,
+     23
+    ],
+    "origin_in_icon": [
+     15,
+     19
+    ],
+    "drawn_at": "100 % (no scaling); origin_in_icon = where the entity position sits inside the PNG"
+   },
+   "notes": [
+    "layer 1 (shadow.png at ~30 %) and any glow left out"
+   ]
+  },
+  {
+   "key": "5.360",
+   "group": "LOOT/chests",
+   "type": 5,
+   "variant": 360,
+   "subtype": null,
+   "spawn_subtype": 1,
+   "entities2_name": "Red Chest",
+   "names": {
+    "en": {
+     "text": "Red Chest",
+     "source": "EID PickupNames[\"5.360\"] (en_us)",
+     "suggested": false,
+     "glyphs_missing": []
+    },
+    "ru": {
+     "text": "Красный сундук",
+     "source": "EID ru descriptions: \"красные сундуки\"",
+     "suggested": false,
+     "glyphs_missing": []
+    },
+    "de": {
+     "text": "Rote Truhe",
+     "source": "EID PickupNames[\"5.360\"] (de)",
+     "suggested": false,
+     "glyphs_missing": []
+    },
+    "es": {
+     "text": "Cofre rojo",
+     "source": "EID PickupNames[\"5.360\"] (spa)",
+     "suggested": false,
+     "glyphs_missing": []
+    },
+    "jp": {
+     "text": "赤宝箱",
+     "source": "EID PickupNames[\"5.360\"] (ja_jp)",
+     "suggested": false,
+     "glyphs_missing": []
+    },
+    "kr": {
+     "text": "빨간상자",
+     "source": "EID PickupNames[\"5.360\"] (ko_kr)",
+     "suggested": false,
+     "glyphs_missing": []
+    },
+    "zh": {
+     "text": "红箱子",
+     "source": "EID PickupNames[\"5.360\"] (zh_cn)",
+     "suggested": false,
+     "glyphs_missing": []
+    }
+   },
+   "icon": {
+    "file": "icons/5.360.1.png",
+    "anm2": "repentance-resources/data/gfx/005.360_red chest.anm2",
+    "animation": "Idle",
+    "frame_index": 0,
+    "layers": [
+     {
+      "layer": 0,
+      "sheet": "repentance-resources/data/gfx/items/pick ups/pickup_005_chests.png",
+      "crop": [
+       0,
+       112,
+       32,
+       32
+      ],
+      "pivot": [
+       16.0,
+       32.0
+      ],
+      "position": [
+       0.0,
+       8.0
+      ]
+     }
+    ],
+    "layers_left_out": [
+     {
+      "layer": 1,
+      "sheet": "shadow.png"
+     }
+    ],
+    "size": [
+     30,
+     23
+    ],
+    "origin_in_icon": [
+     15,
+     19
+    ],
+    "drawn_at": "100 % (no scaling); origin_in_icon = where the entity position sits inside the PNG"
+   },
+   "notes": [
+    "layer 1 (shadow.png at ~30 %) and any glow left out"
+   ]
+  },
+  {
+   "key": "5.340",
+   "group": "LOOT/chests (story, flag)",
+   "type": 5,
+   "variant": 340,
+   "subtype": null,
+   "spawn_subtype": 1,
+   "entities2_name": "Big Chest",
+   "names": {
+    "en": {
+     "text": "Big Chest",
+     "source": "entities2.xml name",
+     "suggested": false,
+     "glyphs_missing": []
+    },
+    "ru": {
+     "text": "Большой сундук",
+     "source": "SUGGESTED (no EID/game word)",
+     "suggested": true,
+     "glyphs_missing": []
+    },
+    "de": {
+     "text": "Große Truhe",
+     "source": "SUGGESTED (no game/EID word)",
+     "suggested": true,
+     "glyphs_missing": []
+    },
+    "es": {
+     "text": "Cofre grande",
+     "source": "SUGGESTED (no game/EID word)",
+     "suggested": true,
+     "glyphs_missing": []
+    },
+    "jp": {
+     "text": "大きな宝箱",
+     "source": "SUGGESTED (no game/EID word)",
+     "suggested": true,
+     "glyphs_missing": []
+    },
+    "kr": {
+     "text": "큰 상자",
+     "source": "SUGGESTED (no game/EID word)",
+     "suggested": true,
+     "glyphs_missing": []
+    },
+    "zh": {
+     "text": "结局箱子",
+     "source": "SUGGESTED (no game/EID word)",
+     "suggested": true,
+     "glyphs_missing": []
+    }
+   },
+   "icon": {
+    "file": "icons/5.340.1.png",
+    "anm2": "repentance-resources/data/gfx/005.340_big chest.anm2",
+    "animation": "Idle",
+    "frame_index": 0,
+    "layers": [
+     {
+      "layer": 0,
+      "sheet": "repentance-resources/data/gfx/items/pick ups/pickup_005_chests.png",
+      "crop": [
+       0,
+       0,
+       64,
+       48
+      ],
+      "pivot": [
+       32.0,
+       48.0
+      ],
+      "position": [
+       0.0,
+       8.0
+      ]
+     }
+    ],
+    "layers_left_out": [
+     {
+      "layer": 1,
+      "sheet": "shadow.png"
+     }
+    ],
+    "size": [
+     54,
+     41
+    ],
+    "origin_in_icon": [
+     27,
+     37
+    ],
+    "drawn_at": "100 % (no scaling); origin_in_icon = where the entity position sits inside the PNG"
+   },
+   "notes": [
+    "Big Chest: the ending chest (ends the run when entered). Probably NOT for the list."
+   ]
+  },
+  {
+   "key": "5.390",
+   "group": "LOOT/chests (story, flag)",
+   "type": 5,
+   "variant": 390,
+   "subtype": null,
+   "spawn_subtype": 1,
+   "entities2_name": "Mom's Chest",
+   "names": {
+    "en": {
+     "text": "Mom's Chest",
+     "source": "entities2.xml name",
+     "suggested": false,
+     "glyphs_missing": []
+    },
+    "ru": {
+     "text": "Мамин сундук",
+     "source": "SUGGESTED (game ru \"Мамин ключ\" pattern)",
+     "suggested": true,
+     "glyphs_missing": []
+    },
+    "de": {
+     "text": "Mamas Truhe",
+     "source": "SUGGESTED (no game/EID word)",
+     "suggested": true,
+     "glyphs_missing": []
+    },
+    "es": {
+     "text": "Cofre de mamá",
+     "source": "SUGGESTED (no game/EID word)",
+     "suggested": true,
+     "glyphs_missing": []
+    },
+    "jp": {
+     "text": "ママの宝箱",
+     "source": "SUGGESTED (no game/EID word)",
+     "suggested": true,
+     "glyphs_missing": []
+    },
+    "kr": {
+     "text": "엄마의 상자",
+     "source": "SUGGESTED (no game/EID word)",
+     "suggested": true,
+     "glyphs_missing": []
+    },
+    "zh": {
+     "text": "妈妈的箱子",
+     "source": "SUGGESTED (no game/EID word)",
+     "suggested": true,
+     "glyphs_missing": []
+    }
+   },
+   "icon": {
+    "file": "icons/5.390.1.png",
+    "anm2": "repentance-resources/data/gfx/005.390_moms chest.anm2",
+    "animation": "Idle",
+    "frame_index": 0,
+    "layers": [
+     {
+      "layer": 0,
+      "sheet": "repentance-resources/data/gfx/grid/props_momsroom.png",
+      "crop": [
+       0,
+       144,
+       64,
+       48
+      ],
+      "pivot": [
+       32.0,
+       36.0
+      ],
+      "position": [
+       0.0,
+       0.0
+      ]
+     }
+    ],
+    "layers_left_out": [
+     {
+      "layer": 1,
+      "sheet": "shadow.png"
+     }
+    ],
+    "size": [
+     50,
+     41
+    ],
+    "origin_in_icon": [
+     25,
+     33
+    ],
+    "drawn_at": "100 % (no scaling); origin_in_icon = where the entity position sits inside the PNG"
+   },
+   "notes": [
+    "Mom's Chest: Home's story chest (Dogma/Beast route). Probably NOT for the list."
+   ]
+  },
+  {
+   "key": "4.3",
+   "group": "LOOT/troll bombs",
+   "type": 4,
+   "variant": 3,
+   "subtype": null,
+   "spawn_subtype": null,
+   "entities2_name": "Troll Bomb",
+   "names": {
+    "en": {
+     "text": "Troll Bomb",
+     "source": "EID PickupNames[\"5.40.3\"] (en_us)",
+     "suggested": false,
+     "glyphs_missing": []
+    },
+    "ru": {
+     "text": "Тролль-бомба",
+     "source": "EID ru descriptions: \"тролль-бомб\"",
+     "suggested": false,
+     "glyphs_missing": []
+    },
+    "de": {
+     "text": "Trollbombe",
+     "source": "EID PickupNames[\"5.40.3\"] (de)",
+     "suggested": false,
+     "glyphs_missing": []
+    },
+    "es": {
+     "text": "Bomba troll",
+     "source": "EID PickupNames[\"5.40.3\"] (spa)",
+     "suggested": false,
+     "glyphs_missing": []
+    },
+    "jp": {
+     "text": "トロル爆弾",
+     "source": "EID PickupNames[\"5.40.3\"] (ja_jp)",
+     "suggested": false,
+     "glyphs_missing": []
+    },
+    "kr": {
+     "text": "트롤폭탄",
+     "source": "EID PickupNames[\"5.40.3\"] (ko_kr)",
+     "suggested": false,
+     "glyphs_missing": []
+    },
+    "zh": {
+     "text": "即爆炸弹",
+     "source": "EID PickupNames[\"5.40.3\"] (zh_cn)",
+     "suggested": false,
+     "glyphs_missing": []
+    }
+   },
+   "icon": {
+    "file": "icons/4.3.0.png",
+    "anm2": "repentance-resources/data/gfx/004.003_troll bomb.anm2",
+    "animation": "Idle",
+    "frame_index": 0,
+    "layers": [
+     {
+      "layer": 0,
+      "sheet": "repentance-resources/data/gfx/items/pick ups/pickup_016_bomb.png",
+      "crop": [
+       32,
+       32,
+       32,
+       32
+      ],
+      "pivot": [
+       16.0,
+       25.0
+      ],
+      "position": [
+       0.0,
+       1.0
+      ]
+     }
+    ],
+    "layers_left_out": [],
+    "size": [
+     24,
+     25
+    ],
+    "origin_in_icon": [
+     13,
+     23
+    ],
+    "drawn_at": "100 % (no scaling); origin_in_icon = where the entity position sits inside the PNG"
+   },
+   "notes": [
+    "live troll bomb (type 4); pickup form 5.40.3 morphs into it"
+   ]
+  },
+  {
+   "key": "4.4",
+   "group": "LOOT/troll bombs",
+   "type": 4,
+   "variant": 4,
+   "subtype": null,
+   "spawn_subtype": null,
+   "entities2_name": "Megatroll Bomb",
+   "names": {
+    "en": {
+     "text": "Mega Troll Bomb",
+     "source": "EID PickupNames[\"5.40.5\"] (en_us)",
+     "suggested": false,
+     "glyphs_missing": []
+    },
+    "ru": {
+     "text": "Мега тролль-бомба",
+     "source": "SUGGESTED",
+     "suggested": true,
+     "glyphs_missing": []
+    },
+    "de": {
+     "text": "Mega-Trollbombe",
+     "source": "EID PickupNames[\"5.40.5\"] (de)",
+     "suggested": false,
+     "glyphs_missing": []
+    },
+    "es": {
+     "text": "Bomba megatroll",
+     "source": "EID PickupNames[\"5.40.5\"] (spa)",
+     "suggested": false,
+     "glyphs_missing": []
+    },
+    "jp": {
+     "text": "メガトロル爆弾",
+     "source": "EID PickupNames[\"5.40.5\"] (ja_jp)",
+     "suggested": false,
+     "glyphs_missing": []
+    },
+    "kr": {
+     "text": "슈퍼 트롤폭탄",
+     "source": "EID PickupNames[\"5.40.5\"] (ko_kr)",
+     "suggested": false,
+     "glyphs_missing": []
+    },
+    "zh": {
+     "text": "超级即爆炸弹",
+     "source": "EID PickupNames[\"5.40.5\"] (zh_cn)",
+     "suggested": false,
+     "glyphs_missing": []
+    }
+   },
+   "icon": {
+    "file": "icons/4.4.0.png",
+    "anm2": "repentance-resources/data/gfx/004.004_megatroll bomb.anm2",
+    "animation": "Idle",
+    "frame_index": 0,
+    "layers": [
+     {
+      "layer": 0,
+      "sheet": "repentance-resources/data/gfx/items/pick ups/pickup_016_bomb.png",
+      "crop": [
+       0,
+       32,
+       32,
+       32
+      ],
+      "pivot": [
+       16.0,
+       30.0
+      ],
+      "position": [
+       0.0,
+       0.0
+      ]
+     }
+    ],
+    "layers_left_out": [],
+    "size": [
+     28,
+     32
+    ],
+    "origin_in_icon": [
+     14,
+     30
+    ],
+    "drawn_at": "100 % (no scaling); origin_in_icon = where the entity position sits inside the PNG"
+   },
+   "notes": [
+    "live mega troll bomb (type 4); pickup form 5.40.5 morphs into it"
+   ]
+  },
+  {
+   "key": "4.18",
+   "group": "LOOT/troll bombs",
+   "type": 4,
+   "variant": 18,
+   "subtype": null,
+   "spawn_subtype": null,
+   "entities2_name": "Golden Troll Bomb",
+   "names": {
+    "en": {
+     "text": "Golden Troll Bomb",
+     "source": "entities2.xml name",
+     "suggested": false,
+     "glyphs_missing": []
+    },
+    "ru": {
+     "text": "Золотая тролль-бомба",
+     "source": "SUGGESTED",
+     "suggested": true,
+     "glyphs_missing": []
+    },
+    "de": {
+     "text": "Goldene Trollbombe",
+     "source": "SUGGESTED (no game/EID word)",
+     "suggested": true,
+     "glyphs_missing": []
+    },
+    "es": {
+     "text": "Bomba troll dorada",
+     "source": "SUGGESTED (no game/EID word)",
+     "suggested": true,
+     "glyphs_missing": []
+    },
+    "jp": {
+     "text": "金トロル爆弾",
+     "source": "SUGGESTED (no game/EID word)",
+     "suggested": true,
+     "glyphs_missing": []
+    },
+    "kr": {
+     "text": "황금 트롤폭탄",
+     "source": "SUGGESTED (no game/EID word)",
+     "suggested": true,
+     "glyphs_missing": []
+    },
+    "zh": {
+     "text": "金即爆炸弹",
+     "source": "SUGGESTED (no game/EID word)",
+     "suggested": true,
+     "glyphs_missing": []
+    }
+   },
+   "icon": {
+    "file": "icons/4.18.0.png",
+    "anm2": "repentance-resources/data/gfx/004.018_golden troll bomb.anm2",
+    "animation": "Idle",
+    "frame_index": 0,
+    "layers": [
+     {
+      "layer": 0,
+      "sheet": "repentance-resources/data/gfx/items/pick ups/pickup_016_bomb2.png",
+      "crop": [
+       0,
+       224,
+       32,
+       32
+      ],
+      "pivot": [
+       16.0,
+       25.0
+      ],
+      "position": [
+       0.0,
+       1.0
+      ]
+     }
+    ],
+    "layers_left_out": [],
+    "size": [
+     24,
+     25
+    ],
+    "origin_in_icon": [
+     13,
+     23
+    ],
+    "drawn_at": "100 % (no scaling); origin_in_icon = where the entity position sits inside the PNG"
+   },
+   "notes": [
+    "live golden troll bomb (type 4). No 5.40.6 row in entities2.xml"
+   ]
+  },
+  {
+   "key": "5.40.3",
+   "group": "LOOT/troll bombs (pickup forms)",
+   "type": 5,
+   "variant": 40,
+   "subtype": 3,
+   "spawn_subtype": 3,
+   "entities2_name": "Troll Bomb",
+   "names": {
+    "en": {
+     "text": "Troll Bomb",
+     "source": "EID PickupNames[\"5.40.3\"] (en_us)",
+     "suggested": false,
+     "glyphs_missing": []
+    },
+    "ru": {
+     "text": "Тролль-бомба",
+     "source": "EID ru descriptions: \"тролль-бомб\"",
+     "suggested": false,
+     "glyphs_missing": []
+    },
+    "de": {
+     "text": "Trollbombe",
+     "source": "EID PickupNames[\"5.40.3\"] (de)",
+     "suggested": false,
+     "glyphs_missing": []
+    },
+    "es": {
+     "text": "Bomba troll",
+     "source": "EID PickupNames[\"5.40.3\"] (spa)",
+     "suggested": false,
+     "glyphs_missing": []
+    },
+    "jp": {
+     "text": "トロル爆弾",
+     "source": "EID PickupNames[\"5.40.3\"] (ja_jp)",
+     "suggested": false,
+     "glyphs_missing": []
+    },
+    "kr": {
+     "text": "트롤폭탄",
+     "source": "EID PickupNames[\"5.40.3\"] (ko_kr)",
+     "suggested": false,
+     "glyphs_missing": []
+    },
+    "zh": {
+     "text": "即爆炸弹",
+     "source": "EID PickupNames[\"5.40.3\"] (zh_cn)",
+     "suggested": false,
+     "glyphs_missing": []
+    }
+   },
+   "icon": {
+    "file": "icons/5.40.3.png",
+    "anm2": "repentance-resources/data/gfx/004.003_troll bomb.anm2",
+    "animation": "Idle",
+    "frame_index": 0,
+    "layers": [
+     {
+      "layer": 0,
+      "sheet": "repentance-resources/data/gfx/items/pick ups/pickup_016_bomb.png",
+      "crop": [
+       32,
+       32,
+       32,
+       32
+      ],
+      "pivot": [
+       16.0,
+       25.0
+      ],
+      "position": [
+       0.0,
+       1.0
+      ]
+     }
+    ],
+    "layers_left_out": [],
+    "size": [
+     24,
+     25
+    ],
+    "origin_in_icon": [
+     13,
+     23
+    ],
+    "drawn_at": "100 % (no scaling); origin_in_icon = where the entity position sits inside the PNG"
+   },
+   "notes": [
+    "uses 004.003_Troll Bomb.anm2"
+   ]
+  },
+  {
+   "key": "5.40.5",
+   "group": "LOOT/troll bombs (pickup forms)",
+   "type": 5,
+   "variant": 40,
+   "subtype": 5,
+   "spawn_subtype": 5,
+   "entities2_name": "Megatroll Bomb",
+   "names": {
+    "en": {
+     "text": "Mega Troll Bomb",
+     "source": "EID PickupNames[\"5.40.5\"] (en_us)",
+     "suggested": false,
+     "glyphs_missing": []
+    },
+    "ru": {
+     "text": "Мега тролль-бомба",
+     "source": "SUGGESTED (EID ru \"тролль-бомба\"; uk \"Мегатроль-бомба\")",
+     "suggested": true,
+     "glyphs_missing": []
+    },
+    "de": {
+     "text": "Mega-Trollbombe",
+     "source": "EID PickupNames[\"5.40.5\"] (de)",
+     "suggested": false,
+     "glyphs_missing": []
+    },
+    "es": {
+     "text": "Bomba megatroll",
+     "source": "EID PickupNames[\"5.40.5\"] (spa)",
+     "suggested": false,
+     "glyphs_missing": []
+    },
+    "jp": {
+     "text": "メガトロル爆弾",
+     "source": "EID PickupNames[\"5.40.5\"] (ja_jp)",
+     "suggested": false,
+     "glyphs_missing": []
+    },
+    "kr": {
+     "text": "슈퍼 트롤폭탄",
+     "source": "EID PickupNames[\"5.40.5\"] (ko_kr)",
+     "suggested": false,
+     "glyphs_missing": []
+    },
+    "zh": {
+     "text": "超级即爆炸弹",
+     "source": "EID PickupNames[\"5.40.5\"] (zh_cn)",
+     "suggested": false,
+     "glyphs_missing": []
+    }
+   },
+   "icon": {
+    "file": "icons/5.40.5.png",
+    "anm2": "repentance-resources/data/gfx/004.004_megatroll bomb.anm2",
+    "animation": "Idle",
+    "frame_index": 0,
+    "layers": [
+     {
+      "layer": 0,
+      "sheet": "repentance-resources/data/gfx/items/pick ups/pickup_016_bomb.png",
+      "crop": [
+       0,
+       32,
+       32,
+       32
+      ],
+      "pivot": [
+       16.0,
+       30.0
+      ],
+      "position": [
+       0.0,
+       0.0
+      ]
+     }
+    ],
+    "layers_left_out": [],
+    "size": [
+     28,
+     32
+    ],
+    "origin_in_icon": [
+     14,
+     30
+    ],
+    "drawn_at": "100 % (no scaling); origin_in_icon = where the entity position sits inside the PNG"
+   },
+   "notes": [
+    "uses 004.004_Megatroll Bomb.anm2"
+   ]
+  }
+ ],
+ "samples": [
+  {
+   "file": "icons/card.1.png",
+   "kind": "card",
+   "id": 1,
+   "pocketitems": {
+    "tag": "card",
+    "type": "tarot"
+   },
+   "name_key": "THE_FOOL_NAME",
+   "names": {
+    "en": "0 - The Fool",
+    "ru": "0 - Шут",
+    "de": "0 - Der Narr",
+    "es": "0 - El Bufón",
+    "jp": "0 - 愚者",
+    "kr": "0 - 바보",
+    "zh": "0-愚者"
+   },
+   "sheet": "port assets eid_cardspills.png (EID atlas)",
+   "anm2": "eid_cardspills.anm2 \"Cards\" frame 0",
+   "crop": [
+    0,
+    0,
+    16,
+    20
+   ],
+   "anm2_scale": 75.0,
+   "spawner_draw": "marker \"Card1\" at CARD_SCALE 1.5 x anm2 75% = 1.125 -> 18x22.5"
+  },
+  {
+   "file": "icons/card.31.png",
+   "kind": "card",
+   "id": 31,
+   "pocketitems": {
+    "tag": "card",
+    "type": "suit"
+   },
+   "name_key": "JOKER_NAME",
+   "names": {
+    "en": "Joker",
+    "ru": "Джокер",
+    "de": "Joker",
+    "es": "Joker",
+    "jp": "ジョーカー",
+    "kr": "조커",
+    "zh": "鬼牌"
+   },
+   "sheet": "port assets eid_cardspills.png (EID atlas)",
+   "anm2": "eid_cardspills.anm2 \"Cards\" frame 30",
+   "crop": [
+    64,
+    96,
+    16,
+    20
+   ],
+   "anm2_scale": 75.0,
+   "spawner_draw": "marker \"Card31\" at CARD_SCALE 1.5 x anm2 75% = 1.125 -> 18x22.5"
+  },
+  {
+   "file": "icons/card.56.png",
+   "kind": "card",
+   "id": 56,
+   "pocketitems": {
+    "tag": "card",
+    "type": "tarot_reverse"
+   },
+   "name_key": "THE_FOOL_R_NAME",
+   "names": {
+    "en": "0 - The Fool?",
+    "ru": "0 - Шут?",
+    "de": "0 - Der Narr?",
+    "es": "0 - ¿El Bufón?",
+    "jp": "1 - 愚者？",
+    "kr": "0 - 바보?",
+    "zh": "0-愚者？"
+   },
+   "sheet": "port assets eid_cardspills.png (EID atlas)",
+   "anm2": "eid_cardspills.anm2 \"Cards\" frame 55",
+   "crop": [
+    176,
+    120,
+    16,
+    20
+   ],
+   "anm2_scale": 75.0,
+   "spawner_draw": "marker \"Card56\" at CARD_SCALE 1.5 x anm2 75% = 1.125 -> 18x22.5"
+  },
+  {
+   "file": "icons/rune.32.png",
+   "kind": "rune",
+   "id": 32,
+   "pocketitems": {
+    "tag": "rune",
+    "type": "rune"
+   },
+   "name_key": "HAGALAZ_NAME",
+   "names": {
+    "en": "Hagalaz",
+    "ru": "Хагалаз",
+    "de": "Hagalaz",
+    "es": "Hagalaz",
+    "jp": "ハガラズ",
+    "kr": "하갈라즈",
+    "zh": "冰雹符文"
+   },
+   "sheet": "port assets eid_cardspills.png (EID atlas)",
+   "anm2": "eid_cardspills.anm2 \"Cards\" frame 31",
+   "crop": [
+    0,
+    142,
+    18,
+    24
+   ],
+   "anm2_scale": 75.0,
+   "spawner_draw": "marker \"Card32\" at CARD_SCALE 1.5 x anm2 75% = 1.125 -> 20.25x27"
+  },
+  {
+   "file": "icons/rune.41.png",
+   "kind": "rune",
+   "id": 41,
+   "pocketitems": {
+    "tag": "rune",
+    "type": "rune"
+   },
+   "name_key": "BLACK_RUNE_NAME",
+   "names": {
+    "en": "Black Rune",
+    "ru": "Чёрная руна",
+    "de": "Schwarze Rune",
+    "es": "Runa negra",
+    "jp": "ブラックルーン",
+    "kr": "검은 룬",
+    "zh": "黑符文"
+   },
+   "sheet": "port assets eid_cardspills.png (EID atlas)",
+   "anm2": "eid_cardspills.anm2 \"Cards\" frame 40",
+   "crop": [
+    0,
+    190,
+    18,
+    24
+   ],
+   "anm2_scale": 75.0,
+   "spawner_draw": "marker \"Card41\" at CARD_SCALE 1.5 x anm2 75% = 1.125 -> 20.25x27"
+  },
+  {
+   "file": "icons/pill.1.png",
+   "kind": "pill",
+   "id": 1,
+   "meaning": "pill COLOUR 1 (Pill Blue-Blue); horse pill = colour + 2048, same frame",
+   "sheet": "port assets eid_cardspills.png",
+   "anm2": "eid_cardspills.anm2 \"Pills\" frame 0",
+   "crop": [
+    20,
+    142,
+    18,
+    18
+   ],
+   "anm2_scale": 75.0,
+   "spawner_draw": "not in the current spawner list; EID draws {{PillN}} at 75 % -> 13.5x13.5"
+  },
+  {
+   "file": "icons/pill.14.png",
+   "kind": "pill",
+   "id": 14,
+   "meaning": "pill COLOUR 14 (Pill Gold-Gold); horse pill = colour + 2048, same frame",
+   "sheet": "port assets eid_cardspills.png",
+   "anm2": "eid_cardspills.anm2 \"Pills\" frame 13",
+   "crop": [
+    80,
+    190,
+    18,
+    18
+   ],
+   "anm2_scale": 75.0,
+   "spawner_draw": "not in the current spawner list; EID draws {{PillN}} at 75 % -> 13.5x13.5"
+  },
+  {
+   "file": "icons/trinket.1.png",
+   "kind": "trinket",
+   "id": 1,
+   "gfx": "trinket_001_swallowedpenny.png",
+   "sheet": "repentance-resources/data/gfx/items/trinkets/trinket_001_swallowedpenny.png",
+   "name_key": "SWALLOWED_PENNY_NAME",
+   "names": {
+    "en": "Swallowed Penny",
+    "ru": "Проглоченный пенни",
+    "de": "Verschluckter Penny",
+    "es": "Moneda Tragada",
+    "jp": "飲み込んだペニー",
+    "kr": "삼킨 동전",
+    "zh": "被吞下的硬币"
+   },
+   "crop": [
+    0,
+    0,
+    32,
+    32
+   ],
+   "spawner_draw": "eid_inline_icons.anm2 \"ItemIcon\" layer 1 (replaceable) with gfx/items/trinkets/<gfx>, 32x32 at 75 % -> 24x24 (PICTURE)"
+  },
+  {
+   "file": "icons/trinket.19.png",
+   "kind": "trinket",
+   "id": 19,
+   "gfx": "trinket_019_paperclip.png",
+   "sheet": "repentance-resources/data/gfx/items/trinkets/trinket_019_paperclip.png",
+   "name_key": "PAPER_CLIP_NAME",
+   "names": {
+    "en": "Paper Clip",
+    "ru": "Скрепка",
+    "de": "Büroklammer",
+    "es": "Clip de Papel",
+    "jp": "ペーパークリップ",
+    "kr": "종이 클립",
+    "zh": "回形针"
+   },
+   "crop": [
+    0,
+    0,
+    32,
+    32
+   ],
+   "spawner_draw": "eid_inline_icons.anm2 \"ItemIcon\" layer 1 (replaceable) with gfx/items/trinkets/<gfx>, 32x32 at 75 % -> 24x24 (PICTURE)"
+  },
+  {
+   "file": "icons/trinket.189.png",
+   "kind": "trinket",
+   "id": 189,
+   "gfx": "trinket_189_SigilOfBaphomet.png",
+   "sheet": "repentance-resources/data/gfx/items/trinkets/trinket_189_sigilofbaphomet.png",
+   "name_key": "SIGIL_OF_BAPHOMET_NAME",
+   "names": {
+    "en": "Sigil of Baphomet",
+    "ru": "Знак Бафомета",
+    "de": "Baphomets Siegel",
+    "es": "Sello de Baphomet",
+    "jp": "バフォメットの魔法陣",
+    "kr": "바포메트의 인장",
+    "zh": "巴风特之印"
+   },
+   "crop": [
+    0,
+    0,
+    32,
+    32
+   ],
+   "spawner_draw": "eid_inline_icons.anm2 \"ItemIcon\" layer 1 (replaceable) with gfx/items/trinkets/<gfx>, 32x32 at 75 % -> 24x24 (PICTURE)"
+  }
+ ],
+ "pocket_items": {
+  "cards": {
+   "count": 97,
+   "ids": "1..97 (pocketitems.xml: card tag 86 + rune tag 11; types tarot 22, tarot_reverse 22, suit 10, special 12, object 3, rune-typed souls 17 under <card>, runes 11 under <rune>)",
+   "spawn": "5.300.<card id>",
+   "names": "stringtable category PocketItems: <NAME>_NAME keys from pocketitems.xml name=\"#...\"; EID section 3 (cards, 97 rows, 20 langs) via shim_eid_name_of(EID_CARD=3, id)",
+   "icon": "EID atlas eid_cardspills.anm2 \"Cards\" frame id-1 (16x20 at 75 %), the spawner draws marker \"Card<id>\" at CARD_SCALE 1.5"
+  },
+  "runes": {
+   "ids": "32..41 (Hagalaz..Black Rune, <rune> tag), 55 Rune Shard; souls 81..97 are type \"rune\" under <card>",
+   "spawn": "5.300.<id> (same variant as cards)"
+  },
+  "pills": {
+   "effects": "0..49 (pocketitems.xml pilleffect, 50 rows; names stringtable PocketItems \"#..._NAME\"; EID section 4 pills / 5 horse pills)",
+   "colours": "5.70.1..13 + 14 gold (entities2.xml \"Pill Blue-Blue\"..\"Pill Gold-Gold\"); horse pills 5.70.2049..2062",
+   "icon": "eid_cardspills.anm2 \"Pills\" frame colour-1 (18x18 at 75 %)",
+   "note": "a spawned pill carries a COLOUR; its effect is the run's colour->effect mapping (ItemPool). Listing effects needs the identified mapping."
+  },
+  "trinkets": {
+   "count": 188,
+   "ids": "1..189 (one id unused)",
+   "spawn": "5.350.<id> (+32768 golden)",
+   "names": "stringtable category Items \"#..._NAME\" (items.xml <trinket name>); EID section 2 (trinkets, 189 rows)",
+   "icon": "gfx/items/trinkets/<gfx> 32x32 via eid_inline_icons \"ItemIcon\" at 75 % (shim_eid_item_picture(..., trinket=1))"
+  }
+ },
+ "glyph_problems": []
+}

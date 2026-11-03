@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<stringtable>
+    <info version="1.0" modified="Wed Jun 28 17:42:44 2023" modifiedby="Jerm"/>
+    <languages>
+        <language id="21" index="0" name="Key"/>
+        <language id="0" index="1" name="English"/>
+        <language id="2" index="2" name="Japanese"/>
+        <language id="11" index="3" name="Korean"/>
+        <language id="13" index="4" name="Chinese (Simple)"/>
+        <language id="10" index="5" name="Russian"/>
+        <language id="5" index="6" name="German"/>
+        <language id="4" index="7" name="Spanish"/>
+        <language id="3" index="8" name="French"/>
+    </languages>
+    <category name="Default">
+        <key name="CONTROLLER_DISCONNECTED_HEADER">
+            <string>Controller Disconnected!</string>
+            <string>コントローラーの接続が解除されました！</string>
+            <string>컨트롤러와의 연결이 끊겼습니다!</string>
+            <string>手柄连接断开！</string>
+            <string>Контроллер отключен!</string>
+            <string>Controller getrennt!</string>
+            <string>¡Se ha desconectado el mando!</string>
+            <string>Manette déconnectée !</string>
+        </key>
+        <key name="CONTROLLER_DISCONNECTED_MESSAGE">
+            <string>Reconnect a controller and press any button.</string>
+            <string>コントローラーを再接続して、\nボタンを押してください。</string>
+            <string>컨트롤러와 다시 연결한 후\n아무 버튼이나 눌러주세요.</string>
+            <string>重新连接手柄并\n按任意键。</string>
+            <string>Подключите контроллер и нажмите любую кнопку.</string>
+            <string>Schließe den Controller an und drücke eine beliebige Taste</string>
+            <string>Vuelve a conectar un mando y pulsa cualquier botón.</string>
+            <string>Branche une manette et appuie sur un bouton.</string>
+        </key>
+        <key name="PROMPT_OK">
+            <string>OK</string>
+            <string>OK</string>
+            <string>확인</string>
+            <string>确定</string>
+            <string>ОК</string>
+            <string>OK</string>
+            <string>OK</string>
+            <string>OK</string>
+        </key>
+        <key name="PROMPT_YES">
+            <string>YES</string>
+            <string>はい</string>
+            <string>예</string>
+            <string>是</string>
+            <string>ДА</string>
+            <string>JA</string>
+            <string>SÍ</string>
+            <string>OUI</string>
+        </key>
+        <key name="PROMPT_NO">
+            <string>NO</string>
+            <string>いいえ</string>
+            <string>아니오</string>
+            <string>否</string>
+            <string>НЕТ</string>
+            <string>NEIN</string>
+            <string>NO</string>
+            <string>NON</string>
+        </key>
+        <key name="RESELECT_CONTROLLER_HEADER">
+            <string>Select a Controller!</string>
+            <string>コントローラーを選択してください！</string>
+            <string>컨트롤러를 선택해주세요!</string>
+            <string>选择手柄！</string>
+            <string>Выберите контроллер!</string>
+            <string>Wähle einen Controller!</string>
+            <string>¡Selecciona un mando!</string>
+            <string>Sélectionne une manette !</string>
+        </key>
+        <key name="RESELECT_CONTROLLER_MESSAGE">
+            <string>Press any button on the controller you would like to use</string>
+            <string>使用したいコントローラーの\nボタンを押してください。</string>
+            <string>사용할 컨트롤러의\n아무 버튼이나 눌러주세요.</string>
+            <string>在想要使用的手柄上\n按任意键。</string>
+            <string>Нажмите любую кнопку на контроллере, который хотите использовать.</string>
+            <string>Drücke eine beliebige Taste auf dem Controller, den du verwenden möchtest.</string>
+            <string>Pulsa cualquier botón en el mando que quieras usar.</string>
+            <string>Appuie sur un bouton de la manette que tu souhaites utiliser.</string>
+        </key>
+    </category>
+</stringtable>

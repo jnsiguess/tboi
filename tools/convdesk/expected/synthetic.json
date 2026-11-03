@@ -1,0 +1,80 @@
+{
+ "label": "synthetic",
+ "title": "Synthetic rules (tools/umdesk/test_converters.py)",
+ "source": "<project>\\tools\\umdesk\\test_converters.py",
+ "input": "%TEMP%\\convdesk\\inputs\\synthetic.zip",
+ "input_digest": "f1c9e53fe099e61656f61594a22cd4f5a7f8676ef5684a800f197448f00eaf37",
+ "tools": {
+  "modport.py": "3e3703a30ca997fa34fe7a3cf17350a05c282f7f5225a219ae547fa8f6dec9a5",
+  "modport.js": "8e419000f1ab111c913a76a98189145ba3e926c916412a362593b4c6a0a7d2c7",
+  "gameref.bin": "f025abd275294ede0822aa4dc38b8a36a833104eead1f45fb9d8e97510f5d3c4",
+  "modport_node.js": "0dde426a98a7819d5afefb8911c6181e74e00198415436d8c942989775354838"
+ },
+ "zip": true,
+ "id": "synthetic-rules",
+ "report": [
+  "modport report",
+  "",
+  "     1  dropped",
+  "     1  merged",
+  "     1  repaired",
+  "     3  rescaled",
+  "",
+  "rescaled resources/gfx/synthetic_wide.png: 4099x40 is over 4096, halved",
+  "rescaled resources/gfx/ui/main menu/sketch.png: 512x512 is the game's 256x256 times 2; the port draws it at the game's layout - baked down to 256x256 (area mean of each 2x2 block)",
+  "rescaled resources/gfx/ui/main menu/sketches2.png: 512x512 is the game's 256x256 times 2; the port draws it at the game's layout - baked down to 256x256 (area mean of each 2x2 block)",
+  "repaired resources/items.xml: 1 bare &, 1 repeated attribute - the game's parser forgives these, a strict one does not; written escaped",
+  "merged   resources/items.xml: an older table - 10 records of the game's it lacks added at its end; the mod's own records are kept whole, as the port's own check at start does",
+  "dropped  resources/rooms/00.special rooms.stb: room file format b'STB0' is not the game's b'STB1' - the game's loader reads no room of such a file, and a room the game then asks for there is read through a null pointer, a crash: the game's stays",
+  ""
+ ],
+ "files": {
+  "mod.json": {
+   "size": 133,
+   "sha256": "769d6cad42a56edaa5b7314e9a140d6285e6b413dfbb6d5d4db84e6993c05582",
+   "json": {
+    "id": "synthetic-rules",
+    "name": "Synthetic & rules",
+    "version": "2",
+    "author": "Unknown",
+    "description": "bare & here"
+   }
+  },
+  "resources/gfx/synthetic_wide.png": {
+   "size": 1006,
+   "sha256": "b4a913f395db72afc1ff42310c75370f9459c0708092e107d0976fb9d7550547",
+   "wh": [
+    2049,
+    20
+   ],
+   "pixels": "476d49fc179223018def6a2d60ba7d85e0d0573741e8e8a7738093405f32f291"
+  },
+  "resources/gfx/ui/main menu/sketch.png": {
+   "size": 5061,
+   "sha256": "c9b70412c4c6a6f8c0b76bff38de8e61b6943f05a62693f16201eab9062c5c1e",
+   "wh": [
+    256,
+    256
+   ],
+   "pixels": "c54ea0484c1472d97a49512faf5ddae4694fc60c5c23e5e1856a30ce06c53349"
+  },
+  "resources/gfx/ui/main menu/sketches2.png": {
+   "size": 14940,
+   "sha256": "a42ec1630d2a696ec64c2b6bfc2fdf906d724c89826e80ecef1ef2c43f2361c2",
+   "wh": [
+    256,
+    256
+   ],
+   "pixels": "4a9d30b9882f6885c31ea89de94edcc0812d97e2a8cfa95e4f69d31ebc35fedd"
+  },
+  "resources/items.xml": {
+   "size": 134061,
+   "sha256": "d19bc45d4b6aa83ddf60b9881cea66d308b006d3fce44097751c8a504a9f0e87",
+   "tree": "a3dbebcfc2f7ba5f8908a4a1679c64ae8dcfebe1aa18912aabfeec986c2e6cc9"
+  }
+ },
+ "js": {
+  "agrees": true,
+  "differences": []
+ }
+}

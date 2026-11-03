@@ -1,0 +1,51 @@
+{
+ "label": "3793943585",
+ "title": "Resprited Item/Trinket Icons",
+ "source": "Z:/Games/Steam/steamapps/workshop/content/250900\\3793943585",
+ "input": "%TEMP%\\convdesk\\inputs\\3793943585.zip",
+ "input_digest": "c6433cb16051721b6323c6a6d097e3503753264cbc6dadfe022fcd850e3fd6b3",
+ "tools": {
+  "modport.py": "3e3703a30ca997fa34fe7a3cf17350a05c282f7f5225a219ae547fa8f6dec9a5",
+  "modport.js": "8e419000f1ab111c913a76a98189145ba3e926c916412a362593b4c6a0a7d2c7",
+  "gameref.bin": "f025abd275294ede0822aa4dc38b8a36a833104eead1f45fb9d8e97510f5d3c4",
+  "modport_node.js": "0dde426a98a7819d5afefb8911c6181e74e00198415436d8c942989775354838"
+ },
+ "zip": true,
+ "id": "deathitemresprite",
+ "report": [
+  "modport report",
+  "",
+  "     1  dropped",
+  "     1  note",
+  "",
+  "dropped  1 files beside the card (icons!.gif): not read by the port",
+  "note     resources/gfx/ui/death items.png: 320x784 where the game has 320x640 (no anm2 or fnt of the mod cuts it)",
+  ""
+ ],
+ "files": {
+  "mod.json": {
+   "size": 519,
+   "sha256": "52e59123e3ee31c2d2644849dd9afea00e29ada2c0c49355e4beadd47d0fcd9f",
+   "json": {
+    "id": "deathitemresprite",
+    "name": "Resprited Item/Trinket Icons",
+    "version": "1.1",
+    "author": "Unknown",
+    "description": "A simple resprite mod intented to overhaul the little icons associated with each item and trinket in order to give them a little more flair and (hopefully) make them easier to identify.\n\nCurrently, this mod only covers base game items/trinkets. Please list any mods of your choosing that you would like to see resprited icons for below, as mod support will be arriving eventually!"
+   }
+  },
+  "resources/gfx/ui/death items.png": {
+   "size": 75584,
+   "sha256": "8187dbff674e3fea6afbdd763851a55d45b8421ad192e5d21413d37d17d38347",
+   "wh": [
+    320,
+    784
+   ],
+   "pixels": "2fff742c45b85a8fff04a567a8c93ee9014b520d148e12930cc478f697137a90"
+  }
+ },
+ "js": {
+  "agrees": true,
+  "differences": []
+ }
+}

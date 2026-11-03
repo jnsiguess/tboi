@@ -1,0 +1,537 @@
+{
+ "label": "3779425856",
+ "title": "Pickup Pop-ups",
+ "source": "Z:/Games/Steam/steamapps/workshop/content/250900\\3779425856",
+ "input": "%TEMP%\\convdesk\\inputs\\3779425856.zip",
+ "input_digest": "03a8924e5e4b8dfa77ef68859753eccb82a24e3d6cc291d8b33b77438f233278",
+ "tools": {
+  "modport.py": "3e3703a30ca997fa34fe7a3cf17350a05c282f7f5225a219ae547fa8f6dec9a5",
+  "modport.js": "8e419000f1ab111c913a76a98189145ba3e926c916412a362593b4c6a0a7d2c7",
+  "gameref.bin": "f025abd275294ede0822aa4dc38b8a36a833104eead1f45fb9d8e97510f5d3c4",
+  "modport_node.js": "0dde426a98a7819d5afefb8911c6181e74e00198415436d8c942989775354838"
+ },
+ "zip": true,
+ "id": "pickup-popups",
+ "report": [
+  "modport report",
+  "",
+  "     2  dropped",
+  "    33  kept",
+  "",
+  "dropped  main.lua: the port runs no scripts; whatever the script did is not carried",
+  "dropped  2 files beside the card (icon.gif, workshop thumbnail.gif): not read by the port",
+  "kept     resources/gfx/battery.anm2: new to the game (a mod's own animation)",
+  "kept     resources/gfx/bigpoopnugget.anm2: new to the game (a mod's own animation)",
+  "kept     resources/gfx/blackheart.anm2: new to the game (a mod's own animation)",
+  "kept     resources/gfx/blendedheart.anm2: new to the game (a mod's own animation)",
+  "kept     resources/gfx/bomb.anm2: new to the game (a mod's own animation)",
+  "kept     resources/gfx/boneheart.anm2: new to the game (a mod's own animation)",
+  "kept     resources/gfx/chargedkey.anm2: new to the game (a mod's own animation)",
+  "kept     resources/gfx/dime.anm2: new to the game (a mod's own animation)",
+  "kept     resources/gfx/doublebomb.anm2: new to the game (a mod's own animation)",
+  "kept     resources/gfx/doubleheart.anm2: new to the game (a mod's own animation)",
+  "kept     resources/gfx/doublepenny.anm2: new to the game (a mod's own animation)",
+  "kept     resources/gfx/eternalheart.anm2: new to the game (a mod's own animation)",
+  "kept     resources/gfx/gigabomb.anm2: new to the game (a mod's own animation)",
+  "kept     resources/gfx/goldenbattery.anm2: new to the game (a mod's own animation)",
+  "kept     resources/gfx/goldenbomb.anm2: new to the game (a mod's own animation)",
+  "kept     resources/gfx/goldenkey.anm2: new to the game (a mod's own animation)",
+  "kept     resources/gfx/goldenpenny.anm2: new to the game (a mod's own animation)",
+  "kept     resources/gfx/goldheart.anm2: new to the game (a mod's own animation)",
+  "kept     resources/gfx/halfblackheart.anm2: new to the game (a mod's own animation)",
+  "kept     resources/gfx/halfredheart.anm2: new to the game (a mod's own animation)",
+  "kept     resources/gfx/halfsoulheart.anm2: new to the game (a mod's own animation)",
+  "kept     resources/gfx/key.anm2: new to the game (a mod's own animation)",
+  "kept     resources/gfx/keyring.anm2: new to the game (a mod's own animation)",
+  "kept     resources/gfx/luckypenny.anm2: new to the game (a mod's own animation)",
+  "kept     resources/gfx/megabattery.anm2: new to the game (a mod's own animation)",
+  "kept     resources/gfx/microbattery.anm2: new to the game (a mod's own animation)",
+  "kept     resources/gfx/nickel.anm2: new to the game (a mod's own animation)",
+  "kept     resources/gfx/penny.anm2: new to the game (a mod's own animation)",
+  "kept     resources/gfx/poopnugget.anm2: new to the game (a mod's own animation)",
+  "kept     resources/gfx/redheart.anm2: new to the game (a mod's own animation)",
+  "kept     resources/gfx/rottenheart.anm2: new to the game (a mod's own animation)",
+  "kept     resources/gfx/scaredheart.anm2: new to the game (a mod's own animation)",
+  "kept     resources/gfx/soulheart.anm2: new to the game (a mod's own animation)",
+  ""
+ ],
+ "files": {
+  "mod.json": {
+   "size": 832,
+   "sha256": "f81bf1a2fe8c0f973bba826f12b8d20267012e095a3ee9f2722154017db0c234",
+   "json": {
+    "id": "pickup-popups",
+    "name": "Pickup Pop-ups",
+    "version": "1.2",
+    "author": "Unknown",
+    "description": "Have you ever wanted to get a stupid popup every time you picked up a pickup?\n\t\nThis mod does exactly that. Now every pickup makes a matching popup appear on a random part of the screen.\n\t\nThe following pickups are affected:\n- penny\n- double penny\n- nickel\n- dime\n- lucky penny\n- golden penny\n- red heart\n- half red heart\n- double heart\n- soul heart\n- half soul heart\n- black heart\n- eternal heart\n- golden heart\n- bone heart\n- blended heart\n- rotten heart\n- key\n- golden key\n- charged key\n- key ring\n- bomb\n- double bomb\n- golden bomb\n- giga bomb\n- tainted ??? poop (big)\n- tainted ??? poop (small)\n- lil' battery\n- micro battery\n- mega battery\n- golden battery\n\t\nok enjoy"
+   }
+  },
+  "resources/gfx/battery.anm2": {
+   "size": 1191,
+   "sha256": "04f4cbe4eb2585693e5267b7173831079efd351bba3d25a0d7a8049b31cf28fb",
+   "tree": "60d160176ad19f439a8685a271d5f8182f83072fbfb32b97649977795053a3fd"
+  },
+  "resources/gfx/battery.png": {
+   "size": 6510,
+   "sha256": "23f78ce86f628a457f160ac2aa87915a6e6a14d9cb5a6ff0aa3d10d93281b4d9",
+   "wh": [
+    141,
+    91
+   ],
+   "pixels": "11834f6a0ff09d3e59b88101ea1b50e975c002a3eafe5e43155862c55ec4cb80"
+  },
+  "resources/gfx/bigpoopnugget.anm2": {
+   "size": 1197,
+   "sha256": "62ed071db16e668540342ab21d91d12a1cdb4595237338dcd6e6699b0a171583",
+   "tree": "ca60ca241b11be9a180b80a3cce11cc04261b7c0479012d90d86dd13a741259c"
+  },
+  "resources/gfx/bigpoopnugget.png": {
+   "size": 7975,
+   "sha256": "b41ce526fefade466e42c475105a655e11c25c3c31896ad887dc762de48ce364",
+   "wh": [
+    141,
+    91
+   ],
+   "pixels": "9160c7536aac56fc2d14bfed69293fc41a29df64b1e28b7b6cb366f0f33ceb8a"
+  },
+  "resources/gfx/blackheart.anm2": {
+   "size": 1194,
+   "sha256": "ab80154f5614321e74780b73c91cc6e82689d346269c02fbe30280cee76705ef",
+   "tree": "f5eaa2317ffbd6d54a24183d8382ea58a867fe64cec90286c28330328b8420e9"
+  },
+  "resources/gfx/blackheart.png": {
+   "size": 5463,
+   "sha256": "3e424a61fe030285774e50230176577b0850ca7fedb95eef1c6e17807212b59c",
+   "wh": [
+    141,
+    91
+   ],
+   "pixels": "5ed2bdc94e173771e439c7985ce7a1af29c59526493ebbbf7922e194a69dff42"
+  },
+  "resources/gfx/blendedheart.anm2": {
+   "size": 1196,
+   "sha256": "7de63a42c883ce742e916bcdfa64a7155bab36247de7f74d28838aff74418255",
+   "tree": "33d7cef6981035e8ae53280c141ea45ad0e776982b2b5092d5f48ddcec7cb573"
+  },
+  "resources/gfx/blendedheart.png": {
+   "size": 7577,
+   "sha256": "9d745e2a537b9b693381cc8ec2dffc933f417479b3422407417eab86e0dea47a",
+   "wh": [
+    141,
+    91
+   ],
+   "pixels": "4300e824b4ebaa2122a993a65142ac8cf7d079109af462977ef7cba3b0c671d6"
+  },
+  "resources/gfx/bomb.anm2": {
+   "size": 1188,
+   "sha256": "503fae087fb9d307a9b03f3bba4fda53d361204b3e2b991dbd75589d7ad37f8d",
+   "tree": "5f2895721720af80a214dead2c58ed0d74cf4a8f4b981cff310f099477f3967c"
+  },
+  "resources/gfx/bomb.png": {
+   "size": 6312,
+   "sha256": "69d8794bc85d474877b8059987022b4b9bbbf094cef803c2d32219d9fe086fc6",
+   "wh": [
+    141,
+    91
+   ],
+   "pixels": "b0a44d42f80fb98e15e5ae741903fc7bab3cdc2828b5209665362d5b791e508c"
+  },
+  "resources/gfx/boneheart.anm2": {
+   "size": 1193,
+   "sha256": "9326888019f78a99c6bb53e5b02840cb25a5ef0557dfc61f54a0c3d0bf53bbb8",
+   "tree": "a81b9e65e42756746811a937f34579764d5e06527e92d764cb7265fdadc7b346"
+  },
+  "resources/gfx/boneheart.png": {
+   "size": 4839,
+   "sha256": "266900007c8f2dd1b63d93701e9da969140706bf78122ecf0c3247ecb5fb5c36",
+   "wh": [
+    141,
+    91
+   ],
+   "pixels": "f56fbb5978573cc61ba1191725a6880f9037a593e0eddb7cc126fca2a59d35ea"
+  },
+  "resources/gfx/chargedkey.anm2": {
+   "size": 1194,
+   "sha256": "822c7b9b07a3abb26cd1e951c50b86de86f444f465b27ad8c97187633dda109d",
+   "tree": "8f086570190a7a2a62bc233f068375c5e99c97467b25b21c87911e1cc578d16a"
+  },
+  "resources/gfx/chargedkey.png": {
+   "size": 6996,
+   "sha256": "7a4b327a01cc20a1f572fb249c6ca44fec9aa8673cb6e2c0ff3695909dd0f347",
+   "wh": [
+    141,
+    91
+   ],
+   "pixels": "e981431acfb257840a026a4a228c9f0c709155a2adc1c74c9c6cf21deabfa2a6"
+  },
+  "resources/gfx/dime.anm2": {
+   "size": 1188,
+   "sha256": "28d89901952c7d58f1a73c010d7f17b7ae56f47c28f7c6bff0328a54dbee4d8a",
+   "tree": "9cb78cb5e33da25327f1b06d1cfa5275ea5fd7ec1ec92d84fef3448c4d4c09e5"
+  },
+  "resources/gfx/dime.png": {
+   "size": 7585,
+   "sha256": "746d6d30e5f2a67e4f42753042cfaf7632f2dc8e84be26eb6c79ac2a98c3e94e",
+   "wh": [
+    141,
+    91
+   ],
+   "pixels": "5ce0763d0a5217e94bccf159c1b129da1bb9d427caf0f1409a0e31135b1072ff"
+  },
+  "resources/gfx/doublebomb.anm2": {
+   "size": 1194,
+   "sha256": "f0433ba6ad8a1295764afa03a8d68ebd4ef14bc4676b7685c2357026ee4d0743",
+   "tree": "efd894dc76eec19b0db8fb2c8d2576d83a0dc71d0064a3aa96a36b8fcbb6058c"
+  },
+  "resources/gfx/doublebomb.png": {
+   "size": 6955,
+   "sha256": "b785868bbee6e0d2e0bbbb8330b582ef8155560e3d8410284fb1fd023b176e2d",
+   "wh": [
+    141,
+    91
+   ],
+   "pixels": "627cd8ae0f0872379bc77dbb94b36449537eccfdb6534246273653b9095c4aa4"
+  },
+  "resources/gfx/doubleheart.anm2": {
+   "size": 1195,
+   "sha256": "bf8d6c9a1205e12954b1d665710add3319fd74ba2c986707b984cb61bf483281",
+   "tree": "ce7815beccf3638c6366e1915ef94d8a659bf999c4fd6cfc3a7853f1bbea0f09"
+  },
+  "resources/gfx/doubleheart.png": {
+   "size": 5444,
+   "sha256": "9a67eb0df042b52cd8bfa9fbee058e29ad16a697a9d990989712e0e80a38bb81",
+   "wh": [
+    141,
+    91
+   ],
+   "pixels": "05d1c86f41f571e983a7a0d54d91c7eb76bab851b15143a5746f0b56c18aa50b"
+  },
+  "resources/gfx/doublepenny.anm2": {
+   "size": 1195,
+   "sha256": "2fc219a8c237f3910558c4fbdf5f1ceacea33b274f1b42e0d2dfb72737421726",
+   "tree": "19fcd0796d64b840160f023bb4379a4de60d5774cde5f517bee31bab8d181f31"
+  },
+  "resources/gfx/doublepenny.png": {
+   "size": 7295,
+   "sha256": "86a37cbc7dbacf58f1a91aae5a398a014a39c0d49a5ebc6fd9ec5babde3a773f",
+   "wh": [
+    141,
+    91
+   ],
+   "pixels": "3ec0772cca269f8ff17b01e494bbf379d58241a82a984ec8efd9095020c4e9ff"
+  },
+  "resources/gfx/eternalheart.anm2": {
+   "size": 1196,
+   "sha256": "0a5b863dcc1cc23a3067c875cf05f88225a325a318092821133833ef5bc3c282",
+   "tree": "4560d56795c20d1383e4a22b492cb030b7a70af73498c85a75168205736eddb4"
+  },
+  "resources/gfx/eternalheart.png": {
+   "size": 5689,
+   "sha256": "a6662f5da2efdde435a5661cf19361c6bdf82651bf998c6b4b2b31926e4857b6",
+   "wh": [
+    141,
+    91
+   ],
+   "pixels": "0877bb4c5b9cfe044fdb421d9fbad4ebb9f49abc9d28cfbe9c24921194c1f3a7"
+  },
+  "resources/gfx/gigabomb.anm2": {
+   "size": 1192,
+   "sha256": "0be608af078a333717c2458706148cb2196664ce7d2d4abeb84a7f3f2e999eba",
+   "tree": "4c951843eabbdef4e6e124080c2ddd12012a62f8c83b0d85a78c58d605338585"
+  },
+  "resources/gfx/gigabomb.png": {
+   "size": 6441,
+   "sha256": "620cbda343cf54f663502c888113a5c5bfcd0d230daf7fe80924da81fd0f0527",
+   "wh": [
+    141,
+    91
+   ],
+   "pixels": "3c26d2e35d14b2070b04f6684fb988b9161abd799a24cebf4652ad8a3d682a89"
+  },
+  "resources/gfx/goldenbattery.anm2": {
+   "size": 1197,
+   "sha256": "4dc56f060660aa69c3ed644a9e5efa6f6f9012ce7def2abd9cdfa15ccd2180d0",
+   "tree": "299a895a3358b78ee4a8ac5b335970856ec5199511a300c16030213c8ab32d61"
+  },
+  "resources/gfx/goldenbattery.png": {
+   "size": 7472,
+   "sha256": "6299404213f1fbef50c9246a98d90934c4fec2e5272540137cbb4ee34ca2cffe",
+   "wh": [
+    141,
+    91
+   ],
+   "pixels": "920c49e21cb890c8125c5644e89a53d9eb8a73624a79affe8c46f082faeb2fac"
+  },
+  "resources/gfx/goldenbomb.anm2": {
+   "size": 1194,
+   "sha256": "e37912aa350c9c9f02eb175e62683ad7b2efa11c84790da6041cd86827445d2b",
+   "tree": "696252a442501fc0bcb07a4792f8b04dcc106106373c4d34f83c6e9d63c30162"
+  },
+  "resources/gfx/goldenbomb.png": {
+   "size": 7134,
+   "sha256": "36e56977c139578d597904519515db2b5e918aa6e57fa9754d444d82d135d927",
+   "wh": [
+    141,
+    91
+   ],
+   "pixels": "81d35f1af0d07f2db004fc52b58368f0966707064cb431670821e1f4eed35e00"
+  },
+  "resources/gfx/goldenkey.anm2": {
+   "size": 1193,
+   "sha256": "99cdc4098d4e56e6180c5c447a189e2523f2c5d17fb6b10fbd8533c9602ea795",
+   "tree": "2debf98cb3ae2f3642b3fadff27bd5bcd39b31d77c170ddff67786aca82e2e6b"
+  },
+  "resources/gfx/goldenkey.png": {
+   "size": 7065,
+   "sha256": "ce08e1466d493a7a69da0451fdd619bad175cf1d6ccbe126d3c634e3451dae3e",
+   "wh": [
+    141,
+    91
+   ],
+   "pixels": "4734a82077137e93dcdfdab0ec21fbf22b50120e99aa50aaa22ddf2fd22746fd"
+  },
+  "resources/gfx/goldenpenny.anm2": {
+   "size": 1195,
+   "sha256": "1562290a9d6d6c31b904972f4c261d2a492a3ad2785600c9e2cb60967e2a1552",
+   "tree": "b6144e2f5e940f55c1153c6afb073a266d44e0e1fcccb39e984af1c08b2a43b5"
+  },
+  "resources/gfx/goldenpenny.png": {
+   "size": 6592,
+   "sha256": "abc0d94e6c6c667fc4affccd455b6b35500b7542ea0c82fe33857b07748d53f4",
+   "wh": [
+    141,
+    91
+   ],
+   "pixels": "27406c98f53fd5dfffada66564b1817e9b8ff80ddd8f00c12e8265f9fe7dcc1e"
+  },
+  "resources/gfx/goldheart.anm2": {
+   "size": 1193,
+   "sha256": "5a556b9d08e38b55819bd67673e89936702ac8f52fc9f527e2f6e7c845488d71",
+   "tree": "a80fc8fda57778f417b14207908d7c718c1403aee91a57ad5f02011b94d4be1f"
+  },
+  "resources/gfx/goldheart.png": {
+   "size": 4744,
+   "sha256": "add0bfca8b76b0a8c726fc75cf7169550221a35c1b5303fb3a106ab21db6da1d",
+   "wh": [
+    141,
+    91
+   ],
+   "pixels": "6643040c96df19f66fbc68b00ecb0b5e69e75a0754b5658929d06f0efdc39452"
+  },
+  "resources/gfx/halfblackheart.anm2": {
+   "size": 1198,
+   "sha256": "30168e95840b1ff0a8ddf07ab2ae0485edaad0095e833c8aa656b1e9b6574d24",
+   "tree": "10b21d0f1a70677d38fcc1e12e71a6e7adf8722ef3f24bce22cbf6f843ba4a39"
+  },
+  "resources/gfx/halfblackheart.png": {
+   "size": 6248,
+   "sha256": "19d985d51088db93c22685bf5a93e8b59ad4eab3ed1aac381b1b2d3dc4ad7e91",
+   "wh": [
+    141,
+    91
+   ],
+   "pixels": "d51d5e5641469b10b334b9e5c4bd2594ece09861b63baa6fcc5fc3c5be204192"
+  },
+  "resources/gfx/halfredheart.anm2": {
+   "size": 1196,
+   "sha256": "27886a6d89b26cce1789726b19b83b026ebd0f43e62c072c96bf33305dc67cc8",
+   "tree": "0cdfaa4de80193596f10789854e6fb5c699724888457af9fbce494242d65e8fa"
+  },
+  "resources/gfx/halfredheart.png": {
+   "size": 7412,
+   "sha256": "0663939d1eaff9973b4dfff0fdd54e55cb76bbb83227508f440343affb7dcaec",
+   "wh": [
+    141,
+    91
+   ],
+   "pixels": "134d18a541c2de02678500ccb5cc11fdb2d587da1e78860a9eefa61c78bd3590"
+  },
+  "resources/gfx/halfsoulheart.anm2": {
+   "size": 1197,
+   "sha256": "35071ff048725d7538a8e5174bb8e341020a9099379ab6a8c11a2e65821458e7",
+   "tree": "c2b34a5ddd9c912d6b2e3d56feed3e02f8cb47ae1e2b54b0f3890464562d25e5"
+  },
+  "resources/gfx/halfsoulheart.png": {
+   "size": 7545,
+   "sha256": "91c381d3313324c4499e4a211ebd3117933f2b931adea8aaf5370ff121a2fad2",
+   "wh": [
+    141,
+    91
+   ],
+   "pixels": "5dd36e360f5fde32a3ab9f03c5426f636dc1584771850267a39f28d3cb7f1681"
+  },
+  "resources/gfx/key.anm2": {
+   "size": 1187,
+   "sha256": "6c65c3d05ca22910770d95a29c00a656e3dd175db0f2ee1a451feedba5f0274a",
+   "tree": "1f26e6b81abb11fd61ad06c656189dc1de9efbff76782850db2af8db86d17862"
+  },
+  "resources/gfx/key.png": {
+   "size": 5145,
+   "sha256": "4c4bf38630365edf4b1cec2dabbdb44ff1cae6cf64415a278b35f851cd0cf1f9",
+   "wh": [
+    141,
+    91
+   ],
+   "pixels": "5c0135dcabad1659c5e8ac0d0dd6c3272ee7ecddc2e340106270c036e4d55439"
+  },
+  "resources/gfx/keyring.anm2": {
+   "size": 1191,
+   "sha256": "197248747818b1acc86873c639645f04607762db5937f4e42c027ebfb8aef857",
+   "tree": "cf27e70122cace5e4e7acdb7a65581c372c0f928e5746270cc0c3aac91c42626"
+  },
+  "resources/gfx/keyring.png": {
+   "size": 6411,
+   "sha256": "13a505d9d7ba687248b4a1d41432fb03a3ba8977665ce2aaed33db9090c196f6",
+   "wh": [
+    141,
+    91
+   ],
+   "pixels": "f52d59187680faa7ce73519ccd8e0f81d9344f1839fd712f04fc151da162bbda"
+  },
+  "resources/gfx/luckypenny.anm2": {
+   "size": 1194,
+   "sha256": "1ae2c1abe8bcc50a0ab5085b96cba91c6ec7b471350eed75f919e58fa5c26e8a",
+   "tree": "69ed1d1118de8d5b0b7a90e0ea8c6d6fd0ab2baaa1b44655e71269afc31e67ef"
+  },
+  "resources/gfx/luckypenny.png": {
+   "size": 6690,
+   "sha256": "9c3ec913c1e8bb81010b7cd73d26f571ab3b6b1a2d72e63b12fe1288fbb3ec82",
+   "wh": [
+    141,
+    91
+   ],
+   "pixels": "37954367a324f0dc49c3f2eeccab2937ead2fd0bf87954168f6db602dad1d46b"
+  },
+  "resources/gfx/megabattery.anm2": {
+   "size": 1195,
+   "sha256": "27e0b9052d24ca873291c3d313f0f4eb4c23c444e3a2bd042413b931307ab423",
+   "tree": "51fb29e6b6bf56aeb9afb27b179e464a7da92dbe9bfa363c2edef535d9df9c01"
+  },
+  "resources/gfx/megabattery.png": {
+   "size": 7072,
+   "sha256": "cbc501c2f101c4af6f7e76a50003cf289c28dc3d50f0c5da9f2d9b5c33a37da9",
+   "wh": [
+    141,
+    91
+   ],
+   "pixels": "dd34025785f0bd1c64808e2c2c754454537633fdc57f1af1af4f3bffaf74ba80"
+  },
+  "resources/gfx/microbattery.anm2": {
+   "size": 1196,
+   "sha256": "a33da083e8593f79e0656c26abb015a1a25df637c87d80848b8d93afde715304",
+   "tree": "555971bf02c75ae19bbf3d264e30558f66ed9e4982de2f1bc81486af0a9fdfce"
+  },
+  "resources/gfx/microbattery.png": {
+   "size": 6774,
+   "sha256": "62ee003aee698c4b5b895505b5e44bbd6e4b6ea75a8ae4a062477be198ffa50f",
+   "wh": [
+    141,
+    91
+   ],
+   "pixels": "08858f50dc657400579f66d7afac86996cf2cc1d09398e9f5afb13fb3aa1e1d9"
+  },
+  "resources/gfx/nickel.anm2": {
+   "size": 1190,
+   "sha256": "0cc7e113631f9be9d577e3c76b0893bd37514b744f6b16738fa001a64e3129b6",
+   "tree": "d7bb432021a96ba7dcf9268d99f7d434d808c093d9fc93501ec90eff73a6412c"
+  },
+  "resources/gfx/nickel.png": {
+   "size": 7969,
+   "sha256": "be9b45e795cbde24a4d219fbcdfd85783bc1afb7a6717fbbb717ec1762870fcd",
+   "wh": [
+    141,
+    91
+   ],
+   "pixels": "51ff8b50890da4c07a533f66ce5778aaa7f5730d42f020af2c638f27b5ec3b11"
+  },
+  "resources/gfx/penny.anm2": {
+   "size": 1189,
+   "sha256": "ecb0ec9893d80d65e84e680057704ca746aba396baf4ab3e0b515f6bc7bbed6a",
+   "tree": "411f62c9edd2d3611e6ab7912d9120b2dfaf880ee44ef2a275354619535c1d1c"
+  },
+  "resources/gfx/penny.png": {
+   "size": 7945,
+   "sha256": "595805ef4ee23cc04e728e6abc736d9a4d60decb3060b05cab67313b335672fe",
+   "wh": [
+    141,
+    91
+   ],
+   "pixels": "c606a001082951f2f92bb727deee43fb2d964ad4f79e890648673a96e520f299"
+  },
+  "resources/gfx/poopnugget.anm2": {
+   "size": 1194,
+   "sha256": "5ae3e78d0e061f4f015a8c1b08ec8094a74a1614c6fbb2a5509dfb892d64a81c",
+   "tree": "2ff78077f764b39d34bb5d64beb74cee83b789f3def6de833eb5b631aa113a4a"
+  },
+  "resources/gfx/poopnugget.png": {
+   "size": 6436,
+   "sha256": "9c9a749e25e547664d72675f0463af40319edd8993a23b8e2d11ed62225e4e7c",
+   "wh": [
+    141,
+    91
+   ],
+   "pixels": "f6f03fe311f606188798bbbf47a6a2bc97f702d86d991a0b03ddcffb53fc142a"
+  },
+  "resources/gfx/redheart.anm2": {
+   "size": 1192,
+   "sha256": "e4678cfdeda4126146e5ed74d851e68bfa96517671943023801c94c9e62e69c6",
+   "tree": "8e3474fe2c4822481fbe98a859f9023f491821e3115af459f7581aaa8a304ce0"
+  },
+  "resources/gfx/redheart.png": {
+   "size": 6264,
+   "sha256": "71fa2a40a84cdcf099aa3d4931d430c92db9823ec7a357e1e96f01d8ad53beb4",
+   "wh": [
+    141,
+    91
+   ],
+   "pixels": "e5ea8eca9c2bc1d4e7130ec498b971ca4f812b52e113f32aac2a44da76ff8fea"
+  },
+  "resources/gfx/rottenheart.anm2": {
+   "size": 1195,
+   "sha256": "aa8e92592c78bd33804f5f1a87314510b77d7e261dd86778cb8dc280d0fe0f69",
+   "tree": "1bf50fc92ee3d2c2cbdc1940da92b392cec0480403d32d41d9e25a68c0ddb8ca"
+  },
+  "resources/gfx/rottenheart.png": {
+   "size": 6700,
+   "sha256": "04ac1d810ff2f2ace0e36b281983bf4e27873ae59a0e1ccc75a2b6a4562fb066",
+   "wh": [
+    141,
+    91
+   ],
+   "pixels": "aec8914d52c3663de2df6c5285b28ac22474c4506f155794e804074df55a7aa7"
+  },
+  "resources/gfx/scaredheart.anm2": {
+   "size": 1195,
+   "sha256": "800464ef5e763ec4a2ba5b0b57b16d24b41111a0e2c297d2cfd2b0ab38dba8fb",
+   "tree": "a3cc3cf3b33310edba671950b5a38b5bd6fb6407a0930d99b9e834c307e615fe"
+  },
+  "resources/gfx/scaredheart.png": {
+   "size": 5349,
+   "sha256": "fe21cbae7e40d7709d9d5f1cafff5ea4697a930ffd5f22fbd2b66e475d4d87c5",
+   "wh": [
+    141,
+    91
+   ],
+   "pixels": "2e151f9bdcb9d89710104fe80fb70c77f51cdb53e6b9b7764b5eb80fab2cf8c6"
+  },
+  "resources/gfx/soulheart.anm2": {
+   "size": 1193,
+   "sha256": "cc162d59e7ca46616f6467a2a8065a9a179090e5824254854d52ffc6500a1c81",
+   "tree": "e16c3fe2e1ec3361ddf682b487b971e2704ae2c3d31edc86cc0b8837efc296b1"
+  },
+  "resources/gfx/soulheart.png": {
+   "size": 6533,
+   "sha256": "da484a592fbd94e605881eb7c39013f9ae3808651605911e7f1804655a9b18ac",
+   "wh": [
+    141,
+    91
+   ],
+   "pixels": "3039b91e9b419201f27e3ba5f4fc1abd6dd0c99b5c6954c61dc64ec645f466c6"
+  }
+ },
+ "js": {
+  "agrees": true,
+  "differences": []
+ }
+}

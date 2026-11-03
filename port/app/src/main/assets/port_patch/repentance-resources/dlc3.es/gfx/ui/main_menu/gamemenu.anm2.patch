@@ -1,0 +1,76 @@
+<PortPatch Version="1">
+	<Spritesheet Path="port_strap_credits.png" />
+	<Layer Name="PortStrap0" Spritesheet="port_strap_credits.png" />
+	<Layer Name="PortStrap1" Spritesheet="port_strap_credits.png" />
+	<Layer Name="PortStrap2" Spritesheet="port_strap_credits.png" />
+	<Layer Name="PortStrap3" Spritesheet="port_strap_credits.png" />
+	<Layer Name="PortStrap4" Spritesheet="port_strap_credits.png" />
+	<Layer Name="PortStrap5" Spritesheet="port_strap_credits.png" />
+	<Layer Name="Item6" Spritesheet="GameMenu.png" SheetOf="Cursor" />
+	<Null Name="Area6" Before="AreaDailyRun" />
+	<Animation Name="Idle">
+		<LayerAnimation Layer="PortStrap0" After="" Visible="true">
+			<Frame XPosition="315" YPosition="141" XPivot="0" YPivot="0" XCrop="0" YCrop="0" Width="78" Height="55" XScale="100" YScale="100" Delay="5" Visible="true" RedTint="255" GreenTint="255" BlueTint="255" AlphaTint="255" RedOffset="0" GreenOffset="0" BlueOffset="0" Rotation="0" Interpolated="false" />
+		</LayerAnimation>
+		<LayerAnimation Layer="PortStrap1" After="PortStrap0" Visible="true">
+			<Frame XPosition="316" YPosition="141" XPivot="0" YPivot="0" XCrop="0" YCrop="0" Width="78" Height="55" XScale="100" YScale="100" Delay="5" Visible="true" RedTint="255" GreenTint="255" BlueTint="255" AlphaTint="255" RedOffset="0" GreenOffset="0" BlueOffset="0" Rotation="0" Interpolated="false" />
+		</LayerAnimation>
+		<LayerAnimation Layer="PortStrap2" After="PortStrap1" Visible="true">
+			<Frame XPosition="317" YPosition="141" XPivot="0" YPivot="0" XCrop="0" YCrop="0" Width="78" Height="55" XScale="100" YScale="100" Delay="5" Visible="true" RedTint="255" GreenTint="255" BlueTint="255" AlphaTint="255" RedOffset="0" GreenOffset="0" BlueOffset="0" Rotation="0" Interpolated="false" />
+		</LayerAnimation>
+		<LayerAnimation Layer="PortStrap3" After="PortStrap2" Visible="true">
+			<Frame XPosition="318" YPosition="141" XPivot="0" YPivot="0" XCrop="0" YCrop="0" Width="78" Height="55" XScale="100" YScale="100" Delay="5" Visible="true" RedTint="255" GreenTint="255" BlueTint="255" AlphaTint="255" RedOffset="0" GreenOffset="0" BlueOffset="0" Rotation="0" Interpolated="false" />
+		</LayerAnimation>
+		<LayerAnimation Layer="PortStrap4" After="PortStrap3" Visible="true">
+			<Frame XPosition="319" YPosition="141" XPivot="0" YPivot="0" XCrop="0" YCrop="0" Width="78" Height="55" XScale="100" YScale="100" Delay="5" Visible="true" RedTint="255" GreenTint="255" BlueTint="255" AlphaTint="255" RedOffset="0" GreenOffset="0" BlueOffset="0" Rotation="0" Interpolated="false" />
+		</LayerAnimation>
+		<LayerAnimation Layer="PortStrap5" After="PortStrap4" Visible="true">
+			<Frame XPosition="320" YPosition="141" XPivot="0" YPivot="0" XCrop="0" YCrop="0" Width="78" Height="55" XScale="100" YScale="100" Delay="5" Visible="true" RedTint="255" GreenTint="255" BlueTint="255" AlphaTint="255" RedOffset="0" GreenOffset="0" BlueOffset="0" Rotation="0" Interpolated="false" />
+		</LayerAnimation>
+		<LayerAnimation Layer="Item1" Visible="true">
+			<Frame XPosition="177" YPosition="34" XPivot="0" YPivot="0" XCrop="24" YCrop="288" Width="139" Height="48" XScale="94" YScale="100" Delay="1" Visible="true" RedTint="255" GreenTint="255" BlueTint="255" AlphaTint="255" RedOffset="0" GreenOffset="0" BlueOffset="0" Rotation="0" Interpolated="false" />
+		</LayerAnimation>
+		<LayerAnimation Layer="Item2" Visible="true">
+			<Frame XPosition="177" YPosition="59" XPivot="0" YPivot="0" XCrop="32" YCrop="336" Width="128" Height="48" XScale="100" YScale="100" Delay="1" Visible="true" RedTint="255" GreenTint="255" BlueTint="255" AlphaTint="255" RedOffset="0" GreenOffset="0" BlueOffset="0" Rotation="0" Interpolated="false" />
+			<Frame XPosition="177" YPosition="59" XPivot="0" YPivot="0" XCrop="160" YCrop="336" Width="128" Height="48" XScale="100" YScale="100" Delay="1" Visible="true" RedTint="255" GreenTint="255" BlueTint="255" AlphaTint="255" RedOffset="0" GreenOffset="0" BlueOffset="0" Rotation="0" Interpolated="false" />
+		</LayerAnimation>
+		<LayerAnimation Layer="Item3" Visible="true">
+			<Frame XPosition="180" YPosition="87" XPivot="0" YPivot="0" XCrop="35" YCrop="387" Width="128" Height="48" XScale="100" YScale="100" Delay="1" Visible="true" RedTint="255" GreenTint="255" BlueTint="255" AlphaTint="255" RedOffset="0" GreenOffset="0" BlueOffset="0" Rotation="0" Interpolated="false" />
+		</LayerAnimation>
+		<LayerAnimation Layer="Item4" Visible="true">
+			<Frame XPosition="187" YPosition="150" XPivot="0" YPivot="0" XCrop="32" YCrop="432" Width="128" Height="48" XScale="100" YScale="100" Delay="1" Visible="true" RedTint="255" GreenTint="255" BlueTint="255" AlphaTint="255" RedOffset="0" GreenOffset="0" BlueOffset="0" Rotation="0" Interpolated="false" />
+		</LayerAnimation>
+		<LayerAnimation Layer="Item5" Visible="true">
+			<Frame XPosition="192" YPosition="177" XPivot="0" YPivot="0" XCrop="36" YCrop="482" Width="128" Height="48" XScale="100" YScale="100" Delay="1" Visible="true" RedTint="255" GreenTint="255" BlueTint="255" AlphaTint="255" RedOffset="0" GreenOffset="0" BlueOffset="0" Rotation="0" Interpolated="false" />
+		</LayerAnimation>
+		<LayerAnimation Layer="Item6" After="Item5" Visible="true">
+			<Frame XPosition="201" YPosition="139" XPivot="16" YPivot="16" XCrop="195" YCrop="475" Width="80" Height="39" XScale="100" YScale="100" Delay="1" Visible="true" RedTint="255" GreenTint="255" BlueTint="255" AlphaTint="255" RedOffset="0" GreenOffset="0" BlueOffset="0" Rotation="0" Interpolated="false" />
+		</LayerAnimation>
+		<LayerAnimation Layer="Cursor" Visible="true">
+			<Frame XPosition="168" YPosition="68" XPivot="16" YPivot="16" XCrop="0" YCrop="304" Width="24" Height="32" XScale="100" YScale="100" Delay="1" Visible="true" RedTint="255" GreenTint="255" BlueTint="255" AlphaTint="255" RedOffset="0" GreenOffset="0" BlueOffset="0" Rotation="0" Interpolated="false" />
+			<Frame XPosition="171" YPosition="94" XPivot="16" YPivot="16" XCrop="0" YCrop="304" Width="24" Height="32" XScale="100" YScale="100" Delay="1" Visible="true" RedTint="255" GreenTint="255" BlueTint="255" AlphaTint="255" RedOffset="0" GreenOffset="0" BlueOffset="0" Rotation="0" Interpolated="false" />
+			<Frame XPosition="172" YPosition="122" XPivot="16" YPivot="16" XCrop="0" YCrop="304" Width="24" Height="32" XScale="100" YScale="100" Delay="1" Visible="true" RedTint="255" GreenTint="255" BlueTint="255" AlphaTint="255" RedOffset="0" GreenOffset="0" BlueOffset="0" Rotation="0" Interpolated="false" />
+			<Frame XPosition="176" YPosition="152" XPivot="16" YPivot="16" XCrop="0" YCrop="304" Width="24" Height="32" XScale="100" YScale="100" Delay="1" Visible="true" RedTint="255" GreenTint="255" BlueTint="255" AlphaTint="255" RedOffset="0" GreenOffset="0" BlueOffset="0" Rotation="0" Interpolated="false" />
+			<Frame XPosition="182" YPosition="181" XPivot="16" YPivot="16" XCrop="0" YCrop="304" Width="24" Height="32" XScale="100" YScale="100" Delay="1" Visible="true" RedTint="255" GreenTint="255" BlueTint="255" AlphaTint="255" RedOffset="0" GreenOffset="0" BlueOffset="0" Rotation="0" Interpolated="false" />
+			<Frame XPosition="187" YPosition="211" XPivot="16" YPivot="16" XCrop="0" YCrop="304" Width="24" Height="32" XScale="100" YScale="100" Delay="1" Visible="true" RedTint="255" GreenTint="255" BlueTint="255" AlphaTint="255" RedOffset="0" GreenOffset="0" BlueOffset="0" Rotation="0" Interpolated="false" />
+		</LayerAnimation>
+		<NullAnimation Null="Area1" Visible="true">
+			<Frame XPosition="231" YPosition="57" Delay="1" Visible="true" XScale="1421" YScale="344" RedTint="255" GreenTint="255" BlueTint="255" AlphaTint="255" RedOffset="0" GreenOffset="0" BlueOffset="0" Rotation="-8" Interpolated="false" />
+		</NullAnimation>
+		<NullAnimation Null="Area2" Visible="true">
+			<Frame XPosition="235" YPosition="84" Delay="1" Visible="true" XScale="1421" YScale="344" RedTint="255" GreenTint="255" BlueTint="255" AlphaTint="255" RedOffset="0" GreenOffset="0" BlueOffset="0" Rotation="-8" Interpolated="false" />
+		</NullAnimation>
+		<NullAnimation Null="Area3" Visible="true">
+			<Frame XPosition="239" YPosition="112" Delay="1" Visible="true" XScale="1421" YScale="344" RedTint="255" GreenTint="255" BlueTint="255" AlphaTint="255" RedOffset="0" GreenOffset="0" BlueOffset="0" Rotation="-8" Interpolated="false" />
+		</NullAnimation>
+		<NullAnimation Null="Area4" Visible="true">
+			<Frame XPosition="228" YPosition="143" Delay="1" Visible="true" XScale="1217" YScale="354" RedTint="255" GreenTint="255" BlueTint="255" AlphaTint="255" RedOffset="0" GreenOffset="0" BlueOffset="0" Rotation="-9" Interpolated="false" />
+		</NullAnimation>
+		<NullAnimation Null="Area5" Visible="true">
+			<Frame XPosition="237" YPosition="173" Delay="1" Visible="true" XScale="1327" YScale="373" RedTint="255" GreenTint="255" BlueTint="255" AlphaTint="255" RedOffset="0" GreenOffset="0" BlueOffset="0" Rotation="-8" Interpolated="false" />
+		</NullAnimation>
+		<NullAnimation Null="Area6" After="Area5" Visible="true">
+			<Frame XPosition="245" YPosition="204" Delay="1" Visible="true" XScale="1327" YScale="373" RedTint="255" GreenTint="255" BlueTint="255" AlphaTint="255" RedOffset="0" GreenOffset="0" BlueOffset="0" Rotation="-8" Interpolated="false" />
+		</NullAnimation>
+	</Animation>
+</PortPatch>

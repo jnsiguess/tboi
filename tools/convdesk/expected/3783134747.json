@@ -1,0 +1,103 @@
+{
+ "label": "3783134747",
+ "title": "Slime Rancher Slimes Instead of Bloodclots",
+ "source": "Z:/Games/Steam/steamapps/workshop/content/250900\\3783134747",
+ "input": "%TEMP%\\convdesk\\inputs\\3783134747.zip",
+ "input_digest": "55393847d9a3d86ca775884fcdac987ac083666dac337dd7038b5857d10fd5e8",
+ "tools": {
+  "modport.py": "3e3703a30ca997fa34fe7a3cf17350a05c282f7f5225a219ae547fa8f6dec9a5",
+  "modport.js": "8e419000f1ab111c913a76a98189145ba3e926c916412a362593b4c6a0a7d2c7",
+  "gameref.bin": "f025abd275294ede0822aa4dc38b8a36a833104eead1f45fb9d8e97510f5d3c4",
+  "modport_node.js": "0dde426a98a7819d5afefb8911c6181e74e00198415436d8c942989775354838"
+ },
+ "zip": true,
+ "id": "a-slime-rancher-clots",
+ "report": [
+  "modport report",
+  "",
+  "     1  dropped",
+  "",
+  "dropped  resources/gfx/familiar/old.ase: not a format the port loads",
+  ""
+ ],
+ "files": {
+  "mod.json": {
+   "size": 274,
+   "sha256": "c1ea82fa0461f4c7b8e83789ffd5ec5a0a26d8bdf1661d25c3d2965cef352432",
+   "json": {
+    "id": "a-slime-rancher-clots",
+    "name": "Slime Rancher Slimes Instead of Bloodclots",
+    "version": "1.2",
+    "author": "Unknown",
+    "description": "Turn your bloodclots to slimes from Slime Rancher yupie\n\nalso change sumptorium, lil clot trinket and controls sprite"
+   }
+  },
+  "resources/gfx/backdrop/controls грифины смешные моменты.png": {
+   "size": 178855,
+   "sha256": "38347e8b30755f5d84bbe036e257f495d80fbaaa598510990f950e49e18b8812",
+   "wh": [
+    325,
+    3552
+   ],
+   "pixels": "7e9dd19a892fa7d55731fc2eed4ccbfb7c47ef7186933184e635a429c5803da7"
+  },
+  "resources/gfx/backdrop/controls.png": {
+   "size": 272247,
+   "sha256": "c31fa2ef033fad6c630dfd7b0d4986ad4d04345ddbc0c5860b952ab84a973f63",
+   "wh": [
+    325,
+    3552
+   ],
+   "pixels": "80c6ab0e23e82a1f4cfe5f16f08d0ea5b711f466ac8a05ec1f11caffd40fb29e"
+  },
+  "resources/gfx/familiar/familiar_clot_babies.png": {
+   "size": 15019,
+   "sha256": "6ecc1a31879f7b5bd0727bfbb3d2bb585117ffd7ec4aaa265b40f8c6bebcf42f",
+   "wh": [
+    192,
+    336
+   ],
+   "pixels": "64af4bba7aab483ceae2fe833f3e0aaef5357aa939fc15ec5fa97ba1d3d4f74f"
+  },
+  "resources/gfx/items/collectibles/collectibles_713_sumptorium.png": {
+   "size": 774,
+   "sha256": "67196dc60a9f9046818aaa534d1ef233437319397d62c4866df92e3c12bec993",
+   "wh": [
+    32,
+    32
+   ],
+   "pixels": "4130b912291a27e2fe372008095ad9f0f5ef63e4e7c6c9593f6deaba3a4b8865"
+  },
+  "resources/gfx/items/trinkets/trinket_176_lilclot.png": {
+   "size": 404,
+   "sha256": "25656340c74a52bf72d7bf3bca01369e198897219ef59888cc6bbf770c28669b",
+   "wh": [
+    32,
+    32
+   ],
+   "pixels": "540904568259760261b03d5fdcc88a88603dd1d70a6a7d2a2b48c1e4ff321fc3"
+  },
+  "resources/gfx/net vremeni obyasnyat suy ananas v zhopy/ananas.png": {
+   "size": 44956,
+   "sha256": "6d36b4c135a9593c4aeef6e30cfb31a295ac35870679c1face0b5fd6884124a7",
+   "wh": [
+    196,
+    140
+   ],
+   "pixels": "e51b310911ab828da1d8d6b59d4551942a6f59a2f42aa2222c4e293cb6a0f978"
+  },
+  "resources/gfx/net vremeni obyasnyat suy ananas v zhopy/blin.png": {
+   "size": 367786,
+   "sha256": "6ba0456bb8a76c34d83f382d905a627803be18548b9a913adaad69185df219c1",
+   "wh": [
+    739,
+    415
+   ],
+   "pixels": "fb5eeeabb2e4710a24e4682950d06f070a4740194e2e82cb8aaec4613801c30b"
+  }
+ },
+ "js": {
+  "agrees": true,
+  "differences": []
+ }
+}

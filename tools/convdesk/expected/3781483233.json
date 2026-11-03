@@ -1,0 +1,58 @@
+{
+ "label": "3781483233",
+ "title": "greed_chance",
+ "source": "Z:/Games/Steam/steamapps/workshop/content/250900\\3781483233",
+ "input": "%TEMP%\\convdesk\\inputs\\3781483233.zip",
+ "input_digest": "80a6731079167d45ba784daae5b0b2219b0d65a6d176457bfa1f9f96741f3198",
+ "tools": {
+  "modport.py": "3e3703a30ca997fa34fe7a3cf17350a05c282f7f5225a219ae547fa8f6dec9a5",
+  "modport.js": "8e419000f1ab111c913a76a98189145ba3e926c916412a362593b4c6a0a7d2c7",
+  "gameref.bin": "f025abd275294ede0822aa4dc38b8a36a833104eead1f45fb9d8e97510f5d3c4",
+  "modport_node.js": "0dde426a98a7819d5afefb8911c6181e74e00198415436d8c942989775354838"
+ },
+ "zip": true,
+ "id": "greed_chance",
+ "report": [
+  "modport report",
+  "",
+  "     3  dropped",
+  "     1  kept",
+  "",
+  "dropped  main.lua: the port runs no scripts; whatever the script did is not carried",
+  "dropped  2 files beside the card (.luarc.json, greed_chance_mod_config_menu.lua): not read by the port",
+  "dropped  .vscode/ (1 files): not read by the port",
+  "kept     resources/gfx/ui/greed_chance.anm2: new to the game (a mod's own animation)",
+  ""
+ ],
+ "files": {
+  "mod.json": {
+   "size": 2598,
+   "sha256": "db9319cd99960d4d1720ceca102985787a019e856a10cd83c870e9e7dbc94efa",
+   "json": {
+    "id": "greed_chance",
+    "name": "greed_chance",
+    "version": "1.0.6",
+    "author": "Unknown",
+    "description": "The following content has been translated by AI.\n\n\n    Displays the Greed chance in the bottom-left corner.\n    The icon without a clock shows the current floor's chance; the icon with a clock shows the next floor's chance.\n\nThis mod has attempted to provide compatibility with the Planetarium Chance Mod. If the UI still overlaps, you can manually enable the 'Move down one line' option in the mod config menu\n  The UI positioning code is borrowed from the Planetarium Chance mod, with the author's authorization obtained on Reddit. Huge thanks to the Planetarium Chance [REP+] mod author!\n\n\n  \"Greed\" here refers to Greed / Super Greed that can replace the Shop or Secret Room as a surprise mini-boss room. The ones that spawn from bombing a shopkeeper, or that appear as regular enemies, do not count.\n\n  Since the official API provides no way to read the Greed chance, all chances in this mod are calculated using empirical formulas.\n\n  Chance calculation under normal conditions (data from the wiki):\n  1. Base chance: 1/3 (33.3%)\n  2. Having more than 20 coins when entering the next floor: +1/60 (+1.7%)\n  3. Destroyed a Donation Machine: +1/30 (+3.3%)\n  4. Destroyed a Shopkeeper: +1/150 (+0.7%)\n  5. Donating to the Donation Machine: −1/60 (−1.7%) per coin, reaching its maximum after 5 coins, for a total of −1/12\n  (−8.3%)\n\n  The minimum and maximum chances are 25.0% and 39.0% respectively.\n\n  Mod Config Menu options:\n  General:\n  1. Whether to show the current floor's chance\n  2. Whether to show the next floor's chance\n  3.Whether to moved down by one row\n  For testing:\n  1. Whether to show the current floor's Greed count and location (Shop on top, Secret Room below; located beneath the chance numbers in the bottom-left corner — may be covered by trinkets)\n  2. Whether to enable Rainbow Glasses (gives Isaac translucent rainbow-tinted glasses, just for fun; only displays correctly in small rooms, will be misaligned in other rooms)\n  3.Whether to correct the color difference in the text\n\nIf you encounter any bugs, please kindly provide the following information when reporting:\n1.Your game version\n2.Steps to reproduce the bug\n3.Any console output or error messages\nWithout these details, I may not be able to reproduce the issue locally, which makes it nearly impossible to identify and fix the problem. Your cooperation is greatly appreciated!\n\n  Authors: 武珞 (Wu Luo) — code; Lonely night — art"
+   }
+  },
+  "resources/gfx/ui/greed_chance.anm2": {
+   "size": 6902,
+   "sha256": "108d1aae193af55285e6ce06edb5056fdccf6e5cf021616f48f0242fe11e4b31",
+   "tree": "2439c3126e6664f13d8924e070c5a479e5112484575e15d94d626e322a1502d1"
+  },
+  "resources/gfx/ui/greed_chance.png": {
+   "size": 2868,
+   "sha256": "9a94a19070578bb40ac23f216036228e7ce51863e593f327fbb87434697c1aba",
+   "wh": [
+    64,
+    80
+   ],
+   "pixels": "30355b427b24b46f473ff473da3bece793f8029300401394722e0815a50c9940"
+  }
+ },
+ "js": {
+  "agrees": true,
+  "differences": []
+ }
+}

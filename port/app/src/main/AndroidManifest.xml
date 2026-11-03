@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android">
+    <!--
+        TWO NAMES, and which one is shown where is Android's own rule: the
+        LAUNCHER takes the label of the activity it starts, everything else -
+        Settings, the list of applications, the permission dialogs - takes the
+        label of the application. So the short one hangs on the activity and the
+        full one on the application (the owner, 13.09.2026).
+    -->
+    <!-- the game's rumble, given back: the phone's vibrator (rumble.c) -->
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <!--
+        The system's file manager, asked for by name to open the config folder
+        (MainActivity.openConfig). From Android 11 a package another app does
+        not declare here is invisible to it, and the question "who opens this
+        folder" came back empty (the owner's ninth round, 24.09.2026) - while
+        import and export, which go through the system picker, went on working.
+    -->
+    <queries>
+        <package android:name="com.google.android.documentsui" />
+        <package android:name="com.android.documentsui" />
+        <intent>
+            <action android:name="android.intent.action.VIEW" />
+            <data android:mimeType="vnd.android.document/root" />
+        </intent>
+    </queries>
+    <!--
+        NO CLOUD BACKUP, NO DEVICE-TO-DEVICE COPY (the owner, 30.09.2026). The
+        saves and the game's options.ini live in the port's own folder,
+        Android/media/<app>/saves, beside port-touch.ini and the mods, where a
+        file manager reaches them; the app keeps its own silent backup of them
+        inside (files/save-backup, saves.c). The Google copy used to bring an
+        old snapshot back on a reinstall and carry it onto a new phone. With a
+        target of 35, allowBackup="false" alone still lets a device-to-device
+        transfer through, so res/xml/data_extraction_rules.xml excludes every
+        domain from both. Before a reinstall: EXPORT SAVES, or a copy of the
+        folder Android/media/com.tboi.rebirth.
+    -->
+    <application android:label="@string/app_name" android:hasCode="true"
+        android:allowBackup="false"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:icon="@mipmap/ic_launcher"
+        android:roundIcon="@mipmap/ic_launcher">
+        <!--
+            The game is landscape and landscape only, just as it is on the
+            iPhone. configChanges is not here for convenience: without it
+            Android recreates the window on a rotation, and our thread with the
+            game image would be recreated along with it — a second time in one
+            process. The same goes for a change of the phone's language, font
+            size or colour mode (05.10.2026): the game picks its own language,
+            so the window is kept rather than rebuilt.
+        -->
+        <activity
+            android:name=".MainActivity"
+            android:exported="true"
+            android:label="@string/launcher_name"
+            android:theme="@android:style/Theme.NoTitleBar.Fullscreen"
+            android:screenOrientation="sensorLandscape"
+            android:resizeableActivity="false"
+            android:configChanges="orientation|screenSize|screenLayout|smallestScreenSize|keyboard|keyboardHidden|navigation|density|uiMode|locale|layoutDirection|fontScale|fontWeightAdjustment|colorMode">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <!-- the port's own folder as a place in the system's file manager (item 14) -->
+        <provider
+            android:name=".PortFilesProvider"
+            android:authorities="com.tboi.rebirth.files"
+            android:exported="true"
+            android:grantUriPermissions="true"
+            android:permission="android.permission.MANAGE_DOCUMENTS">
+            <intent-filter>
+                <action android:name="android.content.action.DOCUMENTS_PROVIDER" />
+            </intent-filter>
+        </provider>
+            <!-- starts the game again after an import, from a process of its own -->
+        <activity
+            android:name=".RestartActivity"
+            android:process=":restart"
+            android:exported="false"
+            android:excludeFromRecents="true"
+            android:noHistory="true"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+    </application>
+</manifest>

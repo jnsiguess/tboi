@@ -1,0 +1,63 @@
+{
+ "label": "cooler-3361519802",
+ "title": "Cooler Completion Marks [REP+]",
+ "source": "<project>\\reports\\2026-10-05\\hotfix171\\cooler_completion_marks_rep+_3361519802\\cooler_completion_marks_rep+_3361519802",
+ "input": "%TEMP%\\convdesk\\inputs\\cooler-3361519802.zip",
+ "input_digest": "1d2986307ca7808905dd8c123a5409e03b42d28e5d440da6277c58db8fabc4d7",
+ "tools": {
+  "modport.py": "3e3703a30ca997fa34fe7a3cf17350a05c282f7f5225a219ae547fa8f6dec9a5",
+  "modport.js": "8e419000f1ab111c913a76a98189145ba3e926c916412a362593b4c6a0a7d2c7",
+  "gameref.bin": "f025abd275294ede0822aa4dc38b8a36a833104eead1f45fb9d8e97510f5d3c4",
+  "modport_node.js": "0dde426a98a7819d5afefb8911c6181e74e00198415436d8c942989775354838"
+ },
+ "zip": true,
+ "id": "cooler_completion_marks_rep",
+ "report": [
+  "modport report",
+  "",
+  "     1  kept",
+  "",
+  "kept     resources/gfx/ui/completion_widget.anm2: the mod's own - the port's code reads this file by layer and frame number from the copy the game loads, the mod's included, and steps aside where it has not what it needs; the sheets it cuts are the mod's layout, whatever their size; Completion Mark Reminder (TWEAKS) leaves a mod's widget alone unless the mod also brings gfx/port_completion_widget.png and port_completion_widget_pause.png cut for it",
+  ""
+ ],
+ "files": {
+  "mod.json": {
+   "size": 779,
+   "sha256": "f4c5023008a472ab42c65adbda9fee521725e0bfec0f34cdca87d044923d5375",
+   "json": {
+    "id": "cooler_completion_marks_rep",
+    "name": "Cooler Completion Marks [REP+]",
+    "version": "1.6",
+    "author": "Unknown",
+    "description": "Replaces completion mark icons with colored counterparts so you can identify the completion quicker. Normal mode completion marks are grayscale.\n\nFor Repentance: https://steamcommunity.com/sharedfiles/filedetails/?id=3373844445\nFor Mini Pause Menu+: https://steamcommunity.com/sharedfiles/filedetails/?id=3361529372\n\n[h1][b]Disclaimer:[b][h1]\n[h2][b]After subscribing to the mod open the game, enable the mod and restart the game[/b][/h2]\n[h2][b]If the Delirium mark is broken on tainted characters then you are most likely using the Mini Pause Menu+ version of this mod, the fix is available on the mod's page above[b][h2]"
+   }
+  },
+  "resources/gfx/ui/completion_widget.anm2": {
+   "size": 22178,
+   "sha256": "e9319734adca2eb5e04ca6d581f0812f9d44e51b385aa1361941c201b45e7073",
+   "tree": "2b784f67199705f1f022b3f52f272b7de353040977ca21b1f93c0fda117121f8"
+  },
+  "resources/gfx/ui/completion_widget.png": {
+   "size": 50467,
+   "sha256": "be7216c468eed10943179f4a378d129ad4f4a61063bd8c5899477366977a2e9c",
+   "wh": [
+    393,
+    500
+   ],
+   "pixels": "406eefbf0ce6f34de03c5dbe67bf991f609f4e21df6306e13a7c108155793123"
+  },
+  "resources/gfx/ui/completion_widget_pause.png": {
+   "size": 33815,
+   "sha256": "b37c399b4e30b9a6f0a131bc0ebe7db0d8e48267e7ca607115aff3abe766b5d4",
+   "wh": [
+    393,
+    500
+   ],
+   "pixels": "eb362aa91d8cc7572eec6dfe4bb23845f95868ac5b111a6309e41891637401ec"
+  }
+ },
+ "js": {
+  "agrees": true,
+  "differences": []
+ }
+}

@@ -1,0 +1,83 @@
+# the port's additions laid over the pack at start (portpatch.c); written by tools/port_patch.py
+file	repentance-resources/data/gfx/ui/main menu/port_strap_credits.png	port_patch/repentance-resources/data/gfx/ui/main_menu/port_strap_credits.png
+file	repentance-resources/data/gfx/ui/main menu/port_strap_guide.png	port_patch/repentance-resources/data/gfx/ui/main_menu/port_strap_guide.png
+file	repentance-resources/data/gfx/ui/main menu/port_strap_tweaks.png	port_patch/repentance-resources/data/gfx/ui/main_menu/port_strap_tweaks.png
+file	repentance-resources/data/gfx/ui/port_strap_spawner.png	port_patch/repentance-resources/data/gfx/ui/port_strap_spawner.png
+file	repentance-resources/dlc3.de/gfx/ui/main menu/port_strap_credits.png	port_patch/repentance-resources/dlc3.de/gfx/ui/main_menu/port_strap_credits.png
+file	repentance-resources/dlc3.de/gfx/ui/main menu/port_strap_guide.png	port_patch/repentance-resources/dlc3.de/gfx/ui/main_menu/port_strap_guide.png
+file	repentance-resources/dlc3.de/gfx/ui/main menu/port_strap_tweaks.png	port_patch/repentance-resources/dlc3.de/gfx/ui/main_menu/port_strap_tweaks.png
+file	repentance-resources/dlc3.de/gfx/ui/main menu/titlemenu_ios.png	port_patch/repentance-resources/dlc3.de/gfx/ui/main_menu/titlemenu_ios.png
+file	repentance-resources/dlc3.de/gfx/ui/port_strap_spawner.png	port_patch/repentance-resources/dlc3.de/gfx/ui/port_strap_spawner.png
+file	repentance-resources/dlc3.es/gfx/ui/main menu/port_strap_credits.png	port_patch/repentance-resources/dlc3.es/gfx/ui/main_menu/port_strap_credits.png
+file	repentance-resources/dlc3.es/gfx/ui/main menu/port_strap_guide.png	port_patch/repentance-resources/dlc3.es/gfx/ui/main_menu/port_strap_guide.png
+file	repentance-resources/dlc3.es/gfx/ui/main menu/port_strap_tweaks.png	port_patch/repentance-resources/dlc3.es/gfx/ui/main_menu/port_strap_tweaks.png
+file	repentance-resources/dlc3.es/gfx/ui/main menu/titlemenu_ios.png	port_patch/repentance-resources/dlc3.es/gfx/ui/main_menu/titlemenu_ios.png
+file	repentance-resources/dlc3.es/gfx/ui/port_strap_spawner.png	port_patch/repentance-resources/dlc3.es/gfx/ui/port_strap_spawner.png
+file	repentance-resources/dlc3.jp/gfx/ui/main menu/port_strap_credits.png	port_patch/repentance-resources/dlc3.jp/gfx/ui/main_menu/port_strap_credits.png
+file	repentance-resources/dlc3.jp/gfx/ui/main menu/port_strap_guide.png	port_patch/repentance-resources/dlc3.jp/gfx/ui/main_menu/port_strap_guide.png
+file	repentance-resources/dlc3.jp/gfx/ui/main menu/port_strap_tweaks.png	port_patch/repentance-resources/dlc3.jp/gfx/ui/main_menu/port_strap_tweaks.png
+file	repentance-resources/dlc3.jp/gfx/ui/main menu/titlemenu_ios.png	port_patch/repentance-resources/dlc3.jp/gfx/ui/main_menu/titlemenu_ios.png
+file	repentance-resources/dlc3.jp/gfx/ui/port_strap_spawner.png	port_patch/repentance-resources/dlc3.jp/gfx/ui/port_strap_spawner.png
+file	repentance-resources/dlc3.kr/gfx/ui/main menu/port_strap_credits.png	port_patch/repentance-resources/dlc3.kr/gfx/ui/main_menu/port_strap_credits.png
+file	repentance-resources/dlc3.kr/gfx/ui/main menu/port_strap_guide.png	port_patch/repentance-resources/dlc3.kr/gfx/ui/main_menu/port_strap_guide.png
+file	repentance-resources/dlc3.kr/gfx/ui/main menu/port_strap_tweaks.png	port_patch/repentance-resources/dlc3.kr/gfx/ui/main_menu/port_strap_tweaks.png
+file	repentance-resources/dlc3.kr/gfx/ui/main menu/titlemenu_ios.png	port_patch/repentance-resources/dlc3.kr/gfx/ui/main_menu/titlemenu_ios.png
+file	repentance-resources/dlc3.kr/gfx/ui/port_strap_spawner.png	port_patch/repentance-resources/dlc3.kr/gfx/ui/port_strap_spawner.png
+file	repentance-resources/dlc3.ru/gfx/ui/main menu/port_strap_credits.png	port_patch/repentance-resources/dlc3.ru/gfx/ui/main_menu/port_strap_credits.png
+file	repentance-resources/dlc3.ru/gfx/ui/main menu/port_strap_guide.png	port_patch/repentance-resources/dlc3.ru/gfx/ui/main_menu/port_strap_guide.png
+file	repentance-resources/dlc3.ru/gfx/ui/main menu/port_strap_tweaks.png	port_patch/repentance-resources/dlc3.ru/gfx/ui/main_menu/port_strap_tweaks.png
+file	repentance-resources/dlc3.ru/gfx/ui/main menu/titlemenu_ios.png	port_patch/repentance-resources/dlc3.ru/gfx/ui/main_menu/titlemenu_ios.png
+file	repentance-resources/dlc3.ru/gfx/ui/port_strap_spawner.png	port_patch/repentance-resources/dlc3.ru/gfx/ui/port_strap_spawner.png
+file	repentance-resources/dlc3.zh/gfx/ui/main menu/port_strap_credits.png	port_patch/repentance-resources/dlc3.zh/gfx/ui/main_menu/port_strap_credits.png
+file	repentance-resources/dlc3.zh/gfx/ui/main menu/port_strap_guide.png	port_patch/repentance-resources/dlc3.zh/gfx/ui/main_menu/port_strap_guide.png
+file	repentance-resources/dlc3.zh/gfx/ui/main menu/port_strap_tweaks.png	port_patch/repentance-resources/dlc3.zh/gfx/ui/main_menu/port_strap_tweaks.png
+file	repentance-resources/dlc3.zh/gfx/ui/main menu/titlemenu_ios.png	port_patch/repentance-resources/dlc3.zh/gfx/ui/main_menu/titlemenu_ios.png
+file	repentance-resources/dlc3.zh/gfx/ui/port_strap_spawner.png	port_patch/repentance-resources/dlc3.zh/gfx/ui/port_strap_spawner.png
+file	repentance-resources/data/gfx/ui/main menu/port_optionsextra.png	port_patch/repentance-resources/data/gfx/ui/main_menu/port_optionsextra.png
+file	repentance-resources/dlc3.de/gfx/ui/main menu/port_optionsextra.png	port_patch/repentance-resources/dlc3.de/gfx/ui/main_menu/port_optionsextra.png
+file	repentance-resources/dlc3.es/gfx/ui/main menu/port_optionsextra.png	port_patch/repentance-resources/dlc3.es/gfx/ui/main_menu/port_optionsextra.png
+file	repentance-resources/dlc3.jp/gfx/ui/main menu/port_optionsextra.png	port_patch/repentance-resources/dlc3.jp/gfx/ui/main_menu/port_optionsextra.png
+file	repentance-resources/dlc3.kr/gfx/ui/main menu/port_optionsextra.png	port_patch/repentance-resources/dlc3.kr/gfx/ui/main_menu/port_optionsextra.png
+file	repentance-resources/dlc3.ru/gfx/ui/main menu/port_optionsextra.png	port_patch/repentance-resources/dlc3.ru/gfx/ui/main_menu/port_optionsextra.png
+file	repentance-resources/dlc3.zh/gfx/ui/main menu/port_optionsextra.png	port_patch/repentance-resources/dlc3.zh/gfx/ui/main_menu/port_optionsextra.png
+over	rebirth-resources/data.jp/gfx/ui/touch/ios_buttons.png	port_patch/rebirth-resources/data.jp/gfx/ui/touch/ios_buttons.png
+over	rebirth-resources/data/gfx/ui/touch/ios_buttons.png	port_patch/rebirth-resources/data/gfx/ui/touch/ios_buttons.png
+over	repentance-resources/data/gfx/ui/main menu/gamemenu.png	port_patch/repentance-resources/data/gfx/ui/main_menu/gamemenu.png
+over	repentance-resources/data/gfx/ui/main menu/optionsextra.png	port_patch/repentance-resources/data/gfx/ui/main_menu/optionsextra.png
+over	repentance-resources/data/shaders/colorcorrection.fs	port_patch/repentance-resources/data/shaders/colorcorrection.fs
+over	repentance-resources/dlc3.de/gfx/ui/main menu/gamemenu.png	port_patch/repentance-resources/dlc3.de/gfx/ui/main_menu/gamemenu.png
+over	repentance-resources/dlc3.es/gfx/ui/main menu/gamemenu.png	port_patch/repentance-resources/dlc3.es/gfx/ui/main_menu/gamemenu.png
+over	repentance-resources/dlc3.jp/gfx/ui/main menu/gamemenu.png	port_patch/repentance-resources/dlc3.jp/gfx/ui/main_menu/gamemenu.png
+over	repentance-resources/dlc3.kr/gfx/ui/main menu/gamemenu.png	port_patch/repentance-resources/dlc3.kr/gfx/ui/main_menu/gamemenu.png
+over	repentance-resources/dlc3.ru/gfx/ui/main menu/gamemenu.png	port_patch/repentance-resources/dlc3.ru/gfx/ui/main_menu/gamemenu.png
+over	repentance-resources/dlc3.ru/gfx/ui/main menu/optionsmenu.png	port_patch/repentance-resources/dlc3.ru/gfx/ui/main_menu/optionsmenu.png
+over	repentance-resources/dlc3.zh/gfx/ui/main menu/gamemenu.png	port_patch/repentance-resources/dlc3.zh/gfx/ui/main_menu/gamemenu.png
+pixels	repentance-resources/data/gfx/ui/main menu/gamemenu.png	port_patch/repentance-resources/data/gfx/ui/main_menu/gamemenu.png.pixels
+pixels	repentance-resources/dlc3.de/gfx/ui/main menu/gamemenu.png	port_patch/repentance-resources/dlc3.de/gfx/ui/main_menu/gamemenu.png.pixels
+pixels	repentance-resources/dlc3.es/gfx/ui/main menu/gamemenu.png	port_patch/repentance-resources/dlc3.es/gfx/ui/main_menu/gamemenu.png.pixels
+pixels	repentance-resources/dlc3.jp/gfx/ui/main menu/gamemenu.png	port_patch/repentance-resources/dlc3.jp/gfx/ui/main_menu/gamemenu.png.pixels
+pixels	repentance-resources/dlc3.kr/gfx/ui/main menu/gamemenu.png	port_patch/repentance-resources/dlc3.kr/gfx/ui/main_menu/gamemenu.png.pixels
+pixels	repentance-resources/dlc3.ru/gfx/ui/main menu/gamemenu.png	port_patch/repentance-resources/dlc3.ru/gfx/ui/main_menu/gamemenu.png.pixels
+pixels	repentance-resources/dlc3.zh/gfx/ui/main menu/gamemenu.png	port_patch/repentance-resources/dlc3.zh/gfx/ui/main_menu/gamemenu.png.pixels
+patch	rebirth-resources/data/gfx/ui/touch/ios_buttons.anm2	port_patch/rebirth-resources/data/gfx/ui/touch/ios_buttons.anm2.patch
+patch	repentance-resources/data/gfx/ui/main menu/gamemenu.anm2	port_patch/repentance-resources/data/gfx/ui/main_menu/gamemenu.anm2.patch
+patch	repentance-resources/data/gfx/ui/main menu/optionsmenu.anm2	port_patch/repentance-resources/data/gfx/ui/main_menu/optionsmenu.anm2.patch
+patch	repentance-resources/data/gfx/ui/pausescreen.anm2	port_patch/repentance-resources/data/gfx/ui/pausescreen.anm2.patch
+patch	repentance-resources/dlc3.de/gfx/ui/main menu/gamemenu.anm2	port_patch/repentance-resources/dlc3.de/gfx/ui/main_menu/gamemenu.anm2.patch
+patch	repentance-resources/dlc3.de/gfx/ui/main menu/optionsmenu.anm2	port_patch/repentance-resources/dlc3.de/gfx/ui/main_menu/optionsmenu.anm2.patch
+patch	repentance-resources/dlc3.de/gfx/ui/pausescreen.anm2	port_patch/repentance-resources/dlc3.de/gfx/ui/pausescreen.anm2.patch
+patch	repentance-resources/dlc3.es/gfx/ui/main menu/gamemenu.anm2	port_patch/repentance-resources/dlc3.es/gfx/ui/main_menu/gamemenu.anm2.patch
+patch	repentance-resources/dlc3.es/gfx/ui/main menu/optionsmenu.anm2	port_patch/repentance-resources/dlc3.es/gfx/ui/main_menu/optionsmenu.anm2.patch
+patch	repentance-resources/dlc3.jp/gfx/ui/main menu/gamemenu.anm2	port_patch/repentance-resources/dlc3.jp/gfx/ui/main_menu/gamemenu.anm2.patch
+patch	repentance-resources/dlc3.jp/gfx/ui/main menu/optionsmenu.anm2	port_patch/repentance-resources/dlc3.jp/gfx/ui/main_menu/optionsmenu.anm2.patch	repentance-resources/data/gfx/ui/main menu/optionsmenu.anm2
+patch	repentance-resources/dlc3.kr/gfx/ui/main menu/gamemenu.anm2	port_patch/repentance-resources/dlc3.kr/gfx/ui/main_menu/gamemenu.anm2.patch
+patch	repentance-resources/dlc3.kr/gfx/ui/main menu/optionsmenu.anm2	port_patch/repentance-resources/dlc3.kr/gfx/ui/main_menu/optionsmenu.anm2.patch	repentance-resources/data/gfx/ui/main menu/optionsmenu.anm2
+patch	repentance-resources/dlc3.ru/gfx/ui/main menu/gamemenu.anm2	port_patch/repentance-resources/dlc3.ru/gfx/ui/main_menu/gamemenu.anm2.patch
+patch	repentance-resources/dlc3.ru/gfx/ui/main menu/optionsmenu.anm2	port_patch/repentance-resources/dlc3.ru/gfx/ui/main_menu/optionsmenu.anm2.patch
+patch	repentance-resources/dlc3.ru/gfx/ui/pausescreen.anm2	port_patch/repentance-resources/dlc3.ru/gfx/ui/pausescreen.anm2.patch
+patch	repentance-resources/dlc3.zh/gfx/ui/main menu/gamemenu.anm2	port_patch/repentance-resources/dlc3.zh/gfx/ui/main_menu/gamemenu.anm2.patch
+patch	repentance-resources/dlc3.zh/gfx/ui/main menu/optionsmenu.anm2	port_patch/repentance-resources/dlc3.zh/gfx/ui/main_menu/optionsmenu.anm2.patch
+patch	repentance-resources/dlc3.zh/gfx/ui/main menu/saveselectmenu.anm2	port_patch/repentance-resources/dlc3.zh/gfx/ui/main_menu/saveselectmenu.anm2.patch
+patch	repentance-resources/dlc3.zh/gfx/ui/pausescreen.anm2	port_patch/repentance-resources/dlc3.zh/gfx/ui/pausescreen.anm2.patch
+variants	rebirth-resources/data/gfx/ui/touch/ios_buttons.anm2	100,105,110,115,120,125,130,135,140,150,170,175
+inpak	rebirth-resources/data/stringtable.sta

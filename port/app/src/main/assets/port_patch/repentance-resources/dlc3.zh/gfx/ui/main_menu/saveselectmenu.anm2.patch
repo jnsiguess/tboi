@@ -1,0 +1,96 @@
+<PortPatch Version="1">
+	<Animation Name="Idle">
+		<LayerAnimation Layer="Delete" Visible="true">
+			<Frame XPosition="155" YPosition="234" XPivot="16" YPivot="16" XCrop="16" YCrop="192" Width="168" Height="48" XScale="100" YScale="100" Delay="1" Visible="true" RedTint="155" GreenTint="155" BlueTint="155" AlphaTint="255" RedOffset="0" GreenOffset="0" BlueOffset="0" Rotation="0" Interpolated="false" />
+		</LayerAnimation>
+		<LayerAnimation Layer="Import" Visible="false">
+			<Frame XPosition="252" YPosition="230" XPivot="16" YPivot="16" XCrop="300" YCrop="190" Width="168" Height="48" XScale="100" YScale="100" Delay="1" Visible="true" RedTint="155" GreenTint="155" BlueTint="155" AlphaTint="255" RedOffset="0" GreenOffset="0" BlueOffset="0" Rotation="0" Interpolated="false" />
+		</LayerAnimation>
+	</Animation>
+	<Animation Name="Fly">
+		<LayerAnimation Layer="Import" Visible="false" />
+	</Animation>
+	<Animation Name="File1Select">
+		<LayerAnimation Layer="Delete" Visible="true">
+			<Frame XPosition="155" YPosition="234" XPivot="16" YPivot="16" XCrop="16" YCrop="192" Width="168" Height="48" XScale="100" YScale="100" Delay="1" Visible="true" RedTint="155" GreenTint="155" BlueTint="155" AlphaTint="255" RedOffset="0" GreenOffset="0" BlueOffset="0" Rotation="0" Interpolated="false" />
+		</LayerAnimation>
+		<LayerAnimation Layer="Import" Visible="false">
+			<Frame XPosition="252" YPosition="230" XPivot="16" YPivot="16" XCrop="300" YCrop="190" Width="168" Height="48" XScale="100" YScale="100" Delay="1" Visible="true" RedTint="155" GreenTint="155" BlueTint="155" AlphaTint="255" RedOffset="0" GreenOffset="0" BlueOffset="0" Rotation="0" Interpolated="false" />
+		</LayerAnimation>
+	</Animation>
+	<Animation Name="File1Deselect">
+		<LayerAnimation Layer="Delete" Visible="true">
+			<Frame XPosition="155" YPosition="234" XPivot="16" YPivot="16" XCrop="16" YCrop="192" Width="168" Height="48" XScale="100" YScale="100" Delay="1" Visible="true" RedTint="155" GreenTint="155" BlueTint="155" AlphaTint="255" RedOffset="0" GreenOffset="0" BlueOffset="0" Rotation="0" Interpolated="false" />
+		</LayerAnimation>
+		<LayerAnimation Layer="Import" Visible="false">
+			<Frame XPosition="252" YPosition="230" XPivot="16" YPivot="16" XCrop="300" YCrop="190" Width="168" Height="48" XScale="100" YScale="100" Delay="1" Visible="true" RedTint="155" GreenTint="155" BlueTint="155" AlphaTint="255" RedOffset="0" GreenOffset="0" BlueOffset="0" Rotation="0" Interpolated="false" />
+		</LayerAnimation>
+	</Animation>
+	<Animation Name="File2Select">
+		<LayerAnimation Layer="Delete" Visible="true">
+			<Frame XPosition="155" YPosition="234" XPivot="16" YPivot="16" XCrop="16" YCrop="192" Width="168" Height="48" XScale="100" YScale="100" Delay="1" Visible="true" RedTint="155" GreenTint="155" BlueTint="155" AlphaTint="255" RedOffset="0" GreenOffset="0" BlueOffset="0" Rotation="0" Interpolated="false" />
+		</LayerAnimation>
+		<LayerAnimation Layer="Import" Visible="false">
+			<Frame XPosition="252" YPosition="230" XPivot="16" YPivot="16" XCrop="300" YCrop="190" Width="168" Height="48" XScale="100" YScale="100" Delay="1" Visible="true" RedTint="155" GreenTint="155" BlueTint="155" AlphaTint="255" RedOffset="0" GreenOffset="0" BlueOffset="0" Rotation="0" Interpolated="false" />
+		</LayerAnimation>
+	</Animation>
+	<Animation Name="File2Deselect">
+		<LayerAnimation Layer="Delete" Visible="true">
+			<Frame XPosition="155" YPosition="234" XPivot="16" YPivot="16" XCrop="16" YCrop="192" Width="168" Height="48" XScale="100" YScale="100" Delay="1" Visible="true" RedTint="155" GreenTint="155" BlueTint="155" AlphaTint="255" RedOffset="0" GreenOffset="0" BlueOffset="0" Rotation="0" Interpolated="false" />
+		</LayerAnimation>
+		<LayerAnimation Layer="Import" Visible="false">
+			<Frame XPosition="252" YPosition="230" XPivot="16" YPivot="16" XCrop="300" YCrop="190" Width="168" Height="48" XScale="100" YScale="100" Delay="1" Visible="true" RedTint="155" GreenTint="155" BlueTint="155" AlphaTint="255" RedOffset="0" GreenOffset="0" BlueOffset="0" Rotation="0" Interpolated="false" />
+		</LayerAnimation>
+	</Animation>
+	<Animation Name="File3Select">
+		<LayerAnimation Layer="Delete" Visible="true">
+			<Frame XPosition="155" YPosition="234" XPivot="16" YPivot="16" XCrop="16" YCrop="192" Width="168" Height="48" XScale="100" YScale="100" Delay="1" Visible="true" RedTint="155" GreenTint="155" BlueTint="155" AlphaTint="255" RedOffset="0" GreenOffset="0" BlueOffset="0" Rotation="0" Interpolated="false" />
+		</LayerAnimation>
+		<LayerAnimation Layer="Import" Visible="false">
+			<Frame XPosition="252" YPosition="230" XPivot="16" YPivot="16" XCrop="300" YCrop="190" Width="168" Height="48" XScale="100" YScale="100" Delay="1" Visible="true" RedTint="155" GreenTint="155" BlueTint="155" AlphaTint="255" RedOffset="0" GreenOffset="0" BlueOffset="0" Rotation="0" Interpolated="false" />
+		</LayerAnimation>
+	</Animation>
+	<Animation Name="File3Deselect">
+		<LayerAnimation Layer="Delete" Visible="true">
+			<Frame XPosition="155" YPosition="234" XPivot="16" YPivot="16" XCrop="16" YCrop="192" Width="168" Height="48" XScale="100" YScale="100" Delay="1" Visible="true" RedTint="155" GreenTint="155" BlueTint="155" AlphaTint="255" RedOffset="0" GreenOffset="0" BlueOffset="0" Rotation="0" Interpolated="false" />
+		</LayerAnimation>
+		<LayerAnimation Layer="Import" Visible="false">
+			<Frame XPosition="252" YPosition="230" XPivot="16" YPivot="16" XCrop="300" YCrop="190" Width="168" Height="48" XScale="100" YScale="100" Delay="1" Visible="true" RedTint="155" GreenTint="155" BlueTint="155" AlphaTint="255" RedOffset="0" GreenOffset="0" BlueOffset="0" Rotation="0" Interpolated="false" />
+		</LayerAnimation>
+	</Animation>
+	<Animation Name="DeleteSelect">
+		<LayerAnimation Layer="Delete" Visible="true">
+			<Frame XPosition="155" YPosition="234" XPivot="16" YPivot="16" XCrop="16" YCrop="192" Width="168" Height="48" XScale="100" YScale="100" Delay="4" Visible="true" RedTint="155" GreenTint="155" BlueTint="155" AlphaTint="255" RedOffset="0" GreenOffset="0" BlueOffset="0" Rotation="0" Interpolated="true" />
+			<Frame XPosition="155" YPosition="234" XPivot="16" YPivot="16" XCrop="16" YCrop="192" Width="168" Height="48" XScale="100" YScale="100" Delay="1" Visible="true" RedTint="255" GreenTint="255" BlueTint="255" AlphaTint="255" RedOffset="0" GreenOffset="0" BlueOffset="0" Rotation="0" Interpolated="false" />
+		</LayerAnimation>
+		<LayerAnimation Layer="Import" Visible="false" />
+	</Animation>
+	<Animation Name="DeleteDeselect">
+		<LayerAnimation Layer="Delete" Visible="true">
+			<Frame XPosition="155" YPosition="234" XPivot="16" YPivot="16" XCrop="16" YCrop="192" Width="168" Height="48" XScale="100" YScale="100" Delay="4" Visible="true" RedTint="255" GreenTint="255" BlueTint="255" AlphaTint="255" RedOffset="0" GreenOffset="0" BlueOffset="0" Rotation="0" Interpolated="true" />
+			<Frame XPosition="155" YPosition="234" XPivot="16" YPivot="16" XCrop="16" YCrop="192" Width="168" Height="48" XScale="100" YScale="100" Delay="1" Visible="true" RedTint="155" GreenTint="155" BlueTint="155" AlphaTint="255" RedOffset="0" GreenOffset="0" BlueOffset="0" Rotation="0" Interpolated="true" />
+		</LayerAnimation>
+		<LayerAnimation Layer="Import" Visible="false" />
+	</Animation>
+	<Animation Name="DeleteConfirmationIdle">
+		<LayerAnimation Layer="Import" Visible="false" />
+	</Animation>
+	<Animation Name="DeleteConfirmationAppear">
+		<LayerAnimation Layer="Import" Visible="false" />
+	</Animation>
+	<Animation Name="DeleteConfirmationDissapear">
+		<LayerAnimation Layer="Import" Visible="false" />
+	</Animation>
+	<Animation Name="ImportSelect">
+		<LayerAnimation Layer="Import" Visible="false">
+			<Frame XPosition="252" YPosition="230" XPivot="16" YPivot="16" XCrop="300" YCrop="190" Width="168" Height="48" XScale="100" YScale="100" Delay="4" Visible="true" RedTint="155" GreenTint="155" BlueTint="155" AlphaTint="255" RedOffset="0" GreenOffset="0" BlueOffset="0" Rotation="0" Interpolated="true" />
+			<Frame XPosition="252" YPosition="230" XPivot="16" YPivot="16" XCrop="300" YCrop="190" Width="168" Height="48" XScale="100" YScale="100" Delay="1" Visible="true" RedTint="255" GreenTint="255" BlueTint="255" AlphaTint="255" RedOffset="0" GreenOffset="0" BlueOffset="0" Rotation="0" Interpolated="false" />
+		</LayerAnimation>
+	</Animation>
+	<Animation Name="ImportDeselect">
+		<LayerAnimation Layer="Import" Visible="false">
+			<Frame XPosition="252" YPosition="230" XPivot="16" YPivot="16" XCrop="300" YCrop="190" Width="168" Height="48" XScale="100" YScale="100" Delay="4" Visible="true" RedTint="255" GreenTint="255" BlueTint="255" AlphaTint="255" RedOffset="0" GreenOffset="0" BlueOffset="0" Rotation="0" Interpolated="true" />
+			<Frame XPosition="252" YPosition="230" XPivot="16" YPivot="16" XCrop="300" YCrop="190" Width="168" Height="48" XScale="100" YScale="100" Delay="1" Visible="true" RedTint="155" GreenTint="155" BlueTint="155" AlphaTint="255" RedOffset="0" GreenOffset="0" BlueOffset="0" Rotation="0" Interpolated="false" />
+		</LayerAnimation>
+	</Animation>
+</PortPatch>

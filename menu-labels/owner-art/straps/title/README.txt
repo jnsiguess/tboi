@@ -1,0 +1,2 @@
+Exported from "other stuff/custom credits.psd": paper.png at 321,141; button.png at 333,150; sheet.png = edited + shadow (the title sheet without the strap).
+19.09.2026: sheet.png remade with the 'shadow' layer at its own opacity (77/255). The first export laid it in at full opacity and the strap's shadow came out black in the game (the owner's screenshot). The old export is sheet.png.before-opacity.

@@ -1,0 +1,496 @@
+{
+ "BFFSSynergies|5.100.178": [
+  7,
+  14,
+  "Erzeugt eine blaue Flamme am Einschlagpunkt"
+ ],
+ "BFFSSynergies|5.100.187": "Schaden verdoppelt",
+ "BFFSSynergies|5.100.207": "Schaden verdoppelt",
+ "BFFSSynergies|5.100.266": "Erzeugt eine zusätzliche blaue Spinne",
+ "BFFSSynergies|5.100.276": "Feuert zusätzliche Schüsse in zufällige Richtungen und hinterlässt eine größere Schleimpfütze",
+ "BFFSSynergies|5.100.361": "Schaden verdoppelt",
+ "BFFSSynergies|5.100.372": "Höhere Chance auf Batterien",
+ "BFFSSynergies|5.100.385": "Schaden verdoppelt",
+ "BFFSSynergies|5.100.388": "Erzeugt häufiger Truhen",
+ "BFFSSynergies|5.100.403": "Höhere Chance auf Batterien",
+ "BFFSSynergies|5.100.417": "Die Schadensaura wird größer, die Schadensbonus-Aura nicht",
+ "BFFSSynergies|5.100.430": [
+  "Isaacs Schaden verursachen",
+  "doppelten {{CR}}Isaacs Schaden verursachen"
+ ],
+ "BFFSSynergies|5.100.518": "Schaden verdoppelt",
+ "BFFSSynergies|5.100.519": "Schaden verdoppelt",
+ "BFFSSynergies|5.100.526": "Der Berührungsschaden des Reiters wird verdoppelt",
+ "BFFSSynergies|5.100.537": "Vergrößert den Schleim, aber nicht den Schaden",
+ "BFFSSynergies|5.100.539": "Erzeugt eine Champion-Variante des Gegners",
+ "BFFSSynergies|5.100.545": "Der Berührungsschaden des Knochen-Orbitals wird verdoppelt",
+ "BFFSSynergies|5.100.565": "Doppelter Schaden, solange der Gegner freundlich ist",
+ "BFFSSynergies|5.100.569": "Bei Auslösung gibt es zusätzlichen Schaden und Tempo",
+ "BFFSSynergies|5.100.584": "Verdoppelt Tränen- und Berührungsschaden der Irrlichter",
+ "BFFSSynergies|5.100.610": [
+  45,
+  90,
+  "eine Wellenwelle",
+  "4 {{CR}}Wellenwellen",
+  6.5,
+  13
+ ],
+ "BFFSSynergies|5.100.612": "Gibt der Verlorenen Seele einen Heiligen-Mantel-Effekt",
+ "BFFSSynergies|5.100.635": "Bei Nutzung werden 8 Tränen von der Position des Spielers abgefeuert",
+ "BFFSSynergies|5.100.650": "Berührungsschaden verdoppelt",
+ "BFFSSynergies|5.100.655": [
+  "10,5",
+  "21",
+  "Kein BFFS!-Bonusschaden für Begleiter, solange Drehe Zum Gewinnen benutzt wird"
+ ],
+ "BFFSSynergies|5.100.681": "Schaden verdoppelt",
+ "BFFSSynergies|5.100.685": "Verdoppelt Tränen- und Berührungsschaden der Irrlichter",
+ "BFFSSynergies|5.100.702": "Verdoppelt Tränen- und Berührungsschaden der Irrlichter",
+ "BFFSSynergies|5.100.706": "Der Schaden der Heuschrecken steigt um 25%",
+ "BFFSSynergies|5.100.712": "Verdoppelt den Berührungsschaden des Orbitals",
+ "BFFSSynergies|5.100.713": "Der Schaden der Klumpen wird verdoppelt",
+ "BFFSSynergies|5.100.73": "Schaden verdoppelt",
+ "BFFSSynergies|5.300.96": "Verdoppelt Tränen- und Berührungsschaden der Irrlichter",
+ "BFFSSynergies|5.350.142": "Verdoppelt Tränen- und Berührungsschaden der Irrlichter",
+ "BFFSSynergies|5.350.176": "Der Schaden der Klumpen wird verdoppelt",
+ "BFFSSynergies|5.350.182": "Verdoppelt Tränen- und Berührungsschaden der Irrlichter",
+ "BFFSSynergies|5.350.186": "Der Schaden der Heuschrecken steigt um 25%",
+ "BFFSSynergies|Lilith": "Der Schaden des Inkubus wird verdoppelt",
+ "BFFSSynergies|No Effect": "Kein Effekt durch {1}",
+ "BFFSSynergies|Tainted Lilith": "Der Tränenschaden von Gello wird verdoppelt",
+ "ConditionalDescs|1000.76.1": "{{Warning}} Würfelt nur den Charakter neu, der den Würfel benutzt",
+ "ConditionalDescs|1000.76.6": "{{Warning}} Im Koop werden die Gegenstände aller Charaktere neu gewürfelt!",
+ "ConditionalDescs|2 of Hearts Blood Charges": "Verdoppelt die Blutladungen von {1}",
+ "ConditionalDescs|20/20": "Mit {1} keine Feuerraten-Strafe",
+ "ConditionalDescs|4.5 Volt Multiple": "Zweite Aktivgegenstände laden nur auf, wenn der primäre voll geladen ist",
+ "ConditionalDescs|4.5 Volt Timed": "Kein Effekt auf zeitbasierte Aufladungen",
+ "ConditionalDescs|5.100.116 (1 Room)": "1-Raum-Aufladung wird in einem ungeräumten Raum zu einer 15-Sekunden-Aufladung",
+ "ConditionalDescs|5.100.116 (Timed)": "Zeitbasierte Aufladungen starten halb voll",
+ "ConditionalDescs|5.100.118 (Copies)": "Mehrere Schwefel geben mehr Schaden und einen breiteren Strahl",
+ "ConditionalDescs|5.100.122": "Als {1} wird es bei 1 rotem Herz ausgelöst",
+ "ConditionalDescs|5.100.135 (Hard Mode)": [
+  "1-2 Münzen",
+  "1 Münze",
+  "2-3 Münzen",
+  "2 Münzen"
+ ],
+ "ConditionalDescs|5.100.135 (PHD)": "Mit {1} werden 2-3 Münzen erzeugt",
+ "ConditionalDescs|5.100.153 (Copies)": "Isaac feuert 2 Tränen mehr#Keine weitere Werteverschlechterung",
+ "ConditionalDescs|5.100.188": "Als {1} werden 7.5 Schaden verursacht",
+ "ConditionalDescs|5.100.2 (Copies)": "Isaac feuert 1 Träne mehr#Keine weitere Werteverschlechterung",
+ "ConditionalDescs|5.100.201": "Füllt beim Aufheben die Ladung von {1} auf",
+ "ConditionalDescs|5.100.205 (Tainted Magdalene)": "Erlaubt die unbegrenzte Nutzung von Leckeres Herz",
+ "ConditionalDescs|5.100.205 (Wafer)": "Senkt die Kosten auf ein halbes Herz",
+ "ConditionalDescs|5.100.224 (Copies)": "Weitere Exemplare geben nur +0.5 Feuerrate",
+ "ConditionalDescs|5.100.230 (Bethany)": "{1} bleibt mit einem halben Herz zurück",
+ "ConditionalDescs|5.100.230 (Keeper)": "{1} bleibt mit 1 Münzbehälter zurück",
+ "ConditionalDescs|5.100.230 (Tainted Bethany)": "{1} verliert ihre Blutladungen nicht",
+ "ConditionalDescs|5.100.240": "{1} behält die Werteänderungen, wenn er ihn ablegt",
+ "ConditionalDescs|5.100.245": "Entfernt die Feuerraten-Strafe von {1}",
+ "ConditionalDescs|5.100.245 (Copies)": "Isaac feuert 1 Träne mehr#Keine weitere Werteverschlechterung",
+ "ConditionalDescs|5.100.245 (Keeper)": [
+  "↑ {{Tears}} Höhere Feuerrate#↑ Geringere Streuung#↓ {{Damage}} x0.8 Schadensmultiplikator"
+ ],
+ "ConditionalDescs|5.100.246": [
+  "{{SuperSecretRoom}} Zeigt den Superheimlichen Raum auf der Karte"
+ ],
+ "ConditionalDescs|5.100.260": "Entfernt den Teleportationseffekt von {1}",
+ "ConditionalDescs|5.100.297": [
+  "Schaltet {{Collectible523}} Die Umzugskiste frei",
+  "Nichts"
+ ],
+ "ConditionalDescs|5.100.297 (Greed)": [
+  "Belohnungen je nach Stockwerk:#Keller: 2{{Bomb}} + 2{{Key}}#Höhlen: Boss-Gegenstand + 2{{SoulHeart}}#Tiefen: 20{{Coin}}#Gebärmutter: 2 Boss-Gegenstände#Sheol: Teufels-Gegenstand + 1{{BlackHeart}}#Laden/Ultra Greed: 1{{Coin}}"
+ ],
+ "ConditionalDescs|5.100.316": "{1} entfernt den Teleportationseffekt",
+ "ConditionalDescs|5.100.333": [
+  "{{SuperSecretRoom}} Zeigt den Superheimlichen Raum auf der Karte"
+ ],
+ "ConditionalDescs|5.100.344": [
+  "{{BlackHeart}} +1 schwarzes Herz#{{Bomb}} Erzeugt 3 Bomben"
+ ],
+ "ConditionalDescs|5.100.358 (Copies)": "Isaac feuert eine weitere Träne in der Mitte",
+ "ConditionalDescs|5.100.360": "Als {1} wird 100% Schaden verursacht",
+ "ConditionalDescs|5.100.416": [
+  "{{Coin}} Erhöht das Münzlimit auf 999"
+ ],
+ "ConditionalDescs|5.100.45": "Heilt andere Spieler um ein halbes Herz",
+ "ConditionalDescs|5.100.482": "Verdorbene Charaktere werden zu anderen verdorbenen Charakteren",
+ "ConditionalDescs|5.100.483": "{{GoldenBomb}} Eine goldene Bombe wird bei der Nutzung verbraucht und erlaubt eine weitere Nutzung von Mama Mega",
+ "ConditionalDescs|5.100.483 (Greed)": "{{GreedMode}} Wird nicht pro Welle, sondern nur einmal pro Raum ausgelöst",
+ "ConditionalDescs|5.100.501": "{1} kann zusätzliche Münzbehälter bekommen#Lebens-Gegenstände geben je 25 Münzen einen weiteren Behälter",
+ "ConditionalDescs|5.100.501 (Deep Pockets)": "+1 Behälter für je 100 Münzen über 99",
+ "ConditionalDescs|5.100.514": [
+  "Lässt manche Gegner und Geschosse in zufälligen Abständen kurz innehalten#Angehaltene Geschosse verschwinden"
+ ],
+ "ConditionalDescs|5.100.521": "{{Collectible376}} Kostenlose Gegenstände werden nicht nachgefüllt",
+ "ConditionalDescs|5.100.523": "Zählt für {1} als passiver Gegenstand",
+ "ConditionalDescs|5.100.531 (Copies)": "Weitere Exemplare geben nur +1 Schaden",
+ "ConditionalDescs|5.100.535": "{{GreedMode}} Kein Schild bei Boss-Wellen, nur bei Ultra Greed",
+ "ConditionalDescs|5.100.549": [
+  "↑ {{Tears}} +0.4 Feuerrate"
+ ],
+ "ConditionalDescs|5.100.566": [
+  "{{HalfSoulHeart}} +1 halbes Seelenherz beim Betreten eines neuen Stockwerks#!!! Im Gier-Modus zeigt der Albtraum beim Stockwerkwechsel die falschen Gegenstände"
+ ],
+ "ConditionalDescs|5.100.580": "{{GreedMode}} Im Gier-Modus entstehen nur selten Spezialräume#{{SuperSecretRoom}} Hilft weiterhin, den Superheimlichen Raum zu finden",
+ "ConditionalDescs|5.100.600": "x1.2 Feuerraten-Multiplikator für {1}",
+ "ConditionalDescs|5.100.64 (Copies)": "Weitere Exemplare senken den Preis noch weiter",
+ "ConditionalDescs|5.100.642": [
+  "!!! EINMALIG !!!#Erzeugt einen Gegenstand aus dem Pool des aktuellen Raums"
+ ],
+ "ConditionalDescs|5.100.644": "{1} behält die Wertesteigerung, wenn er ihn ablegt",
+ "ConditionalDescs|5.100.694": "Funktioniert für {1} und lässt ihn 4 Treffer überleben",
+ "ConditionalDescs|5.100.694 (Keeper)": [
+  "↑ {{Damage}} +0.25 Schaden pro gebrochenem Herz#{{BrokenHeart}} +1 gebrochenes Herz#{{BrokenHeart}} Jeder tödliche Treffer gibt +1 gebrochenes Herz#{{Warning}} Keeper stirbt bei 3 gebrochenen Herzen"
+ ],
+ "ConditionalDescs|5.100.694 (Tainted Keeper)": [
+  "{{Warning}} Nach diesem Gegenstand stirbt {1} bei einem Treffer#↑ {{Damage}} +0.25 Schaden pro gebrochenem Herz#{{BrokenHeart}} +1 gebrochenes Herz#{{BrokenHeart}} Jeder tödliche Treffer gibt +1 gebrochenes Herz#Verdorbener Keeper stirbt bei 2 gebrochenen Herzen"
+ ],
+ "ConditionalDescs|5.100.705": "Kurzzeitig +1 Schaden pro Geschoss/Gegner",
+ "ConditionalDescs|5.100.710": [
+  "Bei Nutzung wischt der Angriff die Tasche in die gewählte Richtung#Wischt man über einen Gegenstand, landet er in der Tasche#Der Inhalt lässt sich mit {{ButtonRT}} verschieben, um bei voller Tasche bestimmte Gegenstände zu ersetzen#Hält man die Benutzen-Taste bei voller Tasche, wird der gezeigte Gegenstand erschaffen#Die Qualität hängt von der Qualität der Gegenstände ab"
+ ],
+ "ConditionalDescs|5.100.711": [
+  "Das Betreten",
+  "{{Player38}} Wendet Lazarus in den anderen Zustand#Das Betreten"
+ ],
+ "ConditionalDescs|5.100.713": [
+  "Ruft alle Klumpen zurück in Evas Lebensleiste#Überzählige Klumpen werden einfach zu ihr bewegt#{{Timer}} 1 Sekunde Aufladezeit"
+ ],
+ "ConditionalDescs|5.100.722": [
+  "{{Chained}} Kettet Dunklen Esau an#Nach 5 Sekunden oder bei erneutem Nutzen von Anima Sola reißt er sich los und stürmt auf Jacob zu"
+ ],
+ "ConditionalDescs|5.100.728": "Als {1} wird 100% Schaden verursacht",
+ "ConditionalDescs|5.100.81": "Charaktere ohne rote Herzen erhalten 1 Seelen- oder schwarzes Herz",
+ "ConditionalDescs|5.300.10": "Teleportiert Isaac in einen zufälligen Raum, wenn es keinen Laden gibt",
+ "ConditionalDescs|5.300.15": [
+  "{{DemonBeggar}} Erzeugt einen Teufels-Bettler"
+ ],
+ "ConditionalDescs|5.300.18": "Teleportiert Isaac in einen zufälligen Raum, wenn es keinen Schatzraum gibt",
+ "ConditionalDescs|5.300.18 (Greed)": [
+  "{{TreasureRoom}} Teleportiert Isaac in einen zufälligen Schatzraum"
+ ],
+ "ConditionalDescs|5.300.18 (Late Greed)": [
+  "Teleportiert Isaac in den ersten Raum des Stockwerks"
+ ],
+ "ConditionalDescs|5.300.19": [
+  "Teleportiert Isaac in den ersten Raum des Stockwerks"
+ ],
+ "ConditionalDescs|5.300.20": [
+  "{{HealingRed}} Volle Gesundheit#Verursacht 100 Schaden an allen Gegnern"
+ ],
+ "ConditionalDescs|5.300.48": "Teleportiert in den ICH BIN FEHLER-Raum#Blanko-Karte und ?-Karte werden zerstört",
+ "ConditionalDescs|5.300.5": [
+  "{{BossRoom}} Teleportiert Isaac in einen zufälligen Bossraum"
+ ],
+ "ConditionalDescs|5.300.74": [
+  "Teleportiert Isaac in den ersten Raum des Stockwerks"
+ ],
+ "ConditionalDescs|5.300.83": "{{GreedMode}} Im Gier-Modus entstehen nur selten Spezialräume#{{SuperSecretRoom}} Hilft weiterhin, den Superheimlichen Raum zu finden",
+ "ConditionalDescs|5.350.100 (Bethany)": "Funktioniert mit den Seelenladungen von {1}",
+ "ConditionalDescs|5.350.100 (Tainted Bethany)": "Funktioniert mit den Blutladungen von {1}",
+ "ConditionalDescs|5.350.101 (Bethany)": "Ignoriert die Seelenladungen von {1}",
+ "ConditionalDescs|5.350.101 (Tainted Bethany)": "Ignoriert die Blutladungen von {1}",
+ "ConditionalDescs|5.350.101 (Timed)": "Bei zeitbasierten Aufladungen praktisch nutzlos",
+ "ConditionalDescs|5.350.120": "{{GreedMode}} Keine Ladung bei Boss-Wellen, nur bei Ultra Greed",
+ "ConditionalDescs|5.350.125": "Blitze springen auch zwischen Spielern über",
+ "ConditionalDescs|5.350.162": [
+  "{{Player7}} 50% Chance, den Spieler beim Räumen einer Welle in Azazel zu verwandeln#{{Timer}} Der Effekt hält bis zur nächsten geräumten Welle"
+ ],
+ "ConditionalDescs|5.350.172": "{1} entfernt den Teleportationseffekt",
+ "ConditionalDescs|5.350.23": "{{Warning}} Mit diesem Schmuckstück in einem {{SacrificeRoom}} Opferraum zu sterben schaltet The Lost frei",
+ "ConditionalDescs|5.350.34": [
+  "{{Heart}} 33% Chance auf ein Bonus-Herz aus Truhen, getönten Steinen und zerstörten Automaten"
+ ],
+ "ConditionalDescs|5.350.36": [
+  "{{Key}} 33% Chance auf einen Bonus-Schlüssel aus Truhen, getönten Steinen und zerstörten Automaten"
+ ],
+ "ConditionalDescs|5.350.41": [
+  "{{Bomb}} 33% Chance auf eine Bonus-Bombe aus Truhen, getönten Steinen und zerstörten Automaten#{{Warning}} Entfernt {{Trinket53}}"
+ ],
+ "ConditionalDescs|5.350.44": [
+  "{{Pill}} 33% Chance auf eine Bonus-Pille aus Truhen, getönten Steinen und zerstörten Automaten"
+ ],
+ "ConditionalDescs|5.350.45": [
+  "{{Card}} 33% Chance auf eine Bonus-Karte aus Truhen, getönten Steinen und zerstörten Automaten"
+ ],
+ "ConditionalDescs|5.350.72": [
+  "{{Battery}} +10% Chance, dass zufällige Gegenstände Batterien sind#{{Battery}} 5% Chance auf 1 Ladung für den gehaltenen Aktivgegenstand beim Räumen einer Welle"
+ ],
+ "ConditionalDescs|5.70.28": "Isaac schießt stattdessen nach vorne und zu den Seiten",
+ "ConditionalDescs|9 Volt 1 Room": "15 Sekunden Aufladung, solange der Raum nicht geräumt ist",
+ "ConditionalDescs|9 Volt Timed": "Nach der Nutzung startet die Ladung halb voll",
+ "ConditionalDescs|? + Blank Pedestal": "Die ?-Karte mit der Blanko-Karte teleportiert dich in den ICH BIN FEHLER-Raum und zerstört beide Karten",
+ "ConditionalDescs|? Card Single Use": "Mit der ?-Karte lassen sich Einmal-Gegenstände mehrfach nutzen",
+ "ConditionalDescs|Almost No Effect": "Kaum bis kein Effekt für {1}",
+ "ConditionalDescs|Binge Eater Healing": [
+  "Heilt 1 Herz",
+  "Heilt {{BlinkGreen}}2{{CR}} Herzen",
+  "+4 Blutladungen",
+  "+{{BlinkGreen}}6{{CR}} Blutladungen"
+ ],
+ "ConditionalDescs|Black Feather": "↑ {{Damage}} +0.5 Schaden",
+ "ConditionalDescs|Black Lotus Black": [
+  "{{SoulHeart}} +1 Seelenherz#{{BlackHeart}} +2 schwarze Herzen"
+ ],
+ "ConditionalDescs|Black Lotus Soul": [
+  "{{SoulHeart}} +2 Seelenherzen#{{BlackHeart}} +1 schwarzes Herz"
+ ],
+ "ConditionalDescs|Both Peppers": "Mit {1} liegt die Grundchance auf eine Flamme bei 12.5% und bei 7 Glück bei 100%",
+ "ConditionalDescs|Brimstone Ipecac": "Der Laser erhält +2 Schaden und explodiert an Gegnern und Hindernissen",
+ "ConditionalDescs|Brimstone Mom's Knife": "{1} hat Vorrang#Ein Messerhagel schießt je nach Ladung heraus",
+ "ConditionalDescs|Brimstone Pop!": "Kürzerer Strahl, der am Ende {1}-Tränen abfeuert",
+ "ConditionalDescs|Brimstone Proptosis": "Strahlen verursachen aus nächster Nähe 6-fachen Schaden, der mit der Entfernung abnimmt",
+ "ConditionalDescs|Bulb Multiple": "Prüft nur den primären Aktivgegenstand",
+ "ConditionalDescs|Bulb Zero": "Aktivgegenstände mit 0 maximalen Ladungen zählen nicht",
+ "ConditionalDescs|Can't Be Charged": "Kann nicht von {1} aufgeladen werden",
+ "ConditionalDescs|Can't Be Duplicated": "Kann nicht dupliziert werden",
+ "ConditionalDescs|Can't Charge": "Lädt {1} nicht auf",
+ "ConditionalDescs|Chocolate Milk Marked": "Isaac lädt automatisch, abhängig vom Abstand zum Fadenkreuz",
+ "ConditionalDescs|Chocolate Milk Overrides": "↑ {{Tears}} x1.25 Tränen-Multiplikator",
+ "ConditionalDescs|Damage Multiplier Stack": "Der Schadensmultiplikator stapelt sich nicht",
+ "ConditionalDescs|Dies on Use": "{{Warning}} {1} stirbt bei Nutzung",
+ "ConditionalDescs|Different Effect": "{{ColorSilver}}Anderer Effekt für {1}{{CR}}",
+ "ConditionalDescs|Epic Fetus Brimstone": "{1} hat Vorrang#Die Raketen schießen 10 Strahlen ab",
+ "ConditionalDescs|Epic Fetus Mom's Knife": "{1} hat Vorrang#Die Raketen schießen 10 Messer ab",
+ "ConditionalDescs|Epic Fetus Soy Milk": "Die Fadenkreuzzeit wird nicht verkürzt, aber der Raketenschaden sinkt drastisch",
+ "ConditionalDescs|Eye of Belial Dr. Fetus": "Bomben durchbohren und verursachen 2.5-fachen Schaden, zielen aber nicht und richten keinen zusätzlichen Explosionsschaden an",
+ "ConditionalDescs|Eye of the Occult Beam": "Isaac schießt automatisch mit einem Fadenkreuz, das den Weg des Strahls ändert",
+ "ConditionalDescs|Fork Blood Charges": [
+  "10% Chance auf 1 Blutladung beim Räumen eines Raums"
+ ],
+ "ConditionalDescs|Ghost Pepper Fart": "Beim Furzen schießt hinter Isaac eine Flamme heraus",
+ "ConditionalDescs|Golden Poop Chance": "Chance, einen goldenen Haufen zu erzeugen",
+ "ConditionalDescs|Golden Poop Jar": "Chance, bei 1 Ladung einen goldenen Haufen zu erzeugen",
+ "ConditionalDescs|Haemolacria Brimstone": "{1} hat Vorrang#Die Tränen teilen sich in 4-7 Strahlen",
+ "ConditionalDescs|Health Up Blood Charges": "+{1} Blutladungen",
+ "ConditionalDescs|Health Up Soul Charges": "+{1} Seelenladungen",
+ "ConditionalDescs|Hemoptysis": "Funktioniert mit {1}",
+ "ConditionalDescs|Ice Tears": "Einen Gegner einzufrieren zählt nicht als Töten",
+ "ConditionalDescs|Keeper 0-1": "Als {1} werden 0-1 Münzen erzeugt",
+ "ConditionalDescs|Ludovico Ipecac": "Die Träne erhält +2 Schaden, explodiert aber nicht und vergiftet nicht",
+ "ConditionalDescs|Lullaby Clots": "(Inklusive Klumpen)",
+ "ConditionalDescs|Lullaby Incubus": "(Inklusive Inkubus)",
+ "ConditionalDescs|Mongo Babies": "Kann von {1} kopiert werden",
+ "ConditionalDescs|Mother's Kiss Bone": [
+  "{{BoneHeart}} +1 Knochenherz, solange gehalten"
+ ],
+ "ConditionalDescs|Mother's Kiss Coin": [
+  "{{CoinHeart}} +1 Münzherz, solange gehalten#Erhöht das Münzherz-Limit um 1"
+ ],
+ "ConditionalDescs|Mother's Kiss Soul": [
+  "{{SoulHeart}} +1 Seelenherz, solange gehalten"
+ ],
+ "ConditionalDescs|No Champion Drops": "!!! Champions lassen im Gier-Modus nichts fallen!",
+ "ConditionalDescs|No Effect": "Kein Effekt für {1}",
+ "ConditionalDescs|No Effect (Copies)": "Weitere Exemplare haben keinen zusätzlichen Effekt",
+ "ConditionalDescs|No Effect (Familiars)": "Kein zusätzlicher Effekt auf Begleiter",
+ "ConditionalDescs|No Effect (Greed)": "{{GreedMode}} Kein Effekt im Gier-Modus",
+ "ConditionalDescs|No Effect From": "Kein Effekt durch {1}",
+ "ConditionalDescs|No Effect Replace": [
+  "Kein Effekt für {1}"
+ ],
+ "ConditionalDescs|Overridden": "Wird von {1} überschrieben",
+ "ConditionalDescs|Overrides": "Überschreibt {1}",
+ "ConditionalDescs|Proptosis Anti-Gravity": "Tränen verlieren keinen Schaden, bis sie sich zu bewegen beginnen",
+ "ConditionalDescs|Room to Wave": [
+  "Raum",
+  "Welle",
+  "Raum",
+  "Welle"
+ ],
+ "ConditionalDescs|Sacrificial Abyss": "Abyss-Heuschrecken zählen als Begleiter",
+ "ConditionalDescs|Sacrificial Angels": "Wird {1} geopfert, erscheinen 2 schwarze Herzen",
+ "ConditionalDescs|Sacrificial Clots": "Verwandelt Klumpen in Münzen",
+ "ConditionalDescs|Sacrificial Conception": "Von {1} gewährte Begleiter können geopfert werden und erscheinen erneut",
+ "ConditionalDescs|Sacrificial Item Wisps": "Von Lemegeton erzeugte Begleiter können geopfert werden#Verwandelt alle Lemegeton-Irrlichter in {{HalfSoulHeart}} halbe Seelenherzen",
+ "ConditionalDescs|Sacrificial Nugget": "Verwandelt die Türme der Braunen Pepitas in Münzen",
+ "ConditionalDescs|Sacrificial Plum": "Die beschworene Pflaume zählt als Begleiter und entfernt die Plum-Flöte nicht",
+ "ConditionalDescs|Sacrificial Quints": "Wird ein Quints-Begleiter geopfert, verliert man Quints",
+ "ConditionalDescs|Sacrificial Star": "Stern von Bethlehem zählt als Begleiter",
+ "ConditionalDescs|Sacrificial Void": "Kann mehrfach genutzt werden, wenn von Leere absorbiert",
+ "ConditionalDescs|Salvaging Bonus": [
+  "und zerstörten Automaten",
+  "zerstörten Automaten und verwerteten Gegenständen"
+ ],
+ "ConditionalDescs|Salvaging Lucky Toe": "66% Chance auf einen extra Gegenstand aus verwerteten Gegenständen",
+ "ConditionalDescs|Sparks Arc Back": "Funken können zum selben Gegner zurückspringen",
+ "ConditionalDescs|Sparks Arc Count": "Funken springen auf 2 weitere Gegner über",
+ "ConditionalDescs|Sparks Arc Length": "Funken überspringen größere Entfernungen",
+ "ConditionalDescs|Sparks Damage": "Funken verursachen 50% mehr Schaden",
+ "ConditionalDescs|Spirit Sword C Section": "{1} hat Vorrang#Die Föten halten Schwerter und führen Drehangriffe aus",
+ "ConditionalDescs|Spirit Sword Ipecac": "Das Schwert erhält +6 Schaden und vergiftet, explodiert aber nicht#Die Schwertstrahlen explodieren",
+ "ConditionalDescs|Spirit Sword Mom's Knife": "{1} hat Vorrang#Der Drehangriff schleudert das Schwert nach vorne",
+ "ConditionalDescs|Spirit Sword Technology": "Das Schwert wird zu einem Lichtschwert, das gegnerische Schüsse reflektiert",
+ "ConditionalDescs|Stem Cell Blood Charges": [
+  "Ein neues Stockwerk gibt 1 Blutladung"
+ ],
+ "ConditionalDescs|Suicide 1": "{1} kann den Tod nicht verhindern",
+ "ConditionalDescs|Suicide 2": "Verhindert den Tod durch {1} nicht",
+ "ConditionalDescs|Super Bandage Black": [
+  "{{SoulHeart}} +2 Seelenherzen#{{BlackHeart}} +1 schwarzes Herz"
+ ],
+ "ConditionalDescs|Super Bandage Soul": [
+  "{{SoulHeart}} +3 Seelenherzen"
+ ],
+ "ConditionalDescs|Tainted Revive": "{1} wird einfach wiederbelebt",
+ "ConditionalDescs|Technology 2 One Eye": "Mit {1} ersetzt der Laser die Tränen vollständig",
+ "ConditionalDescs|Technology Ipecac": "Der Laser erhält +2 Schaden und explodiert an Zielen",
+ "ConditionalDescs|Vampire Blood Charges": [
+  "↑ {{Damage}} +0.3 Schaden#13 getötete Gegner geben 1 Blutladung"
+ ],
+ "ConditionalDescs|Void Single Use": "Einmal-Gegenstände werden nur einmal ausgelöst",
+ "ConditionalDescs|White Poop": "Erzeugt stattdessen einen weißen Haufen",
+ "ConditionalDescs|White Poop Chance": "Chance, einen weißen Haufen zu erzeugen",
+ "ConditionalDescs|White Poop Jar": "Erzeugt bei 1 Ladung einen weißen Haufen",
+ "carBattery|102": [
+  1,
+  2,
+  "Pille",
+  "{{CR}}Pillen"
+ ],
+ "carBattery|105": "Würfelt zweimal neu und leert die Gegenstandspools schneller",
+ "carBattery|107": "Erzeugt zwei Körper",
+ "carBattery|123": [
+  "ein zufälliges Begleittier",
+  "{{CR}}2 zufällige Begleittiere"
+ ],
+ "carBattery|124": [
+  "den Effekt eines zufälligen aktiven Gegenstands",
+  "{{CR}}2 Effekte zufälliger aktiver Gegenstände"
+ ],
+ "carBattery|136": [
+  "einen Lockvogel-Isaac",
+  "{{CR}}2 Lockvogel-Isaacs"
+ ],
+ "carBattery|146": [
+  1,
+  2,
+  " Ewiges Herz",
+  " {{CR}}Ewige Herzen"
+ ],
+ "carBattery|158": [
+  "ein {{SoulHeart}} Seelenherz",
+  "{{CR}}2 {{SoulHeart}} Seelenherzen",
+  "{{Rune}} Rune",
+  "{{CR}}2 {{Rune}} Runen",
+  "{{Card}} Karte",
+  "{{CR}}2 {{Card}} Karten"
+ ],
+ "carBattery|284": "Würfelt zweimal neu: hilft bei Verwandlungen, leert aber die Gegenstandspools schneller",
+ "carBattery|286": "Löst es zweimal aus",
+ "carBattery|287": [
+  "einen dieser Effekte",
+  "{{CR}}zwei dieser Effekte"
+ ],
+ "carBattery|294": "Stärkerer Rückstoß",
+ "carBattery|348": "Löst es zweimal aus",
+ "carBattery|349": "Die Chance wird zweimal geprüft",
+ "carBattery|357": [
+  "Duplicates",
+  "Triplicates"
+ ],
+ "carBattery|37": [
+  "eine große Bombe",
+  "{{CR}}2 große Bomben"
+ ],
+ "carBattery|427": [
+  "ein schiebbares TNT-Fass",
+  "{{CR}}2 schiebbare TNT-Fässer"
+ ],
+ "carBattery|439": [
+  " a ",
+  " 2 ",
+  "trinket",
+  "{{CR}}trinkets"
+ ],
+ "carBattery|45": [
+  1,
+  2,
+  "Herz",
+  "{{CR}}Herzen"
+ ],
+ "carBattery|476": [
+  "ein zufälliges Pickup",
+  "{{CR}}2 zufällige Pickups"
+ ],
+ "carBattery|477": "Löst jeden absorbierten Aktivgegenstand zweimal aus",
+ "carBattery|480": [
+  "Verdoppelt alle blauen Fliegen und Spinnen",
+  "{{CR}}Vervierfacht alle blauen Fliegen und Spinnen"
+ ],
+ "carBattery|481": "Zwei Werte-Boni und zwei Werte-Abzüge",
+ "carBattery|482": "Ändert den Charakter zweimal und entfernt zwei Gegenstände",
+ "carBattery|486": [
+  "Löst alle Effekte aus, die bei Schaden greifen",
+  "Löst alle Effekte, die bei Schaden greifen, {{CR}}{{BlinkYellowGreen}}zweimal aus"
+ ],
+ "carBattery|488": "Wird zweimal ausgelöst, aber nur der zweite Effekt bleibt",
+ "carBattery|504": [
+  "eine Fliege",
+  "{{CR}}2 Fliegen"
+ ],
+ "carBattery|507": "Wird zweimal ausgelöst",
+ "carBattery|510": [
+  " a ",
+  " 2 ",
+  "version",
+  "{{CR}}versions"
+ ],
+ "carBattery|516": [
+  "einen Sprinkler",
+  "{{CR}}2 Sprinkler"
+ ],
+ "carBattery|521": [
+  "one",
+  "two",
+  "item",
+  "{{CR}}items"
+ ],
+ "carBattery|523": "Tauscht den Inhalt der Kiste mit den Gegenständen im Raum",
+ "carBattery|550": "Stoppt das Stampfen für zwei Räume (oder Boss-Rush-Wellen)",
+ "carBattery|85": [
+  1,
+  2,
+  "Karte",
+  "{{CR}}Karten"
+ ],
+ "carBattery|97": [
+  "ein zufälliges Verbrauchsgut",
+  "{{CR}}2 zufällige Verbrauchsgüter"
+ ],
+ "carBattery|No Effect": "Kein Effekt",
+ "tarotClothBuffsAB|11": [
+  "einen Spielautomaten",
+  "2 {{CR}}Spielautomaten"
+ ],
+ "tarotClothBuffsAB|15": [
+  "eine Blutspendemaschine",
+  "2 {{CR}}Blutspendemaschinen"
+ ],
+ "tarotClothBuffsAB|21": [
+  "einen Bettler",
+  "2 {{CR}}Bettler"
+ ],
+ "tarotClothBuffsAB|23": [
+  "Verdoppelt",
+  "Vervierfacht"
+ ],
+ "tarotClothBuffsAB|24": [
+  "Verdoppelt",
+  "Vervierfacht"
+ ],
+ "tarotClothBuffsAB|25": [
+  "Verdoppelt",
+  "Vervierfacht"
+ ],
+ "tarotClothBuffsAB|26": [
+  "Verdoppelt",
+  "Vervierfacht"
+ ],
+ "tarotClothBuffsAB|33": [
+  "Dupliziert",
+  "Vervierfacht"
+ ]
+}

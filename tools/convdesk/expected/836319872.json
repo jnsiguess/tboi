@@ -1,0 +1,569 @@
+{
+ "label": "836319872",
+ "title": "!!~External item descriptions",
+ "source": "Z:/Games/Steam/steamapps/workshop/content/250900\\836319872",
+ "input": "%TEMP%\\convdesk\\inputs\\836319872.zip",
+ "input_digest": "cfa8e62be1cc5c6b390e898155b9ea91358d84c8d5911f3aea3960c0239568ca",
+ "tools": {
+  "modport.py": "3e3703a30ca997fa34fe7a3cf17350a05c282f7f5225a219ae547fa8f6dec9a5",
+  "modport.js": "8e419000f1ab111c913a76a98189145ba3e926c916412a362593b4c6a0a7d2c7",
+  "gameref.bin": "f025abd275294ede0822aa4dc38b8a36a833104eead1f45fb9d8e97510f5d3c4",
+  "modport_node.js": "0dde426a98a7819d5afefb8911c6181e74e00198415436d8c942989775354838"
+ },
+ "zip": true,
+ "id": "external-item-descriptions",
+ "report": [
+  "modport report",
+  "",
+  "     8  dropped",
+  "     4  kept",
+  "     1  note",
+  "     3  warning",
+  "",
+  "dropped  main.lua: the port runs no scripts; whatever the script did is not carried",
+  "dropped  3 files beside the card (CREDITS.md, README.md, eid_config.lua): not read by the port",
+  "dropped  descriptions/ (110 files): not read by the port",
+  "dropped  features/ (25 files): not read by the port",
+  "dropped  scripts/ (2 files): not read by the port",
+  "dropped  resources/font/BMFont_settings.txt: not a format the port loads",
+  "dropped  resources/font/PixelMplus10-Regular.sfd: not a format the port loads",
+  "dropped  resources/font/PixelMplus10-Regular.ttf: not a format the port loads",
+  "kept     resources/gfx/eid_cardspills.anm2: new to the game (a mod's own animation)",
+  "kept     resources/gfx/eid_inline_icons.anm2: new to the game (a mod's own animation)",
+  "kept     resources/gfx/eid_player_icons.anm2: new to the game (a mod's own animation)",
+  "kept     resources/gfx/eid_transform_icons.anm2: new to the game (a mod's own animation)",
+  "note     18 files are the port's built-in's own, byte for byte (eid_borderless.fnt, eid_borderless_0.png, eid_cn_alt.fnt, ...) - the mod's copies change nothing",
+  "warning  resources/gfx/eid_cardspills.anm2: replaces the port's built-in's own file (a different one) - the built-in will draw the mod's; the PC version of a mod the port has built in is not needed",
+  "warning  resources/gfx/eid_inline_icons.anm2: replaces the port's built-in's own file (a different one) - the built-in will draw the mod's; the PC version of a mod the port has built in is not needed",
+  "warning  resources/gfx/eid_transform_icons.anm2: replaces the port's built-in's own file (a different one) - the built-in will draw the mod's; the PC version of a mod the port has built in is not needed",
+  ""
+ ],
+ "files": {
+  "mod.json": {
+   "size": 3874,
+   "sha256": "cd30928725182e4c3cdb1ba3cbe3ba2c541fc85b21bc47855a8879e950471bbc",
+   "json": {
+    "id": "external-item-descriptions",
+    "name": "!!~External item descriptions",
+    "version": "5.23",
+    "author": "Unknown",
+    "description": "[img]https://i.imgur.com/l9nbaxP.png[/img]\nThis mod displays detailed information about all items, trinkets, cards, runes and pills DIRECTLY onto your screen. Say goodbye to your browser tab with platinumgod or the wiki open ;)\n\nThe Steam-Workshop version of this mod is compatible with Afterbirth+, Repentance, Repentogon and Repentance+. There are also versions for [url=https://github.com/wofsauge/External-Item-Descriptions#versions]Rebirth or Afterbirth[/url], as well as [url=https://github.com/wofsauge/External-Item-Descriptions/wiki/How-to-install-the-mod]Epic Games, GoG and other sources[/url].\n\n[img]https://i.imgur.com/bRGqujD.png[/img] [url=https://discord.gg/HhD4vMM4bZ]Need help or want to chat? Join our Discord server![/url]\n[img]https://i.imgur.com/P6a8043.png[/img] [url=https://github.com/wofsauge/External-Item-Descriptions]Check this project out on GitHub![/url]\n\n[img]https://i.imgur.com/QmqdAmr.png[/img]\n[list]\n[*] [b]Compatible with Afterbirth+, Repentance and Repentogon[/b]\n[*] Displays information for all collectibles, trinkets, cards, runes, pills, horsepills and some rooms\n[*] Displays [b]additional information[/b] like item type, charges, transformations, Spindown Dice results, Bag of Crafting recipes, TMTRAINER item effects (Detailed informations require REPENTOGON installed!), and much much more!\n[*] Mod support for nearly all mods!\n[*] Extended features available with [url=https://repentogon.com/]Repentogon[/url]\n[*] Easy to use API ([url=https://github.com/wofsauge/External-Item-Descriptions/wiki]Documentation here[/url])\n[*] A huge amount of custom options like:\n[list]\n[*] Indicators\n[*] Font styles\n[*] 17+ Languages\n[*] And a lot of visual options!\n[/list]\n[/list]\n\n[b]Press F2 to hide/show the descriptions![/b]\n\n[img]https://i.imgur.com/NqSBJqj.png[/img]\n[img]https://i.imgur.com/nl8lCfN.png[/img]\nSupported Languages:\nChinese, Czech, Dutch, English, French, German, Italian, Japanese, Korean, Polish, Portuguese, Brazilian-Portuguese, Romanian, Russian, Spanish, Turkish, Ukrainian, Vietnamese\n\nTo change the language, just edit the \"Language\" setting in the configuration. We recommend to install [url=https://steamcommunity.com/sharedfiles/filedetails/?id=3701683951]'Mod Config Menu Impure'[/url] to easily change the configuration ingame.\n\n[img]https://i.imgur.com/RVtZEqp.png[/img]\nFor [b]Steam users[/b], simply press the \"Subscribe\" button on the mod's Steam Workshop page. This will automatically install the mod for you.\nFor [b]manual mod installation[/b], read this tutorial \"[url=https://github.com/wofsauge/External-Item-Descriptions/wiki/How-to-install-the-mod]How to install the mod[/url]\"\n\nIf you have problems installing use the [url=https://wofsauge.github.io/IsaacDocs/rep/faq/interactive_FAQ.html]Interactive FAQ[/url].\n[img]https://i.imgur.com/PFTZnfC.png[/img]\nSimply install [url=https://steamcommunity.com/sharedfiles/filedetails/?id=3701683951]'Mod Config Menu Impure'[/url]. You can use it to configure the mod while playing.\n\nAlternatively, edit the `eid_config.lua` file like described [url=https://github.com/wofsauge/External-Item-Descriptions/wiki/Edit-the-configuration-manually]here[/url]\n\n[img]https://i.imgur.com/vUP4whT.png[/img]\nThere are multiple Versions of the mod, depending on which DLCs you have installed.\n[b]You are currently looking at the version for Afterbirth+ and Repentance.[/b]\n\n[url=https://github.com/wofsauge/External-Item-Descriptions#versions]Click here for the Rebirth or Afterbirth Versions[/url]\n\n[img]https://i.imgur.com/jrdGbna.png[/img]\n[url=https://github.com/wofsauge/External-Item-Descriptions/blob/master/CREDITS.md]Check out the credits here[/url]"
+   }
+  },
+  "resources/font/eid_borderless.fnt": {
+   "size": 147347,
+   "sha256": "11130a7eba1fa46d2985e3aa6831bbe7c215bf1215fd6d7ddce04074b72fc706"
+  },
+  "resources/font/eid_borderless_0.png": {
+   "size": 169471,
+   "sha256": "7a77f7c5ed6b711a0d8f2e1bd0ba4f9538b8c5f5067ddb9c33fe240f60c17509",
+   "wh": [
+    1024,
+    1024
+   ],
+   "pixels": "b4b68aa60ef6bc919180f34fe0b7eabd85c8ff49457e243b7915291224b69d62"
+  },
+  "resources/font/eid_cn_alt.fnt": {
+   "size": 256459,
+   "sha256": "4d5658d2b2c5f76cde3b26035ecdd2f633b90c71260ccaa325a24cbb32e5cf74"
+  },
+  "resources/font/eid_cn_alt_0.png": {
+   "size": 466998,
+   "sha256": "03745e3e5800d8c3ecb9d0bebec5ed0c8bb94981ca21a153aabc55feb39e498f",
+   "wh": [
+    2048,
+    2048
+   ],
+   "pixels": "e8cfcd81a0226a8839ca3fa0e19ff6f5c8dd7e8ddddd928c197480310b28d0c2"
+  },
+  "resources/font/eid_cn_default.fnt": {
+   "size": 388858,
+   "sha256": "53f96113f50106320ee3e3e1ba121174d5aa2256045aa3c259a501ca8fd06516"
+  },
+  "resources/font/eid_cn_default_0.png": {
+   "size": 599501,
+   "sha256": "c31d66db616d0a42446fe9e4289766350f6a64448803ed4d790d24af993dc0db",
+   "wh": [
+    2048,
+    2048
+   ],
+   "pixels": "fdcf2c3791b20f4c948b5a16d839aec64463efe09b8283122386fe3f8b7d4f74"
+  },
+  "resources/font/eid_cn_fix_0.png": {
+   "size": 115,
+   "sha256": "5702062e6159942b82ff3c1b8916b70890d09d780195a5e2a96beb1442dc73a3",
+   "wh": [
+    16,
+    16
+   ],
+   "pixels": "13144306e7fd057c75c76c7a5825df043f56bbf562f8c5527d012c03e3b9098e"
+  },
+  "resources/font/eid_cn_old.fnt": {
+   "size": 154737,
+   "sha256": "50ead4bbe5ef01a3d1af92acf9b0da63f08faf46696ac76a8ecff8185d613534"
+  },
+  "resources/font/eid_cn_old_0.png": {
+   "size": 495770,
+   "sha256": "2f47b34747d8b8fa52449ebf39f607d776e82c6203231bc64e1664ac5dd92744",
+   "wh": [
+    2048,
+    2048
+   ],
+   "pixels": "462e7bfdad1243c13b7fcb0298a2fa33cc844d09e9c49ff2e3f4fa6c1e6a5b96"
+  },
+  "resources/font/eid_default.fnt": {
+   "size": 147362,
+   "sha256": "f0865eb462b76a608558bfc1b9991d6e8258fdb343ad42380afbd9c210571341"
+  },
+  "resources/font/eid_default_0.png": {
+   "size": 239075,
+   "sha256": "0a3aeec5bb3dc069c723d64ee4a3d507721c53b3c08dd9bea8950e319f5c24ca",
+   "wh": [
+    1024,
+    1024
+   ],
+   "pixels": "dc6c6cd09c2c2937b64e398f88d31b0a8464866fa8416c938d5537885698b259"
+  },
+  "resources/font/eid_default_1.png": {
+   "size": 35001,
+   "sha256": "34b0230ab6f1bd47579f06e98d377cda135896a57f1ab1d17ef187a0b217d3fa",
+   "wh": [
+    1024,
+    1024
+   ],
+   "pixels": "685500022fd089554bac3c3abf88563fab9df38d69bcdb6992904e71eb1116f0"
+  },
+  "resources/font/eid_inverted.fnt": {
+   "size": 147364,
+   "sha256": "b373744e2311483a0123f532f825fae4efd578fdea09cea7987f0da89510f558"
+  },
+  "resources/font/eid_inverted_0.png": {
+   "size": 229845,
+   "sha256": "01d17aba002725b74be4848d6813e1dfa16dc81649c6f8c04b29e6b8b5c0b1a0",
+   "wh": [
+    1024,
+    1024
+   ],
+   "pixels": "eee0d6549d3809a901dd272fc942fddc46995e9ad4eefa5f770f097e87de820f"
+  },
+  "resources/font/eid_inverted_1.png": {
+   "size": 49291,
+   "sha256": "f3f8c2cb6160073ff39594c23dd72af306b1542663efd3b2e90b076b63a81a9f",
+   "wh": [
+    1024,
+    1024
+   ],
+   "pixels": "0504133954b039f2fcc2779178e9e924952d725ba9b6913941c6fc73ab6ce464"
+  },
+  "resources/font/eid_korean_baekmukgulim10.fnt": {
+   "size": 68058,
+   "sha256": "029926981e4b03ee7167e44c4b271f0a5dc2c969dea07b42261c32ce54dbd970"
+  },
+  "resources/font/eid_korean_baekmukgulim10_0.png": {
+   "size": 105842,
+   "sha256": "df6c18464ef60d44adf5bfa2aba853fcccfb3438b7a92a2dfeb4a876fc296edf",
+   "wh": [
+    1024,
+    1024
+   ],
+   "pixels": "f70c7b0e0568f841dd5a9321e1d64b367e9d83cef01b9ba3e1776be32fefebfa"
+  },
+  "resources/font/eid_korean_dotum.fnt": {
+   "size": 255338,
+   "sha256": "6cf0fc8849a95032b9565f509de3e3d29051aa3cff0bf9826cb9c95db40c59cb"
+  },
+  "resources/font/eid_korean_dotum_0.png": {
+   "size": 101818,
+   "sha256": "3d0a4b6d4de41acd8b0769245e6c91384c2a62829c8f620c93a575b41432744d",
+   "wh": [
+    1024,
+    1024
+   ],
+   "pixels": "8f50a1c2f9e93185408bb3ca24d235674c60fa13136c97c1c130c1ca0b98fcc6"
+  },
+  "resources/font/eid_korean_dotum_1.png": {
+   "size": 96175,
+   "sha256": "ac63bbc34ded5caa3708063ba2fcf600c6fb43773207d8eb9748c3ec8c33d9fe",
+   "wh": [
+    1024,
+    1024
+   ],
+   "pixels": "6b5d4bfbca11e5859e4158851cc5346862fde5120a19f7fc8cda5af759fe015c"
+  },
+  "resources/font/eid_korean_dotum_2.png": {
+   "size": 105575,
+   "sha256": "9791a0dfe35a1bf26d0b32cf40cb79b151b4a8fcf412c5b197239db876eb872b",
+   "wh": [
+    1024,
+    1024
+   ],
+   "pixels": "62e2165cc3f63e8d57a8a93b285ac3c3c1a34d6d5299a024e45cb8e47e92fb05"
+  },
+  "resources/font/eid_korean_dotum_3.png": {
+   "size": 27650,
+   "sha256": "7f6974beb3e7b1f093a00aac4b6109b405f5e96e5680c4a759154c5cf4fd4cc4",
+   "wh": [
+    1024,
+    1024
+   ],
+   "pixels": "037f7fe3e49abdc0242487abf04a3295927042ba3024a3b7869be370dfbd2c1e"
+  },
+  "resources/font/eid_korean_galmoori11.fnt": {
+   "size": 91611,
+   "sha256": "338d579c5517b96c86b705f7aa25c8b1a109499409d394dd66a278134a0b4708"
+  },
+  "resources/font/eid_korean_galmoori11_0.png": {
+   "size": 127991,
+   "sha256": "2b21e5ed9bf73f500f5e98ac571bdf5fe21d5621ba6e3fe49b1032237974f871",
+   "wh": [
+    1024,
+    1024
+   ],
+   "pixels": "384dbb1c4a8e200f35e90b7131db7c94994fe4bcd7c591247ecc900cbe1bc9a6"
+  },
+  "resources/font/eid_korean_galmoori11_1.png": {
+   "size": 8695,
+   "sha256": "8614f3ddb4fa868c7e1fd761ba6245804fab5438d163d087703bc187014b241f",
+   "wh": [
+    1024,
+    1024
+   ],
+   "pixels": "7d84c546840a1ff2137dc71a0c58530498c65f9805359e0d6f3c71f927483409"
+  },
+  "resources/font/eid_korean_galmoori9.fnt": {
+   "size": 88549,
+   "sha256": "813e5eaa286c04ca42067ae34d4278db2c271718f26ee31c6c684dc323ed1bac"
+  },
+  "resources/font/eid_korean_galmoori9_0.png": {
+   "size": 101614,
+   "sha256": "527f887c61664b33b85023ec7430baea77f005335286e3f7bf6729d901543785",
+   "wh": [
+    1024,
+    1024
+   ],
+   "pixels": "5e6270268cae3977fa4848755c43130e856e83ab379232304492cd9ca79b6273"
+  },
+  "resources/font/eid_korean_gulim.fnt": {
+   "size": 255338,
+   "sha256": "224e9534ee33878349c45875d71663eac2f5beb425cfe533c961f95a77193f25"
+  },
+  "resources/font/eid_korean_gulim_0.png": {
+   "size": 101399,
+   "sha256": "113939ed8830d2f6a7f6770198906d4d4a6053a20583e3e58a6c0fbc20da7dcd",
+   "wh": [
+    1024,
+    1024
+   ],
+   "pixels": "04d2f75fd597e8f33029796a1860f444fd49ab526c97ae1726a867f20e921630"
+  },
+  "resources/font/eid_korean_gulim_1.png": {
+   "size": 98119,
+   "sha256": "6a187a86f6a4a4d8dee0c8724b33b6903921458a74e46fb2785a322d796fe1ad",
+   "wh": [
+    1024,
+    1024
+   ],
+   "pixels": "4e35d50cf56525f9eadd1bb92f0363f701adf5c038253e1f2ed2a6d748ea76ee"
+  },
+  "resources/font/eid_korean_gulim_2.png": {
+   "size": 108833,
+   "sha256": "852bf7fb6cd6e4c3b0a4ed72094ab8e31176e94de30d7e56784b6c7606f00544",
+   "wh": [
+    1024,
+    1024
+   ],
+   "pixels": "fa98ad611b294c5f768854057c7acbf10679ea9d487fa08f6ac5f69a8e84d92c"
+  },
+  "resources/font/eid_korean_gulim_3.png": {
+   "size": 27650,
+   "sha256": "7f6974beb3e7b1f093a00aac4b6109b405f5e96e5680c4a759154c5cf4fd4cc4",
+   "wh": [
+    1024,
+    1024
+   ],
+   "pixels": "037f7fe3e49abdc0242487abf04a3295927042ba3024a3b7869be370dfbd2c1e"
+  },
+  "resources/font/eid_korean_hatmuri9.fnt": {
+   "size": 49148,
+   "sha256": "ef6ad489b74d432feac27e3657058661e33ef9a364276dc201e2b6a63c0d10b3"
+  },
+  "resources/font/eid_korean_hatmuri9_0.png": {
+   "size": 60046,
+   "sha256": "ab8d3f2595985ed7108009d4132d2a6fef8d88ad59fcce1dc55e2293c2975d76",
+   "wh": [
+    1024,
+    1024
+   ],
+   "pixels": "35d2381b86a76112f66be2d67b85db4360714028d6d069a8d88ca00fc98fe0c3"
+  },
+  "resources/font/eid_korean_lanapixel.fnt": {
+   "size": 242824,
+   "sha256": "601d13a682e71d16a9273466d5962728544ce12b6ffe08cf3f4855237cf35551"
+  },
+  "resources/font/eid_korean_lanapixel_0.png": {
+   "size": 93464,
+   "sha256": "6ba974010eb1684f337a02336695f682d6157dc171c5ca1e51fdb2b62aa0e195",
+   "wh": [
+    1024,
+    1024
+   ],
+   "pixels": "a2779ba50baa3a59b652266548567c7d23437aafdc68ef8203dc17e74d451032"
+  },
+  "resources/font/eid_korean_lanapixel_1.png": {
+   "size": 90491,
+   "sha256": "24f98da7c8c74cdb135561c26c672b7bf2bd3110080eea82e9c56f342a7ea44b",
+   "wh": [
+    1024,
+    1024
+   ],
+   "pixels": "9a5cb1a50559c0d53e8fb038fc9fd445091e276ac256e1deaa273684bd27f87e"
+  },
+  "resources/font/eid_korean_lanapixel_2.png": {
+   "size": 29356,
+   "sha256": "697c13aa5f0c9429b93817a6a54c0be1d6e05524b0a7784ebe03ea6458d67ba2",
+   "wh": [
+    1024,
+    1024
+   ],
+   "pixels": "c24e11e87de511ec9ba4a80fa12490f9bd4dd6ff72beb2addb0d56c76ade37b6"
+  },
+  "resources/font/eid_korean_soyakkoma.fnt": {
+   "size": 69534,
+   "sha256": "5cf1236344d02001d44f5aa0a16f4aa13ee1c8ea6437d35ecac436e100fd1daa"
+  },
+  "resources/font/eid_korean_soyakkoma_0.png": {
+   "size": 87663,
+   "sha256": "b0e06d97c5537b1d07aa22ff5632ae2c77f4788b434fc2c92f2a8759f0a450a1",
+   "wh": [
+    1024,
+    1024
+   ],
+   "pixels": "4f3abd8b9bfe53b96c89f3f32a6f1256661818b43713b198d5f34b4fd7e66dfc"
+  },
+  "resources/font/eid_korean_soyakkoma_borderless.fnt": {
+   "size": 69545,
+   "sha256": "41ffe9cb98177161dfc650e5ab9911db4a9e3fa72b394bbed379ede359df5427"
+  },
+  "resources/font/eid_korean_soyakkoma_borderless_0.png": {
+   "size": 57335,
+   "sha256": "dbd43cbf1608eec334c16e9caedca9ac7876ea53d0ec178bc85f839323f31603",
+   "wh": [
+    1024,
+    1024
+   ],
+   "pixels": "e6a8a89ec093deb4d6d46fe54237f8ba1c379c8ff9898c4e67da467bc3e1c19b"
+  },
+  "resources/font/eid_korean_soyakkoma_inverted.fnt": {
+   "size": 69543,
+   "sha256": "3b2898240bf7f2cad5bb070c156ae250f19149c55ae9a7dc0402250f380ebd35"
+  },
+  "resources/font/eid_korean_soyakkoma_inverted_0.png": {
+   "size": 88924,
+   "sha256": "b2b99d67fec1a2b4789b4612e61aaf74ea71b671475721d116d48d85d7e76d0a",
+   "wh": [
+    1024,
+    1024
+   ],
+   "pixels": "eb4dcde7456c7ebd2c55e63ec73bd845a9dcf203b776d60314994e54b6630c2c"
+  },
+  "resources/font/eid_korean_soyakkoma_shadow.fnt": {
+   "size": 62841,
+   "sha256": "0c5bdd1cb3de2dc01c6792f532ee6be121faa31bfd3b8f4424301760f99237da"
+  },
+  "resources/font/eid_korean_soyakkoma_shadow_0.png": {
+   "size": 85665,
+   "sha256": "2155d699359cb7ae94fd4fe1cfb81505fe46ca8410396fa194175626ae5ed391",
+   "wh": [
+    1024,
+    1024
+   ],
+   "pixels": "1b44554e8c478e7265ac4259adb0b52af40b18bbd50b08b93389c6c689df6007"
+  },
+  "resources/font/eid_korean_soyanon.fnt": {
+   "size": 70169,
+   "sha256": "a781a2d23cdf8045e154806fae0debcbce5fedd3e05a8ff323567df0b41982b1"
+  },
+  "resources/font/eid_korean_soyanon_0.png": {
+   "size": 93377,
+   "sha256": "51e7f374cb3d84c96c9a0d5fec5fa71379248e5f55cccaae4731d96cdf5dc583",
+   "wh": [
+    1024,
+    1024
+   ],
+   "pixels": "cf94eb23f4b553cf1ce0bbebbc09bf27d3bcdfa9d4a674c2298ca6378ebd0502"
+  },
+  "resources/font/eid_korean_soyanon_shadow.fnt": {
+   "size": 62836,
+   "sha256": "e1ac3c9927b684ddf1f47cf84db7d4d1e796e8427d3850074f569521011d7173"
+  },
+  "resources/font/eid_korean_soyanon_shadow_0.png": {
+   "size": 92799,
+   "sha256": "32a9b9941d9c8b14cd6167cc2eb66866c1f088209534ea66fe3f357a5deb3a78",
+   "wh": [
+    1024,
+    1024
+   ],
+   "pixels": "07fbc560e8270a73c816cfc81b75f7e18f1481bcc91863768c6050884ffe61f0"
+  },
+  "resources/font/eid_korean_yoonwebdotum10.fnt": {
+   "size": 62948,
+   "sha256": "64d1bcf6147b16f2679489ae66dcbec4e8d0883d0007e50117dabfa7abaef1db"
+  },
+  "resources/font/eid_korean_yoonwebdotum10_0.png": {
+   "size": 77092,
+   "sha256": "0db087e2eaaf2b44329e9b4d4020769b2fab949914c1aeabef5046ef34eb0bff",
+   "wh": [
+    1024,
+    1024
+   ],
+   "pixels": "2ef17bd51f3c1edcb4c21f6ba75804e106af6c8f83c6b8e61c439448e456d948"
+  },
+  "resources/font/eid_korean_yoonwebdotum10_borderless.fnt": {
+   "size": 62959,
+   "sha256": "ff65504fd81bef62d3498f7bc0298d959b5583db9f64d3c7525af273b39beec0"
+  },
+  "resources/font/eid_korean_yoonwebdotum10_borderless_0.png": {
+   "size": 54775,
+   "sha256": "afbf95b7971eb30b145f9d3c440e7aed84b12cb757b714e58eb2b8bb79af8fd5",
+   "wh": [
+    1024,
+    1024
+   ],
+   "pixels": "4bb639b5996782d4e5ea5f9205671dc15617b0feae2b87006ec58773510cc79b"
+  },
+  "resources/font/eid_korean_yoonwebdotum10_inverted.fnt": {
+   "size": 62957,
+   "sha256": "86f695f83b1802d7141537c9b768c31b5c698d56a684c97e6c7c5ef0133cb97e"
+  },
+  "resources/font/eid_korean_yoonwebdotum10_inverted_0.png": {
+   "size": 78721,
+   "sha256": "cb155f34cb58ba7bdc6b0221e7ab52d2f30e4853410c11c12e0687670dcebb9d",
+   "wh": [
+    1024,
+    1024
+   ],
+   "pixels": "3b5ebb68ca1dd9602a1d3b5d9263646fc0627c6620f5ddda3f83c21d475c0358"
+  },
+  "resources/font/eid_korean_yoonwebdotum10_shadow.fnt": {
+   "size": 62955,
+   "sha256": "85c3a76ce9194f288735b23f25e3438a9c6036d78957163e5ff9ac64871e7a07"
+  },
+  "resources/font/eid_korean_yoonwebdotum10_shadow_0.png": {
+   "size": 85896,
+   "sha256": "8f3b35982bbbf47d2e793372e9401c959fdfc529651433d99af2952c60c3ed78",
+   "wh": [
+    1024,
+    1024
+   ],
+   "pixels": "059c3dca04f09c4f902504ce8e0a9f8b93366a621256293ec402ea94cab24b87"
+  },
+  "resources/font/eid_korean_yoonwebdotum9.fnt": {
+   "size": 62097,
+   "sha256": "e82c0353d026e7e14f46826bc2b55cb7d8b98bff7a95b34da81711e95f2ca147"
+  },
+  "resources/font/eid_korean_yoonwebdotum9_0.png": {
+   "size": 70565,
+   "sha256": "ef3f450abb4937e266eccd4010cb017d4eac7bb8848cbdd9c7613655307adda9",
+   "wh": [
+    1024,
+    1024
+   ],
+   "pixels": "0e6b7ba9651822137a4f69927ad730b3c19654a00dc27facb17e053709fb40e6"
+  },
+  "resources/font/eid_vi_vn.fnt": {
+   "size": 150978,
+   "sha256": "da5d9ecae95b085a4ad781ec09a8c5a2f7c02317f5eae569b58a9ffdb8d4652a"
+  },
+  "resources/font/eid_vi_vn_0.png": {
+   "size": 273894,
+   "sha256": "5d7cba6b0469faa394ba5d6f60032c4405e255e29f166f08e22687722142a996",
+   "wh": [
+    1024,
+    1024
+   ],
+   "pixels": "b8a7b7b2f8d63657a423c9ce188d45663a003b2ca3e47643d9ab899a2d56b0ab"
+  },
+  "resources/font/eid_vi_vn_1.png": {
+   "size": 11400,
+   "sha256": "e395d82eae2136912da7f826cb46b7e48888bb86b218c14a51f4313151ea0ec0",
+   "wh": [
+    1024,
+    1024
+   ],
+   "pixels": "cae88018423bc18c252caec82b966a11a8bc79ea9d0bf6ad71edd2bd34439c51"
+  },
+  "resources/font/eid_vi_vnborderless.fnt": {
+   "size": 150972,
+   "sha256": "ade67ad66c2ec010f775bc677ba390783f7381d87ec5f0e889a8090f0e3e4e53"
+  },
+  "resources/font/eid_vi_vnborderless_0.png": {
+   "size": 177990,
+   "sha256": "535b27cf5b8c4404c8c42037aef2ba8d2a68a89f49515d221e842ce9370f6cad",
+   "wh": [
+    1024,
+    1024
+   ],
+   "pixels": "524f4a3b5bc87be88dc3ad98b909f6e680d0b6626363d2658b65ce34640a0c2f"
+  },
+  "resources/gfx/eid_cardspills.anm2": {
+   "size": 34639,
+   "sha256": "961e3aa0412a5fbc6add76a2762482b9c4888723ef5e31706dd07d73d151d69d",
+   "tree": "8ff6accba1f53f68b8919edf9edecc1b4c753e08d97b71f66666905f1545c68d"
+  },
+  "resources/gfx/eid_cardspills.png": {
+   "size": 45492,
+   "sha256": "f2911e044b6480a59a54457910475f31ad5719434488c578bae383f45d9fe593",
+   "wh": [
+    256,
+    312
+   ],
+   "pixels": "0cbd9445497bd8c320aa93bdeefe62a22cd8d1306644b8af0008333af51bed6f"
+  },
+  "resources/gfx/eid_inline_icons.anm2": {
+   "size": 131871,
+   "sha256": "90391550d64c406a5730934d2e9186d6a0f53f1c537e34c8bddaeb0a893fd105",
+   "tree": "53cf45d20df7408ae96d8990b47952284c484c91f4bc5db6e4ca9d0379a3635c"
+  },
+  "resources/gfx/eid_inline_icons.png": {
+   "size": 34051,
+   "sha256": "45999e3a87d39d56cb2731c6028ed63f94b0e49b77c7082e72a6a7d374200f8c",
+   "wh": [
+    288,
+    331
+   ],
+   "pixels": "b06797f9986527315c9e3f928853b9ba150db3120daa422f5e32b226ea242239"
+  },
+  "resources/gfx/eid_player_icons.anm2": {
+   "size": 13270,
+   "sha256": "9d1b2eaf3865bfc65789eb77aabc47df531e5ebae26bcdc70fcde1a6709d370a",
+   "tree": "867507443040a88bc50a2db4f4e7923c7689cd73576258d708e3ab031f0f78f4"
+  },
+  "resources/gfx/eid_player_icons.png": {
+   "size": 35353,
+   "sha256": "a431402d2c9966b7a969cbf22b16c8982f1270e7ae9a22a5660d455fc7498338",
+   "wh": [
+    192,
+    224
+   ],
+   "pixels": "3cc0df4252de7705786a83cc4a701a754f5bbe7cd7f09e98720ea7f183bad877"
+  },
+  "resources/gfx/eid_transform_icons.anm2": {
+   "size": 27769,
+   "sha256": "804a11eaeb1602387849f76981e5ee6f4cb4d1a322a304f6d72db2f6ed7e4fb7",
+   "tree": "cb6453c7c1ea296e5f9e916c4d7cc781b8f01f67217256dcc3b5293b9212cd03"
+  },
+  "resources/gfx/eid_transform_icons.png": {
+   "size": 21789,
+   "sha256": "5d2816bfe172c50382d2531cced428aea76474ae8cc68911abd09af0563bb8c0",
+   "wh": [
+    95,
+    104
+   ],
+   "pixels": "cb2c317d3fb7ec2e52e0aa501dee31923a375bc734b7eb0c0b98d0f583beec96"
+  }
+ },
+ "js": {
+  "agrees": true,
+  "differences": []
+ }
+}

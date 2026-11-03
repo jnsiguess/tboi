@@ -1,0 +1,622 @@
+{
+ "BFFSSynergies|5.100.178": [
+  7,
+  14,
+  "Spawns a blue flame at point of impact"
+ ],
+ "BFFSSynergies|5.100.187": "Damage doubled",
+ "BFFSSynergies|5.100.207": "Damage doubled",
+ "BFFSSynergies|5.100.266": "Spawns an extra Blue Spider",
+ "BFFSSynergies|5.100.276": "Fires additional shots in random directions and leaves a larger puddle of creep",
+ "BFFSSynergies|5.100.361": "Damage doubled",
+ "BFFSSynergies|5.100.372": "Higher chance to spawn batteries",
+ "BFFSSynergies|5.100.385": "Damage doubled",
+ "BFFSSynergies|5.100.388": "Spawns chests more often",
+ "BFFSSynergies|5.100.403": "Higher chance to spawn batteries",
+ "BFFSSynergies|5.100.417": "The damaging aura gets bigger, but the damage up aura doesn't",
+ "BFFSSynergies|5.100.430": [
+  "Isaac's damage",
+  "double {{CR}}Isaac's damage"
+ ],
+ "BFFSSynergies|5.100.518": "Damage doubled",
+ "BFFSSynergies|5.100.519": "Damage doubled",
+ "BFFSSynergies|5.100.526": "Horseman contact damage is doubled",
+ "BFFSSynergies|5.100.537": "Increases creep size, but not damage",
+ "BFFSSynergies|5.100.539": "Spawns a champion variant of the enemy",
+ "BFFSSynergies|5.100.545": "Bone orbital's contact damage is doubled",
+ "BFFSSynergies|5.100.565": "Double damage while friendly",
+ "BFFSSynergies|5.100.569": "If triggered, grants additional damage and speed",
+ "BFFSSynergies|5.100.584": "Doubles wisp tear and contact damage",
+ "BFFSSynergies|5.100.610": [
+  45,
+  90,
+  "a rock wave",
+  "4 {{CR}}rock waves",
+  6.5,
+  13
+ ],
+ "BFFSSynergies|5.100.612": "Gives the Lost Soul a Holy Mantle effect",
+ "BFFSSynergies|5.100.635": "On use, shoots 8 tears from the player's position",
+ "BFFSSynergies|5.100.650": "Contact damage doubled",
+ "BFFSSynergies|5.100.655": [
+  10.5,
+  21,
+  "No BFFS! bonus damage for any familiar while Spin to Win is being used"
+ ],
+ "BFFSSynergies|5.100.681": "Damage doubled",
+ "BFFSSynergies|5.100.685": "Doubles wisp tear and contact damage",
+ "BFFSSynergies|5.100.702": "Doubles wisp tear and contact damage",
+ "BFFSSynergies|5.100.706": "Locust damage is increased by 25%",
+ "BFFSSynergies|5.100.712": "Doubles orbital contact damage",
+ "BFFSSynergies|5.100.713": "Clot damage is doubled",
+ "BFFSSynergies|5.100.73": "Damage doubled",
+ "BFFSSynergies|5.300.96": "Doubles wisp tear and contact damage",
+ "BFFSSynergies|5.350.142": "Doubles wisp tear and contact damage",
+ "BFFSSynergies|5.350.176": "Clot damage is doubled",
+ "BFFSSynergies|5.350.182": "Doubles wisp tear and contact damage",
+ "BFFSSynergies|5.350.186": "Locust damage is increased by 25%",
+ "BFFSSynergies|Lilith": "Incubus damage is doubled",
+ "BFFSSynergies|No Effect": "No effect from {1}",
+ "BFFSSynergies|Tainted Lilith": "Gello's tear damage is doubled",
+ "ConditionalDescs|1000.76.1": "{{Warning}} Only rerolls the character that activates the dice",
+ "ConditionalDescs|1000.76.6": "{{Warning}} All characters' items will be rerolled in co-op!",
+ "ConditionalDescs|2 of Hearts Blood Charges": "Doubles {1}'s blood charges",
+ "ConditionalDescs|20/20": "No fire rate penalty with {1}",
+ "ConditionalDescs|4.5 Volt Multiple": "Secondary active items only gain charge if the primary active is fully charged",
+ "ConditionalDescs|4.5 Volt Timed": "No effect on timed recharges",
+ "ConditionalDescs|5.100.116 (1 Room)": "1 Room recharges become 15 second recharges while in an uncleared room",
+ "ConditionalDescs|5.100.116 (Timed)": "Timed recharges start half full",
+ "ConditionalDescs|5.100.118 (Copies)": "Multiple Brimstones grant increased damage and a larger beam",
+ "ConditionalDescs|5.100.122": "Triggers at 1 Red Heart as {1}",
+ "ConditionalDescs|5.100.135 (Hard Mode)": [
+  "1-2 coins",
+  "1 coin",
+  "2-3 coins",
+  "2 coins"
+ ],
+ "ConditionalDescs|5.100.135 (PHD)": "Spawns 2-3 coins if you have {1}",
+ "ConditionalDescs|5.100.153 (Copies)": "Isaac fires 2 more tears#No additional stat decrease",
+ "ConditionalDescs|5.100.188": "Deals 7.5 damage as {1}",
+ "ConditionalDescs|5.100.2 (Copies)": "Isaac fires 1 more tear#No additional stat decrease",
+ "ConditionalDescs|5.100.201": "Refills {1}'s charge on pickup",
+ "ConditionalDescs|5.100.205 (Tainted Magdalene)": "Allows infinite usage of Yum Heart",
+ "ConditionalDescs|5.100.205 (Wafer)": "Reduces the cost to half a heart",
+ "ConditionalDescs|5.100.224 (Copies)": "Additional copies only give +0.5 fire rate",
+ "ConditionalDescs|5.100.230 (Bethany)": "{1} is left with half a heart",
+ "ConditionalDescs|5.100.230 (Keeper)": "{1} is left with 1 coin container",
+ "ConditionalDescs|5.100.230 (Tainted Bethany)": "{1} doesn't lose her blood charges",
+ "ConditionalDescs|5.100.240": "{1} keeps the stat changes when he drops it",
+ "ConditionalDescs|5.100.245": "Removes the fire rate penalty of {1}",
+ "ConditionalDescs|5.100.245 (Copies)": "Isaac fires 1 more tear#No additional stat decrease",
+ "ConditionalDescs|5.100.245 (Keeper)": [
+  "↑ {{Tears}} Increased tear rate#↑ Decreased tear spread#↓ {{Damage}} x0.8 Damage multiplier"
+ ],
+ "ConditionalDescs|5.100.246": [
+  "{{SuperSecretRoom}} Reveals the Super Secret Room location on the map"
+ ],
+ "ConditionalDescs|5.100.260": "Removes the teleportation effect of {1}",
+ "ConditionalDescs|5.100.297": [
+  "Unlocks {{Collectible523}} Moving Box",
+  "Nothing"
+ ],
+ "ConditionalDescs|5.100.297 (Greed)": [
+  "Spawns rewards based on floor:#Basement: 2{{Bomb}} + 2{{Key}}#Caves: Boss item + 2{{SoulHeart}}#Depths: 20{{Coin}}#Womb: 2 Boss items#Sheol: Devil item + 1{{BlackHeart}}#The Shop/Ultra Greed: 1{{Coin}}"
+ ],
+ "ConditionalDescs|5.100.316": "{1} removes the teleportation effect",
+ "ConditionalDescs|5.100.333": [
+  "{{SuperSecretRoom}} Reveals the Super Secret Room location on the map"
+ ],
+ "ConditionalDescs|5.100.34": "x1.5 Damage multiplier",
+ "ConditionalDescs|5.100.344": [
+  "{{BlackHeart}} +1 Black Heart#{{Bomb}} Spawns 3 bombs"
+ ],
+ "ConditionalDescs|5.100.358 (Copies)": "Isaac fires 1 more tear in the center",
+ "ConditionalDescs|5.100.360": "Deals 100% damage as {1}",
+ "ConditionalDescs|5.100.416": [
+  "{{Coin}} Increases the coin cap to 999"
+ ],
+ "ConditionalDescs|5.100.45": "Heals other players for half a heart",
+ "ConditionalDescs|5.100.482": "Tainted characters change into other tainted characters",
+ "ConditionalDescs|5.100.483": "{{GoldenBomb}} Having a golden bomb when using the item consumes it and allows for another use of Mama Mega",
+ "ConditionalDescs|5.100.483 (Greed)": "{{GreedMode}} Doesn't trigger once per wave, just once per room",
+ "ConditionalDescs|5.100.501": "{1} can gain additional coin containers#Health up items can grant an extra container per 25 coins",
+ "ConditionalDescs|5.100.501 (Deep Pockets)": "+1 container for every 100 coins past 99",
+ "ConditionalDescs|5.100.514": [
+  "Causes some enemies and projectiles to briefly pause at random intervals#Paused projectiles disappear"
+ ],
+ "ConditionalDescs|5.100.521": "{{Collectible376}} Free items won't be restocked",
+ "ConditionalDescs|5.100.523": "Counts as a passive item to {1}",
+ "ConditionalDescs|5.100.531 (Copies)": "Additional copies only give +1 damage",
+ "ConditionalDescs|5.100.535": "{{GreedMode}} No shield on Boss Waves, only on Ultra Greed",
+ "ConditionalDescs|5.100.549": [
+  "↑ {{Tears}} +0.4 Fire rate"
+ ],
+ "ConditionalDescs|5.100.566": [
+  "{{HalfSoulHeart}} +1 half Soul Heart when entering a new floor#!!! The stage transition nightmare shows the wrong items in Greed Mode"
+ ],
+ "ConditionalDescs|5.100.580": "{{GreedMode}} Can only rarely make special rooms in Greed Mode#{{SuperSecretRoom}} Can still help find the Super Secret Room",
+ "ConditionalDescs|5.100.600": "x1.2 Fire rate multiplier for {1}",
+ "ConditionalDescs|5.100.64 (Copies)": "Owning this item multiple times reduces the price further",
+ "ConditionalDescs|5.100.642": [
+  "!!! SINGLE USE !!!#Spawns an item from the current room's item pool"
+ ],
+ "ConditionalDescs|5.100.644": "{1} keeps the stat increase when he drops it",
+ "ConditionalDescs|5.100.694": "Works for {1}, letting him survive 4 hits",
+ "ConditionalDescs|5.100.694 (Keeper)": [
+  "↑ {{Damage}} +0.25 Damage for each Broken Heart#{{BrokenHeart}} +1 Broken Heart#{{BrokenHeart}} Every fatal hit grants +1 Broken Heart#{{Warning}} Keeper dies at 3 Broken Hearts"
+ ],
+ "ConditionalDescs|5.100.694 (Tainted Keeper)": [
+  "{{Warning}} {1} will die in one hit after taking this item#↑ {{Damage}} +0.25 Damage for each Broken Heart#{{BrokenHeart}} +1 Broken Heart#{{BrokenHeart}} Every fatal hit grants +1 Broken Heart#Tainted Keeper dies at 2 Broken Hearts"
+ ],
+ "ConditionalDescs|5.100.7": "x1.5 Damage multiplier while {1} effect is active",
+ "ConditionalDescs|5.100.705": "Temporary +1 damage up for each bullet/enemy",
+ "ConditionalDescs|5.100.710": [
+  "Upon use, attacking swipes the bag in the chosen direction#Swiping at a pickup puts it in the bag#The Bag's contents can be shifted with {{ButtonRT}} to replace specific pickups when full#Holding the Use key when the bag is full crafts the previewed item#Item quality is based on the quality of the pickups"
+ ],
+ "ConditionalDescs|5.100.711": [
+  "Entering",
+  "{{Player38}} Flips Lazarus to the other state#Entering"
+ ],
+ "ConditionalDescs|5.100.713": [
+  "Recalls all clots to Eve's health bar#Excess clots are simply moved to her location#{{Timer}} 1 second recharge time"
+ ],
+ "ConditionalDescs|5.100.722": [
+  "{{Chained}} Chains down Dark Esau#After 5 seconds or upon using Anima Sola again, he breaks free and dashes towards Jacob"
+ ],
+ "ConditionalDescs|5.100.728": "Deals 100% damage as {1}",
+ "ConditionalDescs|5.100.81": "Characters that can't have Red Hearts get set to 1 Soul/Black Heart",
+ "ConditionalDescs|5.300.10": "Teleports Isaac to a random room if there's no Shop",
+ "ConditionalDescs|5.300.15": [
+  "{{DemonBeggar}} Spawns a Devil Beggar"
+ ],
+ "ConditionalDescs|5.300.16": "x1.5 Damage multiplier",
+ "ConditionalDescs|5.300.18": "Teleports Isaac to a random room if there's no Treasure Room",
+ "ConditionalDescs|5.300.18 (Greed)": [
+  "{{TreasureRoom}} Teleports Isaac to a random Treasure Room"
+ ],
+ "ConditionalDescs|5.300.18 (Late Greed)": [
+  "Teleports Isaac to the first room of the floor"
+ ],
+ "ConditionalDescs|5.300.19": [
+  "Teleports Isaac to the first room of the floor"
+ ],
+ "ConditionalDescs|5.300.20": [
+  "{{HealingRed}} Full health#Deals 100 damage to all enemies"
+ ],
+ "ConditionalDescs|5.300.5": [
+  "{{BossRoom}} Teleports Isaac to a random Boss Room"
+ ],
+ "ConditionalDescs|5.300.74": [
+  "Teleports Isaac to the first room of the floor"
+ ],
+ "ConditionalDescs|5.300.83": "{{GreedMode}} Can only rarely make special rooms in Greed Mode#{{SuperSecretRoom}} Can still help find the Super Secret Room",
+ "ConditionalDescs|5.350.100 (Bethany)": "Works with {1}'s soul charges",
+ "ConditionalDescs|5.350.100 (Tainted Bethany)": "Works with {1}'s blood charges",
+ "ConditionalDescs|5.350.101 (Bethany)": "Ignores {1}'s soul charges",
+ "ConditionalDescs|5.350.101 (Tainted Bethany)": "Ignores {1}'s blood charges",
+ "ConditionalDescs|5.350.101 (Timed)": "Basically useless with timed recharges",
+ "ConditionalDescs|5.350.120": "{{GreedMode}} No charge on Boss Waves, only on Ultra Greed",
+ "ConditionalDescs|5.350.125": "Beams also arc between players",
+ "ConditionalDescs|5.350.162": [
+  "{{Player7}} Clearing a wave has a 50% chance to turn the player into Azazel#{{Timer}} Effect lasts until clearing another wave"
+ ],
+ "ConditionalDescs|5.350.172": "{1} removes the teleportation effect",
+ "ConditionalDescs|5.350.23": "{{Warning}} Dying in a {{SacrificeRoom}} Sacrifice Room while holding this trinket unlocks The Lost",
+ "ConditionalDescs|5.350.34": [
+  "{{Heart}} 33% chance for a bonus heart from chests, tinted rocks, and destroyed machines"
+ ],
+ "ConditionalDescs|5.350.36": [
+  "{{Key}} 33% chance for a bonus key from chests, tinted rocks, and destroyed machines"
+ ],
+ "ConditionalDescs|5.350.41": [
+  "{{Bomb}} 33% chance for a bonus bomb from chests, tinted rocks, and destroyed machines#{{Warning}} Removes {{Trinket53}} Tick"
+ ],
+ "ConditionalDescs|5.350.44": [
+  "{{Pill}} 33% chance for a bonus pill from chests, tinted rocks, and destroyed machines"
+ ],
+ "ConditionalDescs|5.350.45": [
+  "{{Card}} 33% chance for a bonus card from chests, tinted rocks, and destroyed machines"
+ ],
+ "ConditionalDescs|5.350.72": [
+  "{{Battery}} +10% chance for random pickups to be a battery#{{Battery}} 5% chance to add 1 charge to held active item when clearing a wave"
+ ],
+ "ConditionalDescs|5.70.28": "Isaac shoots forward and to the sides instead",
+ "ConditionalDescs|9 Volt 1 Room": "15 second recharge while in an uncleared room",
+ "ConditionalDescs|9 Volt Timed": "Charge starts half full after use",
+ "ConditionalDescs|? + Blank Pedestal": "Using ? Card with Blank Card teleports you to the I AM ERROR room and destroys both cards",
+ "ConditionalDescs|? Card Single Use": "Single use items can be used multiple times with ? Card",
+ "ConditionalDescs|Almost No Effect": "Little to no effect for {1}",
+ "ConditionalDescs|Binge Eater Healing": [
+  "Heals 1 heart",
+  "Heals {{BlinkGreen}}2{{CR}} hearts",
+  "+4 blood charges",
+  "+{{BlinkGreen}}6{{CR}} blood charges"
+ ],
+ "ConditionalDescs|Black Feather": "↑ {{Damage}} +0.5 Damage",
+ "ConditionalDescs|Black Lotus Black": [
+  "{{SoulHeart}} +1 Soul Heart#{{BlackHeart}} +2 Black Hearts"
+ ],
+ "ConditionalDescs|Black Lotus Soul": [
+  "{{SoulHeart}} +2 Soul Hearts#{{BlackHeart}} +1 Black Heart"
+ ],
+ "ConditionalDescs|Both Peppers": "With {1}, base chance to shoot a flame is 12.5%, up to 100% at 7 luck",
+ "ConditionalDescs|Brimstone Ipecac": "The laser gets +2 damage and explodes on enemies and obstacles",
+ "ConditionalDescs|Brimstone Mom's Knife": "{1} has priority#A barrage of knives shoot out based on charge amount",
+ "ConditionalDescs|Brimstone Pop!": "Shorter beam that shoots {1} tears at the end",
+ "ConditionalDescs|Brimstone Proptosis": "Beams deal 6x damage at point blank range, decreasing with distance",
+ "ConditionalDescs|Bulb Multiple": "Only checks the primary active item",
+ "ConditionalDescs|Bulb Zero": "Actives with 0 max charges don't count",
+ "ConditionalDescs|Can't Be Charged": "Can't be charged by {1}",
+ "ConditionalDescs|Can't Be Duplicated": "Can't be duplicated",
+ "ConditionalDescs|Can't Charge": "Can't charge {1}",
+ "ConditionalDescs|Chocolate Milk Marked": "Isaac automatically charges based on distance from the crosshair",
+ "ConditionalDescs|Chocolate Milk Overrides": "↑ {{Tears}} x1.25 Tears multiplier",
+ "ConditionalDescs|Damage Multiplier Stack": "The damage multiplier doesn't stack",
+ "ConditionalDescs|Dies on Use": "{{Warning}} {1} dies on use",
+ "ConditionalDescs|Different Effect": "{{ColorSilver}}Different effect for {1}{{CR}}",
+ "ConditionalDescs|Epic Fetus Brimstone": "{1} has priority#Missiles shoot out 10 beams",
+ "ConditionalDescs|Epic Fetus Mom's Knife": "{1} has priority#Missiles shoot out 10 knives",
+ "ConditionalDescs|Epic Fetus Soy Milk": "Crosshair time is not shortened, but missile damage is drastically reduced",
+ "ConditionalDescs|Eye of Belial Dr. Fetus": "Bombs pierce, doing 2.5x damage, but don't home or do additional blast damage",
+ "ConditionalDescs|Eye of the Occult Beam": "Isaac automatically shoots with a crosshair that alters the beam's path",
+ "ConditionalDescs|Fork Blood Charges": [
+  "Clearing a room has a 10% chance to add 1 blood charge"
+ ],
+ "ConditionalDescs|Ghost Pepper Fart": "Farting causes a flame to shoot out behind Isaac",
+ "ConditionalDescs|Golden Poop Chance": "Chance to spawn Golden Poop",
+ "ConditionalDescs|Golden Poop Jar": "Chance to spawn Golden Poop on 1 charge use",
+ "ConditionalDescs|Haemolacria Brimstone": "{1} has priority#Tears split into 4-7 beams",
+ "ConditionalDescs|Health Up Blood Charges": "+{1} blood charges",
+ "ConditionalDescs|Health Up Soul Charges": "+{1} soul charges",
+ "ConditionalDescs|Hemoptysis": "Works with {1}",
+ "ConditionalDescs|Ice Tears": "Freezing an enemy doesn't count as killing",
+ "ConditionalDescs|Keeper 0-1": "Spawns 0-1 coin as {1}",
+ "ConditionalDescs|Ludovico Ipecac": "The tear gets +2 damage but doesn't explode or poison",
+ "ConditionalDescs|Lullaby Clots": "(Including clots)",
+ "ConditionalDescs|Lullaby Incubus": "(Including Incubus)",
+ "ConditionalDescs|Mongo Babies": "Can be copied by {1}",
+ "ConditionalDescs|Mother's Kiss Bone": [
+  "{{BoneHeart}} +1 Bone Heart while held"
+ ],
+ "ConditionalDescs|Mother's Kiss Coin": [
+  "{{CoinHeart}} +1 Coin Heart while held#Increases Coin Heart cap by 1"
+ ],
+ "ConditionalDescs|Mother's Kiss Soul": [
+  "{{SoulHeart}} +1 Soul Heart while held"
+ ],
+ "ConditionalDescs|No Champion Drops": "!!! Champions don't drop pickups in Greed Mode!",
+ "ConditionalDescs|No Effect": "No effect for {1}",
+ "ConditionalDescs|No Effect (Copies)": "No additional effect from multiple copies",
+ "ConditionalDescs|No Effect (Familiars)": "No additional effect on familiars",
+ "ConditionalDescs|No Effect (Greed)": "{{GreedMode}} No effect in Greed Mode",
+ "ConditionalDescs|No Effect From": "No effect from {1}",
+ "ConditionalDescs|No Effect Replace": [
+  "No effect for {1}"
+ ],
+ "ConditionalDescs|Overridden": "Overridden by {1}",
+ "ConditionalDescs|Overrides": "Overrides {1}",
+ "ConditionalDescs|Proptosis Anti-Gravity": "Tears don't lose damage until they start moving",
+ "ConditionalDescs|Room to Wave": [
+  "room",
+  "wave",
+  "room",
+  "wave"
+ ],
+ "ConditionalDescs|Sacrificial Abyss": "Abyss Locusts count as familiars",
+ "ConditionalDescs|Sacrificial Angels": "{1} spawns 2 Black Hearts if sacrificed",
+ "ConditionalDescs|Sacrificial Clots": "Turns Clots into coins",
+ "ConditionalDescs|Sacrificial Conception": "Familiars granted by {1} can be sacrificed, and will respawn",
+ "ConditionalDescs|Sacrificial Item Wisps": "Familiars created by Lemegeton can be sacrificed#Turns all Lemegeton wisps into {{HalfSoulHeart}} half Soul Hearts",
+ "ConditionalDescs|Sacrificial Nugget": "Turns Brown Nugget turrets into coins",
+ "ConditionalDescs|Sacrificial Plum": "The summoned Plum counts as a familiar, and doesn't remove Plum Flute",
+ "ConditionalDescs|Sacrificial Quints": "If a Quints familiar is sacrificed, you lose Quints",
+ "ConditionalDescs|Sacrificial Star": "Star of Bethlehem counts as a familiar",
+ "ConditionalDescs|Sacrificial Void": "Can be used multiple times if absorbed by Void",
+ "ConditionalDescs|Salvaging Bonus": [
+  "and destroyed machines",
+  "destroyed machines, and salvaged items"
+ ],
+ "ConditionalDescs|Salvaging Lucky Toe": "66% chance for an extra pickup from salvaged items",
+ "ConditionalDescs|Sparks Arc Back": "Sparks can arc back to the same enemy",
+ "ConditionalDescs|Sparks Arc Count": "Sparks can arc to 2 more enemies",
+ "ConditionalDescs|Sparks Arc Length": "Sparks have longer arc distance",
+ "ConditionalDescs|Sparks Damage": "Sparks deal 50% more damage",
+ "ConditionalDescs|Spirit Sword C Section": "{1} has priority#Fetuses hold swords and do spin attacks",
+ "ConditionalDescs|Spirit Sword Ipecac": "The sword gets +6 damage and poisons but doesn't explode#Sword beams do explode",
+ "ConditionalDescs|Spirit Sword Mom's Knife": "{1} has priority#The spin attack throws the sword forward",
+ "ConditionalDescs|Spirit Sword Technology": "The sword becomes a lightsaber that can reflect enemy shots",
+ "ConditionalDescs|Stem Cell Blood Charges": [
+  "Entering a new floor adds 1 blood charge"
+ ],
+ "ConditionalDescs|Suicide 1": "{1} can't prevent the death",
+ "ConditionalDescs|Suicide 2": "Does not prevent death by {1}",
+ "ConditionalDescs|Super Bandage Black": [
+  "{{SoulHeart}} +2 Soul Heart#{{BlackHeart}} +1 Black Heart"
+ ],
+ "ConditionalDescs|Super Bandage Soul": [
+  "{{SoulHeart}} +3 Soul Hearts"
+ ],
+ "ConditionalDescs|Tainted Revive": "{1} simply revives",
+ "ConditionalDescs|Technology 2 One Eye": "With {1}, the laser replaces your tears entirely",
+ "ConditionalDescs|Technology Ipecac": "The laser gets +2 damage and explodes on targets",
+ "ConditionalDescs|Vampire Blood Charges": [
+  "↑ {{Damage}} +0.3 Damage#Killing 13 enemies adds 1 blood charge"
+ ],
+ "ConditionalDescs|Void Single Use": "Single use items are only activated once",
+ "ConditionalDescs|White Poop": "Spawns White Poop instead",
+ "ConditionalDescs|White Poop Chance": "Chance to spawn White Poop",
+ "ConditionalDescs|White Poop Jar": "Spawns White Poop on 1 charge use",
+ "bookOfBelialBuffs|326": "Instead of spawning light, you have a fiery aura while invincible#Temporary {{Damage}} damage up and invokes the effect of {{Collectible35}} Necronomicon on a perfect block",
+ "carBattery|102": [
+  1,
+  2,
+  "pill",
+  "{{CR}}pills"
+ ],
+ "carBattery|105": "Rerolls twice, draining item pools faster",
+ "carBattery|107": "Spawns two bodies",
+ "carBattery|123": [
+  " a ",
+  " 2 ",
+  "familiar",
+  "{{CR}}familiars"
+ ],
+ "carBattery|124": [
+  " a ",
+  " 2 ",
+  "effect",
+  "{{CR}}effects"
+ ],
+ "carBattery|136": [
+  " a ",
+  " 2 ",
+  "Isaac",
+  "{{CR}}Isaacs"
+ ],
+ "carBattery|146": [
+  1,
+  2,
+  " Heart",
+  " {{CR}}Hearts"
+ ],
+ "carBattery|158": [
+  " a ",
+  " 2 ",
+  " Heart",
+  " {{CR}}Hearts",
+  "rune",
+  "{{CR}}runes",
+  "card",
+  "{{CR}}cards"
+ ],
+ "carBattery|263": "Triggers it twice",
+ "carBattery|283": [
+  1,
+  2,
+  "pickup",
+  "{{CR}}pickups"
+ ],
+ "carBattery|284": "Rerolls twice, helping with transformation progress but draining item pools faster",
+ "carBattery|285": "Devolves enemies twice",
+ "carBattery|286": "Triggers it twice",
+ "carBattery|287": [
+  "one",
+  "two"
+ ],
+ "carBattery|294": "Increased knockback",
+ "carBattery|296": [
+  1,
+  2,
+  " Heart",
+  " {{CR}}Hearts",
+  1,
+  2,
+  "container",
+  "{{CR}}containers"
+ ],
+ "carBattery|323": "The tears deal double damage",
+ "carBattery|348": "Triggers it twice",
+ "carBattery|349": "Triggers the chance twice",
+ "carBattery|357": [
+  "Duplicates",
+  "Triplicates"
+ ],
+ "carBattery|37": [
+  " a ",
+  " 2 ",
+  "bomb",
+  "{{CR}}bombs"
+ ],
+ "carBattery|386": "Increased chance for rare obstacles",
+ "carBattery|427": [
+  " a ",
+  " 2 ",
+  "barrel",
+  "{{CR}}barrels",
+  "barrel",
+  "{{CR}}barrels"
+ ],
+ "carBattery|439": [
+  " a ",
+  " 2 ",
+  "trinket",
+  "{{CR}}trinkets"
+ ],
+ "carBattery|45": [
+  1,
+  2,
+  "heart",
+  "{{CR}}hearts"
+ ],
+ "carBattery|476": [
+  " a ",
+  " 2 ",
+  "pickup",
+  "{{CR}}pickups"
+ ],
+ "carBattery|477": "Activates every absorbed active item twice",
+ "carBattery|480": [
+  "Doubles",
+  "Quadruples"
+ ],
+ "carBattery|481": "Two stat ups and stat downs",
+ "carBattery|482": "Changes your character twice and removes two items",
+ "carBattery|485": "25% chance to quadruple, 75% chance to remove",
+ "carBattery|486": [
+  "effects",
+  "{{CR}}effects {{BlinkYellowGreen}}twice"
+ ],
+ "carBattery|488": "Activates twice, but only the second effect stays",
+ "carBattery|489": "Uses the selected dice twice",
+ "carBattery|504": [
+  " a ",
+  " 2 ",
+  "turret",
+  "{{CR}}turrets"
+ ],
+ "carBattery|507": "Triggers twice",
+ "carBattery|510": [
+  " a ",
+  " 2 ",
+  "version",
+  "{{CR}}versions"
+ ],
+ "carBattery|516": [
+  " a ",
+  " 2 ",
+  "Sprinkler",
+  "{{CR}}Sprinklers"
+ ],
+ "carBattery|521": [
+  "one",
+  "two",
+  "item",
+  "{{CR}}items"
+ ],
+ "carBattery|523": "Swaps box contents with room pickups",
+ "carBattery|550": "Stops stomps for two rooms (or Boss Rush waves)",
+ "carBattery|557": [
+  "one",
+  "two"
+ ],
+ "carBattery|582": "Triggers twice",
+ "carBattery|584": "Spawns two wisps",
+ "carBattery|605": [
+  " a ",
+  " 2 ",
+  "familiar",
+  "{{CR}}familiars"
+ ],
+ "carBattery|611": "Triggers an additional 1-charge scream",
+ "carBattery|635": "Instantly swaps twice#Great for teleporting into enemies, but can't collect out-of-reach items",
+ "carBattery|639": [
+  1,
+  2,
+  " Heart",
+  " {{CR}}Hearts"
+ ],
+ "carBattery|642": "Triggers twice",
+ "carBattery|650": [
+  " a ",
+  " 2 ",
+  "Plum",
+  "{{CR}}Plums"
+ ],
+ "carBattery|685": "Spawns double the wisps, but the use count only goes up by 1",
+ "carBattery|687": [
+  " a ",
+  " 2 ",
+  "monster",
+  "{{CR}}monsters"
+ ],
+ "carBattery|704": "Lasts 10 seconds, but killing an enemy caps time remaining at 5 seconds max",
+ "carBattery|712": [
+  " an ",
+  " 2 ",
+  "orbital",
+  "{{CR}}orbitals"
+ ],
+ "carBattery|713": [
+  "half a heart",
+  "a heart",
+  "a clot",
+  "2 {{CR}}clots"
+ ],
+ "carBattery|719": [
+  " a ",
+  " 2 ",
+  "item/pickup",
+  "{{CR}}items/pickups"
+ ],
+ "carBattery|720": "Spawns a poop alongside the pickup",
+ "carBattery|722": "{{Chained}} Chains 2 enemies down#If there's only one enemy, chains it for 10 seconds#Using Anima Sola again unchains the closest enemy",
+ "carBattery|723": [
+  "one",
+  "two"
+ ],
+ "carBattery|83": [
+  " Half",
+  "1"
+ ],
+ "carBattery|85": [
+  1,
+  2,
+  "card",
+  "{{CR}}cards"
+ ],
+ "carBattery|97": [
+  " a ",
+  " 2 ",
+  "pickup",
+  "{{CR}}pickups"
+ ],
+ "carBattery|No Effect": "No effect",
+ "tarotClothBuffsAB|11": [
+  " a Slot Machine",
+  " 2 {{CR}}Slot Machines",
+  " it ",
+  " {{CR}}each "
+ ],
+ "tarotClothBuffsAB|15": [
+  " a ",
+  " 2 ",
+  " Machine",
+  " {{CR}}Machines",
+  "Devil Beggar",
+  "{{CR}}Devil Beggars"
+ ],
+ "tarotClothBuffsAB|21": [
+  " a Beggar",
+  " 2 {{CR}}Beggars",
+  " it ",
+  " {{CR}}each ",
+  " it ",
+  " {{CR}}each "
+ ],
+ "tarotClothBuffsAB|23": [
+  "Doubles",
+  "Quadruples"
+ ],
+ "tarotClothBuffsAB|24": [
+  "Doubles",
+  "Quadruples"
+ ],
+ "tarotClothBuffsAB|25": [
+  "Doubles",
+  "Quadruples"
+ ],
+ "tarotClothBuffsAB|26": [
+  "Doubles",
+  "Quadruples"
+ ],
+ "tarotClothBuffsAB|33": [
+  "Doubles",
+  "Quadruples"
+ ],
+ "tarotClothBuffsAB|37": "Rerolls twice",
+ "tarotClothBuffsAB|40": "Triggers 2 rune effects and tries to duplicate itself twice",
+ "tarotClothBuffsAB|48": "Uses it twice",
+ "tarotClothBuffsAB|9": [
+  "Spawns {{ColorShinyPurple}}2{{CR}} random {{UnknownHeart}} hearts, {{Coin}} coins, {{Bomb}} bombs and {{Key}} keys"
+ ]
+}

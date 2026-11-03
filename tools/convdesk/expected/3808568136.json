@@ -1,0 +1,45 @@
+{
+ "label": "3808568136",
+ "title": "!!!Low HP Music",
+ "source": "Z:/Games/Steam/steamapps/workshop/content/250900\\3808568136",
+ "input": "%TEMP%\\convdesk\\inputs\\3808568136.zip",
+ "input_digest": "f5a0ae0d78055136d78800f6b73fb5f1ea0262ec1548b3f90367dab96c002dd0",
+ "tools": {
+  "modport.py": "3e3703a30ca997fa34fe7a3cf17350a05c282f7f5225a219ae547fa8f6dec9a5",
+  "modport.js": "8e419000f1ab111c913a76a98189145ba3e926c916412a362593b4c6a0a7d2c7",
+  "gameref.bin": "f025abd275294ede0822aa4dc38b8a36a833104eead1f45fb9d8e97510f5d3c4",
+  "modport_node.js": "0dde426a98a7819d5afefb8911c6181e74e00198415436d8c942989775354838"
+ },
+ "zip": true,
+ "id": "low-hp",
+ "report": [
+  "modport report",
+  "",
+  "     2  dropped",
+  "",
+  "dropped  main.lua: the port runs no scripts; whatever the script did is not carried",
+  "dropped  content/music.xml: the port takes only content/entities2.xml; new music is played by a script, which does not run",
+  ""
+ ],
+ "files": {
+  "mod.json": {
+   "size": 456,
+   "sha256": "c67c69d65d0d7972770f9a70fc64bff7bc622657754fe3a1f16361da80d525d2",
+   "json": {
+    "id": "low-hp",
+    "name": "!!!Low HP Music",
+    "version": "1.2",
+    "author": "Unknown",
+    "description": "When your total health (red, soul, black, bone and eternal hearts together) drops to one full heart or less while enemies are still in the room, the iconic Low HP theme from Pokemon Black & White plays and overrides the music until you heal up or clear the room. On The Lost and Tainted Lost it plays whenever their Holy Mantle shield is down."
+   }
+  },
+  "resources/music/LowHPsong.ogg": {
+   "size": 1997366,
+   "sha256": "08a2a31a38e3299b0988df40c98cd92b92daf1af3816723f44328702daa2ec2f"
+  }
+ },
+ "js": {
+  "agrees": true,
+  "differences": []
+ }
+}

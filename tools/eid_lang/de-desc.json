@@ -1,0 +1,842 @@
+{
+ "1|234": {
+  "text": "Das Töten eines Gegners erzeugt eine blaue Spinne"
+ },
+ "1|236": {
+  "text": "Die Berührung eines Gegners verwandelt ihn in einen Haufen"
+ },
+ "1|240": {
+  "text": "↑ Erhöht 4 zufällige Werte#↓ Senkt 2 zufällige Werte"
+ },
+ "1|241": {
+  "text": "Verdoppelt alle Belohnungen für geräumte Räume#33% Chance auf gar keine Belohnung"
+ },
+ "1|242": {
+  "text": "50% Chance, gegnerische Schüsse zu blocken"
+ },
+ "1|243": {
+  "text": "Blockt gegnerische Schüsse aus der Richtung, in die Isaac schießt"
+ },
+ "1|244": {
+  "text": "Schießt gelegentlich zusätzlich zu Isaacs Tränen Laser"
+ },
+ "1|247": {
+  "text": "Begleiter verursachen doppelten Schaden"
+ },
+ "1|249": {
+  "text": "Nach einem besiegten Boss kann Isaac zwischen 2 Gegenständen wählen"
+ },
+ "1|251": {
+  "text": "{{Card}} Erzeugt beim Aufheben 1 Karte#Isaac kann 2 Karten tragen#Verwandelt alle Pillen in Karten"
+ },
+ "1|252": {
+  "text": "{{Pill}} Erzeugt beim Aufheben 1 Pille#Isaac kann 2 Pillen tragen#Verwandelt alle Karten in Pillen"
+ },
+ "1|258": {
+  "text": "Würfelt Isaacs Gegenstände und Werte beim Aufheben und auf jedem neuen Stockwerk neu"
+ },
+ "1|265": {
+  "text": "10% Chance, allen Gegnern im Raum Schaden zuzufügen, wenn es von einer gegnerischen Träne getroffen wird"
+ },
+ "1|266": {
+  "text": "{{Slow}} Hinterlässt verlangsamenden Schleim#Erzeugt nach einem geräumten Raum 1-2 freundliche Spinnen"
+ },
+ "1|267": {
+  "text": "Schießt Laser#Verursacht 3.5 Schaden pro Schuss#Bewegt sich in die Richtung, in die Isaac schießt"
+ },
+ "1|268": {
+  "text": "Erzeugt blaue Fliegen, wenn Isaac schießt"
+ },
+ "1|269": {
+  "text": "Hinterlässt Schleim, der 6 Schaden pro Sekunde verursacht"
+ },
+ "1|271": {
+  "text": "Erzeugt alle 5-6 Räume einen zufälligen Gegenstand"
+ },
+ "1|277": {
+  "text": "{{Fear}} Verfolgt Gegner und jagt ihnen Angst ein#Verursacht 4 Berührungsschaden pro Sekunde"
+ },
+ "1|279": {
+  "text": "Großes Orbital#Verursacht 30 Berührungsschaden pro Sekunde"
+ },
+ "1|282": {
+  "text": "Isaac kann über Lücken und Hindernisse springen"
+ },
+ "1|284": {
+  "text": "Würfelt alle passiven Gegenstände von Isaac neu"
+ },
+ "1|290": {
+  "text": "{{Heart}} Rote Herzen, die bei voller Gesundheit aufgehoben werden, sammelt das Glas - bis zu 4 Stück#Bei Nutzung fallen alle gesammelten Herzen auf den Boden"
+ },
+ "1|293": {
+  "text": "{{Collectible118}} Schießt einen Blutstrahl in 4 Richtungen#Jeder verursacht 200 Schaden über 1.33 Sekunden"
+ },
+ "1|302": {
+  "text": "Größer#Isaac kann Felsen zerstören, indem er in sie läuft"
+ },
+ "1|305": {
+  "text": "{{Poison}} Giftige Tränen"
+ },
+ "1|313": {
+  "text": "Verhindert einmal pro Raum den ersten Treffer"
+ },
+ "1|317": {
+  "text": "Isaacs Tränen hinterlassen Schleim#Der Schleim verursacht 30 Schaden pro Sekunde"
+ },
+ "1|318": {
+  "text": "Nahkampf-Begleiter#Verursacht 6 Berührungsschaden pro Sekunde"
+ },
+ "1|321": {
+  "text": "Nachgezogene Kugel, die Felsen zerstören kann#Verursacht 10.7 Berührungsschaden pro Sekunde"
+ },
+ "1|322": {
+  "text": "Ahmt die Tränen deiner Baby-Begleiter nach#Hast du keine, schießt es normale Tränen mit 3.5 Schaden"
+ },
+ "1|332": {
+  "text": "{{Player11}} Bei Tod als Lazarus (Auferstanden) wiederbeleben"
+ },
+ "1|333": {
+  "text": "Vollständiger Karteneffekt"
+ },
+ "1|337": {
+  "text": "{{Slow}} Verlangsamt jeden 4. Raum#13% Chance, den Raum stattdessen zu beschleunigen"
+ },
+ "1|347": {
+  "text": "Dupliziert alle Gegenstandssockel und Aufsammelobjekte im Raum"
+ },
+ "1|348": {
+  "text": "{{Pill}} Löst den Effekt der Pille aus, die Isaac hält, ohne sie zu verbrauchen"
+ },
+ "1|349": {
+  "text": "{{Coin}} 59% Chance, eine zufällige Münze zu erzeugen"
+ },
+ "1|350": {
+  "text": "{{Poison}} Das Betreten eines Raums vergiftet alle Gegner#Getötete Gegner hinterlassen eine Schleimpfütze#Der Schleim verursacht 30 Schaden pro Sekunde"
+ },
+ "1|356": {
+  "text": "{{Battery}} Die Nutzung eines Aktivgegenstands löst seinen Effekt zweimal aus"
+ },
+ "1|361": {
+  "text": "Schießt Tränen mit Isaacs Schaden und Effekten#Schießt halb so schnell wie andere Begleiter"
+ },
+ "1|362": {
+  "text": "35% Chance pro Raum, einen Gegenstand zu erzeugen"
+ },
+ "1|364": {
+  "text": "Fliegen-Orbital mittlerer Reichweite#Verursacht 45 Berührungsschaden pro Sekunde"
+ },
+ "1|373": {
+  "text": "↑ {{Damage}} Treffer in Folge geben +25% Schaden (höchstens +100%)#Ein Fehlschuss kann den Multiplikator zurücksetzen"
+ },
+ "1|377": {
+  "text": "Spinnen greifen Isaac nicht mehr an und fügen ihm keinen Berührungsschaden zu"
+ },
+ "1|378": {
+  "text": "Hält man die Schusstaste 2.35 Sekunden, entsteht eine gezündete Po-Bombe"
+ },
+ "1|383": {
+  "text": "Teilt alle Tränen von Isaac, die gerade auf dem Bildschirm sind, in einen Kreis aus 6 Tränen"
+ },
+ "1|386": {
+  "text": "Würfelt jedes Hindernis in ein anderes zufälliges um (Haufen, Töpfe, TNT, roter Haufen, Steinblöcke usw.)#Kleine Chance auf Knöpfe, Notschalter, Kriechkeller oder Falltüren"
+ },
+ "1|387": {
+  "text": "{{Slow}} Begleiter mit einer großen Lichtaura, die Gegner und Geschosse darin verlangsamt"
+ },
+ "1|390": {
+  "text": "Schießt Tränen des Heiligen Herzens#Verursacht 10 Schaden pro Träne"
+ },
+ "1|392": {
+  "text": "Gewährt auf jedem Stockwerk den Effekt eines zufälligen Tierkreis-Gegenstands"
+ },
+ "1|396": {
+  "text": "Erschafft bis zu zwei Portale, zwischen denen man reisen kann#Sie können in verschiedenen Räumen stehen"
+ },
+ "1|400": {
+  "text": "Isaac hält einen Speer vor sich#{{Fear}} Der Speer verursacht doppelten Schaden und kann Gegnern bei Berührung Angst einjagen"
+ },
+ "1|412": {
+  "text": "15 erlittene Treffer erzeugen einen dauerhaften Dämonen-Begleiter#Ab dem zweiten sind es 30 statt 15#Höchstens 4 Begleiter"
+ },
+ "1|418": {
+  "text": "Jede Träne von Isaac bekommt einen anderen Effekt"
+ },
+ "1|420": {
+  "text": "Läuft man im Kreis, entsteht ein Pentagramm auf dem Boden, das 130 Schaden über 4 Sekunden verursacht"
+ },
+ "1|423": {
+  "text": "Umgibt Isaac mit einem großen Heiligenschein, der pro Sekunde seinen Schaden bei Berührung verursacht#Chance, gegnerische Geschosse zu reflektieren"
+ },
+ "1|424": {
+  "text": "Aufsammelobjekte können durch einen {{GrabBag}}Sack ersetzt werden:#{{Coin}}: 10%, {{Bomb}}{{Key}}{{Pill}}{{Rune}}{{Battery}}: 20%#{{GrabBag}} Erzeugt einen Sack"
+ },
+ "1|427": {
+  "text": "Erzeugt ein schiebbares TNT-Fass#Ein zweiter Einsatz im selben Raum zündet das Fass aus der Ferne"
+ },
+ "1|429": {
+  "text": "{{Coin}} Ein Treffer mit einer Träne hat 5% Chance, einen Penny zu erzeugen"
+ },
+ "1|434": {
+  "text": "Jeder getötete Gegner legt eine blaue Fliege ins Glas, bis zu 20 Stück#Bei Nutzung werden alle Fliegen freigelassen"
+ },
+ "1|435": {
+  "text": "Schießt 4 Tränen kreuzförmig#Verursacht 3.5 Schaden pro Träne"
+ },
+ "1|441": {
+  "text": "{{Timer}} Feuert 15 Sekunden lang einen riesigen Mega-Satan-Blutstrahl#Der Strahl bleibt über Räume und Stockwerke hinweg bestehen"
+ },
+ "1|446": {
+  "text": "{{Poison}} Beim Schießen ist Isaac von einer grünen Aura umgeben, die Gegner vergiftet"
+ },
+ "1|447": {
+  "text": "Schießt man 7.5 Sekunden ohne Pause, entsteht eine Haufenwolke#Die Wolke verursacht 5 Mal pro Sekunde Isaacs Schaden#Sie hält 15 Sekunden und lässt sich durch Beschuss bewegen"
+ },
+ "1|454": {
+  "text": "Erzeugt beim Aufheben eine {{Rune}} Rune, {{Card}} Karte oder {{Pill}} Pille#Isaac kann 2 Runen/Karten/Pillen tragen"
+ },
+ "1|458": {
+  "text": "{{Trinket}} Isaac kann 2 Schmuckstücke tragen#{{Trinket}} Erzeugt ein zufälliges Schmuckstück"
+ },
+ "1|460": {
+  "text": "{{Confusion}} 5% Chance auf verwirrende Tränen#Macht den Bildschirm etwas dunkler"
+ },
+ "1|467": {
+  "text": "{{Damage}} Verursacht ständig 10% von Isaacs Schaden in die Richtung, in die er zeigt"
+ },
+ "1|469": {
+  "text": "Hinterlässt eine Schleimspur#Der Schleim verursacht 6 Schaden pro Sekunde#Gegner, die die Wolke berühren, können von einem heiligen Lichtstrahl getroffen werden"
+ },
+ "1|470": {
+  "text": "Springt durch den Raum#Verursacht 30 Berührungsschaden pro Sekunde#Bleibt stehen, wenn Isaac schießt#Blockt im Stehen Geschosse"
+ },
+ "1|471": {
+  "text": "{{Chargeable}} Lädt einen Schrotflinten-Angriff wie {{Collectible229}} Monstros Lunge auf#Jede Träne verursacht 3.5 Schaden"
+ },
+ "1|473": {
+  "text": "Stürmt sehr langsam nach vorne#Blockt Schüsse#Verursacht 40.5 Berührungsschaden pro Sekunde"
+ },
+ "1|475": {
+  "text": "Verursacht 9.999.999 Schaden an allen Gegnern#{{Warning}} Tötet Isaac 3 Sekunden später"
+ },
+ "1|478": {
+  "text": "Hält alle Gegner im Raum an, bis Isaac schießt#Ein angehaltener Gegner fügt bei Berührung weiterhin Schaden zu#Nach 30 Sekunden bewegen sich die Gegner wieder"
+ },
+ "1|479": {
+  "text": "{{Trinket}} Verbraucht die gehaltenen Schmuckstücke und gewährt ihre Effekte dauerhaft#Erhöht die Chance, dass Schmuckstücke erscheinen"
+ },
+ "1|480": {
+  "text": "Verwandelt Aufsammelobjekte in blaue Fliegen oder Spinnen#Verdoppelt alle blauen Fliegen und Spinnen#Erzeugt 1 blaue Fliege oder Spinne, wenn Isaac keine hat"
+ },
+ "1|484": {
+  "text": "Bei Nutzung werden Gegner weggestoßen und eine Steinwelle um Isaac erzeugt#Die Steinwelle kann Räume öffnen und Felsen zerstören"
+ },
+ "1|485": {
+  "text": "50% Chance, alle Gegenstände, Aufsammelobjekte und Truhen im Raum zu verdoppeln#50% Chance, alles im Raum zu entfernen und 1 Münze zu erzeugen"
+ },
+ "1|486": {
+  "text": "Verletzt Isaac, ohne Gesundheit zu nehmen#Löst alle Effekte aus, die bei Schaden greifen"
+ },
+ "1|502": {
+  "text": "{{Slow}} Beim Schießen gelegentlich eine weiße Schleimträne mit doppeltem Schaden, die Gegner verlangsamt#Bei erlittenem Schaden wird ebenfalls eine weiße Schleimträne geschossen"
+ },
+ "1|511": {
+  "text": "Umkreist einen zufälligen Gegner, bis dieser stirbt#Verursacht anderen Gegnern 30 Berührungsschaden pro Sekunde"
+ },
+ "1|512": {
+  "text": "Werfbares schwarzes Loch, das alles ansaugt#Verursacht 6 Schaden pro Sekunde#Zerstört Felsen in der Nähe#Hält 6 Sekunden"
+ },
+ "1|516": {
+  "text": "Erzeugt einen Sprinkler, der dieselben Tränen wie Isaac im Kreis um sich verschießt"
+ },
+ "1|518": {
+  "text": "Begleiter, der wie ein zufälliges Koop-Baby aussieht#Hat zufällige Träneneffekte#Die Effekte wechseln auf jedem Stockwerk"
+ },
+ "1|519": {
+  "text": "Verwandelt sich alle 10 Sekunden in einen zufälligen Begleiter"
+ },
+ "1|520": {
+  "text": "15 getötete Gegner geben dem Aktivgegenstand 1 Ladung"
+ },
+ "1|522": {
+  "text": "Hält alle gegnerischen Geschosse, die Isaac nahe kommen, 3 Sekunden lang an und schleudert sie danach von ihm weg#Stößt währenddessen nahe Gegner weg"
+ },
+ "1|526": {
+  "text": "Erzeugt einen kleinen Reiter-Begleiter, der Heuschrecken erzeugt#Der Reiter und seine Heuschrecke wechseln alle 10 Sekunden"
+ },
+ "1|528": {
+  "text": "Orbitales Prisma#Freundliche Tränen, die es treffen, teilen sich in 4"
+ },
+ "1|529": {
+  "text": "Isaacs Tränen prallen voneinander ab und verschwinden, sobald sie liegen bleiben"
+ },
+ "1|530": {
+  "text": "Tötet man Gegner in der Reihenfolge, die die Markierung {{DeathMark}} über ihnen vorgibt, gibt es einen zufälligen Gegenstand oder eine Werteverbesserung"
+ },
+ "1|533": {
+  "text": "Ersetzt Isaacs Tränen durch durchdringende Lichtstrahlen#Die Strahlen verursachen 33% Schaden, können Gegner aber mehrfach treffen"
+ },
+ "1|534": {
+  "text": "Isaac kann 2 Aktivgegenstände tragen#Sie werden mit der Ablegen-Taste ({{ButtonRT}}) getauscht"
+ },
+ "1|537": {
+  "text": "{{Pill}} Erzeugt beim Aufheben eine zufällige Pille#Verschießt eine Schleimlinie#Die Art des Schleims ändert sich mit jeder benutzten Pille"
+ },
+ "1|538": {
+  "text": "{{Trinket}} Erzeugt 3 zufällige Schmuckstücke#{{Collectible479}} Erlittener Schaden hat 10% Chance, das gehaltene Schmuckstück zu verbrauchen und seine Effekte dauerhaft zu geben"
+ },
+ "1|540": {
+  "text": "Isaacs Tränen prallen vom Boden ab und verursachen bei jedem Aufprall Flächenschaden"
+ },
+ "1|542": {
+  "text": "Orbital#Reflektiert gegnerische Geschosse"
+ },
+ "1|544": {
+  "text": "Schwebt vor Isaac#Verursacht pro Sekunde das 6-fache von Isaacs Schaden"
+ },
+ "1|548": {
+  "text": "Bumerang-artiger Begleiter#Verursacht 7 Berührungsschaden#Kann Aufsammelobjekte greifen und zurückbringen"
+ },
+ "1|551": {
+  "text": "Vervollständigt Mamas Schaufel#{{Warning}} Die Schaufel im Dunklen Raum am Erdhügel benutzen"
+ },
+ "2|1": {
+  "text": "{{Coin}} Erlittener Schaden erzeugt 1 Münze"
+ },
+ "2|100": {
+  "text": "Ein voll geladener Aktivgegenstand in der Hand gibt:#↑ {{Speed}} +0.25 Geschwindigkeit#↑ {{Tears}} +0.2 Tränen#↑ {{Damage}} +0.5 Schaden#↑ {{Range}} +0.75 Reichweite#↑ {{Shotspeed}} +0.1 Schussgeschwindigkeit#↑ {{Luck}} +1 Glück"
+ },
+ "2|102": {
+  "text": "{{SecretRoom}} +1 zusätzlicher Geheimraum pro Stockwerk, solange gehalten"
+ },
+ "2|103": {
+  "text": "Verwandelt einzelne Aufsammelobjekte in doppelte, wenn Isaacs {{Coin}} Münzen, {{Bomb}} Bomben und {{Key}} Schlüssel gleich viele sind"
+ },
+ "2|104": {
+  "text": "2% Chance bei einem Treffer, zerstört zu werden und einen Gegenstand auf einem Sockel zu erzeugen"
+ },
+ "2|105": {
+  "text": "{{Collectible22}} 2% Chance bei einem Treffer, zerstört zu werden und Mittagessen zu erzeugen"
+ },
+ "2|106": {
+  "text": "Vergrößert den Radius des freundlichen Schleims"
+ },
+ "2|108": {
+  "text": "1-9 erlittene Explosionen zerstören das Schmuckstück und lassen ein zufälliges {{UnknownHeart}} Herz, eine {{Coin}} Münze, einen {{Key}} Schlüssel und ein {{Trinket}} Schmuckstück fallen#Schaden zu nehmen ist nicht nötig"
+ },
+ "2|109": {
+  "text": "Begleiter stehen fest relativ zu Isaacs Position"
+ },
+ "2|112": {
+  "text": "{{RestockMachine}} Auffüllkisten erscheinen immer in {{TreasureRoom}} Schatzräumen"
+ },
+ "2|113": {
+  "text": "Das Betreten eines feindlichen Raums erzeugt eine explodierende Angriffsfliege#Die Fliege verursacht das 2-fache von Isaacs Schaden + Explosionsschaden"
+ },
+ "2|114": {
+  "text": "{{Poison}} Das Betreten eines feindlichen Raums erzeugt eine giftige Angriffsfliege#Die Fliege verursacht das 2-fache von Isaacs Schaden"
+ },
+ "2|115": {
+  "text": "{{Slow}} Das Betreten eines feindlichen Raums erzeugt eine verlangsamende Angriffsfliege#Die Fliege verursacht das 2-fache von Isaacs Schaden"
+ },
+ "2|116": {
+  "text": "Das Betreten eines feindlichen Raums erzeugt eine Angriffsfliege#Die Fliege verursacht das 4-fache von Isaacs Schaden"
+ },
+ "2|117": {
+  "text": "Das Betreten eines feindlichen Raums erzeugt 1-4 Angriffsfliegen#Jede Fliege verursacht das 2-fache von Isaacs Schaden"
+ },
+ "2|118": {
+  "text": "{{Timer}} Ein getöteter Gegner hat 5% Chance, für den Raum Flug zu geben"
+ },
+ "2|12": {
+  "text": "50% breitere Tränen#Erhöht den Rückstoß"
+ },
+ "2|120": {
+  "text": "{{Battery}} Das Betreten eines ungeräumten Bossraums lädt Aktivgegenstände voll auf"
+ },
+ "2|121": {
+  "text": "{{Collectible313}} Gibt einmal pro Stockwerk einen heiligen Schild, der Schaden verhindert"
+ },
+ "2|122": {
+  "text": "Ein benutzter Aktivgegenstand fällt auf einen Sockel auf den Boden#Erlittener Schaden hat 2% Chance, einen passiven Gegenstand von Isaac fallen zu lassen"
+ },
+ "2|123": {
+  "text": "Engel-Bosse lassen Engel-Gegenstände statt Schlüsselteile fallen"
+ },
+ "2|124": {
+  "text": "Die zuletzt benutzte Tür bleibt offen"
+ },
+ "2|125": {
+  "text": "Verbindet alle Begleiter mit Blitzen#Die Blitze verursachen 6 Schaden"
+ },
+ "2|126": {
+  "text": "Eine aufgehobene Münze erzeugt eine blaue Fliege"
+ },
+ "2|127": {
+  "text": "Alle Begleiter schießen zielsuchend"
+ },
+ "2|13": {
+  "text": "{{Shop}} Isaac darf 1 Gegenstand im Laden umsonst nehmen"
+ },
+ "2|14": {
+  "text": "Immun gegen Schleim und Bodenstacheln"
+ },
+ "2|17": {
+  "text": "{{BlackHeart}} +10% Chance, dass zufällige Seelenherzen als schwarze Herzen erscheinen"
+ },
+ "2|18": {
+  "text": "{{EternalHeart}} +3% Chance auf Ewige Herzen"
+ },
+ "2|19": {
+  "text": "{{GoldenChest}} Goldene Truhen lassen sich umsonst öffnen"
+ },
+ "2|2": {
+  "text": "50% Chance auf Fundstücke aus Haufen"
+ },
+ "2|20": {
+  "text": "{{BlackHeart}} Erzeugt 1 schwarzes Herz, wenn Isaacs Gesundheit auf ein halbes Herz fällt#{{Warning}} Verschwindet nach 3 erzeugten schwarzen Herzen"
+ },
+ "2|21": {
+  "text": "Gibt zufällig den Effekt von:#{{Collectible327}} Das Polaroid#{{Collectible328}} Das Negativ#{{Trinket48}} Eine fehlende Seite#{{Trinket23}} Vermisstenanzeige"
+ },
+ "2|22": {
+  "text": "{{Heart}} Senkt die Chance auf Herzen auf 20%#{{BlackHeart}} Alle Herzen werden zu schwarzen Herzen#{{Key}} Erhöht die Chance auf Schlüssel"
+ },
+ "2|23": {
+  "text": "{{Player10}} Bei Tod als The Lost wiederbeleben"
+ },
+ "2|25": {
+  "text": "Isaac furzt oder erzeugt alle 30 Sekunden einen Haufen"
+ },
+ "2|27": {
+  "text": "↑ {{Shotspeed}} +0.5 Schussgeschwindigkeit"
+ },
+ "2|28": {
+  "text": "{{Player4}} 22% Chance, bei Tod als ??? (Blue Baby) wiederbelebt zu werden"
+ },
+ "2|29": {
+  "text": "Erlittener Schaden erzeugt 1-2 blaue Fliegen"
+ },
+ "2|3": {
+  "text": "{{Battery}} -1 Ladung für Aktivgegenstände nötig"
+ },
+ "2|30": {
+  "text": "{{Poison}} 10% Chance auf giftige Tränen#{{Luck}} 100% Chance bei 18 Glück"
+ },
+ "2|31": {
+  "text": "10% Chance auf durchdringende + spektrale Tränen#{{Luck}} 100% Chance bei 18 Glück"
+ },
+ "2|34": {
+  "text": "{{UnknownHeart}} 10% Chance, dass die Belohnung für einen geräumten Raum ein zufälliges Herz ist#{{Heart}} 33% Chance auf ein Bonus-Herz aus Truhen, getönten Steinen und zerstörten Automaten"
+ },
+ "2|35": {
+  "text": "↑ {{Damage}} +2 Schaden"
+ },
+ "2|36": {
+  "text": "{{Key}} 10% Chance, dass die Belohnung für einen geräumten Raum ein Schlüssel ist#{{Key}} 33% Chance auf einen Bonus-Schlüssel aus Truhen, getönten Steinen und zerstörten Automaten"
+ },
+ "2|37": {
+  "text": "↑ {{Speed}} +0.15 Geschwindigkeit"
+ },
+ "2|38": {
+  "text": "+10% Chance, dass Herzen als {{SoulHeart}} Seelenherzen, {{BlackHeart}} schwarze Herzen oder {{EmptyBoneHeart}} Knochenherzen erscheinen"
+ },
+ "2|4": {
+  "text": "{{Collectible44}} Die Nutzung eines Aktivgegenstands teleportiert Isaac in einen zufälligen Raum"
+ },
+ "2|40": {
+  "text": "{{Timer}} Erlittener Schaden hat 20% Chance auf ↑ {{Damage}} +1.8 Schaden für den Raum#{{Luck}} 100% Chance bei 8 Glück"
+ },
+ "2|41": {
+  "text": "{{Bomb}} 10% Chance, dass die Belohnung für einen geräumten Raum eine Bombe ist#{{Bomb}} 33% Chance auf eine Bonus-Bombe aus Truhen, getönten Steinen und zerstörten Automaten#{{Warning}} Entfernt {{Trinket53}} Zecke"
+ },
+ "2|42": {
+  "text": "↑ {{Luck}} +1 Glück#+8% Chance auf eine Belohnung für geräumte Räume#33% Chance auf einen zusätzlichen Gegenstand aus Truhen, getönten Steinen und zerstörten Automaten"
+ },
+ "2|43": {
+  "text": "Fällt Isaacs Gesundheit auf ein halbes Herz oder weniger, wird er in einen zufälligen Raum teleportiert"
+ },
+ "2|44": {
+  "text": "{{Pill}} 10% Chance, dass die Belohnung für einen geräumten Raum eine Pille ist#{{Pill}} 33% Chance auf eine Bonus-Pille aus Truhen, getönten Steinen und zerstörten Automaten"
+ },
+ "2|45": {
+  "text": "{{Card}} 10% Chance, dass die Belohnung für einen geräumten Raum eine Karte ist#{{Card}} 33% Chance auf eine Bonus-Karte aus Truhen, getönten Steinen und zerstörten Automaten"
+ },
+ "2|46": {
+  "text": "{{HealingRed}} Ein geräumter Raum hat 10% Chance, ein halbes Herz zu heilen#{{Luck}} 100% Chance bei 18 Glück"
+ },
+ "2|5": {
+  "text": "2x Chance auf Champion-Gegner"
+ },
+ "2|52": {
+  "text": "{{Coin}} Eine aufgehobene Münze hat 50% Chance, eine weitere Münze auf den Zähler zu legen"
+ },
+ "2|53": {
+  "text": "{{HealingRed}} Heilt 1 Herz beim Betreten eines {{BossRoom}} Bossraums#-15% Boss-Gesundheit#{{Warning}} Einmal aufgehoben, lässt es sich nicht mehr ablegen#Nur mit {{Trinket41}} Streichholz oder durch Schlucken zu entfernen"
+ },
+ "2|54": {
+  "text": "Begleiter mit durchdringenden Tränen#Verursacht 3.5 Schaden pro Träne"
+ },
+ "2|55": {
+  "text": "{{EternalHeart}} Ein neues Stockwerk gibt +1 Ewiges Herz"
+ },
+ "2|56": {
+  "text": "{{DevilRoom}} Senkt alle Teufelsangebote auf 1 Herzbehälter#Preise von 3 Seelenherzen werden nicht gesenkt"
+ },
+ "2|57": {
+  "text": "Begleiter, der durch den Raum springt#Schießt in dieselbe Richtung wie Isaac#Verursacht 3.5 Schaden pro Träne"
+ },
+ "2|58": {
+  "text": "{{Timer}} Ein getöteter Gegner hat 6.66% Chance auf ↑ {{Damage}} +0.5 Schaden für den Raum#{{Luck}} 100% Chance bei 10 Glück"
+ },
+ "2|59": {
+  "text": "Ein neues Stockwerk hat 25% Chance, die Kartensymbole aufzudecken#{{Luck}} 100% Chance bei 3 Glück"
+ },
+ "2|6": {
+  "text": "{{Coin}} Zieht Münzen zu Isaac"
+ },
+ "2|60": {
+  "text": "{{Collectible117}} Ein getöteter Gegner hat 5% Chance, einen Toten Vogel zu erzeugen#{{Luck}} 100% Chance bei 8 Glück"
+ },
+ "2|61": {
+  "text": "{{RedChest}} Verwandelt alle Truhen in rote Truhen"
+ },
+ "2|62": {
+  "text": "Kriechkeller-Felsen und getönte Steine blinken alle 10 Sekunden"
+ },
+ "2|63": {
+  "text": "{{Bomb}} Verwandelt Troll-Bomben in Bomben zum Aufheben"
+ },
+ "2|64": {
+  "text": "Gewährt alle 3 Sekunden einen zufälligen Wurm-Effekt"
+ },
+ "2|68": {
+  "text": "Isaac zieht Aufsammelobjekte und Gegner an"
+ },
+ "2|7": {
+  "text": "{{AngelChance}} 50% höhere Engelsraum-Chance#{{Collectible33}} Höhere Chance, Die Bibel in {{Shop}} Läden und {{Library}} Bibliotheken zu finden"
+ },
+ "2|70": {
+  "text": "Erzeugt in feindlichen Räumen gelegentlich eine blaue Spinne"
+ },
+ "2|71": {
+  "text": "Isaacs Bomben hinterlassen schädlichen Schleim"
+ },
+ "2|72": {
+  "text": "{{Battery}} 6.66% Chance, dass die Belohnung für einen geräumten Raum eine Batterie ist#{{Battery}} +10% Chance, dass zufällige Aufsammelobjekte Batterien sind#{{Battery}} 5% Chance auf 1 Ladung für den gehaltenen Aktivgegenstand beim Räumen eines Raums"
+ },
+ "2|73": {
+  "text": "{{Bomb}} 10% Chance, dass explodierende Bomben eine Bombe zum Aufheben hinterlassen"
+ },
+ "2|74": {
+  "text": "{{LadderRoom}} 0.5% Chance, beim Zerstören eines Felsens einen Kriechkeller freizulegen"
+ },
+ "2|75": {
+  "text": "Gewährt in jedem Raum den Effekt eines zufälligen Schmuckstücks"
+ },
+ "2|76": {
+  "text": "↑ 50% Chance, dass Truhen zusätzliche Gegenstände enthalten#↓ 50% Chance, dass Truhen nur eine Fliege enthalten"
+ },
+ "2|77": {
+  "text": "Erhöht den Rückstoß"
+ },
+ "2|78": {
+  "text": "Zustandseffekte auf Gegnern halten doppelt so lange"
+ },
+ "2|79": {
+  "text": "Die Nutzung einer {{Rune}} Rune, {{Card}} Karte oder {{Pill}} Pille hat 25% Chance, eine Kopie davon zu erzeugen"
+ },
+ "2|8": {
+  "text": "{{Timer}} 5% Chance bei erlittenem Schaden, für 6.5 Sekunden zu erhalten:#Unverwundbarkeit#Isaac kann nicht schießen, verursacht aber 40 Berührungsschaden pro Sekunde#{{HealingRed}} 2 getötete Gegner heilen ein halbes Herz#{{Fear}} Jagt allen Gegnern im Raum Angst ein"
+ },
+ "2|81": {
+  "text": "Unverwundbarkeit nach erlittenem Schaden hält doppelt so lange"
+ },
+ "2|82": {
+  "text": "{{TreasureRoom}} Künftige Schatzräume haben +15% Chance, Isaac zwischen zwei Gegenständen wählen zu lassen"
+ },
+ "2|83": {
+  "text": "{{Shop}} Isaac kann Läden umsonst öffnen"
+ },
+ "2|84": {
+  "text": "{{Coin}} 5% mehr Münzen und weniger Herzen als Belohnung für geräumte Räume#Gier und Super-Gier erscheinen nicht mehr in {{Shop}} Läden oder {{SecretRoom}} Geheimräumen"
+ },
+ "2|85": {
+  "text": "{{DonationMachine}} Eine benutzte Spendenmaschine hat 33% Chance auf:#{{HealingRed}} 1 Herz Heilung (40%)#{{Coin}} 1 Münze (40%)#{{Luck}} +1 Glück (15%)#{{Beggar}} Einen Bettler (5%)"
+ },
+ "2|86": {
+  "text": "Ein zerstörter Haufen erzeugt 1 blaue Fliege"
+ },
+ "2|87": {
+  "text": "{{HealingRed}} Ein benutzter Schlüssel heilt ein halbes Herz#{{Heart}} Verwandelt halbe Herzen in ganze"
+ },
+ "2|88": {
+  "text": "Verhindert, dass Aktivgegenstände erscheinen"
+ },
+ "2|89": {
+  "text": "Begleiter bleiben näher bei Isaac"
+ },
+ "2|9": {
+  "text": "Isaacs Tränen pulsieren#Verändert die Trefferfläche der Tränen"
+ },
+ "2|90": {
+  "text": "Ein zerstörter Haufen explodiert für 100 Schaden"
+ },
+ "2|91": {
+  "text": "33% Chance, dass schwarze Haufen erscheinen#{{BlackHeart}} Ein zerstörter schwarzer Haufen hat 5% Chance auf ein schwarzes Herz"
+ },
+ "2|93": {
+  "text": "15% Chance pro Raum, dass alle Fliegen-Gegner freundlich werden"
+ },
+ "2|94": {
+  "text": "Verdoppelt alle blauen Fliegen und Heuschrecken"
+ },
+ "2|95": {
+  "text": "{{Poison}} 3% Chance auf giftige Zahn-Tränen#Der Zahn verursacht das 2-fache von Isaacs Schaden"
+ },
+ "2|97": {
+  "text": "12-20 erlittene Treffer erzeugen einen Begleiter, der Geschosse blockt#Verschwindet nach 2 erzeugten Begleitern"
+ },
+ "2|99": {
+  "text": "10% Chance auf abprallende Tränen"
+ },
+ "3|1": {
+  "text": "Teleportiert Isaac in den ersten Raum des Stockwerks"
+ },
+ "3|10": {
+  "text": "{{Shop}} Teleportiert Isaac in den Laden"
+ },
+ "3|11": {
+  "text": "{{Slotmachine}} Erzeugt einen Spielautomaten#{{FortuneTeller}} 25% Chance, dass es ein Wahrsagerautomat ist"
+ },
+ "3|13": {
+  "text": "{{Timer}} Flug für den Raum"
+ },
+ "3|14": {
+  "text": "Verursacht 40 Schaden an allen Gegnern im Raum"
+ },
+ "3|15": {
+  "text": "{{DonationMachine}} Erzeugt eine Blutspendemaschine"
+ },
+ "3|17": {
+  "text": "Erzeugt 6 Troll-Bomben"
+ },
+ "3|19": {
+  "text": "{{SecretRoom}} Teleportiert Isaac in den Geheimraum"
+ },
+ "3|21": {
+  "text": "{{Beggar}} Erzeugt einen Bettler#{{DemonBeggar}} 33% Chance, dass es ein Teufels-Bettler ist#5% Chance auf einen Schlüsselmeister, Bombenpenner, Batteriepenner oder verdorbenen Bettler"
+ },
+ "3|23": {
+  "text": "{{Bomb}} Verdoppelt Isaacs Anzahl an Bomben"
+ },
+ "3|24": {
+  "text": "{{Coin}} Verdoppelt Isaacs Anzahl an Münzen"
+ },
+ "3|25": {
+  "text": "{{Key}} Verdoppelt Isaacs Anzahl an Schlüsseln"
+ },
+ "3|26": {
+  "text": "{{HealingRed}} Verdoppelt Isaacs Anzahl an roten Herzen {{ColorSilver}}(keine Behälter){{CR}}"
+ },
+ "3|3": {
+  "text": "Mamas Fuß stampft auf einen Gegner#Gibt es keine Gegner, stampft Mamas Fuß auf Isaac"
+ },
+ "3|31": {
+  "text": "{{AngelDevilChance}} Teleportiert Isaac in den Teufels- oder Engelsraum"
+ },
+ "3|32": {
+  "text": "Zerstört alle Felsen im Raum"
+ },
+ "3|33": {
+  "text": "Dupliziert alle Aufsammelobjekte im Raum"
+ },
+ "3|35": {
+  "text": "{{SoulHeart}} +1 Seelenherz#{{CurseCursed}} Entfernt alle Flüche des Stockwerks"
+ },
+ "3|36": {
+  "text": "{{Timer}} Vollständiger Karteneffekt für das Stockwerk"
+ },
+ "3|37": {
+  "text": "Würfelt alle Gegenstände auf Sockeln im Raum neu"
+ },
+ "3|38": {
+  "text": "Beschwört 3 blaue Spinnen und 3 blaue Fliegen"
+ },
+ "3|4": {
+  "text": "{{Timer}} Für den Raum erhalten:#↑ {{Speed}} +0.3 Geschwindigkeit#↑ {{Damage}} +1.5 Schaden"
+ },
+ "3|40": {
+  "text": "Löst einen zufälligen Runeneffekt aus#25% Chance, sich bei der Nutzung selbst zu duplizieren"
+ },
+ "3|41": {
+  "text": "Verursacht 40 Schaden an allen Gegnern#Verwandelt alle Gegenstände auf Sockeln im Raum in zufällige Werteverbesserungen#Verwandelt alle Aufsammelobjekte im Raum in blaue Fliegen"
+ },
+ "3|43": {
+  "text": "Macht alle Gegenstände und Aufsammelobjekte in einem {{Shop}} Laden oder {{DevilRoom}} Teufelsraum kostenlos"
+ },
+ "3|44": {
+  "text": "Zeigt bei Nutzung \"hilfreiche\" Tipps"
+ },
+ "3|45": {
+  "text": "Füllt den ganzen Raum mit Haufen"
+ },
+ "3|46": {
+  "text": "Tötet Isaac sofort und erzeugt 10 Aufsammelobjekte oder Gegenstände auf dem Boden#Die Gegenstände stammen aus dem Pool des aktuellen Raums"
+ },
+ "3|47": {
+  "text": "Öffnet alle Türen im Raum"
+ },
+ "3|48": {
+  "text": "Benutzt Isaacs Aktivgegenstand kostenlos"
+ },
+ "3|49": {
+  "text": "Würfelt alle Gegenstände auf Sockeln und alle Aufsammelobjekte im Raum neu"
+ },
+ "3|5": {
+  "text": "{{BossRoom}} Teleportiert Isaac in den Bossraum"
+ },
+ "3|50": {
+  "text": "Zwei von Mamas Händen kommen herunter und packen je einen Gegner"
+ },
+ "3|53": {
+  "text": "{{Card}} Erzeugt 3 zufällige Karten"
+ },
+ "3|54": {
+  "text": "{{Timer}} Für den Raum erhalten:#↑ {{Speed}} +0.5 Geschwindigkeit#↓ {{Shotspeed}} -1 Schussgeschwindigkeit#{{Slow}} Verlangsamt Gegner"
+ },
+ "3|6": {
+  "text": "{{SoulHeart}} Erzeugt 2 Seelenherzen"
+ },
+ "3|7": {
+  "text": "{{Heart}} Erzeugt 2 rote Herzen"
+ },
+ "3|8": {
+  "text": "{{Timer}} Für 6 Sekunden erhalten:#↑ {{Speed}} +0.28 Geschwindigkeit#Unverwundbarkeit#Isaac kann nicht schießen, verursacht aber 40 Berührungsschaden pro Sekunde"
+ },
+ "3|9": {
+  "text": "Erzeugt ein zufälliges {{UnknownHeart}} Herz, eine {{Coin}} Münze, eine {{Bomb}} Bombe und einen {{Key}} Schlüssel"
+ },
+ "4|1": {
+  "text": "{{Poison}} Isaac furzt und vergiftet nahe Gegner"
+ },
+ "4|10": {
+  "text": "Kein Effekt#3 davon geben die Erwachsen-Verwandlung:#↑ {{Heart}} +1 Gesundheit"
+ },
+ "4|11": {
+  "text": "+1 Fliegen-Orbital"
+ },
+ "4|14": {
+  "text": "↓ {{Speed}} -0.12 Geschwindigkeit"
+ },
+ "4|15": {
+  "text": "↑ {{Speed}} +0.15 Geschwindigkeit"
+ },
+ "4|16": {
+  "text": "↓ {{Tears}} -0.28 Tränen"
+ },
+ "4|17": {
+  "text": "↑ {{Tears}} +0.35 Tränen"
+ },
+ "4|18": {
+  "text": "↓ {{Luck}} -1 Glück"
+ },
+ "4|19": {
+  "text": "↑ {{Luck}} +1 Glück"
+ },
+ "4|2": {
+  "text": "{{Warning}} Fügt Isaac 1 Herz Schaden zu#Wird bei 1 Herz oder weniger zu einer Volle-Gesundheit-Pille"
+ },
+ "4|20": {
+  "text": "Teleportiert Isaac in einen zufälligen Raum#{{ErrorRoom}} Kleine Chance, Isaac in den ICH BIN FEHLER-Raum zu teleportieren"
+ },
+ "4|21": {
+  "text": "{{Battery}} Lädt den Aktivgegenstand voll auf#{{Battery}} Erzeugt 1-2 Batterien"
+ },
+ "4|22": {
+  "text": "{{Warning}} Nimmt alle Herzbehälter bis auf einen#{{Heart}} Erzeugt 1-4 rote Herzen"
+ },
+ "4|23": {
+  "text": "Isaac kann sich 2 Sekunden lang nicht bewegen und nicht schießen"
+ },
+ "4|24": {
+  "text": "{{SecretRoom}} Öffnet alle Eingänge zu Geheimräumen auf dem Stockwerk"
+ },
+ "4|25": {
+  "text": "{{Charm}} Bezaubert alle Gegner im Raum"
+ },
+ "4|26": {
+  "text": "{{CurseLost}} Verbirgt die Karte für das Stockwerk"
+ },
+ "4|27": {
+  "text": "Erzeugt eine große Pfütze auf dem Boden, die Gegnern Schaden zufügt"
+ },
+ "4|28": {
+  "text": "{{Timer}} Isaac schießt 30 Sekunden lang diagonal"
+ },
+ "4|29": {
+  "text": "{{Timer}} Senkt allen erlittenen Schaden für den Raum auf ein halbes Herz"
+ },
+ "4|3": {
+  "text": "{{SoulHeart}} +2 Seelenherzen"
+ },
+ "4|30": {
+  "text": "{{Timer}} Erhöht allen erlittenen Schaden für den Raum auf ein ganzes Herz"
+ },
+ "4|31": {
+  "text": "Isaac hinterlässt 2 Sekunden lang Haufen"
+ },
+ "4|32": {
+  "text": "{{CurseMaze}} Effekt des Fluchs des Labyrinths für das Stockwerk"
+ },
+ "4|33": {
+  "text": "Vergrößert Isaac#Ändert seine Trefferfläche nicht"
+ },
+ "4|34": {
+  "text": "Verkleinert Isaac#Verkleinert auch seine Trefferfläche"
+ },
+ "4|35": {
+  "text": "Erzeugt 1 blaue Spinne pro Haufen im Raum"
+ },
+ "4|36": {
+  "text": "Erzeugt 1 blaue Spinne pro Gegner im Raum#Gibt es keine Gegner, sind es 1-3 blaue Spinnen"
+ },
+ "4|37": {
+  "text": "{{Timer}} Für 6.5 Sekunden erhalten:#Unverwundbarkeit#Isaac kann nicht schießen, verursacht aber 40 Berührungsschaden pro Sekunde#{{HealingRed}} 2 getötete Gegner heilen ein halbes Herz#{{Fear}} Jagt allen Gegnern im Raum Angst ein"
+ },
+ "4|39": {
+  "text": "Erzeugt 3 blaue Fliegen"
+ },
+ "4|40": {
+  "text": "Erzeugt eine Pfütze aus rutschigem Schleim"
+ },
+ "4|41": {
+  "text": "{{Slow}} Erzeugt eine Pfütze aus verlangsamendem Schleim"
+ },
+ "4|44": {
+  "text": "{{Trinket}} Verbraucht Isaacs Schmuckstück und gewährt seine Effekte dauerhaft"
+ },
+ "4|45": {
+  "text": "{{Collectible149}} Schießt eine Ipecac-Träne"
+ },
+ "4|46": {
+  "text": "{{Timer}} Für 6 Sekunden erhalten:#Unverwundbarkeit#Isaac kann nicht schießen (kein Berührungsschaden)"
+ },
+ "4|47": {
+  "text": "Erzeugt die Pille, die vor Rölps! zuletzt benutzt wurde"
+ },
+ "4|5": {
+  "text": "Isaac erzeugt schnell 5 gezündete Bomben"
+ },
+ "4|6": {
+  "text": "{{HealingRed}} Heilt alle Herzbehälter vollständig"
+ },
+ "4|7": {
+  "text": "↓ {{EmptyHeart}} -1 Gesundheit#Wird bei 0 oder 1 Herzbehälter zu einer Gesundheit-Hoch-Pille"
+ },
+ "4|8": {
+  "text": "↑ {{EmptyHeart}} +1 leerer Herzbehälter"
+ },
+ "4|9": {
+  "text": "Kein Effekt"
+ }
+}

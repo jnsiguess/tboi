@@ -1,0 +1,48 @@
+{
+ "label": "3768277690",
+ "title": "svati song of the chase",
+ "source": "Z:/Games/Steam/steamapps/workshop/content/250900\\3768277690",
+ "input": "%TEMP%\\convdesk\\inputs\\3768277690.zip",
+ "input_digest": "96161307bcfc2e85629cf1b937eb5836b63d1f97674fe4db5f49f3b5801e826c",
+ "tools": {
+  "modport.py": "3e3703a30ca997fa34fe7a3cf17350a05c282f7f5225a219ae547fa8f6dec9a5",
+  "modport.js": "8e419000f1ab111c913a76a98189145ba3e926c916412a362593b4c6a0a7d2c7",
+  "gameref.bin": "f025abd275294ede0822aa4dc38b8a36a833104eead1f45fb9d8e97510f5d3c4",
+  "modport_node.js": "0dde426a98a7819d5afefb8911c6181e74e00198415436d8c942989775354838"
+ },
+ "zip": true,
+ "id": "svati-song-of-the-chase",
+ "report": [
+  "modport report",
+  "",
+  "     1  dropped",
+  "",
+  "dropped  1 files beside the card (icon.png): not read by the port",
+  ""
+ ],
+ "files": {
+  "mod.json": {
+   "size": 190,
+   "sha256": "8764c8bc98b9a359d047a20019080e213b556bd492e169d2aa69906f896a2f2b",
+   "json": {
+    "id": "svati-song-of-the-chase",
+    "name": "svati song of the chase",
+    "version": "1.1",
+    "author": "Unknown",
+    "description": "- the chase music from Mom's shadow has been changed"
+   }
+  },
+  "resources-dlc3/music/repentance/chased by death v3.ogg": {
+   "size": 1873732,
+   "sha256": "a6967e5893cc52c24e504ad30be6624fc08d48fcd7515a4f831de4d8ab3fae60"
+  },
+  "resources-dlc3/sfx/mothershadow/momend.wav": {
+   "size": 1034574,
+   "sha256": "e5e13a222316a51a332c884b0e55702a2728ec604ba76f7f0771f59816eaec7c"
+  }
+ },
+ "js": {
+  "agrees": true,
+  "differences": []
+ }
+}

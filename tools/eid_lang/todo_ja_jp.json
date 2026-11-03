@@ -1,0 +1,27 @@
+{
+ "ConditionalDescs|5.100.116 (1 Room)": "1 Room recharges become 15 second recharges while in an uncleared room",
+ "ConditionalDescs|5.100.116 (Timed)": "Timed recharges start half full",
+ "ConditionalDescs|5.100.188": "Deals 7.5 damage as {1}",
+ "ConditionalDescs|5.100.246": [
+  "{{SuperSecretRoom}} Reveals the Super Secret Room location on the map"
+ ],
+ "ConditionalDescs|5.100.260": "Removes the teleportation effect of {1}",
+ "ConditionalDescs|5.100.316": "{1} removes the teleportation effect",
+ "ConditionalDescs|5.100.333": [
+  "{{SuperSecretRoom}} Reveals the Super Secret Room location on the map"
+ ],
+ "ConditionalDescs|5.100.34": "x1.5 Damage multiplier",
+ "ConditionalDescs|5.100.483": "{{GoldenBomb}} Having a golden bomb when using the item consumes it and allows for another use of Mama Mega",
+ "ConditionalDescs|5.100.501 (Deep Pockets)": "+1 container for every 100 coins past 99",
+ "ConditionalDescs|5.100.64 (Copies)": "Owning this item multiple times reduces the price further",
+ "ConditionalDescs|5.100.7": "x1.5 Damage multiplier while {1} effect is active",
+ "ConditionalDescs|5.100.728": "Deals 100% damage as {1}",
+ "ConditionalDescs|5.300.16": "x1.5 Damage multiplier",
+ "ConditionalDescs|5.300.20": [
+  "{{HealingRed}} Full health#Deals 100 damage to all enemies"
+ ],
+ "ConditionalDescs|5.350.101 (Timed)": "Basically useless with timed recharges",
+ "ConditionalDescs|5.350.125": "Beams also arc between players",
+ "ConditionalDescs|9 Volt 1 Room": "15 second recharge while in an uncleared room",
+ "ConditionalDescs|9 Volt Timed": "Charge starts half full after use"
+}

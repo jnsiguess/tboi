@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- the full name: Settings, the list of applications, the dialogs -->
+    <string name="app_name">The Binding of Isaac: Rebirth</string>
+    <!-- the short one: the home screen and the drawer, where the full name is cut off anyway -->
+    <string name="launcher_name">TBOI: Rebirth</string>
+</resources>

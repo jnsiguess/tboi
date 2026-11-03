@@ -1,0 +1,3 @@
+gamecontrollerdb.txt  https://github.com/mdqinc/SDL_GameControllerDB  555ce569a2003b22a4e134882224f1e2bdecc2e3  2026-09-29T15:23:10-04:00
+SDL_gamepad_db.h      https://github.com/libsdl-org/SDL  src/joystick/SDL_gamepad_db.h  ea7a2dabfd1ab6b0a5720568ffd207f5825e47f1  2026-10-01T13:25:46-07:00
+LICENSE.txt           the zlib licence of SDL_GameControllerDB (SDL's own text; SDL_gamepad_db.h carries the same in its header)

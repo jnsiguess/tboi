@@ -1,0 +1,67 @@
+{
+ "label": "3797840835",
+ "title": "MeiMei Dance For Good Items",
+ "source": "Z:/Games/Steam/steamapps/workshop/content/250900\\3797840835",
+ "input": "%TEMP%\\convdesk\\inputs\\3797840835.zip",
+ "input_digest": "a4131353e21c7786c8d99f7911295f719c2a4d6a63d4732b6b86784895fea58d",
+ "tools": {
+  "modport.py": "3e3703a30ca997fa34fe7a3cf17350a05c282f7f5225a219ae547fa8f6dec9a5",
+  "modport.js": "8e419000f1ab111c913a76a98189145ba3e926c916412a362593b4c6a0a7d2c7",
+  "gameref.bin": "f025abd275294ede0822aa4dc38b8a36a833104eead1f45fb9d8e97510f5d3c4",
+  "modport_node.js": "0dde426a98a7819d5afefb8911c6181e74e00198415436d8c942989775354838"
+ },
+ "zip": true,
+ "id": "meimei-dance-for-good-items",
+ "report": [
+  "modport report",
+  "",
+  "     4  dropped",
+  "     1  kept",
+  "",
+  "dropped  main.lua: the port runs no scripts; whatever the script did is not carried",
+  "dropped  2 files beside the card (.luarc.json, avatar.jpg): not read by the port",
+  "dropped  .vscode/ (1 files): not read by the port",
+  "dropped  content/sounds.xml: the port takes only content/entities2.xml; new sounds are played by a script, which does not run",
+  "kept     resources/gfx/MeiMei.anm2: new to the game (a mod's own animation)",
+  ""
+ ],
+ "files": {
+  "mod.json": {
+   "size": 245,
+   "sha256": "42ae6577984f25694214ba8051fa56ae75b58febab5225053f20420bbde09da0",
+   "json": {
+    "id": "meimei-dance-for-good-items",
+    "name": "MeiMei Dance For Good Items",
+    "version": "1.6",
+    "author": "Unknown",
+    "description": "Yo get out from my item\nNvm he is lowkey chill asf\n\nAlso you can change music in Mod Config Menu"
+   }
+  },
+  "resources/gfx/MeiMei.anm2": {
+   "size": 65586,
+   "sha256": "15c76ce93005dcdae542c6ee0ce4f16ed325bdca4743ae8ad1d1c3a4023260a0",
+   "tree": "a7e9410277ce55f84f93f468d132d1c48f2d744f037d7238c9b2e87020044abd"
+  },
+  "resources/gfx/meimei.png": {
+   "size": 3580689,
+   "sha256": "49cfd24b9d41a01864a2bffb9057d665bb9fe9f9a7c31cbff4b09689f87da143",
+   "wh": [
+    1595,
+    2400
+   ],
+   "pixels": "946e3f65e260d4f371475f37b16ea450bbbf6871e8ba9885851cb8f64c6c3c42"
+  },
+  "resources/sfx/meimeicat.wav": {
+   "size": 4721998,
+   "sha256": "38cdc37d55d8617bd5cbe5e9baca3938451f56e18b7519a9a2ca99dd18294ef4"
+  },
+  "resources/sfx/nomanssky.wav": {
+   "size": 1945972,
+   "sha256": "374a127f535b4685054c5c4368810e4dd0f41fd45224e3e6974594206458b075"
+  }
+ },
+ "js": {
+  "agrees": true,
+  "differences": []
+ }
+}

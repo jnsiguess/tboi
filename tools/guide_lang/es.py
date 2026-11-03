@@ -1,0 +1,93 @@
+# -*- coding: utf-8 -*-
+"""The guide's words in Spanish (set 'dlc3.es'), written natively for players in
+Latin America and Spain (stage 2, 06.10.2026). Stage 3 merges it into
+tools/guide_text.py. What each slot means: tools/guide_brief.md. Check:
+    py -3 tools/guide_check.py es tools/guide_lang/es.py
+"""
+
+TEXT = dict(
+    titles=['MOVERSE Y DISPARAR', 'TIPOS DE STICK', 'MODOS TÁCTILES', 'DOBLE TOQUE', 'BOTONES',
+            'BOTONES ESPECIALES', 'MAPA Y OBJETOS', 'DESCRIPCIONES', 'CONTROLES A TU GUSTO',
+            'MANDO Y TECLADO'],
+    move_shoot=['MOVERSE', 'DISPARAR'],
+    types=['NO SE MUEVE', 'APARECE BAJO TU DEDO', 'SIGUE A TU DEDO'],
+    modes=['MÁS EMPUJAS, MÁS RÁPIDO', 'QUIETO O AL MÁXIMO', 'CRUCETAS EN VEZ DE STICKS'],
+    dtap=['toca dos veces el mismo lado', 'toca y repite deslizando', 'igual que DINÁMICO',
+          'toca una flecha dos veces'],
+    buttons=['TOCA: PAUSA', 'MANTÉN: REINICIO', 'TOCA: BOMBA', 'TOCA: USAR', 'TOCA: USAR', 'MANTÉN: TIRAR',
+             'MANTÉN: TIRAR'],
+    special=[('GEMELOS:', 'EL OTRO QUIETO'), ('EN LA MIRA:', 'ALTO EL FUEGO'), ('MOCHILA:', 'CAMBIAR'),
+             ('D INFINITO:', 'MANTÉN Y ELIGE')],
+    map=[('TOCA', 'deja abierto el mapa grande'), ('MANTÉN', 'se abre mientras mantienes'),
+         ('MANTÉN MÁS', 'inventario con descripciones'), ('DESLIZA', 'desplázalo con otro dedo')],
+    desc=[['ACÉRCATE A UN OBJETO', 'PARA VER QUÉ HACE'],
+          ['LEVANTA LA BOLSA', 'PARA VER RECETAS', 'ARRIBA DEL PANEL:', 'DESLIZA: PASA PÁGINA', 'MANTÉN: SE FIJAN']],
+    pad=['mantén: inventario con descripciones', 'recetas y descripciones: avanzar',
+         'retroceder; mantén: fijar recetas', 'mantén los cuatro: reiniciar',
+         'mantén: inventario con descripciones', 'Bolsa de crafteo: páginas; izq.: fijar', 'pausa', 'mantén: reiniciar'],
+    shoot_key='TAB + DISPARO',
+    tweaks=['sigue disparando al soltar', 'cuánto empujar para moverte',
+            ['cuánto empujar para ir al', 'máximo; solo en ANALÓGICO'], 'cuánto empujar para disparar',
+            'imagen nítida o juego fluido', 'intensidad: ahora en Opciones'],
+    aimlock_release='toca el centro para parar',
+    aimlock_note='BLOQUEO DE MIRA, solo táctil: se quita tocando rápido y sin deslizar el centro del stick de disparo o la cruceta; otro toque lo fija.',
+    tweaks2_title='MÁS AJUSTES',
+    tweaks2=['pone el spawner en la pausa', ['activado: las partidas con', 'spawner desbloquean igual'],
+             'abre la carpeta del port', ['carga partidas de otras', 'versiones del juego'],
+             'las copia a una carpeta'],
+    tweaks_notes=[
+        'Opciones > AJUSTES.',
+        'IMPORTAR PARTIDAS trae partidas de otras versiones del juego; la versión de PC lee las exportadas. El spawner, en las dos páginas siguientes.'],
+    mods2_title='MÁS MODS',
+    mods=[['objeto de calidad 4 en la', 'sala: todos se ponen a bailar'],
+          ['probabilidad de Planetario', 'del próximo piso, bajo las stats'],
+          ['en qué oleada vas', 'en el Boss Rush'],
+          ['una barra de vida por jefe,', 'con su icono y su estado'],
+          ['las marcas que te faltan,', 'tenues en la nota de progreso'],
+          ['números extra junto a stats:', 'mult. de daño, tope de lágrimas'],
+          ['el cuerpo a cuerpo acierta', 'de cerca aun con mucho rango'],
+          ['muestra qué hace un objeto', 'al acercarte (EID)']],
+    mods_notes=[
+        'Menú principal > MODS: mods de PC rehechos para el port, no hay que instalar nada. Toca una fila para activarla o no; la flecha abre sus opciones.',
+        'ARREGLO DE RANGO es para cuerpo a cuerpo: huesos, espadas, hacha y Bolsa de crafteo. El idioma de DESCRIPCIONES se cambia desde su flecha.'],
+    user_key='NOMBRE DEL MOD',
+    user=[['elige uno o varios .zip;', 'los de PC se adaptan solos'],
+          ['copia los archivos del juego', 'para hacer tus propios mods'],
+          ['toca: activar o desactivar;', 'flecha: abre su página']],
+    page_title='PÁGINA DEL MOD',
+    page=['activa o desactiva el mod', ['si dos mods cambian un archivo,', 'gana el de más arriba'],
+          'guarda el mod como .zip', 'toca dos veces para borrarlo',
+          'las opciones propias del mod', 'reinicia el juego con los cambios'],
+    user_notes=[
+        'Los mods del Workshop de Steam sirven si cambian imágenes, sonidos o datos; Lua no se ejecuta. Si añades uno que ya tienes, actualízalo o ten los dos.',
+        'Nombre en rojo: el port no usa todo el mod. Las líneas rojas sobre el título de su página dicen por qué o con qué mod choca; tócalas para más detalles.'],
+    coop_title='COOP LOCAL',
+    coop_keys=['{VIEW} + {MENU}', 'ESC + TAB', '{LEFT} / {RIGHT}', '{A} / {B}', 'ENTER / BACKSPACE'],
+    coop=['únete: 1,5 s en un mando libre', 'lo mismo con el teclado', 'elige personaje',
+          'confirmar / cancelar', 'confirmar / cancelar (teclado)'],
+    coop_note='Al empezar la partida, mantén {VIEW} y {MENU} en un mando libre durante segundo y medio; '
+              'luego elige personaje con las flechas. Pueden jugar hasta cuatro.',
+    spawn_title='USO DEL SPAWNER',
+    spawn_tabs=['elige; otro toque: tuyo', 'elige; otro toque: sale', 'sala: un toque; piso: dos',
+                'escribe o usa las flechas'],
+    spawn_rows=['en coop: elige el jugador', 'ajustar; stats: toca la fila o {A}', 'tócalo otra vez para escribir',
+                'deshace tus cambios', 'cambiar de pestaña', 'cambiar de pestaña (teclado)',
+                'confirmar / cerrar'],
+    spawn_notes=[
+        'Actívalo en AJUSTES > SPAWN DE OBJETOS; en partida, ábrelo desde su pestaña en la pausa. Sin TROFEOS DEL SPAWN, no desbloqueas nada.',
+        'OBJETOS lo tiene todo, también recogibles y botín. AL SUELO lo deja a tu lado; flechas: '
+        'cuántos. Busca por nombre o número. Las stats duran la partida.'],
+    notes=[
+        'El stick izquierdo mueve y el derecho dispara. En Opciones eliges TIPO, TAMAÑO y TOUCH MODE; las dos páginas siguientes los explican.',
+        'Opciones > TIPO. ESTÁTICO se queda donde lo pusiste, DINÁMICO aparece donde apoyas el dedo y FLOTANTE sigue a tu dedo mientras lo mueves.',
+        'Opciones > TOUCH MODE. ANALÓGICO: cuanto más empujas, más rápido. DIGITAL: quieto, o al máximo pasada la ZONA MUERTA. BOTONES: crucetas.',
+        'Con doble toque hacia un lado, Mars embiste y Hemoptisis estornuda. Va igual en ambos sticks; el segundo toque, antes de medio segundo.',
+        'Mantén la pausa para reiniciar; suéltala antes de que la pantalla se oscurezca para cancelar. La baratija es otro botón: mantenla para tirarla, sin píldora ni carta.',
+        'Botón redondo: deja quieto al otro (Jacob y Esaú, Hombre de trapo) o cambia de cuerpo con El Olvidado. Mochila: toca y cambia. D infinito: mantén y elige dado.',
+        'Toca el minimapa para dejar abierto el mapa grande. Con DESCRIPCIONES activo, mantenlo más para ver tu inventario descrito; desplázalo con otro dedo.',
+        'Las descripciones largas se muestran por páginas: desliza por arriba del panel o pulsa '
+        '{LS} / {RS} en el mando. Ajustes: MODS > DESCRIPCIONES.',
+        'Opciones > Controles > Touch: arrastra sticks y botones, pausa incluida, adonde quieras. OPACIDAD: cuánto se ven. REJILLA: los alinea.',
+        'Lo demás, en Opciones > Controles. Jacob y Esaú: mantén {RT}; {LT} usa la carta o píldora de Jacob, {RB} la de Esaú (teclado: Ctrl + Espacio / Q).',
+    ],
+)

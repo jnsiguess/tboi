@@ -1,0 +1,709 @@
+{
+ "label": "2575911103",
+ "title": "The Specialist for Good Items",
+ "source": "Z:/Games/Steam/steamapps/workshop/content/250900\\2575911103",
+ "input": "%TEMP%\\convdesk\\inputs\\2575911103.zip",
+ "input_digest": "0e2e5c1f9d6b012336bf97e7a7e97c545506167b8ab9096179be2097b4be65b5",
+ "tools": {
+  "modport.py": "3e3703a30ca997fa34fe7a3cf17350a05c282f7f5225a219ae547fa8f6dec9a5",
+  "modport.js": "8e419000f1ab111c913a76a98189145ba3e926c916412a362593b4c6a0a7d2c7",
+  "gameref.bin": "f025abd275294ede0822aa4dc38b8a36a833104eead1f45fb9d8e97510f5d3c4",
+  "modport_node.js": "0dde426a98a7819d5afefb8911c6181e74e00198415436d8c942989775354838"
+ },
+ "zip": true,
+ "id": "specialistforgooditems",
+ "report": [
+  "modport report",
+  "",
+  "     6  dropped",
+  "    42  kept",
+  "",
+  "dropped  main.lua: the port runs no scripts; whatever the script did is not carried",
+  "dropped  3 files beside the card (Don_t update this mod if you have a run in progress and other mods installed, Installation.txt, changelog.txt): not read by the port",
+  "dropped  content/costumes2.xml: the port takes only content/entities2.xml; new costumes are put on by a script or by new items, neither of which come",
+  "dropped  content/music.xml: the port takes only content/entities2.xml; new music is played by a script, which does not run",
+  "dropped  resources/the/custommusic/readme.txt: not a format the port loads",
+  "dropped  resources/the/extras/modded characters etc: not a format the port loads",
+  "kept     resources/the/items/binky.anm2: new to the game (a mod's own animation)",
+  "kept     resources/the/specialist_apollyon.anm2: new to the game (a mod's own animation)",
+  "kept     resources/the/specialist_azazel.anm2: new to the game (a mod's own animation)",
+  "kept     resources/the/specialist_bethany.anm2: new to the game (a mod's own animation)",
+  "kept     resources/the/specialist_cain.anm2: new to the game (a mod's own animation)",
+  "kept     resources/the/specialist_dark_judas.anm2: new to the game (a mod's own animation)",
+  "kept     resources/the/specialist_eden.anm2: new to the game (a mod's own animation)",
+  "kept     resources/the/specialist_esau.anm2: new to the game (a mod's own animation)",
+  "kept     resources/the/specialist_eve.anm2: new to the game (a mod's own animation)",
+  "kept     resources/the/specialist_forgor_bone.anm2: new to the game (a mod's own animation)",
+  "kept     resources/the/specialist_forgor_soul.anm2: new to the game (a mod's own animation)",
+  "kept     resources/the/specialist_isaac.anm2: new to the game (a mod's own animation)",
+  "kept     resources/the/specialist_jacob.anm2: new to the game (a mod's own animation)",
+  "kept     resources/the/specialist_judas.anm2: new to the game (a mod's own animation)",
+  "kept     resources/the/specialist_keeper.anm2: new to the game (a mod's own animation)",
+  "kept     resources/the/specialist_lazarus.anm2: new to the game (a mod's own animation)",
+  "kept     resources/the/specialist_lazarus2.anm2: new to the game (a mod's own animation)",
+  "kept     resources/the/specialist_lilith.anm2: new to the game (a mod's own animation)",
+  "kept     resources/the/specialist_lost.anm2: new to the game (a mod's own animation)",
+  "kept     resources/the/specialist_magdalene.anm2: new to the game (a mod's own animation)",
+  "kept     resources/the/specialist_samson.anm2: new to the game (a mod's own animation)",
+  "kept     resources/the/specialist_t_apollyon.anm2: new to the game (a mod's own animation)",
+  "kept     resources/the/specialist_t_azazel.anm2: new to the game (a mod's own animation)",
+  "kept     resources/the/specialist_t_bethany.anm2: new to the game (a mod's own animation)",
+  "kept     resources/the/specialist_t_bluebaby.anm2: new to the game (a mod's own animation)",
+  "kept     resources/the/specialist_t_cain.anm2: new to the game (a mod's own animation)",
+  "kept     resources/the/specialist_t_eden.anm2: new to the game (a mod's own animation)",
+  "kept     resources/the/specialist_t_eve.anm2: new to the game (a mod's own animation)",
+  "kept     resources/the/specialist_t_forgor_bone.anm2: new to the game (a mod's own animation)",
+  "kept     resources/the/specialist_t_forgor_soul.anm2: new to the game (a mod's own animation)",
+  "kept     resources/the/specialist_t_isaac.anm2: new to the game (a mod's own animation)",
+  "kept     resources/the/specialist_t_jacob.anm2: new to the game (a mod's own animation)",
+  "kept     resources/the/specialist_t_jacob2.anm2: new to the game (a mod's own animation)",
+  "kept     resources/the/specialist_t_judas.anm2: new to the game (a mod's own animation)",
+  "kept     resources/the/specialist_t_keeper.anm2: new to the game (a mod's own animation)",
+  "kept     resources/the/specialist_t_lazarus.anm2: new to the game (a mod's own animation)",
+  "kept     resources/the/specialist_t_lazarus2.anm2: new to the game (a mod's own animation)",
+  "kept     resources/the/specialist_t_lilith.anm2: new to the game (a mod's own animation)",
+  "kept     resources/the/specialist_t_lost.anm2: new to the game (a mod's own animation)",
+  "kept     resources/the/specialist_t_magdalene.anm2: new to the game (a mod's own animation)",
+  "kept     resources/the/specialist_t_samson.anm2: new to the game (a mod's own animation)",
+  "kept     resources/the/specialist_xxx.anm2: new to the game (a mod's own animation)",
+  ""
+ ],
+ "files": {
+  "mod.json": {
+   "size": 2155,
+   "sha256": "4b65f3c6ff45ab93646182f62653ed3ea0adeb091dc51e40d6d869e12e80b4f3",
+   "json": {
+    "id": "specialistforgooditems",
+    "name": "The Specialist for Good Items",
+    "version": "1.5.1",
+    "author": "Unknown",
+    "description": "[h1] DANCE! [/h1]\n\nWith this mod on, Isaac will do the Specialist dance when encountering quality 4 items.\n\n[strike]Tainteds will eventually be added![/strike]\n\nUPDATE LOG: The \"Taint to the Party\" update is finally here! The mod now covers the entire cast, both Non-Tainted and Tainted characters, and it looks like the latter even brought their own mixtape!\n\nUsing Mod Config Menu you can tweak:\n[list]\n    [*]The minimum item Quality Isaac will dance to.\n    [*]Whether Isaac'll dance with Curse of the Blind or not.\n    [*]Customize what items are dance-worthy.\n    [*]Disable the music if you prefer to do so.\n    [*]Set the default remix, or even make it play for everyone.\n    [*]Flashing lights for a particularly strobing new dance.\n[/list]\nIt is also possible to tweak these settings manually, simply tweak the variables within 'EpicSettings' located at the top of main.lua\n\nThis mod [b]is[/b] compatible with POG for Good Items, but also takes priority! Make sure they have different quality requirements so they can both be seen (since pog is for quality 3 and dance is for quality 4 by default, this is the case with no modifications).\n\n[b] Credits: [/b]\nJiftoo - Programmer\nDevector - Graphics/Trailer\n\nOriginal Pog Mod (used as a base for the mod):\nhttps://steamcommunity.com/sharedfiles/filedetails/?id=2490515687\n\nOriginal MMD Skeleton by SAB64 (used as a base for the mod):\nhttps://www.deviantart.com/sab64/art/%28MMD-FBX-Model%29-Dr.-Doofenshmirtz-Download-871518311\n\nAnimated Items Mod used for gif preview can be found here:\nhttps://steamcommunity.com/sharedfiles/filedetails/?id=2570913695\n\n---------------------------------------------------------------------------\n\nWe stand on the shoulders of giants: Feel free to modify/fix this mod as you see fit. You can also download the character models from the link below: thanks for the patience and support, dance on!\nhttps://drive.google.com/drive/folders/1hkhDCs7qapahSjJ4KTRCUE8lBDta5irD?usp=sharing"
+   }
+  },
+  "resources/the/arcadespecalist.ogg": {
+   "size": 290469,
+   "sha256": "ef25c7ee8a6aab969259e942a3d3c6867c0886637c45a3b773f96240b7513d04"
+  },
+  "resources/the/arcadespecalist_b.ogg": {
+   "size": 851107,
+   "sha256": "cd9d8d9cbe802431b0795733e36262e3448ce83156e8ca173b567b49e008af6d"
+  },
+  "resources/the/arcadespecalist_eden.ogg": {
+   "size": 824457,
+   "sha256": "6ae15e41f280d396885648a567a5e396f5a945a3e26e16bdbfa40191252748f0"
+  },
+  "resources/the/crackhousespecialist.ogg": {
+   "size": 524213,
+   "sha256": "96ab5d223edc3906fc312f359517d70211893617c67ccb4b3814afa8ec9c9866"
+  },
+  "resources/the/custommusic/my_different_tainted_isaac_song.ogg": {
+   "size": 1901431,
+   "sha256": "ed01c3d420bfdcb021cd1eef83984104722662eb3e3833fdea785f6e6a1b72ce"
+  },
+  "resources/the/custommusic/my_tainted_isaac_song.ogg": {
+   "size": 219304,
+   "sha256": "47271cf566ce352aed61fa26e05ff93239d467ac5c1784a79d7408d737726b57"
+  },
+  "resources/the/items/binky.anm2": {
+   "size": 137795,
+   "sha256": "f00742f21d81fce31b158afe717bafc92568fc58693823e51d0a2ea6e32fc9a5",
+   "tree": "bf2c14136a9dc3f673ce10487b516968244da76c0ec63abfa26ad20758fe712d"
+  },
+  "resources/the/items/sprites/binky.png": {
+   "size": 38130,
+   "sha256": "28c66253fe03270f21fd4cd10e8bf799512d5f5f6a8b267377c7d993737bc28e",
+   "wh": [
+    1288,
+    940
+   ],
+   "pixels": "da97fae70e593fed47fea2441b8ec239a97eb2d45fa5842425a3062115c90076"
+  },
+  "resources/the/sheets/apollyon.png": {
+   "size": 231326,
+   "sha256": "e228ae9132c382c63288f304eaebbd4e1849d7c1b07c19f6360a159b3ed16d79",
+   "wh": [
+    1288,
+    940
+   ],
+   "pixels": "2d72658d24031597fda532a2757bea327fbf395d6e4f818be22c830e5f735157"
+  },
+  "resources/the/sheets/azazel.png": {
+   "size": 437205,
+   "sha256": "d364ca1ffa150875636604c6be653adcedd0ca71dbd680511d8f06e0d9d12bc9",
+   "wh": [
+    1288,
+    1000
+   ],
+   "pixels": "ace147b264d28e45a4a093911c2810161af88ff171bd3580b6617ba425e1efd3"
+  },
+  "resources/the/sheets/bethany.png": {
+   "size": 488662,
+   "sha256": "3d8b20c4cf8f844342496602f97b0e4ce93394142bacb217fa03c09a3bf9821f",
+   "wh": [
+    1288,
+    940
+   ],
+   "pixels": "a31ec2362be214d7fdc3f0ae1bec644ea8b95d56f5d9c26fab20601695f7d478"
+  },
+  "resources/the/sheets/cain.png": {
+   "size": 305181,
+   "sha256": "5fd26225d133bf6e9434f2792ecf4ba719a2fc24d5a7e700f51c36509e298672",
+   "wh": [
+    1288,
+    940
+   ],
+   "pixels": "62ebf1c4a09db1db520b85ce0d11b38c0bb73333f3d416a54cd0d558c8135905"
+  },
+  "resources/the/sheets/dark_judas.png": {
+   "size": 115075,
+   "sha256": "8a99b66db77e42d412b6e2d5f17ce08cf69bb644b07cd800a47fd75e4d0b5e41",
+   "wh": [
+    1288,
+    940
+   ],
+   "pixels": "169cbb92f9c87b168b31ee06553fd2f6c9246713ff2b8ce1deb4582cfed67795"
+  },
+  "resources/the/sheets/eden/0.png": {
+   "size": 344731,
+   "sha256": "a07c5aa49acf85cffe106a0673ac66daa2153ef106adda0a8cdd5b480380adbe",
+   "wh": [
+    1288,
+    940
+   ],
+   "pixels": "4e9baead2f5f3c6363ab7efdcaa52eff4c00a692dcdc48d88c40b11d39780633"
+  },
+  "resources/the/sheets/esau.png": {
+   "size": 393949,
+   "sha256": "2103536690e69c561af2fa2a28014914b6707d7766eae9aaa74ff60473e6ba1e",
+   "wh": [
+    1288,
+    940
+   ],
+   "pixels": "5d8e52ba930e9943c763365b634581bb9df28967e447cedadb87a76e4def2bcc"
+  },
+  "resources/the/sheets/eve.png": {
+   "size": 474642,
+   "sha256": "810b1567a0dced93a67cea51f18778ae40d3ef47ea3366ba3b13f8fee2a450e3",
+   "wh": [
+    1288,
+    940
+   ],
+   "pixels": "52d799a657f9945c237ce60bd8924c4af87a0f8f830db4859479e2d5c5cfb11a"
+  },
+  "resources/the/sheets/forgor_bone.png": {
+   "size": 272920,
+   "sha256": "d61645144bc5c23ab3775a422302e1ede251a6b284e368a39f09b6193628520b",
+   "wh": [
+    1288,
+    940
+   ],
+   "pixels": "a65ab1e009b6f3fa24ef3dc355d8517d75914df527e00ed426a03fab58bcfda9"
+  },
+  "resources/the/sheets/forgor_soul.png": {
+   "size": 257250,
+   "sha256": "f3faa694f0cb895c9ffcdbb2f6bfd2262eb927aadebe03a6d21fd07715799bc1",
+   "wh": [
+    1288,
+    940
+   ],
+   "pixels": "4df6d6e626e87b1b4e0ccbd100aa333dbd43e5fa9d80b87a453eb8db43ee1917"
+  },
+  "resources/the/sheets/isaac.png": {
+   "size": 278986,
+   "sha256": "687937d2bae5c584b14181e8d739dcd767e5a57ee08a2e7aef0a4853b0bca3e0",
+   "wh": [
+    1288,
+    940
+   ],
+   "pixels": "bf33fae8f54d759a3aeb5725ebffaffef848dd5042b30b347498aa2fd64278ea"
+  },
+  "resources/the/sheets/jacob.png": {
+   "size": 413170,
+   "sha256": "28215091a18a4715ce25f8a953c74a793c44de0af6c6fb6732069fcde82238de",
+   "wh": [
+    1288,
+    940
+   ],
+   "pixels": "5c8ca56b984bfe00662fe8947f9bf78d95fb728ead2f574af30afd646bdaef07"
+  },
+  "resources/the/sheets/judas.png": {
+   "size": 326279,
+   "sha256": "c76f6da650e56ef36ca6be337f2c4e09ad25a66a0a3bbbe0e73d35e0a0f358a9",
+   "wh": [
+    1288,
+    940
+   ],
+   "pixels": "86b6c037767ecd2adda1f59ef345faaf403897f6fc2b7c771266dee33b9027eb"
+  },
+  "resources/the/sheets/keeper.png": {
+   "size": 262843,
+   "sha256": "81cfb789c0cab43bf0a17c5e86d52a1f6ea8a405dd5e34a38c3e5b180944f421",
+   "wh": [
+    1288,
+    940
+   ],
+   "pixels": "164aff47dded84afeb056bcd88439b30fb42ad26785127a048ff27a365597076"
+  },
+  "resources/the/sheets/lazarus.png": {
+   "size": 325692,
+   "sha256": "5f3b28c8d23edf9edd31dd19a949c6f46992c83114e4f8b1e17c73a1d043b15b",
+   "wh": [
+    1288,
+    940
+   ],
+   "pixels": "643c29b373db88dc7e5dc8834ebb1733bc6ce7951a910d329d149c346b7f42db"
+  },
+  "resources/the/sheets/lazarus2.png": {
+   "size": 321493,
+   "sha256": "c0d5aa109f9d43c9b41129e7a688750c40704b4037aef7105cfe4906b3239ba9",
+   "wh": [
+    1288,
+    940
+   ],
+   "pixels": "4c19f8903da9bcb4c4842f70e711f0b410f371f27b4cbe65c0120d14c3dde432"
+  },
+  "resources/the/sheets/lilith.png": {
+   "size": 486008,
+   "sha256": "89221c47048989f92ff0afad21d53400ff67cf663ce131cc3ff5f3ce57d5d82f",
+   "wh": [
+    1288,
+    940
+   ],
+   "pixels": "567259471ccf658383dd181e58aca0a8ab70e07b9e59efb13f703383602cab49"
+  },
+  "resources/the/sheets/lost.png": {
+   "size": 241620,
+   "sha256": "dcad835a0c101e7e34742fca0e0b806bdc1ca5863d55510bc62c966913fe78db",
+   "wh": [
+    1288,
+    940
+   ],
+   "pixels": "535ed728e4db16907b31e40036ce146886fc7288c3e070e33e3698393000ef6b"
+  },
+  "resources/the/sheets/mag10.png": {
+   "size": 569659,
+   "sha256": "51bb2632ad463e6e6e17e039ea6a53791c3ef5a34fcc58ceaa145e5763e5ca23",
+   "wh": [
+    1288,
+    940
+   ],
+   "pixels": "85b965190cb7b9c7d64324e6426188cbfa2083e64137eea4ea197e23606be20f"
+  },
+  "resources/the/sheets/samsung.png": {
+   "size": 533672,
+   "sha256": "7b770fa5e598e2566fbe0f3f8fbfdede1067114e6f12e808c2a08655ffadbbb8",
+   "wh": [
+    1288,
+    940
+   ],
+   "pixels": "6dd8b50a7e9b408688dcad75f169acf7b36aafe7c44cf2790848bb8d82b5df29"
+  },
+  "resources/the/sheets/t_cain.png": {
+   "size": 258922,
+   "sha256": "8f9db47998925beed88f7f6204aa84b19660ab962b7b501648048ebab71cc4c9",
+   "wh": [
+    1288,
+    940
+   ],
+   "pixels": "e84b5dc197f627a8b1fb96a6a84ca2aa877b4882af09ca306a3940208fc88f18"
+  },
+  "resources/the/sheets/xxx.png": {
+   "size": 286802,
+   "sha256": "dde53983249f4af76e538093c36b7a9f0d6b572728d398b7927ec76b28d50c15",
+   "wh": [
+    1288,
+    940
+   ],
+   "pixels": "fff7aa51e854c59eaff62aab659b6f5c27d0885d1179e6f072068ad3a1ad8328"
+  },
+  "resources/the/sheets_tainted/apollyon.png": {
+   "size": 287223,
+   "sha256": "4636704ef1498f714e8e91817491dcc6bfec5618f6c458da215b68909b2e1232",
+   "wh": [
+    1288,
+    940
+   ],
+   "pixels": "4b2325d373519f67175609730aaf81245d53cb6745a63ea1b8136cf00e72025b"
+  },
+  "resources/the/sheets_tainted/azazel.png": {
+   "size": 467128,
+   "sha256": "da8b0b8a780c7a98d9be7b942b8169703bd6cda55afdc6e0393249b1eef37647",
+   "wh": [
+    1288,
+    940
+   ],
+   "pixels": "ec4afb60fb960fce4a5369220e222ab62b82315a3b595a4a58978e56a732bfcf"
+  },
+  "resources/the/sheets_tainted/bethany.png": {
+   "size": 571692,
+   "sha256": "4e653460bbe48d7ca2497edd64d8058c3af1f485581151aeeea024f0c8cf3a7d",
+   "wh": [
+    1288,
+    940
+   ],
+   "pixels": "64fc39d7d248a2181b76f9aa9f9be493bd6ce36aa098f7541c14fabcce8733c8"
+  },
+  "resources/the/sheets_tainted/bluebaby.png": {
+   "size": 352672,
+   "sha256": "d4dc36f20a75fb41a23c67a36956bd2dfcd57b8d2e6345eb32da242567ecee1f",
+   "wh": [
+    1288,
+    940
+   ],
+   "pixels": "91bb6c8f10f3a902d60f6b69fd52217c40cf3543b8b4654b53c5f91c947b6164"
+  },
+  "resources/the/sheets_tainted/cain.png": {
+   "size": 299085,
+   "sha256": "934d090c285b14efd24f17f18630c9c0ac051e86785f71e7cf912603dede7410",
+   "wh": [
+    1288,
+    940
+   ],
+   "pixels": "e12395f8aa7a1e3f4bba14adc2ea113705652e07edb8f984c656e18739059614"
+  },
+  "resources/the/sheets_tainted/eden.png": {
+   "size": 365307,
+   "sha256": "14b86f0d3d17b66b2c21286f48858f0458f868102fd64694afd7cf3f2d020adb",
+   "wh": [
+    1288,
+    940
+   ],
+   "pixels": "0ae1574c23a38fce30db7734aa06134a6def44677d1654777eeda61e46f4a284"
+  },
+  "resources/the/sheets_tainted/eve.png": {
+   "size": 434427,
+   "sha256": "d9433fbf382e046923a3dc22d03f1549cd6c2846f4749f43481938b57f956b54",
+   "wh": [
+    1288,
+    940
+   ],
+   "pixels": "d6b33a52bbad0a3286a8d0cd2e1012b2821ac7fda2308dccce7ef48a8d75e9a6"
+  },
+  "resources/the/sheets_tainted/forgor_bone.png": {
+   "size": 311094,
+   "sha256": "577c79d2b52f2217bb444744c122dee1aa7044f525310ece228af692c76e220f",
+   "wh": [
+    1288,
+    940
+   ],
+   "pixels": "888726c17c172f681d6557597675a996fe6b7232d4dca336a3455c67096a837c"
+  },
+  "resources/the/sheets_tainted/forgor_soul.png": {
+   "size": 383670,
+   "sha256": "30aa83301d7dafffe01617c3c4daa676482d75bbf2f115dcf2824b804c489521",
+   "wh": [
+    1288,
+    940
+   ],
+   "pixels": "5e6593fc248e90cc2f02be3367c7577de7d54165785fd9918cd189e800eb49e8"
+  },
+  "resources/the/sheets_tainted/isaac.png": {
+   "size": 316958,
+   "sha256": "e0df58f57525702e8fef4757deb550adb5c51dc46d6c5bda13bde7a831a720c4",
+   "wh": [
+    1288,
+    940
+   ],
+   "pixels": "9739c6b2c1a680b128bddfb8bfb16d7d8187c534e2f523e1c23f5b4238f32306"
+  },
+  "resources/the/sheets_tainted/jacob.png": {
+   "size": 526633,
+   "sha256": "c72f3a1519fe8fcda2e92e908fc63944e27650497f4815794c251eda17086c30",
+   "wh": [
+    1288,
+    940
+   ],
+   "pixels": "1b23c6bc685aed60ad780bd33417d0ad338ed3dd915785b1a85661cfc4feeb19"
+  },
+  "resources/the/sheets_tainted/jacob2.png": {
+   "size": 425679,
+   "sha256": "ff297a3d75fb64f51ad5fb52a5d2bbbefd3bc454664155a81b11cdd69ce042d7",
+   "wh": [
+    1288,
+    940
+   ],
+   "pixels": "2d4cbcc411e14ab832680e2b82e9f6000b65c3190ee0b590f1efdfb0d7a99565"
+  },
+  "resources/the/sheets_tainted/judas.png": {
+   "size": 134031,
+   "sha256": "2eb17f4233eb1ae3bb2d9a2695a7efabd0ebe34ef143b51c80d99a73c2f79761",
+   "wh": [
+    1288,
+    940
+   ],
+   "pixels": "a7cfc16a1c2bbf668c82f317b7de474e47acc50eed0537e63ac517c984dda638"
+  },
+  "resources/the/sheets_tainted/keeper.png": {
+   "size": 326340,
+   "sha256": "e1ed57eb5c844e767c497413bec178678c9c542862b580681110be76e3225829",
+   "wh": [
+    1288,
+    940
+   ],
+   "pixels": "528fc554e04176c491fef39c95a67be54690d0ea07e47ee4134fe40520218c87"
+  },
+  "resources/the/sheets_tainted/lazarus.png": {
+   "size": 442575,
+   "sha256": "4b0428a8407ae0e9411a60592c3c65310d7dd3d476ad3842c68f8d501e04326f",
+   "wh": [
+    1288,
+    940
+   ],
+   "pixels": "ccf185240dfa4a3275863423d8643672c64ce135f9dbd758e9f03cdd8fb5ce76"
+  },
+  "resources/the/sheets_tainted/lazarus2.png": {
+   "size": 451747,
+   "sha256": "d9db8ec2f5c51bb21ff24eeeb6e9a38d07cf3d36bac20edb196a4008c4784bcb",
+   "wh": [
+    1288,
+    940
+   ],
+   "pixels": "4e152407fee350108a3afdaa65ba985e50bd0a84e0a920f8f4a31b0ad143b085"
+  },
+  "resources/the/sheets_tainted/lilith.png": {
+   "size": 511957,
+   "sha256": "ad94d50f3a68ca5543be1b78a5ac1aef43fe364a57d7eccb89677d2447496af3",
+   "wh": [
+    1288,
+    940
+   ],
+   "pixels": "bd032783fa02902fafcaacf1580370b040171bdbf5a9e5ed737f21e200bc7fb3"
+  },
+  "resources/the/sheets_tainted/lost.png": {
+   "size": 360264,
+   "sha256": "2490e9a75f9f6f86bfdd871c6af2f3c1c90f60f812dd1d9190a3684fe22feefa",
+   "wh": [
+    1288,
+    940
+   ],
+   "pixels": "3f07e2a84edb07b568f2326839a88b3a1f7ce601913c78fa7ad1d4881797e41c"
+  },
+  "resources/the/sheets_tainted/magdalene.png": {
+   "size": 468683,
+   "sha256": "eb7a4ee0f633cd231f9c76eb3a17c42e5c588b6a4dbd741b8b8299b4d1724e3b",
+   "wh": [
+    1288,
+    940
+   ],
+   "pixels": "90d618c116f6caed3f9461960e53396cfe45e0348162dd835819b5e86049a1d0"
+  },
+  "resources/the/sheets_tainted/samson.png": {
+   "size": 376274,
+   "sha256": "1db0c4830130cb99d7fc6205e0dccbfec44722d496b75e8a9a1749499a9b4183",
+   "wh": [
+    1288,
+    940
+   ],
+   "pixels": "33e48e8f0f582fac886f4cc824bd7c40da674f647846dcdecb805323fda8e994"
+  },
+  "resources/the/specialist_apollyon.anm2": {
+   "size": 151533,
+   "sha256": "15ae91d0a759ad540259b5797d0ff7c6952e03e7924fc7908b54e33b84a3a093",
+   "tree": "7ab35952d14e68f7b1c3a8273efd2b003414e3fe73be3059eeb5c645a23a347a"
+  },
+  "resources/the/specialist_azazel.anm2": {
+   "size": 151577,
+   "sha256": "14bbdf2eecbd49a766111f2a33a4ebd049622417fb2f58f4a763f196a7009bfa",
+   "tree": "5ce0fcb2a69b159a85e65161710016dced7db42b87d1ae62156f58af179e484b"
+  },
+  "resources/the/specialist_bethany.anm2": {
+   "size": 151531,
+   "sha256": "771477896465b678c121443dd6bde5d76f3f16871753c2e4b8b8f2790da7a720",
+   "tree": "ba22c0016b75a27edf7f368e32ef7dd3b63f2767cca80324ede59eaedd7eb5eb"
+  },
+  "resources/the/specialist_cain.anm2": {
+   "size": 151529,
+   "sha256": "0558dc9821c21509bd8cd2e53a95458c468bd35e88c0ce4e611cb4ff21ea670e",
+   "tree": "6117c053ec41948b98d8d34b02d9cb478ebeeb46931688facd4005817a63e973"
+  },
+  "resources/the/specialist_dark_judas.anm2": {
+   "size": 151535,
+   "sha256": "fcb316967b7eb01125c7857da1c21bc37179284ae3a6aec5bcf876c659488447",
+   "tree": "eb4b09ec047fbf7704065ada31dfb1636d880fe3b1aaa4f6b5029d81d883b392"
+  },
+  "resources/the/specialist_eden.anm2": {
+   "size": 151530,
+   "sha256": "465ef42f836581ea97116d348915c00bf602df2a39b0a7c47060550bee0663f4",
+   "tree": "384390e877c3a30e02997768086f3002003fd33fe69040dbdb6b823a3f268dad"
+  },
+  "resources/the/specialist_esau.anm2": {
+   "size": 151202,
+   "sha256": "0bc3676ff03e27d72a330a73e50ecd6db1abbe50207db44c135e616f2f56eb9a",
+   "tree": "ed9b5a18215c89200e0d4fd90c83c66b3f8c2a81f8ad5f28ffb761641d4f1a39"
+  },
+  "resources/the/specialist_eve.anm2": {
+   "size": 151529,
+   "sha256": "30eee22566119bae0897f0de8fbb19946f25397dc8f9d561a2ddee01d1718f30",
+   "tree": "09882e6cc945108a6bd08186e470d63ddd3710bcb1fe12a914e4faf899b78558"
+  },
+  "resources/the/specialist_forgor_bone.anm2": {
+   "size": 151536,
+   "sha256": "209c5bbae054c15844ae98b7b7b5150730c44a2f1d658ac8d1cfbe093a06b558",
+   "tree": "26944cc0de209a17a6cea272b738d740d441313e572b735729685d3fe2f5aa70"
+  },
+  "resources/the/specialist_forgor_soul.anm2": {
+   "size": 151536,
+   "sha256": "5ebe1c6a6ca5275be2415e4d89731d74b63a4dbe3f1f7c0d9ee3fa54d7cb03a9",
+   "tree": "81a8834fa7d0a956859ae31b5a29eb58a3613c73caea9f78da853960878bdc6e"
+  },
+  "resources/the/specialist_isaac.anm2": {
+   "size": 151530,
+   "sha256": "b3b0e9a333f198acd0cdbe430d1e0bc72be997fe8a6b17e7dc946e195525029a",
+   "tree": "a30a47f142b2fe2e8624c01ea629222afa5503fa6a3ccd10468ce1749b29a99f"
+  },
+  "resources/the/specialist_jacob.anm2": {
+   "size": 151530,
+   "sha256": "86060736eb6cf8f12ca863047443ecd058ed710e8fcec8fe4fb02412b1820de1",
+   "tree": "6044b9086e277363bea9aaceba08a53f8aea4187b3ebd6ad9f5a21208179d6cc"
+  },
+  "resources/the/specialist_judas.anm2": {
+   "size": 151530,
+   "sha256": "35acdcd1e2dab2d6d66248f1861efbd9176b7567f5b259ce3f9421fbf51fb5a2",
+   "tree": "ac954b127d94a5dbb948cb97c92eb1ce72404f4f575d20f8f517fbb1f08f46da"
+  },
+  "resources/the/specialist_keeper.anm2": {
+   "size": 151531,
+   "sha256": "d25fc347388fe2fb4ecef54501d2a42e5c75b066ade50b284b5b16320c608879",
+   "tree": "d208ccfeef76f014d3ffaec9f82e8c026d3b745d855de5f55ee6aa8f40dac620"
+  },
+  "resources/the/specialist_lazarus.anm2": {
+   "size": 152217,
+   "sha256": "c845c79de34a446d40537f39707a49b029f37ba5547ccee16ce8521aee5d165f",
+   "tree": "4202766adacc280c9639f2f8207de28840351209f9ea17e031488a1275280c9d"
+  },
+  "resources/the/specialist_lazarus2.anm2": {
+   "size": 152218,
+   "sha256": "774ebb9b9bf0abc94254f51ece2249ff8d8a6669e28a61b6bd42f0069b558f0c",
+   "tree": "5d89ad2e5e3820d549828b6c9785947e0964a2de632eb1d9497f2f162f4b6243"
+  },
+  "resources/the/specialist_lilith.anm2": {
+   "size": 151531,
+   "sha256": "fe6b1a625af1cd56a085cfbbc4497a67541a3ae7d8dab1ee0ccc69327c5d928f",
+   "tree": "fe2b74895638655ed571b2ea49c5f1c8e8ccfc51eabbef610581b5482c74df41"
+  },
+  "resources/the/specialist_lost.anm2": {
+   "size": 151529,
+   "sha256": "4bae8074ebb1260aa4fc5bf827bc7a29c296e3b19117a218ed5e9777f0ba2cca",
+   "tree": "73247a571ea71996ea2d0a6a34f0125a6ba3c9e88d3cb2018dffc8b95e6beb78"
+  },
+  "resources/the/specialist_magdalene.anm2": {
+   "size": 151202,
+   "sha256": "17425936974bc49bd0f18ed8f373ac2a012a79fea4eed5651f9f8c1023afe786",
+   "tree": "23ee2e9a99dbab9617057c99a62c69a6ff6f2e6539bd6432e4156f09dc23c36d"
+  },
+  "resources/the/specialist_samson.anm2": {
+   "size": 151531,
+   "sha256": "160741d23442fc16bd9d86ad24e20812259d831407c541afe3f44ef4888a1860",
+   "tree": "a66889bbf5d173400b14e1cb3508d09862da33cf177c0acbe4229b450529b773"
+  },
+  "resources/the/specialist_t_apollyon.anm2": {
+   "size": 151541,
+   "sha256": "2455265a7a2b0a27c1c5b98672a4d50986497b5062a224ad74c7c6ab36787cb0",
+   "tree": "500f3d3d0b7686f39dba72d15a808e6163e755269ae25267ff4e5ee9dacc1a7e"
+  },
+  "resources/the/specialist_t_azazel.anm2": {
+   "size": 151539,
+   "sha256": "2f34af84fd2792d2a05a0178e3fd010b388cedae3b1c0fa283bf6f9189f4364d",
+   "tree": "331983dcecb59118b5dbb41bc89fd653325ef01326c4183139ad8abc568c63e1"
+  },
+  "resources/the/specialist_t_bethany.anm2": {
+   "size": 151540,
+   "sha256": "2255c7c37808f4836693e3f9813511301ecc00247202ca199398a16338cc36e1",
+   "tree": "aecf6ae52ab49218e27ee2dfaff70b5dbbdda0f6771f1062c2539b98f2507d83"
+  },
+  "resources/the/specialist_t_bluebaby.anm2": {
+   "size": 151541,
+   "sha256": "b3dd006e9007343d4f5f409814d530751106519cff3a9d233b86def6f2ac68b0",
+   "tree": "21322ab95ccf36d94e89b4df972d76d6ab2eda2685042ad986f11bfc7e329e83"
+  },
+  "resources/the/specialist_t_cain.anm2": {
+   "size": 151536,
+   "sha256": "5182216c8bce809fdd7793c559331c4e9c07a355c1424d32108ac20dbaee9cd2",
+   "tree": "0d7e3fd0242e070cfb37e25770c8350e2497e2ec3076b2d0bf432c14e2ba8363"
+  },
+  "resources/the/specialist_t_eden.anm2": {
+   "size": 151537,
+   "sha256": "b8d4210e7eb01e286d988e955745efc45a273675e25dfed6aa71246621ed450f",
+   "tree": "b88aed7e7b88887f4c61096f31962c7d2332c594455e2cc8fc6248b4f7a60cef"
+  },
+  "resources/the/specialist_t_eve.anm2": {
+   "size": 151536,
+   "sha256": "7a68687a9ca739c43e6d6cd9ce99f85d208c8806f9000b93938ab3233bc779bf",
+   "tree": "80ad9de7fe1bed24bc905f56552b01b8fb094efa9b36a802f0edfe227e2b5b22"
+  },
+  "resources/the/specialist_t_forgor_bone.anm2": {
+   "size": 151544,
+   "sha256": "0026002ec00daa84db9a33e58e0a4c1fa2da15cf9374bea814e62a5d0bf8adec",
+   "tree": "9264eb00742db2fb8e3cd366976149f93a7dc817d614d25f1aa801bcfe25dbd3"
+  },
+  "resources/the/specialist_t_forgor_soul.anm2": {
+   "size": 151544,
+   "sha256": "9e65a91e07f616f5fc574fe21616d0b1e635963b1c558fd2eafbccfc32c0ddb3",
+   "tree": "a619d4f050a8343f32c5f72c3c5dcada8e9f4fb96be5f169c8fb29b29a381bf1"
+  },
+  "resources/the/specialist_t_isaac.anm2": {
+   "size": 151538,
+   "sha256": "80132b85c9c546f35841e43c75e6edaa73664bc6e7a2c56cf57c0a3336809da5",
+   "tree": "0bb7872e351def1de45c3a8e7aaf79074def8cbfb872197229e28288afcfe1a7"
+  },
+  "resources/the/specialist_t_jacob.anm2": {
+   "size": 151538,
+   "sha256": "53fbfc35d2f825694d17ff1a028c5476f172e6f4b3fbb31fe721db96a40081af",
+   "tree": "1cf9772d84de6f88351a8667ab88165d30ef7507656a241460564ecbfdd2bbbb"
+  },
+  "resources/the/specialist_t_jacob2.anm2": {
+   "size": 151539,
+   "sha256": "da61b4375a781a36292c850beb1d6d8cd27b820ca9de5e5c968b9e951ca5ccb0",
+   "tree": "0d3719cdc9366f95631f8dfed9c6110da7b601a56e52ad2893213f55f2be3341"
+  },
+  "resources/the/specialist_t_judas.anm2": {
+   "size": 151538,
+   "sha256": "57ab1535596a22534e23476f13984de711246ff2632b492388cf6444b9607c5a",
+   "tree": "3c8a356e3f6c6b82f925514ab4092bf9c8593ccfb3a8a90846206b63b303dfda"
+  },
+  "resources/the/specialist_t_keeper.anm2": {
+   "size": 151539,
+   "sha256": "b7dfc66d3822eccb130055d1ce8bdaf52c215a887cf1d2d6adbf1918bcdc4a38",
+   "tree": "4da82dccb4b6edbd2c41ef0978bb64db0c79d060871e433ce9200042cc72fdde"
+  },
+  "resources/the/specialist_t_lazarus.anm2": {
+   "size": 151540,
+   "sha256": "a43ecc3c0f03c2e3ecd0f2493dff475e0dcd0e98d5b1142298e323033a2139fc",
+   "tree": "8c96faf11892dbcea32dcda3bada8f4eaecda3b02a3e702d40c0730f078c08de"
+  },
+  "resources/the/specialist_t_lazarus2.anm2": {
+   "size": 151541,
+   "sha256": "fd46edcaa9b5268ae047c74b3a5f6c2c0ce4eae4458e5a75522823f1c663cf06",
+   "tree": "59c5fe0216127fbd11b9aa0256015a5fcda9518718b8e56428d928673da13e4e"
+  },
+  "resources/the/specialist_t_lilith.anm2": {
+   "size": 151539,
+   "sha256": "3ca6b70cafb96268e5c0b56bcd49d591a441f0586c940226f7ccf775a295ffe6",
+   "tree": "c2cb9e62a5727dfc08f3c38c034f802cf4ec3df39cb9dc66598a02bdc449f55c"
+  },
+  "resources/the/specialist_t_lost.anm2": {
+   "size": 151537,
+   "sha256": "9a7ad6a2e31e5ac75e216785776727518afd81d5dc861429d733af24e0d3d982",
+   "tree": "529fb6e5f3c39195339ba60d5a68a658cd79212ee6950f45f02ba91f5a5ce5cc"
+  },
+  "resources/the/specialist_t_magdalene.anm2": {
+   "size": 151542,
+   "sha256": "675edaf7ad488075ee303d85979f00654f59c70751df96e3b4b8678161d3e3c9",
+   "tree": "e087403d2d44a636727b54696310df0042cb92286b6120f81e745fb3f46aab09"
+  },
+  "resources/the/specialist_t_samson.anm2": {
+   "size": 151539,
+   "sha256": "9e65813d1c73a8266ae84f2daf980434524fee2d95cc0545ad8241f7307dff99",
+   "tree": "f738ce57267bd84554c4166893afb1cc172f6934e399c4afaa59fffd69ebfcbe"
+  },
+  "resources/the/specialist_xxx.anm2": {
+   "size": 151528,
+   "sha256": "6f78578e61187479b3edc976c989d4f62817d6a0b72c246c0e14895365086bde",
+   "tree": "6e5fe786e62d858b8237be60a95930449ca1a46807ed3e977d248f9fe1881917"
+  }
+ },
+ "js": {
+  "agrees": true,
+  "differences": []
+ }
+}

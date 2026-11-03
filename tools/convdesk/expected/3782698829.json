@@ -1,0 +1,76 @@
+{
+ "label": "3782698829",
+ "title": "Tainted Samson Berserk Meter",
+ "source": "Z:/Games/Steam/steamapps/workshop/content/250900\\3782698829",
+ "input": "%TEMP%\\convdesk\\inputs\\3782698829.zip",
+ "input_digest": "782d3f7912dff14e423c1f224f76e3f95f9607e45c4ce7bc21d6d7d9ecd7b5d0",
+ "tools": {
+  "modport.py": "3e3703a30ca997fa34fe7a3cf17350a05c282f7f5225a219ae547fa8f6dec9a5",
+  "modport.js": "8e419000f1ab111c913a76a98189145ba3e926c916412a362593b4c6a0a7d2c7",
+  "gameref.bin": "f025abd275294ede0822aa4dc38b8a36a833104eead1f45fb9d8e97510f5d3c4",
+  "modport_node.js": "0dde426a98a7819d5afefb8911c6181e74e00198415436d8c942989775354838"
+ },
+ "zip": true,
+ "id": "berserk",
+ "report": [
+  "modport report",
+  "",
+  "     2  dropped",
+  "     2  kept",
+  "",
+  "dropped  main.lua: the port runs no scripts; whatever the script did is not carried",
+  "dropped  2 files beside the card (berserk_config.lua, icon.png): not read by the port",
+  "kept     resources/gfx/ui/Meter.anm2: new to the game (a mod's own animation)",
+  "kept     resources/gfx/ui/berserk_sidebar.anm2: new to the game (a mod's own animation)",
+  ""
+ ],
+ "files": {
+  "mod.json": {
+   "size": 460,
+   "sha256": "6e303f497ed7d235613f9cdfd3c0dbf67996aee4c82166a0a5b958e3f6ec80fe",
+   "json": {
+    "id": "berserk",
+    "name": "Tainted Samson Berserk Meter",
+    "version": "1.6",
+    "author": "Unknown",
+    "description": "[h2] Tainted Samson Berserk Meter [/h2] \n\nA simple QOL mod that adds a berserk progress bar above Tainted Samson's head.\n\nDoes not affect functionality of berserk progress.\n\n[h3] Features: [/h3]\n\n- Configurable options.\n\n- Displays your exact 0–100% berserk progress.\n\n- Works seamlessly in both local Co-op and Online."
+   }
+  },
+  "resources/font/meterfont.fnt": {
+   "size": 420,
+   "sha256": "f76d698d9447932ff756afd7f8a71acc72391b07e29a1fa1c41629d5717ca8b5"
+  },
+  "resources/font/meterfont_0.png": {
+   "size": 693,
+   "sha256": "c5f181db12c439b3ac786754b7238bd7bec8810799d12dc1d66728a3dfcfc25c",
+   "wh": [
+    128,
+    128
+   ],
+   "pixels": "ed6c0cedab0523f992a9333eae63bc38edcac60889b384e8143fe423e417a474"
+  },
+  "resources/gfx/ui/Meter.anm2": {
+   "size": 4934,
+   "sha256": "f4a92d02e31ad60d69f78c0ddfc29770054b6dc0a0a25b970d927323c8adebfc",
+   "tree": "7ecb071336db74bef3826bbe827f2e541580af9ae34a8cc681ae167479bfbd30"
+  },
+  "resources/gfx/ui/Meter.png": {
+   "size": 936,
+   "sha256": "e239eea37b4e0a4a27875d71848c05198b9465fbe6c64343cdbebbeef1732eba",
+   "wh": [
+    48,
+    51
+   ],
+   "pixels": "f2b907edcf2345a9e48586243bcb53195e6a36f2bb4581348011fc040f7e573a"
+  },
+  "resources/gfx/ui/berserk_sidebar.anm2": {
+   "size": 1188,
+   "sha256": "5b48e2b462858a580658d98f630cde348640d860bf6486383f4b80cecb596d1e",
+   "tree": "c324d07358b98f65409dbf6471a17265d41e900d91e928daed3d7ebadbb1c297"
+  }
+ },
+ "js": {
+  "agrees": true,
+  "differences": []
+ }
+}

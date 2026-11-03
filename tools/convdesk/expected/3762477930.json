@@ -1,0 +1,52 @@
+{
+ "label": "3762477930",
+ "title": "bark n fart on death",
+ "source": "Z:/Games/Steam/steamapps/workshop/content/250900\\3762477930",
+ "input": "%TEMP%\\convdesk\\inputs\\3762477930.zip",
+ "input_digest": "98b5eec695dd6437fcb490c385d70db73d4b0d36dce49e9e49e97266f23249b8",
+ "tools": {
+  "modport.py": "3e3703a30ca997fa34fe7a3cf17350a05c282f7f5225a219ae547fa8f6dec9a5",
+  "modport.js": "8e419000f1ab111c913a76a98189145ba3e926c916412a362593b4c6a0a7d2c7",
+  "gameref.bin": "f025abd275294ede0822aa4dc38b8a36a833104eead1f45fb9d8e97510f5d3c4",
+  "modport_node.js": "0dde426a98a7819d5afefb8911c6181e74e00198415436d8c942989775354838"
+ },
+ "zip": true,
+ "id": "bark-n-fart-on-death",
+ "report": [
+  "modport report",
+  "",
+  "     1  dropped",
+  "",
+  "dropped  1 files beside the card (dog.png): not read by the port",
+  ""
+ ],
+ "files": {
+  "mod.json": {
+   "size": 161,
+   "sha256": "390611acd7d89095a1e00323020f902b5334accb71b3cc8b8d36aa0942b21735",
+   "json": {
+    "id": "bark-n-fart-on-death",
+    "name": "bark n fart on death",
+    "version": "1.3",
+    "author": "Unknown",
+    "description": "adds bark n fart sfx on death"
+   }
+  },
+  "resources/sfx/player/isaac dies new 1.wav": {
+   "size": 215286,
+   "sha256": "424d778792a4da1a0e07bf8282357f71aed854bf71dfee89bd8465a221136542"
+  },
+  "resources/sfx/player/isaac dies new 2.wav": {
+   "size": 215286,
+   "sha256": "b36a4849c3d7cc4b544014f6595d6b34c25c3371833bf64304b0a2d0edafac58"
+  },
+  "resources/sfx/player/isaac dies new.wav": {
+   "size": 215286,
+   "sha256": "595a9cd3cf25637ebbf1cb9ca443516498aaf31b25f38e8e48c3a56422282044"
+  }
+ },
+ "js": {
+  "agrees": true,
+  "differences": []
+ }
+}

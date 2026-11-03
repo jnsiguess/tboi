@@ -1,0 +1,59 @@
+{
+ "label": "2603224299",
+ "title": "Completion Mark Reminder",
+ "source": "Z:/Games/Steam/steamapps/workshop/content/250900\\2603224299",
+ "input": "%TEMP%\\convdesk\\inputs\\2603224299.zip",
+ "input_digest": "02037e3e3d5a5824f86887a0923b4bc54f821447f0fb24769ff80a31369724e5",
+ "tools": {
+  "modport.py": "3e3703a30ca997fa34fe7a3cf17350a05c282f7f5225a219ae547fa8f6dec9a5",
+  "modport.js": "8e419000f1ab111c913a76a98189145ba3e926c916412a362593b4c6a0a7d2c7",
+  "gameref.bin": "f025abd275294ede0822aa4dc38b8a36a833104eead1f45fb9d8e97510f5d3c4",
+  "modport_node.js": "0dde426a98a7819d5afefb8911c6181e74e00198415436d8c942989775354838"
+ },
+ "zip": true,
+ "id": "completion-mark-reminder",
+ "report": [
+  "modport report",
+  "",
+  "     2  dropped",
+  "",
+  "dropped  1 files beside the card (thumbnail.png): not read by the port",
+  "dropped  resources-dlc4/ (2 files): Repentance+'s folder (the port is Repentance) - not taken",
+  ""
+ ],
+ "files": {
+  "mod.json": {
+   "size": 401,
+   "sha256": "5cc15288ddba8381edf0da19d254af331ffca7846ff5a0d6146f2fe079d49480",
+   "json": {
+    "id": "completion-mark-reminder",
+    "name": "Completion Mark Reminder",
+    "version": "1.3",
+    "author": "Unknown",
+    "description": "sometimes i forget which completion marks i need for a character because i have memory problems and am very stupid, so i made a little mod where i can just view which are missing on the paper. hope u like it too, thx thx\n\n*works for repentence and repentence+"
+   }
+  },
+  "resources-dlc3/gfx/ui/completion_widget.png": {
+   "size": 13546,
+   "sha256": "2756da3fbc12af310058b674fec30f7afc6716e336ee05ddeae5bb7a4629975c",
+   "wh": [
+    256,
+    512
+   ],
+   "pixels": "891194366dedf02528d0d53ad8a87346124a98110f2c34fe23269751f19bb3d7"
+  },
+  "resources-dlc3/gfx/ui/completion_widget_pause.png": {
+   "size": 13334,
+   "sha256": "8bed98e146ef7ed48a53f77ab38fdab09261944daae59905e46b043401670d68",
+   "wh": [
+    256,
+    512
+   ],
+   "pixels": "366989067e33d297fb2956dc415133be8a779883ecc123d40b04eb1469aa88e1"
+  }
+ },
+ "js": {
+  "agrees": true,
+  "differences": []
+ }
+}

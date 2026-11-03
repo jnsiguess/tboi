@@ -1,0 +1,910 @@
+{
+ "label": "3794486410",
+ "title": "Sam & Max as Jacob & Esau",
+ "source": "Z:/Games/Steam/steamapps/workshop/content/250900\\3794486410",
+ "input": "%TEMP%\\convdesk\\inputs\\3794486410.zip",
+ "input_digest": "d3c50eb4bb1869bb5d77824e2b9fae17a928870023d5f8b46d5638664fc646d2",
+ "tools": {
+  "modport.py": "3e3703a30ca997fa34fe7a3cf17350a05c282f7f5225a219ae547fa8f6dec9a5",
+  "modport.js": "8e419000f1ab111c913a76a98189145ba3e926c916412a362593b4c6a0a7d2c7",
+  "gameref.bin": "f025abd275294ede0822aa4dc38b8a36a833104eead1f45fb9d8e97510f5d3c4",
+  "modport_node.js": "0dde426a98a7819d5afefb8911c6181e74e00198415436d8c942989775354838"
+ },
+ "zip": true,
+ "id": "sam-n-max",
+ "report": [
+  "modport report",
+  "",
+  "     3  dropped",
+  "     2  kept",
+  "     3  warning",
+  "",
+  "dropped  2 files beside the card (mod thumbnail.png, obligatory easter egg.png): not read by the port",
+  "dropped  resources-repentogon/ (1 files): REPENTOGON's folder (the port has no REPENTOGON) - not taken",
+  "dropped  resources/gfx/ui/stage/playerportrait_jacob.png~: not a format the port loads",
+  "warning  resources/items.xml: 959 entries where the game has 958 - new content, kept whole",
+  "warning  resources/items.xml: 25 entries differ from the game's beyond their text (active 78: devilprice - -> 2; active 111: maxcharges 1 -> 120, chargetype - -> timed; active 186: cache - -> firedelay; passive 243: devilprice 2 -> -; ...) - the whole table replaces the game's: if it was copied from another version of the game, that version's values come too",
+  "kept     resources/players.xml: replaces the game's whole",
+  "warning  resources/players.xml: 9 entries differ from the game's beyond their text (player 2: items 46 -> -; player 5: items 122,117 -> -; player 6: items 157 -> -; player 9: 40 child entries -> 54; ...) - the whole table replaces the game's: if it was copied from another version of the game, that version's values come too",
+  "kept     resources/pocketitems.xml: 148 entries, as the game",
+  ""
+ ],
+ "files": {
+  "mod.json": {
+   "size": 1515,
+   "sha256": "f2c25ccb7cf5074949facfd7defe5310c26793bedb22f647d89356dc394274c0",
+   "json": {
+    "id": "sam-n-max",
+    "name": "Sam & Max as Jacob & Esau",
+    "version": "1.5",
+    "author": "Unknown",
+    "description": "[h3]From the bowels of New York to the bowels of the basement, taking the place of Jacob & Esau, it’s Sam & Max, Freelance Police![/h3]\n\nIf you clicked on this mod I assume you already know who they are and if so you have good taste! I fell into this fandom headfirst a few months ago, and after a year of not playing I got back into TBOI so why not smash my interests together? It reskins all the necessary stuff to turn everyone's least(?) favourite doomed brothers into a crime fighting dog-rabbit duo, including a handful of custom costumes. This is my first mod so have mercy and expect some jankiness!\n\nI'm genuinely blown away by the amount of love this has gotten, always love to see other fans of this franchise in the wild ❤️ Thank you to everyone past, present and future! Rest assured I'm working on more content >:3\n\nComing soon!\nMore custom costumes\nMore easter eggs and goodies\nTainted Sam (in progress!)\n\nWho knows, if we’re lucky maybe making this mod will finally motivate me to get the rest of their completion marks. Happy basement diving! \n\n([b]This mod is built for repentance+, playing on base repentance may cause issues! It will also probably conflict with other reskin mods, unfortunately there isn't much I can do about this[/b])\n\n[i]All mod content is made by me, and Sam & Max themselves are of course the brainchild of Steve Purcell[/i]"
+   }
+  },
+  "resources/gfx/backdrop/controls.png": {
+   "size": 174497,
+   "sha256": "54c3274d268d33d083293f764b98ec5739ca840643366a5ec88989a4e5702d8d",
+   "wh": [
+    325,
+    3552
+   ],
+   "pixels": "a273000ddebe7d1e6f021241c4f8cc20fc24f9d2fa0b4bb80145fbaa39a353f3"
+  },
+  "resources/gfx/characters/costumes/character_002x_jacob.png": {
+   "size": 28260,
+   "sha256": "595a56dc8ece494165d8042948ecf7cfe43c646e1393bf0d544e8e2ab4e3e46b",
+   "wh": [
+    512,
+    512
+   ],
+   "pixels": "f92c1aa9006bd00d6cbb717ac2626d5b4ae77ecb328bac1ef7d4a6c6c181408e"
+  },
+  "resources/gfx/characters/costumes/character_002x_jacob_black.png": {
+   "size": 27876,
+   "sha256": "1572a85a85b20c89b11e7ae6d2346e2c90e0aae4684dda68ba3ab4c99841a0dd",
+   "wh": [
+    512,
+    512
+   ],
+   "pixels": "122de5c7e91cfdc3873218754b588c5db7bbae767833c4b225bbb4e7240d39ff"
+  },
+  "resources/gfx/characters/costumes/character_002x_jacob_blue.png": {
+   "size": 28042,
+   "sha256": "f8fc70abba1932c8db162ee1df487df641817d2a042c8e8962c660ae1f2ef651",
+   "wh": [
+    512,
+    512
+   ],
+   "pixels": "e67a352cdb3956bee9789325a0c96b91429501e336ae9509dbd621015621d06d"
+  },
+  "resources/gfx/characters/costumes/character_002x_jacob_green.png": {
+   "size": 28163,
+   "sha256": "1e925ce1b12c9bc7a11167b600dc3cc51adbfe56769d9ab1da49abb8edfabfb4",
+   "wh": [
+    512,
+    512
+   ],
+   "pixels": "a9769f8c5d27de5e66bc0b660055c7c8df7ca406b228c53b0a6be4da225ea752"
+  },
+  "resources/gfx/characters/costumes/character_002x_jacob_grey.png": {
+   "size": 28024,
+   "sha256": "1dfd27a358afa458764977b2f12b65a5b7e2a0138e7b9f42620a097f9204f979",
+   "wh": [
+    512,
+    512
+   ],
+   "pixels": "cf0390e005f74f6b86838a6261f03b69a2d1965ef34003458f901eefe5ce8476"
+  },
+  "resources/gfx/characters/costumes/character_002x_jacob_red.png": {
+   "size": 27997,
+   "sha256": "6f0703625ccd269dd35ed958da64fc40e8437bd8ae44197afb82af5f17e829b1",
+   "wh": [
+    512,
+    512
+   ],
+   "pixels": "09c2a08d2cf523481e4e1d4e61ac5a9755aea9996e4ead3af489159d10d25bf2"
+  },
+  "resources/gfx/characters/costumes/character_002x_jacob_white.png": {
+   "size": 27699,
+   "sha256": "ae50ebe61d76fd54e27379286c2b6a70e6a3627ad4a37eb34a3835333c9fb67e",
+   "wh": [
+    512,
+    512
+   ],
+   "pixels": "5bab1f8cc2ed139b832486558455e56759530f30b3658d86df338a9a9c46b94e"
+  },
+  "resources/gfx/characters/costumes/character_002x_jacobhair.png": {
+   "size": 3190,
+   "sha256": "e4f862e728408e2c372dd324a2affb937b211df91ddca5ae33a03562e911c4c2",
+   "wh": [
+    512,
+    64
+   ],
+   "pixels": "839dd06615c7b850e619ca545eddcd60e26b74291a78822e7f2e5b653b329b8f"
+  },
+  "resources/gfx/characters/costumes/character_003x_esau.png": {
+   "size": 25634,
+   "sha256": "ebb3b0a1c5309b694027d2f4f0de06e8a21fa42acf5be582a1737008346bfa1f",
+   "wh": [
+    512,
+    512
+   ],
+   "pixels": "1b7b8ea5a6112feb64602ae130e8d4d7f35ed6df1462b83c5e7da94b79b37009"
+  },
+  "resources/gfx/characters/costumes/character_003x_esau_black.png": {
+   "size": 25597,
+   "sha256": "2e33648a9b5aa023a02e5391ffa2a7c706d45ea9902820099f43735c7b83006d",
+   "wh": [
+    512,
+    512
+   ],
+   "pixels": "ab12f714167b6befbfbdb068dbc702f4e9396c3af452304aec46d085edb39fd4"
+  },
+  "resources/gfx/characters/costumes/character_003x_esau_blue.png": {
+   "size": 26021,
+   "sha256": "d1e506574a3412b7b6ce3b46d3c11183b35c3ed1e3c48134603244259c9710d2",
+   "wh": [
+    512,
+    512
+   ],
+   "pixels": "f29b603fc066a3cd64ff623140d9b0cf3445756d815e4fe3451c77085a0f3246"
+  },
+  "resources/gfx/characters/costumes/character_003x_esau_green.png": {
+   "size": 25960,
+   "sha256": "f94fac7afb1b45d4c991a72a086812f94cfe07c9e2ee1e0b4107be76b4be2832",
+   "wh": [
+    512,
+    512
+   ],
+   "pixels": "44fb0c0ebf22cadd56ea32f9619bb88312cf349a02323148bb3c1f15f77962a6"
+  },
+  "resources/gfx/characters/costumes/character_003x_esau_grey.png": {
+   "size": 25881,
+   "sha256": "239a5cbe076f1af8e6c797f08ee3f3af9a676ffed94bd70fa23efba118ca5030",
+   "wh": [
+    512,
+    512
+   ],
+   "pixels": "307bb42dc41a5a30b0022c6066c95a56235ab6e67db86efb934fba253c4f693c"
+  },
+  "resources/gfx/characters/costumes/character_003x_esau_red.png": {
+   "size": 26105,
+   "sha256": "91a5164bdedc00aeb79f654e90edcab96091ad4fef120528f62eb5d3d996803a",
+   "wh": [
+    512,
+    512
+   ],
+   "pixels": "6ea9c34070d7070bbf24608ada5f078509a516e13134ff07d4c66ab0a393168d"
+  },
+  "resources/gfx/characters/costumes/character_003x_esau_white.png": {
+   "size": 25537,
+   "sha256": "3fcc902d55295662771847c2bc2dad088e48ae5f132c0b8cee9e63289bce3519",
+   "wh": [
+    512,
+    512
+   ],
+   "pixels": "e51ff9660858461fa18175b890f3b5f03690d3a07026c82ce1e04e4b6133651a"
+  },
+  "resources/gfx/characters/costumes/character_003x_esauhair.png": {
+   "size": 2579,
+   "sha256": "6e11be968e093369c20f03bc9bafc14fdc33825bda6c592461bf62892f170878",
+   "wh": [
+    512,
+    64
+   ],
+   "pixels": "d63985eac2e2e76b8b22cbd36b4d00202d937f81899e2af137a28cc826371c9c"
+  },
+  "resources/gfx/characters/costumes/costume_703_esau_jr.png": {
+   "size": 2949,
+   "sha256": "9157ad23ba06d92d10c324acabd217a01f89a0f3a2df169154dcbd9cc4552c0b",
+   "wh": [
+    256,
+    64
+   ],
+   "pixels": "2bd70f76c52054465d3de39047c43f4e77fc1a903ca2a1f6e96f77bd514a74dc"
+  },
+  "resources/gfx/characters/costumes_esau/costume_007x_ithurts.png": {
+   "size": 1118,
+   "sha256": "4b72699effe1fb14d1f1e0ab903a940aaa516c9130c62f619867093c0489ad9d",
+   "wh": [
+    256,
+    32
+   ],
+   "pixels": "984bedff7eea67d63134ba83085ea07f84b049152e80043765112225cddfb8a1"
+  },
+  "resources/gfx/characters/costumes_esau/costume_007x_ithurts2.png": {
+   "size": 2898,
+   "sha256": "cf530abd13059c03e3b0a80a933df256b843d7d767cd2180057705901f3436ab",
+   "wh": [
+    256,
+    64
+   ],
+   "pixels": "2fc470ce57143365bdc011f9e78e94d60c3b62d14902dd15bb9f928adc3cddce"
+  },
+  "resources/gfx/characters/costumes_esau/costume_007x_ithurts2_black.png": {
+   "size": 2858,
+   "sha256": "11e0a800c467ca13043c954424582f9f679d722ea542290cd82194e482357727",
+   "wh": [
+    256,
+    64
+   ],
+   "pixels": "8550d1fb2484226727cfdb2178e026ac8d8e2d75f9e35a4b56827e864ae8b289"
+  },
+  "resources/gfx/characters/costumes_esau/costume_007x_ithurts2_blue.png": {
+   "size": 2687,
+   "sha256": "b074f66536b27aaf4626d3768e70e9a185e00a925da896b39abeb17ea1ff1b97",
+   "wh": [
+    256,
+    64
+   ],
+   "pixels": "dceff673febcb0f061e3d806c87558945e38e41ab8fe786180b0eaf35360f6f3"
+  },
+  "resources/gfx/characters/costumes_esau/costume_007x_ithurts2_green.png": {
+   "size": 2889,
+   "sha256": "f42babc20d6216a35a568623be556e0fe9aa6c7879e70869bdf74a561c3d9a8e",
+   "wh": [
+    256,
+    64
+   ],
+   "pixels": "82dbebce60f3a742e2df555c2e65c2eb6d8ee65d485466b6176d3392c8350ba5"
+  },
+  "resources/gfx/characters/costumes_esau/costume_007x_ithurts2_grey.png": {
+   "size": 2687,
+   "sha256": "da4fda4f52a9539ad208a8c496e6fe6d3ba1e748d0b1f3de2b7551d510be10e1",
+   "wh": [
+    256,
+    64
+   ],
+   "pixels": "609a771018f7f6011e4476a0ada0b71d52ae35b768f1fabe6d186609bb7e0b34"
+  },
+  "resources/gfx/characters/costumes_esau/costume_007x_ithurts2_red.png": {
+   "size": 2794,
+   "sha256": "1f0b42a24347c1c9ab85998114449c355f39820d9d25482f0965375fab76a9c8",
+   "wh": [
+    256,
+    64
+   ],
+   "pixels": "78fb98decba801168c46a4ae8e8a92b1e3fb48bb5b26ec1cebb455344710e72e"
+  },
+  "resources/gfx/characters/costumes_esau/costume_007x_ithurts2_white.png": {
+   "size": 2761,
+   "sha256": "d4375f8f497f4846278d7d4432353bd4bbfe3fac47356c4639d52a4028ca5560",
+   "wh": [
+    256,
+    64
+   ],
+   "pixels": "f098f72ef71a180f2aa20013aff309403396b8fa5eb8b9d4b946e301190482e2"
+  },
+  "resources/gfx/characters/costumes_esau/costume_007x_ithurts_black.png": {
+   "size": 1089,
+   "sha256": "cf8e5a50c3f2de5beef84953ef145beeba0f4575568d6be9395d7eee25817d98",
+   "wh": [
+    256,
+    32
+   ],
+   "pixels": "facebf8cec5c3a1786dae68dfbcccb4f000ef833cd95078f157435f18e9c5480"
+  },
+  "resources/gfx/characters/costumes_esau/costume_007x_ithurts_blue.png": {
+   "size": 1120,
+   "sha256": "b4c2a6fe4dbb9db9208425964a326655db1db45e68ba78951af1c216103a990a",
+   "wh": [
+    256,
+    32
+   ],
+   "pixels": "997ac1bbcd8721d528e56f77f8506cc7dbff7524048b74417768a6aa9528749f"
+  },
+  "resources/gfx/characters/costumes_esau/costume_007x_ithurts_green.png": {
+   "size": 1078,
+   "sha256": "199de3d1e8c24f95b441c2fffc17e5e760ff00b648b6b7ea7dff7831d724fd06",
+   "wh": [
+    256,
+    32
+   ],
+   "pixels": "9bb0bcf1e5e49e42fe5c33cf27f4496039a0b7a48b77e53151d3c8e8e5dba366"
+  },
+  "resources/gfx/characters/costumes_esau/costume_007x_ithurts_grey.png": {
+   "size": 1111,
+   "sha256": "d3e797c991ecf86ec2dd728777967e08ac98c1a13ebe95edd3dc20722540b0c8",
+   "wh": [
+    256,
+    32
+   ],
+   "pixels": "303d4ce677e7724008a7034c90ff4e057b2aabf01d023b25b9d599882bc8af15"
+  },
+  "resources/gfx/characters/costumes_esau/costume_007x_ithurts_red.png": {
+   "size": 1126,
+   "sha256": "ff80135ed374de51370fab4f0bee443477734400ac3917a806c4a95cf7bb1031",
+   "wh": [
+    256,
+    32
+   ],
+   "pixels": "94bb7a93893816407f8888ba7d96a18678ddb745f22be45e003a6f403da809ce"
+  },
+  "resources/gfx/characters/costumes_esau/costume_007x_ithurts_white.png": {
+   "size": 1029,
+   "sha256": "6dffbb22f4536d415804843774229cd01e2b7f2289c8c65291f5284f7c408e8f",
+   "wh": [
+    256,
+    32
+   ],
+   "pixels": "d685ca06278f9cdbf820d1752972a9866e9c0c31fa86c2943e7952c7603b6c4c"
+  },
+  "resources/gfx/characters/costumes_esau/costume_045x_pluto.png": {
+   "size": 2280,
+   "sha256": "a89ded54f806174f7438d005bd67c481642e6329c595b94157753dd95ff654fc",
+   "wh": [
+    128,
+    128
+   ],
+   "pixels": "71ebea509f265e58cd2c769ab6c07ff44851497c39659cb5830b3461f6c14a96"
+  },
+  "resources/gfx/characters/costumes_esau/costume_045x_pluto_black.png": {
+   "size": 2250,
+   "sha256": "6cbe8f20e848d209a56e5f7c9ec188fd60295327d2902a13bd83f4648d01881f",
+   "wh": [
+    128,
+    128
+   ],
+   "pixels": "c23d011f0a90407ce148a8de423d3704bb133afbb27bbee5487dc3be80c4ff83"
+  },
+  "resources/gfx/characters/costumes_esau/costume_045x_pluto_blue.png": {
+   "size": 2282,
+   "sha256": "b82b5afeccbd4c06bf2a473c380dc80fc3a124f6b5aa7c7734510dfa5561c6e9",
+   "wh": [
+    128,
+    128
+   ],
+   "pixels": "9b8fc9943bc1b534576efd56b5c94db0a84e4216fdf354fcaaf09dabb537fd65"
+  },
+  "resources/gfx/characters/costumes_esau/costume_045x_pluto_green.png": {
+   "size": 2287,
+   "sha256": "434ad60677c133fdacf851e1fa9a67c06614fc388dde2fe5163a89b10c4d558e",
+   "wh": [
+    128,
+    128
+   ],
+   "pixels": "26fa53c4e7d29c3b6e9607dc5f48c22d89d4fe990fa9bcb786e84e2a7c241f09"
+  },
+  "resources/gfx/characters/costumes_esau/costume_045x_pluto_grey.png": {
+   "size": 2240,
+   "sha256": "319cab8e667415c8e871ab3dcb9cdc7dd015c4ef0c9c737d4849f8f35c85cc44",
+   "wh": [
+    128,
+    128
+   ],
+   "pixels": "caadaebf5dc4014bdc70853d81836f4cff3ffd7d85a51332e701a9a3183bf12e"
+  },
+  "resources/gfx/characters/costumes_esau/costume_045x_pluto_red.png": {
+   "size": 2296,
+   "sha256": "9d5414a0e0adcde3e0c184d6c25b536e9c15821f039be06775dc98523e4072c9",
+   "wh": [
+    128,
+    128
+   ],
+   "pixels": "aa7d440af35c11502cdd9ce85094346bc4b6b24884746e653593d61039b39410"
+  },
+  "resources/gfx/characters/costumes_esau/costume_045x_pluto_white.png": {
+   "size": 2153,
+   "sha256": "7f60d3e8be2ca83cc4e24433064bc9913299ad093b03be8902a25e257319d4ce",
+   "wh": [
+    128,
+    128
+   ],
+   "pixels": "c12f7f9cdb290c18636e171e6e314b86ed6bc14064beee6dd52741748eb57432"
+  },
+  "resources/gfx/characters/costumes_esau/costume_067_steven.png": {
+   "size": 1923,
+   "sha256": "5d3073e9c4c592293eb688ba20736cb19b6164b310d8f830b333336ebcdb1249",
+   "wh": [
+    256,
+    64
+   ],
+   "pixels": "0528c0e5519583402518134071269ab35a0f04ac44de53064e42b62c57251313"
+  },
+  "resources/gfx/characters/costumes_esau/costume_067_steven_black.png": {
+   "size": 1913,
+   "sha256": "268e8a9240644a7ebfcb55978d643071354381f37e67aa9209cad1ed14e74b93",
+   "wh": [
+    256,
+    64
+   ],
+   "pixels": "c54d7e175c910ece32a4cd57d79f5dea692ac5a056b3805af00cc5d9977b75fd"
+  },
+  "resources/gfx/characters/costumes_esau/costume_067_steven_blue.png": {
+   "size": 1931,
+   "sha256": "3a2ec9ca7a45fe7124e6ceb28bfe0d56f7f94a105835cf25f61daf5825e72d37",
+   "wh": [
+    256,
+    64
+   ],
+   "pixels": "d6e909509213108fb87b46c88e49fb8516a9749338162bb446e34d3f7436dc41"
+  },
+  "resources/gfx/characters/costumes_esau/costume_067_steven_green.png": {
+   "size": 1923,
+   "sha256": "9416b01ce7c94fdfce70dc87a63bf6843a5a8b553294a772cc0908fad7dc8b62",
+   "wh": [
+    256,
+    64
+   ],
+   "pixels": "f3bf3452bd8ce4d3b6eb81ebdca7fac976aea46c57f7be351bb00830133566b5"
+  },
+  "resources/gfx/characters/costumes_esau/costume_067_steven_grey.png": {
+   "size": 1906,
+   "sha256": "65bbb2ef2ee4735ffa196c4c709074680423f835d9b520633c01c56d50fd0ff3",
+   "wh": [
+    256,
+    64
+   ],
+   "pixels": "f558341f86517a513be66dcf22a653615cb1f376b67839e24265c5f3f4703a91"
+  },
+  "resources/gfx/characters/costumes_esau/costume_067_steven_red.png": {
+   "size": 1935,
+   "sha256": "a8d0830f7a990b308c1b83c0f1579c5ab947f838f8079309b890812cb01ad544",
+   "wh": [
+    256,
+    64
+   ],
+   "pixels": "24ec9ac1a14cd66238a9fd84e68c70cbfa52051f0a8aca81d6a823f246d844ca"
+  },
+  "resources/gfx/characters/costumes_esau/costume_067_steven_white.png": {
+   "size": 1894,
+   "sha256": "238292205c127a4f97f2fc543b5da65cb4e9dbe26df7f1aabbf5c073940fc442",
+   "wh": [
+    256,
+    64
+   ],
+   "pixels": "bdc46e5c9576fcce2407784623d2cb2eacd0aabe1e4575f994b3d51364d0f5da"
+  },
+  "resources/gfx/characters/costumes_esau/costume_095_ipecac.png": {
+   "size": 2461,
+   "sha256": "45794f7344a892bad299790df51831bf579d8ec6f3ec81d0169162854fa72774",
+   "wh": [
+    256,
+    64
+   ],
+   "pixels": "8beeade1964715807bb221d882476e16b6c590e71680cea6a474cf7bd00225dd"
+  },
+  "resources/gfx/characters/costumes_esau/costume_096_jesusjuice.png": {
+   "size": 955,
+   "sha256": "f60ed9c660832e4eb76d6f5e97a403be5d9619c4222ae6aa6b7d9e45ae47b64d",
+   "wh": [
+    256,
+    32
+   ],
+   "pixels": "1094e8141d3c637331f7b39ef0567783d0e78f52d7a487be35c8022820e151b6"
+  },
+  "resources/gfx/characters/costumes_esau/costume_103_mutantspider.png": {
+   "size": 738,
+   "sha256": "22e5e67969f02d51a44b0c61ae6ba4a4b7eadd4fc58506d46c14f4777c2ba569",
+   "wh": [
+    256,
+    32
+   ],
+   "pixels": "7d203a15bf7baa44c5476c08850aadec6de8a7da6c53cbe100ca846e04a4c2c2"
+  },
+  "resources/gfx/characters/costumes_esau/costume_214_anemic.png": {
+   "size": 1211,
+   "sha256": "9fb6a4689fc42991908784f1a735173827f91def4036b7f85450678c16ff7864",
+   "wh": [
+    256,
+    32
+   ],
+   "pixels": "57ffd9944874c1a8873691c0a2d219a5c0809ecc61bcca2de618dbc579c73591"
+  },
+  "resources/gfx/characters/costumes_esau/costume_218_placenta.png": {
+   "size": 1386,
+   "sha256": "0bb05d5f1ba1a187f800682b09b8aa2b4915e4aa1f4c292eca379641a1a4e910",
+   "wh": [
+    256,
+    32
+   ],
+   "pixels": "cd526f8ff046e5a6b23799de89557ee93d6f94d42872952f8175dcc6fc094db3"
+  },
+  "resources/gfx/characters/costumes_esau/costume_424_sackhead.png": {
+   "size": 4721,
+   "sha256": "d3bc47cc51164143854dce431dc546ecb8c53e479efcc6addc47d2d3f95804d5",
+   "wh": [
+    512,
+    64
+   ],
+   "pixels": "840970c282f3faae0f01b6e934e485274c9f5be7befceb9d53b4b85b567eaa52"
+  },
+  "resources/gfx/characters/costumes_jacob/costume_045x_pluto.png": {
+   "size": 2253,
+   "sha256": "afb5f1bf2a736801ffd7818df1adaf0e88658b78ecbe9ad0b71a0fa3bb4de7f2",
+   "wh": [
+    128,
+    128
+   ],
+   "pixels": "6929f60c4562dd20885774628e991587ed5869bf776a6435aa370a9e2916053f"
+  },
+  "resources/gfx/characters/costumes_jacob/costume_045x_pluto_black.png": {
+   "size": 2217,
+   "sha256": "480e2535629dd7cee9119ef0fd2003a56d7a622e0afd4ebee0d0fc7c6096a923",
+   "wh": [
+    128,
+    128
+   ],
+   "pixels": "fa04180574cd2ec0de9c7811b59deec3faa0e3aec6fe312d6d04249a4a6262e6"
+  },
+  "resources/gfx/characters/costumes_jacob/costume_045x_pluto_blue.png": {
+   "size": 2238,
+   "sha256": "eef290ef46d593ed2f875325bd8136169ebb61c38c447a57e20161aeb3d63ea3",
+   "wh": [
+    128,
+    128
+   ],
+   "pixels": "27731ee145086d9f40eb0a0152f37db6df7aeea5ff8a112cea0b1dcf9099ea01"
+  },
+  "resources/gfx/characters/costumes_jacob/costume_045x_pluto_green.png": {
+   "size": 2232,
+   "sha256": "d887dce990feb7cd0af884de7164d70597e3de307046f741d95ced39f84b89ae",
+   "wh": [
+    128,
+    128
+   ],
+   "pixels": "2b4cb9a4dccf88f0ab4d627e611d031bde6f506fe7552537ef0ac2774fbae0dc"
+  },
+  "resources/gfx/characters/costumes_jacob/costume_045x_pluto_grey.png": {
+   "size": 2184,
+   "sha256": "5c2256fa98ac2f9b31540740737b527039b69a42fbef72a9c751c57299e7cef3",
+   "wh": [
+    128,
+    128
+   ],
+   "pixels": "e0ca2d345a329d8e795e912aae53b4c5e351eedd314a32007f58f3c1a2c3f4f7"
+  },
+  "resources/gfx/characters/costumes_jacob/costume_045x_pluto_red.png": {
+   "size": 2258,
+   "sha256": "05df6f54ae36cba2caa8b2eadc53e033b4d7f456487846ef2a34c6a6e2c65465",
+   "wh": [
+    128,
+    128
+   ],
+   "pixels": "72050cd157891dfd59ba00a15a20653b4e7fe49ab08d9fc3202495eee673c12b"
+  },
+  "resources/gfx/characters/costumes_jacob/costume_045x_pluto_white.png": {
+   "size": 2107,
+   "sha256": "5c18c8595390f817b7bc0fb73edbe7f5eb1abb719fc52c7c582aac0bfd692cc8",
+   "wh": [
+    128,
+    128
+   ],
+   "pixels": "56d011368d0c246ef11e0f080977317e6f09dd95762e98d336430d47ca806273"
+  },
+  "resources/gfx/characters/costumes_jacob/costume_067_steven.png": {
+   "size": 2171,
+   "sha256": "afedc2e0c3b72faee225e0a9a69d07edb3dabbae9cb49ea3bb60b42dc51edf13",
+   "wh": [
+    256,
+    64
+   ],
+   "pixels": "757ee1f202ae587d18202e0274ef7db5cc86e8126b20453ff3253226e9a12fa6"
+  },
+  "resources/gfx/characters/costumes_jacob/costume_067_steven_black.png": {
+   "size": 2159,
+   "sha256": "aad32cd7e66e8f99006b0eed9bded6363818a5cce3397c5779d5c0287b70221d",
+   "wh": [
+    256,
+    64
+   ],
+   "pixels": "897a927488e4ea97eb2770e8acdb2bbb1c88d93138c42f0fe5ea58c3b0413943"
+  },
+  "resources/gfx/characters/costumes_jacob/costume_067_steven_blue.png": {
+   "size": 2196,
+   "sha256": "64d5a3826a35e92988663f680b5fec425b05305d6f332351e606442f58df7569",
+   "wh": [
+    256,
+    64
+   ],
+   "pixels": "c9ad991e186aeedf47e17c2b5c43cc496cad4a4468385ed813c78fb43d951d99"
+  },
+  "resources/gfx/characters/costumes_jacob/costume_067_steven_green.png": {
+   "size": 2185,
+   "sha256": "a0a239382011b8c93ddf8d631226d826d6365bc7f48376c49e3309ab6a593b92",
+   "wh": [
+    256,
+    64
+   ],
+   "pixels": "9f0e1688acd64dec8aa5ab3ae4f2d77970115f856c52991a12b4a8fab5c5fccb"
+  },
+  "resources/gfx/characters/costumes_jacob/costume_067_steven_grey.png": {
+   "size": 2160,
+   "sha256": "6a26df43b53e72855f1e358b3197db02319479b6427f1356889a2ee988bd8cce",
+   "wh": [
+    256,
+    64
+   ],
+   "pixels": "d0186c39e1c1d5bbc9c2fef8c8d49860a3c24e2b8573de8fd3108503a87b9086"
+  },
+  "resources/gfx/characters/costumes_jacob/costume_067_steven_red.png": {
+   "size": 2180,
+   "sha256": "ca2ac5a2a1c18ad4d3ad6863c35ac2bfb1cee3012c8b3c526788f5bf75d3d61c",
+   "wh": [
+    256,
+    64
+   ],
+   "pixels": "75cf7aaa20c80961259fc2fdc45510854ad16d59436ad2916c1cc0d4d5736053"
+  },
+  "resources/gfx/characters/costumes_jacob/costume_067_steven_white.png": {
+   "size": 2091,
+   "sha256": "5f67d402b53e238ecc3c3f2d4429d80ffcb1ca77f1f38f2ec99f9dd89a29130d",
+   "wh": [
+    256,
+    64
+   ],
+   "pixels": "7a85c864e3000305e095efae2da66baae567e8e9b630cf65bfb4a9d97dd34cd0"
+  },
+  "resources/gfx/characters/costumes_jacob/costume_095_ipecac.png": {
+   "size": 2482,
+   "sha256": "64e3dc9aa57a6d3517feba6f7f98f7bfc171ebe942890a3cf4913f211cf14e3e",
+   "wh": [
+    256,
+    64
+   ],
+   "pixels": "bcb899db3a7dddface38040ead42f6ec4817423b75a24829c95146f115358abe"
+  },
+  "resources/gfx/characters/costumes_jacob/costume_096_jesusjuice.png": {
+   "size": 661,
+   "sha256": "7483f6f67955244e3a96756f102947159153ed0c0895d7f2c20631794b6fd094",
+   "wh": [
+    256,
+    32
+   ],
+   "pixels": "c4cd8ba436679dae3eec1e3e8571d7156f774ed9c84d482cbbbd27dcef93b71c"
+  },
+  "resources/gfx/characters/costumes_jacob/costume_103_mutantspider.png": {
+   "size": 396,
+   "sha256": "90c7625c96ae48e5e67f89ee2e4b17ee42d3c078a6419dbdaa0a0c014f5a4cfb",
+   "wh": [
+    256,
+    32
+   ],
+   "pixels": "5286a68fdf73dc0ab6163e9490095ae0332f1c0f6106d4c6b945312aeb4324db"
+  },
+  "resources/gfx/characters/costumes_jacob/costume_214_anemic.png": {
+   "size": 1129,
+   "sha256": "c580747a4b0023b8934f7431683032a58788b54dbbce221cb04a511e2ed69610",
+   "wh": [
+    256,
+    32
+   ],
+   "pixels": "fed917cac5e0a1730a19c8e8aa1a33ebc3fb5ef6dd13fc22fd9525cea555efad"
+  },
+  "resources/gfx/characters/costumes_jacob/costume_218_placenta.png": {
+   "size": 1063,
+   "sha256": "083877f9006c7011075c617a2986e5f595e5f75b176d54fb82e9f0dc2555a8b7",
+   "wh": [
+    256,
+    32
+   ],
+   "pixels": "00a1674a3e118db3536f196412209dd628e1e21be865f209c58853198e59478e"
+  },
+  "resources/gfx/characters/costumes_jacob/costume_340_caffeinepill_body.png": {
+   "size": 4407,
+   "sha256": "7a57f5d88e7054b57c6e791907cc2d47954a53706638402c0188983f8b09bae0",
+   "wh": [
+    256,
+    128
+   ],
+   "pixels": "a9c88b6c3c36bfb8ab5090061c51bc1f0eeb361446267883d53a2e90cad0d955"
+  },
+  "resources/gfx/characters/costumes_jacob/costume_340_caffeinepill_body_black.png": {
+   "size": 4980,
+   "sha256": "40e85b9aae3d4de7f934acf83d189fb9b9fdde80206398a03afea12f234f296f",
+   "wh": [
+    256,
+    128
+   ],
+   "pixels": "68ee29a6395100d43f14e1f10af9b611d0fc6d0b84efa8b648d155ab7755f122"
+  },
+  "resources/gfx/characters/costumes_jacob/costume_340_caffeinepill_body_blue.png": {
+   "size": 5412,
+   "sha256": "9e6e4824383ceac76e686b6297d3027f282ca7ac02e33062420b16c367da88d5",
+   "wh": [
+    256,
+    128
+   ],
+   "pixels": "b3a8f13287d4e257d9c5b064403927f878a58532639ab81f977842c086e93fde"
+  },
+  "resources/gfx/characters/costumes_jacob/costume_340_caffeinepill_body_green.png": {
+   "size": 5420,
+   "sha256": "2cd8f87051187755c588ab960b68ea3ccb1d3f821ccdcf655b1abd7199cb6ea3",
+   "wh": [
+    256,
+    128
+   ],
+   "pixels": "00741f61f76f91a823d9a58687cea8b7ba73799f5ae1e20ef9afffadd4e9443d"
+  },
+  "resources/gfx/characters/costumes_jacob/costume_340_caffeinepill_body_grey.png": {
+   "size": 5326,
+   "sha256": "5e4341444d70276705594f4e40d46c870999a415baa369d7ad98c75bc90d5f9c",
+   "wh": [
+    256,
+    128
+   ],
+   "pixels": "2bd9718c1945085f163f6739e6ce17b35e93a658c2d5e8c938806c376fca7045"
+  },
+  "resources/gfx/characters/costumes_jacob/costume_340_caffeinepill_body_red.png": {
+   "size": 3025,
+   "sha256": "2b585283cbf5081c69bde6400e9ce9539a04c5a69c39a90904cf830657bc6ae5",
+   "wh": [
+    256,
+    128
+   ],
+   "pixels": "a6452bc76a75141ed7d5cb4177b071b45e2f3d61359ffc6da86626f1b08ce98f"
+  },
+  "resources/gfx/characters/costumes_jacob/costume_340_caffeinepill_body_white.png": {
+   "size": 5336,
+   "sha256": "cda5061bbd54f9d7c23a00f04ff330713144b707d78ebc6ba4c5f484f8116e54",
+   "wh": [
+    256,
+    128
+   ],
+   "pixels": "cb7a3ae86c7f6522f3819697e396c4c5da78ba582e57d7168c873333c3f8aa5a"
+  },
+  "resources/gfx/characters/costumes_jacob/costume_340_caffeinepill_head.png": {
+   "size": 3125,
+   "sha256": "362319d061a0f2eb895199659b042a4419e8b3493beb7b2e878c409dcc2f5111",
+   "wh": [
+    128,
+    96
+   ],
+   "pixels": "0aa1d9e65a958ea3d378c0bd9370bffe0aa32c93ea914a7610d0a1cf55f633d6"
+  },
+  "resources/gfx/characters/costumes_jacob/costume_340_caffeinepill_head_black.png": {
+   "size": 3137,
+   "sha256": "1703ec2c80503a743a0a41bc1be378b3fe80fdcc781351e33da6538da4c9c304",
+   "wh": [
+    128,
+    96
+   ],
+   "pixels": "9bf79466cedbdb11aa9e16f9c44a1084925b3a89caa655c37e2a8dc9af6077e8"
+  },
+  "resources/gfx/characters/costumes_jacob/costume_340_caffeinepill_head_blue.png": {
+   "size": 3135,
+   "sha256": "b7ece3e2a476a0141d4ca7107ed7e348d11383ecab7f09c8752ea72e5e5d1d3f",
+   "wh": [
+    128,
+    96
+   ],
+   "pixels": "e97cf1a85d22f6bb2ba62351ddc7ef9fbd1e256ee4c8b38df7d2b5c5b9d0fefc"
+  },
+  "resources/gfx/characters/costumes_jacob/costume_340_caffeinepill_head_green.png": {
+   "size": 3100,
+   "sha256": "79b06e5437e6ec401571fff618eb898e9d313dc369cec7e9907320c8690f9c98",
+   "wh": [
+    128,
+    96
+   ],
+   "pixels": "3f0d8f205ccd5035db23e08531ce823d3ad108d119f30ba7c4f7ab324562eeec"
+  },
+  "resources/gfx/characters/costumes_jacob/costume_340_caffeinepill_head_grey.png": {
+   "size": 3103,
+   "sha256": "da1017aed07bc0424d6267e1ec86a0f27bab2391cfc1595d11c40ecde26a6e2d",
+   "wh": [
+    128,
+    96
+   ],
+   "pixels": "6bcce5728df2a05cc83a475d03d0995f9ef1cef9f3bdcd38e2d5afe3715fc593"
+  },
+  "resources/gfx/characters/costumes_jacob/costume_340_caffeinepill_head_red.png": {
+   "size": 3110,
+   "sha256": "ae1224fb2306a6570f577c099f4ecb5d1f31447d73350395427ffa21296ae791",
+   "wh": [
+    128,
+    96
+   ],
+   "pixels": "7fe9e817c976f28683b2a9561dce65217e36b387a35950ab9f829ecf8edb121b"
+  },
+  "resources/gfx/characters/costumes_jacob/costume_340_caffeinepill_head_white.png": {
+   "size": 3070,
+   "sha256": "74c312d4d8ad2961336c8f59af3b4a2cbc7d1ba8c93eb19a1757193e106a26d9",
+   "wh": [
+    128,
+    96
+   ],
+   "pixels": "806efeea9046c75e92d74415804598a9bd4fb2e2cabab4207cf11833277c19e1"
+  },
+  "resources/gfx/characters/costumes_jacob/costume_424_sackhead.png": {
+   "size": 4721,
+   "sha256": "d3bc47cc51164143854dce431dc546ecb8c53e479efcc6addc47d2d3f95804d5",
+   "wh": [
+    512,
+    64
+   ],
+   "pixels": "840970c282f3faae0f01b6e934e485274c9f5be7befceb9d53b4b85b567eaa52"
+  },
+  "resources/gfx/characters/costumes_jacob/costume_497_camoundies.png": {
+   "size": 6291,
+   "sha256": "9d7158cbae7748cb525ee214903521bbd3ed2d3433935ec7892b978d325e7667",
+   "wh": [
+    256,
+    256
+   ],
+   "pixels": "30c69825c164584736c74ddd218371ad189b95ef5b67b5062661d5e296dc9f74"
+  },
+  "resources/gfx/items/collectibles/collectibles_703_esaujr.png": {
+   "size": 598,
+   "sha256": "39f2bc2c0a905f96772ae9302aaf3375dd40504bbbde76f1f4913e1c50de97f6",
+   "wh": [
+    32,
+    32
+   ],
+   "pixels": "11658de2fac2098a105e4606a5f333d267554943a47878855709975bc941ff86"
+  },
+  "resources/gfx/items/pick ups/pickup_soulstones.png": {
+   "size": 22159,
+   "sha256": "aaff04bb8ede88e301d0e6bc84fcf91b7b70893f047402b09f46015d706d20cc",
+   "wh": [
+    256,
+    192
+   ],
+   "pixels": "11c101f5ec97b95fdc770da9fc3f27bff58ed5177486c22d5d11726e2026ab50"
+  },
+  "resources/gfx/ui/boss/playername_02x_jacob_esau.png": {
+   "size": 2323,
+   "sha256": "21a8d668883abc314f3421b16a32bcb0bb3999124628602df49e6effc819b609",
+   "wh": [
+    192,
+    64
+   ],
+   "pixels": "bf8d24dbd5a188b7c6e0844e38f73cc079cf1e1a7a3639acdd6ea34a10833329"
+  },
+  "resources/gfx/ui/death portraits.png": {
+   "size": 36905,
+   "sha256": "3a6214d82db77156ebc016fb99d1bef02340864b6f22941d0ca584f7070f7e2d",
+   "wh": [
+    512,
+    256
+   ],
+   "pixels": "e26094033064d9f8b34818e35bbcf3aefcfa673d2a7b19855b512edbd2ac7835"
+  },
+  "resources/gfx/ui/main menu/charactermenu.png": {
+   "size": 92519,
+   "sha256": "296fad29ceecbb6dae82bcc62a9ba5e61e941acd93daf6065adf1ea391c58716",
+   "wh": [
+    512,
+    1024
+   ],
+   "pixels": "d00c1a355b8d01b2744011a5bcca250b236ea24f582d426001fdc9a8dd2e52b4"
+  },
+  "resources/gfx/ui/stage/playerportrait_jacob.png": {
+   "size": 7140,
+   "sha256": "5903ba8b7a9b57fab63e6b16e373cb76cf05ad4b6fb02dcd9d13e7e638ef3858",
+   "wh": [
+    144,
+    144
+   ],
+   "pixels": "445a3c08066ad83b5aac4f9bafeda19a3b11ba706892c4f617668579ecfa556c"
+  },
+  "resources/gfx/ui/ui_cardspills.png": {
+   "size": 38204,
+   "sha256": "29c800f01d9c96a74a5ba111daad39a3c96cd902682a1c5376dddb5d8c50034a",
+   "wh": [
+    512,
+    256
+   ],
+   "pixels": "645e4d71ba5d2327ff32f10c08cd5a9d27c0b84cde3115040782e4f44bef3a6b"
+  },
+  "resources/items.xml": {
+   "size": 136041,
+   "sha256": "65368bcdf8f308db21f3475631a1e62905c8613f68fd2c12a80a539c92287719",
+   "tree": "3a4c539c9e3ea611105d9dfc2daafdc1a60f5acdfdc8d721f1a99504302f7ccc"
+  },
+  "resources/players.xml": {
+   "size": 14560,
+   "sha256": "c74165423297dad0ae8cfe05555d36e885844ddc8bde8e493d8c75d877a46d22",
+   "tree": "cbfb7f4428c01c636f669b46c69dd3589a582a78126b261b4ce9b9823502a105"
+  },
+  "resources/pocketitems.xml": {
+   "size": 23492,
+   "sha256": "669507bb0f71922beb109ddd0aff2ecbbea74ad9fe559aa9d14e89ea37e5c40a",
+   "tree": "bfe6f353d02c892a4f2fbfb9fb40c3f1b605ae22812e8d37b52a3b124a2f3c38"
+  }
+ },
+ "js": {
+  "agrees": true,
+  "differences": []
+ }
+}

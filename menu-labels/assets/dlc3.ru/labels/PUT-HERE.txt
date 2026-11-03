@@ -1,0 +1,25 @@
+The drawn labels go here, one file per label.
+
+The file names must be exactly these (otherwise they are not picked up):
+
+    MODE.png   STICK_TYPE.png   STICK_SCALE.png
+    STATIC.png   DYNAMIC.png
+    SMALL.png   MEDIUM.png   BIG.png
+    ANALOGUE.png   DIGITAL.png
+
+How to draw:
+
+  - Transparent background, letters only.
+  - NO anti-aliasing, hard pixels. Do not draw the edge — I add it
+    myself by downscaling, the same way I did the English ones.
+  - Letter height ABOUT 22 PIXELS. Not two or three times the target
+    size: at an integer multiple the edge does not form at all, checked by
+    measurement. Twenty-two is the proven size; the English labels were
+    made from it.
+  - Any dark colour is fine; I recolour it to the native ink (54,47,45)
+    anyway.
+  - No margins around the letters needed, I crop them myself.
+
+Width after downscaling: up to 90 pixels for item names, up to 70 for
+values. If it comes out wider, I will say so — the lettering would run off
+the edge of the paper sheet in the game.

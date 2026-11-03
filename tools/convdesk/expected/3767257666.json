@@ -1,0 +1,47 @@
+{
+ "label": "3767257666",
+ "title": "johnRodClip",
+ "source": "Z:/Games/Steam/steamapps/workshop/content/250900\\3767257666",
+ "input": "%TEMP%\\convdesk\\inputs\\3767257666.zip",
+ "input_digest": "a0913d3025ded85a20a017b8f49e554f43ddf2f5c6852dd07865b041df37d45e",
+ "tools": {
+  "modport.py": "3e3703a30ca997fa34fe7a3cf17350a05c282f7f5225a219ae547fa8f6dec9a5",
+  "modport.js": "8e419000f1ab111c913a76a98189145ba3e926c916412a362593b4c6a0a7d2c7",
+  "gameref.bin": "f025abd275294ede0822aa4dc38b8a36a833104eead1f45fb9d8e97510f5d3c4",
+  "modport_node.js": "0dde426a98a7819d5afefb8911c6181e74e00198415436d8c942989775354838"
+ },
+ "zip": true,
+ "id": "johnrodclip",
+ "report": [
+  "modport report",
+  "",
+  "",
+  ""
+ ],
+ "files": {
+  "mod.json": {
+   "size": 192,
+   "sha256": "2ac9651947faaf3333e0d093d1663b28a93e79615a126584740d7af081e09e8b",
+   "json": {
+    "id": "johnrodclip",
+    "name": "johnRodClip",
+    "version": "1.1",
+    "author": "Unknown",
+    "description": "A popular Manga Series Jojo's Unique character John Rod Over Paper ClipTrinket"
+   }
+  },
+  "resources/gfx/items/trinkets/trinket_019_paperclip.png": {
+   "size": 453,
+   "sha256": "8270a8f4dc1c1686144689a12e86315fc02c35a5ad5374ec5598e9111c57da11",
+   "wh": [
+    32,
+    32
+   ],
+   "pixels": "edf7255e1fa0adbdbe236d82e753f375a8d7fcf2b2cffd9dc1d0991e3677793d"
+  }
+ },
+ "js": {
+  "agrees": true,
+  "differences": []
+ }
+}

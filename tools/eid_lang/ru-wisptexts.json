@@ -1,0 +1,19 @@
+{
+ "wisp": {
+  "Shotspeed": "{1}% скорости слезы",
+  "Damage": "{1}% урона",
+  "Chance": " ({1}% шанс)",
+  "SingleRoom": "Огонёк на одну комнату",
+  "NoWisps": "Огоньков нет"
+ },
+ "abyss": {
+  "InfoText": "{amount} {size}{speed}{саранча} ({dmg})",
+  "Chance": " ({1}% шанс)",
+  "SpeedSlow": "медленная ",
+  "SpeedFast": "быстрая ",
+  "SpeedDash": "рывковая ",
+  "SizeSmall": "маленькая ",
+  "SizeBig": "большая ",
+  "DamageMult": "x{1} от урона Айзека"
+ }
+}

@@ -1,0 +1,114 @@
+WHAT NEEDS TO BE DRAWN, BY LANGUAGE
+===================================
+
+Two tasks: redraw the lettering on the title screen (5 files, Japanese is a
+copy-over) and draw the lettering for our menu items (6 files, 10 labels each).
+
+The tree here mirrors the game's. Edit the files in place without renaming
+them — I then put the folder back with one command. The `sample-english`
+folder holds the English files, already done.
+
+
+TASK 1. TITLE SCREEN
+====================
+
+File:   <language>/gfx/ui/main menu/titlemenu_ios.png
+Sheet:  480 x 540
+Where:  the lettering at the bottom, drawn TWICE — two identical variants side
+        by side, edit both. Above y=488 the sheet is the same for every
+        language; do not touch the background.
+Width:  each copy gets a 156-pixel cut-out. The English touch version takes
+        141, the Russian «НАЖМИТЕ СТАРТ» (Russian "PRESS START") takes 149.
+        So the margin is small: about 15-16 characters at the density the
+        English artists used.
+
+    language    currently there     needed
+    ---------   -----------------   --------------------------------------
+    Russian     «НАЖМИТЕ СТАРТ»     «КОСНИТЕСЬ ЭКРАНА»  (or shorter: «КОСНИТЕСЬ»)
+                ("PRESS START")     ("TOUCH THE SCREEN"; shorter: "TOUCH")
+    German      DRÜCKE START        TIPPE ZUM START
+    Spanish     PULSA START         TOCA PARA JUGAR   (fuller: TOCA PARA EMPEZAR)
+    Korean      시작하세요.           터치하세요        (fuller: 터치해서 시작)
+    Chinese     按开始键             触摸开始
+    Japanese    PRESS START         DO NOT DRAW, copy over the existing one
+
+For Japanese, the developers already drew the touch phrase 「たっちしてすたーと」.
+It is in the file sample-japanese-title.png — at the bottom of the sheet, also
+in two copies. That sheet is from Rebirth and laid out differently; take only
+the lettering itself.
+
+
+TASK 2. MENU ITEM LABELS
+========================
+
+File:  <language>/gfx/ui/main menu/optionsextra.png
+Sheet: 256 x 512
+
+The sheet is now twice as tall, and all our labels have moved to the bottom
+half in a straight column. This was done because in the old spot the German
+native labels ran right over our boxes, and there was not enough width for
+long translations there anyway. Now the boxes are the same in every language
+and roomy.
+
+IMPORTANT: draw from the TOP LEFT corner of the box. The extra space to the
+right and below is margin; it is transparent and not visible on screen. If you
+shift the lettering inside the box, it shifts by exactly the same amount in
+the game.
+
+The Russian column is the Russian lettering to draw; its English meaning is
+the English label in the same row.
+
+    box          size     English      Russian         German
+    ---------    ------   ----------   -------------   ------------
+      8,264      60x18   MODE         «РЕЖИМ»         MODUS
+      8,286      100x18   STICK TYPE   «ТИП СТИКА»     STICK-TYP
+      8,308      100x18   STICK SCALE   «РАЗМЕР СТИКА»   STICK-GRÖSSE
+      8,330      80x18   STATIC       «СТАТИЧНЫЙ»     STATISCH
+      8,352      80x18   DYNAMIC      «ДИНАМИЧНЫЙ»    DYNAMISCH
+      8,374      80x18   SMALL        «МАЛЫЙ»         KLEIN
+      8,396      80x18   MEDIUM       «СРЕДНИЙ»       MITTEL
+      8,418      80x18   BIG          «БОЛЬШОЙ»       GROSS
+      8,440      80x18   ANALOGUE     «АНАЛОГ»        ANALOG
+      8,462      80x18   DIGITAL      «ЦИФРОВОЙ»      DIGITAL
+
+    box          Spanish         Japanese          Korean      Chinese
+    ---------    -------------   ---------------   ---------   ------
+      8,264      MODO            モード               모드          模式
+      8,286      TIPO DE STICK   スティック種類           스틱 종류       摇杆类型
+      8,308      TAMAÑO STICK    スティック大きさ          스틱 크기       摇杆大小
+      8,330      ESTÁTICO        固定                고정          固定
+      8,352      DINÁMICO        追従                동적          跟随
+      8,374      PEQUEÑO         小                 작게          小
+      8,396      MEDIO           中                 보통          中
+      8,418      GRANDE          大                 크게          大
+      8,440      ANALÓGICO       アナログ              아날로그        模拟
+      8,462      DIGITAL         デジタル              디지털         数字
+
+What the values mean, in case a wording seems off: STATIC — the stick stays in
+place, DYNAMIC — it appears under the finger. For Japanese and Chinese the
+words were chosen by meaning: 固定 "fixed", 追従 and 跟随 "follows the finger".
+
+How much fits. The native density is about 9 pixels per Cyrillic or Latin
+letter, about 14 per CJK character. The boxes are deliberately roomy, but the
+limit comes not from the box but from the paper:
+
+    item names  — ink no longer than 90 pixels
+    values      — ink no longer than 70 pixels
+
+Any longer and the lettering runs off the edge of the paper sheet in the game.
+Long translations such as «РАЗМЕР СТИКА» (Russian "STICK SIZE") or
+«ДИНАМИЧНЫЙ» (Russian "DYNAMIC") will have to be drawn condensed; the English
+artists do the same themselves — their STICK TYPE runs at 7.4 pixels per
+character.
+
+Lettering height — 12-15 pixels, as in the English sample.
+
+
+HOW TO DRAW SO IT MATCHES THE NATIVE LETTERING
+==============================================
+
+Ink (54,47,45) at full opacity. The edge in the same shade at an alpha of
+about 102, half-tones 15-19%.
+
+Draw strictly at 100%. At any other zoom the image lands between texels and
+shimmers when scrolling.

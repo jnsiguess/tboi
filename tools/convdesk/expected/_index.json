@@ -1,0 +1,273 @@
+{
+ "made": "2026-10-05 15:39",
+ "tools": {
+  "modport.py": "3e3703a30ca997fa34fe7a3cf17350a05c282f7f5225a219ae547fa8f6dec9a5",
+  "modport.js": "8e419000f1ab111c913a76a98189145ba3e926c916412a362593b4c6a0a7d2c7",
+  "gameref.bin": "f025abd275294ede0822aa4dc38b8a36a833104eead1f45fb9d8e97510f5d3c4",
+  "modport_node.js": "0dde426a98a7819d5afefb8911c6181e74e00198415436d8c942989775354838"
+ },
+ "game": "<project>\\work\\app\\repentance-resources",
+ "mods": {
+  "2489006943": {
+   "title": "Planetarium Chance [REP+]",
+   "zip": false,
+   "id": null,
+   "files": 0,
+   "report_lines": 9,
+   "js_agrees": true,
+   "js_differences": 0
+  },
+  "2492654252": {
+   "title": "Boss Rush Wave Counter [Rep | AB+]",
+   "zip": true,
+   "id": "boss-rush-wave-counter",
+   "files": 4,
+   "report_lines": 11,
+   "js_agrees": true,
+   "js_differences": 0
+  },
+  "2575911103": {
+   "title": "The Specialist for Good Items",
+   "zip": true,
+   "id": "specialistforgooditems",
+   "files": 92,
+   "report_lines": 54,
+   "js_agrees": true,
+   "js_differences": 0
+  },
+  "2603224299": {
+   "title": "Completion Mark Reminder",
+   "zip": true,
+   "id": "completion-mark-reminder",
+   "files": 3,
+   "report_lines": 7,
+   "js_agrees": true,
+   "js_differences": 0
+  },
+  "2635267643": {
+   "title": "'Enhanced Boss Bars",
+   "zip": true,
+   "id": "enhanced-boss-bars",
+   "files": 339,
+   "report_lines": 28,
+   "js_agrees": true,
+   "js_differences": 0
+  },
+  "2729900570": {
+   "title": "Stats+",
+   "zip": false,
+   "id": null,
+   "files": 0,
+   "report_lines": 24,
+   "js_agrees": true,
+   "js_differences": 0
+  },
+  "2934904934": {
+   "title": "!!TBOI: Reflashed",
+   "zip": true,
+   "id": "reflashrp",
+   "files": 5334,
+   "report_lines": 655,
+   "js_agrees": true,
+   "js_differences": 0
+  },
+  "3033565322": {
+   "title": "Range fix for Bag of Crafting",
+   "zip": false,
+   "id": null,
+   "files": 0,
+   "report_lines": 8,
+   "js_agrees": true,
+   "js_differences": 0
+  },
+  "3033566163": {
+   "title": "Range fix for Bones & Sword",
+   "zip": false,
+   "id": null,
+   "files": 0,
+   "report_lines": 9,
+   "js_agrees": true,
+   "js_differences": 0
+  },
+  "3762477930": {
+   "title": "bark n fart on death",
+   "zip": true,
+   "id": "bark-n-fart-on-death",
+   "files": 4,
+   "report_lines": 6,
+   "js_agrees": true,
+   "js_differences": 0
+  },
+  "3767257666": {
+   "title": "johnRodClip",
+   "zip": true,
+   "id": "johnrodclip",
+   "files": 2,
+   "report_lines": 4,
+   "js_agrees": true,
+   "js_differences": 0
+  },
+  "3767645746": {
+   "title": "excuse me intro cutscene",
+   "zip": true,
+   "id": "excuse-me-intro",
+   "files": 3,
+   "report_lines": 8,
+   "js_agrees": true,
+   "js_differences": 0
+  },
+  "3768277690": {
+   "title": "svati song of the chase",
+   "zip": true,
+   "id": "svati-song-of-the-chase",
+   "files": 3,
+   "report_lines": 6,
+   "js_agrees": true,
+   "js_differences": 0
+  },
+  "3779425856": {
+   "title": "Pickup Pop-ups",
+   "zip": true,
+   "id": "pickup-popups",
+   "files": 67,
+   "report_lines": 41,
+   "js_agrees": true,
+   "js_differences": 0
+  },
+  "3781483233": {
+   "title": "greed_chance",
+   "zip": true,
+   "id": "greed_chance",
+   "files": 3,
+   "report_lines": 10,
+   "js_agrees": true,
+   "js_differences": 0
+  },
+  "3782698829": {
+   "title": "Tainted Samson Berserk Meter",
+   "zip": true,
+   "id": "berserk",
+   "files": 6,
+   "report_lines": 10,
+   "js_agrees": true,
+   "js_differences": 0
+  },
+  "3783134747": {
+   "title": "Slime Rancher Slimes Instead of Bloodclots",
+   "zip": true,
+   "id": "a-slime-rancher-clots",
+   "files": 8,
+   "report_lines": 6,
+   "js_agrees": true,
+   "js_differences": 0
+  },
+  "3785517165": {
+   "title": "Mewgenics Styled Boss Intro Screen",
+   "zip": true,
+   "id": "mewgenicsbosssplashscreen",
+   "files": 4,
+   "report_lines": 8,
+   "js_agrees": true,
+   "js_differences": 0
+  },
+  "3793943585": {
+   "title": "Resprited Item/Trinket Icons",
+   "zip": true,
+   "id": "deathitemresprite",
+   "files": 2,
+   "report_lines": 8,
+   "js_agrees": true,
+   "js_differences": 0
+  },
+  "3794486410": {
+   "title": "Sam & Max as Jacob & Esau",
+   "zip": true,
+   "id": "sam-n-max",
+   "files": 98,
+   "report_lines": 15,
+   "js_agrees": true,
+   "js_differences": 0
+  },
+  "3797506645": {
+   "title": "Tear Consistency Fix",
+   "zip": true,
+   "id": "consistent-tear-costumes",
+   "files": 904,
+   "report_lines": 40,
+   "js_agrees": true,
+   "js_differences": 0
+  },
+  "3797840835": {
+   "title": "MeiMei Dance For Good Items",
+   "zip": true,
+   "id": "meimei-dance-for-good-items",
+   "files": 5,
+   "report_lines": 11,
+   "js_agrees": true,
+   "js_differences": 0
+  },
+  "3808568136": {
+   "title": "!!!Low HP Music",
+   "zip": true,
+   "id": "low-hp",
+   "files": 2,
+   "report_lines": 7,
+   "js_agrees": true,
+   "js_differences": 0
+  },
+  "836319872": {
+   "title": "!!~External item descriptions",
+   "zip": true,
+   "id": "external-item-descriptions",
+   "files": 74,
+   "report_lines": 24,
+   "js_agrees": true,
+   "js_differences": 0
+  },
+  "844555963": {
+   "title": "Dance Mat",
+   "zip": true,
+   "id": "dance-mat",
+   "files": 2,
+   "report_lines": 8,
+   "js_agrees": true,
+   "js_differences": 0
+  },
+  "reflashed-ported": {
+   "title": "!!TBOI: Reflashed",
+   "zip": true,
+   "id": "reflashrp",
+   "files": 5334,
+   "report_lines": 527,
+   "js_agrees": true,
+   "js_differences": 0
+  },
+  "example-mod": {
+   "title": "Example Mod",
+   "zip": false,
+   "id": null,
+   "files": 0,
+   "report_lines": 9,
+   "js_agrees": true,
+   "js_differences": 0
+  },
+  "synthetic": {
+   "title": "Synthetic rules (tools/umdesk/test_converters.py)",
+   "zip": true,
+   "id": "synthetic-rules",
+   "files": 5,
+   "report_lines": 14,
+   "js_agrees": true,
+   "js_differences": 0
+  },
+  "cooler-3361519802": {
+   "title": "Cooler Completion Marks [REP+]",
+   "zip": true,
+   "id": "cooler_completion_marks_rep",
+   "files": 4,
+   "report_lines": 6,
+   "js_agrees": true,
+   "js_differences": 0
+  }
+ }
+}

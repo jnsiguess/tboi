@@ -1,0 +1,159 @@
+{
+  "mode": {
+    "x": 8,
+    "y": 264,
+    "w": 115,
+    "h": 20,
+    "height": 14,
+    "animation": "TouchMode",
+    "layer": "16",
+    "frames": [
+      0
+    ],
+    "X": -55,
+    "limit": 85
+  },
+  "stick type": {
+    "x": 8,
+    "y": 288,
+    "w": 115,
+    "h": 20,
+    "height": 12,
+    "animation": "PenOpacity",
+    "layer": "16",
+    "frames": [
+      0
+    ],
+    "X": -80,
+    "limit": 110
+  },
+  "stick size": {
+    "x": 8,
+    "y": 312,
+    "w": 115,
+    "h": 20,
+    "height": 12,
+    "animation": "Rumble",
+    "layer": "16",
+    "frames": [
+      0
+    ],
+    "X": -80,
+    "limit": 110
+  },
+  "static": {
+    "x": 8,
+    "y": 336,
+    "w": 95,
+    "h": 20,
+    "height": 11,
+    "animation": "PenOpacity",
+    "layer": "18",
+    "frames": [
+      0
+    ],
+    "X": 17,
+    "limit": 82
+  },
+  "dynamic": {
+    "x": 8,
+    "y": 360,
+    "w": 95,
+    "h": 20,
+    "height": 11,
+    "animation": "PenOpacity",
+    "layer": "18",
+    "frames": [
+      1
+    ],
+    "X": 17,
+    "limit": 82
+  },
+  "small": {
+    "x": 8,
+    "y": 384,
+    "w": 95,
+    "h": 20,
+    "height": 15,
+    "animation": "Rumble",
+    "layer": "18",
+    "frames": [
+      0
+    ],
+    "X": 39,
+    "limit": 60
+  },
+  "medium": {
+    "x": 8,
+    "y": 408,
+    "w": 95,
+    "h": 20,
+    "height": 13,
+    "animation": "Rumble",
+    "layer": "18",
+    "frames": [
+      1
+    ],
+    "X": 39,
+    "limit": 60
+  },
+  "big": {
+    "x": 8,
+    "y": 432,
+    "w": 95,
+    "h": 20,
+    "height": 13,
+    "animation": "Rumble",
+    "layer": "18",
+    "frames": [
+      2
+    ],
+    "X": 39,
+    "limit": 60
+  },
+  "analogue": {
+    "x": 8,
+    "y": 456,
+    "w": 95,
+    "h": 20,
+    "height": 15,
+    "animation": "TouchMode",
+    "layer": "18",
+    "frames": [
+      0,
+      1
+    ],
+    "X": 33,
+    "limit": 66
+  },
+  "digital": {
+    "x": 8,
+    "y": 480,
+    "w": 95,
+    "h": 20,
+    "height": 14,
+    "animation": "TouchMode",
+    "layer": "18",
+    "frames": [
+      2
+    ],
+    "X": 33,
+    "limit": 66
+  },
+  "aim lock": {
+    "x": 0,
+    "y": 192,
+    "w": 96,
+    "h": 32,
+    "height": 13,
+    "offset": 3
+  },
+  "found hud": {
+    "x": 0,
+    "y": 32,
+    "w": 112,
+    "h": 32,
+    "height": 14,
+    "offset": 0
+  }
+}

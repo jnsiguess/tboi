@@ -1,0 +1,51 @@
+apply plugin: 'com.android.application'
+
+android {
+    namespace 'ru.isaac.port'
+    compileSdk 35
+    ndkVersion "27.0.12077973"
+
+    defaultConfig {
+        // The identity the phone knows the port by. The Java package (and with
+        // it every JNI name) stays as it was: an application id is separate
+        // from a namespace, and renaming the namespace would rename all the
+        // native entry points for nothing.
+        applicationId "com.tboi.rebirth"
+        minSdk 26
+        targetSdk 35
+        // The port carries the version of the build it is made from: the iOS
+        // release is 1.4, and a port that said 0.1 next to it only invited the
+        // question which of the two a tester was holding.
+        versionCode 26
+        versionName "1.777"
+        ndk { abiFilters 'arm64-v8a' }        // the game image is arm64 only
+        // 16 KB per page: that is how newer Android devices live, while our
+        // library was aligned to four and the system showed an incompatibility
+        // notice. The ready-made libc++_shared from the NDK has long been
+        // aligned; ours lagged behind only because of the default.
+        externalNativeBuild {
+            cmake {
+                arguments "-DANDROID_STL=c++_shared",
+                          "-DANDROID_SUPPORT_FLEXIBLE_PAGE_SIZES=ON"
+            }
+        }
+    }
+    externalNativeBuild { cmake { path "src/main/cpp/CMakeLists.txt" } }
+    buildTypes {
+        debug { debuggable true }
+        // the private build: signed with the debug key so that it simply installs
+        release {
+            debuggable false
+            minifyEnabled false
+            signingConfig signingConfigs.debug
+        }
+    }
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_17
+        targetCompatibility JavaVersion.VERSION_17
+    }
+    // the image and the resource packs are stored as they are: compression
+    // would stop the image being read directly, and unpacking two and a half
+    // gigabytes would take twice as long
+    androidResources { noCompress 'arm64', 'pak' }
+}

@@ -1,0 +1,68 @@
+{
+ "label": "2492654252",
+ "title": "Boss Rush Wave Counter [Rep | AB+]",
+ "source": "Z:/Games/Steam/steamapps/workshop/content/250900\\2492654252",
+ "input": "%TEMP%\\convdesk\\inputs\\2492654252.zip",
+ "input_digest": "cdb4f00cd3a8cb46c52ee4c39d9bf44b9250eefed3cde1f8022ee7cec4bd3d9e",
+ "tools": {
+  "modport.py": "3e3703a30ca997fa34fe7a3cf17350a05c282f7f5225a219ae547fa8f6dec9a5",
+  "modport.js": "8e419000f1ab111c913a76a98189145ba3e926c916412a362593b4c6a0a7d2c7",
+  "gameref.bin": "f025abd275294ede0822aa4dc38b8a36a833104eead1f45fb9d8e97510f5d3c4",
+  "modport_node.js": "0dde426a98a7819d5afefb8911c6181e74e00198415436d8c942989775354838"
+ },
+ "zip": true,
+ "id": "boss-rush-wave-counter",
+ "report": [
+  "modport report",
+  "",
+  "     4  dropped",
+  "     1  kept",
+  "",
+  "dropped  main.lua: the port runs no scripts; whatever the script did is not carried",
+  "dropped  6 files beside the card (.gitignore, README.md, icon.jpg, mcm screenshot.png, ...): not read by the port",
+  "dropped  .git/ (25 files): not read by the port",
+  "dropped  bossrushwavecounter/ (4 files): not read by the port (scripts)",
+  "kept     resources/gfx/ui/wavebar.anm2: new to the game (a mod's own animation)",
+  ""
+ ],
+ "files": {
+  "mod.json": {
+   "size": 2900,
+   "sha256": "363bb4850b45710f03faeea0207fe942a6862a365ef312dd22cd54c88d37c18a",
+   "json": {
+    "id": "boss-rush-wave-counter",
+    "name": "Boss Rush Wave Counter [Rep | AB+]",
+    "version": "1.11",
+    "author": "Unknown",
+    "description": "[h1]WHAT DOES IT DO?[/h1]\nThis quality-of-life mod adds a wave counter similar to Greed Mode to the HUD for Boss Rush!\n\n[h1]MOD CONFIG MENU[/h1]\nThis mod supports Mod Config Menu! Get it [url=https://steamcommunity.com/sharedfiles/filedetails/?id=2487535818]here[/url]!\n\nWith Mod Config Menu, you will be able to customise the Boss Rush Wave Counter even further by:\n[list]\n[*]Changing the RGB values in the counters text\n\n[*]Using custom presets to make moving the counter into juuuuuust the right spot even easier\n\n[*]Enabling a custom \"Boss Bar\" preset to put the counter right in place of the Boss HP Bar, and move it out of the way during the fight\n\n[*]Using custom UI Scaling to change the counter's size\n[/list]\n\n[h1]HOW DO I MOVE THE COUNTER?[/h1]\n[olist]\n[*]First you need to be in Boss Rush. I find the easiest way to do this is to start up any challange from the main menu since achievements are locked during challanges so you won't accidentally unlock anything. Next open the console with \"~\" and run the following commands \"stage 5\" to put you on Depths/Necropolis 1, \"giveitem k5\" to give yourself and emperor card, and \"debug 10\" so you don't have to spend time fighting any bosses. Exit the console, use the emperor card, and go to the next floor. Once on Depths/Necropolis 2, give yourself another emperor card and use it. Now you can enter the Boss Rush room.\n\n[*]When you're in the Boss Rush room, to adjust the position of the counter, hold \"/\" on your keyboard to enter Edit Mode. You'll know you're in Edit Mode when there's big red text in the middle of your screen that says \"Edit Mode\".\n\n[*]When you're in Edit Mode, use the arrow keys on your keyboard to move the counter, and let go of \"/\" once you are happy.\n\n[*]Now the position of the counter will be saved and you can exit back to the main menu. The position of the counter can always be changed again like this as long as you are in the Boss Rush room.\n\n[*]If you ever want to reset the counter to its default position, make sure you are in the Boss Rush room, and press \".\"\n[/olist]\n\n[h1]IMPORTANT[/h1]\nTHIS MOD WORKS WITH REPENTANCE however it has only been coded and tested to work with Afterbirth+. I currently do not own a copy of Repentance to test this mod on, however it is currently compatible unless anything in the code changes. With that being said, if anything doesn't work with Repentance, I will try my hardest to fix it, but until I have a pc and a copy of the game, nothing is certain.\n\n[h1]WANT TO VIEW THE CODE?[/h1]\nHead over to the mod's official GitHub page [url=https://github.com/AaronCohen21/BossRushWaveCounter]here[/url] if you want to see how the mod works and look at the code behind it."
+   }
+  },
+  "resources/gfx/ui/skull.png": {
+   "size": 347,
+   "sha256": "c47f1debfb3a574ba9e739ac35bf57dcaee55cdbe48f30f856365658eac0c1b2",
+   "wh": [
+    22,
+    21
+   ],
+   "pixels": "2abd192a97f186dded1a2c37e09a1fce36ee0573333081f51692435deda04fcb"
+  },
+  "resources/gfx/ui/wavebar.anm2": {
+   "size": 1179,
+   "sha256": "2678dd7061194e9e3dc96e6640cac77791d57265ecd915e365366e6af55e9345",
+   "tree": "690825fdfccfa400713e46eb5037a4ec93b183fd24e24e0e076a63ee1d4faa88"
+  },
+  "resources/gfx/ui/wavebar.png": {
+   "size": 550,
+   "sha256": "a5a153f47b9a8401d0212fd2ed0d135b7814b352718532d82d142d24fc4c398c",
+   "wh": [
+    64,
+    32
+   ],
+   "pixels": "0ead817a3e6b806ec12ef9452eb0e4755bd2064339d17b84388e3e89ea9daeab"
+  }
+ },
+ "js": {
+  "agrees": true,
+  "differences": []
+ }
+}

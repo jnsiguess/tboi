@@ -1,0 +1,36 @@
+{
+  "id": "settings-sample",
+  "name": { "en": "Settings Sample", "ru": "Пример настроек", "de": "Einstellungsbeispiel" },
+  "version": "v1.0",
+  "author": "Isaac port desk",
+  "description": {
+    "en": "Three settings: a switch, a choice and a number. Each turns on a layer of options/ over the mod's files.",
+    "ru": "Три настройки: переключатель, выбор и число. Каждая включает слой options/ поверх файлов мода."
+  },
+  "settings": [
+    {
+      "key": "blood-tears",
+      "kind": "switch",
+      "label": { "en": "Blood tears", "ru": "Кровавые слёзы" },
+      "default": false
+    },
+    {
+      "key": "style",
+      "kind": "choice",
+      "label": { "en": "Isaac style", "ru": "Рисовка Айзека" },
+      "values": [
+        { "value": "classic", "label": { "en": "Classic", "ru": "Классика" } },
+        { "value": "clean", "label": { "en": "Clean", "ru": "Чистая" } },
+        { "value": "retro", "label": { "en": "Retro", "ru": "Ретро" } }
+      ],
+      "default": "clean"
+    },
+    {
+      "key": "outline",
+      "kind": "number",
+      "label": { "en": "Outline width", "ru": "Толщина обводки" },
+      "min": 0, "max": 3, "step": 1,
+      "default": 1
+    }
+  ]
+}

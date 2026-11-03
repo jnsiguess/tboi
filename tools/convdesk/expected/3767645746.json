@@ -1,0 +1,51 @@
+{
+ "label": "3767645746",
+ "title": "excuse me intro cutscene",
+ "source": "Z:/Games/Steam/steamapps/workshop/content/250900\\3767645746",
+ "input": "%TEMP%\\convdesk\\inputs\\3767645746.zip",
+ "input_digest": "31f579d50e6eeafc97da571b243064a5f4f201d90fa740759a392c5b2a0c43ba",
+ "tools": {
+  "modport.py": "3e3703a30ca997fa34fe7a3cf17350a05c282f7f5225a219ae547fa8f6dec9a5",
+  "modport.js": "8e419000f1ab111c913a76a98189145ba3e926c916412a362593b4c6a0a7d2c7",
+  "gameref.bin": "f025abd275294ede0822aa4dc38b8a36a833104eead1f45fb9d8e97510f5d3c4",
+  "modport_node.js": "0dde426a98a7819d5afefb8911c6181e74e00198415436d8c942989775354838"
+ },
+ "zip": true,
+ "id": "excuse-me-intro",
+ "report": [
+  "modport report",
+  "",
+  "     1  dropped",
+  "     1  kept",
+  "",
+  "dropped  1 files beside the card (icon.png): not read by the port",
+  "kept     resources/cutscenes.xml: replaces the game's whole",
+  ""
+ ],
+ "files": {
+  "mod.json": {
+   "size": 131,
+   "sha256": "331eaa4b0858b3a17ed948c36788530c40862ac9bc72ef617feca1bd15731c17",
+   "json": {
+    "id": "excuse-me-intro",
+    "name": "excuse me intro cutscene",
+    "version": "1.1",
+    "author": "Unknown",
+    "description": ""
+   }
+  },
+  "resources/cutscenes.xml": {
+   "size": 7140,
+   "sha256": "56965d534edcbbc283bb859b91d058545b06d73a85b439a284add5e35df7d115",
+   "tree": "5e331e2f0c5c3c84762deb046cb8322ac597ec5a5ac0a4ac4a12c1c90e917c60"
+  },
+  "resources/gfx/cutscenes/exuce-me-isaac-intro.ogv": {
+   "size": 7129521,
+   "sha256": "7c7a59bab009c65c6856ff6c8c87a2dbe0157f20dfc9ff7e9da620e37b00d4c3"
+  }
+ },
+ "js": {
+  "agrees": true,
+  "differences": []
+ }
+}

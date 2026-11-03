@@ -1,0 +1,31 @@
+{
+ "label": "3033566163",
+ "title": "Range fix for Bones & Sword",
+ "source": "Z:/Games/Steam/steamapps/workshop/content/250900\\3033566163",
+ "input": "%TEMP%\\convdesk\\inputs\\3033566163.zip",
+ "input_digest": "d500f2ab57a0539d40597a7c43de651d73384c5dc1bbbcabb34211161483fa48",
+ "tools": {
+  "modport.py": "3e3703a30ca997fa34fe7a3cf17350a05c282f7f5225a219ae547fa8f6dec9a5",
+  "modport.js": "8e419000f1ab111c913a76a98189145ba3e926c916412a362593b4c6a0a7d2c7",
+  "gameref.bin": "f025abd275294ede0822aa4dc38b8a36a833104eead1f45fb9d8e97510f5d3c4",
+  "modport_node.js": "0dde426a98a7819d5afefb8911c6181e74e00198415436d8c942989775354838"
+ },
+ "zip": false,
+ "id": null,
+ "report": [
+  "modport report",
+  "",
+  "     2  dropped",
+  "     1  refused",
+  "",
+  "dropped  main.lua: the port runs no scripts; whatever the script did is not carried",
+  "dropped  1 files beside the card (mod_config_menu.lua): not read by the port",
+  "refused  nothing here for the port: a script mod; the port runs no scripts - no zip written, the installer would refuse it (\"has no file the port reads\")",
+  ""
+ ],
+ "files": {},
+ "js": {
+  "agrees": true,
+  "differences": []
+ }
+}

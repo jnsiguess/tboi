@@ -1,0 +1,3060 @@
+{
+ "label": "2635267643",
+ "title": "'Enhanced Boss Bars",
+ "source": "Z:/Games/Steam/steamapps/workshop/content/250900\\2635267643",
+ "input": "%TEMP%\\convdesk\\inputs\\2635267643.zip",
+ "input_digest": "3fb376c74c3510ec041a74e58f87ee888accb80b89a56a961c8c34d7e7192508",
+ "tools": {
+  "modport.py": "3e3703a30ca997fa34fe7a3cf17350a05c282f7f5225a219ae547fa8f6dec9a5",
+  "modport.js": "8e419000f1ab111c913a76a98189145ba3e926c916412a362593b4c6a0a7d2c7",
+  "gameref.bin": "f025abd275294ede0822aa4dc38b8a36a833104eead1f45fb9d8e97510f5d3c4",
+  "modport_node.js": "0dde426a98a7819d5afefb8911c6181e74e00198415436d8c942989775354838"
+ },
+ "zip": true,
+ "id": "enhanced-boss-bars",
+ "report": [
+  "modport report",
+  "",
+  "     2  dropped",
+  "    12  kept",
+  "     5  note",
+  "     1  warning",
+  "",
+  "dropped  main.lua: the port runs no scripts; whatever the script did is not carried",
+  "dropped  6 files beside the card (README.md, bossbar_data.lua, config.lua, credits.txt, ...): not read by the port",
+  "kept     resources/gfx/ui/bosshp_icons/statuseffect_icon.anm2: the mod's own - the port's code reads this file by layer and frame number from the copy the game loads, the mod's included, and steps aside where it has not what it needs; the sheets it cuts are the mod's layout, whatever their size",
+  "kept     resources/gfx/ui/bosshp_bars/bosses/beast_bosshp_overlay.anm2: new to the game (a mod's own animation)",
+  "kept     resources/gfx/ui/bosshp_bars/bosses/colostomia_bosshp.anm2: new to the game (a mod's own animation)",
+  "kept     resources/gfx/ui/bosshp_bars/bosses/delirium_bosshp.anm2: new to the game (a mod's own animation)",
+  "kept     resources/gfx/ui/bosshp_bars/bosses/dogma_bosshp.anm2: new to the game (a mod's own animation)",
+  "kept     resources/gfx/ui/bosshp_bars/custom_bosshp.anm2: new to the game (a mod's own animation)",
+  "kept     resources/gfx/ui/bosshp_bars/default_overlay.anm2: new to the game (a mod's own animation)",
+  "kept     resources/gfx/ui/bosshp_icons/bosshp_icon_32px.anm2: new to the game (a mod's own animation)",
+  "kept     resources/gfx/ui/bosshp_icons/bosshp_icon_64px.anm2: new to the game (a mod's own animation)",
+  "kept     resources/gfx/ui/bosshp_icons/final/dogma_icon.anm2: new to the game (a mod's own animation)",
+  "kept     resources/gfx/ui/bosshp_icons/final/dogma_icon_64.anm2: new to the game (a mod's own animation)",
+  "kept     resources/gfx/ui/bosshp_icons/statuseffect_icon.anm2: new to the game (a mod's own animation)",
+  "note     resources/gfx/ui/ui_bosshealthbar.png: 1x1 where the game has 150x64 (no anm2 or fnt of the mod cuts it)",
+  "note     resources/gfx/ui/ui_bosshealthbar_mini.png: 1x1 where the game has 150x64 (no anm2 or fnt of the mod cuts it)",
+  "note     resources/gfx/ui/ui_bosshealthbar_static.png: 1x1 where the game has 150x64 (no anm2 or fnt of the mod cuts it)",
+  "note     resources/gfx/ui/ui_bosshealthbar_stone.png: 1x1 where the game has 64x32 (no anm2 or fnt of the mod cuts it)",
+  "note     333 files are the port's built-in's own, byte for byte (bossbar_design1(serious max).png, bossbar_design2(Spyro).png, bossbar_design3(Hesitant Hatterene).png, ...) - the mod's copies change nothing",
+  "warning  resources/gfx/ui/bosshp_bars/default_overlay.anm2: replaces the port's built-in's own file (a different one) - the built-in will draw the mod's; the PC version of a mod the port has built in is not needed",
+  ""
+ ],
+ "files": {
+  "mod.json": {
+   "size": 2513,
+   "sha256": "d58ad67ca7ccf6bed55fa6d791aa31f8dd590a27b370adbfaccdfecf718c1d2a",
+   "json": {
+    "id": "enhanced-boss-bars",
+    "name": "'Enhanced Boss Bars",
+    "version": "1.33",
+    "author": "Unknown",
+    "description": "A mod that reimagines boss health bars to be more unique, customizeable and responsive.\n\n[h2]Features[/h2]\n[list]\n [*] Unique icons for every boss\n [*] Over 45 special bar designs\n [*] One bar for each individual boss and boss segement\n [*] Fully customizable\n [*] Full modding support\n[/list]\n\n[h2]Known Issues[/h2]\n[b]Double bars / vanilla and modded bars visible[/b]\nDouble bars can be caused by changing the games language, the very first installation of this mod or a conflicting mod.\nThis mod currently is incompatible with any other mod that alters the boss bar design in any way. This issue manifests itself that the vanilla boss hp bar is visible alongside the bars added by this mod.\n\nTo fix this issue, if you have, deactivate all other mods that alter the boss bar design, and restart the game.\n\n[b]Incompatible mods[/b]\n[list]\n [*] Any mod that alters the boss bars\n[/list]\n\n[h2]Configuration[/h2]\nYou can use '[url=https://steamcommunity.com/sharedfiles/filedetails/?id=2681875787]Mod config Menu[/url]' to customize this mod!\nAlternatively you can edit the config.lua file found in the mod files.\n\n[h2]Special Thanks[/h2]\n[list]\n [*] [b]Ferry[/b] for some awesome icons\n [*] [b]Sillst[/b] for the awesome mod thumbnail\n [*] [b]minichibis[/b] for letting us use their \"[url=https://steamcommunity.com/sharedfiles/filedetails/?id=1674940041]Agnry Faic Boss Bar[/url]\" icons\n [*] [b]Spyro[/b] for letting us use their \"[url=https://steamcommunity.com/sharedfiles/filedetails/?id=839983526]Better Boss Bar[/url]\" design\n [*] [b]Hatterene[/b] for letting us use their \"[url=https://steamcommunity.com/sharedfiles/filedetails/?id=834198360]Better boss Bar[/url]\" design\n [*] [b]serious max[/b] for letting us use their \"[url=https://steamcommunity.com/sharedfiles/filedetails/?id=1431781210]Boss Health bar background[/url]\" design\n [*] [b]TheSavageHybrid[/b] for letting us use their \"[url=https://steamcommunity.com/sharedfiles/filedetails/?id=2515917831]Paper Healthbars[/url]\" design\n [*] [b]hippocrunchy[/b] for letting us use their \"[url=https://steamcommunity.com/sharedfiles/filedetails/?id=2530772508]Alt Horsemen (+War)[/url]\" mod as an example\n[/list]\n\n[img]https://i.imgur.com/P6a8043.png[/img] [url=https://github.com/wofsauge/Enhanced-Boss-Bars]Any Problems or want to help? Visit this project on GitHub[/url]"
+   }
+  },
+  "resources/gfx/ui/bosshp_bars/bossbar_design1(serious max).png": {
+   "size": 23170,
+   "sha256": "94b880a06e2ea91216744e4b033f968ed1afe503010d4e45c1eab9e06c536fe7",
+   "wh": [
+    160,
+    256
+   ],
+   "pixels": "3bc2d2f60ffc6fe195c9f94a56712fa5d5d03cd943634c65d40db616d2124148"
+  },
+  "resources/gfx/ui/bosshp_bars/bossbar_design2(Spyro).png": {
+   "size": 23765,
+   "sha256": "e6fb3e54bf513dbf339a0ffa8718b39c7c0eccfe9c981850bea9cab9edbb8525",
+   "wh": [
+    160,
+    256
+   ],
+   "pixels": "0fbdc0e4cf5e4389168f48bd04c3d411a3892fe90f663906bc655f3145f3d21a"
+  },
+  "resources/gfx/ui/bosshp_bars/bossbar_design3(Hesitant Hatterene).png": {
+   "size": 23430,
+   "sha256": "a8aa960f777ffbf68c20bca625875445f9815618dadc1b974756e0ab34306128",
+   "wh": [
+    160,
+    256
+   ],
+   "pixels": "3bc62cd17e53d5c6a3d0af4551812c924c4f57937d3fed710f6163ab1f5a6845"
+  },
+  "resources/gfx/ui/bosshp_bars/bossbar_design4(TheSavageHybrid).png": {
+   "size": 23652,
+   "sha256": "5160c1a5d8f91bada6ca2212f871c66b5ef4eb335741bb373fb6240ee2b4372e",
+   "wh": [
+    160,
+    256
+   ],
+   "pixels": "30ae0bb99e177fd83a99a69c7901b83b8cdba12f40c82cfae4c370c86b8297e9"
+  },
+  "resources/gfx/ui/bosshp_bars/bossbar_design_abyss.png": {
+   "size": 22664,
+   "sha256": "d9d9bb0a5650e05464357c541802ed004e13849c3a2b7d48df1741820ed85921",
+   "wh": [
+    160,
+    256
+   ],
+   "pixels": "6ce3352a9104f8d990dd59f1827c3f7af0ac22fb9c2e0ae13265c814d5ca9c87"
+  },
+  "resources/gfx/ui/bosshp_bars/bossbar_design_bw.png": {
+   "size": 22269,
+   "sha256": "6b822293390afbe433d0a6cb0889386454985e24bdbae6e9c733ce4945b0fff4",
+   "wh": [
+    160,
+    256
+   ],
+   "pixels": "e7601cb6f6a4c61cb77256a8149ecaca2f2ba0b454103491412969f19e2546e9"
+  },
+  "resources/gfx/ui/bosshp_bars/bossbar_design_copper.png": {
+   "size": 23922,
+   "sha256": "484245674ce5c82030556a8a37e4b884923f10ff0cbb80b458b67e956a1bdb17",
+   "wh": [
+    160,
+    256
+   ],
+   "pixels": "fa967a6b4309f79cd9064d6cc01c3da696569b873c6a4147ead4f1f5141ed462"
+  },
+  "resources/gfx/ui/bosshp_bars/bossbar_design_dots.png": {
+   "size": 23202,
+   "sha256": "76ec67bf77e8f7f143c7150f99d2fea712b633583165f72caa3ca15b5e007ff3",
+   "wh": [
+    160,
+    256
+   ],
+   "pixels": "37766d5fa044c5df5ad703cd05fafb5409e692081cc9505196dce33d24bf442b"
+  },
+  "resources/gfx/ui/bosshp_bars/bossbar_design_etg.png": {
+   "size": 24668,
+   "sha256": "3f39c97ab62efe5517a8210e61bcce74884f74ee0a0f60eb102a14a9ba402eb8",
+   "wh": [
+    160,
+    256
+   ],
+   "pixels": "089ed32d9a2be2a9443eeb0eb95e491f7f11a501606379f04053f25d6c09572f"
+  },
+  "resources/gfx/ui/bosshp_bars/bossbar_design_flash.png": {
+   "size": 22187,
+   "sha256": "add2763c4771d20c551bea18d6e6e12134335e4f7807773525a06c735b7bc9d2",
+   "wh": [
+    160,
+    256
+   ],
+   "pixels": "4760093936ec6db90bb626dabf7057e5b3b31c5533edf12e388ba61fd6bacef5"
+  },
+  "resources/gfx/ui/bosshp_bars/bossbar_design_flip.png": {
+   "size": 22377,
+   "sha256": "3209feae2275de32ac6a1d973aad1f9969a696fd78028e2251f1d84abf1dced6",
+   "wh": [
+    160,
+    256
+   ],
+   "pixels": "03f2f0a6e388f5d1de176beb195a57eeda3b2cabfd364239590adb735d62ce4e"
+  },
+  "resources/gfx/ui/bosshp_bars/bossbar_design_isaachearts.png": {
+   "size": 23617,
+   "sha256": "b0b0a84d6a2395be5fa88a3a10db0a12f4ee76acb462fb08702fa545d446750d",
+   "wh": [
+    160,
+    256
+   ],
+   "pixels": "23d925e3c6e611811d44b5893afb4d633b6bc8987f269e46890fedf5530fcca1"
+  },
+  "resources/gfx/ui/bosshp_bars/bossbar_design_isaacheartsvertical.png": {
+   "size": 23641,
+   "sha256": "513d35018b5c4a865fd8a9a5d2b2d84153d59a84a33e4d5cd73be43b82a011c7",
+   "wh": [
+    160,
+    256
+   ],
+   "pixels": "a0d878cc34fec8449e496d2d5a06dc905d49ae7d267ed26adf6362b55f83ff83"
+  },
+  "resources/gfx/ui/bosshp_bars/bossbar_design_lilportal.png": {
+   "size": 22602,
+   "sha256": "b754cc8c2d85f079ef8ade4fef0ff828969dc4de978233bc362cbcaf9990a009",
+   "wh": [
+    160,
+    256
+   ],
+   "pixels": "592e5f83cb09ece6cc9f939512d5d0b4b45bb809a40ef51364f49b8c1b040901"
+  },
+  "resources/gfx/ui/bosshp_bars/bossbar_design_magicmushroom.png": {
+   "size": 22747,
+   "sha256": "d2fec63aa97c83a84274054e199ecdceef874731c0390771d7c9126cd26d0562",
+   "wh": [
+    160,
+    256
+   ],
+   "pixels": "045ead8c34d2c238259868e5f208efd872a8514d113be5a4923ba6f3eb2f11ee"
+  },
+  "resources/gfx/ui/bosshp_bars/bossbar_design_minecraft.png": {
+   "size": 22663,
+   "sha256": "1577442e8ea465a49adb6b7043b2ad55a8e66b839bac44e30ee159a9070bfb05",
+   "wh": [
+    160,
+    256
+   ],
+   "pixels": "2befd616a9d4d01ad1776682b139dbcb0cb2a09311bfa1b9e51ce024d1011c1a"
+  },
+  "resources/gfx/ui/bosshp_bars/bossbar_design_minecraftvertical.png": {
+   "size": 22721,
+   "sha256": "d675a8e2a12d6cd5fff39f4953be3e0da4f9bad364d8b64134dc399ae0b1ed50",
+   "wh": [
+    160,
+    256
+   ],
+   "pixels": "d7b174783110066120749ac0865b05a37405b5faf2844690e3a217ae2928ab0b"
+  },
+  "resources/gfx/ui/bosshp_bars/bossbar_design_planetarium.png": {
+   "size": 24377,
+   "sha256": "87690a3ee12f4de64d5955515968e2d48dbbcef38ef0886a508e0fb7b9a90205",
+   "wh": [
+    160,
+    256
+   ],
+   "pixels": "130f00d5bdcf93e59f9d5c273c21724c1e50aefcd251ef37bf859e635a034952"
+  },
+  "resources/gfx/ui/bosshp_bars/bossbar_design_playdoughcookie.png": {
+   "size": 23090,
+   "sha256": "4ce055a1de6509f99b7dddf94b095ba07c90b1be8b8f61c710d7ae6a70a61bef",
+   "wh": [
+    160,
+    256
+   ],
+   "pixels": "e67b0a118f70a7aaec1e3ac9096ccc37a6b5fb37c681e76efcb4fa743d7b9b11"
+  },
+  "resources/gfx/ui/bosshp_bars/bossbar_design_revelation.png": {
+   "size": 22613,
+   "sha256": "dbfa42f6bc03ab6c3e6b1472126f78b6f5c3020d38b66d9c28cb373ba11cbbf5",
+   "wh": [
+    160,
+    256
+   ],
+   "pixels": "a38e706d1979ceb50b4f99bf965708b2a092c3a919d923aae8e673ce75ab4872"
+  },
+  "resources/gfx/ui/bosshp_bars/bossbar_design_spintowin.png": {
+   "size": 22992,
+   "sha256": "2b42a95ca6d2863d0ab3097b21ba18bb71925397a47c2e4511fb97dccc7e7b93",
+   "wh": [
+    160,
+    256
+   ],
+   "pixels": "c846c489d3a1b9471ee96f15cee7f55551cedd80298e7182bf323bed4f85ac25"
+  },
+  "resources/gfx/ui/bosshp_bars/bossbar_design_terraria.png": {
+   "size": 26374,
+   "sha256": "300691d70091f0346f1b863bb43b8dc5c7f58fc97d7c65cc778ba4b46410949a",
+   "wh": [
+    160,
+    256
+   ],
+   "pixels": "0ef7dc7aeffcc9ddb8b8b806596d942b7fad1d2161f146186413f29a70bb32fe"
+  },
+  "resources/gfx/ui/bosshp_bars/bossbar_design_tmtrainer.png": {
+   "size": 26054,
+   "sha256": "a56fef0781ec48e3bdc890f88586ff63270044732922dad369d8652af951e8e0",
+   "wh": [
+    320,
+    256
+   ],
+   "pixels": "36550c0d3a836b878ee2f8418ce7ef2f4975a07ad3184d299420e7d752a87168"
+  },
+  "resources/gfx/ui/bosshp_bars/bossbar_design_void.png": {
+   "size": 22657,
+   "sha256": "3fe383aa8dedb904a10a990781d033b4f74de67a0cea0fa723146e9538092df2",
+   "wh": [
+    160,
+    256
+   ],
+   "pixels": "dee7ec9ef556c9fb1d193273bda4767f67aff28be443b2d480d4554aa37b9442"
+  },
+  "resources/gfx/ui/bosshp_bars/bossbar_notches.png": {
+   "size": 21885,
+   "sha256": "0f6e340838ca6c1d6ea879f0a17c9a1bf7ddae3f62561e27267895c2d231c780",
+   "wh": [
+    160,
+    256
+   ],
+   "pixels": "37a51331e875b43d12240c5f776cd644aac3ad94bba0e809a8ab8680086363e2"
+  },
+  "resources/gfx/ui/bosshp_bars/bossbar_notches_paper.png": {
+   "size": 9524,
+   "sha256": "e9a0a39428486fe170c6805ea2f9a3d4b0c4c006886e30557284155d4b3d324c",
+   "wh": [
+    160,
+    256
+   ],
+   "pixels": "071bde5ef05fb45d429b2c3ea90dcf02a06a37cd7aef0ac086befa5fe16cedd1"
+  },
+  "resources/gfx/ui/bosshp_bars/bossbar_notches_terraria.png": {
+   "size": 21904,
+   "sha256": "4f3a322fc38b023546ade8ae4104b18852cf70812af70e6a2ff4568b2c9dc4b4",
+   "wh": [
+    160,
+    256
+   ],
+   "pixels": "f5e81c5ce30773cceda8775bac9d2accf4340ff67bf293f20cfe72319934278f"
+  },
+  "resources/gfx/ui/bosshp_bars/bosses/beast_bosshp_overlay.anm2": {
+   "size": 22947,
+   "sha256": "7ae3e3b0e3db0519c487251b957971e3d5e080343bb9757c9119f47093634002",
+   "tree": "6ebf1e1db4e84846c39911a2ad76ac795cf656bae0fd6a01420df829a1cea29b"
+  },
+  "resources/gfx/ui/bosshp_bars/bosses/bossbar_beast.png": {
+   "size": 22458,
+   "sha256": "ca47fb26ca611b03177c479eb52b6caa46fe0220b4be713d6ae2addd3658ed6b",
+   "wh": [
+    160,
+    256
+   ],
+   "pixels": "744efe1980a3471da21ed9cddd4a3e60db1765a78315c2f2043adfa098fb9551"
+  },
+  "resources/gfx/ui/bosshp_bars/bosses/bossbar_colostomia.png": {
+   "size": 38684,
+   "sha256": "4ee4f22614ff96fc2d49939636298d2efaca96c3573378a25ef40a4544b3813d",
+   "wh": [
+    320,
+    256
+   ],
+   "pixels": "cbdef28418c1f292232d0a6fcdc41919f2ed1ac5fb10526a7ac97746662a2a6b"
+  },
+  "resources/gfx/ui/bosshp_bars/bosses/bossbar_colostomia_vertical.png": {
+   "size": 37220,
+   "sha256": "62afdb6743cf6c0d06a5ba6de0c1c807bb1e44f12819099b57b412076e84b353",
+   "wh": [
+    320,
+    256
+   ],
+   "pixels": "cd6a2006e84acc36635cef6863d0caeeb82bcae5ce6ccd534c1f14c48e4f25f3"
+  },
+  "resources/gfx/ui/bosshp_bars/bosses/bossbar_darkesau.png": {
+   "size": 24021,
+   "sha256": "56b55b976aea90ef520ebb734158f4675f1bb8efadee96ab7a75bcda1c72cab7",
+   "wh": [
+    160,
+    256
+   ],
+   "pixels": "9cfcfd77cce9019cda55b5e762a7b17ebf4183e142fc0f68c41f3ec893e7186e"
+  },
+  "resources/gfx/ui/bosshp_bars/bosses/bossbar_delirium.png": {
+   "size": 24743,
+   "sha256": "3a0b09c093b5bd1b23c2f725efbf5a00df92fa97ace54c5346a91d51c21602d5",
+   "wh": [
+    160,
+    256
+   ],
+   "pixels": "284f8cc6cceeb12158f5a888045be33961315c2e047ec1c736624c2e62b58f40"
+  },
+  "resources/gfx/ui/bosshp_bars/bosses/bossbar_hush.png": {
+   "size": 23232,
+   "sha256": "858e21475229105b070d74788daf56e55d1893b96a99762acc3eeb0b84f755f6",
+   "wh": [
+    160,
+    256
+   ],
+   "pixels": "599149373df2beccd24cdb3cbdadf48b39a8bf8c3042ac4d5734083cdd352668"
+  },
+  "resources/gfx/ui/bosshp_bars/bosses/bossbar_mega_satan.png": {
+   "size": 23710,
+   "sha256": "f46b86cdc908c9394c81ea79d454a9aa0ab3f99e2517f3e1c54bf7b62b8ca7f1",
+   "wh": [
+    160,
+    256
+   ],
+   "pixels": "0d809dc5c6f47433ddb46af877aa2ca9fb1b1176f2d6f38e023957cf2e344db5"
+  },
+  "resources/gfx/ui/bosshp_bars/bosses/bossbar_mega_satan_phase2.png": {
+   "size": 23558,
+   "sha256": "edf69a79e496ae32dbfe4d05e98589bd73f5bf90d7d1b9897ba3281ec5a0def2",
+   "wh": [
+    160,
+    256
+   ],
+   "pixels": "c7a7f15335b6eb716abac495f3e9b4ce9ec1a36bad3d97cf789441fe72a766eb"
+  },
+  "resources/gfx/ui/bosshp_bars/bosses/bossbar_mother.png": {
+   "size": 22674,
+   "sha256": "d1d24c8e2e9d829bde2e552d873558dcb4b11ecffaf6d3d4ab999cea1d6728a6",
+   "wh": [
+    160,
+    256
+   ],
+   "pixels": "0159f1e6d04fa55e121133f9ae662a88cf238ee7100764e455172b083b64480e"
+  },
+  "resources/gfx/ui/bosshp_bars/bosses/bossbar_overlay_beast.png": {
+   "size": 21607,
+   "sha256": "6fed8dcda7e069b7d62dea2a626885cc9ee85f535021d12c776555c566240044",
+   "wh": [
+    100,
+    34
+   ],
+   "pixels": "3c32650efbb588bb673734c50303045b3c653621454a625d974594f2ff0f84c0"
+  },
+  "resources/gfx/ui/bosshp_bars/bosses/bossbar_overlay_mother.png": {
+   "size": 23459,
+   "sha256": "c5400b42b65e2d46a8c3552b1b93bff158dabd94a7a671da0305b65e8fc6aab3",
+   "wh": [
+    160,
+    256
+   ],
+   "pixels": "1eec75aa133fd66f065738f38b5579a6f4eb756713fce0819f1648c9258bc2b7"
+  },
+  "resources/gfx/ui/bosshp_bars/bosses/bossbar_steven.png": {
+   "size": 22337,
+   "sha256": "360e74f08215a934408716f01c81878dd70b12b9af02445fb224da47e4e6e132",
+   "wh": [
+    160,
+    256
+   ],
+   "pixels": "e3f8226830f34ec789c41ef3b91785341de4ca477fed2f2223e570ad05c3087c"
+  },
+  "resources/gfx/ui/bosshp_bars/bosses/bossbar_ultra_greed.png": {
+   "size": 22891,
+   "sha256": "4fa60d9413ffd50f047d1f3c1e67d6c00469675bd158df7bdd63a73b51979e44",
+   "wh": [
+    160,
+    256
+   ],
+   "pixels": "f85ec9ab9650b433a2eca78b67122c3baf89239c1800d0a9fc341dd89e1057ef"
+  },
+  "resources/gfx/ui/bosshp_bars/bosses/bossbar_ultra_greedier.png": {
+   "size": 23297,
+   "sha256": "2ab313f0ad3e6e932e8c3dd1e3cd65bf270abb5b6a6bb1bafdd5526f3a8cd4fe",
+   "wh": [
+    160,
+    256
+   ],
+   "pixels": "593b5bc8b3a06a91d37e9d5899e1999987c095f3ffefa88fd95cd148611bae6a"
+  },
+  "resources/gfx/ui/bosshp_bars/bosses/colostomia_bosshp.anm2": {
+   "size": 13152,
+   "sha256": "ee5979f8243e9f7fef7a55afc21b91c2a74b6eaa0b6aac6d8ffb3d0d748f8a4f",
+   "tree": "48ac2e3568d627559806a71682d37158f5812c1580bf29dc6b9fa74abf579071"
+  },
+  "resources/gfx/ui/bosshp_bars/bosses/delirium_bosshp.anm2": {
+   "size": 12364,
+   "sha256": "46682422bae69f34b64c8fd9fcc353c9bf95e68c7f27f0b0083d3d003d4db2af",
+   "tree": "24bb22bccbaf2bbacd49cd824cd2e48c0e580ae1147515122bbe7c822edaf4fd"
+  },
+  "resources/gfx/ui/bosshp_bars/bosses/dogma_bar.png": {
+   "size": 38735,
+   "sha256": "dc1ced19d2946ff192a8c2f14dbf29b83da877cb055f685eff408a5536dd7448",
+   "wh": [
+    320,
+    256
+   ],
+   "pixels": "099127a083c5ce2b5b3ef404574c10c0be7afd711701da668fc1477b3ff40fa3"
+  },
+  "resources/gfx/ui/bosshp_bars/bosses/dogma_bosshp.anm2": {
+   "size": 13125,
+   "sha256": "d6fa998e2a589dd4f1d5d0d253db92bdbd588e9817ddd5664953b6e5a4ad03fe",
+   "tree": "43a07a41f5c31eb380c234789b49685673cbc71315d55ffe77cc93d2d8c1b2cb"
+  },
+  "resources/gfx/ui/bosshp_bars/custom_bosshp.anm2": {
+   "size": 12369,
+   "sha256": "2c7e0f6e2c77c632bc0d9a1cec2bb86ee32755e0be5a49f7e2228304d9977b71",
+   "tree": "8a03fb27fe1ad9ff2ca4ab919d7fdd3b2307e7d912b222f67a31bc38ac66e618"
+  },
+  "resources/gfx/ui/bosshp_bars/custom_bosshp_default.png": {
+   "size": 23440,
+   "sha256": "2f0bf3c7f96c63d6818930a2564ecd84bd2d2ed18acd303b82b61cb36008e490",
+   "wh": [
+    160,
+    256
+   ],
+   "pixels": "0fc4553807848dc76a08c3756a90d67c20b93b27233fc3192dae1a58b5bc3bdb"
+  },
+  "resources/gfx/ui/bosshp_bars/default_overlay.anm2": {
+   "size": 5435,
+   "sha256": "da940533afbe53003da852565d034a0bbcca5cbd3862cea399e2484e8da6f213",
+   "tree": "c94416325d6a1ecb149b06c002729061e82dfac65bff405316fb18e06a20ab48"
+  },
+  "resources/gfx/ui/bosshp_icons/agnry_faic.png": {
+   "size": 479,
+   "sha256": "0c778a0137a4ca56a6c52456e69776df974b4b526cb0a22a67a169952b5166b9",
+   "wh": [
+    32,
+    32
+   ],
+   "pixels": "b832cab23f4629ff5bdbd69fe7d1f30b5c98f723e265274d9689d14031c3c4bf"
+  },
+  "resources/gfx/ui/bosshp_icons/agnry_faic_miniboss.png": {
+   "size": 455,
+   "sha256": "5f3bf29e4df852c6e48c5c23656e2a1bf97446e526bbd5059457695d82acdadc",
+   "wh": [
+    32,
+    32
+   ],
+   "pixels": "e6ba9036af597c0e628eaafe9f9ba4a71c06ef4218d4a16315e68731d3b030eb"
+  },
+  "resources/gfx/ui/bosshp_icons/altpath/chimera_body.png": {
+   "size": 659,
+   "sha256": "e106e411b436554b26c06424e9ecaf82ca9830fab28a10dff546c18e62cf48dd",
+   "wh": [
+    32,
+    32
+   ],
+   "pixels": "a76cc84a21e884b31a71fef3dfa65dc8f03f2f4979ca9b8aaccfc64599bd04a7"
+  },
+  "resources/gfx/ui/bosshp_icons/altpath/chimera_head.png": {
+   "size": 6325,
+   "sha256": "d2ebce77b79ee688ea8e45c8f151dce102d80349f4c69e534243af81039bfe18",
+   "wh": [
+    32,
+    32
+   ],
+   "pixels": "cfa55eb647ec2743eb146ca75c73390bd969005aa2de1ea67f6cfde684ceabe3"
+  },
+  "resources/gfx/ui/bosshp_icons/altpath/clog.png": {
+   "size": 641,
+   "sha256": "2bad05720327adbe7001a9c4e8c568fb099d9c037961d1e15f9b851e602092d7",
+   "wh": [
+    32,
+    32
+   ],
+   "pixels": "6dfa3d4c340d9ac1b54ed5f4403d79b886538dcd9741aca51440239112701e6f"
+  },
+  "resources/gfx/ui/bosshp_icons/altpath/clutch.png": {
+   "size": 499,
+   "sha256": "623521a720bcdf83a6b4d2f6f0dffca1a3bfa885e7f66cf7c7638f76c7704985",
+   "wh": [
+    32,
+    32
+   ],
+   "pixels": "07bb2068710e1ca113f28dfae21157dee01bae2d5625cc48ba8a53f78be0f52d"
+  },
+  "resources/gfx/ui/bosshp_icons/altpath/clutch_clicketyclack.png": {
+   "size": 485,
+   "sha256": "dcd9c0307a1b20fda4b69ef4cdf2bd9dda036b4590be041b3b4c848857686211",
+   "wh": [
+    32,
+    32
+   ],
+   "pixels": "51cfdd04ef57b7c575c0128120f9412062b0971233403e026b74a9cacf31b70e"
+  },
+  "resources/gfx/ui/bosshp_icons/altpath/colostomia.png": {
+   "size": 751,
+   "sha256": "292e6598052ec9a69b55d10b0eb435893eaf6a630ea1bcdfd8e82c039da5d62a",
+   "wh": [
+    32,
+    32
+   ],
+   "pixels": "322f85b4ff747d15ee5fd9f5860d4c6514b973cc053d135a95e01324c71496bf"
+  },
+  "resources/gfx/ui/bosshp_icons/altpath/colostomia_phase2.png": {
+   "size": 620,
+   "sha256": "c736babc31d156a9f3ba208627f2496851cf51db7dd851d74c31465c61808c80",
+   "wh": [
+    32,
+    32
+   ],
+   "pixels": "22f4d979ddba70aa0df2bfa986452f02d2368a4ff82d639256a0160ba36f1f37"
+  },
+  "resources/gfx/ui/bosshp_icons/altpath/great_gideon.png": {
+   "size": 14898,
+   "sha256": "1bc50553bb2ed896001186abd48ade2ebdb535cbf6f100c16c683ed8e82fab27",
+   "wh": [
+    32,
+    32
+   ],
+   "pixels": "aa75b85c13a46f031b6b7be173542006c9b1a6891412c96af1b22d215f5ae8c8"
+  },
+  "resources/gfx/ui/bosshp_icons/altpath/hornfel.png": {
+   "size": 546,
+   "sha256": "18e11e187aabf66ef08e6fc589751b6a407b956ac0365c2e88db54f205e14df5",
+   "wh": [
+    32,
+    32
+   ],
+   "pixels": "8bae380c25455388858510f21f3e3ca7696ef69b1b942034e7b52d7d110e5bdb"
+  },
+  "resources/gfx/ui/bosshp_icons/altpath/hornfel_phase2.png": {
+   "size": 689,
+   "sha256": "d4f6f889428c248de6e0b7618990fd4426535fb91ee95e3908fc320bb20092c3",
+   "wh": [
+    32,
+    32
+   ],
+   "pixels": "6f48a9d52d3fa286c3a0db209caefbea9c60da8dbfc6322ad83a8597cb7ea01a"
+  },
+  "resources/gfx/ui/bosshp_icons/altpath/horny_boys.png": {
+   "size": 717,
+   "sha256": "c846698cea9acf6bd355f223cea4603ed24c8c5aa227870726a15bfb1a68d13b",
+   "wh": [
+    32,
+    32
+   ],
+   "pixels": "47813d59beaa2a84029a281d56774a2d0de664e754da6e920d5391d0c5cfa628"
+  },
+  "resources/gfx/ui/bosshp_icons/altpath/lil_blub.png": {
+   "size": 6109,
+   "sha256": "914bfdd375336a2bd4950b8a2cb12be5c464a31c6f40d6dc95d5c141ef13ae47",
+   "wh": [
+    32,
+    32
+   ],
+   "pixels": "f5204447d652b317c77be44be9d847ff2047508783c893ed6e5a95be670d76bd"
+  },
+  "resources/gfx/ui/bosshp_icons/altpath/lil_blub_dross.png": {
+   "size": 6109,
+   "sha256": "6ecc938339874795721c471f60f626bd6357b58ea6780f7ea5bb585cb128f1de",
+   "wh": [
+    32,
+    32
+   ],
+   "pixels": "d376506d2a14d105806d488848478fd7795b0ed50e0030b35d08a61c3a7b0c40"
+  },
+  "resources/gfx/ui/bosshp_icons/altpath/min_min.png": {
+   "size": 6125,
+   "sha256": "9164a888cd4afd803f374a8789c19ea29b2f2cc5edb6b6be89cb4fc56d08bda2",
+   "wh": [
+    32,
+    32
+   ],
+   "pixels": "e5326b4c90e0194b5fc16f85e22289ac16581173f5f10b48459c0d53694ae0c8"
+  },
+  "resources/gfx/ui/bosshp_icons/altpath/min_min_phase2.png": {
+   "size": 458,
+   "sha256": "aa6b749c90f770a857e724e6b4af74def0a5485945c6dd579f1a5200887025ab",
+   "wh": [
+    32,
+    32
+   ],
+   "pixels": "40082f905443d131cb5ef555365c4c59dd9b48cd008bcee34c7d9e46f5eb1614"
+  },
+  "resources/gfx/ui/bosshp_icons/altpath/rainmaker.png": {
+   "size": 547,
+   "sha256": "b963b50894b4f932c4587ce8a94cd0f5cd45d7169a881a472112f1eb9a72f9e3",
+   "wh": [
+    32,
+    32
+   ],
+   "pixels": "d34a9296da35199e3aba6a05af9bccf8dddf59f538df7ae32e0446e7a5a59dcb"
+  },
+  "resources/gfx/ui/bosshp_icons/altpath/rotgut_balls.png": {
+   "size": 682,
+   "sha256": "1d5b1a8a4d554483aeb2da9d856f1abad6e06f16e5aa20678b59eece35ec2edc",
+   "wh": [
+    32,
+    32
+   ],
+   "pixels": "136181468144b8075633d7798bd03d05945af88687206b69cd250166c5bfc482"
+  },
+  "resources/gfx/ui/bosshp_icons/altpath/rotgut_maggot.png": {
+   "size": 464,
+   "sha256": "dfd041406cb64824c994514b371729ae9d9a071f1a989fc5e8f99bfb09823735",
+   "wh": [
+    32,
+    32
+   ],
+   "pixels": "99aef561fe3941b17c8b00fdbd6f4c7b8ef4d54e050f3cd1c55330716de4fc2d"
+  },
+  "resources/gfx/ui/bosshp_icons/altpath/rotgut_mouth.png": {
+   "size": 720,
+   "sha256": "38cc9c6c420e135444b9adbd09a39f741e8124e948785d495a1dc5e9bf770d6c",
+   "wh": [
+    32,
+    32
+   ],
+   "pixels": "1e06ffd10efc3c26bf178b3f0e6983a456d11b868c21986a36a3c7b5a9e42ee5"
+  },
+  "resources/gfx/ui/bosshp_icons/altpath/singe.png": {
+   "size": 580,
+   "sha256": "979dc2de02b7a586e0bc1c47163dba775a82e91fd192984963a02af77a8031e3",
+   "wh": [
+    32,
+    32
+   ],
+   "pixels": "b75ae4228acecc6fada1ca3d9cafc80f7673e7540d01541a37fac1a53cc7c78f"
+  },
+  "resources/gfx/ui/bosshp_icons/altpath/siren.png": {
+   "size": 760,
+   "sha256": "e5292da5f25ff7b1632b3b783af4d4269582213d3447bd55b00c50cd3c491789",
+   "wh": [
+    32,
+    32
+   ],
+   "pixels": "b0fbc292cd2b73bf769b34044f9db802c2f837d95484e02f4fc3003aa7217bb2"
+  },
+  "resources/gfx/ui/bosshp_icons/altpath/the_heretic.png": {
+   "size": 762,
+   "sha256": "2806d0e9fb70248fe8f0d9b5f824cc06310a3c1c46e8b639dc858a0697fdb69d",
+   "wh": [
+    32,
+    32
+   ],
+   "pixels": "4a3eb05098da37d94c39a7afe3a4ce0e53c38ef85f69ec23e357938a5e8e91b6"
+  },
+  "resources/gfx/ui/bosshp_icons/altpath/the_scourge.png": {
+   "size": 717,
+   "sha256": "6e965259491649f7ec9a763f5fe35a3d85e822f656d966afee4325714578edfe",
+   "wh": [
+    32,
+    32
+   ],
+   "pixels": "246f1cdaee61bc7c42c37021200401d1a9cdacac07047a57cadee968ec2f41d1"
+  },
+  "resources/gfx/ui/bosshp_icons/altpath/the_shell.png": {
+   "size": 729,
+   "sha256": "fabf42f6c0d2bb093608fdf35b554f18707be7b9636888747d8774d0b40d314b",
+   "wh": [
+    32,
+    32
+   ],
+   "pixels": "4f6315247dc0e5414d51b09151e00f9de09f9f1ee9563ba118fe1be98b3a01bf"
+  },
+  "resources/gfx/ui/bosshp_icons/altpath/the_shell_segment.png": {
+   "size": 6693,
+   "sha256": "ce38fc44065c7b5bc4ed229a57fb486bdb6fdcbcc08f78e4506843c9efd3ebbe",
+   "wh": [
+    32,
+    32
+   ],
+   "pixels": "414238147c903822d928bd36ba26db038d5b2e4f529c440a3cbe3deff059c966"
+  },
+  "resources/gfx/ui/bosshp_icons/altpath/the_shell_segment_exposed(butt).png": {
+   "size": 407,
+   "sha256": "acf3a79df96d670e391d6584ad4e1ef20bcbd20476973c72d0e8c5113424e60d",
+   "wh": [
+    32,
+    32
+   ],
+   "pixels": "07a13595d83ef4156b710b6df4d9021a9869fad1ae88acd754267b256d87af45"
+  },
+  "resources/gfx/ui/bosshp_icons/altpath/the_shell_segment_exposed(face).png": {
+   "size": 428,
+   "sha256": "96eff600c43379023114fba025079a62c6675fe9e83b4b2d0bc8e5a2196a23db",
+   "wh": [
+    32,
+    32
+   ],
+   "pixels": "88584012fac5507b1cfbe3a115f884ddc564e035c9d014b76536d3353d5e56cd"
+  },
+  "resources/gfx/ui/bosshp_icons/altpath/the_visage_heart.png": {
+   "size": 562,
+   "sha256": "556c92ca6da87a0b3c1135333d8a062a2466530cdc6917efc03e4ad62cf034b2",
+   "wh": [
+    32,
+    32
+   ],
+   "pixels": "aa258212c52bbd120aa9bb527b8ab078d4104f25f9d4416db2ac8df5943e513f"
+  },
+  "resources/gfx/ui/bosshp_icons/altpath/the_visage_heart_phase2.png": {
+   "size": 621,
+   "sha256": "17031b5fe5207c4689d36f6ac160d99fd8088f748debdfc46170a61656ca5c77",
+   "wh": [
+    32,
+    32
+   ],
+   "pixels": "c88d5f3192bb2c2edb77806f91807c4564a36d994ba71bec3d9cdaa540dc7186"
+  },
+  "resources/gfx/ui/bosshp_icons/altpath/the_visage_mask.png": {
+   "size": 581,
+   "sha256": "faacbaf1b0380952caaf776abbe26eea4ff07be842f574afa645f204fa4788ac",
+   "wh": [
+    32,
+    32
+   ],
+   "pixels": "4e04f2ed75a69ed451d9a9063a83f74df20cea7da8b9cc4b9fd2217fdeb4f22a"
+  },
+  "resources/gfx/ui/bosshp_icons/altpath/the_visage_mask_phase2.png": {
+   "size": 579,
+   "sha256": "9e50ebcaa58448f7adaae41c6eb29e37be1b98a07a39e1669c6533b1f6cec4ce",
+   "wh": [
+    32,
+    32
+   ],
+   "pixels": "2ee30cb5641e7fa4ee739caf9ffb6aa9af2bf45f5c4a3ff5a3015a6817fdc9de"
+  },
+  "resources/gfx/ui/bosshp_icons/altpath/tuff_twin.png": {
+   "size": 683,
+   "sha256": "f4dec5d9a8c5430d306c22a0938dde6c51c1ed2680501b06d12c8ffd978e5143",
+   "wh": [
+    32,
+    32
+   ],
+   "pixels": "3b1e1971756b3be4d700cd46bfbe499a8c3cd86cdf67af36de525bc250db65f9"
+  },
+  "resources/gfx/ui/bosshp_icons/altpath/tuff_twin_exposed.png": {
+   "size": 691,
+   "sha256": "362c1a4e08d480147ee009c8a4f0ca6d7ce31724276322034a0d9dadf0de3800",
+   "wh": [
+    32,
+    32
+   ],
+   "pixels": "172d54910153fa8e244575838d55ab9dc10e1e971157ef52cfc7b9eb0fa87890"
+  },
+  "resources/gfx/ui/bosshp_icons/altpath/tuff_twin_segment.png": {
+   "size": 6670,
+   "sha256": "534e46d5850aec2dd56888d39edb1be20c42db7edb401583a545d625003675fe",
+   "wh": [
+    32,
+    32
+   ],
+   "pixels": "ae3048f7f31a7bbdbab7488a3c4a3ca53b8dfb8d72be65a76a5427c111991a3d"
+  },
+  "resources/gfx/ui/bosshp_icons/altpath/tuff_twin_segment_butt.png": {
+   "size": 18815,
+   "sha256": "106bda192bfe3fdc048fa45dd5e54aa4af33645c833a9d3c6dd270a76bcb423a",
+   "wh": [
+    32,
+    32
+   ],
+   "pixels": "022ce8e6847a61e01e1ecffb58355f0f19e20343511abbe23e46ccb48956cd2e"
+  },
+  "resources/gfx/ui/bosshp_icons/altpath/tuff_twin_segment_exposed.png": {
+   "size": 6566,
+   "sha256": "b50ceb33d0f02608ffa77b95abd11358a6de3557fbcda20f6b4f1e0be896fd7d",
+   "wh": [
+    32,
+    32
+   ],
+   "pixels": "632b5c832814cd36078ef828ef0f1bea316f3ac4f17c7627568aa4bb49120eb8"
+  },
+  "resources/gfx/ui/bosshp_icons/altpath/tuff_twin_segment_exposed_butt.png": {
+   "size": 18826,
+   "sha256": "0571409b1ea2175e98155e2536d6988391ad4d0954cb9553006fe98b29022908",
+   "wh": [
+    32,
+    32
+   ],
+   "pixels": "38b77a19fa6473abb25bbd6835670b46ccf0503741e5ee9b991bf627c5dc577a"
+  },
+  "resources/gfx/ui/bosshp_icons/altpath/turdlet.png": {
+   "size": 466,
+   "sha256": "fbf40b022e40d154a07dc9981d81e56cf654b1679fa6ceb180fd587f2b18ca89",
+   "wh": [
+    32,
+    32
+   ],
+   "pixels": "37296a95723663ecbdef13a14cb66891e23adc1ad8263de6b9e67de80bcb1d56"
+  },
+  "resources/gfx/ui/bosshp_icons/altpath/wormwood.png": {
+   "size": 710,
+   "sha256": "b681fb3bbd78a56d11f337c8afd5730116e1335696398d09f46e02a975590bd8",
+   "wh": [
+    32,
+    32
+   ],
+   "pixels": "f4e5d930dec5495a87f1f37a89759dab191c50ba854ce28a1ff1561ba53f813b"
+  },
+  "resources/gfx/ui/bosshp_icons/altpath/wormwood_corpse.png": {
+   "size": 660,
+   "sha256": "1a35ca748d50854ac61b2c57f805b92948c4b03b02912a519823ca9ce53673a8",
+   "wh": [
+    32,
+    32
+   ],
+   "pixels": "f5c4b246d81bd7eebd30e55eaee58c5bdd550836e21e4961413cc94e0cf1bcc2"
+  },
+  "resources/gfx/ui/bosshp_icons/altpath/wormwood_dross.png": {
+   "size": 710,
+   "sha256": "dd699f9450c6bc5172bdf8ee57c2eddd880f4ff63edadab053f536cc3b4a957d",
+   "wh": [
+    32,
+    32
+   ],
+   "pixels": "fb80a6d007ad1c70a7ed12e242eefce5d08ea9c467d33ac423c9902252c24e20"
+  },
+  "resources/gfx/ui/bosshp_icons/boss.png": {
+   "size": 19449,
+   "sha256": "49d2fee05e7329eb11da676de18c467d332916d269145d49540253144e40acb9",
+   "wh": [
+    32,
+    32
+   ],
+   "pixels": "60ef95db5d73a0a78cb0b84ffd5cb05d5a043a4273bb4d5380db0d9ba5001dea"
+  },
+  "resources/gfx/ui/bosshp_icons/bosshp_icon_32px.anm2": {
+   "size": 1179,
+   "sha256": "721d66193917e836995ac131db023040daa54148b7226020ea5705e86d4a1f31",
+   "tree": "8104592c79481f39293a7826c02303ad3554d2eae6fd41817b8480b1d05b1244"
+  },
+  "resources/gfx/ui/bosshp_icons/bosshp_icon_64px.anm2": {
+   "size": 1179,
+   "sha256": "8920ec81c84c9d24614cdcbe3ab934d0a7df16dbef9fc751829159309a2f9711",
+   "tree": "5f9ba0f655e103a6c7fa065967108192c093d9a0e4d8738d40a1abb8a0a108a3"
+  },
+  "resources/gfx/ui/bosshp_icons/chapter1/baby_plum.png": {
+   "size": 15330,
+   "sha256": "0451f6b3f7c6ed20f275c78aa30b716cbf3a3f891c97ea2cb874262dd68f267a",
+   "wh": [
+    32,
+    32
+   ],
+   "pixels": "35cf2cf3e8aa75594f40f5e28a0bea2bdceaf42a349765575ea753650d6d9dc5"
+  },
+  "resources/gfx/ui/bosshp_icons/chapter1/blighted_ovum.png": {
+   "size": 639,
+   "sha256": "ebd31bba26ab8bb84db5b0bb6ad7f13b5ece5671db23e6aba3da399c7359e50b",
+   "wh": [
+    32,
+    32
+   ],
+   "pixels": "b7039d8d140aba55b44ae6028310a0f0de9666b3c32364e5ca93e416071b576e"
+  },
+  "resources/gfx/ui/bosshp_icons/chapter1/dangle.png": {
+   "size": 6100,
+   "sha256": "fcbb8d64ad8ee9fcd778a2b150cc4be3e6b35c278fa85e591e85189adcc20350",
+   "wh": [
+    32,
+    32
+   ],
+   "pixels": "921a64154927b2acb34967a3b2424448655f7d59b236b22dac4e606556804859"
+  },
+  "resources/gfx/ui/bosshp_icons/chapter1/dingle.png": {
+   "size": 6029,
+   "sha256": "a773c1d1609eabb2484b849e35eece6167ebd171e79b6391308522152d077e5e",
+   "wh": [
+    32,
+    32
+   ],
+   "pixels": "c7bd7d1faf72cd7eec7fa6a543937e90312dfb2304566ddb631ade6648d0e401"
+  },
+  "resources/gfx/ui/bosshp_icons/chapter1/dingle_black.png": {
+   "size": 6042,
+   "sha256": "bb925544a6ad94c2af229eaa937bdfaf099301795eef477b6d774481bfaa1ec3",
+   "wh": [
+    32,
+    32
+   ],
+   "pixels": "8fe615eea3cb96129a9e39a0c3d9f43fe7cc6e44976c6a2b4d1f6832e774d26d"
+  },
+  "resources/gfx/ui/bosshp_icons/chapter1/dingle_red.png": {
+   "size": 6074,
+   "sha256": "36c7ed3f862ba479cb33981d37d5fc3bd66327263d17368f5808f572b47a273e",
+   "wh": [
+    32,
+    32
+   ],
+   "pixels": "c610118e8935784b6dcf74fe216099cdcbb3075ed2f34b2359c3c6c49789d439"
+  },
+  "resources/gfx/ui/bosshp_icons/chapter1/duke_of_flies.png": {
+   "size": 18355,
+   "sha256": "9fbcafb5227084be4d54e881a9c034368247b7b4a7126523ac89e6cab915a297",
+   "wh": [
+    32,
+    32
+   ],
+   "pixels": "1692a4a5e842f617ae2c294d3cc89a54a8ae6a757688598713fd9589d3365261"
+  },
+  "resources/gfx/ui/bosshp_icons/chapter1/duke_of_flies_green.png": {
+   "size": 6083,
+   "sha256": "128faca050e099a1446bc604a479a0bccddaf71b6e944c5b6a3da6daaf683978",
+   "wh": [
+    32,
+    32
+   ],
+   "pixels": "7d4a02f7a37e5c1e843352558351dd96deef609427105a96bbc5c9e78f2a0b16"
+  },
+  "resources/gfx/ui/bosshp_icons/chapter1/duke_of_flies_orange.png": {
+   "size": 6143,
+   "sha256": "58820f3b7784c0a9288a7b15761cea7f317246ea9564a742771865111941ee95",
+   "wh": [
+    32,
+    32
+   ],
+   "pixels": "5347234730b965aafd7789a5b698726c75d00708f0547a27a901de0858474dce"
+  },
+  "resources/gfx/ui/bosshp_icons/chapter1/gemini_contusion.png": {
+   "size": 515,
+   "sha256": "44f6db9c7516b09682bf7844309941f14dc9f74a3891efe858a0dcd543a183de",
+   "wh": [
+    32,
+    32
+   ],
+   "pixels": "ef5ad83b06a0dfc1197aa5ed89c327a83f86a69d8da5dd110b32614b213e3d90"
+  },
+  "resources/gfx/ui/bosshp_icons/chapter1/gemini_contusion_blue.png": {
+   "size": 515,
+   "sha256": "9b613828b34e7df9308c734bd3cf5cd8a361c80a57c8b0b6d2e65c8581a87c6f",
+   "wh": [
+    32,
+    32
+   ],
+   "pixels": "a3adde0b174f3676568151f18fdd06fc20b7d31498fb846704735bf1c8cf55e3"
+  },
+  "resources/gfx/ui/bosshp_icons/chapter1/gemini_contusion_green.png": {
+   "size": 522,
+   "sha256": "30cca1f8cc8a0686f8233536e43d35b46a1dd59e66ad3e8acc4c81c35adac98e",
+   "wh": [
+    32,
+    32
+   ],
+   "pixels": "def64851b33f9acc0ebe674ec9a6c523521a73bd2379b3a84cc05657231c2dba"
+  },
+  "resources/gfx/ui/bosshp_icons/chapter1/gemini_suture.png": {
+   "size": 459,
+   "sha256": "9854f100d30842ab779c985753b488c0e7270e40cd64bab806c23a0aeb8fe0c9",
+   "wh": [
+    32,
+    32
+   ],
+   "pixels": "5a3a896b0e5e7e960cd9405e7ebd4656f8b1cccd646a927c045428cceb036429"
+  },
+  "resources/gfx/ui/bosshp_icons/chapter1/gemini_suture_angry.png": {
+   "size": 531,
+   "sha256": "bf732a84467ac2aaeb8596176a38cb0b1d715cb7b7d5627ca5d1fa3b410e4f04",
+   "wh": [
+    32,
+    32
+   ],
+   "pixels": "3187f00e6e1b9fcb5fc737374d8efa2d79ceceb3c1e7c27e5ce314d58910f8d5"
+  },
+  "resources/gfx/ui/bosshp_icons/chapter1/gemini_suture_angry_blue.png": {
+   "size": 531,
+   "sha256": "bf732a84467ac2aaeb8596176a38cb0b1d715cb7b7d5627ca5d1fa3b410e4f04",
+   "wh": [
+    32,
+    32
+   ],
+   "pixels": "3187f00e6e1b9fcb5fc737374d8efa2d79ceceb3c1e7c27e5ce314d58910f8d5"
+  },
+  "resources/gfx/ui/bosshp_icons/chapter1/gemini_suture_angry_green.png": {
+   "size": 531,
+   "sha256": "bf732a84467ac2aaeb8596176a38cb0b1d715cb7b7d5627ca5d1fa3b410e4f04",
+   "wh": [
+    32,
+    32
+   ],
+   "pixels": "3187f00e6e1b9fcb5fc737374d8efa2d79ceceb3c1e7c27e5ce314d58910f8d5"
+  },
+  "resources/gfx/ui/bosshp_icons/chapter1/gemini_suture_blue.png": {
+   "size": 456,
+   "sha256": "8ab5acf4f06c4698d51dd1dcc3e7d5a3ad24810438a2133e5f07c23ea300d524",
+   "wh": [
+    32,
+    32
+   ],
+   "pixels": "ca1593c5fc60a41c1ee46dec41ee71fd44f18c7e59eed0c3c954ce116306d16d"
+  },
+  "resources/gfx/ui/bosshp_icons/chapter1/gemini_suture_green.png": {
+   "size": 459,
+   "sha256": "37d6dadc51730e56d4fe2cfc763da8ec72874491e0c48b65babba061eeb01651",
+   "wh": [
+    32,
+    32
+   ],
+   "pixels": "3a65d74b2e7b662a746360dca69f6552e64d2b4d0d34e9f07108ab1500444c09"
+  },
+  "resources/gfx/ui/bosshp_icons/chapter1/gurgling.png": {
+   "size": 6228,
+   "sha256": "c3e9847b596be5b4bc13f99a6c13a73870315983156fca2eb8b61c4aa15e3c37",
+   "wh": [
+    32,
+    32
+   ],
+   "pixels": "350f14c95fa64080a894819968c0c6ff6d3e86aadc2e7e2766761b8374a9c5af"
+  },
+  "resources/gfx/ui/bosshp_icons/chapter1/gurgling_black.png": {
+   "size": 6270,
+   "sha256": "706859449ab042386914aa3e1283e263dd535bb65b17150666a5a7bcbc1d66f9",
+   "wh": [
+    32,
+    32
+   ],
+   "pixels": "5787453db26505b96ca9f45217671d3139623d9a7d607e94edd4b082fd18613a"
+  },
+  "resources/gfx/ui/bosshp_icons/chapter1/gurgling_yellow.png": {
+   "size": 6214,
+   "sha256": "22785e48259f3bdc36083e5b83b0ba4081a800249e5765cdf9da33b6291db8d1",
+   "wh": [
+    32,
+    32
+   ],
+   "pixels": "fef2b40ac9dda045c97f872ca68b204f6588822a71091ae2af76c7da88d0740f"
+  },
+  "resources/gfx/ui/bosshp_icons/chapter1/larry jr.png": {
+   "size": 737,
+   "sha256": "cd7199f7cd4a383ef7a484779b65101f623ae1605ae926fa2e0ad6fb9a3b7445",
+   "wh": [
+    32,
+    32
+   ],
+   "pixels": "9cfc242f00240c0b88d896144d04da48cc222e7f1b2fae73146b6fa721a7465e"
+  },
+  "resources/gfx/ui/bosshp_icons/chapter1/larry jr_blue.png": {
+   "size": 736,
+   "sha256": "829fbdd38712fe2609f45eb5153d553f1168a937f10116ade49ba8ba13e47dfa",
+   "wh": [
+    32,
+    32
+   ],
+   "pixels": "3d0f154b00ef068aa05231518410f86cd2b8cb93effd84530096ad464218549d"
+  },
+  "resources/gfx/ui/bosshp_icons/chapter1/larry jr_green.png": {
+   "size": 742,
+   "sha256": "debc3748251639a29db6fd689ab10e0e36916ab56ffe308cdaac3e463a5ffbf3",
+   "wh": [
+    32,
+    32
+   ],
+   "pixels": "d41b4807c982c17cbac1abe49af359c4fb0c71ca08c4387baeb9b404f327ffcc"
+  },
+  "resources/gfx/ui/bosshp_icons/chapter1/larry jr_segment.png": {
+   "size": 18881,
+   "sha256": "5d46b5b3f0a2c7fff7074d82c369f84af615ee619aa9d3fb4b55fc3e8746870d",
+   "wh": [
+    32,
+    32
+   ],
+   "pixels": "501b0cdb21f182351c6ed3bf524b85ac1ac003cbf0e01f225b7e9920d48b3294"
+  },
+  "resources/gfx/ui/bosshp_icons/chapter1/larry jr_segment_blue.png": {
+   "size": 6594,
+   "sha256": "9152d282e704bb23e9b5c57d70131544af2078e1b86b523fc7307893db1f4e59",
+   "wh": [
+    32,
+    32
+   ],
+   "pixels": "752d98e961590ef82f5a5b02afa09d31930b88a608b189d599005c1d81fe22d7"
+  },
+  "resources/gfx/ui/bosshp_icons/chapter1/larry jr_segment_green.png": {
+   "size": 6590,
+   "sha256": "de1f556a47971e1cb1dc43fa8a63751331a900fb86a8e491316e3b17ad75f322",
+   "wh": [
+    32,
+    32
+   ],
+   "pixels": "e843467d5e78c3778e2634ccfc6b651c9ba9d123949d2d375e79d62031d45513"
+  },
+  "resources/gfx/ui/bosshp_icons/chapter1/little_horn.png": {
+   "size": 471,
+   "sha256": "c6d6cac667d3122b505a737f112d7e65ddb7d734711f7c0c65422fcf0d017cc9",
+   "wh": [
+    32,
+    32
+   ],
+   "pixels": "25404593a0a9aeb147cc3a7711391404941c067c067a622bf01653372b722587"
+  },
+  "resources/gfx/ui/bosshp_icons/chapter1/little_horn_black.png": {
+   "size": 347,
+   "sha256": "76ea23d8b84164e60e4e61c45708feb3e63dd651640fe29660216d961090cb0c",
+   "wh": [
+    32,
+    32
+   ],
+   "pixels": "077814450af4d92d2d2554c4a0d8c041b3e89861ba36cfdca4eb382366a8fc8d"
+  },
+  "resources/gfx/ui/bosshp_icons/chapter1/little_horn_orange.png": {
+   "size": 474,
+   "sha256": "139ef4f1eab300291cd24831b72cf5877643d5a25f9b14a7290cba40d2519f10",
+   "wh": [
+    32,
+    32
+   ],
+   "pixels": "3adbb17835fce6c6d1172a0bc7dd75ee43efe0cf8293684ad7234a7b9e440333"
+  },
+  "resources/gfx/ui/bosshp_icons/chapter1/monstro.png": {
+   "size": 498,
+   "sha256": "35ab570e9a81fc3f0d707e7a685e51f4e2175fd99e241a00e9631bc278951fd3",
+   "wh": [
+    32,
+    32
+   ],
+   "pixels": "1bc0dabff4435701941d6756c949d33b8ce3a797403626b673991fb357c78a70"
+  },
+  "resources/gfx/ui/bosshp_icons/chapter1/monstro_grey.png": {
+   "size": 482,
+   "sha256": "8b4249740f388e21fcb09a01f6ee80be5e302ec56ab2733f56ff9d14955ee2c8",
+   "wh": [
+    32,
+    32
+   ],
+   "pixels": "e10118d455934889eabc5f7cc45f4ae467f643fb5073a3aa2d993b5ac2b4a61a"
+  },
+  "resources/gfx/ui/bosshp_icons/chapter1/monstro_red.png": {
+   "size": 510,
+   "sha256": "0c469571184faf0a93f4e26e8326436abafb1e9c7cac593de73f5c698dad5644",
+   "wh": [
+    32,
+    32
+   ],
+   "pixels": "0c7eebc82b1f8af87f280934f7d462a65d02b0b956e10fe5c947a612f8979e60"
+  },
+  "resources/gfx/ui/bosshp_icons/chapter1/pin.png": {
+   "size": 6563,
+   "sha256": "52872265fc8db147882a890c818dbefb3df1b9f6991a118540b3fb216ffd3c42",
+   "wh": [
+    32,
+    32
+   ],
+   "pixels": "c1b109b41172d02b61bded8385927244a747cb24a34f523db972919a2b49cac5"
+  },
+  "resources/gfx/ui/bosshp_icons/chapter1/pin_grey.png": {
+   "size": 6564,
+   "sha256": "0456f9065fd4826935632cc734e294b76e9fee09aec5d465a60416cafd61ac17",
+   "wh": [
+    32,
+    32
+   ],
+   "pixels": "7b3f858e8938ce182f148ecacabdb695056bfa1bc946b4cb8fa18bc30fa44e19"
+  },
+  "resources/gfx/ui/bosshp_icons/chapter1/ragman.png": {
+   "size": 562,
+   "sha256": "3189df6a87d99454ca87fdfe5d5f65fc34ab894c96810873aeedcae09f9c4b8b",
+   "wh": [
+    32,
+    32
+   ],
+   "pixels": "63b00748eb0bf10cf50a29c3756262f998c84b7b5fa464bbb55e2e93b1cdb2a7"
+  },
+  "resources/gfx/ui/bosshp_icons/chapter1/ragman_black.png": {
+   "size": 540,
+   "sha256": "1bf2f48208312669e7c17ec43e752e5fb4dcd7d07acbde23ac309922b2faa352",
+   "wh": [
+    32,
+    32
+   ],
+   "pixels": "747653df93c984cb31806a20dd45471a79df3f760db6bdaa952249e47a1e0fe7"
+  },
+  "resources/gfx/ui/bosshp_icons/chapter1/ragman_red.png": {
+   "size": 575,
+   "sha256": "4f998e4cbc0f4b7efeb2cc14bd44141a1c203ee391f066a1ef891ca7e83eb0bb",
+   "wh": [
+    32,
+    32
+   ],
+   "pixels": "2df106d7ba5b98b92ab51d7797fd953dbf2a324345627a4dd2bc7bc56d673934"
+  },
+  "resources/gfx/ui/bosshp_icons/chapter1/steven_big.png": {
+   "size": 389,
+   "sha256": "7066577bc3f163bfc0203bf951e45224801f959c2735927b54dae0366a05d77b",
+   "wh": [
+    32,
+    32
+   ],
+   "pixels": "64f87339be000793c82c116b3c2ed59d759e6dcce786fe5e142f228de1a45dce"
+  },
+  "resources/gfx/ui/bosshp_icons/chapter1/steven_small.png": {
+   "size": 351,
+   "sha256": "163e5e1d7fc44b42a3cd4401d929e27e3e3dfd734d266873a7bcb24ef46e6c73",
+   "wh": [
+    32,
+    32
+   ],
+   "pixels": "d9dbe5a4ae9025b460fefdc6a9135294f353ddef02e14af64ce30931162ae0ed"
+  },
+  "resources/gfx/ui/bosshp_icons/chapter1/steven_small_angry.png": {
+   "size": 392,
+   "sha256": "af9078c9942af2ab390971d89c580ac6e2b80d5fd6e001c73415b0c8f309136b",
+   "wh": [
+    32,
+    32
+   ],
+   "pixels": "5264647b7e5509ad9f099a6e984a7c7230a4d818012d94623e01452fa6cede9c"
+  },
+  "resources/gfx/ui/bosshp_icons/chapter1/the_fallen.png": {
+   "size": 664,
+   "sha256": "8b1c1368e205141ee9b7aeb99effcc90ab0daace83b6712d4078fa7c634feb67",
+   "wh": [
+    32,
+    32
+   ],
+   "pixels": "a0464608bd7c7f65baa2c25aae79af1823fc9b117324728c1c3bb021bf4fcc00"
+  },
+  "resources/gfx/ui/bosshp_icons/chapter1/the_haunt.png": {
+   "size": 484,
+   "sha256": "1ffdedd215e0224369ee0c5778ec563f337e6e63349753a13dce04910b25db73",
+   "wh": [
+    32,
+    32
+   ],
+   "pixels": "75051bd478750e2efdab77407c6e6e5dc279973d873f0b2e1fc4bcb73e192179"
+  },
+  "resources/gfx/ui/bosshp_icons/chapter1/the_haunt_black.png": {
+   "size": 471,
+   "sha256": "827b4e16ff0a902958f93bce410b9e9bb6d9dbb33f48f1cc5aa53319335fd3bd",
+   "wh": [
+    32,
+    32
+   ],
+   "pixels": "1c727464ed7d1d7414550d6024a6fd61a990f1500c05eaab7008f33ef8168a13"
+  },
+  "resources/gfx/ui/bosshp_icons/chapter1/the_haunt_phase2.png": {
+   "size": 592,
+   "sha256": "d4e7283b66da4119908f6d0977dfb368dc07234cdb999f10a70b2895174a5c8d",
+   "wh": [
+    32,
+    32
+   ],
+   "pixels": "c7c238645ea6bbb35c614e438504be0c4ab3e83a63a75ba061ab9f5b39835061"
+  },
+  "resources/gfx/ui/bosshp_icons/chapter1/the_haunt_phase2_black.png": {
+   "size": 643,
+   "sha256": "3fb74134399b8c1960ab7e7b22031ddbccf2d41da74759acb80396a1904f5400",
+   "wh": [
+    32,
+    32
+   ],
+   "pixels": "7fdd0592cb6778caaf592058028e8c21b9b19284553840dddcca3b0aa071f522"
+  },
+  "resources/gfx/ui/bosshp_icons/chapter1/the_haunt_phase2_pink.png": {
+   "size": 557,
+   "sha256": "bed9c7e1c0dd73cc5b8d2cea9b5e2c5a20aee3c17be78ae0c48d341c845e9577",
+   "wh": [
+    32,
+    32
+   ],
+   "pixels": "4ee8d4394d904c827f8b4438e967d7e1708f3bc40e8138fa267eb64aabb3e484"
+  },
+  "resources/gfx/ui/bosshp_icons/chapter1/the_haunt_pink.png": {
+   "size": 500,
+   "sha256": "45cf7867d7291bea37bbbd03ad48b6355658659277ad18fb3045c97fde08c286",
+   "wh": [
+    32,
+    32
+   ],
+   "pixels": "47fa55ab8bdc891bf9c9862cafb1f1ff1833287a14a498217e3044d337a43fb7"
+  },
+  "resources/gfx/ui/bosshp_icons/chapter1/turdling.png": {
+   "size": 6274,
+   "sha256": "40d0db8b4170c2d82c67c11e5d65e58794c80f253c3ba7c0e8b33416e7e31d11",
+   "wh": [
+    32,
+    32
+   ],
+   "pixels": "d547b029d31a53147d96fdf029646886ddf85a6255c93158c19df6a5a51cc3b8"
+  },
+  "resources/gfx/ui/bosshp_icons/chapter1/widow.png": {
+   "size": 584,
+   "sha256": "5fb5fcb5fe1fdc830341cda222666f94e958c19772620828a4f238af7c9c9c2a",
+   "wh": [
+    32,
+    32
+   ],
+   "pixels": "213f1cc8bd8c1acbcf9a0744ce5d66cc667f9732023fa139323e78ae23db39eb"
+  },
+  "resources/gfx/ui/bosshp_icons/chapter1/widow_black.png": {
+   "size": 608,
+   "sha256": "5668655bcc5761670bfc1ee204b55f297e05922ba3e57fa9e7a05bf15d675ae1",
+   "wh": [
+    32,
+    32
+   ],
+   "pixels": "8f5b40ff20fe085d860c09254441c2268692222373adda93481997784e8df43b"
+  },
+  "resources/gfx/ui/bosshp_icons/chapter1/widow_pink.png": {
+   "size": 572,
+   "sha256": "a89022fd3dd0a7313c2ae9ac1331c78784d121cce7aaa325fe2b10f96474743a",
+   "wh": [
+    32,
+    32
+   ],
+   "pixels": "0f45903c50a2c73316f48c5c7d49bd6226c7f3b5d97d68770697e32a03a1b0af"
+  },
+  "resources/gfx/ui/bosshp_icons/chapter2/big_horn.png": {
+   "size": 733,
+   "sha256": "0da5f95cf99fef12d0ca9f640422a792acdac42aac54293bd3eaf7f9b038286f",
+   "wh": [
+    32,
+    32
+   ],
+   "pixels": "aaff2996b4a11056f4376e456e4e4ff46ac6b60fe2a225edd4f3e6adfba7a070"
+  },
+  "resources/gfx/ui/bosshp_icons/chapter2/bumbino.png": {
+   "size": 532,
+   "sha256": "0952290794c11653f6a0a6c8504e87c5678f09b52cc084bb3da518ff215c46ec",
+   "wh": [
+    32,
+    32
+   ],
+   "pixels": "de20d81ee36d491e7e84eee61aa00b81a5e49ce6a4bc1673aedc69d3d96e0e97"
+  },
+  "resources/gfx/ui/bosshp_icons/chapter2/carrion_queen.png": {
+   "size": 505,
+   "sha256": "11d272b4e97ece2ced4151c012b7275b0fd91c6f2d4d2c6476bc09d8c038439d",
+   "wh": [
+    32,
+    32
+   ],
+   "pixels": "c95388d676ee9f9ea192a5d7721d3209d78a7151f0319d9799c0fd4a44bef401"
+  },
+  "resources/gfx/ui/bosshp_icons/chapter2/carrion_queen_pink.png": {
+   "size": 528,
+   "sha256": "a601ca34fc3b275306a8eb1811e6f367b7d5883365cc021a61b2b66d30f6c535",
+   "wh": [
+    32,
+    32
+   ],
+   "pixels": "0d2e8196e9cdb430da7a3179b6645d4854dda9072382f66bd26fa34911997a9e"
+  },
+  "resources/gfx/ui/bosshp_icons/chapter2/chad.png": {
+   "size": 483,
+   "sha256": "0edc524a8884200512dec4e0ae97b6e499b72d01d2d2dd1c59e9e29a936af08a",
+   "wh": [
+    32,
+    32
+   ],
+   "pixels": "f4059a824de85acbde29db265584d9bf2d188f97c7bcc5375ed76d8254a10190"
+  },
+  "resources/gfx/ui/bosshp_icons/chapter2/chub.png": {
+   "size": 443,
+   "sha256": "3ec1d9c24e0e77e6448db9ccbb3245c2963b9da8e8fb6976ebf1828ada26fbc6",
+   "wh": [
+    32,
+    32
+   ],
+   "pixels": "1d55b10c9cd774b87e90ec896037c79cfee91b69c97ef1047eaefb7edf3dc0a1"
+  },
+  "resources/gfx/ui/bosshp_icons/chapter2/chub_blue.png": {
+   "size": 444,
+   "sha256": "54cc851f6087bb70fa7a4b06170da0691a9c0b32acb3d7517945e309a30068e8",
+   "wh": [
+    32,
+    32
+   ],
+   "pixels": "dca7d3037d12d72c1b8ce8a65c278a7476033aebceb6e2b5bab79acdae907c7d"
+  },
+  "resources/gfx/ui/bosshp_icons/chapter2/chub_orange.png": {
+   "size": 472,
+   "sha256": "f64d66608e2061e6521e5faf85877ffe24607ea53eab604dfbbf9dafd9944e35",
+   "wh": [
+    32,
+    32
+   ],
+   "pixels": "94eb9e45bfdfea5f5890c9fe526cb6e680cd6b726ecec61fae0bb9e93eddd6b7"
+  },
+  "resources/gfx/ui/bosshp_icons/chapter2/dark_one.png": {
+   "size": 556,
+   "sha256": "a05488059113bb4b1b912a18b6962480c77316d7706b24d62749da1620ef4651",
+   "wh": [
+    32,
+    32
+   ],
+   "pixels": "636a00dbfcd4d676906eae2680ebe37c1a1c3b7f856b145c8508491318868691"
+  },
+  "resources/gfx/ui/bosshp_icons/chapter2/fistula_large.png": {
+   "size": 779,
+   "sha256": "356a718a0fc9de484bcdafacbbdc9b5a7830d7e1218336bfe88ca74102dc17f1",
+   "wh": [
+    32,
+    32
+   ],
+   "pixels": "f7fcd7811541f9f83440bc6a11f8298b2e21da58a50159717fb639c3422a2492"
+  },
+  "resources/gfx/ui/bosshp_icons/chapter2/fistula_large_grey.png": {
+   "size": 763,
+   "sha256": "ebc8af1676192069ca89882eb763d6ab3a13dfb0adecce6f435037ff5f508129",
+   "wh": [
+    32,
+    32
+   ],
+   "pixels": "d45ed16ee6eddecfd78d5a319d69e0c7cb7081194f74a45900cfbeb4669de7f3"
+  },
+  "resources/gfx/ui/bosshp_icons/chapter2/fistula_medium.png": {
+   "size": 623,
+   "sha256": "a2781af1a723cc812af31416c0cbd39f12f676830dafaa36265cb3195b38b7ff",
+   "wh": [
+    32,
+    32
+   ],
+   "pixels": "8ab5357b80064f92645ff104d37bf9e694d147c74a28d2f371e03e593d0b04be"
+  },
+  "resources/gfx/ui/bosshp_icons/chapter2/fistula_medium_grey.png": {
+   "size": 624,
+   "sha256": "0b852d48024b842263b36b544a755306f313be0bc9f657fdacb2d9dd47952d5f",
+   "wh": [
+    32,
+    32
+   ],
+   "pixels": "d71c44b2e646a6e9d8d322700b21f2591e5af66ba88f12eda904c5be4ad3f34e"
+  },
+  "resources/gfx/ui/bosshp_icons/chapter2/fistula_small.png": {
+   "size": 383,
+   "sha256": "6aea72273b4f8b8eb735a447e02f7f84d9278056a85d0c1b393f8cd49782cc51",
+   "wh": [
+    32,
+    32
+   ],
+   "pixels": "85c2cb893a15e2639b43cf49e4bc277b41d3359c7a35f8ec86a0f1fe2c25afdf"
+  },
+  "resources/gfx/ui/bosshp_icons/chapter2/fistula_small_grey.png": {
+   "size": 379,
+   "sha256": "a9d96d754606c79ed13d4f49bf7fa6c48a1e31d5bf4c4d5440adfb4e7df73432",
+   "wh": [
+    32,
+    32
+   ],
+   "pixels": "63653488df15520c4f740751ec7b42eed79d248ecf223a76ecad9077ac15c190"
+  },
+  "resources/gfx/ui/bosshp_icons/chapter2/gurdy.png": {
+   "size": 562,
+   "sha256": "fad2140e882d1b37dfd108f7cf3e56bf435328ff66d4a1871c35757dfc6db122",
+   "wh": [
+    32,
+    32
+   ],
+   "pixels": "e084c1bf6a7a3b3f4be57a0ab57f1e581d7f998a1343f57973ea3840b100eddd"
+  },
+  "resources/gfx/ui/bosshp_icons/chapter2/gurdy_green.png": {
+   "size": 578,
+   "sha256": "dc4108d7c226bbb3b28cc8d3f526081a9bb000875225fb475f999949c6755792",
+   "wh": [
+    32,
+    32
+   ],
+   "pixels": "309d8f21a800651c935760af0b8cde2e4dd96cfa94df7eb91c8b94dbd84128f5"
+  },
+  "resources/gfx/ui/bosshp_icons/chapter2/gurdy_jr.png": {
+   "size": 626,
+   "sha256": "4f9b82953d111c7cae35b08792430baeda4fabcd3a28e4e2ccf7dbc8690c57b5",
+   "wh": [
+    32,
+    32
+   ],
+   "pixels": "03a0bb1ae0d1cdfb252a4cb60e6fe70a74b423f93953063efa43a5f04f4d5274"
+  },
+  "resources/gfx/ui/bosshp_icons/chapter2/gurdy_jr_blue.png": {
+   "size": 655,
+   "sha256": "9d2655f3dc13c06bc91c5a58ce403f5b0c3ded16360c4715613448a811cad85c",
+   "wh": [
+    32,
+    32
+   ],
+   "pixels": "7bd24100f77eb2e1f13895f5ff410ab4c44560ea77816522132a8d27b327cbb8"
+  },
+  "resources/gfx/ui/bosshp_icons/chapter2/gurdy_jr_yellow.png": {
+   "size": 637,
+   "sha256": "e2d264b1ddb5606216a066ae47a83776e73a740fac58a637852a47ccf9495dba",
+   "wh": [
+    32,
+    32
+   ],
+   "pixels": "08b8889526d45939e0daf11d90236a6442c68db2ab7a1ff7c99ac739006e0e5b"
+  },
+  "resources/gfx/ui/bosshp_icons/chapter2/mega_fatty.png": {
+   "size": 578,
+   "sha256": "05e0319e3f5a3e9b2a3b354855bc19275f963a2720ac6587525a0a13d7407751",
+   "wh": [
+    32,
+    32
+   ],
+   "pixels": "7d1221978fb68c7479f1a8ad0a92f81dd189e2f45806e7ac538e6b76723877e4"
+  },
+  "resources/gfx/ui/bosshp_icons/chapter2/mega_fatty_brown.png": {
+   "size": 576,
+   "sha256": "b3f749ebae7a1cbf1c5847692197bb5fe32a7849201a406a147bf34a260e41c1",
+   "wh": [
+    32,
+    32
+   ],
+   "pixels": "81d8fce031d3a63afca96b4f0b2181a5ffbd2b512bde2c88e8369c3dc6057e41"
+  },
+  "resources/gfx/ui/bosshp_icons/chapter2/mega_fatty_red.png": {
+   "size": 562,
+   "sha256": "b0ec3ac57c1525a23346e64f7b485d14e6632b3b093aae9580f983994632070a",
+   "wh": [
+    32,
+    32
+   ],
+   "pixels": "b6bed28d1a7026e4e2f580777d111bfe1864b2a5022b6716c48a43c48790232d"
+  },
+  "resources/gfx/ui/bosshp_icons/chapter2/mega_maw.png": {
+   "size": 565,
+   "sha256": "925751a3a9aa345200df64638c2ca3c2ecb19ffeff29f06a1a93a23e875f7087",
+   "wh": [
+    32,
+    32
+   ],
+   "pixels": "ec4bd8ebc9dc22c14aea09de2f45d3501cac57ae4cdcdf1e9142143e3f83eae6"
+  },
+  "resources/gfx/ui/bosshp_icons/chapter2/mega_maw_black.png": {
+   "size": 579,
+   "sha256": "c3e7537d677ecafd44b5ff834da2ee80889eedb04a15de0d4f4a58d3d47ee13a",
+   "wh": [
+    32,
+    32
+   ],
+   "pixels": "79fb3f2dd4a8e504926cdd1a059384d9742b0d0b461fc8ae0aee44e709bcc7d6"
+  },
+  "resources/gfx/ui/bosshp_icons/chapter2/mega_maw_red.png": {
+   "size": 578,
+   "sha256": "21d5f1e2be9dcb57d9247aff81b9d24f4566b393a6d6fa44b33df4fbb41bcd3a",
+   "wh": [
+    32,
+    32
+   ],
+   "pixels": "f7a5e8728543e7c56a8828a25f51f542dd81afd2d9d6c4635bb37490440b20a6"
+  },
+  "resources/gfx/ui/bosshp_icons/chapter2/peep.png": {
+   "size": 508,
+   "sha256": "90851b69c5ba74d766b5b4eb56af3ecdbd913271bdaab2dd91d5036b55c01058",
+   "wh": [
+    32,
+    32
+   ],
+   "pixels": "475531afceb0f78e63302abdcf6fd3dbeb00610db90685449544599bfb4e81b8"
+  },
+  "resources/gfx/ui/bosshp_icons/chapter2/peep_cyan.png": {
+   "size": 14872,
+   "sha256": "c29b8f90dd6528b4e5570ec6620867827857f23f528a4763fc45162e96d6effc",
+   "wh": [
+    32,
+    32
+   ],
+   "pixels": "58c9f47e0e6fdc56341100c90c8f75735114cd69874f9946f072952a91d02cdf"
+  },
+  "resources/gfx/ui/bosshp_icons/chapter2/peep_no_eyes.png": {
+   "size": 474,
+   "sha256": "9627d78ec3631ad467f0b8f50f567b3b7a61cdfad2ce8cf9b2ac869d2a8754c0",
+   "wh": [
+    32,
+    32
+   ],
+   "pixels": "23a3f7c5955194f016f8a95ca965abbe750a01501e2afa6f3bcc8fbe8fd3b98d"
+  },
+  "resources/gfx/ui/bosshp_icons/chapter2/peep_no_eyes_cyan.png": {
+   "size": 516,
+   "sha256": "93a222a893c110045dd24e1198ab38f0eefa9f67089379be762446b753b89fb2",
+   "wh": [
+    32,
+    32
+   ],
+   "pixels": "3eac6c71eca2d798f1d222b7290cde11436ebb504512cc2c924c90650911cf9b"
+  },
+  "resources/gfx/ui/bosshp_icons/chapter2/peep_no_eyes_yellow.png": {
+   "size": 501,
+   "sha256": "495a97d3b7a999b9d000fc9ded7d5addf4f8228b8d36ca382c6b153596316474",
+   "wh": [
+    32,
+    32
+   ],
+   "pixels": "e97b00a743d87c4edf6efa5edce253136360fb2ee6ea16a22b262c66b18f203e"
+  },
+  "resources/gfx/ui/bosshp_icons/chapter2/peep_one_eye.png": {
+   "size": 503,
+   "sha256": "bb34d0e52946267a4781b353393ea3ee5201beb49b62599a7667a5c58b1009e5",
+   "wh": [
+    32,
+    32
+   ],
+   "pixels": "e69eb37391f955100955399da141950d584024b8dae2a60060719956f067af44"
+  },
+  "resources/gfx/ui/bosshp_icons/chapter2/peep_one_eye_yellow.png": {
+   "size": 532,
+   "sha256": "dcefb91b21d4bdb0dba1abe725dd07785647a78d4f2311be839d20d4a208f3cf",
+   "wh": [
+    32,
+    32
+   ],
+   "pixels": "624e8cf484b8200be276811479aa6d90d566473d73d7e0bf800a9b56eb020cd7"
+  },
+  "resources/gfx/ui/bosshp_icons/chapter2/peep_yellow.png": {
+   "size": 545,
+   "sha256": "7e5be9b50c3b98376cfce6ca6b1d0581ce543373b33ce7ea1c64ddaebc167871",
+   "wh": [
+    32,
+    32
+   ],
+   "pixels": "f6ae43e7ea76be6e7aea601228029e3276d7d73d649109da6daaf074b8fbb0b5"
+  },
+  "resources/gfx/ui/bosshp_icons/chapter2/polycephalus.png": {
+   "size": 782,
+   "sha256": "7b92257dca87032c18fa0e6346d38fc5087673a17d24d6efc0635536c5969b83",
+   "wh": [
+    32,
+    32
+   ],
+   "pixels": "6a6df9ab243d16fda747dcb443dcabacb24cdd52816c9bb86bec51f989ce9845"
+  },
+  "resources/gfx/ui/bosshp_icons/chapter2/polycephalus_pink.png": {
+   "size": 770,
+   "sha256": "0c3dc384405886a184da3dcc9157bb1ebbb0a0373818f0058218fadbb738a8d8",
+   "wh": [
+    32,
+    32
+   ],
+   "pixels": "ef0c1678e7d1dcaec095fb5ad0c6c2c69c0836e263b452bdc006f2d1f58478c3"
+  },
+  "resources/gfx/ui/bosshp_icons/chapter2/polycephalus_red.png": {
+   "size": 819,
+   "sha256": "2a81683e8fd0c238fc70d3402d24504756a63898b97d73a01b4e283bc3efb194",
+   "wh": [
+    32,
+    32
+   ],
+   "pixels": "6335d73a17b7d0cf0d4cfc3825d1bfcf8492b8e5c7e74444094e13c63b611aae"
+  },
+  "resources/gfx/ui/bosshp_icons/chapter2/rag_mega.png": {
+   "size": 883,
+   "sha256": "ea8dd638c473a354930560be521246a792e9ba8ccdae105b59bddddaace33d50",
+   "wh": [
+    32,
+    32
+   ],
+   "pixels": "a2356c57cdf348e71524ae92ec887daa9facf38d7956b4d6ef0a9a99017566ed"
+  },
+  "resources/gfx/ui/bosshp_icons/chapter2/the_forsaken.png": {
+   "size": 547,
+   "sha256": "80d3d740e124ea2ca740c99311723a73da1962e7eafe4421925c6f99eb22ab3a",
+   "wh": [
+    32,
+    32
+   ],
+   "pixels": "60c33fcb124e12aca2ed0bfbef824f2d798a075a39f2a194228945bdf10d270e"
+  },
+  "resources/gfx/ui/bosshp_icons/chapter2/the_forsaken_black.png": {
+   "size": 520,
+   "sha256": "d4e49c2910d2c9c87a493a15855e396310100a799c0e4b999999cb95a6ea33a1",
+   "wh": [
+    32,
+    32
+   ],
+   "pixels": "59a7a36cff1d7b1a0ac89e2ef611d6a20a7cf507a353f79b05c7cb4cd83855ad"
+  },
+  "resources/gfx/ui/bosshp_icons/chapter2/the_frail.png": {
+   "size": 6606,
+   "sha256": "c36813a3a00e08c57e5cec26befad7c121e31bb5e6d36791b08080535793e44a",
+   "wh": [
+    32,
+    32
+   ],
+   "pixels": "785895f30eb73663d612b7c6b5d223c15a3bd691d636f8dd7a0d8c5bcd652c31"
+  },
+  "resources/gfx/ui/bosshp_icons/chapter2/the_frail_phase2.png": {
+   "size": 6619,
+   "sha256": "72959fa687aade2942c923930924979bc1f5559d672818798ef999edf9ee0271",
+   "wh": [
+    32,
+    32
+   ],
+   "pixels": "76a7f306ef11287879ab8de1932061d9d54b876abac873921a8f3d33fbc52728"
+  },
+  "resources/gfx/ui/bosshp_icons/chapter2/the_frail_phase2_black.png": {
+   "size": 6600,
+   "sha256": "cb4f73f57c22942de92c9187de1d464cc36634271ffc8b067edbdedce9586f9d",
+   "wh": [
+    32,
+    32
+   ],
+   "pixels": "43da67a39d718f93e845d4220a9dff1c163f2d80ebba1ba227ff32b095cf7905"
+  },
+  "resources/gfx/ui/bosshp_icons/chapter2/the_hollow.png": {
+   "size": 778,
+   "sha256": "8bd0ad2f10f50b4e260aa706f0600811fd8a0ad31910bba368223661043b9d42",
+   "wh": [
+    32,
+    32
+   ],
+   "pixels": "1945c34ddb9a5375f6fe5633bf67976108c8fbfad6c04891b4ca947f445aa6fb"
+  },
+  "resources/gfx/ui/bosshp_icons/chapter2/the_hollow_black.png": {
+   "size": 786,
+   "sha256": "a7c4d47294fb838589d0277bb90a638d79460cc325a6bca10cd4a76906dfa4ec",
+   "wh": [
+    32,
+    32
+   ],
+   "pixels": "707eecf840bba640fe552ac5c283d6102d86ce6cb09aa241a47a0c6df15f00a2"
+  },
+  "resources/gfx/ui/bosshp_icons/chapter2/the_hollow_green.png": {
+   "size": 780,
+   "sha256": "fd36574071af661a7bc274af8b76c007ff7447c7b73aa32435d5872868bc6f7b",
+   "wh": [
+    32,
+    32
+   ],
+   "pixels": "4d60d7a90eda12e924a6d713e86b9e923baed4946a267d1646fe9fd88394636d"
+  },
+  "resources/gfx/ui/bosshp_icons/chapter2/the_hollow_segment.png": {
+   "size": 18857,
+   "sha256": "8706d2400f3e8117656ce19299e9cfec38ca61777c4d929934f0b7e30a28364b",
+   "wh": [
+    32,
+    32
+   ],
+   "pixels": "b6f4cb18b75db341accf99834905b9d29b2d8df4e645d965467aaaeee8d40056"
+  },
+  "resources/gfx/ui/bosshp_icons/chapter2/the_hollow_segment_black.png": {
+   "size": 6583,
+   "sha256": "6c75cbfecf62d3214f216fc2c204ecffe0a3f03c355b3307f9aadadd3cd1c62b",
+   "wh": [
+    32,
+    32
+   ],
+   "pixels": "16f34f0c39e7f5790fecf24c21ba08015707d01ba81468b041cd81ed3fc80e43"
+  },
+  "resources/gfx/ui/bosshp_icons/chapter2/the_hollow_segment_green.png": {
+   "size": 6589,
+   "sha256": "f68e2dd2bc013b9586a50754e44991f6cfed602e83a36f5c66fd204259a3fba2",
+   "wh": [
+    32,
+    32
+   ],
+   "pixels": "b31cb34aab659cc515eb65bbd4d2de9eadf28a23333f03e184b052ff1cbcff9d"
+  },
+  "resources/gfx/ui/bosshp_icons/chapter2/the_hollow_segment_yellow.png": {
+   "size": 6542,
+   "sha256": "a69050465ab9577464128bc5f2fe33b87af3aad0c413d92fc615b526c60089f3",
+   "wh": [
+    32,
+    32
+   ],
+   "pixels": "b4bd9c8a80bcdd822c765ce5efccc3e0f288e197554ad4a4bd08d4da49d2d151"
+  },
+  "resources/gfx/ui/bosshp_icons/chapter2/the_hollow_yellow.png": {
+   "size": 687,
+   "sha256": "d8e4724c876d3db821fc3d5e39caa608a66639a074342dbabbfee6d968fdd2b1",
+   "wh": [
+    32,
+    32
+   ],
+   "pixels": "b205829a5ae3f6028c47ed5fcb8eac00312a7674385ac21a9ae330f8dd343223"
+  },
+  "resources/gfx/ui/bosshp_icons/chapter2/the_husk.png": {
+   "size": 6072,
+   "sha256": "1258b0120dfaa6f4db32aa055a8d8429ffcf4f758176b755cc109abde5a26021",
+   "wh": [
+    32,
+    32
+   ],
+   "pixels": "ce67bf1219615990e87cde807a955cf186fdb3c05ae349e7817eabed0232e297"
+  },
+  "resources/gfx/ui/bosshp_icons/chapter2/the_husk_black.png": {
+   "size": 6036,
+   "sha256": "ff897926b53eec809a6a7485180f022918a679d9cfd460a34a8cd2ebca8e1b00",
+   "wh": [
+    32,
+    32
+   ],
+   "pixels": "98ccd70e3d1e35007f0a7cf977bc17b21a5db06c8724895e531d875f6f1fd445"
+  },
+  "resources/gfx/ui/bosshp_icons/chapter2/the_husk_red.png": {
+   "size": 6066,
+   "sha256": "98789666dd58d134212716debb86ad3ae93c0262983532ff9981511485a6ec1c",
+   "wh": [
+    32,
+    32
+   ],
+   "pixels": "4ede58091645c8a12b05af6671f71ee3fef2acb0f05815338800dae7d55ff9ee"
+  },
+  "resources/gfx/ui/bosshp_icons/chapter2/the_stain.png": {
+   "size": 708,
+   "sha256": "64de8b4fee6bceb331bd6578c5fbe7d7fcd175d526d7771282076846e2d00908",
+   "wh": [
+    32,
+    32
+   ],
+   "pixels": "ff7838628488f01212fca69b4132fe9705d781ec8b28337ef8d512a5ab2bc8b3"
+  },
+  "resources/gfx/ui/bosshp_icons/chapter2/the_stain_grey.png": {
+   "size": 700,
+   "sha256": "4865e34c4832164994638e4491c304398d3e09bde3f2b787c804c79f9935e181",
+   "wh": [
+    32,
+    32
+   ],
+   "pixels": "a1651d57ed6191e69547aee32b94de9bafa4be31633c6565f0d4894a96b9aba7"
+  },
+  "resources/gfx/ui/bosshp_icons/chapter2/the_wretched.png": {
+   "size": 604,
+   "sha256": "ac9a61fd51ae627c09a7c27ee9db6e256db4190009be192492f2cb1a7f08f09d",
+   "wh": [
+    32,
+    32
+   ],
+   "pixels": "da51cba1056d91b900c4d98b66bd52da9acb6ee668c6f27434971cef6a0d00f4"
+  },
+  "resources/gfx/ui/bosshp_icons/chapter3/brownie.png": {
+   "size": 644,
+   "sha256": "0cc757a65897815d3fd025c166820ad497c3d0fa1b32107b080c47ab7a1ac22c",
+   "wh": [
+    32,
+    32
+   ],
+   "pixels": "6db4bcae53eae1c1e9de66be6c6391f7d1c78f89fb53893239fac86383032802"
+  },
+  "resources/gfx/ui/bosshp_icons/chapter3/brownie_black.png": {
+   "size": 664,
+   "sha256": "33a875e6d60fbdf434c150c52fa4d7d21881ce03ed3903743da7adcc0770a9c3",
+   "wh": [
+    32,
+    32
+   ],
+   "pixels": "0da5177d34685c597605b60cb7e19413c1f1a7a3cfb501f55c71f4d74375b397"
+  },
+  "resources/gfx/ui/bosshp_icons/chapter3/gish.png": {
+   "size": 447,
+   "sha256": "3ff3a87db45939d17bb780415de132b483a072ce762efea1881474953692c869",
+   "wh": [
+    32,
+    32
+   ],
+   "pixels": "a573b38b3a717ae3b5062fac5b8009c8aee668608e808c9fd5b404dbc5b1b6c2"
+  },
+  "resources/gfx/ui/bosshp_icons/chapter3/heart_of_infamy.png": {
+   "size": 558,
+   "sha256": "8ed95c7f13b981922b5f3a739b7b762c018a5fb98cc600a05827de60d4bc97d1",
+   "wh": [
+    32,
+    32
+   ],
+   "pixels": "ec91c0c8bbbe9477859eea98698fa8a4f4ed1dbe2373ec3bf7703544032f35a0"
+  },
+  "resources/gfx/ui/bosshp_icons/chapter3/heart_of_infamy_black.png": {
+   "size": 545,
+   "sha256": "39aada2d8de43e6d473897763767f8c47ea74074543a251b0345d0d18aa72757",
+   "wh": [
+    32,
+    32
+   ],
+   "pixels": "dd5ee4a84ec5eca5669876d58072053561d7cbec92f9cc41d76b9432298b2258"
+  },
+  "resources/gfx/ui/bosshp_icons/chapter3/loki.png": {
+   "size": 474,
+   "sha256": "68a896e23d1dc9435d0cacbf01bb92b53ca04855fd8a950d9a6bbab3147d8276",
+   "wh": [
+    32,
+    32
+   ],
+   "pixels": "964d134246be9fb47a8ff4c421a84ee4290e0833b618866afb4012075cdba9e0"
+  },
+  "resources/gfx/ui/bosshp_icons/chapter3/mask_of_infamy.png": {
+   "size": 524,
+   "sha256": "279f5bcd2cbe6b1c397f761f105be7c0b4ff054df86b101aa71ba6903e7e5f0e",
+   "wh": [
+    32,
+    32
+   ],
+   "pixels": "b3ef044b3a2a83be1e2dae7e4e6910693bb4b6ff129462b9ff2a6e1363b0bfc3"
+  },
+  "resources/gfx/ui/bosshp_icons/chapter3/mask_of_infamy_black.png": {
+   "size": 511,
+   "sha256": "1a023a349ba4e4204aee2b8d5a543a40bf2e0f435f458e5a22231fcc928c1355",
+   "wh": [
+    32,
+    32
+   ],
+   "pixels": "127a2c64c5ef896d112ac8110231001f92051b6338495e871b30165f818ff7b1"
+  },
+  "resources/gfx/ui/bosshp_icons/chapter3/mask_of_infamy_phase2.png": {
+   "size": 536,
+   "sha256": "31c7d9ca79d6c2a256d71cc1bae3e63eb7e87ac7de4f0d0ec66d12eb0d21e8d9",
+   "wh": [
+    32,
+    32
+   ],
+   "pixels": "24928da84135c0e411b62e399d58ed76f7d7dd522ca628d0fdfb676d0bc7a9cd"
+  },
+  "resources/gfx/ui/bosshp_icons/chapter3/mask_of_infamy_phase2_black.png": {
+   "size": 520,
+   "sha256": "69de9f5fa3b70c70e885e697622e232f280191ee05efd8aaaf243859d64c1cf4",
+   "wh": [
+    32,
+    32
+   ],
+   "pixels": "7bacdaff45528f4079f6f90f9f38bee1835c28a90d90bb4cd9fb665b15304941"
+  },
+  "resources/gfx/ui/bosshp_icons/chapter3/monstro_two.png": {
+   "size": 592,
+   "sha256": "f4de8c75cfda7402f2aa3baf08b70ac4da09bb78ae5b41b8c11228fef7436416",
+   "wh": [
+    32,
+    32
+   ],
+   "pixels": "b52c1d9dc563795f15d1052e46b56271f89b90c65e7130a2beef9a2166f904de"
+  },
+  "resources/gfx/ui/bosshp_icons/chapter3/monstro_two_red.png": {
+   "size": 609,
+   "sha256": "f80d207a5f5c8123fdc65219c41bd0cdf17551418a32ac58e69f402cd27fb17d",
+   "wh": [
+    32,
+    32
+   ],
+   "pixels": "20066a9e1084d7ae523d981fb144f34610625cb6f423654960b2cbfc1bc2a6dc"
+  },
+  "resources/gfx/ui/bosshp_icons/chapter3/reap_creep.png": {
+   "size": 768,
+   "sha256": "9494b3e82dc5d513ecc960ab9bf01ed18ce8a6d88484b2036d0bbd68ee83aab2",
+   "wh": [
+    32,
+    32
+   ],
+   "pixels": "52e458b7975667e5531c83bc46f225934ca5bc8f9bf872ccc225f7f4ad19677e"
+  },
+  "resources/gfx/ui/bosshp_icons/chapter3/reap_creep_phase2.png": {
+   "size": 812,
+   "sha256": "05cf78e3faa55c8d732e27e04f274e09cb825d773ff87434c111b6da900d1d93",
+   "wh": [
+    32,
+    32
+   ],
+   "pixels": "20c18a85b0ff85a0a343b5083865d2956e301bad818eec002a38392a39844814"
+  },
+  "resources/gfx/ui/bosshp_icons/chapter3/reap_creep_phase3.png": {
+   "size": 786,
+   "sha256": "6f313a7ed16cb93681a72ae0bc0880992824f7cd598f4a8ad7ea1de156b6a00e",
+   "wh": [
+    32,
+    32
+   ],
+   "pixels": "102c5329bc4abd4e4a5b4d59c7d0ec91a97a719b324f14c9faadb8b3057531c8"
+  },
+  "resources/gfx/ui/bosshp_icons/chapter3/sisters_vis.png": {
+   "size": 508,
+   "sha256": "4b21a3352b235049a14d516b5c5bbc553bcbebcbf3225c94ad7536bbb95d98a3",
+   "wh": [
+    32,
+    32
+   ],
+   "pixels": "8ac15a75373b51f1e2c7d085da773512be6989fb3821314a78a0b1cfb4583caf"
+  },
+  "resources/gfx/ui/bosshp_icons/chapter3/the_adversary.png": {
+   "size": 664,
+   "sha256": "1f96cbc21162ad23f890f66ab7650892f4c8ee726f1f7b8b01ec64781b497dd2",
+   "wh": [
+    32,
+    32
+   ],
+   "pixels": "4d7de0759a55dcfcbcd7b510031228d0d90ba103b5586ef539ecea5a6599fdbd"
+  },
+  "resources/gfx/ui/bosshp_icons/chapter3/the_bloat.png": {
+   "size": 502,
+   "sha256": "7da5ce1ddff4b5abf6415efad85ccabb93241cb88292fd9377de2cd5145e5aee",
+   "wh": [
+    32,
+    32
+   ],
+   "pixels": "27d364d63030b58e99f4b7daed55dd259ff6d3cc964720a97b412450ac061dbe"
+  },
+  "resources/gfx/ui/bosshp_icons/chapter3/the_bloat_green.png": {
+   "size": 501,
+   "sha256": "061fadd2247879181c7732a2f4eab94de2831c664b677cbc552067ff2d1803cf",
+   "wh": [
+    32,
+    32
+   ],
+   "pixels": "e0504820f71fe1ebad28c34560f3c196e3f798e77716b47eea9d37238b653598"
+  },
+  "resources/gfx/ui/bosshp_icons/chapter3/the_cage.png": {
+   "size": 641,
+   "sha256": "5b224f255d0606d04cda8f1ba9faa944fd7fe287d9ef9b0ab13fa13535e3f388",
+   "wh": [
+    32,
+    32
+   ],
+   "pixels": "95f6cff2c0d8b3ce7424d28019804c89f1cefeda7c3403e5dd5eeece6024369b"
+  },
+  "resources/gfx/ui/bosshp_icons/chapter3/the_cage_green.png": {
+   "size": 639,
+   "sha256": "9b405451156c9f7f4950f1f6c68fb1217d74a1b9b1cd9b7e428121c241f23950",
+   "wh": [
+    32,
+    32
+   ],
+   "pixels": "4b1c977b3a659ae7d9dd569002f271772389e52aabbf928ff042504352f0e325"
+  },
+  "resources/gfx/ui/bosshp_icons/chapter3/the_cage_pink.png": {
+   "size": 645,
+   "sha256": "41139eac77005115f1decf3578df8654ce62824a41b0d8b1c49fa9071f23924b",
+   "wh": [
+    32,
+    32
+   ],
+   "pixels": "cd1b9e3b1768a380a701d74c91adc398e68bdbce0003672e2e8baefe964f2d13"
+  },
+  "resources/gfx/ui/bosshp_icons/chapter3/the_gate.png": {
+   "size": 614,
+   "sha256": "5d04e6bcd0bc42aeda1115eb584d220eb320b81788da24dd49a3bf8ca30757d8",
+   "wh": [
+    32,
+    32
+   ],
+   "pixels": "48a4bba3614856aae20e80f8f20e1e5929486ded8037f54f11fd83ee23e1c8a1"
+  },
+  "resources/gfx/ui/bosshp_icons/chapter3/the_gate_black.png": {
+   "size": 618,
+   "sha256": "fefc0899931dadf10c862b8d6726283e36a8729ed8eceabc8fc9c210c43901e3",
+   "wh": [
+    32,
+    32
+   ],
+   "pixels": "4b77311df1b7fe0c22b769968a74518045e9e6a7df7009e64f0788ea4816ea37"
+  },
+  "resources/gfx/ui/bosshp_icons/chapter3/the_gate_red.png": {
+   "size": 620,
+   "sha256": "72835931022668df6c551b7dacc37b9185e7908b7e1238be3d9a0418c97775b0",
+   "wh": [
+    32,
+    32
+   ],
+   "pixels": "44641c23fa5c43cc959823f0503e95350bf2453553d6059a872d1dbe4c079f16"
+  },
+  "resources/gfx/ui/bosshp_icons/chapter3/the_pile.png": {
+   "size": 650,
+   "sha256": "1c238de0cd078fd26740b8e388c2dbe6a2cd295a082ca58789ecfc353b24f3b1",
+   "wh": [
+    32,
+    32
+   ],
+   "pixels": "fd954693888d72dd50311bbcb7a7c31b265cb86cd17e8c073f06ef4c7d643f98"
+  },
+  "resources/gfx/ui/bosshp_icons/chapter4/blastocyst_large.png": {
+   "size": 492,
+   "sha256": "5218f486f94ff8611e68fcdd7c4fcd5f278ac86676c8b6e26ca2f3ec6b01fbc8",
+   "wh": [
+    32,
+    32
+   ],
+   "pixels": "21a30a25e676d738927e151aee9a1ab2623cc58778e9673349e08a8d7d2c07f8"
+  },
+  "resources/gfx/ui/bosshp_icons/chapter4/blastocyst_medium.png": {
+   "size": 494,
+   "sha256": "aa9d7d5c12316d8cde67f5118be3780b4fe802de3230bd0f64060c68591cf85a",
+   "wh": [
+    32,
+    32
+   ],
+   "pixels": "082856f020a13438e8f532abc2720ab5612ee0360523b04584be84900b015051"
+  },
+  "resources/gfx/ui/bosshp_icons/chapter4/blastocyst_small.png": {
+   "size": 435,
+   "sha256": "30d392f3e8db99951e8307337ea0bf66eb83931c4b41424d8d751f970fee4c68",
+   "wh": [
+    32,
+    32
+   ],
+   "pixels": "d342851d753b792d7ac84ea393ee4a8499848de55c43121b09c137792501a8a0"
+  },
+  "resources/gfx/ui/bosshp_icons/chapter4/daddy_long_legs.png": {
+   "size": 679,
+   "sha256": "109c072c0dee31521eb746a3adb3d0980c05253c05117de23a559fd0a8121505",
+   "wh": [
+    32,
+    32
+   ],
+   "pixels": "0d331b027bcb6e5b54383fc508b2322495bf0e6386d94937ff37350adc05b22b"
+  },
+  "resources/gfx/ui/bosshp_icons/chapter4/lokii.png": {
+   "size": 14867,
+   "sha256": "7002099068f538114f2c35229eae19b53ce588ca0826b8ca20a548ef413d763f",
+   "wh": [
+    32,
+    32
+   ],
+   "pixels": "b8dcb79c0b5aaf91f86d1a8ebb976d5d7311916a2e665f61fa41632ed5c9df86"
+  },
+  "resources/gfx/ui/bosshp_icons/chapter4/lokii_2.png": {
+   "size": 14867,
+   "sha256": "ed68a550239fb473fc122a567e280a1851e18077093474b1b9d41488b96add53",
+   "wh": [
+    32,
+    32
+   ],
+   "pixels": "cd4904b9868ce3bd9b0defb70991a942263f03c5a149919fcf04f398ab7f7017"
+  },
+  "resources/gfx/ui/bosshp_icons/chapter4/mama_gurdy.png": {
+   "size": 560,
+   "sha256": "ff7af6c9bbd632b0a258a48bb15610860985c5fd9c49870667a2d3a9a89319c1",
+   "wh": [
+    32,
+    32
+   ],
+   "pixels": "dd4cc3f13aa9b12df74fef1344abe2687cc8b273644e2971108580ac95761fb5"
+  },
+  "resources/gfx/ui/bosshp_icons/chapter4/mr_fred.png": {
+   "size": 573,
+   "sha256": "39f4ccda42e8023d024bd49aea83048b70fadaf2aaefc71bd3f1ef12fdab30a9",
+   "wh": [
+    32,
+    32
+   ],
+   "pixels": "d111ad8009a3bbd65aee0ff3b5330c994f021a9761ef9ce0f554acdcf9a520ec"
+  },
+  "resources/gfx/ui/bosshp_icons/chapter4/scolex.png": {
+   "size": 6696,
+   "sha256": "1298e6ab9a5757422dd61b732c91a72159580b93360b57872c274cae6983f1de",
+   "wh": [
+    32,
+    32
+   ],
+   "pixels": "adb56e64a64064ae6ae658a0003b93ff01f29ff48ea58a4adbdb0cdd4a17f748"
+  },
+  "resources/gfx/ui/bosshp_icons/chapter4/teratoma_large.png": {
+   "size": 626,
+   "sha256": "593364393f6b3e5242c0c625bc67ea30855a2bd17f9c6b9bb1a21d31c4546560",
+   "wh": [
+    32,
+    32
+   ],
+   "pixels": "894c2ad74d776c4024301447ebcf74500afde83fd8a16db4747e849087575cd6"
+  },
+  "resources/gfx/ui/bosshp_icons/chapter4/teratoma_medium.png": {
+   "size": 602,
+   "sha256": "6abc9cc7133769fb009cac46819f9828960de4a86df587d796fa6e0893579aec",
+   "wh": [
+    32,
+    32
+   ],
+   "pixels": "d8216a27c4495ec448021425ef0aaa5656fd91b5ea17ecd6fbe50fc232915e52"
+  },
+  "resources/gfx/ui/bosshp_icons/chapter4/teratoma_small.png": {
+   "size": 396,
+   "sha256": "8664db1ff7a4488902d5d249d16b488a240abccc32e278831f4660a2169ad806",
+   "wh": [
+    32,
+    32
+   ],
+   "pixels": "a1277f76cbd8a31cbb4463d8a486a3c12f04d2bbf6ddd524ecfebd2ec2c558b3"
+  },
+  "resources/gfx/ui/bosshp_icons/chapter4/the_matriarch.png": {
+   "size": 875,
+   "sha256": "ff75fd7e8578db5bbc0d8c89255de530269792ab059e4784896f5438ef527e21",
+   "wh": [
+    32,
+    32
+   ],
+   "pixels": "0d1b23e44ecf107b64f41547536f8297e861df92321b462c9b74d23b213cd06c"
+  },
+  "resources/gfx/ui/bosshp_icons/chapter4/triachnid.png": {
+   "size": 440,
+   "sha256": "e5c2cdbaa470d7d2dd6f32c8ec79c427053eaa5626c20cc160d708da05bcb735",
+   "wh": [
+    32,
+    32
+   ],
+   "pixels": "d901cffae9afc0ccd936f7115d861756b96ddc098cc1f2aeb34e743616d46bfa"
+  },
+  "resources/gfx/ui/bosshp_icons/final/beast.png": {
+   "size": 1040,
+   "sha256": "564aabfae275332653bd11ec16a59dc05a5d5281037f6e0c8acb160eb8d175eb",
+   "wh": [
+    32,
+    32
+   ],
+   "pixels": "f4775911bd1244ab7dbb424bb824667ddf1a7adeca8934ecd96f101ab1d3efb9"
+  },
+  "resources/gfx/ui/bosshp_icons/final/blue_baby.png": {
+   "size": 6678,
+   "sha256": "98f8038bb9a2683c890c9ac54fd39ffa2efd6ed2f2efd57b64f4b1535aa00089",
+   "wh": [
+    32,
+    32
+   ],
+   "pixels": "b37eaba0d4ff4529e21178c20554edad8c083472ba21efe2f38d5f749c2c0418"
+  },
+  "resources/gfx/ui/bosshp_icons/final/blue_baby_phase2.png": {
+   "size": 6668,
+   "sha256": "3a098cd933e8afef8908fd04dea1d769993c1237722ac80115dfc0b5431f6934",
+   "wh": [
+    32,
+    32
+   ],
+   "pixels": "5a2214f3fdba7705d4ef4349e9a26dff9aee427b285c684870edc1ff792de833"
+  },
+  "resources/gfx/ui/bosshp_icons/final/blue_baby_phase3.png": {
+   "size": 6692,
+   "sha256": "7ff6ef770dbb93ffecec228ccb3b36702dc01af793cebad15fcd3898c11ad3ec",
+   "wh": [
+    32,
+    32
+   ],
+   "pixels": "d831156daa634e1e27dc0c24e00173c043afb9dfe95748e461b9e1b54f7e0eef"
+  },
+  "resources/gfx/ui/bosshp_icons/final/delirium.png": {
+   "size": 606,
+   "sha256": "3977b27fba5349530d44a63359ca2ffb7a22c2343a705988fbdc2807db1da58f",
+   "wh": [
+    32,
+    32
+   ],
+   "pixels": "42b279c5664a99d7b60a78c0ffa7b207cfaa52907c14d64a7f3f21f575c0b6c1"
+  },
+  "resources/gfx/ui/bosshp_icons/final/dogma.png": {
+   "size": 6277,
+   "sha256": "91015758edef3cc0fd9f527cc56b4690d68de6ec1311973d7406ecd3b8c28538",
+   "wh": [
+    64,
+    64
+   ],
+   "pixels": "1e78a668de4657b5b9a0e76e97fdcaaf36a0b8983400eb7e2910054622f905b4"
+  },
+  "resources/gfx/ui/bosshp_icons/final/dogma_icon.anm2": {
+   "size": 2084,
+   "sha256": "ff386beb303db8a5c16a64c9911ac1ba60f6537a263b6fc447a20170e289e935",
+   "tree": "eebb3e82fd603435ef5cc91a8fb331c94930986a38d344c6cc422b05dd79feb8"
+  },
+  "resources/gfx/ui/bosshp_icons/final/dogma_icon_64.anm2": {
+   "size": 2091,
+   "sha256": "537fa66ab6fd9b01024335e0c4f816718c540c58d4ac72b3ee24ca8e6adba7cd",
+   "tree": "f3b3bd0c9c11dcc184345d38c1736a644518d66ce288aaf2cc9f5daff741fb8b"
+  },
+  "resources/gfx/ui/bosshp_icons/final/dogma_phase2.png": {
+   "size": 20890,
+   "sha256": "11e74efa90b90b4bf5474e9d1c12da556d34ddc62c436e013b7c117768f26245",
+   "wh": [
+    128,
+    128
+   ],
+   "pixels": "175b862ced229a0a51c6ffdaea9a0df98a8936dafec8841df947bdf7d7a07a3a"
+  },
+  "resources/gfx/ui/bosshp_icons/final/dogma_tv.png": {
+   "size": 2956,
+   "sha256": "6ba6425d3a70da633d4668dd1549c961ad6bfad4d4dccef6d858e1893c667c29",
+   "wh": [
+    64,
+    64
+   ],
+   "pixels": "dee5fb4b778c6d369aee825dc58712868d1b9923e744f957c8f0b62bffa2ce40"
+  },
+  "resources/gfx/ui/bosshp_icons/final/hush.png": {
+   "size": 712,
+   "sha256": "6d18d3d43ffbc9a60f78153047eeeef2fce02918eda2a67f3e05226dac2fc47f",
+   "wh": [
+    32,
+    32
+   ],
+   "pixels": "7a547f763feebab080b51882e73fc882f377ccd805edab0655a058dfd3247602"
+  },
+  "resources/gfx/ui/bosshp_icons/final/hush_baby.png": {
+   "size": 6612,
+   "sha256": "97979ecb97bac47fbf39f993a56cdfd092d39fad9a1e95085c859b87b5c38d13",
+   "wh": [
+    32,
+    32
+   ],
+   "pixels": "60385891d63018aa259d4f61ccb9443983dbe6f8bf941b4922819d15de75b6bb"
+  },
+  "resources/gfx/ui/bosshp_icons/final/hush_phase1.png": {
+   "size": 18921,
+   "sha256": "b552911576bebf7e9db31c659a3e9046827bc75fedfa13ca883dbe6232002232",
+   "wh": [
+    32,
+    32
+   ],
+   "pixels": "5d777d556f59985e4fdb744e7acb35a7ffb81605226a7ce2c1ff00096bd41215"
+  },
+  "resources/gfx/ui/bosshp_icons/final/isaac.png": {
+   "size": 6656,
+   "sha256": "cfea0ffbfc2e33c72a50ef94da5917ec4cf2b9f1c5c3f4fa0f76512cf699c004",
+   "wh": [
+    32,
+    32
+   ],
+   "pixels": "36bb5a56b93f80d73735f4169c95d68ecbf802d2bd5210a1eb94e8a70f9f8db2"
+  },
+  "resources/gfx/ui/bosshp_icons/final/isaac_phase2.png": {
+   "size": 6644,
+   "sha256": "d6cbe6648affc18d27253234ebae0ca30f0bfb5f45dcd55ce148e14152908338",
+   "wh": [
+    32,
+    32
+   ],
+   "pixels": "4038c004b8407d8172bebf13a10dc0b67298e109a7136316830ba511ce4b8bb0"
+  },
+  "resources/gfx/ui/bosshp_icons/final/isaac_phase3.png": {
+   "size": 6654,
+   "sha256": "24e33a3a3114cd55d810a43a8cf2ba80ed1fea391b0700aab3146df53b6cf238",
+   "wh": [
+    32,
+    32
+   ],
+   "pixels": "1f8860c1d165bef1a6a6f62f374ad8d0597d8c99d15627523de0ffd7594b2bbc"
+  },
+  "resources/gfx/ui/bosshp_icons/final/it_lives.png": {
+   "size": 658,
+   "sha256": "43e4359c2d61fb22617d664497b31bb31ca3ef7b0055686069c7f66574d35325",
+   "wh": [
+    32,
+    32
+   ],
+   "pixels": "3c85be8bf66b102412c40d1235261d8dae31e950049b2ae369d572c37d4bc993"
+  },
+  "resources/gfx/ui/bosshp_icons/final/mausoleum_mom.png": {
+   "size": 763,
+   "sha256": "cd2f3f61cb72ac2d4d782ad4af23d32355c26677d8b46c41c8f304a8318a7a38",
+   "wh": [
+    32,
+    32
+   ],
+   "pixels": "cba052d95bbb16646b4001f5e7712e013ebf5dd89128618f4c2e13d8c50c6019"
+  },
+  "resources/gfx/ui/bosshp_icons/final/mega_satan.png": {
+   "size": 1223,
+   "sha256": "e468de326ba9ec57948a78b0b5242dc988fc83eccceba64e290115f4dc5b83bd",
+   "wh": [
+    64,
+    64
+   ],
+   "pixels": "49c638ef93eb0e5f4be99d651446d382b04c59313d7813b42ca84f70dc81740f"
+  },
+  "resources/gfx/ui/bosshp_icons/final/mega_satan_lefthand.png": {
+   "size": 568,
+   "sha256": "5e7518cce273ad111fee6e72bf7526c8da2dc3a01251b345ce15694b79cf1847",
+   "wh": [
+    32,
+    32
+   ],
+   "pixels": "fa17fe9ab10a6141bdd2d66682045b93a61c57ea2ac2b2c6a4bec8e6160e3b2f"
+  },
+  "resources/gfx/ui/bosshp_icons/final/mega_satan_phase2.png": {
+   "size": 1330,
+   "sha256": "f65531efd03d8f10746e9ff4f47c3e5c62e58444637b22fdab57583bf24c6b6e",
+   "wh": [
+    64,
+    64
+   ],
+   "pixels": "cedb75552a594f8d8471b856f6c31b35b8a5f75ce8c3c355a1d934705b61b898"
+  },
+  "resources/gfx/ui/bosshp_icons/final/mega_satan_righthand.png": {
+   "size": 633,
+   "sha256": "3b23926e399d49680a309b2a655b9d6a9d461501bb5a89a856cfe6020f3b5534",
+   "wh": [
+    32,
+    32
+   ],
+   "pixels": "7ca8ccdd5c492c550642537a4ec1ff384d5bcd7621d21a267f1d854fc3c1aaf0"
+  },
+  "resources/gfx/ui/bosshp_icons/final/mom.png": {
+   "size": 705,
+   "sha256": "d715af3d5d61439f4ea47788e2f81a14911054aa440849140cfdbd1b42ec1590",
+   "wh": [
+    32,
+    32
+   ],
+   "pixels": "aab27bbd927cba71318471fd6381d3fc87fecfd407de73c406ae89f6839d9fdc"
+  },
+  "resources/gfx/ui/bosshp_icons/final/mom_blue.png": {
+   "size": 745,
+   "sha256": "65a66028b868d30763a6964a5f9cc40ad8849216c3fd094ba691f0cbfdc288e1",
+   "wh": [
+    32,
+    32
+   ],
+   "pixels": "f88f240a57a992918bb320368dcc14d3ce39489b1cab9b871dda53f8a4eb72a5"
+  },
+  "resources/gfx/ui/bosshp_icons/final/mom_red.png": {
+   "size": 713,
+   "sha256": "567ab9b598ae3db8128a9327c5de2c20d09d4c4d0a2b4982316cae2175649e19",
+   "wh": [
+    32,
+    32
+   ],
+   "pixels": "ae00ad065be6df82ce9df7c3e05b4ed96e82910217efe14926ff14f90f286710"
+  },
+  "resources/gfx/ui/bosshp_icons/final/moms_heart.png": {
+   "size": 686,
+   "sha256": "d372167afcf4f15637851177091b7bb14e8e3db2783a4823a6e47d22574a664f",
+   "wh": [
+    32,
+    32
+   ],
+   "pixels": "9c9c9e1a1eb127a555a93732e757263e293efe53a270a7db35c7355997eb6ac2"
+  },
+  "resources/gfx/ui/bosshp_icons/final/mother.png": {
+   "size": 890,
+   "sha256": "24ff9a6a81828023affea5992b3dcc8693cbcd98ba93f0e0e85a8cb294631feb",
+   "wh": [
+    32,
+    32
+   ],
+   "pixels": "1abb6dffde3537befae2bbbeb6e5197db6ec15cf3945ef3f3a26ce4045dcece5"
+  },
+  "resources/gfx/ui/bosshp_icons/final/mother_phase2.png": {
+   "size": 936,
+   "sha256": "2c72e3db062423e564ec5eba3ae88ed5ceaad68cda8a60ca42bee71e9dac87bb",
+   "wh": [
+    32,
+    32
+   ],
+   "pixels": "17cc47128b8a2c6ea87ae22af4fa87a0c0da74fb29a82249845e86af1134d673"
+  },
+  "resources/gfx/ui/bosshp_icons/final/satan.png": {
+   "size": 822,
+   "sha256": "c532ef3722c5a411d757d34df0dd26da95b704a70fa5ad02cebb8d709bdc13b0",
+   "wh": [
+    32,
+    32
+   ],
+   "pixels": "418a5f1ed3927a81d59c0bd97855f01c0d5a940fc636905572f7a9a6c42b5278"
+  },
+  "resources/gfx/ui/bosshp_icons/final/satan_phase2.png": {
+   "size": 869,
+   "sha256": "99e42d429cf04d6bd1c8656e6deaeec8c63e656b9b324fa8732e5bd03fde446c",
+   "wh": [
+    32,
+    32
+   ],
+   "pixels": "505b716c217ae43e865f7215ad3735a354e663d904760adea62348450fdd844e"
+  },
+  "resources/gfx/ui/bosshp_icons/final/the_lamb.png": {
+   "size": 2865,
+   "sha256": "0e0ef82e2634e8af5467b34326a1305947bdc36bfbf91b86ca5128ab5711e9bc",
+   "wh": [
+    32,
+    32
+   ],
+   "pixels": "db8f88b9bab56bae525b1eea2e76cc19e69dd5064c4f7d55601d587ed6d5895f"
+  },
+  "resources/gfx/ui/bosshp_icons/final/the_lamb_body.png": {
+   "size": 2663,
+   "sha256": "186ad86994fcde2ad0c4cc92c09b50b7ee5e1557a9d0ba3898ddfbeedc125c68",
+   "wh": [
+    32,
+    32
+   ],
+   "pixels": "ee563865ae22b1bf56c3cbd1ea681e44891bbdf0a387fed2eff6394444a9a7e2"
+  },
+  "resources/gfx/ui/bosshp_icons/final/ultra_death.png": {
+   "size": 15018,
+   "sha256": "7108e0efb9221283118de7a84dd6ef9cf0d880e40ba6eba2e3ad5004e30188cb",
+   "wh": [
+    64,
+    64
+   ],
+   "pixels": "22446bbac831111e896ed90994625f74f3ffbf7d15826aa90a60474c3dc84950"
+  },
+  "resources/gfx/ui/bosshp_icons/final/ultra_famine.png": {
+   "size": 15148,
+   "sha256": "d83616fd2d4c1337b08e8a713595811a0a6cbdd378cbfd7bc9bdf43416db56c5",
+   "wh": [
+    64,
+    64
+   ],
+   "pixels": "2a72259f0262b1395a1402c480177e5f044677c8de2464ee713e7222dc21cc9c"
+  },
+  "resources/gfx/ui/bosshp_icons/final/ultra_greed.png": {
+   "size": 649,
+   "sha256": "aaf8094f6828070ce4e8f8c7174b3c3dc43b0390b9b1053888325e52906e7515",
+   "wh": [
+    32,
+    32
+   ],
+   "pixels": "d529c17f4d9ff8d78a4297b0107c5d278be80d2e88274e537647f1b9e02a68b7"
+  },
+  "resources/gfx/ui/bosshp_icons/final/ultra_greedier.png": {
+   "size": 747,
+   "sha256": "7a050aeff93561eb090f28a06f289a0f7d2a93118753589aa32002a54172681b",
+   "wh": [
+    32,
+    32
+   ],
+   "pixels": "c2f70c31983975332dae5d101256bb14a86612efe8557035832220f52b4ea4d6"
+  },
+  "resources/gfx/ui/bosshp_icons/final/ultra_pestilence.png": {
+   "size": 15304,
+   "sha256": "1eb9b137bbe7cf0457cf34aeeef4b8471abd2583d3f03c7fe22c13d9217ac8ac",
+   "wh": [
+    64,
+    64
+   ],
+   "pixels": "543002779d77382244173daaaf6093f18bfad53396b4b8daaf226fc5efcc4347"
+  },
+  "resources/gfx/ui/bosshp_icons/final/ultra_pestilence_phase2.png": {
+   "size": 15044,
+   "sha256": "ef054365eff39086f6c9afbcac845fa6eb4dec9d5717ae213a8f4e4f3d22b622",
+   "wh": [
+    64,
+    64
+   ],
+   "pixels": "5e6134b09b69953317622386889c061635aa46259f879c4c4bb9fcc5b2eb212d"
+  },
+  "resources/gfx/ui/bosshp_icons/final/ultra_war.png": {
+   "size": 15165,
+   "sha256": "e7a76ea13ac800e90a5caec212a05d86742c934429401f893c8d007e018ec320",
+   "wh": [
+    64,
+    64
+   ],
+   "pixels": "dd9a5b974efd81eb3b9dedeb72dc08523bab34f077ffa7bbe8c9cb9a10f9039e"
+  },
+  "resources/gfx/ui/bosshp_icons/final/ultra_war_phase2.png": {
+   "size": 15172,
+   "sha256": "83e04fc15f3ab29fa47a4fc018baf324e882c0d7ee03cc0d756af081471b6dd2",
+   "wh": [
+    64,
+    64
+   ],
+   "pixels": "2e5e0e3fca275e932aaeecbfb6cbf1bc9cbf42d092ad4b8b726249b274018cb1"
+  },
+  "resources/gfx/ui/bosshp_icons/horsemen/conquest.png": {
+   "size": 683,
+   "sha256": "91280aeccaa789e9a8270995898253f0c6c26d957c1b884725dab756c2c58c28",
+   "wh": [
+    32,
+    32
+   ],
+   "pixels": "55dfe8473542869bcab8a213e4f81b20d3b5d1bca0369872c5cf78c2c13de6c5"
+  },
+  "resources/gfx/ui/bosshp_icons/horsemen/death.png": {
+   "size": 543,
+   "sha256": "4eb67f9dd957c3ae2eda95ea1075c97878539bac6cf58bea14d21e0edba1fac0",
+   "wh": [
+    32,
+    32
+   ],
+   "pixels": "c6255d58799fcee49a1fc76834b0facbc751f59fce4771d2ecdc8ef46c474b4e"
+  },
+  "resources/gfx/ui/bosshp_icons/horsemen/death_black.png": {
+   "size": 583,
+   "sha256": "775640d2ab35887fa28fca5327fd148f334d3e4353fc27664676225215b26419",
+   "wh": [
+    32,
+    32
+   ],
+   "pixels": "d4efdfa902b7b7eaea80c497f1a83a04c768cfcfef32b863f51bc97eca3669f3"
+  },
+  "resources/gfx/ui/bosshp_icons/horsemen/death_horse.png": {
+   "size": 443,
+   "sha256": "6c48827a0673a0c0b8a8c53a2ec6df699338bf2338c45ea1e0c18e8af88b4d0d",
+   "wh": [
+    32,
+    32
+   ],
+   "pixels": "8cc00f599c1db031c1fbb152a4054f8921c90f21b71a38ccdfe8b91cf6419fc1"
+  },
+  "resources/gfx/ui/bosshp_icons/horsemen/death_horse_black.png": {
+   "size": 443,
+   "sha256": "3046856fa99fe8ee3c1e8529de816cab64916385cecb6b4e020c5d6b65b3b500",
+   "wh": [
+    32,
+    32
+   ],
+   "pixels": "f7a27ee3618f1ddcfa6d1525e8879ae2f22373bc66d7650ea16c01a188557185"
+  },
+  "resources/gfx/ui/bosshp_icons/horsemen/famine.png": {
+   "size": 676,
+   "sha256": "97147bea7bfb3ecdae2f178b829fabd5a03d0e9744a8ced07c9d0267438fee22",
+   "wh": [
+    32,
+    32
+   ],
+   "pixels": "1a3662e7263d0583e65b5b70d4a7c6d3c526027859f6914f0a2b83686eea9535"
+  },
+  "resources/gfx/ui/bosshp_icons/horsemen/famine_blue.png": {
+   "size": 717,
+   "sha256": "ffa7884552cf3ace51e612d157e7ecd865dd988952c04008aa5c261282fc8a6d",
+   "wh": [
+    32,
+    32
+   ],
+   "pixels": "03a2292fa38f67591aaebe55c5bbf542a9e37a53081af9459f18cc4a9310b93b"
+  },
+  "resources/gfx/ui/bosshp_icons/horsemen/headless_horsemen_body.png": {
+   "size": 569,
+   "sha256": "ed5c028f9c72464229dce20de25f1163ef67311cee2349c72aa0118b43b562a1",
+   "wh": [
+    32,
+    32
+   ],
+   "pixels": "20ba13749962d5f5d06d8f3fda7df8dc2c42267181f1c9bed59f6743a7465355"
+  },
+  "resources/gfx/ui/bosshp_icons/horsemen/headless_horsemen_head.png": {
+   "size": 706,
+   "sha256": "33be631fd60bcbe84cc0121d76cb77467dfca7291a853ef0ae0a23e5b2648ca7",
+   "wh": [
+    32,
+    32
+   ],
+   "pixels": "96051cdea97b8987c547ef9c60069eb3d356c2077c9e6c20b77d119e424183c5"
+  },
+  "resources/gfx/ui/bosshp_icons/horsemen/pestilence.png": {
+   "size": 734,
+   "sha256": "ddd305e560ca00fbb27265627af2eee4a9f6ab5c52eab5e4192416edac0d62d6",
+   "wh": [
+    32,
+    32
+   ],
+   "pixels": "a192455c69c3de9306b2028a9fff9689738adbbd0c8ae8200efe62f561443d5f"
+  },
+  "resources/gfx/ui/bosshp_icons/horsemen/pestilence_grey.png": {
+   "size": 717,
+   "sha256": "150be600c66b8412f0a516e94946c96bd4e7882240ce564aea8f0f75eaafee7a",
+   "wh": [
+    32,
+    32
+   ],
+   "pixels": "9bbe8f0b9fd3eef77049864c836ec5628f3390032dc07e32829cad94576b5cea"
+  },
+  "resources/gfx/ui/bosshp_icons/horsemen/pestilence_phase2.png": {
+   "size": 631,
+   "sha256": "a39954dfa32449e421c122fa55653bce8052348756fbeb0c32b8522ffffe0439",
+   "wh": [
+    32,
+    32
+   ],
+   "pixels": "995b2cf4507dff9b396c905aa564962aa031497ae2e50ed3ad7effec81732f32"
+  },
+  "resources/gfx/ui/bosshp_icons/horsemen/pestilence_phase2_grey.png": {
+   "size": 623,
+   "sha256": "d4806d85de1c453d71ba5ae67c5f771aee298fef076dc8af4d9513af1d3fb808",
+   "wh": [
+    32,
+    32
+   ],
+   "pixels": "f273601846b301e5df8c661f5bf37e15660bde5186b5d5666715a8ee7f9f4085"
+  },
+  "resources/gfx/ui/bosshp_icons/horsemen/war.png": {
+   "size": 604,
+   "sha256": "83e35a04592412ac513905f6d9e9e0e40f6d4fcca79f919b57fe5a3843205abc",
+   "wh": [
+    32,
+    32
+   ],
+   "pixels": "bfa484a72bb4f75ccf5c28edd5a629be74095d0960974e6a29bb418efc52f3ee"
+  },
+  "resources/gfx/ui/bosshp_icons/horsemen/war_grey.png": {
+   "size": 620,
+   "sha256": "f3adfb46eb5b68d9c6c14f52218bbe686013a9ad8bba4c91c5f1ec946ae1551a",
+   "wh": [
+    32,
+    32
+   ],
+   "pixels": "6016a62471d9b4790672c3d88c053db717f736057a670e6beef4516098c57753"
+  },
+  "resources/gfx/ui/bosshp_icons/horsemen/war_phase2.png": {
+   "size": 624,
+   "sha256": "72e4dfd485daf885c4337ff44a26c7cb6dcf37eaf01fea429270adb54ca2ed18",
+   "wh": [
+    32,
+    32
+   ],
+   "pixels": "e9cf57644ba9bea478146b348f179937e4f33238f15fc7bc5962c6779e5ce6ba"
+  },
+  "resources/gfx/ui/bosshp_icons/horsemen/war_phase2_grey.png": {
+   "size": 635,
+   "sha256": "e2f0762b697cad89362e66d398478807ee2b8fefb7a1f3091b31fb4885a81427",
+   "wh": [
+    32,
+    32
+   ],
+   "pixels": "b26e73c2d69caa5a579e98bc3d7cff1cb644b91714b888aacb460fc515a82956"
+  },
+  "resources/gfx/ui/bosshp_icons/miniboss.png": {
+   "size": 19840,
+   "sha256": "fba281e48b2050915dd146c774cc0748c2c125abd1aac5e6c4e3893b1a3d3793",
+   "wh": [
+    32,
+    32
+   ],
+   "pixels": "e88fa7e0a57fd82c9eff5401b019c30b528c25625d1480aa59c5d125de4d1891"
+  },
+  "resources/gfx/ui/bosshp_icons/minibosses/dark_esau.png": {
+   "size": 6840,
+   "sha256": "29aa11c9077af2e94f8d4f2c1bda5c8a83547e766d7860bb97779db049c7f279",
+   "wh": [
+    32,
+    32
+   ],
+   "pixels": "f3d54a6cfceca848fb39c2d1125e958971514b76b2a3e1d1f99d262d08c2eeb4"
+  },
+  "resources/gfx/ui/bosshp_icons/minibosses/envy_large.png": {
+   "size": 437,
+   "sha256": "0af37b96f2671628354a3201852e15995610f56c3c160a10465c0e013f68618f",
+   "wh": [
+    32,
+    32
+   ],
+   "pixels": "5f34f080632d07ec0ea8fd9a62b16c84d50a2936efd529a394169b8a39ba9dba"
+  },
+  "resources/gfx/ui/bosshp_icons/minibosses/envy_medium.png": {
+   "size": 471,
+   "sha256": "b07f69e29cc71bd354edc5dda29062f4ac1e43e822bb86ac1b267fb2c9a1d29d",
+   "wh": [
+    32,
+    32
+   ],
+   "pixels": "47989209102db9545f6c27c5c12ea7b3e9d0d51f7e29a1736c1754c05be596e4"
+  },
+  "resources/gfx/ui/bosshp_icons/minibosses/envy_small.png": {
+   "size": 432,
+   "sha256": "e939234a55322976724bd57cadbd510e6240dd39ba75d530e56847690ff67ead",
+   "wh": [
+    32,
+    32
+   ],
+   "pixels": "a00254166a6680934614bd05b5b428c19d56141834d6c61ea4d6098411cc1385"
+  },
+  "resources/gfx/ui/bosshp_icons/minibosses/fallen_gabriel.png": {
+   "size": 532,
+   "sha256": "0b82c9f5e445bc2180a5097238a66ed92779808318a69af7fba792e9f1ba8797",
+   "wh": [
+    32,
+    32
+   ],
+   "pixels": "c300992fd4a5d3f42fbf38965f7e0df8cca349bc79e6612d1a8562def8f6ac02"
+  },
+  "resources/gfx/ui/bosshp_icons/minibosses/fallen_uriel.png": {
+   "size": 556,
+   "sha256": "da56d972d9837001f817949f08c6a570cbad0452769e49e5b75263f0495b269c",
+   "wh": [
+    32,
+    32
+   ],
+   "pixels": "0d6c98981377a9a86f8c9b0cc1fa7a97a170b73d58c236135bbdb7c4f42a223c"
+  },
+  "resources/gfx/ui/bosshp_icons/minibosses/gabriel.png": {
+   "size": 560,
+   "sha256": "e566c942cad24ada129b03364ac994a7175bd67469965de33da85558c233cff5",
+   "wh": [
+    32,
+    32
+   ],
+   "pixels": "20fb00179cbbc6b8b62fd7c1046444932b575642803afb092c7e47b4c99dbf20"
+  },
+  "resources/gfx/ui/bosshp_icons/minibosses/gluttony.png": {
+   "size": 478,
+   "sha256": "b5386c9a276a3f6aa94f1828c4785abc108caacdeacdba10942ad52e6a6e76eb",
+   "wh": [
+    32,
+    32
+   ],
+   "pixels": "2cc9cc2b2b37e3b519615913aca21037a7d8ad64bfd54d3dc6e8f4f6320ab7a3"
+  },
+  "resources/gfx/ui/bosshp_icons/minibosses/greed.png": {
+   "size": 556,
+   "sha256": "9daa0ed94ba035b92823c4a548aadaeeb29a5ca329357d80ffb8bcc17913d108",
+   "wh": [
+    32,
+    32
+   ],
+   "pixels": "0c14352be5cb0342dccde43721ed2621b792521beb352adbc009c18be10e7b87"
+  },
+  "resources/gfx/ui/bosshp_icons/minibosses/krampus.png": {
+   "size": 680,
+   "sha256": "1df6f6c8d501ae27c54ab87e3182a2018d48ab52d9da065faa2b3ad708149118",
+   "wh": [
+    32,
+    32
+   ],
+   "pixels": "0f4a135d4227f0b44d0f6c872c08bfe010e663f2511e06ee0428a7234f54f185"
+  },
+  "resources/gfx/ui/bosshp_icons/minibosses/lust.png": {
+   "size": 592,
+   "sha256": "e79a76e48e73bad2b0ce1db2a8d13f80feb23885d157c8f955739502b4bb85e8",
+   "wh": [
+    32,
+    32
+   ],
+   "pixels": "8fd5b3499607165388a2560a2e1380ef31143b508baf3446bde11063fad3ecec"
+  },
+  "resources/gfx/ui/bosshp_icons/minibosses/pride.png": {
+   "size": 422,
+   "sha256": "0f79bf0521fea9f7c707076c60f0d5df93c7b0e47a6b494258ed1c50c5d983ad",
+   "wh": [
+    32,
+    32
+   ],
+   "pixels": "0d04653e303a6b4d825402e2618c71bef35f6b54b5026b99ec00ad5951161d11"
+  },
+  "resources/gfx/ui/bosshp_icons/minibosses/sloth.png": {
+   "size": 572,
+   "sha256": "5c8ab3dff80bf2a0035a088b42ea39a7a944016d0855aa034ab4c53f052d7e5c",
+   "wh": [
+    32,
+    32
+   ],
+   "pixels": "b5a924b100e70f079b34bd35d2213f4df810275f742fe70ff9105c34c81d20fa"
+  },
+  "resources/gfx/ui/bosshp_icons/minibosses/super_envy_large.png": {
+   "size": 555,
+   "sha256": "f564e0476f1b0a6d81b332d2e5452084a67676c2f9a9680a54515c562c4feb5f",
+   "wh": [
+    32,
+    32
+   ],
+   "pixels": "94c0b05ee0ce50b37b4abf1cfaf5a0d54dd112c79f413c860e28f605a4229c60"
+  },
+  "resources/gfx/ui/bosshp_icons/minibosses/super_envy_medium.png": {
+   "size": 459,
+   "sha256": "5d8c8b641447d7d8fa4ef2f9d3f8241f2888c5d53d34abf4adbc9fb0ce77c08c",
+   "wh": [
+    32,
+    32
+   ],
+   "pixels": "850e80f671abed2457df3b9dcfbca754da382c0c3b237168a46f30430ea825d0"
+  },
+  "resources/gfx/ui/bosshp_icons/minibosses/super_envy_small.png": {
+   "size": 464,
+   "sha256": "849c1536ed55f83b9dc490a67b5b727ace18bc9f5eede1736c7703c807b8ee81",
+   "wh": [
+    32,
+    32
+   ],
+   "pixels": "454287d020ab9e2286b5378aa3defbecccce48feb1c0b679d967904eb446e06b"
+  },
+  "resources/gfx/ui/bosshp_icons/minibosses/super_envy_tiny.png": {
+   "size": 454,
+   "sha256": "2743ae8fcfd2a23bd5f7c499fb67b664ee82678233270e7ccda33ed0c93a6b22",
+   "wh": [
+    32,
+    32
+   ],
+   "pixels": "e5ea0ff737ad44eeda73b36cdda843679e12fc2bd19960c24f22651056b41a33"
+  },
+  "resources/gfx/ui/bosshp_icons/minibosses/super_gluttony.png": {
+   "size": 629,
+   "sha256": "4c60cc5f1f4133810e2336ac177117a7be217eff9f76d97bc11684fb247d3e34",
+   "wh": [
+    32,
+    32
+   ],
+   "pixels": "6e0595353d3f28cf8914511912c6a9655abe4f27e17f395506c2991eff52fa0d"
+  },
+  "resources/gfx/ui/bosshp_icons/minibosses/super_greed.png": {
+   "size": 702,
+   "sha256": "ed14ea622530a51a1d356f5a9ff3a1b951540ff582e8e2e7bf3dba65d8f18e07",
+   "wh": [
+    32,
+    32
+   ],
+   "pixels": "a7ea2454dfdaaecd338f162ef9d33f68739b605a83aad3fbe33ff421709e4c3c"
+  },
+  "resources/gfx/ui/bosshp_icons/minibosses/super_lust.png": {
+   "size": 779,
+   "sha256": "55451e81efd725160b0a7e0e1aa5fe963a12c3e33fa6e07aafb7304a0375c447",
+   "wh": [
+    32,
+    32
+   ],
+   "pixels": "54ef49bd4ba716049bda7b1bf46adcecc183870a0bfff54c63be5a0c506bbed3"
+  },
+  "resources/gfx/ui/bosshp_icons/minibosses/super_pride.png": {
+   "size": 499,
+   "sha256": "e2df311529fc99954966820d156b69ce5220961d576d6151834f61e4bd79ef3a",
+   "wh": [
+    32,
+    32
+   ],
+   "pixels": "33efb8b16b4f92ef8bca23875a64a226e81689e72d5f0400e8db6d14ecb5c0e3"
+  },
+  "resources/gfx/ui/bosshp_icons/minibosses/super_sloth.png": {
+   "size": 699,
+   "sha256": "7d0c0ef9d579f51be04aad6f3154253e28104c9ab98885618dbf3df5771d9f63",
+   "wh": [
+    32,
+    32
+   ],
+   "pixels": "33dad3b260765ca8c44c7dc57e08f59fd272649002385a4c1663e79ca2179f63"
+  },
+  "resources/gfx/ui/bosshp_icons/minibosses/super_wrath.png": {
+   "size": 719,
+   "sha256": "31baec4f237d4f789d16ed34c1e7efcce17ba1537dc49e4042c0469a57e35410",
+   "wh": [
+    32,
+    32
+   ],
+   "pixels": "46449817cd226da90fdaa619d6c86c0d7fe0ff41987a316cec43de09e6d8d53a"
+  },
+  "resources/gfx/ui/bosshp_icons/minibosses/ultra_pride_ed.png": {
+   "size": 626,
+   "sha256": "5e4a5f0dd8f535641b99705c732ff968d32ba58303e0cbc5f2d7048bdc9d94c1",
+   "wh": [
+    32,
+    32
+   ],
+   "pixels": "85abc45c7f035c1a873ff22e157d7cb595c86c10996990f172c6242cfcab662b"
+  },
+  "resources/gfx/ui/bosshp_icons/minibosses/ultra_pride_florian.png": {
+   "size": 456,
+   "sha256": "4b706c511243f6a98851686c1a47e69ff3c38d3d04c5dace014f1995ea8b7399",
+   "wh": [
+    32,
+    32
+   ],
+   "pixels": "28147c6eae84e290feb11de13d22503c258d26ae3b493af1d1643cf1ced6cfd9"
+  },
+  "resources/gfx/ui/bosshp_icons/minibosses/uriel.png": {
+   "size": 575,
+   "sha256": "be99109c244ff667998671c5a2770075099d03dbd748e367499223a827979e92",
+   "wh": [
+    32,
+    32
+   ],
+   "pixels": "1ba40f221f77dd5549bce14a49e83e514a348fa0267c4abc0e002272417c0b0b"
+  },
+  "resources/gfx/ui/bosshp_icons/minibosses/wrath.png": {
+   "size": 520,
+   "sha256": "51df945e58b5b859dced982b65ee011b222e4e498a419652c065158331a135f4",
+   "wh": [
+    32,
+    32
+   ],
+   "pixels": "19e0af3353a5a643f4887fa2a299d92d6477650c6e1a240e1f77e1c44afbed51"
+  },
+  "resources/gfx/ui/bosshp_icons/statuseffect_icon.anm2": {
+   "size": 6303,
+   "sha256": "958eab506cc997a27cb84c3831728468a59e542048ffdc8a785325aa2349d996",
+   "tree": "8c85488b91e99a2cdc3ff63f26da6f09ed716b7912cff960e864f36de564af03"
+  },
+  "resources/gfx/ui/bosshp_icons/statuseffect_icons.png": {
+   "size": 4794,
+   "sha256": "5b7041a147b4d54462a78b33e802dc6a257cd54ed00e08d166407ae0c565f08f",
+   "wh": [
+    144,
+    32
+   ],
+   "pixels": "24433e68ec6db1436d11b3330c0cc7809e241e5a981bdd980d3e6c9c576434a7"
+  },
+  "resources/gfx/ui/bosshp_icons/unused/cadavra.png": {
+   "size": 765,
+   "sha256": "84d2a759eb57676987e2894543c16ea3c9bab6af08f1dfc81aaa8b1a8facd897",
+   "wh": [
+    32,
+    32
+   ],
+   "pixels": "76f6eba760b6c5917224fbad6f34b60ecb18fe729f1c4f770219e5948db0c573"
+  },
+  "resources/gfx/ui/bosshp_icons/unused/raglich.png": {
+   "size": 665,
+   "sha256": "744c065cffeb66a88e56e613244a86d20e42064ed54913bd1a12d5ab90c8019b",
+   "wh": [
+    32,
+    32
+   ],
+   "pixels": "db04fbe950e5bd6f1eb6db0f63f0c742478d0bdb8a1e89ebbeb31228b824f2b6"
+  },
+  "resources/gfx/ui/bosshp_icons/unused/skinless_hush.png": {
+   "size": 641,
+   "sha256": "643eb80427159dc32140ed4ef9a31cec71870c264c4ff4dbf53f294ab6710f89",
+   "wh": [
+    32,
+    32
+   ],
+   "pixels": "0669de4a8b4a309a9a4de1333b772f0c358867558932efd7e91955fe9d5fb6a6"
+  },
+  "resources/gfx/ui/ui_bosshealthbar.png": {
+   "size": 17232,
+   "sha256": "a3becc8a4ff570b24d75ae43f6f1699c5a619dccaa85acb511bf4934c2cbe287",
+   "wh": [
+    1,
+    1
+   ],
+   "pixels": "cf7cd03f45d112ad7f91373bbcdd2d84a1b1920b2c9498f906fd7ef913a20df9"
+  },
+  "resources/gfx/ui/ui_bosshealthbar_mini.png": {
+   "size": 17669,
+   "sha256": "d807834a26e52b8b95536dfb50624d7039681bfede8d42d6dd65b1b14bc7bc1d",
+   "wh": [
+    1,
+    1
+   ],
+   "pixels": "cf7cd03f45d112ad7f91373bbcdd2d84a1b1920b2c9498f906fd7ef913a20df9"
+  },
+  "resources/gfx/ui/ui_bosshealthbar_static.png": {
+   "size": 17669,
+   "sha256": "d807834a26e52b8b95536dfb50624d7039681bfede8d42d6dd65b1b14bc7bc1d",
+   "wh": [
+    1,
+    1
+   ],
+   "pixels": "cf7cd03f45d112ad7f91373bbcdd2d84a1b1920b2c9498f906fd7ef913a20df9"
+  },
+  "resources/gfx/ui/ui_bosshealthbar_stone.png": {
+   "size": 17669,
+   "sha256": "d807834a26e52b8b95536dfb50624d7039681bfede8d42d6dd65b1b14bc7bc1d",
+   "wh": [
+    1,
+    1
+   ],
+   "pixels": "cf7cd03f45d112ad7f91373bbcdd2d84a1b1920b2c9498f906fd7ef913a20df9"
+  }
+ },
+ "js": {
+  "agrees": true,
+  "differences": []
+ }
+}

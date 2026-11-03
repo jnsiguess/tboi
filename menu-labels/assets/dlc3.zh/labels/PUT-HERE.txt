@@ -1,0 +1,48 @@
+Labels for language: Chinese
+============================
+
+Twelve files, one file per label. The names must be exactly these:
+
+    mode.png       模式                        (control mode; English: MODE, Russian for cross-check: «РЕЖИМ»)
+    stick type.png 摇杆类型                      (stick type; English: STICK TYPE, Russian for cross-check: «ТИП СТИКА»)
+    stick size.png 摇杆大小                      (stick size; English: STICK SCALE, Russian for cross-check: «РАЗМЕР СТИКА»)
+    static.png     固定                        (the stick stays in place; English: STATIC, Russian for cross-check: «СТАТИЧНЫЙ»)
+    dynamic.png    跟随                        (the stick sits under the finger; English: DYNAMIC, Russian for cross-check: «ДИНАМИЧНЫЙ»)
+    small.png      小                         (size; English: SMALL, Russian for cross-check: «МАЛЫЙ»)
+    medium.png     中                         (size; English: MEDIUM, Russian for cross-check: «СРЕДНИЙ»)
+    big.png        大                         (size; English: BIG, Russian for cross-check: «БОЛЬШОЙ»)
+    analogue.png   模拟                        (smooth control; English: ANALOGUE, Russian for cross-check: «АНАЛОГ»)
+    digital.png    数字                        (eight directions; English: DIGITAL, Russian for cross-check: «ЦИФРОВОЙ»)
+    aim lock.png   锁定瞄准                      (native menu string; English: AIM LOCK, Russian for cross-check: «БЛОК СТРЕЛЬБЫ»)
+    found hud.png  已发现                       (native menu string; English: FOUND HUD, Russian for cross-check: «НАЙДЕННОЕ»)
+
+The last two are native menu strings; in this language they are either
+untranslated or only half translated. The owner redrew them in Russian;
+do the same here.
+
+HOW TO DRAW
+-----------
+  - Transparent background, letters only, no margins needed — I crop it
+    myself.
+  - NO anti-aliasing, hard pixels. Do not draw the edge: I add it by
+    downscaling, the same way it was done for English and Russian.
+  - Letter height ABOUT 22 PIXELS. Not two or three times the target
+    size: at an integer multiple the edge does not form at all — this was
+    checked by measurement.
+  - Any dark colour is fine; I recolour it to the native ink (54,47,45)
+    anyway.
+
+I fit the width to the line myself. If a word turns out really long, I will
+say so — the letters would come out lower than the native ones, and a
+shorter word would be better.
+
+TITLE SCREEN, separately
+------------------------
+File <language>/gfx/ui/main menu/titlemenu_ios.png, sheet 480x540. The
+lettering at the bottom is drawn TWICE — edit both. It currently reads
+«按开始键»; needed: 触摸开始
+
+Unlike the menu labels, the title is drawn in HARD PIXELS, with no
+anti-aliasing and no downscaling: every native title has exactly zero
+half-tones. If you hand it in anti-aliased, I will harden it with a
+threshold.

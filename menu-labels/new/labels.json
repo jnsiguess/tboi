@@ -1,0 +1,56 @@
+[
+ {
+  "имя": "STICK TYPE",
+  "файл": "STICK_TYPE.png",
+  "w": 107,
+  "h": 17
+ },
+ {
+  "имя": "STICK SCALE",
+  "файл": "STICK_SCALE.png",
+  "w": 106,
+  "h": 19
+ },
+ {
+  "имя": "STATIC",
+  "файл": "STATIC.png",
+  "w": 60,
+  "h": 19
+ },
+ {
+  "имя": "DYNAMIC",
+  "файл": "DYNAMIC.png",
+  "w": 87,
+  "h": 18
+ },
+ {
+  "имя": "SMALL",
+  "файл": "SMALL.png",
+  "w": 66,
+  "h": 22
+ },
+ {
+  "имя": "MEDIUM",
+  "файл": "MEDIUM.png",
+  "w": 80,
+  "h": 18
+ },
+ {
+  "имя": "BIG",
+  "файл": "BIG.png",
+  "w": 38,
+  "h": 17
+ },
+ {
+  "имя": "ANALOGUE",
+  "файл": "ANALOGUE.png",
+  "w": 109,
+  "h": 22
+ },
+ {
+  "имя": "DIGITAL",
+  "файл": "DIGITAL.png",
+  "w": 81,
+  "h": 22
+ }
+]

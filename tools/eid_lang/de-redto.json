@@ -1,0 +1,66 @@
+{
+ "1": [
+  "↑ {{Heart}} +{1} Gesundheit",
+  "{{SoulHeart}} +{1} Seelenherz{plural_en}",
+  "↑ {{EmptyHeart}} +{1} leerer Herzbehälter",
+  "{{SoulHeart}} +{1} Seelenherz{plural_en}",
+  "↓ {{EmptyHeart}} {1} Gesundheit",
+  "↓ {{SoulHeart}} {1} Seelenherz{plural_en}",
+  "{{Heart}} Heilt {1} Herz",
+  "",
+  "{{Heart}} Heilt 1 Herz",
+  "",
+  "{{HealingRed}} Heilt {1} Herz",
+  "",
+  "{{Heart}} Volle Gesundheit",
+  ""
+ ],
+ "2": [
+  "↑ {{Heart}} +{1} Gesundheit",
+  "{{BlackHeart}} +{1} schwarzes Herz",
+  "↑ {{EmptyHeart}} +{1} leerer Herzbehälter",
+  "{{BlackHeart}} +{1} schwarzes Herz",
+  "↓ {{EmptyHeart}} {1} Gesundheit",
+  "↓ {{BlackHeart}} {1} schwarzes Herz",
+  "{{Heart}} Heilt {1} Herz",
+  "",
+  "{{Heart}} Heilt 1 Herz",
+  "",
+  "{{HealingRed}} Heilt {1} Herz",
+  "",
+  "{{Heart}} Volle Gesundheit",
+  ""
+ ],
+ "3": [
+  "↑ {{Heart}} +{1} Gesundheit",
+  "{{BoneHeart}} +{1} Knochenherz{plural_en}",
+  "↑ {{EmptyHeart}} +{1} leerer Herzbehälter",
+  "{{BoneHeart}} +{1} Knochenherz{plural_en}",
+  "↓ {{EmptyHeart}} {1} Gesundheit",
+  "↓ {{BoneHeart}} {1} Knochenherz{plural_en}"
+ ],
+ "4": [
+  "↑ {{Heart}} +{1} Gesundheit",
+  "{{CoinHeart}} +{1} Münzherz{plural_en}",
+  "↑ {{EmptyHeart}} +{1} leerer Herzbehälter",
+  "{{CoinHeart}} +{1} Münzherz{plural_en}",
+  "↓ {{EmptyHeart}} {1} Gesundheit",
+  "↓ {{CoinHeart}} {1} Münzherz{plural_en}"
+ ],
+ "5": [
+  "↑ {{Heart}} +{1} Gesundheit",
+  "{{EmptyHeart}} +{1} leeres Herz{plural_en}",
+  "↑ {{EmptyHeart}} +{1} leerer Herzbehälter",
+  "{{EmptyHeart}} +{1} leeres Herz{plural_en}",
+  "↓ {{EmptyHeart}} {1} Gesundheit",
+  "↓ {{EmptyHeart}} {1} leeres Herz{plural_en}",
+  "{{Heart}} Heilt {1} Herz",
+  "",
+  "{{Heart}} Heilt 1 Herz",
+  "",
+  "{{HealingRed}} Heilt {1} Herz",
+  "",
+  "{{Heart}} Volle Gesundheit",
+  ""
+ ]
+}

@@ -1,0 +1,6 @@
+<music root="gfx/port_specialist/">
+	<track name="specialist" path="arcadespecalist.ogg" loop="true" />
+	<track name="specialist_b" path="arcadespecalist_b.ogg" loop="true" />
+	<track name="paincialist" path="crackhousespecialist.ogg" loop="true" />
+	<track name="look_man_i_really_tried_to_fix_the_earrape_in_the_default_specialist_but_nothing_works_im_genuinely_clueless" path="arcadespecalist_eden.ogg" loop="true" />
+</music>
