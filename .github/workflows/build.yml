@@ -27,6 +27,9 @@ jobs:
       - name: Apply the Fiend Folio native modules
         run: |
           if [ -f ff/apply_ff.sh ]; then bash ff/apply_ff.sh; fi
+      - name: Apply the custom character stats
+        run: |
+          if [ -f plantilla_personaje/apply_personaje.sh ]; then bash plantilla_personaje/apply_personaje.sh; fi
       - name: Apply Samael (scythe)
         run: |
           if [ -f samael/apply_samael.sh ]; then bash samael/apply_samael.sh; fi
