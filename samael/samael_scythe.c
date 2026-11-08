@@ -28,6 +28,7 @@
  *     other synergies. Those are other pieces of the mod, not this one.
  */
 #include <math.h>
+#include <stdint.h>
 #include <stdio.h>
 #include <string.h>
 #include <android/log.h>
@@ -238,4 +239,24 @@ void shim_samael_between_frames(void) {
             LOG("scythe: swing of player %d, dir (%.2f, %.2f), delay %d", i, (double) s->dir_x, (double) s->dir_y, s->cooldown);
         }
     }
+}
+
+/*
+ * ROOM FOR SAMAEL IN THE CHARACTER TABLE (id 41).
+ *
+ * The game builds its character table with `resize(41)` (ids 0..40), so a <player id="41"> is never read and the
+ * menu does not show it. Yama's "charslots" patch widens it: `mov w1,#41` -> `mov w1,#61` at 0x7855dc, i.e.
+ * 0x52800521 -> 0x528007A1 (two bytes). That patch comes from port_patches.bin, which this build does not carry,
+ * so the same edit is made here, in the loader's start-up block where __TEXT is still open for writing (written
+ * plainly, not through patch_word, like the other edits there). The word is checked first: only the original or
+ * the patched value is accepted, anything else leaves the image alone.
+ */
+void shim_samael_slots_install(unsigned char *base) {
+    uint32_t *w = (uint32_t *) (base + 0x7855dc);
+    if (*w != 0x52800521u && *w != 0x528007A1u) {
+        LOG("samael: 0x7855dc holds %08x - the character table is left alone", (unsigned) *w);
+        return;
+    }
+    *w = 0x528007A1u;
+    LOG("samael: character table resized 41 -> 61");
 }

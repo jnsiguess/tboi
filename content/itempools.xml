@@ -1,0 +1,126 @@
+<ItemPools>
+	<Pool Name="treasure">
+		<Item Name="Spirit of Depression" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
+		<Item Name="Thanatophobia" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
+		<Item Name="Thanatophilia" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
+		<Item Name="Punishment of the Grave" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
+		<Item Name="Reaper Bum" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
+		<Item Name="Remembrance of the Forgotten" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
+		<Item Name="Remembrance of Death" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
+		<Item Name="Mask of Thanatos" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
+		<Item Name="Jar of Scythes" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
+	</Pool>
+	<Pool Name="greedTreasure">
+		<Item Name="Spirit of Anger" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
+		<Item Name="Spirit of Depression" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
+		<Item Name="Thanatophobia" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
+		<Item Name="Thanatophilia" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
+		<Item Name="Punishment of the Grave" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
+		<Item Name="Reaper Bum" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
+		<Item Name="Remembrance of the Forgotten" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
+		<Item Name="Remembrance of Death" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
+		<Item Name="Mask of Thanatos" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
+		<Item Name="Jar of Scythes" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
+	</Pool>
+	<Pool Name="boss">
+		
+	</Pool>
+	<Pool Name="greedBoss">
+		
+	</Pool>
+	<Pool Name="devil">
+		<Item Name="Spirit of Denial" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
+		<Item Name="Spirit of Bargaining" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
+		<Item Name="Malakh Mot" Weight="0.1" DecreaseBy="1" RemoveOn="0.1"/>
+		<Item Name="Reaper Bum" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
+		<Item Name="Mask of Thanatos" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
+		<Item Name="Trumpet of Woe" Weight="0.5" DecreaseBy="1" RemoveOn="0.1"/>
+	</Pool>
+	<Pool Name="greedDevil">
+		<Item Name="Spirit of Denial" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
+		<Item Name="Spirit of Bargaining" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
+		<Item Name="Malakh Mot" Weight="0.1" DecreaseBy="1" RemoveOn="0.1"/>
+		<Item Name="Reaper Bum" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
+		<Item Name="Mask of Thanatos" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
+		<Item Name="Trumpet of Woe" Weight="0.5" DecreaseBy="1" RemoveOn="0.1"/>
+	</Pool>
+	<Pool Name="angel">
+		<Item Name="Spirit of Acceptance" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
+		<Item Name="Punishment of the Grave" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
+		<Item Name="Memento Mori" Weight="0.1" DecreaseBy="1" RemoveOn="0.1"/>
+		<Item Name="Trumpet of Woe" Weight="0.5" DecreaseBy="1" RemoveOn="0.1"/>
+	</Pool>
+	<Pool Name="greedAngel">
+		<Item Name="Spirit of Acceptance" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
+		<Item Name="Punishment of the Grave" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
+		<Item Name="Memento Mori" Weight="0.1" DecreaseBy="1" RemoveOn="0.1"/>
+		<Item Name="Trumpet of Woe" Weight="0.5" DecreaseBy="1" RemoveOn="0.1"/>
+	</Pool>
+	<Pool Name="shop">
+		
+	</Pool>
+	<Pool Name="greedShop">
+		
+	</Pool>
+	<Pool Name="secret">
+		<Item Name="Spirit of Bargaining" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
+		<Item Name="Remembrance of the Forgotten" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
+		<Item Name="Remembrance of Death" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
+	</Pool>
+	<Pool Name="greedSecret">
+		<Item Name="Spirit of Bargaining" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
+		<Item Name="Remembrance of the Forgotten" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
+		<Item Name="Remembrance of Death" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
+	</Pool>
+	<Pool Name="curse">
+		<Item Name="Spirit of Depression" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
+		<Item Name="Spirit of Anger" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
+	</Pool>
+	<Pool Name="greedCurse">
+		<Item Name="Spirit of Depression" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
+		<Item Name="Spirit of Anger" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
+	</Pool>
+	<Pool Name="library">
+		
+	</Pool>
+	<Pool Name="goldenChest">
+		
+	</Pool>
+	<Pool Name="redChest">
+		
+	</Pool>
+	<Pool Name="beggar">
+		
+	</Pool>
+	<Pool Name="demonBeggar">
+		
+	</Pool>
+	<Pool Name="craneGame">
+		
+	</Pool>
+	<Pool Name="bombBum">
+		
+	</Pool>
+	<Pool Name="keyMaster">
+		
+	</Pool>
+	<Pool Name="planetarium">
+		
+	</Pool>
+	<Pool Name="oldChest">
+		<Item Name="Remembrance of the Forgotten" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
+		<Item Name="Remembrance of Death" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
+	</Pool>
+	<Pool Name="ultraSecret">
+		<Item Name="Spirit of Anger" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
+	</Pool>
+	<Pool Name="babyShop">
+		<Item Name="Reaper Bum" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
+	</Pool>
+	<Pool Name="woodenChest">
+		
+	</Pool>
+	<Pool Name="rottenBeggar">
+		
+	</Pool>
+</ItemPools>

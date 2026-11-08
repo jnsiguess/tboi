@@ -1,0 +1,67 @@
+<sounds root="sfx/">
+	<sound name="SamaelBillardsBreak">
+		<sample weight="1" path="samael_billiards_break.wav" />
+	</sound>
+	<sound name="SamaelBillardsBreakWeak">
+		<sample weight="1" path="samael_billiards_break_weak.wav" />
+	</sound>
+	<sound name="SamaelStoneGrindLoop">
+		<sample weight="1" path="samael_stone_grind_loop.wav" />
+	</sound>
+	<sound name="SamaelSirenSound">
+		<sample weight="1" path="samael_siren_lungeattack_short.wav" />
+	</sound>
+	<sound name="SoulOfSamael">
+		<sample weight="1" path="soul_of_samael_1.wav" />
+		<!--<sample weight="1" path="soul_of_samael_2.wav" />-->
+		<sample weight="1" path="soul_of_samael_3.wav" />
+	</sound>
+	<sound name="SamaelThanatosisPill">
+		<sample weight="1" path="samael_thanatosis_1.wav" />
+		<sample weight="1" path="samael_thanatosis_2.wav" />
+		<sample weight="1" path="samael_thanatosis_3.wav" />
+	</sound>
+	<sound name="SamaelMegaThanatosisPill">
+		<sample weight="1" path="samael_mega_thanatosis_1.wav" />
+		<sample weight="1" path="samael_mega_thanatosis_2.wav" />
+	</sound>
+	<sound name="SamaelXiiiReversedLayer">
+		<sample weight="1" path="samael echoes of mom layer.wav" />
+	</sound>
+	<sound name="SamaelXiiiReversedAmbience">
+		<sample weight="1" path="samael echoes of mom twisted v2.wav" />
+	</sound>
+	<sound name="SamaelEndingAlt">
+		<sample weight="1" path="samael ending alt.wav"/>
+	</sound>
+	<sound name="SamaelEndingSfx1">
+		<sample weight="1" path="dogma/dogma phase 2 light ray fire_b1.wav"/>
+	</sound>
+	<sound name="SamaelEndingSfx2">
+		<sample weight="1" path="dogma/dogma phase 2 light ray fire_b.wav"/>
+	</sound>
+	<sound name="1corinthians15">
+		<sample weight="1" path="1 corinthians 15 (50-56).wav"/>
+	</sound>
+	
+	<sound name="SamaelTrumpetOfWoe">
+		<sample weight="1" path="meutecee_trumpethit01.wav"/>
+		<sample weight="1" path="meutecee_trumpethit02.wav"/>
+		<sample weight="1" path="meutecee_trumpethit03.wav"/>
+		<sample weight="1" path="meutecee_trumpethit04.wav"/>
+		<sample weight="1" path="meutecee_trumpethit05.wav"/>
+		<sample weight="1" path="meutecee_trumpethit06.wav"/>
+		<sample weight="1" path="meutecee_trumpethit07.wav"/>
+	</sound>
+	
+	<sound name="SamaelTumpetOfWoe">
+		<sample weight="1" path="samael_tumpet.wav"/>
+	</sound>
+	
+	<sound name="deadseascrolls_pop">
+		<sample weight="1" path="deadseascrolls/pop.wav"/>
+	</sound>
+	<sound name="deadseascrolls_whoosh">
+		<sample weight="1" path="deadseascrolls/whoosh.wav"/>
+	</sound>
+</sounds>

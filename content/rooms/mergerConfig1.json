@@ -1,0 +1,174 @@
+{
+    "roomNamePrefix": "(Samael/Fragment)",
+    "forceZeroWeight": true,
+    "files": [
+        {
+            "outputFile": "./fragment rooms/01.basement.xml",
+            "paths": [ "./fragment rooms/0 - global/", "./fragment rooms/ch1.0 - shared/", "./fragment rooms/ch1.1 - basement/", "./fragment rooms/ch1.0a - shared (main path only)/" ],
+            "startingId": 61700,
+            "skipSTB": true
+        },
+        {
+            "outputFile": "./fragment rooms/02.cellar.xml",
+            "paths": [ "./fragment rooms/0 - global/", "./fragment rooms/ch1.0 - shared/", "./fragment rooms/ch1.2 - cellar/", "./fragment rooms/ch1.0a - shared (main path only)/" ],
+            "startingId": 61700,
+            "skipSTB": true
+        },
+        {
+            "outputFile": "./fragment rooms/03.burning basement.xml",
+            "paths": [ "./fragment rooms/0 - global/", "./fragment rooms/ch1.0 - shared/", "./fragment rooms/ch1.3 - burning basement/", "./fragment rooms/ch1.0a - shared (main path only)/" ],
+            "startingId": 61700,
+            "skipSTB": true
+        },
+        {
+            "outputFile": "./fragment rooms/04.caves.xml",
+            "paths": [ "./fragment rooms/0 - global/", "./fragment rooms/ch2.0 - shared/", "./fragment rooms/ch2.1 - caves/", "./fragment rooms/ch2.0a - shared (main path only)/" ],
+            "startingId": 61700,
+            "skipSTB": true
+        },
+        {
+            "outputFile": "./fragment rooms/05.catacombs.xml",
+            "paths": [ "./fragment rooms/0 - global/", "./fragment rooms/ch2.0 - shared/", "./fragment rooms/ch2.2 - catacombs/", "./fragment rooms/ch2.0a - shared (main path only)/" ],
+            "startingId": 61700,
+            "skipSTB": true
+        },
+        {
+            "outputFile": "./fragment rooms/06.flooded caves.xml",
+            "paths": [ "./fragment rooms/0 - global/", "./fragment rooms/ch2.0 - shared/", "./fragment rooms/ch2.3 - flooded caves/", "./fragment rooms/ch2.0a - shared (main path only)/" ],
+            "startingId": 61700,
+            "skipSTB": true
+        },
+        {
+            "outputFile": "./fragment rooms/07.depths.xml",
+            "paths": [ "./fragment rooms/0 - global/", "./fragment rooms/ch3.0 - shared/", "./fragment rooms/ch3.1 - depths/", "./fragment rooms/ch3.0a - shared (main path only)/" ],
+            "startingId": 61700,
+            "skipSTB": true
+        },
+        {
+            "outputFile": "./fragment rooms/08.necropolis.xml",
+            "paths": [ "./fragment rooms/0 - global/", "./fragment rooms/ch3.0 - shared/", "./fragment rooms/ch3.2 - necropolis/", "./fragment rooms/ch3.0a - shared (main path only)/" ],
+            "startingId": 61700,
+            "skipSTB": true
+        },
+        {
+            "outputFile": "./fragment rooms/09.dank depths.xml",
+            "paths": [ "./fragment rooms/0 - global/", "./fragment rooms/ch3.0 - shared/", "./fragment rooms/ch3.3 - dank depths/", "./fragment rooms/ch3.0a - shared (main path only)/" ],
+            "startingId": 61700,
+            "skipSTB": true
+        },
+        {
+            "outputFile": "./fragment rooms/10.womb.xml",
+            "paths": [ "./fragment rooms/0 - global/", "./fragment rooms/ch4.0 - shared/", "./fragment rooms/ch4.1 - womb/", "./fragment rooms/ch4.0a - shared (main path only)/" ],
+            "startingId": 61700,
+            "skipSTB": true
+        },
+        {
+            "outputFile": "./fragment rooms/11.utero.xml",
+            "paths": [ "./fragment rooms/0 - global/", "./fragment rooms/ch4.0 - shared/", "./fragment rooms/ch4.2 - utero/", "./fragment rooms/ch4.0a - shared (main path only)/" ],
+            "startingId": 61700,
+            "skipSTB": true
+        },
+        {
+            "outputFile": "./fragment rooms/12.scarred womb.xml",
+            "paths": [ "./fragment rooms/0 - global/", "./fragment rooms/ch4.0 - shared/", "./fragment rooms/ch4.3 - scarred womb/", "./fragment rooms/ch4.0a - shared (main path only)/" ],
+            "startingId": 61700,
+            "skipSTB": true
+        },
+        {
+            "outputFile": "./fragment rooms/13.blue womb.xml",
+            "paths": [ "./fragment rooms/0 - global/", "./fragment rooms/ch4.0 - shared/", "./fragment rooms/ch4.x - blue womb/", "./fragment rooms/ch5 onward/" ],
+            "startingId": 61700,
+            "skipSTB": true
+        },
+        {
+            "outputFile": "./fragment rooms/14.sheol.xml",
+            "paths": [ "./fragment rooms/0 - global/", "./fragment rooms/ch5.0 - shared/", "./fragment rooms/ch5.1 - sheol/", "./fragment rooms/ch5 onward/" ],
+            "startingId": 61700,
+            "skipSTB": true
+        },
+        {
+            "outputFile": "./fragment rooms/15.cathedral.xml",
+            "paths": [ "./fragment rooms/0 - global/", "./fragment rooms/ch5.0 - shared/", "./fragment rooms/ch5.2 - cathedral/", "./fragment rooms/ch5 onward/" ],
+            "startingId": 61700,
+            "skipSTB": true
+        },
+        {
+            "outputFile": "./fragment rooms/16.dark room.xml",
+            "paths": [ "./fragment rooms/0 - global/", "./fragment rooms/ch6.0 - shared/", "./fragment rooms/ch6.1 - dark/", "./fragment rooms/ch5 onward/", "./fragment rooms/ch6 onward/" ],
+            "startingId": 61700,
+            "skipSTB": true
+        },
+        {
+            "outputFile": "./fragment rooms/17.chest.xml",
+            "paths": [ "./fragment rooms/0 - global/", "./fragment rooms/ch6.0 - shared/", "./fragment rooms/ch6.2 - chest/", "./fragment rooms/ch5 onward/", "./fragment rooms/ch6 onward/" ],
+            "startingId": 61700,
+            "skipSTB": true
+        },
+        {
+            "outputFile": "./fragment rooms/26.the void.xml",
+            "paths": [ "./fragment rooms/0 - global/", "./fragment rooms/ch7.1 - void/", "./fragment rooms/ch5 onward/", "./fragment rooms/ch6 onward/" ],
+            "startingId": 61700,
+            "skipSTB": true
+        },
+        {
+            "outputFile": "./fragment rooms/36.backwards.xml",
+            "paths": [ "./fragment rooms/0 - global/", "./fragment rooms/ch7.2 - ascent/", "./fragment rooms/ch5 onward/", "./fragment rooms/ch6 onward/" ],
+            "startingId": 61700,
+            "skipSTB": true
+        },
+        {
+            "outputFile": "./fragment rooms/27.downpour.xml",
+            "paths": [ "./fragment rooms/0 - global/", "./fragment rooms/ch1.0 - shared/", "./fragment rooms/ch1.4 - downpour/", "./fragment rooms/ch1.0b - shared (alt path only)/" ],
+            "startingId": 61700,
+            "skipSTB": true
+        },
+        {
+            "outputFile": "./fragment rooms/28.dross.xml",
+            "paths": [ "./fragment rooms/0 - global/", "./fragment rooms/ch1.0 - shared/", "./fragment rooms/ch1.5 - dross/", "./fragment rooms/ch1.0b - shared (alt path only)/" ],
+            "startingId": 61700,
+            "skipSTB": true
+        },
+        {
+            "outputFile": "./fragment rooms/29.mines.xml",
+            "paths": [ "./fragment rooms/0 - global/", "./fragment rooms/ch2.0 - shared/", "./fragment rooms/ch2.4 - mines/", "./fragment rooms/ch2.0b - shared (alt path only)/" ],
+            "startingId": 61700,
+            "skipSTB": true
+        },
+        {
+            "outputFile": "./fragment rooms/30.ashpit.xml",
+            "paths": [ "./fragment rooms/0 - global/", "./fragment rooms/ch2.0 - shared/", "./fragment rooms/ch2.5 - ashpit/", "./fragment rooms/ch2.0b - shared (alt path only)/" ],
+            "startingId": 61700,
+            "skipSTB": true
+        },
+        {
+            "outputFile": "./fragment rooms/31.mausoleum.xml",
+            "paths": [ "./fragment rooms/0 - global/", "./fragment rooms/ch3.0 - shared/", "./fragment rooms/ch3.4 - mausoleum/", "./fragment rooms/ch3.0b - shared (alt path only)/" ],
+            "startingId": 61700,
+            "skipSTB": true
+        },
+        {
+            "outputFile": "./fragment rooms/32.gehenna.xml",
+            "paths": [ "./fragment rooms/0 - global/", "./fragment rooms/ch3.0 - shared/", "./fragment rooms/ch3.5 - gehenna/", "./fragment rooms/ch3.0b - shared (alt path only)/" ],
+            "startingId": 61700,
+            "skipSTB": true
+        },
+        {
+            "outputFile": "./fragment rooms/33.corpse.xml",
+            "paths": [ "./fragment rooms/0 - global/", "./fragment rooms/ch4.0 - shared/", "./fragment rooms/ch4.4 - corpse/", "./fragment rooms/ch5 onward/" ],
+            "startingId": 61700,
+            "skipSTB": true
+        },
+        {
+            "outputFile": "./fragment rooms/35.home.xml",
+            "paths": [ "./fragment rooms/0 - global/", "./fragment rooms/ch7.3 - home/", "./fragment rooms/ch5 onward/", "./fragment rooms/ch6 onward/" ],
+            "startingId": 61700,
+            "skipSTB": true
+        },
+        {
+            "outputFile": "./fragment rooms/24.the shop.xml",
+            "paths": [ "./fragment rooms/0 - global/", "./fragment rooms/greed - the shop/", "./fragment rooms/ch6.2 - chest/", "./fragment rooms/ch5 onward/", "./fragment rooms/ch6 onward/" ],
+            "startingId": 61700,
+            "skipSTB": true
+        }
+    ]
+}

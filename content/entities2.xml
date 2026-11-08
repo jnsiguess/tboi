@@ -1,0 +1,234 @@
+<entities anm2root="gfx/" version="5">
+	<!-- SAMAEL SCYTHE / MISC -->
+	<entity anm2path="samael_scythe.anm2" baseHP="0" boss="0" champion="0" collisionDamage="0" collisionMass="3" collisionRadius="8" friction="1" id="6617" name="Samael Scythe" numGridCollisionPoints="0" shadowSize="0" stageHP="0" variant="0" shutdoors="false">
+		<gibs amount="0" blood="0" bone="0" eye="0" gut="0" large="0" />
+	</entity>
+	<entity anm2path="samael_special.anm2" baseHP="0" boss="0" champion="0" collisionDamage="0" collisionMass="3" collisionRadius="8" friction="1" id="6618" name="Samael Special Animations" numGridCollisionPoints="0" shadowSize="0" stageHP="0" variant="0" shutdoors="false">
+		<gibs amount="16" blood="1" bone="1" eye="0" gut="0" large="0" />
+	</entity>
+	<!--<entity anm2path="samael_wraith.anm2" baseHP="0" boss="0" champion="0" collisionDamage="0" collisionMass="3" collisionRadius="8" friction="1" id="6623" name="Samael Wraith" numGridCollisionPoints="0" shadowSize="0" stageHP="0" variant="0" shutdoors="false">
+		<gibs amount="16" blood="1" bone="1" eye="0" gut="0" large="0" />
+	</entity>-->
+	<entity anm2path="samael_wraith.anm2" id="1000" name="Samael Wraith" variant="6634" subtype="0" collisionRadius="0" numGridCollisionPoints="0"/>
+	<entity anm2path="samael_scythe_projectile.anm2" baseHP="0" boss="0" champion="0" collisionDamage="0" collisionMass="8" collisionRadius="12" friction="1" id="2" name="Samael Scythe Projectile" numGridCollisionPoints="8" shadowSize="10" stageHP="0" variant="617">
+		<gibs amount="0" blood="0" bone="0" eye="0" gut="0" large="0" />
+	</entity>
+	<entity anm2path="samael_brimstone_hole.anm2" baseHP="0" boss="0" champion="0" collisionDamage="0" collisionMass="0" collisionRadius="0" friction="1" id="6619" name="Samael Brimstone Hole" numGridCollisionPoints="0" shadowSize="0" stageHP="0" variant="0" shutdoors="false">
+		<gibs amount="0" blood="0" bone="0" eye="0" gut="0" large="0" />
+	</entity>
+	<entity anm2path="samael_null.anm2" baseHP="0" boss="0" champion="0" collisionDamage="0" collisionMass="3" collisionRadius="8" friction="1" id="6620" name="SamaelSampleKnifeOrigin" numGridCollisionPoints="0" shadowSize="0" stageHP="0" variant="0" shutdoors="false">
+		<gibs amount="0" blood="0" bone="0" eye="0" gut="0" large="0" />
+	</entity>
+	<entity anm2path="samael_scythe.anm2" baseHP="0" boss="0" champion="0" collisionDamage="0" collisionMass="0" collisionRadius="0" friction="1" id="6621" name="Samael Scythe Blade" numGridCollisionPoints="0" shadowSize="0" stageHP="0" variant="0" shutdoors="false">
+		<gibs amount="0" blood="0" bone="0" eye="0" gut="0" large="0" />
+	</entity>
+	<entity anm2path="samael_scythe.anm2" baseHP="0" boss="0" champion="0" collisionDamage="0" collisionMass="0" collisionRadius="0" friction="0" id="1000" name="Samael Ghost Scythe" numGridCollisionPoints="0" shadowSize="0" stageHP="0" variant="6620">
+		<gibs amount="0" blood="0" bone="0" eye="0" gut="0" large="0" />
+	</entity>
+	<entity anm2path="samael_null.anm2" baseHP="0" boss="0" champion="0" collisionDamage="0" collisionMass="3" collisionRadius="16" friction="1" id="8" name="Samael Scythe Hitbox" numGridCollisionPoints="0" shadowSize="0" stageHP="0" variant="10" subtype="617">
+		<gibs amount="0" blood="0" bone="0" eye="0" gut="0" large="0" />
+	</entity>
+	
+	<!-- TAINTED SAMAEL (MEMENTO MORI) -->
+	<entity anm2path="memento_mori_sigil.anm2" baseHP="0" boss="0" champion="0" collisionDamage="13" collisionInterval="20" collisionMass="0" collisionRadius="20" friction="1" id="3" name="Memento Mori Sigil" numGridCollisionPoints="8" shadowSize="0" stageHP="0" variant="6617">
+		<gibs amount="0" blood="0" bone="1" eye="0" gut="0" large="0" />
+	</entity>
+	<entity anm2path="memento_mori_sigil_aura.anm2" baseHP="0" boss="0" champion="0" collisionDamage="13" collisionInterval="20" collisionMass="0" collisionRadius="55" friction="1" id="3" name="Memento Mori Sigil Aura" numGridCollisionPoints="0" shadowSize="0" stageHP="0" variant="6617" subtype="1">
+		<gibs amount="0" blood="0" bone="1" eye="0" gut="0" large="0" />
+	</entity>
+	<entity anm2path="memento_mori_mush.anm2" baseHP="0" boss="0" champion="0" collisionDamage="0" collisionMass="0" collisionRadius="0" friction="1" id="1000" name="Memento Mori Sigil Mush" numGridCollisionPoints="0" shadowSize="0" stageHP="0" variant="6617">
+		<gibs amount="0" blood="0" bone="0" eye="0" gut="0" large="0" />
+	</entity>
+	<entity anm2path="characters/058_book of shadows.anm2" baseHP="0" boss="0" champion="0" collisionDamage="0" collisionMass="0" collisionRadius="0" friction="1" id="1000" name="Memento Mori Sigil Shield" numGridCollisionPoints="0" shadowSize="0" stageHP="0" variant="6619">
+		<gibs amount="0" blood="0" bone="0" eye="0" gut="0" large="0" />
+	</entity>
+	<!--<entity anm2path="memento_mori_link.anm2" baseHP="0" boss="0" champion="0" collisionDamage="0" collisionMass="8" collisionRadius="5" friction="1" id="7" name="Memento Mori Link Laser" numGridCollisionPoints="0" shadowSize="0" stageHP="0" variant="6617">
+		<gibs amount="0" blood="0" bone="0" eye="0" gut="0" large="0" />
+	</entity>-->
+	<entity anm2path="memento_mori_particle.anm2" baseHP="0" boss="0" champion="0" collisionDamage="0" collisionMass="0" collisionRadius="0" friction="1" id="1000" name="Memento Mori Particle" numGridCollisionPoints="0" shadowSize="0" stageHP="0" variant="111" subtype="617">
+		<gibs amount="0" blood="0" bone="0" eye="0" gut="0" large="0" />
+	</entity>
+	<entity anm2path="memento_mori_trail.anm2" baseHP="0" boss="0" champion="0" collisionDamage="0" collisionMass="0" collisionRadius="0" friction="1" id="1000" name="Memento Mori Trail" numGridCollisionPoints="0" shadowSize="0" stageHP="0" variant="6618">
+		<gibs amount="0" blood="0" bone="0" eye="0" gut="0" large="0" />
+	</entity>
+	<entity anm2path="007.006_Giant Red Laser.anm2" baseHP="0" boss="0" champion="0" collisionDamage="36" collisionMass="0" collisionRadius="45" friction="1" id="7" name="Memento Mori Hitbox Laser" numGridCollisionPoints="0" shadowSize="0" stageHP="0" variant="6" subtype="6617">
+		<gibs amount="0" blood="0" bone="0" eye="0" gut="0" large="0" />
+	</entity>
+	<entity anm2path="003.033_Fly Orbital.anm2" baseHP="0" boss="0" champion="0" collisionDamage="0" collisionInterval="7" collisionMass="3" collisionRadius="6" friction="1" id="3" name="Memento Mori Fly Orbital" numGridCollisionPoints="12" shadowSize="8" stageHP="0" variant="6618">
+		<gibs amount="0" blood="0" bone="0" eye="0" gut="0" large="0" />
+	</entity>
+	<entity anm2path="memento_mori_apple.anm2" reroll="false" baseHP="10" boss="0" champion="0" collisionDamage="0" collisionMass="0" collisionRadius="13" friction="1" id="11" name="Memento Mori Apple" numGridCollisionPoints="12" shadowSize="13" stageHP="0" variant="1" subtype="617">
+		<gibs amount="0" blood="0" bone="0" eye="0" gut="0" large="0" />
+	</entity>
+	<entity anm2path="memento_mori_tech_eye.anm2" reroll="false" baseHP="20" boss="0" champion="0" collisionDamage="0" collisionMass="0" collisionRadius="13" friction="1" id="60" name="Memento Mori Tech Eye" numGridCollisionPoints="1" shadowSize="0" stageHP="0" variant="0" subtype="617">
+		<gibs amount="0" blood="0" bone="0" eye="0" gut="0" large="0" />
+	</entity>
+	<entity anm2path="memento_mori_projectile.anm2" baseHP="0" boss="0" champion="0" collisionDamage="0" collisionMass="8" collisionRadius="8" friction="1" id="2" name="Memento Mori Projectile" numGridCollisionPoints="8" shadowSize="0" stageHP="0" variant="618">
+		<gibs amount="0" blood="0" bone="0" eye="0" gut="0" large="0" />
+	</entity>
+	<entity anm2path="memento_mori_projectile.anm2" baseHP="0" boss="0" champion="0" collisionDamage="0" collisionMass="0" collisionRadius="0" friction="1" id="1000" name="Memento Mori Projectile Trail" numGridCollisionPoints="0" shadowSize="0" stageHP="0" variant="6618" subtype="1">
+		<gibs amount="0" blood="0" bone="0" eye="0" gut="0" large="0" />
+	</entity>
+	
+	<!-- FAMILIARS -->
+	<entity anm2path="samael_entities/reaper_bum.anm2" baseHP="0" boss="0" champion="0" collisionDamage="0" collisionMass="3" collisionRadius="13" friction="1" id="3" name="(Samael) Reaper Bum" numGridCollisionPoints="12" shadowSize="10" stageHP="0" tags="cansacrifice" variant="6619">
+		<gibs amount="6" blood="0" bone="1" eye="0" gut="0" large="0"/>
+	</entity>
+	<entity anm2path="001.000_player.anm2" baseHP="0" boss="0" champion="0" collisionDamage="0" collisionMass="3" collisionRadius="13" friction="1" id="3" name="(Samael) Forgotten Familiar" numGridCollisionPoints="12" shadowSize="10" stageHP="0" tags="" variant="6620"/>
+	<entity anm2path="samael_wraith.anm2" baseHP="0" boss="0" champion="0" collisionDamage="0" collisionMass="3" collisionRadius="13" friction="1" id="3" name="(Samael) Death Shadow" numGridCollisionPoints="12" shadowSize="10" stageHP="0" tags="" variant="6621"/>
+	<entity anm2path="samael_entities/lost_soul/lost_soul.anm2" baseHP="1" boss="0" champion="0" collisionDamage="0" collisionMass="5" collisionRadius="13" friction="1" id="617" name="(Samael) Lost Soul" numGridCollisionPoints="12" reroll="false" shadowSize="13" stageHP="0" variant="0" shutdoors="false" tags="noreroll" />
+	<entity anm2path="samael_entities/mini_reaper/mini_reaper.anm2" baseHP="0" boss="0" champion="0" collisionDamage="0" collisionMass="3" collisionRadius="13" friction="1" id="3" name="(Samael) Mini Reaper" numGridCollisionPoints="12" shadowSize="10" stageHP="0" tags="" variant="6623"/>
+	<entity anm2path="samael_entities/thanatos/coffin.anm2" baseHP="6" boss="0" champion="0" collisionDamage="0" collisionMass="33" collisionRadius="13" friction="1" id="3" name="(Samael) Thanatos Coffin" numGridCollisionPoints="12" shadowSize="10" stageHP="0" tags="" variant="6622"/>
+	
+	<!-- NPCs -->
+	<entity anm2path="samael_entities/ferryman.anm2" baseHP="0" boss="0" champion="0" collisionDamage="0" collisionMass="3" collisionRadius="12" friction="1" id="6" name="(Samael) Ferryman Beggar" numGridCollisionPoints="24" shadowSize="16" stageHP="0" variant="6617">
+		<gibs amount="0" blood="0" bone="0" eye="0" gut="0" large="0"/>
+	</entity>
+	<entity anm2path="samael_entities/ferryman.anm2" baseHP="0" boss="0" champion="0" collisionDamage="0" collisionMass="3" collisionRadius="12" friction="1" id="1000" name="(Samael) Ferryman Effect" numGridCollisionPoints="24" shadowSize="16" stageHP="0" variant="6631" subtype="0"/>
+	<!--<entity anm2path="samael_entities/lost_soul_beggar.anm2" baseHP="0" boss="0" champion="0" collisionDamage="0" collisionMass="3" collisionRadius="12" friction="1" id="1000" name="(Samael) Ferryman Passenger" numGridCollisionPoints="24" shadowSize="16" stageHP="0" variant="6631" subtype="2"/>-->
+	<entity anm2path="samael_entities/lost_soul_beggar.anm2" baseHP="0" boss="0" champion="0" collisionDamage="0" collisionMass="3" collisionRadius="12" friction="1" id="6" name="(Samael) Lost Soul Beggar" numGridCollisionPoints="24" shadowSize="16" stageHP="0" variant="6618">
+		<gibs amount="0" blood="0" bone="0" eye="0" gut="0" large="0"/>
+	</entity>
+	
+	<!-- THANATOPHILIA MINIONS -->
+	<entity anm2path="thanatophilia/burning_bony.anm2" baseHP="12" boss="1" champion="0" collisionDamage="1" collisionMass="30" collisionRadius="13" friction="1" id="47" name="(Thanatophilia) Burning Bony" numGridCollisionPoints="12" portrait="104" reroll="false" shadowSize="14" stageHP="4" variant="617">
+		<gibs amount="10" blood="0" bone="1" dust="1" eye="0" gut="0" large="0" sound_bone="1"/>
+	</entity>
+	<entity anm2path="thanatophilia/headless_bony.anm2" baseHP="8" boss="0" champion="1" collisionDamage="1" collisionMass="10" collisionRadius="13" friction="1" id="227" name="(Thanatophilia) Headless Bony" numGridCollisionPoints="12" portrait="104" reroll="false" shadowSize="14" stageHP="2" variant="617">
+		<gibs amount="10" blood="0" bone="1" dust="1" eye="0" gut="0" large="0" sound_bone="1"/>
+	</entity>
+	<entity anm2path="thanatophilia/bony_head.anm2" baseHP="8" boss="0" champion="1" collisionDamage="1" collisionMass="3" collisionRadius="13" friction="1" id="12" name="(Thanatophilia) Bony Head" numGridCollisionPoints="12" portrait="104" reroll="false" shadowSize="13" stageHP="2" variant="617">
+		<gibs amount="10" blood="0" bone="1" dust="1" eye="0" gut="0" large="0" sound_bone="1"/>
+	</entity>
+	<entity anm2path="thanatophilia/black_bony_head.anm2" baseHP="8" boss="0" champion="1" collisionDamage="1" collisionMass="3" collisionRadius="13" friction="1" id="12" name="(Thanatophilia) Black Bony Head" numGridCollisionPoints="12" portrait="104" reroll="false" shadowSize="13" stageHP="2" variant="618">
+		<gibs amount="10" blood="0" bone="1" dust="1" eye="0" gut="0" large="0" sound_bone="1"/>
+	</entity>
+	<entity anm2path="thanatophilia/big_bony_head.anm2" baseHP="8" boss="0" champion="1" collisionDamage="1" collisionMass="10" collisionRadius="13" friction="1" id="12" name="(Thanatophilia) Big Bony Head" numGridCollisionPoints="12" portrait="221" reroll="false" shadowSize="20" stageHP="2" variant="619">
+		<gibs amount="16" blood="0" bone="1" dust="1" eye="0" gut="0" large="0" sound_bone="1"/>
+	</entity>
+	<entity anm2path="thanatophilia/hard_host_head.anm2" baseHP="20" boss="0" champion="1" collisionDamage="1" collisionMass="3" collisionRadius="13" friction="1" id="12" name="(Thanatophilia) Hard Host Head" numGridCollisionPoints="12" portrait="104" reroll="false" shadowSize="13" stageHP="2" variant="620">
+		<gibs amount="10" blood="0" bone="1" dust="1" eye="0" gut="0" large="0" sound_bone="1"/>
+	</entity>
+	<entity anm2path="thanatophilia/host_head.anm2" baseHP="8" boss="0" champion="1" collisionDamage="1" collisionMass="3" collisionRadius="13" friction="1" id="12" name="(Thanatophilia) Host Head" numGridCollisionPoints="12" portrait="104" reroll="false" shadowSize="13" stageHP="2" variant="621">
+		<gibs amount="10" blood="0" bone="1" dust="1" eye="0" gut="0" large="0" sound_bone="1"/>
+	</entity>
+	<entity anm2path="thanatophilia/mobile_host_head.anm2" baseHP="8" boss="0" champion="1" collisionDamage="1" collisionMass="3" collisionRadius="13" friction="1" id="12" name="(Thanatophilia) Mobile Host Head" numGridCollisionPoints="12" portrait="104" reroll="false" shadowSize="13" stageHP="2" variant="622">
+		<gibs amount="10" blood="0" bone="1" dust="1" eye="0" gut="0" large="0" sound_bone="1"/>
+	</entity>
+	<entity anm2path="thanatophilia/spider_bony_head.anm2" baseHP="8" boss="0" champion="1" collisionDamage="1" collisionMass="3" collisionRadius="13" friction="1" id="12" name="(Thanatophilia) Ultimate Upside Down Spider Bony Skull Head" numGridCollisionPoints="12" portrait="104" reroll="false" shadowSize="13" stageHP="2" variant="623">
+		<gibs amount="10" blood="0" bone="1" dust="1" eye="0" gut="0" large="0" sound_bone="1"/>
+	</entity>
+	<entity anm2path="thanatophilia/headless_big_bony.anm2" baseHP="50" boss="0" champion="1" collisionDamage="1" collisionMass="13" collisionRadius="13" friction="1" id="209" name="(Thanatophilia) Headless Big Bony" reroll="false" numGridCollisionPoints="12" portrait="221" shadowSize="15" stageHP="0" variant="617">
+		<gibs amount="16" blood="0" bone="1" dust="1" eye="0" gut="0" large="0" sound_bone="1"/>
+	</entity>
+	<entity anm2path="thanatophilia/psy_necro.anm2" baseHP="22" boss="0" champion="1" collisionDamage="1" collisionMass="6" collisionRadius="13" friction="1" id="828" name="(Thanatophilia) Psy Necro" reroll="false" numGridCollisionPoints="12" shadowSize="13" stageHP="0" variant="617">
+		<gibs amount="6" blood="0" bone="1" dust="1" eye="0" gut="0" large="0" sound_bone="1"/>
+	</entity>
+	<entity anm2path="thanatophilia/rag_necro.anm2" baseHP="22" boss="0" champion="1" collisionDamage="1" collisionMass="6" collisionRadius="13" friction="1" id="828" name="(Thanatophilia) Rag Necro" reroll="false" numGridCollisionPoints="12" shadowSize="13" stageHP="0" variant="618">
+		<gibs amount="6" blood="0" bone="1" dust="1" eye="0" gut="0" large="0" sound_bone="1"/>
+	</entity>
+	<entity anm2path="thanatophilia/baby_bony.anm2" baseHP="25" boss="0" champion="1" collisionDamage="1" collisionMass="10" collisionRadius="13" friction="1" gridCollision="walls" id="38" name="(Thanatophilia) Baby Bony" numGridCollisionPoints="4" portrait="104" reroll="false" shadowSize="16" stageHP="0" variant="3" subtype="617">
+		<gibs amount="10" blood="0" bone="1" dust="1" eye="0" gut="0" large="0" sound_bone="1"/>
+	</entity>
+	<entity anm2path="thanatophilia/siren_bony.anm2" baseHP="666" boss="0" collisionDamage="1" collisionMass="10" collisionRadius="13" friction="1" id="11" name="(Thanatophilia) Siren Bony" numGridCollisionPoints="12" portrait="105" reroll="false" shadowSize="16" stageHP="0" variant="1" subtype="618" tags="noreroll">
+		<gibs amount="16" blood="0" bone="1" dust="1" eye="0" gut="0" large="0" sound_bone="1"/>
+	</entity>
+	<entity anm2path="thanatophilia/siren_minion.anm2" baseHP="25" boss="0" champion="1" collisionDamage="1" collisionMass="10" collisionRadius="13" friction="1" gridCollision="walls" id="259" name="(Thanatophilia) Siren Bony Orbital" numGridCollisionPoints="4" shadowSize="16" stageHP="2" variant="617" reroll="false" tags="noreroll">
+		<gibs amount="10" blood="0" bone="1" dust="1" eye="0" gut="0" large="0" sound_bone="1"/>
+	</entity>
+	<entity anm2path="thanatophilia/shell_head.anm2" baseHP="40" boss="0" champion="1" collisionDamage="1" collisionMass="10" collisionRadius="16" friction="1" id="855" name="(Thanatophilia) Shell Head" numGridCollisionPoints="12" portrait="366" reroll="false" shadowSize="20" shieldStrength="2.5" stageHP="0" variant="617">
+		<gibs amount="16" blood="0" bone="1" dust="1" eye="0" gut="0" large="0" sound_bone="1"/>
+	</entity>
+	<entity anm2path="thanatophilia/death.anm2" baseHP="450" boss="0" champion="1" collisionDamage="1" collisionMass="15" collisionRadius="13" friction="1" id="227" name="(Thanatophilia) Death Bony" numGridCollisionPoints="12" portrait="31" reroll="false" shadowSize="16" stageHP="0" variant="618" tags="noreroll">
+		<gibs amount="16" blood="0" bone="1" dust="1" eye="0" gut="0" large="0" sound_bone="1"/>
+	</entity>
+	<entity anm2path="thanatophilia/forgotten_bony.anm2" baseHP="20" boss="0" champion="1" collisionDamage="1" collisionMass="10" collisionRadius="13" friction="1" id="227" name="(Thanatophilia) Forgotten Bony" numGridCollisionPoints="12" portrait="104" reroll="false" shadowSize="14" stageHP="5" variant="619" tags="noreroll">
+		<gibs amount="10" blood="0" bone="1" dust="1" eye="0" gut="0" large="0" sound_bone="1"/>
+	</entity>
+	<entity anm2path="thanatophilia/samael_bony.anm2" baseHP="20" boss="0" champion="1" collisionDamage="1" collisionMass="10" collisionRadius="13" friction="1" id="227" name="(Thanatophilia) Samael Bony" numGridCollisionPoints="12" portrait="104" reroll="false" shadowSize="14" stageHP="5" variant="620" tags="noreroll">
+		<gibs amount="10" blood="0" bone="1" dust="1" eye="0" gut="0" large="0" sound_bone="1"/>
+	</entity>
+	<entity anm2path="thanatophilia/tainted_samael_bony.anm2" baseHP="20" boss="0" champion="1" collisionDamage="1" collisionMass="10" collisionRadius="13" friction="1" id="227" name="(Thanatophilia) Tainted Samael Bony" numGridCollisionPoints="12" portrait="104" reroll="false" shadowSize="14" stageHP="5" variant="621" tags="noreroll">
+		<gibs amount="10" blood="0" bone="1" dust="1" eye="0" gut="0" large="0" sound_bone="1"/>
+	</entity>
+	<entity anm2path="thanatophilia/e_bony.anm2" baseHP="20" boss="0" champion="1" collisionDamage="1" collisionMass="10" collisionRadius="13" friction="1" id="227" name="(Thanatophilia) Dapper Burning Bony" numGridCollisionPoints="12" portrait="104" reroll="false" shadowSize="14" stageHP="5" variant="622" tags="noreroll">
+		<gibs amount="10" blood="0" bone="1" dust="1" eye="0" gut="0" large="0" sound_bone="1"/>
+	</entity>
+	
+	<!-- BARGAINING -->
+	<entity anm2path="samael_entities/bargaining/spirit_of_bargaining.anm2" baseHP="5" boss="0" champion="0" collisionDamage="0" collisionMass="100" collisionRadius="1" friction="1" id="17" name="(Samael) Spirit of Bargaining" numGridCollisionPoints="0" shadowSize="14" shutdoors="false" stageHP="0" variant="617">
+		<gibs amount="8" blood="0" bone="1" dust="1" eye="0" gut="0" large="0"/>
+	</entity>
+	<entity anm2path="samael_entities/bargaining/spirit_of_bargaining.anm2" baseHP="5" boss="0" champion="0" collisionDamage="0" collisionMass="100" collisionRadius="1" friction="1" id="1000" name="(Samael) Spirit of Bargaining Effect" numGridCollisionPoints="0" shadowSize="14" shutdoors="false" stageHP="0" variant="6621" subtype="0"></entity>
+	<entity anm2path="samael_entities/bargaining/carpet.anm2" baseHP="5" boss="0" champion="0" collisionDamage="0" collisionMass="100" collisionRadius="1" friction="1" id="1000" name="(Samael) Spirit of Bargaining Rug" numGridCollisionPoints="0" shadowSize="14" shutdoors="false" stageHP="0" variant="6621" subtype="2"></entity>
+	<entity anm2path="samael_null.anm2" baseHP="0" boss="0" champion="0" collisionDamage="0" collisionMass="3" collisionRadius="12" friction="1" id="617" name="(Samael) Bargaining Deal" numGridCollisionPoints="24" shadowSize="16" stageHP="0" shutdoors="false" variant="2" subtype="0" reroll="false" tags="noreroll" ></entity>
+	<entity anm2path="samael_null.anm2" baseHP="0" boss="0" champion="0" collisionDamage="0" collisionMass="3" collisionRadius="12" friction="1" id="617" name="(Samael) Death Deal" numGridCollisionPoints="24" shadowSize="16" stageHP="0" shutdoors="false" variant="2" subtype="1" reroll="false" tags="noreroll" ></entity>
+	<entity anm2path="samael_null.anm2" baseHP="0" boss="0" champion="0" collisionDamage="0" collisionMass="3" collisionRadius="12" friction="1" id="617" name="(Samael) Standalone Bargaining Deal" numGridCollisionPoints="24" shadowSize="16" stageHP="0" shutdoors="false" variant="2" subtype="2" reroll="false" tags="noreroll" ></entity>
+	<entity anm2path="items/samael/bargaining_chip.anm2" baseHP="0" boss="0" champion="0" collisionDamage="0" collisionMass="3" collisionRadius="12" friction="1" id="5" name="Bargaining's Chip" numGridCollisionPoints="24" shadowSize="16" stageHP="0" variant="300" subtype="6621"></entity>
+	
+	<!-- OTHER SPIRITS -->
+	<entity anm2path="samael_entities/spirit_of_denial.anm2" baseHP="5" boss="0" champion="0" collisionDamage="0" collisionMass="100" collisionRadius="1" friction="1" id="1000" name="(Samael) Spirit of Denial" numGridCollisionPoints="0" shadowSize="14" shutdoors="false" stageHP="0" variant="6623"></entity>
+	<entity anm2path="samael_entities/spirit_of_anger.anm2" baseHP="5" boss="0" champion="0" collisionDamage="0" collisionMass="100" collisionRadius="1" friction="1" id="1000" name="(Samael) Spirit of Anger" numGridCollisionPoints="0" shadowSize="14" shutdoors="false" stageHP="0" variant="6624"></entity>
+	<entity anm2path="samael_entities/spirit_of_acceptance.anm2" baseHP="5" boss="0" champion="0" collisionDamage="0" collisionMass="100" collisionRadius="1" friction="1" id="1000" name="(Samael) Spirit of Acceptance" numGridCollisionPoints="0" shadowSize="14" shutdoors="false" stageHP="0" variant="6625"></entity>
+	
+	<!-- PICKUPS -->
+	<entity anm2path="items/samael/xiii.anm2" baseHP="0" boss="0" champion="0" collisionDamage="0" collisionMass="3" collisionRadius="12" friction="1" id="5" name="XIII" numGridCollisionPoints="24" shadowSize="16" stageHP="0" variant="300" subtype="6617"></entity>
+	<entity anm2path="items/samael/xiii_reversed.anm2" baseHP="0" boss="0" champion="0" collisionDamage="0" collisionMass="3" collisionRadius="12" friction="1" id="5" name="XIII?" numGridCollisionPoints="24" shadowSize="16" stageHP="0" variant="300" subtype="6618"></entity>
+	<entity anm2path="items/samael/soul_of_samael.anm2" baseHP="0" boss="0" champion="0" collisionDamage="0" collisionMass="3" collisionRadius="12" friction="1" id="5" name="Soul of Samael" numGridCollisionPoints="24" shadowSize="16" stageHP="0" variant="300" subtype="6619"></entity>
+	<entity anm2path="items/samael/denial_dice.anm2" baseHP="0" boss="0" champion="0" collisionDamage="0" collisionMass="3" collisionRadius="12" friction="1" id="5" name="Denial's D9" numGridCollisionPoints="24" shadowSize="16" stageHP="0" variant="300" subtype="6620"></entity>
+	<entity anm2path="items/samael/bag_o_bones.anm2" baseHP="0" boss="0" champion="0" collisionDamage="0" collisionMass="3" collisionRadius="12" friction="1" id="5" name="(Samael) Bag o' Bones" numGridCollisionPoints="24" shadowSize="18" stageHP="0" variant="6617"></entity>
+	<entity anm2path="items/samael/ferrymans_obols.anm2" baseHP="0" boss="0" champion="0" collisionDamage="0" collisionMass="3" collisionRadius="12" friction="1" id="5" name="Ferryman's Obols" numGridCollisionPoints="24" shadowSize="16" stageHP="0" variant="300" subtype="6622"></entity>
+	<entity anm2path="items/samael/forgotten_skull.anm2" baseHP="0" boss="0" champion="0" collisionDamage="0" collisionMass="3" collisionRadius="12" friction="1" id="5" name="(Samael) Forgotten Skull" numGridCollisionPoints="24" shadowSize="18" stageHP="0" variant="6618"></entity>
+	
+	<!-- MISC -->
+	<entity anm2path="samael_dropped_item.anm2" baseHP="0" boss="0" champion="0" collisionDamage="0" collisionMass="3" collisionRadius="12" friction="1" id="1000" name="Samael Dropped Item" numGridCollisionPoints="24" shadowSize="16" stageHP="0" variant="6626"></entity>
+	<entity anm2path="samael_null.anm2" baseHP="0" boss="0" champion="0" collisionDamage="0" collisionMass="3" collisionRadius="12" friction="1" id="1000" name="Samael Dummy Entity" numGridCollisionPoints="24" shadowSize="0" stageHP="0" variant="6627"></entity>
+	<entity anm2path="grid/door_01_normaldoor.anm2" baseHP="0" boss="0" champion="0" collisionDamage="0" collisionMass="3" collisionRadius="12" friction="1" id="1000" name="(Samael) Fragment Door" numGridCollisionPoints="24" shadowSize="0" stageHP="0" variant="6627" subtype="2"></entity>
+	<entity anm2path="grid/door_17_bardoor.anm2" baseHP="0" boss="0" champion="0" collisionDamage="0" collisionMass="3" collisionRadius="12" friction="1" id="1000" name="(Samael) Fragment Door Bars" numGridCollisionPoints="24" shadowSize="0" stageHP="0" variant="6627" subtype="3"></entity>
+	<entity anm2path="1000.165.1_charm effect glow.anm2" baseHP="0" boss="0" champion="0" collisionDamage="0" collisionMass="3" collisionRadius="12" friction="1" id="1000" name="(Samael) Spawning Effect Glow" numGridCollisionPoints="24" shadowSize="0" stageHP="0" variant="6627" subtype="4"></entity>
+	<entity anm2path="1000.165.0_charm effect.anm2" baseHP="0" boss="0" champion="0" collisionDamage="0" collisionMass="3" collisionRadius="12" friction="1" id="1000" name="(Samael) Spawning Effect" numGridCollisionPoints="24" shadowSize="0" stageHP="0" variant="6627" subtype="5"></entity>
+	<entity anm2path="samael_entities/lost_soul/lost_soul.anm2" baseHP="0" boss="0" champion="0" collisionDamage="0" collisionMass="3" collisionRadius="12" friction="1" id="1000" name="(Samael) Lost Soul Effect" numGridCollisionPoints="24" shadowSize="13" stageHP="0" variant="6627" subtype="6"></entity>
+	<entity anm2path="samael_scythe.anm2" baseHP="0" boss="0" champion="0" collisionDamage="0" collisionMass="3" collisionRadius="12" friction="1" id="1000" name="(Samael) Mini Reaper Scythe" numGridCollisionPoints="24" shadowSize="0" stageHP="0" variant="6627" subtype="7"></entity>
+	<entity anm2path="samael_entities/teaser.anm2" baseHP="0" boss="0" champion="0" collisionDamage="0" collisionMass="3" collisionRadius="12" friction="1" id="1000" name="(Samael) Teaser" numGridCollisionPoints="24" shadowSize="13" stageHP="0" variant="6627" subtype="8"></entity>
+	<entity anm2path="1000.161_portal teleport.anm2" baseHP="0" boss="0" champion="0" collisionDamage="0" collisionMass="3" collisionRadius="12" friction="1" id="617" name="(Samael) Fragment Portal" numGridCollisionPoints="24" shadowSize="0" stageHP="0" variant="1" subtype="0"  shutdoors="false" reroll="false" tags="noreroll" ></entity>
+	<entity anm2path="samael_entities/reaper_statue.anm2" baseHP="0" boss="0" champion="0" collisionDamage="0" collisionMass="0" collisionRadius="1" friction="1" id="1000" name="(Samael) Reaper Statue" numGridCollisionPoints="0" shadowSize="0" stageHP="0" variant="6" subtype="617"></entity>
+	<entity anm2path="samael_null.anm2" baseHP="1" boss="0" champion="0" collisionDamage="0" collisionMass="0" collisionRadius="0" friction="1" id="1000" variant="6628" subtype="0" name="(Samael) Bone Gibs Helper" numGridCollisionPoints="0" reroll="false" shadowSize="0" stageHP="0" shutdoors="false" tags="noreroll" >
+		<gibs amount="10" blood="0" bone="1" dust="1" eye="0" gut="0" large="0" sound_bone="1"/>
+	</entity>
+	<entity anm2path="samael_null.anm2" baseHP="1" boss="0" champion="0" collisionDamage="0" collisionMass="0" collisionRadius="0" friction="1" id="1000" variant="6628" subtype="1" name="(Samael) Dust Gibs Helper" numGridCollisionPoints="0" reroll="false" shadowSize="0" stageHP="0" shutdoors="false" tags="noreroll" >
+		<gibs amount="10" blood="0" bone="0" dust="1" eye="0" gut="0" large="0" />
+	</entity>
+	<entity anm2path="1000.039.001_Moonlight.anm2" baseHP="0" boss="0" champion="0" collisionDamage="0" collisionMass="3" collisionRadius="8" friction="1" id="1000" variant="6630" name="(Samael) Acceptance Light" numGridCollisionPoints="0" shadowSize="0" stageHP="0" />
+	<entity anm2path="samael_pixel_particle.anm2" baseHP="0" boss="0" champion="0" collisionDamage="0" collisionMass="0" collisionRadius="0" friction="1" id="1000" name="(Samael) Pixel Particle" numGridCollisionPoints="0" shadowSize="0" stageHP="0" variant="66" subtype="617"/>
+	<entity anm2path="samael_null.anm2" baseHP="1" boss="0" collisionDamage="0" collisionMass="10" collisionRadius="13" friction="1" id="617" name="(Samael) D/ummy Enemy" numGridCollisionPoints="12" reroll="false" shadowSize="0" stageHP="0" variant="3" subtype="0" tags="noreroll"/>
+	<entity anm2path="characters/samael_azazel.anm2" baseHP="18" boss="0" champion="0" collisionDamage="1" collisionMass="10" collisionRadius="13" friction="1" gridCollision="walls" id="883" name="(Samael) Azazel but Fucked Up" numGridCollisionPoints="8" portrait="316" reroll="false" shadowSize="16" stageHP="3" variant="617" tags="noreroll" >
+		<gibs amount="6" blood="1" bone="1" eye="1" gut="1" large="0" sound_baby="1"/>
+	</entity>
+	
+	<entity id="617" variant="4" subtype="0" anm2path="samael_null.anm2" reroll="false" baseHP="0" stageHP="0" boss="0" champion="0" collisionDamage="0" collisionMass="1" collisionRadius="1" friction="1"  name="(Samael/FF) Safe Scythe Rider" numGridCollisionPoints="0" shadowSize="1" portrait="0" tags="noreroll" />
+	<entity id="617" variant="4" subtype="1" anm2path="samael_null.anm2" reroll="false" baseHP="0" stageHP="0" boss="0" champion="0" collisionDamage="0" collisionMass="1" collisionRadius="1" friction="1"  name="(Samael/FF) Safe Reaper" numGridCollisionPoints="0" shadowSize="1" portrait="0" tags="noreroll" />
+	<entity id="617" variant="4" subtype="2" anm2path="samael_null.anm2" reroll="false" baseHP="0" stageHP="0" boss="0" champion="0" collisionDamage="0" collisionMass="1" collisionRadius="1" friction="1"  name="(Samael/FF) Safe Shi" numGridCollisionPoints="0" shadowSize="1" portrait="0" tags="noreroll" />
+	<entity id="617" variant="4" subtype="3" anm2path="samael_null.anm2" reroll="false" baseHP="0" stageHP="0" boss="0" champion="0" collisionDamage="0" collisionMass="1" collisionRadius="1" friction="1"  name="(Samael/FF) Safe Gravedigger" numGridCollisionPoints="0" shadowSize="1" portrait="0" tags="noreroll" />
+	
+	<!--<entity anm2path="samael_fragment/fake_trapdoor.anm2" baseHP="0" boss="0" champion="0" collisionDamage="0" collisionMass="200" collisionRadius="1" friction="1" gridCollision="none" id="950" name="(Samael) Fake Trapdoor" numGridCollisionPoints="8" portrait="0" shadowSize="0" stageHP="0" variant="617" subtype="0"/>
+	<entity anm2path="samael_fragment/fake_trapdoor.anm2" baseHP="0" boss="0" champion="0" collisionDamage="0" collisionMass="3" collisionRadius="1" friction="1" gridCollision="none" id="950" name="(Samael) Static Helper" numGridCollisionPoints="8" portrait="0" shadowSize="0" stageHP="0" variant="10" subtype="617"/>
+	<entity anm2path="samael_fragment/static_gaper.anm2" baseHP="9" boss="0" champion="0" collisionDamage="1" collisionMass="3" collisionRadius="13" friction="1" gridCollision="none" id="950" name="(Samael) Static Gaper" numGridCollisionPoints="8" portrait="0" shadowSize="14" stageHP="5" variant="10" subtype="618"/>
+	
+	<entity anm2path="dogma_test.anm2" baseHP="30" boss="0" champion="0" collisionDamage="1" collisionMass="200" collisionRadius="12" friction="1" gridCollision="none" id="950" name="Dogma Test" numGridCollisionPoints="8" portrait="0" shadowSize="0" stageHP="0" variant="10" subtype="618">
+		<gibs amount="0" blood="0" bone="0" eye="0" gut="0" large="0" poop="0" sound_baby="1"/>
+	</entity>-->
+	
+	<entity anm2path="samael_ending_alt.anm2" baseHP="0" boss="0" champion="0" collisionDamage="0" collisionMass="3" collisionRadius="1" friction="1" gridCollision="none" id="950" name="(Samael) Alt Ending Helper" numGridCollisionPoints="8" portrait="0" shadowSize="0" stageHP="0" variant="10" subtype="617"/>
+	
+	<entity anm2path="samael_fragment/fragment.anm2" baseHP="0" boss="0" champion="0" collisionDamage="0" collisionMass="3" collisionRadius="12" friction="1" id="1000" name="(Samael) Fragment Entrance" numGridCollisionPoints="24" shadowSize="0" stageHP="0" variant="6632"></entity>
+	<entity anm2path="samael_fragment/fragment_rocks.anm2" baseHP="0" boss="0" champion="0" collisionDamage="0" collisionMass="3" collisionRadius="12" friction="1" id="1000" name="(Samael) Fragment Rock" numGridCollisionPoints="24" shadowSize="0" stageHP="0" variant="6632" subtype="1"></entity>
+	<entity anm2path="samael_fragment/backdrop.anm2" id="1000" name="(Samael) Fragment Backdrop Layer" variant="6633" collisionRadius="0" numGridCollisionPoints="0"/>
+	<entity anm2path="samael_fragment/backdrop_test.anm2" id="1000" name="(Samael) Fragment Backdrop Test" variant="6633" subtype="1" collisionRadius="0" numGridCollisionPoints="0"/>
+	<entity id="617" variant="1000" subtype="0" anm2path="samael_null.anm2" reroll="false" baseHP="0" stageHP="0" boss="0" champion="0" collisionDamage="0" collisionMass="1" collisionRadius="1" friction="1"  name="(Samael) Fragment Backdrop Replacer" shutdoors="false" numGridCollisionPoints="0" shadowSize="1" portrait="1" tags="noreroll" />
+	<entity id="617" variant="1001" subtype="0" anm2path="samael_null.anm2" reroll="false" baseHP="0" stageHP="0" boss="0" champion="0" collisionDamage="0" collisionMass="1" collisionRadius="1" friction="1"  name="(Samael) Fragment Player Position" shutdoors="false" numGridCollisionPoints="0" shadowSize="1" portrait="1" tags="noreroll" />
+	<entity id="617" variant="1002" subtype="0" anm2path="samael_null.anm2" reroll="false" baseHP="0" stageHP="0" boss="0" champion="0" collisionDamage="0" collisionMass="1" collisionRadius="1" friction="1"  name="(Samael) Fragment Force Broken Wall" shutdoors="false" numGridCollisionPoints="0" shadowSize="1" portrait="1" tags="noreroll" />
+	<entity id="617" variant="1003" subtype="0" anm2path="samael_null.anm2" reroll="false" baseHP="0" stageHP="0" boss="0" champion="0" collisionDamage="0" collisionMass="1" collisionRadius="1" friction="1"  name="(Samael) Fragment Force Intact Wall" shutdoors="false" numGridCollisionPoints="0" shadowSize="1" portrait="1" tags="noreroll" />
+	<entity id="617" variant="1004" subtype="0" anm2path="samael_null.anm2" reroll="false" baseHP="0" stageHP="0" boss="0" champion="0" collisionDamage="0" collisionMass="1" collisionRadius="1" friction="1"  name="(Samael) Charm/Mark" shutdoors="false" numGridCollisionPoints="0" shadowSize="1" portrait="1" tags="noreroll" />
+	
+	<entity anm2path="306.000_Portal.anm2" baseHP="9" boss="0" champion="0" collisionDamage="0" collisionMass="100" collisionRadius="13" friction="1" id="306" name="(Samael) Enemy Portal" numGridCollisionPoints="0" portrait="160" shadowSize="24" shutdoors="true" stageHP="5" variant="617"/>
+</entities>

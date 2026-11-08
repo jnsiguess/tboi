@@ -31,5 +31,11 @@ edit(C + 'mods.c',
      '    void shim_samael_between_frames(void);\n'
      '    shim_samael_between_frames();\n',
      'shim_samael_between_frames();')
+# 3) hace sitio para Samael (id 41) en la tabla de personajes: igual que el parche "charslots" de Yama, sin port_patches.bin
+edit(C + 'loader.c',
+     '        { void shim_rangefix_install(unsigned char *); shim_rangefix_install(im.base); }\n',
+     '        { void shim_rangefix_install(unsigned char *); shim_rangefix_install(im.base); }\n'
+     '        { void shim_samael_slots_install(unsigned char *); shim_samael_slots_install(im.base); }\n',
+     'shim_samael_slots_install(im.base);')
 PY
-echo "guadana de Samael aplicada"
+echo "guadana de Samael aplicada (y tabla de personajes ampliada a 61)"
