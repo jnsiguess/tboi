@@ -96,6 +96,18 @@ int shim_sticks_in_game(void);
 #define SLOTS               4
 #define HIT_MAX             64
 
+/* ---- the scythe's picture: an effect with the mod's own sprite (samael_scythe.anm2, "Swing", 11 frames) ----
+ * Game::Spawn(game, type, variant, pos, velocity, spawner 0, subtype, seed, 0) is the call spawner.c uses; the
+ * effect (1000.6620) has four records in entities2.xml, one per direction (subtype 0 down, 1 right, 2 up, 3 left),
+ * each with the sprite already turned the way the mod turns it. samael_guadana_visual.py puts those records and
+ * files into the APK; without them this must not be spawned, so the verifier checks both go together. */
+#define FN_SPAWN            0x88fcbc
+#define FN_RANDOM           0x7f1cc0
+#define ZERO_VECTOR         0x95e7a0
+#define FX_TYPE             1000
+#define FX_VARIANT          6620
+#define FX_FRAMES           11
+
 typedef struct {
     int cooldown;                       /* frames until the next swing */
     int swing_left;                     /* frames the hitbox still lives */
@@ -104,6 +116,9 @@ typedef struct {
     int hit_n;
     int last_frame;
     int said;
+    unsigned long fx;                   /* the scythe's picture, while it lives */
+    unsigned long fx_room;
+    int fx_left;
 } slot_t;
 
 static slot_t g_slot[SLOTS];
@@ -160,13 +175,58 @@ static void hurt(unsigned long b, unsigned long e, unsigned long player, float d
 #endif
 }
 
-static void hit_pass(unsigned long b, unsigned long game, unsigned long player, slot_t *s, int index) {
+static unsigned long room_items(unsigned long game, const unsigned long **items, unsigned *n) {
     unsigned long room = *(const unsigned long *) (game + GAME_ROOM);
-    if (!room || !shim_trace_readable((const void *) (room + ROOM_ENTITIES), LIST_COUNT + 4)) return;
+    if (!room || !shim_trace_readable((const void *) (room + ROOM_ENTITIES), LIST_COUNT + 4)) return 0;
     unsigned long list = room + ROOM_ENTITIES;
-    const unsigned long *items = *(const unsigned long *const *) (list + LIST_ARRAY);
-    unsigned n = *(const unsigned *) (list + LIST_COUNT);
-    if (!items || n > 4096 || !shim_trace_readable(items, (unsigned long) n * 8)) return;
+    *items = *(const unsigned long *const *) (list + LIST_ARRAY);
+    *n = *(const unsigned *) (list + LIST_COUNT);
+    if (!*items || *n > 4096 || !shim_trace_readable(*items, (unsigned long) *n * 8)) return 0;
+    return room;
+}
+
+/* is `e` still one of this room's entities? (the game frees them when the room changes) */
+static int in_room(unsigned long game, unsigned long e) {
+    const unsigned long *items; unsigned n;
+    if (!room_items(game, &items, &n)) return 0;
+    for (unsigned i = 0; i < n; i++) if (items[i] == e) return 1;
+    return 0;
+}
+
+static void fx_remove(unsigned long game, slot_t *s) {
+    if (s->fx && in_room(game, s->fx)) {
+        const unsigned long *vt = *(const unsigned long *const *) s->fx;
+        if (vt && shim_trace_readable(vt, VT_REMOVE + 8)) ((void (*)(unsigned long)) vt[VT_REMOVE / 8])(s->fx);
+    }
+    s->fx = 0;
+}
+
+static void fx_spawn(unsigned long b, unsigned long game, unsigned long player, slot_t *s) {
+    int sub = fabsf(s->dir_x) >= fabsf(s->dir_y) ? (s->dir_x > 0.0f ? 1 : 3) : (s->dir_y > 0.0f ? 0 : 2);
+    unsigned long (*spawn)(unsigned long, int, int, const float *, const float *, unsigned long, int, int, int) =
+        (unsigned long (*)(unsigned long, int, int, const float *, const float *, unsigned long, int, int, int))
+            (b + FN_SPAWN);
+    int seed = ((int (*)(void)) (b + FN_RANDOM))();
+    unsigned long e = spawn(game, FX_TYPE, FX_VARIANT, (const float *) (player + PLAYER_POSITION),
+                            (const float *) (b + ZERO_VECTOR), 0, sub, seed, 0);
+    if (e && in_room(game, e)) {
+        s->fx = e;
+        s->fx_room = *(const unsigned long *) (game + GAME_ROOM);
+        s->fx_left = FX_FRAMES;
+        LOG("scythe: picture spawned (subtype %d)", sub);
+    }
+}
+
+static void fx_tick(unsigned long game, slot_t *s) {
+    if (!s->fx) return;
+    unsigned long room = *(const unsigned long *) (game + GAME_ROOM);
+    if (!room || room != s->fx_room || !in_room(game, s->fx)) { s->fx = 0; return; }   /* the room changed */
+    if (--s->fx_left <= 0) fx_remove(game, s);
+}
+
+static void hit_pass(unsigned long b, unsigned long game, unsigned long player, slot_t *s, int index) {
+    const unsigned long *items; unsigned n;
+    if (!room_items(game, &items, &n)) return;
 
     const float *pp = (const float *) (player + PLAYER_POSITION);
     float ox, oy;
@@ -218,6 +278,7 @@ void shim_samael_between_frames(void) {
         if (frame == s->last_frame) continue;           /* one step per update frame, not per drawn frame */
         s->last_frame = frame;
 
+        fx_tick(game, s);
         if (s->cooldown > 0) s->cooldown--;
         if (s->swing_left > 0) {
             hit_pass(b, game, p, s, i);
@@ -234,6 +295,8 @@ void shim_samael_between_frames(void) {
             s->swing_left = HITBOX_FRAMES;
             s->hit_n = 0;
             s->cooldown = swing_delay(p);
+            fx_remove(game, s);
+            fx_spawn(b, game, p, s);                    /* the picture: the mod's scythe, in the aimed direction */
             hit_pass(b, game, p, s, i);                 /* the swing's first frame hits at once */
             s->swing_left--;
             LOG("scythe: swing of player %d, dir (%.2f, %.2f), delay %d", i, (double) s->dir_x, (double) s->dir_y, s->cooldown);
@@ -245,18 +308,18 @@ void shim_samael_between_frames(void) {
  * ROOM FOR SAMAEL IN THE CHARACTER TABLE (id 41).
  *
  * The game builds its character table with `resize(41)` (ids 0..40), so a <player id="41"> is never read and the
- * menu does not show it. Yama's "charslots" patch widens it: `mov w1,#41` -> `mov w1,#61` at 0x7855dc, i.e.
- * 0x52800521 -> 0x528007A1 (two bytes). That patch comes from port_patches.bin, which this build does not carry,
- * so the same edit is made here, in the loader's start-up block where __TEXT is still open for writing (written
- * plainly, not through patch_word, like the other edits there). The word is checked first: only the original or
- * the patched value is accepted, anything else leaves the image alone.
+ * menu does not show it. Yama's "charslots" patch widens it to 61 (for Fiend Folio's twenty); Samael needs ONE more,
+ * so this makes it 42: `mov w1,#41` -> `mov w1,#42` at 0x7855dc, i.e. 0x52800521 -> 0x52800541. (A 61 leaves twenty
+ * empty slots in the menu.) The edit is made in the loader's start-up block where __TEXT is still open for writing
+ * (written plainly, not through patch_word, like the other edits there). The word is checked first: the original,
+ * 42 or the older 61 are accepted, anything else leaves the image alone.
  */
 void shim_samael_slots_install(unsigned char *base) {
     uint32_t *w = (uint32_t *) (base + 0x7855dc);
-    if (*w != 0x52800521u && *w != 0x528007A1u) {
+    if (*w != 0x52800521u && *w != 0x52800541u && *w != 0x528007A1u) {
         LOG("samael: 0x7855dc holds %08x - the character table is left alone", (unsigned) *w);
         return;
     }
-    *w = 0x528007A1u;
-    LOG("samael: character table resized 41 -> 61");
+    *w = 0x52800541u;
+    LOG("samael: character table resized to 42 (Samael is id 41)");
 }
