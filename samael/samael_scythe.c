@@ -241,6 +241,22 @@ static void fx_spawn(unsigned long b, unsigned long game, unsigned long player, 
         s->fx_room = *(const unsigned long *) (game + GAME_ROOM);
         s->fx_left = FX_FRAMES;
         LOG("scythe: picture spawned (subtype %d)", sub);
+#if ISAAC_DIAG
+        /* FIX5 diagnostic: where the picture is against the player and the hitbox, at the moment it is spawned */
+        static int fxsaid;
+        if (fxsaid < 16 && shim_report_active() && shim_trace_readable((const void *) (e + ENT_POSITION), 8)) {
+            fxsaid++;
+            const float *fp = (const float *) (e + ENT_POSITION);
+            const float *pp = (const float *) (player + PLAYER_POSITION);
+            float ox, oy;
+            hitbox_offset(s->dir_x, s->dir_y, &ox, &oy);
+            char line[240];
+            snprintf(line, sizeof(line), "fx spawn: sub %d dir (%.2f, %.2f) player (%.1f, %.1f) fx (%.1f, %.1f) hitbox centre (%.1f, %.1f)",
+                     sub, (double) s->dir_x, (double) s->dir_y, (double) pp[0], (double) pp[1], (double) fp[0], (double) fp[1],
+                     (double) (pp[0] + ox), (double) (pp[1] + oy));
+            report_line("scythe", line);
+        }
+#endif
     }
 }
 
@@ -254,6 +270,17 @@ static void fx_tick(unsigned long game, unsigned long player, slot_t *s) {
     if (shim_trace_readable((const void *) (s->fx + ENT_POSITION), 8)) {
         float *fp = (float *) (s->fx + ENT_POSITION);
         const float *pp = (const float *) (player + PLAYER_POSITION);
+#if ISAAC_DIAG
+        /* FIX5 diagnostic: does the game move the picture by itself between our writes? (value BEFORE we overwrite it) */
+        static int ticksaid;
+        if (ticksaid < 30 && s->fx_left >= FX_FRAMES - 2 && shim_report_active()) {
+            ticksaid++;
+            char line[200];
+            snprintf(line, sizeof(line), "fx tick: left %d fx before (%.1f, %.1f) player now (%.1f, %.1f)", s->fx_left,
+                     (double) fp[0], (double) fp[1], (double) pp[0], (double) pp[1]);
+            report_line("scythe", line);
+        }
+#endif
         fp[0] = pp[0]; fp[1] = pp[1];
     }
 #endif
