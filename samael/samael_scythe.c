@@ -98,6 +98,14 @@ int shim_sticks_in_game(void);
 /* FIX6: the mod snaps the swing direction to the four cardinal ones (samael.lua:2155 DirectionalVector(
  * GetDirectionFromVector(dir))) unless Marked / Analog Stick / a knife weapon. Put 0 to keep diagonal swings. */
 #define SWING_CARDINAL      1
+/* FIX7: the picture lagged behind the player while walking. The scythe code runs between frames, once per update, and
+ * writes the picture's position from where the player IS then; the player moves again during the next update, so the
+ * picture is drawn one update behind (up to ~8 units at full speed). The mod has no lag (it sets the scythe from the
+ * player's position inside the update). The fix adds the player's last step (position now minus position one update
+ * ago) so the picture lands where the player will be. 1.0 = one whole update ahead (what a one-update lag needs),
+ * 0.5 = half, 0.0 = off (fix6). FX_LEAD_MAX drops the step when the player jumped (a room change). */
+#define FX_LEAD             1.0f
+#define FX_LEAD_MAX         14.0f
 #define ENEMY_PAD           20.0f       /* an enemy's own radius: not measured, a middle value */
 
 /* ENTITY VTABLE SLOTS (byte offsets inside the vtable, like VT_REMOVE above). 0 = not measured yet, and the damage
@@ -146,6 +154,9 @@ typedef struct {
     unsigned long fx_room;
     int fx_left;
     int last_swing_frame;               /* only for the log: frames between two swings */
+    float ppx, ppy;                     /* FIX7: the player's position at the previous update */
+    float vx, vy;                       /* FIX7: the player's last step (one update) */
+    int pvalid;
 } slot_t;
 
 static slot_t g_slot[SLOTS];
@@ -254,7 +265,7 @@ static void fx_spawn(unsigned long b, unsigned long game, unsigned long player, 
     float sox, soy;
     sprite_offset(s->dir_x, s->dir_y, &sox, &soy);
     const float *ppos = (const float *) (player + PLAYER_POSITION);
-    float at[2] = { ppos[0] + sox, ppos[1] + soy };                 /* FIX6: player + CalcScythePosOffset */
+    float at[2] = { ppos[0] + sox + FX_LEAD * s->vx, ppos[1] + soy + FX_LEAD * s->vy };                 /* FIX6: player + CalcScythePosOffset */
     unsigned long e = spawn(game, FX_TYPE, FX_VARIANT, at,
                             (const float *) (b + ZERO_VECTOR), 0, sub, seed, 0);
     if (e && in_room(game, e)) {
@@ -272,7 +283,7 @@ static void fx_spawn(unsigned long b, unsigned long game, unsigned long player, 
             float ox, oy;
             hitbox_offset(s->dir_x, s->dir_y, &ox, &oy);
             char line[240];
-            snprintf(line, sizeof(line), "fx6 spawn: sub %d dir (%.2f, %.2f) player (%.1f, %.1f) fx (%.1f, %.1f) hitbox centre (%.1f, %.1f)",
+            snprintf(line, sizeof(line), "fx7 spawn: sub %d dir (%.2f, %.2f) player (%.1f, %.1f) fx (%.1f, %.1f) hitbox centre (%.1f, %.1f)",
                      sub, (double) s->dir_x, (double) s->dir_y, (double) pp[0], (double) pp[1], (double) fp[0], (double) fp[1],
                      (double) (pp[0] + ox), (double) (pp[1] + oy));
             report_line("scythe", line);
@@ -297,14 +308,14 @@ static void fx_tick(unsigned long game, unsigned long player, slot_t *s) {
         if (ticksaid < 30 && s->fx_left >= FX_FRAMES - 2 && shim_report_active()) {
             ticksaid++;
             char line[200];
-            snprintf(line, sizeof(line), "fx tick: left %d fx before (%.1f, %.1f) player now (%.1f, %.1f)", s->fx_left,
-                     (double) fp[0], (double) fp[1], (double) pp[0], (double) pp[1]);
+            snprintf(line, sizeof(line), "fx7 tick: left %d fx before (%.1f, %.1f) player now (%.1f, %.1f) step (%.1f, %.1f)", s->fx_left,
+                     (double) fp[0], (double) fp[1], (double) pp[0], (double) pp[1], (double) s->vx, (double) s->vy);
             report_line("scythe", line);
         }
 #endif
         float fox, foy;
         sprite_offset(s->dir_x, s->dir_y, &fox, &foy);
-        fp[0] = pp[0] + fox; fp[1] = pp[1] + foy;                   /* FIX6: player + CalcScythePosOffset */
+        fp[0] = pp[0] + fox + FX_LEAD * s->vx; fp[1] = pp[1] + foy + FX_LEAD * s->vy;                   /* FIX6: player + CalcScythePosOffset */
     }
 #endif
     if (--s->fx_left <= 0) fx_remove(game, s);
@@ -390,6 +401,17 @@ void shim_samael_between_frames(void) {
         if (!p || *(const int *) (p + PLAYER_TYPE) != SAMAEL_TYPE) { memset(s, 0, sizeof(*s)); continue; }
         if (frame == s->last_frame) continue;           /* one step per update frame, not per drawn frame */
         s->last_frame = frame;
+
+        {   /* FIX7: the player's last step */
+            const float *pp0 = (const float *) (p + PLAYER_POSITION);
+            float dx = 0.0f, dy = 0.0f;
+            if (s->pvalid) {
+                dx = pp0[0] - s->ppx; dy = pp0[1] - s->ppy;
+                if (fabsf(dx) > FX_LEAD_MAX || fabsf(dy) > FX_LEAD_MAX) { dx = 0.0f; dy = 0.0f; }
+            }
+            s->vx = dx; s->vy = dy;
+            s->ppx = pp0[0]; s->ppy = pp0[1]; s->pvalid = 1;
+        }
 
         fx_tick(game, p, s);
         if (s->cooldown > 0) s->cooldown--;
