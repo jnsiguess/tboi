@@ -88,6 +88,16 @@ int shim_sticks_in_game(void);
 #define HITBOX_OFFSET_X     40.0f
 #define HITBOX_OFFSET_Y     35.0f
 #define HITBOX_FRAMES       6
+/* FIX6: where the scythe's PICTURE sits against the player. samael.lua:1999 CalcScythePosOffset(angle):
+ *     x = -10 * sin(a),  y = 11 * cos(a) - 9,  a = angle of (dir rotated -90)   (same angle as the hitbox)
+ * i.e. down (0, +2), right (+10, -9), up (0, -20), left (-10, -9). The mod puts the scythe at player + this offset
+ * (UpdateScythePosition), never at the player's centre; until fix5 the picture was at the centre. */
+#define SPRITE_OFFSET_X     10.0f
+#define SPRITE_OFFSET_Y     11.0f
+#define SPRITE_OFFSET_BASE  -9.0f
+/* FIX6: the mod snaps the swing direction to the four cardinal ones (samael.lua:2155 DirectionalVector(
+ * GetDirectionFromVector(dir))) unless Marked / Analog Stick / a knife weapon. Put 0 to keep diagonal swings. */
+#define SWING_CARDINAL      1
 #define ENEMY_PAD           20.0f       /* an enemy's own radius: not measured, a middle value */
 
 /* ENTITY VTABLE SLOTS (byte offsets inside the vtable, like VT_REMOVE above). 0 = not measured yet, and the damage
@@ -158,6 +168,13 @@ static void hitbox_offset(float dx, float dy, float *ox, float *oy) {
     float a = atan2f(-dx, dy);
     *ox = -HITBOX_OFFSET_X * sinf(a);
     *oy = HITBOX_OFFSET_Y * cosf(a);
+}
+
+/* CalcScythePosOffset: the picture's offset from the player */
+static void sprite_offset(float dx, float dy, float *ox, float *oy) {
+    float a = atan2f(-dx, dy);
+    *ox = -SPRITE_OFFSET_X * sinf(a);
+    *oy = SPRITE_OFFSET_Y * cosf(a) + SPRITE_OFFSET_BASE;
 }
 
 static int already_hit(const slot_t *s, unsigned long e) {
@@ -234,7 +251,11 @@ static void fx_spawn(unsigned long b, unsigned long game, unsigned long player, 
         (unsigned long (*)(unsigned long, int, int, const float *, const float *, unsigned long, int, int, int))
             (b + FN_SPAWN);
     int seed = ((int (*)(void)) (b + FN_RANDOM))();
-    unsigned long e = spawn(game, FX_TYPE, FX_VARIANT, (const float *) (player + PLAYER_POSITION),
+    float sox, soy;
+    sprite_offset(s->dir_x, s->dir_y, &sox, &soy);
+    const float *ppos = (const float *) (player + PLAYER_POSITION);
+    float at[2] = { ppos[0] + sox, ppos[1] + soy };                 /* FIX6: player + CalcScythePosOffset */
+    unsigned long e = spawn(game, FX_TYPE, FX_VARIANT, at,
                             (const float *) (b + ZERO_VECTOR), 0, sub, seed, 0);
     if (e && in_room(game, e)) {
         s->fx = e;
@@ -251,7 +272,7 @@ static void fx_spawn(unsigned long b, unsigned long game, unsigned long player, 
             float ox, oy;
             hitbox_offset(s->dir_x, s->dir_y, &ox, &oy);
             char line[240];
-            snprintf(line, sizeof(line), "fx spawn: sub %d dir (%.2f, %.2f) player (%.1f, %.1f) fx (%.1f, %.1f) hitbox centre (%.1f, %.1f)",
+            snprintf(line, sizeof(line), "fx6 spawn: sub %d dir (%.2f, %.2f) player (%.1f, %.1f) fx (%.1f, %.1f) hitbox centre (%.1f, %.1f)",
                      sub, (double) s->dir_x, (double) s->dir_y, (double) pp[0], (double) pp[1], (double) fp[0], (double) fp[1],
                      (double) (pp[0] + ox), (double) (pp[1] + oy));
             report_line("scythe", line);
@@ -281,7 +302,9 @@ static void fx_tick(unsigned long game, unsigned long player, slot_t *s) {
             report_line("scythe", line);
         }
 #endif
-        fp[0] = pp[0]; fp[1] = pp[1];
+        float fox, foy;
+        sprite_offset(s->dir_x, s->dir_y, &fox, &foy);
+        fp[0] = pp[0] + fox; fp[1] = pp[1] + foy;                   /* FIX6: player + CalcScythePosOffset */
     }
 #endif
     if (--s->fx_left <= 0) fx_remove(game, s);
@@ -384,6 +407,12 @@ void shim_samael_between_frames(void) {
             float len = sqrtf(ax * ax + ay * ay);
             s->dir_x = ax / len;
             s->dir_y = ay / len;
+#if SWING_CARDINAL
+            /* FIX6: the mod's DirectionalVector(GetDirectionFromVector(dir)): the dominant axis wins (a tie goes to
+             * the horizontal one, like the picture's subtype below), so hitbox, offset and picture always agree */
+            if (fabsf(s->dir_x) >= fabsf(s->dir_y)) { s->dir_y = 0.0f; s->dir_x = s->dir_x > 0.0f ? 1.0f : -1.0f; }
+            else                                    { s->dir_x = 0.0f; s->dir_y = s->dir_y > 0.0f ? 1.0f : -1.0f; }
+#endif
             s->swing_left = HITBOX_FRAMES;
             s->hit_n = 0;
             s->cooldown = swing_delay(p);
