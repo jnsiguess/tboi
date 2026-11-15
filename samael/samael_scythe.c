@@ -139,7 +139,12 @@ int shim_sticks_in_game(void);
 #define ZERO_VECTOR         0x95e7a0
 #define FX_TYPE             1000
 #define FX_VARIANT          6620
-#define FX_FRAMES           11
+/* FIX8: how many updates the picture lives. The anm2 "Swing" has 11 frames but its SwingEnd event is at frame 5, where the
+ * hitbox ends (6 frames). Frames 3-10 of the mod's own sprite sit BEHIND the player (aiming up they end on the lower
+ * right, below the feet; aiming down, on the upper left): that is the follow-through before the mod starts its next
+ * swing. 6 = the picture lives as long as the hitbox (frames 0-5). 11 = the whole animation (fix7). 3 = only the arc
+ * in front of the player (frames 0-2). */
+#define FX_FRAMES           6
 #define FX_FOLLOW_PLAYER    1           /* the picture is moved to the player's position every frame (see fx_tick) */
 
 typedef struct {
