@@ -464,7 +464,64 @@ void shim_samael_between_frames(void) {
  * (written plainly, not through patch_word, like the other edits there). The word is checked first: the original,
  * 42 or the older 61 are accepted, anything else leaves the image alone.
  */
+/*
+ * FIX9 - ROOM FOR NEW COLLECTIBLES AND TRINKETS (an experiment: tables only, no new item yet).
+ *
+ * Measured in isaac.arm64 (all offsets from the image base). The game keeps its item configurations in ONE object made of
+ * three std::vector<ItemConfig*>: collectibles (+0x0), trinkets (+0x18) and "others" (+0x30). Three places size them with
+ * `resize(N)` written as an immediate, and the constructor also zeroes them with a loop bounded by the same number:
+ *   0x737eac mov w1,#733   0x737ec4 cmp x8,#733  (loop: 733 pointers)   <- constructor
+ *   0x737ed4 mov w1,#190   0x737eec cmp x8,#0x5f0 (loop: 190 * 8 bytes)
+ *   0x7384a8 mov w1,#733   0x7384b4 mov w1,#190                          <- a second reset
+ *   0x738680 mov w1,#733   0x73868c mov w1,#190                          <- the items.xml loader
+ * The lookup by id (0x73f7f4 and the two next to it) compares the id with (end-begin)/8, the REAL size, and the player's
+ * per-item counter (a vector<int> at player+0x1ab8, filled at 0x4eba7c) is resized from that same size, so both grow on
+ * their own. The 733 compared at 0x7ea590, 0x7eb068, 0x7ed3dc, 0x8a26c8, 0x7025b4, 0x66b3b8, 0x66b6a4 and 0x66b9a4 are
+ * left alone ON PURPOSE: they probably guard fixed-size arrays (the saved data), and widening them could write outside.
+ *
+ * All the words are checked first; if ANY differs, nothing is written (a half-patched table would be worse).
+ */
+#define SAMAEL_ITEMS_WIDEN      1       /* 0 = leave the item tables alone */
+#define SAMAEL_NEW_COLLECTIBLES 16      /* ids 733..748 */
+#define SAMAEL_NEW_TRINKETS     12      /* ids 190..201 */
+
+static uint32_t a64_mov_w1(unsigned n)   { return 0x52800001u | (n << 5); }          /* mov w1,#n   (n < 65536) */
+static uint32_t a64_cmp_x8(unsigned n)   { return 0xF100011Fu | (n << 10); }         /* cmp x8,#n   (n < 4096)  */
+
+static void samael_items_widen(unsigned char *base) {
+#if SAMAEL_ITEMS_WIDEN
+    const unsigned oc = 733, ot = 190;
+    const unsigned nc = oc + SAMAEL_NEW_COLLECTIBLES, nt = ot + SAMAEL_NEW_TRINKETS;
+    struct { unsigned off; uint32_t old_w, new_w; } e[] = {
+        { 0x737eac, a64_mov_w1(oc),     a64_mov_w1(nc)     },
+        { 0x7384a8, a64_mov_w1(oc),     a64_mov_w1(nc)     },
+        { 0x738680, a64_mov_w1(oc),     a64_mov_w1(nc)     },
+        { 0x737ec4, a64_cmp_x8(oc),     a64_cmp_x8(nc)     },
+        { 0x737ed4, a64_mov_w1(ot),     a64_mov_w1(nt)     },
+        { 0x7384b4, a64_mov_w1(ot),     a64_mov_w1(nt)     },
+        { 0x73868c, a64_mov_w1(ot),     a64_mov_w1(nt)     },
+        { 0x737eec, a64_cmp_x8(ot * 8), a64_cmp_x8(nt * 8) },
+    };
+    const int n = (int) (sizeof e / sizeof e[0]);
+    int already = 0, i;
+    for (i = 0; i < n; i++) {
+        uint32_t cur = *(uint32_t *) (base + e[i].off);
+        if (cur == e[i].new_w) { already++; continue; }
+        if (cur != e[i].old_w) {
+            LOG("samael: item tables NOT widened - %#x holds %08x, expected %08x", e[i].off, (unsigned) cur, (unsigned) e[i].old_w);
+            return;
+        }
+    }
+    if (already == n) { LOG("samael: item tables were already widened"); return; }
+    for (i = 0; i < n; i++) *(uint32_t *) (base + e[i].off) = e[i].new_w;
+    LOG("samael: item tables widened: collectibles %u -> %u, trinkets %u -> %u (8 words)", oc, nc, ot, nt);
+#else
+    (void) base;
+#endif
+}
+
 void shim_samael_slots_install(unsigned char *base) {
+    samael_items_widen(base);
     uint32_t *w = (uint32_t *) (base + 0x7855dc);
     if (*w != 0x52800521u && *w != 0x52800541u && *w != 0x528007A1u) {
         LOG("samael: 0x7855dc holds %08x - the character table is left alone", (unsigned) *w);
