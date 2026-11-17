@@ -43,6 +43,29 @@
 unsigned long shim_image_base(void);
 int shim_report_active(void);
 void report_line(const char *kind, const char *text);
+
+#include <stdarg.h>
+/* FIX10: LOG() only reaches logcat. These go to the report file (isaac-start.txt). A note made before the report is attached
+ * (the table patch runs at start-up) waits in g_note and is flushed by shim_samael_between_frames. */
+static char g_note[6][220];
+static int  g_note_n;
+static void note(const char *fmt, ...) {
+    if (g_note_n >= 6) return;
+    va_list ap; va_start(ap, fmt);
+    vsnprintf(g_note[g_note_n++], sizeof g_note[0], fmt, ap);
+    va_end(ap);
+}
+static void report_now(const char *fmt, ...) {
+#if ISAAC_DIAG
+    char buf[240];
+    va_list ap; va_start(ap, fmt);
+    vsnprintf(buf, sizeof buf, fmt, ap);
+    va_end(ap);
+    if (shim_report_active()) report_line("samael", buf);
+#else
+    (void) fmt;
+#endif
+}
 int shim_trace_readable(const void *p, unsigned long n);
 int shim_sticks_in_game(void);
 
@@ -127,6 +150,17 @@ int shim_sticks_in_game(void);
 #define VT_DUMP_SLOTS       48
 
 #define SLOTS               4
+
+/* FIX10 - TEST OF THE WIDENED TABLE: one pedestal with collectible 733 per run, only if the game already has a configuration
+ * for that id (items.xml patched by samael_items_datos.py). Measured: the configuration container is [base+0xac2428] + 0x55f30
+ * (three vectors, the first one holds the collectibles); 0x73f7f4(container, id) returns the ItemConfig* or 0;
+ * 0x4eeb74(player, id, flag) is HasCollectible. */
+#define SAMAEL_ITEM_TEST     1
+#define SAMAEL_TEST_ID       733
+#define ITEM_CONTAINER_PTR   0xac2428
+#define ITEM_CONTAINER_OFF   0x55f30
+#define FN_GET_CONFIG        0x73f7f4
+#define FN_HAS_COLLECTIBLE   0x4eeb74
 #define HIT_MAX             64
 
 /* ---- the scythe's picture: an effect with the mod's own sprite (samael_scythe.anm2, "Swing", 11 frames) ----
@@ -162,6 +196,7 @@ typedef struct {
     float ppx, ppy;                     /* FIX7: the player's position at the previous update */
     float vx, vy;                       /* FIX7: the player's last step (one update) */
     int pvalid;
+    int test_done, test_spawned, test_has;   /* FIX10 */
 } slot_t;
 
 static slot_t g_slot[SLOTS];
@@ -388,7 +423,42 @@ static void hit_pass(unsigned long b, unsigned long game, unsigned long player, 
 }
 
 /* between frames (mods.c): once per update frame, for every Samael in the run */
+#if SAMAEL_ITEM_TEST
+static void item_test(unsigned long b, unsigned long game, unsigned long p, slot_t *s, int frame) {
+    if (!s->test_done && frame >= 90) {
+        s->test_done = 1;                                   /* one try per run, whatever happens */
+        unsigned long root = *(const unsigned long *) (b + ITEM_CONTAINER_PTR);
+        if (!root) { report_now("item test: the game has no configuration container yet"); return; }
+        unsigned long cont = root + ITEM_CONTAINER_OFF;
+        if (!shim_trace_readable((const void *) cont, 16)) { report_now("item test: container %#lx is not readable", cont); return; }
+        unsigned long beg = *(const unsigned long *) cont, end = *(const unsigned long *) (cont + 8);
+        long size = (long) ((end - beg) / 8);
+        unsigned long cfg = ((unsigned long (*)(unsigned long, int)) (b + FN_GET_CONFIG))(cont, SAMAEL_TEST_ID);
+        report_now("item test: collectible vector holds %ld entries; config for id %d = %#lx", size, SAMAEL_TEST_ID, cfg);
+        if (!cfg) { report_now("item test: NOT spawned (no items.xml entry for that id, or the table is not widened)"); return; }
+        unsigned long (*spawn)(unsigned long, int, int, const float *, const float *, unsigned long, int, int, int) =
+            (unsigned long (*)(unsigned long, int, int, const float *, const float *, unsigned long, int, int, int)) (b + FN_SPAWN);
+        int seed = ((int (*)(void)) (b + FN_RANDOM))();
+        const float *pp = (const float *) (p + PLAYER_POSITION);
+        float at[2] = { pp[0] + 80.0f, pp[1] };
+        unsigned long e = spawn(game, 5, 100, at, (const float *) (b + ZERO_VECTOR), 0, SAMAEL_TEST_ID, seed, 0);
+        s->test_spawned = e != 0;
+        report_now("item test: pedestal %s (entity %#lx)", e ? "spawned" : "FAILED", e);
+    }
+    if (s->test_spawned && frame % 15 == 0) {
+        int has = ((int (*)(unsigned long, int, int)) (b + FN_HAS_COLLECTIBLE))(p, SAMAEL_TEST_ID, 1);
+        if (has != s->test_has) { s->test_has = has; report_now("item test: HasCollectible(%d) = %d", SAMAEL_TEST_ID, has); }
+    }
+}
+#endif
+
 void shim_samael_between_frames(void) {
+#if ISAAC_DIAG
+    if (g_note_n && shim_report_active()) {                 /* FIX10: notes made before the report existed */
+        for (int k = 0; k < g_note_n; k++) report_line("samael", g_note[k]);
+        g_note_n = 0;
+    }
+#endif
     unsigned long b = shim_image_base();
     if (!b || !shim_sticks_in_game()) { memset(g_slot, 0, sizeof(g_slot)); return; }
     unsigned long game = *(const unsigned long *) (b + GAME_PTR);
@@ -418,6 +488,9 @@ void shim_samael_between_frames(void) {
             s->ppx = pp0[0]; s->ppy = pp0[1]; s->pvalid = 1;
         }
 
+#if SAMAEL_ITEM_TEST
+        item_test(b, game, p, s, frame);
+#endif
         fx_tick(game, p, s);
         if (s->cooldown > 0) s->cooldown--;
         if (s->swing_left > 0) {
@@ -509,12 +582,14 @@ static void samael_items_widen(unsigned char *base) {
         if (cur == e[i].new_w) { already++; continue; }
         if (cur != e[i].old_w) {
             LOG("samael: item tables NOT widened - %#x holds %08x, expected %08x", e[i].off, (unsigned) cur, (unsigned) e[i].old_w);
+            note("item tables NOT widened - %#x holds %08x, expected %08x", e[i].off, (unsigned) cur, (unsigned) e[i].old_w);
             return;
         }
     }
-    if (already == n) { LOG("samael: item tables were already widened"); return; }
+    if (already == n) { LOG("samael: item tables were already widened"); note("item tables were already widened"); return; }
     for (i = 0; i < n; i++) *(uint32_t *) (base + e[i].off) = e[i].new_w;
     LOG("samael: item tables widened: collectibles %u -> %u, trinkets %u -> %u (8 words)", oc, nc, ot, nt);
+    note("item tables widened: collectibles %u -> %u, trinkets %u -> %u (8 words)", oc, nc, ot, nt);
 #else
     (void) base;
 #endif
