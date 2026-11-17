@@ -110,7 +110,7 @@ void report_line(const char *kind, const char *text);
 #define POCKET_ACTIVE   2
 #define POCKET_SLOTS    4
 #define TRINKET_SLOTS   2
-#define MAX_ITEM_ID     732
+#define MAX_ITEM_ID     748
 
 #define KIND_COLLECTIBLE 1
 #define KIND_TRINKET     2

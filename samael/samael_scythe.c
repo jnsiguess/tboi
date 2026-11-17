@@ -161,6 +161,12 @@ int shim_sticks_in_game(void);
 #define ITEM_CONTAINER_OFF   0x55f30
 #define FN_GET_CONFIG        0x73f7f4
 #define FN_HAS_COLLECTIBLE   0x4eeb74
+#define FN_GET_TRINKET       0x73f83c       /* (container, id) -> the trinket's ItemConfig*, from the vector at container+0x18 */
+/* FIX11: the mod's items, as samael_items_datos.py writes them: collectibles 733..748, trinkets 190..201 */
+#define SAMAEL_FIRST_ITEM    733
+#define SAMAEL_N_ITEMS       16
+#define SAMAEL_FIRST_TRINKET 190
+#define SAMAEL_N_TRINKETS    12
 #define HIT_MAX             64
 
 /* ---- the scythe's picture: an effect with the mod's own sprite (samael_scythe.anm2, "Swing", 11 frames) ----
@@ -424,30 +430,48 @@ static void hit_pass(unsigned long b, unsigned long game, unsigned long player, 
 
 /* between frames (mods.c): once per update frame, for every Samael in the run */
 #if SAMAEL_ITEM_TEST
+/*
+ * FIX11 - SHOWCASE: at frame 90 of every run with Samael, a row of pedestals with the 16 new collectibles and a row of the 12
+ * new trinkets in the starting room, so names, pictures and descriptions can be checked at a glance. A thing is only spawned
+ * if the game already has its configuration (that is asked first, so a missing one is reported instead of crashing).
+ * Switch it off (SAMAEL_ITEM_TEST 0) once the objects are checked.
+ */
 static void item_test(unsigned long b, unsigned long game, unsigned long p, slot_t *s, int frame) {
     if (!s->test_done && frame >= 90) {
         s->test_done = 1;                                   /* one try per run, whatever happens */
         unsigned long root = *(const unsigned long *) (b + ITEM_CONTAINER_PTR);
-        if (!root) { report_now("item test: the game has no configuration container yet"); return; }
+        if (!root) { report_now("showcase: the game has no configuration container yet"); return; }
         unsigned long cont = root + ITEM_CONTAINER_OFF;
-        if (!shim_trace_readable((const void *) cont, 16)) { report_now("item test: container %#lx is not readable", cont); return; }
-        unsigned long beg = *(const unsigned long *) cont, end = *(const unsigned long *) (cont + 8);
-        long size = (long) ((end - beg) / 8);
-        unsigned long cfg = ((unsigned long (*)(unsigned long, int)) (b + FN_GET_CONFIG))(cont, SAMAEL_TEST_ID);
-        report_now("item test: collectible vector holds %ld entries; config for id %d = %#lx", size, SAMAEL_TEST_ID, cfg);
-        if (!cfg) { report_now("item test: NOT spawned (no items.xml entry for that id, or the table is not widened)"); return; }
+        if (!shim_trace_readable((const void *) cont, 0x40)) { report_now("showcase: container %#lx is not readable", cont); return; }
+        long size_c = (long) ((*(const unsigned long *) (cont + 8) - *(const unsigned long *) cont) / 8);
+        long size_t_ = (long) ((*(const unsigned long *) (cont + 0x20) - *(const unsigned long *) (cont + 0x18)) / 8);
+        report_now("showcase: collectible vector holds %ld entries, trinket vector %ld", size_c, size_t_);
+        unsigned long (*get_c)(unsigned long, int) = (unsigned long (*)(unsigned long, int)) (b + FN_GET_CONFIG);
+        unsigned long (*get_t)(unsigned long, int) = (unsigned long (*)(unsigned long, int)) (b + FN_GET_TRINKET);
         unsigned long (*spawn)(unsigned long, int, int, const float *, const float *, unsigned long, int, int, int) =
             (unsigned long (*)(unsigned long, int, int, const float *, const float *, unsigned long, int, int, int)) (b + FN_SPAWN);
         int seed = ((int (*)(void)) (b + FN_RANDOM))();
-        const float *pp = (const float *) (p + PLAYER_POSITION);
-        float at[2] = { pp[0] + 80.0f, pp[1] };
-        unsigned long e = spawn(game, 5, 100, at, (const float *) (b + ZERO_VECTOR), 0, SAMAEL_TEST_ID, seed, 0);
-        s->test_spawned = e != 0;
-        report_now("item test: pedestal %s (entity %#lx)", e ? "spawned" : "FAILED", e);
+        int ok_c = 0, ok_t = 0, miss = 0, k;
+        for (k = 0; k < SAMAEL_N_ITEMS; k++) {
+            int id = SAMAEL_FIRST_ITEM + k;
+            if (!get_c(cont, id)) { miss++; report_now("showcase: no configuration for collectible %d", id); continue; }
+            float at[2] = { 140.0f + 40.0f * (float) (k % 8), 190.0f + 40.0f * (float) (k / 8) };
+            if (spawn(game, 5, 100, at, (const float *) (b + ZERO_VECTOR), 0, id, seed + k, 0)) ok_c++;
+        }
+        for (k = 0; k < SAMAEL_N_TRINKETS; k++) {
+            int id = SAMAEL_FIRST_TRINKET + k;
+            if (!get_t(cont, id)) { miss++; report_now("showcase: no configuration for trinket %d", id); continue; }
+            float at[2] = { 160.0f + 40.0f * (float) (k % 6), 290.0f + 40.0f * (float) (k / 6) };
+            if (spawn(game, 5, 350, at, (const float *) (b + ZERO_VECTOR), 0, id, seed + 100 + k, 0)) ok_t++;
+        }
+        s->test_spawned = ok_c + ok_t;
+        report_now("showcase: %d collectibles and %d trinkets spawned, %d without configuration", ok_c, ok_t, miss);
     }
-    if (s->test_spawned && frame % 15 == 0) {
-        int has = ((int (*)(unsigned long, int, int)) (b + FN_HAS_COLLECTIBLE))(p, SAMAEL_TEST_ID, 1);
-        if (has != s->test_has) { s->test_has = has; report_now("item test: HasCollectible(%d) = %d", SAMAEL_TEST_ID, has); }
+    if (s->test_spawned && frame % 15 == 0) {                /* which new collectibles the player now owns */
+        unsigned mask = 0;
+        for (int k = 0; k < SAMAEL_N_ITEMS; k++)
+            if (((int (*)(unsigned long, int, int)) (b + FN_HAS_COLLECTIBLE))(p, SAMAEL_FIRST_ITEM + k, 1)) mask |= 1u << k;
+        if (mask != (unsigned) s->test_has) { s->test_has = (int) mask; report_now("showcase: owned collectibles mask %#x", mask); }
     }
 }
 #endif
