@@ -17,6 +17,9 @@
  *
  * REQUISITO: el id del personaje (MY_FIRST) debe existir en la tabla de personajes del juego.
  * Sin parche el juego trae 41 (ids 0..40). El parche "charslots" la agranda a 61 (ids 41..60).
+ *
+ * FIX12: ademas de los stats del personaje, aplica los BONOS DE LOS ITEMS del mod de Samael (tabla g_items, ids 733..748)
+ * a cualquier jugador que los tenga (HasCollectible), con las mismas cuentas que samael_*.lua.
  */
 #include <stdint.h>
 #include <string.h>
@@ -70,14 +73,40 @@ static const my_char_t g_chars[MY_COUNT] = {
 };
 /* ===================================================================================================== */
 
+/* === FIX12: BONOS DE LOS ITEMS DEL MOD ================================================================ */
+/* Solo la parte de ESTADISTICAS de cada item (el resto de su efecto va aparte). tears_add = lagrimas/s (como lib.TearsUp). */
+typedef struct {
+    int id;
+    const char *name;
+    float dmg_add, tears_add, range_add, luck_add, speed_add;
+} item_bonus_t;
+
+static const item_bonus_t g_items[] = {
+    /*  id   nombre                   dano  lagr   alcance suerte vel  */
+    { 744, "Spirit of Depression",    0.0f, 0.7f,  0.0f,   0.0f,  0.0f },   /* depression.lua: TearsUp(MaxFireDelay, 0.7) */
+    { 746, "Mask of Thanatos",        0.3f, 0.0f,  0.0f,   0.0f,  0.0f },   /* thanatos.lua: Damage + 0.3 (su alcance aun no se aplica) */
+};
+#define N_ITEMS ((int) (sizeof g_items / sizeof g_items[0]))
+/* ===================================================================================================== */
+
 typedef void (*eval_fn)(unsigned long player);
 static eval_fn g_eval;
+static unsigned char *g_base;
 
 /* igual que tearsMult(delay, convertTearMultABPToRep(m)) de Fiend Folio */
 static float tears_mult_abp(float delay, float m) {
     float conv = 11.0f / (10.0f * m + 1.0f);
     float d = 30.0f / ((30.0f / (delay + 1.0f)) * conv) - 1.0f;
     return d < -0.99f ? -0.99f : d;
+}
+
+/* igual que lib.TearsUp(firedelay, val): suma lagrimas por segundo al retraso */
+static float tears_up(float delay, float add) {
+    float cur = 30.0f / (delay + 1.0f);
+    float nw = cur + add;
+    if (nw < 0.1f) nw = 0.1f;
+    float d = 30.0f / nw - 1.0f;
+    return d < -0.75f ? -0.75f : d;
 }
 
 static void my_apply(unsigned long p, const my_char_t *c, unsigned fl) {
@@ -91,9 +120,25 @@ static void my_apply(unsigned long p, const my_char_t *c, unsigned fl) {
     if (fl & CF_LUCK)      *(float *) (p + PLAYER_LUCK)  += c->luck_add;
 }
 
+/* FIX12: los bonos de cada item que el jugador tenga, solo a los stats que el juego pidio recalcular */
+static void items_apply(unsigned long p, unsigned fl) {
+    if (!g_base) return;
+    int (*has)(unsigned long, int, int) = (int (*)(unsigned long, int, int)) (g_base + FN_HAS_COLLECTIBLE);
+    for (int i = 0; i < N_ITEMS; i++) {
+        const item_bonus_t *it = &g_items[i];
+        if (!has(p, it->id, 0)) continue;
+        if ((fl & CF_DAMAGE)   && it->dmg_add   != 0.0f) *(float *) (p + PLAYER_DAMAGE) += it->dmg_add;
+        if ((fl & CF_FIREDELAY) && it->tears_add != 0.0f) { float *f = (float *) (p + PLAYER_FIRE_DELAY); *f = tears_up(*f, it->tears_add); }
+        if ((fl & CF_RANGE)    && it->range_add != 0.0f) *(float *) (p + PLAYER_RANGE) += it->range_add;
+        if ((fl & CF_LUCK)     && it->luck_add  != 0.0f) *(float *) (p + PLAYER_LUCK)  += it->luck_add;
+        if ((fl & CF_SPEED)    && it->speed_add != 0.0f) *(float *) (p + PLAYER_SPEED) += it->speed_add;
+    }
+}
+
 static void my_evaluate(unsigned long p) {
     unsigned fl = *(const unsigned *) (p + PLAYER_CACHE_FLAGS);    /* antes de que el original las borre */
     g_eval(p);
+    items_apply(p, fl);                                            /* FIX12: bonos de los items del mod */
     int t = *(const int *) (p + PLAYER_TYPE) - MY_FIRST;
     if (t < 0 || t >= MY_COUNT) return;
     my_apply(p, &g_chars[t], fl);
@@ -112,6 +157,7 @@ void shim_mychar_install(unsigned char *base) {
     if (mprotect(page, 4096, PROT_READ | PROT_EXEC) != 0) { munmap(page, 4096); return; }
     __builtin___clear_cache((char *) page, (char *) page + 32);
     g_eval = (eval_fn) page;
+    g_base = base;                        /* FIX12 */
     shim_hook(fn, (void *) my_evaluate);
-    LOG("mychar: EvaluateItems es nuestra (%d personaje(s))", MY_COUNT);
+    LOG("mychar: EvaluateItems es nuestra (%d personaje(s), %d item(s) con bonos)", MY_COUNT, N_ITEMS);
 }

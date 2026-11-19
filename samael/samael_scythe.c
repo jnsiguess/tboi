@@ -155,7 +155,7 @@ int shim_sticks_in_game(void);
  * for that id (items.xml patched by samael_items_datos.py). Measured: the configuration container is [base+0xac2428] + 0x55f30
  * (three vectors, the first one holds the collectibles); 0x73f7f4(container, id) returns the ItemConfig* or 0;
  * 0x4eeb74(player, id, flag) is HasCollectible. */
-#define SAMAEL_ITEM_TEST     1
+#define SAMAEL_ITEM_TEST     0       /* FIX12: the showcase is OFF - it re-fired whenever the slot was reset (picking an item up, changing room) */
 #define SAMAEL_TEST_ID       733
 #define ITEM_CONTAINER_PTR   0xac2428
 #define ITEM_CONTAINER_OFF   0x55f30
@@ -167,6 +167,17 @@ int shim_sticks_in_game(void);
 #define SAMAEL_N_ITEMS       16
 #define SAMAEL_FIRST_TRINKET 190
 #define SAMAEL_N_TRINKETS    12
+
+/* FIX12 - WHAT SAMAEL STARTS WITH (samael.lua: Schoolbag + Malakh Mot). 0x500588 AddCollectible(player, id, charge, firstTime, slot, varData)
+ * is the call the port's own "give" uses (spawner.c). The give happens ONCE per run: it is armed when the game's frame counter goes
+ * backwards (a new run) and fired between frames 3 and 90, so a continued run (frame in the thousands) never gets it twice. */
+#define SAMAEL_START_ITEMS   1
+#define FN_ADD_COLLECTIBLE   0x500588
+#define COLLECTIBLE_SCHOOLBAG 534
+#define SAMAEL_MALAKH_MOT    733
+/* TEMPORARY, to see the item bonuses at once (there is no way to find them yet): also gives Spirit of Depression (+0.7 tears) and
+ * Mask of Thanatos (+0.3 damage) at the start of a run. Put 0 once the pools are in. */
+#define SAMAEL_TEST_GIVE     1
 #define HIT_MAX             64
 
 /* ---- the scythe's picture: an effect with the mod's own sprite (samael_scythe.anm2, "Swing", 11 frames) ----
@@ -429,6 +440,26 @@ static void hit_pass(unsigned long b, unsigned long game, unsigned long player, 
 }
 
 /* between frames (mods.c): once per update frame, for every Samael in the run */
+#if SAMAEL_START_ITEMS
+static int g_last_frame = 0x7fffffff, g_armed;
+static void give_start_items(unsigned long b, unsigned long p, int frame) {
+    if (frame < g_last_frame) g_armed = (frame <= 90);       /* the counter went back: a new run (or the first call) */
+    g_last_frame = frame;
+    if (!g_armed || frame < 3) return;
+    g_armed = 0;
+    void (*add)(unsigned long, int, int, int, int, int) = (void (*)(unsigned long, int, int, int, int, int)) (b + FN_ADD_COLLECTIBLE);
+    report_now("start items: giving Schoolbag and Malakh Mot at frame %d", frame);
+    add(p, COLLECTIBLE_SCHOOLBAG, 0, 1, 0, 0);
+    add(p, SAMAEL_MALAKH_MOT,     0, 1, 0, 0);
+#if SAMAEL_TEST_GIVE
+    add(p, 744, 0, 1, 0, 0);                                 /* Spirit of Depression */
+    add(p, 746, 0, 1, 0, 0);                                 /* Mask of Thanatos */
+    report_now("start items: test give of 744 and 746 done");
+#endif
+    report_now("start items: given");
+}
+#endif
+
 #if SAMAEL_ITEM_TEST
 /*
  * FIX11 - SHOWCASE: at frame 90 of every run with Samael, a row of pedestals with the 16 new collectibles and a row of the 12
@@ -512,6 +543,9 @@ void shim_samael_between_frames(void) {
             s->ppx = pp0[0]; s->ppy = pp0[1]; s->pvalid = 1;
         }
 
+#if SAMAEL_START_ITEMS
+        give_start_items(b, p, frame);
+#endif
 #if SAMAEL_ITEM_TEST
         item_test(b, game, p, s, frame);
 #endif
