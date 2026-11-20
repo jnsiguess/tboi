@@ -178,6 +178,13 @@ int shim_sticks_in_game(void);
 /* TEMPORARY, to see the item bonuses at once (there is no way to find them yet): also gives Spirit of Depression (+0.7 tears) and
  * Mask of Thanatos (+0.3 damage) at the start of a run. Put 0 once the pools are in. */
 #define SAMAEL_TEST_GIVE     1
+/* FIX13: Malakh Mot is the POCKET active of Samael in the mod (samael.lua:166 SetPocketActiveItem). content.c (notes of 02.10.2026) says
+ * AddCollectible takes any number and that a negative id is a pocket item, so first try AddCollectible(player, -733); if the player
+ * does not own 733 afterwards, fall back to the plain give. 0 = plain give only. */
+#define SAMAEL_POCKET_TRY    1
+/* FIX13 DIAGNOSTIC: logs which buttons are pressed (bit N = action N; 4..7 are the shoot buttons) and the four active-item slots
+ * (player+0x1964, 4 x 0x1c bytes) every time they change, to measure where the charge lives and which button uses the pocket active. */
+#define SAMAEL_DIAG_ACTIVE   1
 #define HIT_MAX             64
 
 /* ---- the scythe's picture: an effect with the mod's own sprite (samael_scythe.anm2, "Swing", 11 frames) ----
@@ -450,13 +457,49 @@ static void give_start_items(unsigned long b, unsigned long p, int frame) {
     void (*add)(unsigned long, int, int, int, int, int) = (void (*)(unsigned long, int, int, int, int, int)) (b + FN_ADD_COLLECTIBLE);
     report_now("start items: giving Schoolbag and Malakh Mot at frame %d", frame);
     add(p, COLLECTIBLE_SCHOOLBAG, 0, 1, 0, 0);
+#if SAMAEL_POCKET_TRY
+    add(p, -SAMAEL_MALAKH_MOT,    0, 1, 0, 0);               /* a negative id = a pocket item */
+    if (!((int (*)(unsigned long, int, int)) (b + FN_HAS_COLLECTIBLE))(p, SAMAEL_MALAKH_MOT, 0)) {
+        report_now("start items: the negative id did not give Malakh Mot - plain give");
+        add(p, SAMAEL_MALAKH_MOT, 0, 1, 0, 0);
+    } else report_now("start items: Malakh Mot given as a pocket item");
+#else
     add(p, SAMAEL_MALAKH_MOT,     0, 1, 0, 0);
+#endif
 #if SAMAEL_TEST_GIVE
     add(p, 744, 0, 1, 0, 0);                                 /* Spirit of Depression */
     add(p, 746, 0, 1, 0, 0);                                 /* Mask of Thanatos */
     report_now("start items: test give of 744 and 746 done");
 #endif
     report_now("start items: given");
+}
+#endif
+
+#if SAMAEL_DIAG_ACTIVE
+static void active_diag(unsigned long b, unsigned long p, int frame) {
+    static unsigned prev_mask = 0xFFFFFFFFu, prev[28];
+    static int have_prev, budget = 120;
+    if (budget <= 0) return;
+    unsigned mask = 0;
+    for (int a = 0; a < 24; a++) if (action_held(b, p, a)) mask |= 1u << a;
+    if (mask != prev_mask) {
+        if (prev_mask != 0xFFFFFFFFu) { report_now("diag: buttons %#x (before %#x) at frame %d", mask, prev_mask, frame); budget--; }
+        prev_mask = mask;
+    }
+    if (frame % 6) return;
+    const unsigned *w = (const unsigned *) (p + 0x1964);
+    if (!shim_trace_readable((const void *) w, 28 * 4)) return;
+    int changed = !have_prev;
+    for (int i = 0; i < 28; i++) if (w[i] != prev[i]) { changed = 1; prev[i] = w[i]; }
+    have_prev = 1;
+    if (!changed) return;
+    char line[240];
+    for (int row = 0; row < 2; row++) {
+        int n = snprintf(line, sizeof line, "diag: slots p+%#x:", 0x1964 + row * 14 * 4);
+        for (int i = row * 14; i < row * 14 + 14; i++) n += snprintf(line + n, sizeof line - (size_t) n, " %x", w[i]);
+        report_now("%s", line);
+    }
+    budget -= 2;
 }
 #endif
 
@@ -545,6 +588,9 @@ void shim_samael_between_frames(void) {
 
 #if SAMAEL_START_ITEMS
         give_start_items(b, p, frame);
+#endif
+#if SAMAEL_DIAG_ACTIVE
+        active_diag(b, p, frame);
 #endif
 #if SAMAEL_ITEM_TEST
         item_test(b, game, p, s, frame);
